@@ -1,0 +1,32 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-asstsnxkzrvuh-117 " [formGroup]="vc.viewState.T_ASSTSNXKZRVUH_117"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_PASSIVEPOF_610117.enabled, 'VC_PASSIVEPOF_610117')" [properties]="vc.viewState.VC_PASSIVEPOF_610117" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PASSIVEIOR_919625.enabled, 'G_PASSIVEIOR_919625', 'VC_PASSIVEPOF_610117', 'DataPassivePortfolio',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('G_PASSIVEIOR_919625',true)" [properties]="vc.viewState.G_PASSIVEIOR_919625" [mode]="vc.mode" formGroupName="DataPassivePortfolio"> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_DEBTTYPEAZGDJQE_285625.enabled, 'VA_DEBTTYPEAZGDJQE_285625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.debtType',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_DEBTTYPEAZGDJQE_285625')" [properties]="vc.viewState.VA_DEBTTYPEAZGDJQE_285625" [mode]="vc.mode" formControlName="debtType" [dataSource]="vc.catalogs.VA_DEBTTYPEAZGDJQE_285625"> 
+       </cobis-dropdownlist> 
+       <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_AUTHDATETEAHWOU_492625.enabled, 'VA_AUTHDATETEAHWOU_492625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.authDate',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_AUTHDATETEAHWOU_492625')" [properties]="vc.viewState.VA_AUTHDATETEAHWOU_492625" [mode]="vc.mode" formControlName="authDate"></cobis-datefield>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_AUTHNUMBERNNCHT_723625.enabled, 'VA_AUTHNUMBERNNCHT_723625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.authNumber',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_AUTHNUMBERNNCHT_723625')" [properties]="vc.viewState.VA_AUTHNUMBERNNCHT_723625" [mode]="vc.mode" formControlName="authNumber"></cobis-textinputbox>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_FACILITYNUMBRER_994625.enabled, 'VA_FACILITYNUMBRER_994625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.facilityNumber',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_FACILITYNUMBRER_994625')" [properties]="vc.viewState.VA_FACILITYNUMBRER_994625" [mode]="vc.mode" formControlName="facilityNumber"></cobis-textinputbox>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_CONTRACTNUMBRRE_654625.enabled, 'VA_CONTRACTNUMBRRE_654625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.contractNumber',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_CONTRACTNUMBRRE_654625')" [properties]="vc.viewState.VA_CONTRACTNUMBRRE_654625" [mode]="vc.mode" formControlName="contractNumber"></cobis-textinputbox>
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_SUBFINANCINGYPV_705625.enabled, 'VA_SUBFINANCINGYPV_705625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.subFinancing',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_SUBFINANCINGYPV_705625')" [properties]="vc.viewState.VA_SUBFINANCINGYPV_705625" [mode]="vc.mode" formControlName="subFinancing" [dataSource]="vc.catalogs.VA_SUBFINANCINGYPV_705625"> 
+       </cobis-dropdownlist> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CREDITORTYPEWDN_671625.enabled, 'VA_CREDITORTYPEWDN_671625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.creditorType',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_CREDITORTYPEWDN_671625')" [properties]="vc.viewState.VA_CREDITORTYPEWDN_671625" [mode]="vc.mode" formControlName="creditorType" [dataSource]="vc.catalogs.VA_CREDITORTYPEWDN_671625"> 
+       </cobis-dropdownlist> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_TERMTYPEVASKBGR_425625.enabled, 'VA_TERMTYPEVASKBGR_425625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.termType',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_TERMTYPEVASKBGR_425625')" [properties]="vc.viewState.VA_TERMTYPEVASKBGR_425625" [mode]="vc.mode" formControlName="termType" [dataSource]="vc.catalogs.VA_TERMTYPEVASKBGR_425625"> 
+       </cobis-dropdownlist> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_FINANCINGTERMMM_399625.enabled, 'VA_FINANCINGTERMMM_399625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.financingTerm',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_FINANCINGTERMMM_399625')" [properties]="vc.viewState.VA_FINANCINGTERMMM_399625" [mode]="vc.mode" formControlName="financingTerm"></cobis-numericinputbox>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_FINANCINGLINEEE_794625.enabled, 'VA_FINANCINGLINEEE_794625', 'G_PASSIVEIOR_919625', 'DataPassivePortfolio.financingLine',vc.viewState.T_ASSTSNXKZRVUH_117)" *ngIf="isVisible('VA_FINANCINGLINEEE_794625')" [properties]="vc.viewState.VA_FINANCINGLINEEE_794625" [mode]="vc.mode" formControlName="financingLine"></cobis-textinputbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

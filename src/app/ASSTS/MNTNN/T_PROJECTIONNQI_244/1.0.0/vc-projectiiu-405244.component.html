@@ -1,0 +1,65 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-projectionnqi-244 cb-form--consolidated-view" [formGroup]="vc.viewState.T_PROJECTIONNQI_244"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__start" *ngIf="loadFromAPI"> 
+    <cobis-header [behavior]="myBehavior" [data]="myData" [headerId]="jsonHeader!.headerId" [modelHeader]="vc.model" [headerInfoProduct]="jsonHeader!.headerInfoProduct" [showInfo]="jsonHeader!.showInfo" [headerActions]="headerActionsBase" (eventCustomAction)="executeActionCustom($event, jsonHeader!.headerId)" (eventNavAction)="executeActionNavigate($event, actionsHeaderFunctions)" (eventSearch)="executeSearch(jsonHeader!.searchPage)" [loadFromAPI]="loadFromAPI" [collapsed]="vc.viewState[this.jsonHeader!.headerId].collapsed" [visibleExpandOption]="vc.viewState[this.jsonHeader!.headerId].visibleExpandOption" [visibleSearchOption]="vc.viewState[this.jsonHeader!.headerId].showButtons.search" [visibleActionsOption]="vc.viewState[this.jsonHeader!.headerId].visibleActionsOption" [headerInfoLabels]="vc.viewState[vc.idCobisHeader!].labels" [isConsolidatedView]="true"> 
+    </cobis-header> 
+   </div> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_PROJECTIIU_405244.enabled, 'VC_PROJECTIIU_405244')" [properties]="vc.viewState.VC_PROJECTIIU_405244" [mode]="vc.mode">
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_SQRMWXXWBH_255244.enabled, 'VC_SQRMWXXWBH_255244','VC_PROJECTIIU_405244')" [properties]="vc.viewState.VC_SQRMWXXWBH_255244" [mode]="vc.mode">
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_SQUIFEROTT_498244.enabled, 'VC_SQUIFEROTT_498244','VC_SQRMWXXWBH_255244')" [properties]="vc.viewState.VC_SQUIFEROTT_498244" [mode]="vc.mode">
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_XAGJYCIGBI_296244.enabled, 'VC_XAGJYCIGBI_296244','VC_SQUIFEROTT_498244')" [properties]="vc.viewState.VC_XAGJYCIGBI_296244" [mode]="vc.mode">
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_ZKOYSODRLC_153316.enabled, 'VC_ZKOYSODRLC_153316','VC_XAGJYCIGBI_296244')" [properties]="vc.viewState.VC_ZKOYSODRLC_153316" [mode]="vc.mode"> 
+          <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANHEADOD_564612.enabled, 'G_LOANHEADOD_564612', 'VC_ZKOYSODRLC_153316', 'Loan',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('G_LOANHEADOD_564612',true)" [properties]="vc.viewState.G_LOANHEADOD_564612" [mode]="vc.mode" formGroupName="Loan"> 
+           <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_143612')" [properties]="vc.viewState.VA_VASIMPLELABELLL_143612"></cobis-textlabel> 
+          </cobis-groupbox> 
+          <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANHEADRO_349612.enabled, 'G_LOANHEADRO_349612', 'VC_ZKOYSODRLC_153316', 'Loan',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('G_LOANHEADRO_349612',true)" [properties]="vc.viewState.G_LOANHEADRO_349612" [mode]="vc.mode" formGroupName="Loan"> 
+           <cobis-textlink [attr.disabled]="isDisabled( vc.viewState.VA_VASIMPLELABELLL_867612.enabled, 'VA_VASIMPLELABELLL_867612', 'G_LOANHEADRO_349612', 'Loan.loanBankID',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('VA_VASIMPLELABELLL_867612')" [properties]="vc.viewState.VA_VASIMPLELABELLL_867612" formControlName="loanBankID" (onClick)="executeCommand('VA_VASIMPLELABELLL_867612',vc.viewState.VA_VASIMPLELABELLL_867612.attribute)"></cobis-textlink>
+           <cobis-button [disabled]="isDisabled(vc.viewState.VA_VABUTTONWVITZRQ_108612.enabled,'VA_VABUTTONWVITZRQ_108612', 'G_LOANHEADRO_349612')" *ngIf="isVisible('VA_VABUTTONWVITZRQ_108612')" [properties]="vc.viewState.VA_VABUTTONWVITZRQ_108612" [mode]="vc.mode"></cobis-button> 
+           <cobis-button [disabled]="isDisabled(vc.viewState.VA_VABUTTONORYJAMS_468612.enabled,'VA_VABUTTONORYJAMS_468612', 'G_LOANHEADRO_349612')" *ngIf="isVisible('VA_VABUTTONORYJAMS_468612')" [properties]="vc.viewState.VA_VABUTTONORYJAMS_468612" [mode]="vc.mode"></cobis-button> 
+          </cobis-groupbox> 
+          <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANHEAINF_340612.enabled, 'G_LOANHEAINF_340612', 'VC_ZKOYSODRLC_153316', 'Loan',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('G_LOANHEAINF_340612',true)" [properties]="vc.viewState.G_LOANHEAINF_340612" [mode]="vc.mode" formGroupName="Loan"> 
+           <cobis-textlabel *ngIf="isVisible('VA_5034UOFCASVGKTK_993612')" [properties]="vc.viewState.VA_5034UOFCASVGKTK_993612" formControlName="amount"></cobis-textlabel> 
+           <cobis-textlabel *ngIf="isVisible('VA_2463BHBNLZPKLMU_865612')" [properties]="vc.viewState.VA_2463BHBNLZPKLMU_865612" formControlName="balanceDue"></cobis-textlabel> 
+           <cobis-textlabel *ngIf="isVisible('VA_3853RRTWBIRUGHQ_533612')" [properties]="vc.viewState.VA_3853RRTWBIRUGHQ_533612" formControlName="status"></cobis-textlabel> 
+           <cobis-textlabel *ngIf="isVisible('VA_7292SEAHPRAXOKC_868612')" [properties]="vc.viewState.VA_7292SEAHPRAXOKC_868612" formControlName="office"></cobis-textlabel> 
+          </cobis-groupbox> 
+         </cobis-groupbox> 
+        </cobis-groupbox> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_JBFPPOJDKE_802621.enabled, 'VC_JBFPPOJDKE_802621','VC_SQUIFEROTT_498244')" [properties]="vc.viewState.VC_JBFPPOJDKE_802621" [mode]="vc.mode"> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PROJECTOTQ_450517.enabled, 'G_PROJECTOTQ_450517', 'VC_JBFPPOJDKE_802621')" *ngIf="isVisible('G_PROJECTOTQ_450517')" [properties]="vc.viewState.G_PROJECTOTQ_450517" [mode]="vc.mode"> 
+          <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PROJECTIUQ_171517.enabled, 'G_PROJECTIUQ_171517', 'G_PROJECTOTQ_450517', 'ProjectionQuota',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('G_PROJECTIUQ_171517',true)" [properties]="vc.viewState.G_PROJECTIUQ_171517" [mode]="vc.mode" formGroupName="ProjectionQuota"> 
+           <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_915517')" [properties]="vc.viewState.VA_VASIMPLELABELLL_915517"></cobis-textlabel> 
+           <cobis-spacer *ngIf="isVisible('Spacer2108')" [properties]="vc.viewState.Spacer2108"></cobis-spacer>
+           <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_FECHAPROYECCOIN_790517.enabled, 'VA_FECHAPROYECCOIN_790517', 'G_PROJECTIUQ_171517', 'ProjectionQuota.projectionDate',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('VA_FECHAPROYECCOIN_790517')" [properties]="vc.viewState.VA_FECHAPROYECCOIN_790517" [mode]="vc.mode" formControlName="projectionDate" (onChange)="change($event,'VA_FECHAPROYECCOIN_790517')" (onCustomValidate)="customValidate($event,'VA_FECHAPROYECCOIN_790517')"></cobis-datefield> 
+           <cobis-spacer *ngIf="isVisible('Spacer2857')" [properties]="vc.viewState.Spacer2857"></cobis-spacer>
+           <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_DIASPROYECCIONO_148517.enabled, 'VA_DIASPROYECCIONO_148517', 'G_PROJECTIUQ_171517', 'ProjectionQuota.projectionDays',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('VA_DIASPROYECCIONO_148517')" [properties]="vc.viewState.VA_DIASPROYECCIONO_148517" [mode]="vc.mode" formControlName="projectionDays" (onChange)="change($event,'VA_DIASPROYECCIONO_148517')" (onCustomInputRestriction)="customValidation($event,'VA_DIASPROYECCIONO_148517')"></cobis-numericinputbox> 
+           <cobis-spacer *ngIf="isVisible('Spacer2838')" [properties]="vc.viewState.Spacer2838"></cobis-spacer>
+           <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_TIPOUWNWJMGVYCI_648517.enabled, 'VA_TIPOUWNWJMGVYCI_648517', 'G_PROJECTIUQ_171517', 'ProjectionQuota.typeCalculation',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('VA_TIPOUWNWJMGVYCI_648517')" [properties]="vc.viewState.VA_TIPOUWNWJMGVYCI_648517" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_TIPOUWNWJMGVYCI_648517" formControlName="typeCalculation"></cobis-radiobuttonlist> 
+           <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_DATEPROCESSGJPH_342517.enabled, 'VA_DATEPROCESSGJPH_342517', 'G_PROJECTIUQ_171517', 'ProjectionQuota.dateProcess',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('VA_DATEPROCESSGJPH_342517')" [properties]="vc.viewState.VA_DATEPROCESSGJPH_342517" [mode]="vc.mode" formControlName="dateProcess"></cobis-datefield> 
+          </cobis-groupbox> 
+          <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PROJECTINO_339517.enabled, 'G_PROJECTINO_339517', 'G_PROJECTOTQ_450517', 'ProjectionQuota',vc.viewState.T_PROJECTIONNQI_244)" *ngIf="isVisible('G_PROJECTINO_339517',true)" [properties]="vc.viewState.G_PROJECTINO_339517" [mode]="vc.mode" formGroupName="ProjectionQuota"> 
+           <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_283517')" [properties]="vc.viewState.VA_VASIMPLELABELLL_283517"></cobis-textlabel> 
+           <cobis-textlabel *ngIf="isVisible('VA_MONTOVIGENTEENO_276517')" [properties]="vc.viewState.VA_MONTOVIGENTEENO_276517" formControlName="currentAmountDue"></cobis-textlabel> 
+           <cobis-textlabel *ngIf="isVisible('VA_MONTOVENCIDOXAY_846517')" [properties]="vc.viewState.VA_MONTOVENCIDOXAY_846517" formControlName="amountOverdue"></cobis-textlabel> 
+           <cobis-textlabel *ngIf="isVisible('VA_MONTOPRECANCALO_956517')" [properties]="vc.viewState.VA_MONTOPRECANCALO_956517" formControlName="prepaymentAmount"></cobis-textlabel> 
+          </cobis-groupbox> 
+         </cobis-groupbox> 
+        </cobis-groupbox> 
+       </cobis-groupbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TPROJECT_N0M.enabled,'CM_TPROJECT_N0M')" *ngIf="isVisible('CM_TPROJECT_N0M')" [properties]="vc.viewState.CM_TPROJECT_N0M" [mode]="vc.mode" (onClick)="executeCommand('CM_TPROJECT_N0M',vc.viewState.CM_TPROJECT_N0M.name,vc.viewState.CM_TPROJECT_N0M.causesValidation,vc.viewState.CM_TPROJECT_N0M.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

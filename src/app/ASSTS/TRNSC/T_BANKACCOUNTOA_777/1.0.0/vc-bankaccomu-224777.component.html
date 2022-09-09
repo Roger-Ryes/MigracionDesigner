@@ -1,0 +1,44 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-bankaccountoa-777 " [formGroup]="vc.viewState.T_BANKACCOUNTOA_777"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_BANKACCOMU_224777.enabled, 'VC_BANKACCOMU_224777')" [properties]="vc.viewState.VC_BANKACCOMU_224777" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_BANKACCSON_782523.enabled, 'G_BANKACCSON_782523', 'VC_BANKACCOMU_224777', 'BankAccount',vc.viewState.T_BANKACCOUNTOA_777)" *ngIf="isVisible('G_BANKACCSON_782523',true)" [properties]="vc.viewState.G_BANKACCSON_782523" [mode]="vc.mode" formGroupName="BankAccount"> 
+       <cobis-grid #QV_1987_24851_Grid [properties]="vc.viewState.QV_1987_24851" [mode]="vc.mode" [formGroupGrid]="vc.model.BankAccountRowData.formGroup" [dataSource]="vc.model.BankAccount" [model]="vc.model" (gridInitDetailTemplate)="gridInitDetailTemplate($event)" (showGridRowDetailIcon)="showGridRowDetailIcon($event)" (gridInitColumnTemplate)="gridInitColumnTemplate($event)" (gridInitEditColumnTemplate)="gridInitEditColumnTemplate($event)" (onSaveRow)="gridSaveRow($event)" (onRowSelecting)="gridRowSelecting($event)"> 
+        <!--Start Column account --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXHQK_112523'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ dataItem[column.field] }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXHQK_112523'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+        </ng-template> 
+        <!--Start Column customerCode --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXYWN_932523'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXYWN_932523'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+        </ng-template> 
+        <!--Start Column accountName --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXRZN_728523'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ dataItem[column.field] }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXRZN_728523'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+        </ng-template> 
+       </cobis-grid> 
+      </cobis-groupbox> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_BANKACCAUT_856523.enabled, 'G_BANKACCAUT_856523', 'VC_BANKACCOMU_224777', 'Entity1',vc.viewState.T_BANKACCOUNTOA_777)" *ngIf="isVisible('G_BANKACCAUT_856523',true)" [properties]="vc.viewState.G_BANKACCAUT_856523" [mode]="vc.mode" formGroupName="Entity1"> 
+       <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_811523')" [properties]="vc.viewState.VA_VASIMPLELABELLL_811523"></cobis-textlabel> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

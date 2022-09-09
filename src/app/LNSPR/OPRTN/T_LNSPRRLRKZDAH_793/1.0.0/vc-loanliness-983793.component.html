@@ -1,0 +1,48 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-lnspr cb-t-lnsprrlrkzdah-793 cb-form--consolidated-view" [formGroup]="vc.viewState.T_LNSPRRLRKZDAH_793"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_LOANLINESS_983793.enabled, 'VC_LOANLINESS_983793')" [properties]="vc.viewState.VC_LOANLINESS_983793" [mode]="vc.mode"> 
+      <cobis-tabbedlayout-container [disabled]="isDisabled( vc.viewState.G_LOANLINECC_258461.enabled, 'G_LOANLINECC_258461', 'VC_LOANLINESS_983793')" *ngIf="isVisible('G_LOANLINECC_258461')" [mode]="vc.mode" [properties]="vc.viewState.G_LOANLINECC_258461" (onChangeGroup)="changeGroup($event, 'G_LOANLINECC_258461')"> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANLINEEE_881461_tab.enabled, 'G_LOANLINEEE_881461_tab', 'G_LOANLINECC_258461')" *ngIf="isVisible('G_LOANLINEEE_881461_tab')" [properties]="vc.viewState.G_LOANLINEEE_881461_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANLINEEE_881461.enabled, 'G_LOANLINEEE_881461', 'G_LOANLINEEE_881461_tab')" *ngIf="isVisible('G_LOANLINEEE_881461')" [properties]="vc.viewState.G_LOANLINEEE_881461" [mode]="vc.mode"> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANLINSSA_305461.enabled, 'G_LOANLINSSA_305461', 'G_LOANLINEEE_881461')" *ngIf="isVisible('G_LOANLINSSA_305461')" [properties]="vc.viewState.G_LOANLINSSA_305461" [mode]="vc.mode"> 
+          <div> 
+           <ng-template registerView id="G_LOANLINSSA_305461"></ng-template> 
+          </div> 
+         </cobis-groupbox> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANLINACR_870461_tab.enabled, 'G_LOANLINACR_870461_tab', 'G_LOANLINECC_258461')" *ngIf="isVisible('G_LOANLINACR_870461_tab')" [properties]="vc.viewState.G_LOANLINACR_870461_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANLINACR_870461.enabled, 'G_LOANLINACR_870461', 'G_LOANLINECC_258461')" *ngIf="isVisible('G_LOANLINACR_870461')" [properties]="vc.viewState.G_LOANLINACR_870461" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_LOANLINACR_870461"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANLINRER_722461_tab.enabled, 'G_LOANLINRER_722461_tab', 'G_LOANLINECC_258461')" *ngIf="isVisible('G_LOANLINRER_722461_tab')" [properties]="vc.viewState.G_LOANLINRER_722461_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANLINRER_722461.enabled, 'G_LOANLINRER_722461', 'G_LOANLINECC_258461')" *ngIf="isVisible('G_LOANLINRER_722461')" [properties]="vc.viewState.G_LOANLINRER_722461" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_LOANLINRER_722461"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANLINTRE_952461_tab.enabled, 'G_LOANLINTRE_952461_tab', 'G_LOANLINECC_258461')" *ngIf="isVisible('G_LOANLINTRE_952461_tab')" [properties]="vc.viewState.G_LOANLINTRE_952461_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANLINTRE_952461.enabled, 'G_LOANLINTRE_952461', 'G_LOANLINECC_258461')" *ngIf="isVisible('G_LOANLINTRE_952461')" [properties]="vc.viewState.G_LOANLINTRE_952461" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_LOANLINTRE_952461"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+      </cobis-tabbedlayout-container> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

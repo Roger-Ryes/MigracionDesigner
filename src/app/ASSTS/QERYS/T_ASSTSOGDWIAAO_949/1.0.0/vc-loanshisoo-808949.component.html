@@ -1,0 +1,71 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-asstsogdwiaao-949 cb-form--consolidated-view" [formGroup]="vc.viewState.T_ASSTSOGDWIAAO_949"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__start" *ngIf="loadFromAPI"> 
+    <cobis-header [behavior]="myBehavior" [data]="myData" [headerId]="jsonHeader!.headerId" [modelHeader]="vc.model" [headerInfoProduct]="jsonHeader!.headerInfoProduct" [showInfo]="jsonHeader!.showInfo" [headerActions]="headerActionsBase" (eventCustomAction)="executeActionCustom($event, jsonHeader!.headerId)" (eventNavAction)="executeActionNavigate($event, actionsHeaderFunctions)" (eventSearch)="executeSearch(jsonHeader!.searchPage)" [loadFromAPI]="loadFromAPI" [collapsed]="vc.viewState[this.jsonHeader!.headerId].collapsed" [visibleExpandOption]="vc.viewState[this.jsonHeader!.headerId].visibleExpandOption" [visibleSearchOption]="vc.viewState[this.jsonHeader!.headerId].showButtons.search" [visibleActionsOption]="vc.viewState[this.jsonHeader!.headerId].visibleActionsOption" [headerInfoLabels]="vc.viewState[vc.idCobisHeader!].labels" [isConsolidatedView]="true"> 
+    </cobis-header> 
+   </div> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_LOANSHISOO_808949.enabled, 'VC_LOANSHISOO_808949')" [properties]="vc.viewState.VC_LOANSHISOO_808949" [mode]="vc.mode"> 
+      <cobis-tabbedlayout-container [disabled]="isDisabled( vc.viewState.G_LOANSHIRII_607863.enabled, 'G_LOANSHIRII_607863', 'VC_LOANSHISOO_808949')" *ngIf="isVisible('G_LOANSHIRII_607863')" [mode]="vc.mode" [properties]="vc.viewState.G_LOANSHIRII_607863" (onChangeGroup)="changeGroup($event, 'G_LOANSHIRII_607863')"> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANSHITIC_293863_tab.enabled, 'G_LOANSHITIC_293863_tab', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHITIC_293863_tab')" [properties]="vc.viewState.G_LOANSHITIC_293863_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHITIC_293863.enabled, 'G_LOANSHITIC_293863', 'G_LOANSHITIC_293863_tab')" *ngIf="isVisible('G_LOANSHITIC_293863')" [properties]="vc.viewState.G_LOANSHITIC_293863" [mode]="vc.mode"> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHICTI_733863.enabled, 'G_LOANSHICTI_733863', 'G_LOANSHITIC_293863')" *ngIf="isVisible('G_LOANSHICTI_733863')" [properties]="vc.viewState.G_LOANSHICTI_733863" [mode]="vc.mode"> 
+          <div> 
+           <ng-template registerView id="G_LOANSHICTI_733863"></ng-template> 
+          </div> 
+         </cobis-groupbox> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHICSI_482863.enabled, 'G_LOANSHICSI_482863', 'G_LOANSHITIC_293863')" *ngIf="isVisible('G_LOANSHICSI_482863')" [properties]="vc.viewState.G_LOANSHICSI_482863" [mode]="vc.mode"> 
+          <div> 
+           <ng-template registerView id="G_LOANSHICSI_482863"></ng-template> 
+          </div> 
+         </cobis-groupbox> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANSHIITO_581863_tab.enabled, 'G_LOANSHIITO_581863_tab', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHIITO_581863_tab')" [properties]="vc.viewState.G_LOANSHIITO_581863_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHIITO_581863.enabled, 'G_LOANSHIITO_581863', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHIITO_581863')" [properties]="vc.viewState.G_LOANSHIITO_581863" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_LOANSHIITO_581863"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANSHIOIR_548863_tab.enabled, 'G_LOANSHIOIR_548863_tab', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHIOIR_548863_tab')" [properties]="vc.viewState.G_LOANSHIOIR_548863_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHIOIR_548863.enabled, 'G_LOANSHIOIR_548863', 'G_LOANSHIOIR_548863_tab')" *ngIf="isVisible('G_LOANSHIOIR_548863')" [properties]="vc.viewState.G_LOANSHIOIR_548863" [mode]="vc.mode"> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHIROI_993863.enabled, 'G_LOANSHIROI_993863', 'G_LOANSHIOIR_548863')" *ngIf="isVisible('G_LOANSHIROI_993863')" [properties]="vc.viewState.G_LOANSHIROI_993863" [mode]="vc.mode"> 
+          <div> 
+           <ng-template registerView id="G_LOANSHIROI_993863"></ng-template> 
+          </div> 
+         </cobis-groupbox> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHITCC_927863.enabled, 'G_LOANSHITCC_927863', 'G_LOANSHIOIR_548863')" *ngIf="isVisible('G_LOANSHITCC_927863')" [properties]="vc.viewState.G_LOANSHITCC_927863" [mode]="vc.mode"> 
+          <div> 
+           <ng-template registerView id="G_LOANSHITCC_927863"></ng-template> 
+          </div> 
+         </cobis-groupbox> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANSHIITT_988863_tab.enabled, 'G_LOANSHIITT_988863_tab', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHIITT_988863_tab')" [properties]="vc.viewState.G_LOANSHIITT_988863_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHIITT_988863.enabled, 'G_LOANSHIITT_988863', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHIITT_988863')" [properties]="vc.viewState.G_LOANSHIITT_988863" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_LOANSHIITT_988863"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_LOANSHITTO_207863_tab.enabled, 'G_LOANSHITTO_207863_tab', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHITTO_207863_tab')" [properties]="vc.viewState.G_LOANSHITTO_207863_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSHITTO_207863.enabled, 'G_LOANSHITTO_207863', 'G_LOANSHIRII_607863')" *ngIf="isVisible('G_LOANSHITTO_207863')" [properties]="vc.viewState.G_LOANSHITTO_207863" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_LOANSHITTO_207863"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+      </cobis-tabbedlayout-container> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

@@ -1,0 +1,58 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-ratesmodalkub-953 " [formGroup]="vc.viewState.T_RATESMODALKUB_953"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_RATESMODAL_789953.enabled, 'VC_RATESMODAL_789953')" [properties]="vc.viewState.VC_RATESMODAL_789953" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_RATESMODDD_536778.enabled, 'G_RATESMODDD_536778', 'VC_RATESMODAL_789953', 'Rates',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('G_RATESMODDD_536778',true)" [properties]="vc.viewState.G_RATESMODDD_536778" [mode]="vc.mode" formGroupName="Rates"> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_REFERENCEVALEEE_875778.enabled, 'VA_REFERENCEVALEEE_875778', 'G_RATESMODDD_536778', 'Rates.referenceValue',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_REFERENCEVALEEE_875778')" [properties]="vc.viewState.VA_REFERENCEVALEEE_875778" [mode]="vc.mode" formControlName="referenceValue" [dataSource]="vc.catalogs.VA_REFERENCEVALEEE_875778" (onChange)="change($event,'VA_REFERENCEVALEEE_875778')"> 
+       </cobis-dropdownlist> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_VALUEIAMTJBFHDB_811778.enabled, 'VA_VALUEIAMTJBFHDB_811778', 'G_RATESMODDD_536778', 'Rates.value',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_VALUEIAMTJBFHDB_811778')" [properties]="vc.viewState.VA_VALUEIAMTJBFHDB_811778" [mode]="vc.mode" formControlName="value"></cobis-numericinputbox>
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_TYPEPOINTSQGJRC_416778.enabled, 'VA_TYPEPOINTSQGJRC_416778', 'G_RATESMODDD_536778', 'Rates.typePoints',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_TYPEPOINTSQGJRC_416778')" [properties]="vc.viewState.VA_TYPEPOINTSQGJRC_416778" [mode]="vc.mode" formControlName="typePoints" [dataSource]="vc.catalogs.VA_TYPEPOINTSQGJRC_416778"> 
+       </cobis-dropdownlist> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_NUMBERDECIMALSL_248778.enabled, 'VA_NUMBERDECIMALSL_248778', 'G_RATESMODDD_536778', 'Rates.numberDecimals',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_NUMBERDECIMALSL_248778')" [properties]="vc.viewState.VA_NUMBERDECIMALSL_248778" [mode]="vc.mode" formControlName="numberDecimals" [dataSource]="vc.catalogs.VA_NUMBERDECIMALSL_248778"> 
+       </cobis-dropdownlist> 
+       <cobis-spacer *ngIf="isVisible('Spacer2425')" [properties]="vc.viewState.Spacer2425"></cobis-spacer>
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_PORTFOLIOCLASSS_404778.enabled, 'VA_PORTFOLIOCLASSS_404778', 'G_RATESMODDD_536778', 'Rates.portfolioClass',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_PORTFOLIOCLASSS_404778')" [properties]="vc.viewState.VA_PORTFOLIOCLASSS_404778" [mode]="vc.mode" formControlName="portfolioClass" [dataSource]="vc.catalogs.VA_PORTFOLIOCLASSS_404778"> 
+       </cobis-dropdownlist> 
+      </cobis-groupbox> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_RATESMODLL_990778.enabled, 'G_RATESMODLL_990778', 'VC_RATESMODAL_789953')" *ngIf="isVisible('G_RATESMODLL_990778')" [properties]="vc.viewState.G_RATESMODLL_990778" [mode]="vc.mode"> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_RATESMOAAD_646778.enabled, 'G_RATESMOAAD_646778', 'G_RATESMODLL_990778', 'Rates',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('G_RATESMOAAD_646778',true)" [properties]="vc.viewState.G_RATESMOAAD_646778" [mode]="vc.mode" formGroupName="Rates"> 
+        <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_678778')" [properties]="vc.viewState.VA_VASIMPLELABELLL_678778"></cobis-textlabel>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_SIGNMINPDDMQZST_831778.enabled, 'VA_SIGNMINPDDMQZST_831778', 'G_RATESMOAAD_646778', 'Rates.signDefault',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_SIGNMINPDDMQZST_831778')" [properties]="vc.viewState.VA_SIGNMINPDDMQZST_831778" [mode]="vc.mode" formControlName="signDefault" [dataSource]="vc.catalogs.VA_SIGNMINPDDMQZST_831778" (onChange)="change($event,'VA_SIGNMINPDDMQZST_831778')"> 
+        </cobis-dropdownlist> 
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_VALUEDEAFULTCGE_547778.enabled, 'VA_VALUEDEAFULTCGE_547778', 'G_RATESMOAAD_646778', 'Rates.valueDeafult',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_VALUEDEAFULTCGE_547778')" [properties]="vc.viewState.VA_VALUEDEAFULTCGE_547778" [mode]="vc.mode" formControlName="valueDeafult" (onChange)="change($event,'VA_VALUEDEAFULTCGE_547778')"></cobis-numericinputbox> 
+        <cobis-spacer *ngIf="isVisible('Spacer2265')" [properties]="vc.viewState.Spacer2265"></cobis-spacer>
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_LOCKEDDEFAULTTT_935778.enabled, 'VA_LOCKEDDEFAULTTT_935778', 'G_RATESMOAAD_646778', 'Rates.lockedDefault',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_LOCKEDDEFAULTTT_935778')" [properties]="vc.viewState.VA_LOCKEDDEFAULTTT_935778" [mode]="vc.mode" formControlName="lockedDefault"></cobis-numericinputbox> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_RATESMOLAD_413778.enabled, 'G_RATESMOLAD_413778', 'G_RATESMODLL_990778', 'Rates',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('G_RATESMOLAD_413778',true)" [properties]="vc.viewState.G_RATESMOLAD_413778" [mode]="vc.mode" formGroupName="Rates"> 
+        <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_567778')" [properties]="vc.viewState.VA_VASIMPLELABELLL_567778"></cobis-textlabel>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_SIGNMINKUSGFZGN_277778.enabled, 'VA_SIGNMINKUSGFZGN_277778', 'G_RATESMOLAD_413778', 'Rates.signMin',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_SIGNMINKUSGFZGN_277778')" [properties]="vc.viewState.VA_SIGNMINKUSGFZGN_277778" [mode]="vc.mode" formControlName="signMin" [dataSource]="vc.catalogs.VA_SIGNMINKUSGFZGN_277778" (onChange)="change($event,'VA_SIGNMINKUSGFZGN_277778')"> 
+        </cobis-dropdownlist> 
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_VALUEMINGCHKTLJ_996778.enabled, 'VA_VALUEMINGCHKTLJ_996778', 'G_RATESMOLAD_413778', 'Rates.valueMin',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_VALUEMINGCHKTLJ_996778')" [properties]="vc.viewState.VA_VALUEMINGCHKTLJ_996778" [mode]="vc.mode" formControlName="valueMin" (onChange)="change($event,'VA_VALUEMINGCHKTLJ_996778')"></cobis-numericinputbox> 
+        <cobis-spacer *ngIf="isVisible('Spacer2928')" [properties]="vc.viewState.Spacer2928"></cobis-spacer>
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_LOCKEDMINOJZSTC_260778.enabled, 'VA_LOCKEDMINOJZSTC_260778', 'G_RATESMOLAD_413778', 'Rates.lockedMin',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_LOCKEDMINOJZSTC_260778')" [properties]="vc.viewState.VA_LOCKEDMINOJZSTC_260778" [mode]="vc.mode" formControlName="lockedMin"></cobis-numericinputbox> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_RATESMOADD_409778.enabled, 'G_RATESMOADD_409778', 'G_RATESMODLL_990778', 'Rates',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('G_RATESMOADD_409778',true)" [properties]="vc.viewState.G_RATESMOADD_409778" [mode]="vc.mode" formGroupName="Rates"> 
+        <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_236778')" [properties]="vc.viewState.VA_VASIMPLELABELLL_236778"></cobis-textlabel>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_SIGNMAXCQWMGYQB_195778.enabled, 'VA_SIGNMAXCQWMGYQB_195778', 'G_RATESMOADD_409778', 'Rates.signMax',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_SIGNMAXCQWMGYQB_195778')" [properties]="vc.viewState.VA_SIGNMAXCQWMGYQB_195778" [mode]="vc.mode" formControlName="signMax" [dataSource]="vc.catalogs.VA_SIGNMAXCQWMGYQB_195778" (onChange)="change($event,'VA_SIGNMAXCQWMGYQB_195778')"> 
+        </cobis-dropdownlist> 
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_VALUEMAXAXNIZZF_909778.enabled, 'VA_VALUEMAXAXNIZZF_909778', 'G_RATESMOADD_409778', 'Rates.valueMax',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_VALUEMAXAXNIZZF_909778')" [properties]="vc.viewState.VA_VALUEMAXAXNIZZF_909778" [mode]="vc.mode" formControlName="valueMax" (onChange)="change($event,'VA_VALUEMAXAXNIZZF_909778')"></cobis-numericinputbox> 
+        <cobis-spacer *ngIf="isVisible('Spacer2747')" [properties]="vc.viewState.Spacer2747"></cobis-spacer>
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_LOCKEDMAXEHQUHM_227778.enabled, 'VA_LOCKEDMAXEHQUHM_227778', 'G_RATESMOADD_409778', 'Rates.lockedMax',vc.viewState.T_RATESMODALKUB_953)" *ngIf="isVisible('VA_LOCKEDMAXEHQUHM_227778')" [properties]="vc.viewState.VA_LOCKEDMAXEHQUHM_227778" [mode]="vc.mode" formControlName="lockedMax"></cobis-numericinputbox> 
+       </cobis-groupbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TRATESMO_TU_.enabled,'CM_TRATESMO_TU_')" *ngIf="isVisible('CM_TRATESMO_TU_')" [properties]="vc.viewState.CM_TRATESMO_TU_" [mode]="vc.mode" (onClick)="executeCommand('CM_TRATESMO_TU_',vc.viewState.CM_TRATESMO_TU_.name,vc.viewState.CM_TRATESMO_TU_.causesValidation,vc.viewState.CM_TRATESMO_TU_.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TRATESMO_AUS.enabled,'CM_TRATESMO_AUS')" *ngIf="isVisible('CM_TRATESMO_AUS')" [properties]="vc.viewState.CM_TRATESMO_AUS" [mode]="vc.mode" (onClick)="executeCommand('CM_TRATESMO_AUS',vc.viewState.CM_TRATESMO_AUS.name,vc.viewState.CM_TRATESMO_AUS.causesValidation,vc.viewState.CM_TRATESMO_AUS.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

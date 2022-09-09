@@ -1,0 +1,38 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-prioritieseny-489 " [formGroup]="vc.viewState.T_PRIORITIESENY_489"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_PRIORITIOM_989489.enabled, 'VC_PRIORITIOM_989489')" [properties]="vc.viewState.VC_PRIORITIOM_989489" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PRIORITTMS_845545.enabled, 'G_PRIORITTMS_845545', 'VC_PRIORITIOM_989489', 'Priorities',vc.viewState.T_PRIORITIESENY_489)" *ngIf="isVisible('G_PRIORITTMS_845545',true)" [properties]="vc.viewState.G_PRIORITTMS_845545" [mode]="vc.mode" formGroupName="Priorities"> 
+       <cobis-grid #QV_3510_83627_Grid [properties]="vc.viewState.QV_3510_83627" [mode]="vc.mode" [formGroupGrid]="vc.model.PrioritiesRowData.formGroup" [dataSource]="vc.model.Priorities" [model]="vc.model" (gridInitDetailTemplate)="gridInitDetailTemplate($event)" (showGridRowDetailIcon)="showGridRowDetailIcon($event)" (gridInitColumnTemplate)="gridInitColumnTemplate($event)" (gridInitEditColumnTemplate)="gridInitEditColumnTemplate($event)" (onSaveRow)="gridSaveRow($event)" (onRowSelecting)="gridRowSelecting($event)"> 
+        <!--Start Column item --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXTPG_996545'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ dataItem[column.field] }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXTPG_996545'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-textlabel [properties]="columnItem.properties" [model]="formGroup.get(column.field).value" [frmControl]="formGroup.get(column.field)"></cobis-textlabel> 
+        </ng-template> 
+        <!--Start Column priority --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXCHD_352545'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXCHD_352545'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+        </ng-template> 
+       </cobis-grid> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TPRIORIT_TTT.enabled,'CM_TPRIORIT_TTT')" *ngIf="isVisible('CM_TPRIORIT_TTT')" [properties]="vc.viewState.CM_TPRIORIT_TTT" [mode]="vc.mode" (onClick)="executeCommand('CM_TPRIORIT_TTT',vc.viewState.CM_TPRIORIT_TTT.name,vc.viewState.CM_TPRIORIT_TTT.causesValidation,vc.viewState.CM_TPRIORIT_TTT.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TPRIORIT_I8N.enabled,'CM_TPRIORIT_I8N')" *ngIf="isVisible('CM_TPRIORIT_I8N')" [properties]="vc.viewState.CM_TPRIORIT_I8N" [mode]="vc.mode" (onClick)="executeCommand('CM_TPRIORIT_I8N',vc.viewState.CM_TPRIORIT_I8N.name,vc.viewState.CM_TPRIORIT_I8N.causesValidation,vc.viewState.CM_TPRIORIT_I8N.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

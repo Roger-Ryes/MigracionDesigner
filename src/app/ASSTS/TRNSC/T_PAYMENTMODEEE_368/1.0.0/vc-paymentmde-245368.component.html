@@ -1,0 +1,52 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-paymentmodeee-368 " [formGroup]="vc.viewState.T_PAYMENTMODEEE_368"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_PAYMENTMDE_245368.enabled, 'VC_PAYMENTMDE_245368')" [properties]="vc.viewState.VC_PAYMENTMDE_245368" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTMEE_184216.enabled, 'G_PAYMENTMEE_184216', 'VC_PAYMENTMDE_245368')" *ngIf="isVisible('G_PAYMENTMEE_184216')" [properties]="vc.viewState.G_PAYMENTMEE_184216" [mode]="vc.mode"> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTEME_565216.enabled, 'G_PAYMENTEME_565216', 'G_PAYMENTMEE_184216', 'DisbursementResult',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('G_PAYMENTEME_565216',true)" [properties]="vc.viewState.G_PAYMENTEME_565216" [mode]="vc.mode" formGroupName="DisbursementResult"> 
+        <cobis-textlabel *ngIf="isVisible('VA_SUMTOTALIXKGRMZ_574216')" [properties]="vc.viewState.VA_SUMTOTALIXKGRMZ_574216" formControlName="sumTotal"></cobis-textlabel> 
+        <cobis-textlabel *ngIf="isVisible('VA_DIFFERENCELFJSU_881216')" [properties]="vc.viewState.VA_DIFFERENCELFJSU_881216" formControlName="difference"></cobis-textlabel> 
+       </cobis-groupbox> 
+      </cobis-groupbox> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTDEM_994216.enabled, 'G_PAYMENTDEM_994216', 'VC_PAYMENTMDE_245368', 'PaymentForm',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('G_PAYMENTDEM_994216',true)" [properties]="vc.viewState.G_PAYMENTDEM_994216" [mode]="vc.mode" formGroupName="PaymentForm"> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_4212YIFTVBCOPPD_140216.enabled, 'VA_4212YIFTVBCOPPD_140216', 'G_PAYMENTDEM_994216', 'PaymentForm.currencyId',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_4212YIFTVBCOPPD_140216')" [properties]="vc.viewState.VA_4212YIFTVBCOPPD_140216" [mode]="vc.mode" formControlName="currencyId" [dataSource]="vc.catalogs.VA_4212YIFTVBCOPPD_140216" (onChange)="change($event,'VA_4212YIFTVBCOPPD_140216')"> 
+       </cobis-dropdownlist> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_8983QPJHQZZOSML_321216.enabled, 'VA_8983QPJHQZZOSML_321216', 'G_PAYMENTDEM_994216', 'PaymentForm.payAmount',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_8983QPJHQZZOSML_321216')" [properties]="vc.viewState.VA_8983QPJHQZZOSML_321216" [mode]="vc.mode" formControlName="payAmount" (onChange)="change($event,'VA_8983QPJHQZZOSML_321216')"></cobis-numericinputbox>
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_AMOUNTTROZKVYME_221216.enabled, 'VA_AMOUNTTROZKVYME_221216', 'G_PAYMENTDEM_994216', 'PaymentForm.amountTr',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_AMOUNTTROZKVYME_221216')" [properties]="vc.viewState.VA_AMOUNTTROZKVYME_221216" [mode]="vc.mode" formControlName="amountTr" (onChange)="change($event,'VA_AMOUNTTROZKVYME_221216')"></cobis-numericinputbox> 
+      </cobis-groupbox> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTOOM_242216.enabled, 'G_PAYMENTOOM_242216', 'VC_PAYMENTMDE_245368', 'PaymentForm',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('G_PAYMENTOOM_242216',true)" [properties]="vc.viewState.G_PAYMENTOOM_242216" [mode]="vc.mode" formGroupName="PaymentForm"> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_QUOTATIONTRMFKT_807216.enabled, 'VA_QUOTATIONTRMFKT_807216', 'G_PAYMENTOOM_242216', 'PaymentForm.quotationTr',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_QUOTATIONTRMFKT_807216')" [properties]="vc.viewState.VA_QUOTATIONTRMFKT_807216" [mode]="vc.mode" formControlName="quotationTr"></cobis-numericinputbox>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_QUOTETYPETRDZXF_817216.enabled, 'VA_QUOTETYPETRDZXF_817216', 'G_PAYMENTOOM_242216', 'PaymentForm.quoteTypeTr',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_QUOTETYPETRDZXF_817216')" [properties]="vc.viewState.VA_QUOTETYPETRDZXF_817216" [mode]="vc.mode" formControlName="quoteTypeTr"></cobis-textinputbox>
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.Spacer2237.enabled, 'Spacer2237', 'G_PAYMENTOOM_242216', 'PaymentForm.officeId',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('Spacer2237')" [properties]="vc.viewState.Spacer2237" [mode]="vc.mode" formControlName="officeId" [dataSource]="vc.catalogs.Spacer2237"> 
+       </cobis-dropdownlist> 
+      </cobis-groupbox> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTODD_442216.enabled, 'G_PAYMENTODD_442216', 'VC_PAYMENTMDE_245368', 'PaymentForm',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('G_PAYMENTODD_442216',true)" [properties]="vc.viewState.G_PAYMENTODD_442216" [mode]="vc.mode" formGroupName="PaymentForm"> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.Spacer2675.enabled, 'Spacer2675', 'G_PAYMENTODD_442216', 'PaymentForm.payFormId',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('Spacer2675')" [properties]="vc.viewState.Spacer2675" [mode]="vc.mode" formControlName="payFormId" [dataSource]="vc.queries.Q_LISTOOGA_DP31" (onChange)="change($event,'Spacer2675')"> 
+       </cobis-dropdownlist> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_4894WDHQNMCYSAK_586216.enabled, 'VA_4894WDHQNMCYSAK_586216', 'G_PAYMENTODD_442216', 'PaymentForm.promoterTerm',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_4894WDHQNMCYSAK_586216')" [properties]="vc.viewState.VA_4894WDHQNMCYSAK_586216" [mode]="vc.mode" formControlName="promoterTerm"></cobis-numericinputbox>
+       <cobis-textinputbutton [attr.disabled]="isDisabled( vc.viewState.VA_6386FQVBTKCYFWG_461216.enabled, 'VA_6386FQVBTKCYFWG_461216', 'G_PAYMENTODD_442216', 'PaymentForm.clientFullName',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_6386FQVBTKCYFWG_461216')" [properties]="vc.viewState.VA_6386FQVBTKCYFWG_461216" [mode]="vc.mode" formControlName="clientFullName" (onClick)="textInputButtonEvent('VA_6386FQVBTKCYFWG_461216')" (onChange)="change($event,'VA_6386FQVBTKCYFWG_461216')"></cobis-textinputbutton> 
+       <cobis-textinputbutton [attr.disabled]="isDisabled( vc.viewState.VA_2481BBVZTGCBDCR_830216.enabled, 'VA_2481BBVZTGCBDCR_830216', 'G_PAYMENTODD_442216', 'PaymentForm.accountNumber',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('VA_2481BBVZTGCBDCR_830216')" [properties]="vc.viewState.VA_2481BBVZTGCBDCR_830216" [mode]="vc.mode" formControlName="accountNumber" (onClick)="textInputButtonEvent('VA_2481BBVZTGCBDCR_830216')" (onChange)="change($event,'VA_2481BBVZTGCBDCR_830216')" (onCustomInputRestriction)="customValidation($event,'VA_2481BBVZTGCBDCR_830216')"></cobis-textinputbutton> 
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.Spacer2254.enabled, 'Spacer2254', 'G_PAYMENTODD_442216', 'PaymentForm.concept',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('Spacer2254')" [properties]="vc.viewState.Spacer2254" [mode]="vc.mode" formControlName="concept"></cobis-textinputbox> 
+      </cobis-groupbox> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTMED_539216.enabled, 'G_PAYMENTMED_539216', 'VC_PAYMENTMDE_245368', 'PaymentForm',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('G_PAYMENTMED_539216',true)" [properties]="vc.viewState.G_PAYMENTMED_539216" [mode]="vc.mode" formGroupName="PaymentForm"> 
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.Spacer2495.enabled, 'Spacer2495', 'G_PAYMENTMED_539216', 'PaymentForm.checkNumber',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('Spacer2495')" [properties]="vc.viewState.Spacer2495" [mode]="vc.mode" formControlName="checkNumber"></cobis-textinputbox>
+       <cobis-checkbox [attr.disabled]="isDisabled( vc.viewState.Spacer2547.enabled, 'Spacer2547', 'G_PAYMENTMED_539216', 'PaymentForm.restrictiveCrossing',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('Spacer2547')" [properties]="vc.viewState.Spacer2547" [mode]="vc.mode" formControlName="restrictiveCrossing"></cobis-checkbox>
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.Spacer1695.enabled, 'Spacer1695', 'G_PAYMENTMED_539216', 'PaymentForm.economicDestination',vc.viewState.T_PAYMENTMODEEE_368)" *ngIf="isVisible('Spacer1695')" [properties]="vc.viewState.Spacer1695" [mode]="vc.mode" formControlName="economicDestination" [dataSource]="vc.catalogs.Spacer1695" (onChange)="change($event,'Spacer1695')"> 
+       </cobis-dropdownlist> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TPAYMENT_NS7.enabled,'CM_TPAYMENT_NS7')" *ngIf="isVisible('CM_TPAYMENT_NS7')" [properties]="vc.viewState.CM_TPAYMENT_NS7" [mode]="vc.mode" (onClick)="executeCommand('CM_TPAYMENT_NS7',vc.viewState.CM_TPAYMENT_NS7.name,vc.viewState.CM_TPAYMENT_NS7.causesValidation,vc.viewState.CM_TPAYMENT_NS7.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TPAYMENT_TEC.enabled,'CM_TPAYMENT_TEC')" *ngIf="isVisible('CM_TPAYMENT_TEC')" [properties]="vc.viewState.CM_TPAYMENT_TEC" [mode]="vc.mode" (onClick)="executeCommand('CM_TPAYMENT_TEC',vc.viewState.CM_TPAYMENT_TEC.name,vc.viewState.CM_TPAYMENT_TEC.causesValidation,vc.viewState.CM_TPAYMENT_TEC.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 
