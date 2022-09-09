@@ -1,0 +1,310 @@
+{
+	"filename": "D:\\TFS\\Principal\\tec-cca-backend\\spsql\\qrproduc.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_producto",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_linea_cre"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_categoria"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "4e77318e-1664-4f34-b618-c58b015ea3fd",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION",
+					"CATEGORIA",
+					"INSTRUMENTO"
+				],
+				"editMode": false,
+				"queryText": "select\r\n         \u0027PRODUCTO\u0027    = cp_producto,\r\n         \u0027DESCRIPCION\u0027 = substring(cp_descripcion,1,30),\r\n         \u0027RETENCION\u0027   = cp_retencion,\r\n         \u0027CATEGORIA\u0027   = cp_categoria,\r\n         \u0027INSTRUMENTO\u0027 = cp_pago_aut\r\n      from"
+			},
+			{
+				"_idQuery": "55d94054-9724-4e4f-9896-81209051f1e9",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION",
+					"CATEGORIA",
+					"NSTRUMENTO"
+				],
+				"editMode": false,
+				"queryText": "select\r\n         \u0027PRODUCTO\u0027    = cp_producto,\r\n         \u0027DESCRIPCION\u0027 = substring(cp_descripcion,1,30),\r\n         \u0027RETENCION\u0027   = cp_retencion,\r\n         \u0027CATEGORIA\u0027   = cp_pcobis,\r\n         \u0027NSTRUMENTO\u0027 = cp_pago_aut\r\n      from"
+			},
+			{
+				"_idQuery": "ac975e59-2de7-4f9b-b717-b0db9c3c4fdf",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION",
+					"CATEGORIA",
+					"P.COBIS"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = substring(cp_descripcion,1,30),\r\n      \u0027RETENCION\u0027   = cp_retencion,\r\n      \u0027CATEGORIA\u0027   = cp_categoria,\r\n      \u0027P.COBIS\u0027     = cp_pcobis\r\n   from"
+			},
+			{
+				"_idQuery": "072e4a38-58b5-484a-9bc6-5bae9e291e46",
+				"columns": [
+					"{UNDEFINED_COLUMNS:0}"
+				],
+				"editMode": false,
+				"queryText": "select * from"
+			},
+			{
+				"_idQuery": "ee081e73-cded-4e21-878a-7e74cd7e10f4",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = substring(cp_descripcion,1,30),\r\n      \u0027RETENCION\u0027   = cp_retencion\r\n   from"
+			},
+			{
+				"_idQuery": "f6c2a299-0a1f-44bb-af83-07128406fd31",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = subString(cp_descripcion,1,30),\r\n      \u0027RETENCION\u0027   = cp_retencion\r\n   from"
+			},
+			{
+				"_idQuery": "0b4d8225-8371-4741-b64d-e2667c846f00",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION"
+				],
+				"editMode": false,
+				"queryText": "select\r\n   \u0027PRODUCTO\u0027    = cp_producto,\r\n   \u0027DESCRIPCION\u0027 = subString(cp_descripcion,1,30)\r\n   from"
+			},
+			{
+				"_idQuery": "76598c22-f669-4bb9-9eb2-54c145671312",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = subString(cp_descripcion,1,30),\r\n      \u0027RETENCION\u0027   = cp_retencion\r\n   from"
+			},
+			{
+				"_idQuery": "5567876d-1591-4cff-8585-ff9fb54e23b5",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = subString(cp_descripcion,1,30),\r\n      \u0027RETENCION\u0027   = cp_retencion\r\n   from"
+			},
+			{
+				"_idQuery": "c29459ad-772c-4510-8679-4eef87a3934d",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = subString(cp_descripcion,1,30)\r\n   from"
+			},
+			{
+				"_idQuery": "72cb4bac-4ced-487d-855e-ae8f495a6a4e",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION",
+					"CATEGORIA",
+					"P.COBIS"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = substring(cp_descripcion,1,30),\r\n      \u0027RETENCION\u0027   = cp_retencion,\r\n      \u0027CATEGORIA\u0027   = cp_categoria,\r\n      \u0027P.COBIS\u0027     = cp_pcobis\r\n     from"
+			},
+			{
+				"_idQuery": "d91002e0-d80a-4856-a128-6d6541dbacf4",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = subString(cp_descripcion,1,30)\r\n     from"
+			},
+			{
+				"_idQuery": "8eb30cb2-79b3-4a23-824e-b6b72a980655",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      substring(cp_descripcion,1,30),\r\n      cp_categoria\r\n      from"
+			},
+			{
+				"_idQuery": "8d822101-68f3-48d6-a878-9327ec82a329",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      substring(cp_descripcion,1,30),\r\n      cp_categoria\r\n      from"
+			},
+			{
+				"_idQuery": "d0b34c9f-19cd-4ab9-b836-8f5aafa09d06",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n   substring(cp_descripcion,1,30),\r\n   cp_retencion,\r\n   cp_categoria,\r\n   cp_pcobis\r\n   from"
+			},
+			{
+				"_idQuery": "ca9ae0a7-1f13-4986-9f2f-272842b12b53",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": false,
+				"queryText": "select substring(cp_descripcion,1,30),\r\n          cp_retencion,\r\n          cp_categoria,\r\n          cp_pcobis\r\n     from"
+			},
+			{
+				"_idQuery": "1230a1f6-f318-4cc7-b488-f9e4a5e4d818",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select substring(cp_descripcion,1,30),cp_retencion\r\n   from"
+			},
+			{
+				"_idQuery": "d16cf6d9-8249-4441-af0a-d3ed49815f7d",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select substring(cp_descripcion,1,30),cp_retencion\r\n   from"
+			},
+			{
+				"_idQuery": "4d866a4a-1387-4e4f-91d1-8b3a5cb5008c",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select substring(cp_descripcion,1,30),cp_retencion\r\n   from"
+			},
+			{
+				"_idQuery": "bf8f1d30-2bc0-4d05-9704-d05208431eb4",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": false,
+				"queryText": "select substring(cp_descripcion,1,30),\r\n          cp_retencion,\r\n          cp_categoria,\r\n          cp_pcobis\r\n     from"
+			},
+			{
+				"_idQuery": "37873f91-a578-470e-b69c-e709bc7b0e25",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n   cp_producto,\r\n   substring(cp_descripcion,1,30),\r\n   cp_retencion,\r\n   cp_categoria,\r\n   cp_pcobis\r\n   from"
+			},
+			{
+				"_idQuery": "139da68e-a217-43d7-95fc-f9f1a734f240",
+				"columns": [
+					"{UNDEFINED_COLUMNS:0}"
+				],
+				"editMode": false,
+				"queryText": "select * from"
+			},
+			{
+				"_idQuery": "057d8243-5daa-4cfa-affe-71345cdb071b",
+				"columns": [
+					"PRODUCTO",
+					"DESCRIPCION",
+					"RETENCION",
+					"MONEDA"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027PRODUCTO\u0027    = cp_producto,\r\n      \u0027DESCRIPCION\u0027 = substring(cp_descripcion,1,30),\r\n      \u0027RETENCION\u0027   = cp_retencion,\r\n      \u0027MONEDA\u0027      = cp_moneda\r\n   from"
+			},
+			{
+				"_idQuery": "300b10dc-4cbd-457e-aaa4-c60488c9b4fc",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select substring(cp_descripcion,1,30)\r\n   from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_naturaleza"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_opi"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_estados",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado_ini"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_categoria"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "07acbc26-bda4-4f84-8ba9-86a0c6bee1a6",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21946"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		},
+		{
+			"attributeId": "AT91_SECUENIC267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_linea",
+			"type": "CUSTOM",
+			"value": "linea"
+		}
+	],
+	"name": "BLI_ValidationEconomicGroup",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9510_bli_validationeconomicgroup",
+	"patternName": "BLI_ValidationEconomicGroup",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "6c2ba660-8297-4d46-9fef-7128eeafac91",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 8,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "6c2ba660-8297-4d46-9fef-7128eeafac91",
+			"columns": [
+				{
+					"attributeId": "AT63_RESULTMM825",
+					"entityId": "EN_VALIDATON_825",
+					"format": "",
+					"name": "grupo",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_VALIDATON_825",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ValidationGroup"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_lin_grupo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

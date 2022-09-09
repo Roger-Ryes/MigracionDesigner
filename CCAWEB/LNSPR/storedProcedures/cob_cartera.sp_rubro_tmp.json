@@ -1,0 +1,1020 @@
+{
+	"filename": "C:\\Users\\jquitora\\Documents\\SP\\sp_rubro_tmp.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_rubro_tmp",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacionca"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_rubro"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_fpago"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_prioridad"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_paga_mora"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_provisiona"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_factor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_referencial"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo_reajuste"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_factor_reajuste"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_referencial_reajuste"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_gracia"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_base_calculo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_financiado"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_carga_financiera"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tir"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_reest"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa_maxima"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa_minima"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_aseguradora"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_seguro"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_desempar"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_limite"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_actualiza_opactiva"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "daea916f-510d-4094-8367-5af9718da0a3",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select pa_char from"
+			},
+			{
+				"_idQuery": "da16d6f2-e9c0-46ed-af62-e7ef2ddce78d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select pa_char from"
+			},
+			{
+				"_idQuery": "7b68c75f-4b0b-44bc-b443-f36ba7a4c801",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select pa_char\n                      from"
+			},
+			{
+				"_idQuery": "89fff97b-b301-4354-a0a8-1f00dc3293dd",
+				"columns": [
+					"Concepto",
+					"Tipo",
+					"Forma Pago",
+					"Signo",
+					"Factor",
+					"Referencial",
+					"Signo Reajuste",
+					"Factor Reajuste",
+					"Refe.Reajuste",
+					"Valor",
+					"Porcentaje",
+					"Gracia",
+					"Prioridad",
+					"Base Calculo",
+					"Financia",
+					"Carga Financiera"
+				],
+				"editMode": false,
+				"queryText": "select \"Concepto\"        = rot_concepto,\n          \"Tipo\"            = rot_tipo_rubro,\n          \"Forma Pago\"      = rot_fpago,\n          \"Signo\"           = rot_signo,\n          \"Factor\"          = rot_factor,\n          \"Referencial\"     = rot_referencial,\n          \"Signo Reajuste\"  = rot_signo_reajuste,\n          \"Factor Reajuste\" = rot_factor_reajuste,\n          \"Refe.Reajuste\"   = rot_referencial_reajuste,\n          \"Valor\"           = rot_valor,\n          \"Porcentaje\"      = rot_porcentaje,\n          \"Gracia\"          = rot_gracia,\n          \"Prioridad\"       = rot_prioridad,\n          \"Base Calculo\"    = rot_base_calculo,\n\t  \"Financia\"\t    = rot_financia,\n          \"Carga Financiera\" = rot_carga_financiera\n     from"
+			},
+			{
+				"_idQuery": "11250c37-65bf-4555-9846-7d2991deac43",
+				"columns": [
+					"Concepto",
+					"Tipo",
+					"Forma Pago",
+					"Signo",
+					"Factor",
+					"Referencial",
+					"Signo Reajuste",
+					"Factor Reajuste",
+					"Refe.Reajuste",
+					"Valor",
+					"Porcentaje",
+					"Gracia",
+					"Prioridad",
+					"Base Calculo",
+					"Financia",
+					"Carga Financiera"
+				],
+				"editMode": false,
+				"queryText": "select \"Concepto\"        = rot_concepto,\n          \"Tipo\"            = rot_tipo_rubro,\n          \"Forma Pago\"      = rot_fpago,\n          \"Signo\"           = rot_signo,\n          \"Factor\"          = rot_factor,\n          \"Referencial\"     = rot_referencial,\n          \"Signo Reajuste\"  = rot_signo_reajuste,\n          \"Factor Reajuste\" = rot_factor_reajuste,\n          \"Refe.Reajuste\"   = rot_referencial_reajuste,\n          \"Valor\"           = rot_valor,\n          \"Porcentaje\"      = rot_porcentaje,\n          \"Gracia\"          = rot_gracia,\n          \"Prioridad\"       = rot_prioridad,\n          \"Base Calculo\"    = rot_base_calculo,\n\t  \"Financia\"\t    = rot_financia,\n          \"Carga Financiera\" = rot_carga_financiera\n     from"
+			},
+			{
+				"_idQuery": "afde4a0c-be9a-45d1-86f0-26786cbb5ec4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select substring(co_descripcion,1,30)\n                                 from"
+			},
+			{
+				"_idQuery": "873e538e-1b34-423b-84fd-7637d6370c71",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n\t\t\t\t\t from"
+			},
+			{
+				"_idQuery": "406999a6-0ea9-4c8f-9a1a-4c3ee43f92a6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n\t\t\t\t\t from"
+			},
+			{
+				"_idQuery": "792b6452-35ec-4161-8cb1-3858db8caa9d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n\t\t\t\t\t from"
+			},
+			{
+				"_idQuery": "82654f81-0a91-41d9-a050-dbe3ca62ab04",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n\t\t\t\t\t from"
+			},
+			{
+				"_idQuery": "78b5f934-1f17-452a-bdab-658ad7da63c2",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}",
+					"{22}",
+					"{23}",
+					"{24}",
+					"{25}",
+					"{26}",
+					"{27}",
+					"{28}",
+					"{29}",
+					"{30}",
+					"{31}",
+					"{32}",
+					"{33}",
+					"{34}",
+					"{35}",
+					"{36}"
+				],
+				"editMode": false,
+				"queryText": "select\n\t@w_concepto,          @w_descripcion,           @w_tipo_valor,\n\t@w_desc_tipo,         @w_provisiona,            @w_prioridad,\n\t@w_deb_automatico,    @w_referencial,           @w_desc_referencial,\n\t@w_signo_default,     @w_valor_default,         @w_signo_maximo,\n\t@w_valor_maximo,      @w_signo_minimo,          @w_valor_minimo,\n\t@w_valor_referencial, @w_total_default,         @w_total_maximo,\n\t@w_total_minimo,      @w_reajuste,              @w_desc_reajuste,\n\t@w_referencial_reaj,  @w_desc_referencial_reaj, @w_signo_reaj,\n\t@w_valor_reaj,        @w_signo_maximo_reaj,     @w_valor_maximo_reaj,\n\t@w_signo_minimo_reaj, @w_valor_minimo_reaj,     @w_valor_referencial_reaj,\n\t@w_total_reaj,        @w_total_maximo_reaj,     @w_total_minimo_reaj,\n\t@w_financia,          @w_carga_financiera,\n\t@w_tipo_rubro,\n\t@w_modifica"
+			},
+			{
+				"_idQuery": "4c774f90-0e1c-4c9b-9e78-d0ea87634161",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"21",
+					"22",
+					"23",
+					"24",
+					"25",
+					"26",
+					"27",
+					"28",
+					"29",
+					"30",
+					"31",
+					"32",
+					"33",
+					"34",
+					"35",
+					"36",
+					"37",
+					"38",
+					"39",
+					"40",
+					"41"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "float",
+				"name": "@w_acumulado"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_anterior"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_anticipado_int"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco_red"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_base_calculo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_carga_financiera"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_cheques"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_ciudad"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_clase"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave2"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_cod_capital"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_concepto"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_cuenta"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota_am"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_anticipada"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota_capital_am"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota_capital"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_completa_ac"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_completa"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_fija"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_cuotas"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_deb_automatico"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_decimales"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_reajuste"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_referencial_reaj"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_referencial"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_tipo"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_destino"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_dia_pago"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dias_anio"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_dias_gracia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_plazo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_diciembre"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_est_no_vigente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_est_vigente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_exc_plz_max_sercust"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_extraord_cap"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_factor_reaj"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_factor_tir"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_factor"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_facturas"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_tasa_xsubs"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_tasa_xtcca"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_fecha_fija"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_fin"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_prox_pago"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_vig"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_financia"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_fpago"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_int_principal"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_lin_credito"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_maxrend_seg"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_modifica"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_red"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nem_producto"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_nombre_cliente"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_renovacion"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficina"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_paga_iva"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_paga_mora"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_pagares_lc"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_periodo_cap"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_periodo_int"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_periodo"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_periodos_gracia_int"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_periodos_gracia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_plazo_cfn"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_plz_servcust"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje_int"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje_real"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_precancelacion"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_prioridad"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_procesa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_provisiona"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_ptmo_especial"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajustable"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajuste_especial"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_reajuste_fecha"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajuste_intereses"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_reajuste_num"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_reajuste_periodo"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_reajuste"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_redescuento"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reduccion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_ref_reajuste"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_referencia"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_referencial_reaj"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_referencial"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_renovacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_rubro_rcm"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_sector"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial_ref"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_default"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_maximo_reaj"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_maximo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_minimo_reaj"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_minimo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_reaj"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_solo_capital"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_subsegmento"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_subsegmento2"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_cliente"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tdividendo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_amortizacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_carcfn"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_cca"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_cca2"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_r"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_rubro"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_val"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_valor"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion_red"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_default"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_maximo_reaj"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_maximo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_minimo_reaj"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_minimo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_reaj"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_tp_factor"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tperiodo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_tplazo_factor"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tplazo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_trash"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_valor_calculo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_default"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_maximo_reaj"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_maximo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_minimo_reaj"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_minimo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_reaj"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_referencial_reaj"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_referencial"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_rubro"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vr_valor"
+			}
+		]
+	}
+}

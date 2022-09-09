@@ -1,0 +1,108 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		},
+		{
+			"attributeId": "AT59_CHANNELL386",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fpago",
+			"type": "CUSTOM",
+			"value": "channel"
+		},
+		{
+			"attributeId": "AT74_DATEAJDL386",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha",
+			"type": "CUSTOM",
+			"value": "date"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77655"
+		}
+	],
+	"name": "BLI_Search_Conciliations",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3841_bli_search_conciliations",
+	"patternName": "BLI_Search_Conciliations",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "0ed2fae9-3001-43dd-9ee6-30b29fcebf31",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 6,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "0ed2fae9-3001-43dd-9ee6-30b29fcebf31",
+			"columns": [
+				{
+					"attributeId": "AT41_CONCILAA177",
+					"entityId": "EN_CONCILIIN_177",
+					"format": "",
+					"name": "Conciliacion",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_DESCYTYH177",
+					"entityId": "EN_CONCILIIN_177",
+					"format": "",
+					"name": "Descripcion",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CONCILIIN_177",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ConciliationsList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_conciliacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

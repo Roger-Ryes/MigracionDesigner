@@ -1,0 +1,215 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_LISTOOGA_DP31_284",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_LISTOOGA_DP31",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_LISTAAPOA_604",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_LISTAAPOA_604/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/TRNSC/Queries/Q_LISTOOGA_DP31/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "retencion",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT41_RETENCNO604"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LISTO13PDA195_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "tipoOperacion",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT97_TIPOOPNN604"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LISTO3DPDO170_01",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "pCobis",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT95_PCOBISFW604"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTOA1AO1120_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "moneda",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT60_MONEDAMK604"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LISTOD1DOP568_02",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "tipo",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT20_TIPOZQSO604"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LISTOOA1AD230_03",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "descripcion",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT25_DESCRICI604"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTOPD1PG679_02",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "atx",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT58_ATXXKOKD604"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LISTOPG3A3545_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "producto",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAAPOA_604.json#/attributes/AT60_PRODUCTT604"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTOPPGAD356_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC"
+			}
+		}
+	]
+}

@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_REFINAOS_1949",
+		"controlName": "RefinancedLoansQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_REFINAOS_1949.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_1949_60600",
+		"controlName": "QV_1949_60600",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoans",
+		"eventsType": "queryViewEventType"
+	}
+]

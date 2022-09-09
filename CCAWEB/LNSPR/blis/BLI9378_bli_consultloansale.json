@@ -1,0 +1,192 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77688"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "sec"
+		}
+	],
+	"name": "BLI_ConsultLoanSale",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9378_bli_consultloansale",
+	"patternName": "BLI_ConsultLoanSale",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "0250a2b3-eee0-4dba-ac8a-c71681392895",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select \u0027Secuencial\u0027 = ve_secuencial,\r\n          \u0027Fecha\u0027      = ve_fecha,\r\n          \u0027Empresa\u0027    = @w_desc_empresa,\r\n          \u0027Estado\u0027     = ve_estado,\r\n          \u0027Archivo\u0027    = ve_archivo,\r\n          \u0027Usuario\u0027    = ve_usuario\r\n   from"
+		},
+		{
+			"_idQuery": "3ff8d697-3bfd-4771-af9c-23ca3aaaa3b6",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "select \u0027Operacion\u0027   = vd_banco,\r\n          \u0027Estado\u0027      = vd_estado,\r\n          \u0027Error\u0027       = vd_error,\r\n          \u0027Descripcion\u0027 = vd_comentario\r\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "0250a2b3-eee0-4dba-ac8a-c71681392895",
+			"columns": [
+				{
+					"attributeId": "AT11_SEQUENAL189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Secuencial",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_DATENBMJ189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Fecha",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_COMPANYY189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Empresa",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_STATESLK189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Estado",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_ERRORMKH189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Archivo",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_USERCCHU189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Usuario",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		},
+		{
+			"_idQuery": "3ff8d697-3bfd-4771-af9c-23ca3aaaa3b6",
+			"columns": [
+				{
+					"attributeId": "AT82_OPERATOO395",
+					"entityId": "EN_LOANSALAD_395",
+					"format": "",
+					"name": "Operacion",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_STATEQXU395",
+					"entityId": "EN_LOANSALAD_395",
+					"format": "",
+					"name": "Estado",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_ERRORWCZ395",
+					"entityId": "EN_LOANSALAD_395",
+					"format": "",
+					"name": "Error",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_ERRORDIT395",
+					"entityId": "EN_LOANSALAD_395",
+					"format": "",
+					"name": "Descripcion",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_DATESAEL395",
+					"entityId": "EN_LOANSALAD_395",
+					"format": "",
+					"name": "FechaVenta",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANSALAD_395",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoanSaleDetailList"
+		},
+		{
+			"entityId": "EN_LOANSALDH_189",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoanSaleList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_venta_castiga",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

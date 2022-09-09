@@ -1,0 +1,148 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LINELAAN_WU84",
+		"controlName": "LineGuaranteesAssociatedListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_LINELAAN_WU84.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LineGuaranteesAssociatedList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LINERLAR_KA20",
+		"controlName": "LineGuaranteesListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_LINERLAR_KA20.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LineGuaranteesList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_KB20_UZG21",
+		"controlName": "QV_KB20_UZG21",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "LineGuaranteesList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_ZZ84_YVC22",
+		"controlName": "QV_ZZ84_YVC22",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "LineGuaranteesAssociatedList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "client",
+		"controlId": "VA_1SNQSNEUKHHSXYG_701308",
+		"controlName": "client",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLineGuarantee",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "guaranteeType",
+		"controlId": "VA_3IGDRVHQOABVMRS_328308",
+		"controlName": "guaranteeType",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLineGuarantee",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONUIUNGEV_823308",
+		"controlName": "VA_VABUTTONUIUNGEV_823308",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLineGuarantee",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONZLYUQVN_789308",
+		"controlName": "VA_VABUTTONZLYUQVN_789308",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoansLineGuarantee",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSLINER_641705",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

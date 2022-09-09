@@ -1,0 +1,879 @@
+{
+	"filename": "C:\\SWSetup\\Conversor_SP_JSON-SP\\sp\\sp_linea.sp",
+	"procedure": {
+		"database": "cob_credito",
+		"name": "sp_linea",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_numero"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_num_banco"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_grupo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_original"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_aprob"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_inicio"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_per_revision"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_vto"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dias"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_condicion_especial"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_rotativa"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_riesgo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_lin_anterior"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tplazo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_plazos"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_sector"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_naturaleza"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_observaciones"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_numero"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_li_num_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_dias"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "out",
+				"name": "@o_fecha_vto"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_tramite"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ciudad"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_op_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_linea"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_manual"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desde_can"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "d75d9040-1b05-4641-a177-2a0497b2e2db",
+				"columns": [
+					"Nro.Cupo",
+					"Secuencial Cupo",
+					"Oficina",
+					"Cliente",
+					"Nombre",
+					"Fecha Aprobacion",
+					"Fecha Vto.",
+					"Monto",
+					"{8}"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n\t   \u0027Nro.Cupo\u0027 = @w_num_banco,\r\n\t   \u0027Secuencial Cupo\u0027 = @w_numero,\r\n\t   \u0027Oficina\u0027 = @w_oficina,\r\n       \u0027Cliente\u0027 = @w_cliente,\r\n       \u0027Nombre\u0027 = @w_cli_nombre,\r\n        \u0027Fecha Aprobacion\u0027 = @w_fecha_aprob,\r\n        \u0027Fecha Vto.\u0027 = convert(char(10),@w_fecha_vto,103),\r\n  \t\t\u0027Monto \u0027 = @w_monto,\r\n\t\t\u0027Moneda\u0027"
+			},
+			{
+				"_idQuery": "8bdb3745-ceb6-4063-81a8-29b4b37065fd",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT mo_descripcion FROM"
+			},
+			{
+				"_idQuery": "d20064df-2950-4a34-b954-84dfec7a2707",
+				"columns": [
+					"Secuencial Cupo",
+					"Producto",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n       \u0027Secuencial Cupo\u0027 = om_linea,\r\n       \u0027Producto\u0027        = om_toperacion,\r\n       \u0027Moneda\u0027"
+			},
+			{
+				"_idQuery": "95a0cac3-b21f-477c-8918-89d47a57b5a4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT mo_descripcion FROM"
+			},
+			{
+				"_idQuery": "07fb24cb-7145-49fa-a75f-0db03d2abe4e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select reverse(substring(reverse(@w_char_secuencial),1,10))"
+			},
+			{
+				"_idQuery": "eb879782-338c-4aa8-8fc2-c409147406f9",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @o_numero"
+			},
+			{
+				"_idQuery": "450eff11-604e-4c45-8929-e667727e9f73",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select li_num_banco\r\n   from"
+			},
+			{
+				"_idQuery": "3c835879-f7cc-4583-911f-480f1c558000",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select li_num_banco\r\n        from"
+			},
+			{
+				"_idQuery": "22d15544-79be-4198-8284-a2aeeeb8b2e7",
+				"columns": [
+					"Numero Interno",
+					"Numero de Linea",
+					"Oficina",
+					"Nombre Oficina",
+					"Numero Tramite",
+					"Cliente",
+					"Nombre Cliente",
+					"Grupo",
+					"Nombre Grupo",
+					"Linea Original",
+					"Fecha Aprobacion",
+					"Fecha Inicio",
+					"Periodo Revision",
+					"Numero de Dias",
+					"Condiciones",
+					"Ultima Revision",
+					"Fecha Revision",
+					"Usuario Revision",
+					"Nombre Usuario",
+					"Fecha Vencimiento",
+					"Periodicidad",
+					"Monto",
+					"Moneda",
+					"Desc. Moneda",
+					"Utilizado",
+					"Rotativa",
+					"Calificacion",
+					"Riesgo",
+					"Linea Anterior"
+				],
+				"editMode": false,
+				"queryText": "select\t\u0027Numero Interno\u0027 \t= @w_numero,\r\n\t\t\u0027Numero de Linea\u0027 \t= @w_num_banco,\r\n\t\t\u0027Oficina\u0027 \t\t= @w_oficina,\r\n\t\t\u0027Nombre Oficina\u0027 \t= @w_desc_oficina,\r\n\t\t\u0027Numero Tramite\u0027 \t= @w_tramite,\r\n\t\t\u0027Cliente\u0027 \t\t= @w_cliente,\r\n\t\t\u0027Nombre Cliente\u0027 \t= @w_cli_nombre,\r\n\t\t\u0027Grupo\u0027 \t\t= @w_grupo,\r\n\t\t\u0027Nombre Grupo\u0027 \t\t= @w_gru_nombre,\r\n\t\t\u0027Linea Original\u0027 \t= @w_original,\r\n\t\t\u0027Fecha Aprobacion\u0027 \t= convert(char(10),@w_fecha_aprob,103),\r\n\t\t\u0027Fecha Inicio\u0027 \t\t= convert(char(10),@w_fecha_inicio,103),\r\n\t\t\u0027Periodo Revision\u0027 \t= @w_per_revision,\r\n\t\t\u0027Numero de Dias\u0027 \t= @w_dias,\r\n\t\t\u0027Condiciones\u0027 \t\t= @w_condicion,\r\n\t\t\u0027Ultima Revision\u0027 \t= convert(char(10),@w_ultima_rev,103),\r\n\t\t\u0027Fecha Revision\u0027 \t= convert(char(10),@w_prox_rev,103),\r\n\t\t\u0027Usuario Revision\u0027 \t= @w_usuario_rev,\r\n\t\t\u0027Nombre Usuario\u0027 \t= @w_nombre_rev,\r\n\t\t\u0027Fecha Vencimiento\u0027\t= convert(char(10), @w_fecha_vto, 103),\r\n\t\t\u0027Periodicidad\u0027\t\t= @w_desc_per_revision,\r\n\t\t\u0027Monto\u0027\t\t\t= @w_monto,\r\n\t\t\u0027Moneda\u0027\t\t= @w_moneda,\r\n\t\t\u0027Desc. Moneda\u0027\t\t= @w_desc_moneda,\r\n\t\t\u0027Utilizado\u0027\t\t= @w_utilizado,\r\n\t\t\u0027Rotativa\u0027\t\t= @w_rotativa,\r\n\t        \u0027Calificacion\u0027\t\t= @w_calif,\r\n                \u0027Riesgo\u0027\t\t= @w_ries,\r\n\t\t\u0027Linea Anterior\u0027\t= @w_lin_anterior"
+			},
+			{
+				"_idQuery": "51ac4d1a-7e42-441c-a175-c50a00b00cf7",
+				"columns": [
+					"secuencial"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "d3ba5ca0-67e3-4272-a1fc-36373bf7da2c",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "578561cf-1909-4635-a5bf-32b2f1e47eac",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+	{
+				"_idQuery": "8f567195-a5de-458a-9124-18287bb5465c",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "3458c3ea-c3c8-4b1d-a662-c07f38c6da78",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "b4e290b3-4046-4418-9f9a-e42a16f0adf8",
+				"columns": [
+					"Naturaleza",
+					"Nro Tramite",
+					"Secuencial",
+					"Codigo Linea",
+					"Estado",
+					"Oficina",
+					"Ciudad",
+					"Oficial",
+					"Cliente",
+					"Nombre Cliente",
+					"Moneda",
+					"Monto",
+					"Utilizado",
+					"Disponible",
+					"Rotativa",
+					"Sector",
+					"Fecha Inicio",
+					"Fecha Vencimiento",
+					"Nro Dias",
+					"Producto Linea",
+					"Observaciones"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@i_li_num_banco"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "money",
+				"name": "@i_reservado"
+			},
+			{
+				"dataType": "int",
+				"name": "@o_numero"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_aux_monto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_aux_utiliz"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_calif"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_calificacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cartera_cheques"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_char_oficina"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_char_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cli_nombre"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cobertura"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_condicion_especial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_condicion"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_moneda"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_oficina"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_per_revision"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_destino"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_facilidad"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dias"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_facilidad"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_factor"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_aprob"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_inicio"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_vto"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_gp_abierta"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_gp_clasificacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_gp_deudor"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_gp_est_garantia"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_gp_exceso"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_gp_facilidad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_gp_garantia"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_gp_monto_exceso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_gp_toperacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_gp_tramite"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_gru_nombre"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_grupo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_incluye_cuentas"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_incluye_visa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_li_estado"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_lin_anterior_int"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_lin_anterior"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_lin_tramite_ant"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_ant"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_fac_ant"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_fac_ant"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_flinea"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_subfacilidad"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_utilizado_cartera_lp"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_utilizado_facttitul"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_utilizado_nofacttitul"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_utilizado_op"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_utilizado_sob"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_utilizado_visa"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_montos_distribucion"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_nombre_rev"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_num_banco"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_num_lin_banco"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_numero"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficina"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_original"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_per_revision"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazos"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porc_entrada"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_prefijo"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_prox_rev"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_ries"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_riesgo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_rotativa_fac_ant"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_rotativa"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_segmento"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ssn"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion_veh"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tplazo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tra_renov"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_ultima_rev"
+			},
+			{
+				"dataType": "login",
+				"name": "@w_usuario_rev"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_utilizado_fac"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_utilizado"
+			}
+		]
+	}
+}

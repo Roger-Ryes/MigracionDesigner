@@ -1,0 +1,295 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_LOANPIPY_QP44_831",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_LOANPIPY_QP44",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_LOANPOLYI_750",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_LOANPOLYI_750/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/QERYS/Queries/Q_LOANPIPY_QP44/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "amountEndorsement",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT33_AMOUNTNR750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 14,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANP44PPP573_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fvalidityEnd",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT82_FVALIDNN750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANP4P444471_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "insurance",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT96_INSURANN750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPIII4Q179_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "description",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT63_DESCRIPN750"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LOANPIQ4IP868_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateEndorsement",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT24_DATEENNO750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPP44P4774_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statePolicy",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT65_STATEPCY750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPPP44P674_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "coverage",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT44_COVERAEG750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPPPPPI225_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "amountPolicy",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT74_AMOUNTOL750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPQ44QI933_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fendorsementEnd",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT73_FENDOREE750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 13,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPQ44YP701_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "policy",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT63_POLICYXA750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPY4Y44568_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fvalidityStart",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT63_FVALIDTY750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPYP4Y4852_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "codeExternal",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANPOLYI_750.json#/attributes/AT71_CODEEXNE750"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 12,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANPYQIYQ523_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS"
+			}
+		}
+	]
+}

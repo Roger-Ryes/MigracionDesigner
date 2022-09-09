@@ -1,0 +1,92 @@
+{
+	"_transient": null,
+	"attributes": {
+		"AT14_VALUEMZT694": {
+			"attributeId": "AT14_VALUEMZT694",
+			"columnName": null,
+			"dataType": "Double",
+			"entityPk": {
+				"entityId": "EN_LOANDEFFR_694",
+				"version": "1.0.0"
+			},
+			"label": {
+				"defaultValue": {
+					"$ref": "../assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DEVOLVERR_24242"
+				},
+				"labelId": "LBL_ASSTS_DEVOLVERR_24242",
+				"moduleId": "ASSTS"
+			},
+			"labelId": "LBL_ASSTS_DEVOLVERR_24242",
+			"length": 0,
+			"name": "value",
+			"order": 2,
+			"requiredStr": "F",
+			"sorter": "",
+			"value": false
+		},
+		"AT55_ITEMASKY694": {
+			"attributeId": "AT55_ITEMASKY694",
+			"columnName": null,
+			"dataType": "String",
+			"entityPk": {
+				"entityId": "EN_LOANDEFFR_694",
+				"version": "1.0.0"
+			},
+			"label": {
+				"defaultValue": {
+					"$ref": "../assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DESCRIPIN_18186"
+				},
+				"labelId": "LBL_ASSTS_DESCRIPIN_18186",
+				"moduleId": "ASSTS"
+			},
+			"labelId": "LBL_ASSTS_DESCRIPIN_18186",
+			"length": 0,
+			"name": "item",
+			"order": 1,
+			"requiredStr": "F",
+			"sorter": "",
+			"value": false
+		},
+		"AT87_INGRESSS694": {
+			"attributeId": "AT87_INGRESSS694",
+			"columnName": null,
+			"dataType": "Double",
+			"entityPk": {
+				"entityId": "EN_LOANDEFFR_694",
+				"version": "1.0.0"
+			},
+			"label": {
+				"defaultValue": {
+					"$ref": "../assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_INGRESOHM_26023"
+				},
+				"labelId": "LBL_ASSTS_INGRESOHM_26023",
+				"moduleId": "ASSTS"
+			},
+			"labelId": "LBL_ASSTS_INGRESOHM_26023",
+			"length": 0,
+			"name": "ingress",
+			"order": 3,
+			"requiredStr": "F",
+			"sorter": "",
+			"value": false
+		}
+	},
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"databaseName": null,
+	"dbmsName": null,
+	"description": null,
+	"id": {
+		"entityId": "EN_LOANDEFFR_694",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"moduleId": "ASSTS",
+	"name": {
+		"$ref": "../../ASSTS/relations/componentKeys.json#/Entities/EN_LOANDEFFR_694/name"
+	},
+	"related": false,
+	"tableName": null,
+	"transient": null
+}

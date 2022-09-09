@@ -1,0 +1,229 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_MEMBEESE_CY90_700",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+			],
+			"executionType": 1,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_MEMBEESE_CY90",
+		"version": "1.0.0"
+	},
+	"isAutomatic": true,
+	"isImported": false,
+	"mainEntityId": "EN_MEMBERSLV_216",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_MEMBERSLV_216/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_MEMBEESE_CY90/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "codLine",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT16_CODLINEE216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "4",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBE0EEEC616_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sequential",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT74_SECUENAI216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "3",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBE0YCE0270_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "observations",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT31_OBSERVAN216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "8",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBE90YYY705_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "available",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT87_DISPONEI216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "7",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBE9C9ES983_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "control",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT30_CONTROLL216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBE9Y9CS194_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "amount",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT81_MONTOSXY216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBE9YCE0121_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "used",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT13_UTILIZAD216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "6",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBEEECEE781_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "member",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT71_MIEMBROO216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBEEEEEE996_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "currency",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MEMBERSLV_216.json#/attributes/AT36_MONEDAKB216"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "5",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MEMBES99ES798_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

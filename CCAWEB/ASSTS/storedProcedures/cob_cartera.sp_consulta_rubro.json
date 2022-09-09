@@ -1,0 +1,426 @@
+{
+	"filename": "C:\\Users\\jramirez\\Desktop\\Titularizaci\ufffdn funcional\\Archivos SP\\sp_consulta_rubro.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_consulta_rubro",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_transaccion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_rubro"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_modo"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "cf826bf5-5758-41ca-a4c9-8837ebf7af0f",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}"
+				],
+				"editMode": false,
+				"queryText": "select ru_concepto,  co_descripcion, ru_referencial,\n                ru_prioridad, ru_provisiona, ru_tipo_rubro,\n          ru_financia, ru_carga_financiera\n           from"
+			},
+			{
+				"_idQuery": "ad61e628-fef1-4852-8ad6-06cf1de962b0",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}"
+				],
+				"editMode": false,
+				"queryText": "select ru_concepto,  co_descripcion, ru_referencial,\n                ru_prioridad, ru_provisiona, ru_tipo_rubro,\n          ru_financia, ru_carga_financiera\n           from"
+			},
+			{
+				"_idQuery": "a4f18674-6d84-4f7e-8401-fe6141e7c36e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n                                         from"
+			},
+			{
+				"_idQuery": "a974e61d-e94b-47f2-a3f2-e17589f585d9",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n                                     from"
+			},
+			{
+				"_idQuery": "2ecf3115-40d9-4ea4-96e9-5e0d58c1f4ae",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}"
+				],
+				"editMode": false,
+				"queryText": "select @w_concepto,     @w_descripcion1,      @w_descripcion2,\n                @w_descripcion3, @w_valor_referencial, @w_signo_default,\n                @w_valor_default,@w_total_default,     @w_total_minimo,\n                @w_total_maximo, @w_prioridad,         @w_provisiona,\n                @w_tipo_valor,   @w_tipo_rubro,        @w_financia,\n                @w_carga_financiera, @w_clase"
+			},
+			{
+				"_idQuery": "9a4d306e-c02a-4ef7-af10-10c29ea81ae7",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select distinct\n              ru_concepto, co_descripcion\n         from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@v_concepto"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@v_toperacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_anticipado_int"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_carga_financiera"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_clase"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_concepto"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_crear_siempre"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_decimales"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_t_rubro"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_v_calculo"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion1"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion2"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion3"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion4"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion5"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_est_cancelado"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_est_vigente"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_extraord_cap"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_hoy"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_tasa_sub"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_tasa_tc"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_financia"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_fpago"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_calculo"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_paga_mora"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_prioridad"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_provisiona"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_reajuste"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_referencial"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_sector"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_default"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_maximo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_minimo"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_subsegmento"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_cartera"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_rubro"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_valor"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_default"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_maximo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total_minimo"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tperiodo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_default"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_maximo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_minimo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_referencial"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor"
+			},
+			{
+				"dataType": "insensitive",
+				"name": "registro"
+			},
+			{
+				"dataType": "insensitive",
+				"name": "registro"
+			}
+		]
+	}
+}

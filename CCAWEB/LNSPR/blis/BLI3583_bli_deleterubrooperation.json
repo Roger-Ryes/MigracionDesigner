@@ -1,0 +1,85 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "AmortizationFormEntity"
+		},
+		{
+			"entityId": "EN_OPERATITT_499",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationItemsList"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		},
+		{
+			"attributeId": "AT60_OPERATOE802",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_operacionca",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT98_ITEMPYPK499",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATITT_499",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7094"
+		}
+	],
+	"name": "BLI_DeleteRubroOperation",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3583_bli_deleterubrooperation",
+	"patternName": "BLI_DeleteRubroOperation",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_rubro_tmp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

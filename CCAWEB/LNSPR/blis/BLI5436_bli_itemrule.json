@@ -1,0 +1,105 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "operation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "CUSTOM",
+			"value": "concept"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77671"
+		}
+	],
+	"name": "BLI_ItemRule",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5436_bli_itemrule",
+	"patternName": "BLI_ItemRule",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "68a05951-0c03-4837-ae60-75d4d7c220f2",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 2,
+			"queryName": "select \u0027Tipo\u0027          = null,\r\n      \u0027Descripcion\u0027    = null,\r\n      \u0027Clase\u0027          = null,\r\n      \u0027Referencia\u0027     = @w_regla_parametrizada,\r\n      \u0027Descripcion\u0027    = null,\r\n      \u0027VaorDefault\u0027    = @w_valor_rubro,\r\n      \u0027Signo_default\u0027  = null,\r\n      \u0027Total_default\u0027  = null,\r\n      \u0027Signo_minimo\u0027   = null,\r\n      \u0027Total_minimo\u0027   = null,\r\n      \u0027Signo_maximo\u0027   = null,\r\n      \u0027Total_maximo\u0027   = null,\r\n      \u0027Sector\u0027         = @w_sector,\r\n      \u0027Des_sector\u0027     = @w_des_sector,\r\n      \u0027Valor_rubro\u0027    = @w_valor_rubro,\r\n      \u0027Valor_maximo\u0027   =  null,\r\n      null,\r\n      null"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "68a05951-0c03-4837-ae60-75d4d7c220f2",
+			"columns": [
+				{
+					"attributeId": "AT14_REFERENE995",
+					"entityId": "EN_ITEMVALSE_995",
+					"format": "",
+					"name": "Referencia",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_REFEREVE995",
+					"entityId": "EN_ITEMVALSE_995",
+					"format": "",
+					"name": "VaorDefault",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_DEFAULLE995",
+					"entityId": "EN_ITEMVALSE_995",
+					"format": "",
+					"name": "Valor_rubro",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_ITEMVALSE_995",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ItemValues"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_regla_rubro",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

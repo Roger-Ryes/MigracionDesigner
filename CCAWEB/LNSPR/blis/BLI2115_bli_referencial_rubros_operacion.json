@@ -1,0 +1,135 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7125"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CUSTOM",
+			"value": "tipo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_sector",
+			"type": "CUSTOM",
+			"value": "sector"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_opcion",
+			"type": "CUSTOM",
+			"value": "opcion"
+		}
+	],
+	"name": "BLI_Referencial_Rubros_Operacion",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2115_bli_referencial_rubros_operacion",
+	"patternName": "BLI_Referencial_Rubros_Operacion",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "c872b8c8-db91-420a-ab8d-4cb081f13106",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "c872b8c8-db91-420a-ab8d-4cb081f13106",
+			"columns": [
+				{
+					"attributeId": "AT42_IDENTIEF754",
+					"entityId": "EN_REFERENTL_754",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_DESCRIPI754",
+					"entityId": "EN_REFERENTL_754",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_TYPEGZGY754",
+					"entityId": "EN_REFERENTL_754",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_PITYIUYX754",
+					"entityId": "EN_REFERENTL_754",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_REFERENTL_754",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ReferentialItems"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_valor",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

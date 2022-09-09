@@ -1,0 +1,3297 @@
+{
+	"ASSTS": [
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANINTCC_337",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI1131_bli_selectionloansintercycle",
+			"nameBli": "BLI_SelectionLoansIntercycle"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DEFERRESI_770",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_ITEMSLONA_118",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI1217_bli_consultdeferreditems",
+			"nameBli": "BLI_ConsultDeferredItems"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI1331_bli_pasotmp",
+			"nameBli": "BLI_PasoTmp"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI1396_bli_insertupdate_ranges",
+			"nameBli": "BLI_InsertUpdate_Ranges"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_2ZNYDYMCX_592",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_ITEMSLONA_118",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI1494_bli_amortization_table_web",
+			"nameBli": "BLI_Amortization_Table_Web"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_RATERANTS_219",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI1718_bli_search_raterange",
+			"nameBli": "BLI_Search_RateRange"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DETAILTCN_643",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI1873_bli_detailtransactions",
+			"nameBli": "BLI_DetailTransactions"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANITI_423",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI1996_bli_search_companiesdiscounts",
+			"nameBli": "BLI_Search_CompaniesDiscounts"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_AGGREGAIE_510",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2001_bli_aggregatedeferreditemscatalog",
+			"nameBli": "BLI_AggregateDeferredItemsCatalog"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2389_bli_update_companiesbatch",
+			"nameBli": "BLI_Update_CompaniesBatch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CONSOLITS_643",
+						"moduleId": "ASSTS"
+					},
+					{
+						"entityId": "EN_SUMMARYAT_170",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI2398_bli_consolidate_status",
+			"nameBli": "BLI_Consolidate_Status"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_BENEFICOR_713",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2518_bli_consultabeneficiariossegurooperacion",
+			"nameBli": "BLI_ConsultaBeneficiariosSeguroOperacion"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DETAILNEO_741",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2543_bli_detail_no_applied_payment",
+			"nameBli": "BLI_Detail_No_Applied_Payment"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANSEACI_824",
+						"moduleId": "ASSTS"
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANKYMRI_882",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI2812_bli_buscar_operaciones",
+			"nameBli": "BLI_Buscar_Operaciones"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANKYMRI_882",
+						"moduleId": "ASSTS"
+					},
+					{
+						"entityId": "EN_NEGOTIATI_654",
+						"moduleId": "ASSTS"
+					},
+					{
+						"entityId": "EN_PAYMENTZY_669",
+						"moduleId": "ASSTS"
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_2ZNYDYMCX_592",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_LOANPAYTN_182",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2814_bli_simulate",
+			"nameBli": "BLI_Simulate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_RESTRUCSN_605",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2886_bli_search_operations_restructuring",
+			"nameBli": "BLI_Search_Operations_Restructuring"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANKYMRI_882",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI2957_bli_datos_operacion",
+			"nameBli": "BLI_Datos_Operacion"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_AMORTIZTI_956",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_AMORTIZTO_416",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3052_bli_amortizationtable",
+			"nameBli": "BLI_AmortizationTable"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANPOLYI_750",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3164_bli_policy",
+			"nameBli": "BLI_Policy"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_816",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI3230_bli_borrartmp",
+			"nameBli": "BLI_BorrarTmp"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_AMORTIZIQ_340",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI3324_bli_detalle_amortizacion",
+			"nameBli": "BLI_Detalle_Amortizacion"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PRINTINDC_109",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI3419_bli_documentsprinting",
+			"nameBli": "BLI_DocumentsPrinting"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_FILTERTSC_512",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LISTTRAON_556",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3421_bli_transactionquery",
+			"nameBli": "BLI_TransactionQuery"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_USEDCATLA_577",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CATALOGVN_318",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3428_bli_catalog",
+			"nameBli": "BLI_Catalog"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CONDONAII_795",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI3440_bli_buscar_condonaciones",
+			"nameBli": "BLI_Buscar_Condonaciones"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANITEIL_824",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI3774_associateloanitems",
+			"nameBli": "AssociateLoanItems"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_14HHEOYJC_258",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3868_bli_condiciones_pago",
+			"nameBli": "BLI_Condiciones_Pago"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4235_bli_montos_pagos",
+			"nameBli": "BLI_Montos_Pagos"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4239_bli_actualizaoperaciones_grupales_hijas",
+			"nameBli": "BLI_ActualizaOperaciones_Grupales_Hijas"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_RATERANTS_219",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4417_bli_insertupdate_raterange",
+			"nameBli": "BLI_InsertUpdate_RateRange"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANCHINR_908",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4424_bli_selectionloanschildren",
+			"nameBli": "BLI_SelectionLoansChildren"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANGUAEE_670",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4666_bli_guaranteessurety",
+			"nameBli": "BLI_GuaranteesSurety"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_AGGREGAIE_510",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_AGGREGAIE_510",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4814_bli_searchaggregatedeferreditems",
+			"nameBli": "BLI_SearchAggregateDeferredItems"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_COMPANINS_178",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+					{
+						"entityId": "EN_COMPANINS_178",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4854_bli_validate_companiesbatchfile",
+			"nameBli": "BLI_Validate_CompaniesBatchFile"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_RULERDATT_835",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+					{
+						"entityId": "EN_RULERESUT_794",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4882_bli_executeruler",
+			"nameBli": "BLI_ExecuteRuler"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_COMPANILL_950",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4927_bli_companydelete",
+			"nameBli": "BLI_CompanyDelete"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OPERATIOE_197",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI5098_bli_rubros_tasas",
+			"nameBli": "BLI_Rubros_Tasas"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5156_bli_create_companiesbatch",
+			"nameBli": "BLI_Create_CompaniesBatch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANIHA_370",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5390_bli_seach_companiesbatch",
+			"nameBli": "BLI_Seach_CompaniesBatch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANIHA_370",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5390_bli_search_companiesbatch",
+			"nameBli": "BLI_Search_CompaniesBatch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5559_bli_consulta_cotizacion",
+			"nameBli": "BLI_Consulta_Cotizacion"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5570_bli_delete_companiesbatch",
+			"nameBli": "BLI_Delete_CompaniesBatch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANKYMRI_882",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI5598_bli_info_header",
+			"nameBli": "BLI_Info_Header"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_REFINANLC_582",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI5808_bli_search_refinancedloans",
+			"nameBli": "BLI_Search_RefinancedLoans"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANILL_950",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5860_bli_companiessearch",
+			"nameBli": "BLI_CompaniesSearch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_GENERALSR_979",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5915_bli_parametrosgeneralescartera",
+			"nameBli": "BLI_ParametrosGeneralesCartera"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANYEP_376",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6099_bli_companysearch",
+			"nameBli": "BLI_CompanySearch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LISTAESDS_959",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6148_bli_consulta_estados",
+			"nameBli": "BLI_Consulta_Estados"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_TYPETRAOI_816",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6156_bli_typetransactionquery",
+			"nameBli": "BLI_TypeTransactionQuery"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PROJECTNM_545",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ITEMSLONA_118",
+						"moduleId": "ASSTS"
+					},
+					{
+						"entityId": "EN_LISTPROSS_173",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_READJUSTP_721",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6215_bli_projectionreadjustment",
+			"nameBli": "BLI_ProjectionReadjustment"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_REVERSEDO_653",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6234_bli_reverttransactions",
+			"nameBli": "BLI_RevertTransactions"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANWARRY_642",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI6250_bli_garantias",
+			"nameBli": "BLI_Garantias"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI6252_bli_delete_ranges",
+			"nameBli": "BLI_Delete_Ranges"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PRIORITII_152",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI6347_bli_consulta_prioridad",
+			"nameBli": "BLI_Consulta_Prioridad"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANDEFFR_694",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6398_bli_consultdeferredrefund",
+			"nameBli": "BLI_ConsultDeferredRefund"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DETAILANC_439",
+						"moduleId": "ASSTS"
+					},
+					{
+						"entityId": "EN_DETAILPNN_835",
+						"moduleId": "ASSTS"
+					},
+					{
+						"entityId": "EN_LIQUIDATT_728",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI6583_bli_loan_disbursement_info",
+			"nameBli": "BLI_LOAN_DISBURSEMENT_INFO"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANILF_154",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6726_bli_search_companiesdiscountsfile",
+			"nameBli": "BLI_Search_CompaniesDiscountsFile"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DATAPASFI_669",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6752_bli_search_passive_portfolio",
+			"nameBli": "BLI_Search_Passive_Portfolio"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DEFERRESA_227",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6875_bli_consultdeferreditemsdetail",
+			"nameBli": "BLI_ConsultDeferredItemsDetail"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CONCEPTSS_476",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI7022_bli_conceptloanitems",
+			"nameBli": "BLI_ConceptLoanItems"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_COMPANYEP_376",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7308_bli_companycreate",
+			"nameBli": "BLI_CompanyCreate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_NOAPPLITN_882",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7317_bli_deletenoappliedpayment",
+			"nameBli": "BLI_DeleteNoAppliedPayment"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COLUMNSIV_435",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_COLUMNSIV_954",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_GENERALLA_491",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI7672_bli_general_information",
+			"nameBli": "BLI_General_Information"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+					{
+						"entityId": "EN_COMPANIDS_402",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_COMPANILF_154",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI7677_bli_process_companiesbatch",
+			"nameBli": "BLI_Process_CompaniesBatch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PAYMENTZY_669",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI7837_bli_abonos",
+			"nameBli": "BLI_Abonos"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANDEBTO_749",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI7963_bli_deudores",
+			"nameBli": "BLI_Deudores"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7997_bli_updateamortizationtable",
+			"nameBli": "BLI_UpdateAmortizationTable"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DETAILTIC_851",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8026_bli_detailtransactionquery",
+			"nameBli": "BLI_DetailTransactionQuery"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_TRANSACOA_147",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI8092_bli_loantransactionsearch",
+			"nameBli": "BLI_LoanTransactionSearch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_CHANGEPAD_908",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CHANGEPAD_908",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8220_bli_searchchangepayday",
+			"nameBli": "BLI_SearchChangePayDay"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANITEAS_980",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8349_bli_loanitemsvalues",
+			"nameBli": "BLI_LoanItemsValues"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DEFERRESI_770",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8403_bli_deferreditems",
+			"nameBli": "BLI_DeferredItems"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSYNST_476",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8531_bli_loansyndicatedlist",
+			"nameBli": "BLI_LoanSyndicatedList"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_REFINANLC_582",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI8592_bli_operaciones_renovadas",
+			"nameBli": "BLI_Operaciones_Renovadas"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_AGGREGAIE_510",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI8605_bli_paymentaggregatedeferreditems",
+			"nameBli": "BLI_PaymentAggregateDeferredItems"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINU_418",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OPERATINN_816",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8708_bli_getgroupcode",
+			"nameBli": "BLI_GetGroupCode"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANKYMRI_882",
+						"moduleId": "ASSTS"
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI8763_bli_valuedatetransaction",
+			"nameBli": "BLI_ValueDateTransaction"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_RESTRUCNR_396",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI8850_bli_create_restructuring",
+			"nameBli": "BLI_Create_Restructuring"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI8920_bli_search_onerank",
+			"nameBli": "BLI_Search_OneRank"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ACCOUNTCC_880",
+						"moduleId": "ASSTS",
+						"related": false
+					},
+					{
+						"entityId": "EN_ACCOUNTLI_514",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8940_bli_accountstatustec",
+			"nameBli": "BLI_AccountStatusTec"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_SEGUROSQK_316",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8971_bli_consultasegurosoperacion",
+			"nameBli": "BLI_ConsultaSegurosOperacion"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_NOAPPLITN_882",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9054_bli_no_applied_payments",
+			"nameBli": "BLI_No_Applied_Payments"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_NOAPPLITN_882",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI9071_bli_applynoappliedpayment",
+			"nameBli": "BLI_ApplyNoAppliedPayment"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANITEIL_824",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9092_bli_search_loanitems",
+			"nameBli": "BLI_Search_LoanItems"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PAYMENTTI_348",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI9147_bli_detalle_abono",
+			"nameBli": "BLI_Detalle_Abono"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_TWORANGIL_738",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9461_bli_search_tworanges",
+			"nameBli": "BLI_Search_TwoRanges"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ACTIVETIT_417",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9673_bli_activatetransactions",
+			"nameBli": "BLI_ActivateTransactions"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_RATERANTS_219",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI9719_bli_delete_raterange",
+			"nameBli": "BLI_Delete_RateRange"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANRATES_507",
+						"moduleId": "ASSTS"
+					}
+				]
+			},
+			"idBli": "BLI9831_bli_tasas",
+			"nameBli": "BLI_Tasas"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI9907_bli_desembolso_parcial",
+			"nameBli": "BLI_Desembolso_Parcial"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANKYMRI_882",
+						"moduleId": "ASSTS"
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_AMORTIZTO_619",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9908_bli_getamortizationtablebc",
+			"nameBli": "BLI_GetAmortizationTableBC"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CAUSATION_534",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9971_bli_causationtransactions",
+			"nameBli": "BLI_CausationTransactions"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_CHANGEPAD_908",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI9996_bli_insertchangepayday",
+			"nameBli": "BLI_InsertChangePayDay"
+		}
+	],
+	"LNSPR": [
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI1010_bli_proccess_paymentconciliation",
+			"nameBli": "BLI_Proccess_PaymentConciliation"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANSLIDE_580",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI1305_bli_loanlinecreate",
+			"nameBli": "BLI_LoanLineCreate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OFFICIALL_431",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI1343_bli_officialcatalog",
+			"nameBli": "BLI_OfficialCatalog"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PAYMENTIC_709",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI1418_bli_search_conciliationheader",
+			"nameBli": "BLI_Search_ConciliationHeader"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOCATIONN_235",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI1607_bli_locationcatalog",
+			"nameBli": "BLI_LocationCatalog"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PAYMENTOM_408",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI1671_bli_paymentautomaticcreate",
+			"nameBli": "BLI_PaymentAutomaticCreate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI1769_bli_updateamortizationtable",
+			"nameBli": "BLI_UpdateAmortizationTable"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANLINCT_267",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+					{
+						"entityId": "EN_LOANLINCT_267",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI1989_bli_createloanline",
+			"nameBli": "BLI_CreateLoanLine"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ITEMVALSE_995",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_REFERENTL_754",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2115_bli_referencial_rubros_operacion",
+			"nameBli": "BLI_Referencial_Rubros_Operacion"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_MODALTASS_500",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2261_bli_consultmodaltasa",
+			"nameBli": "BLI_ConsultModalTasa"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CONCEPTTE_520",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2370_bli_conceptos_rubros",
+			"nameBli": "BLI_Conceptos_Rubros"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+                                        	{
+						"entityId": "EN_MEMBERSLV_216",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI2411_bli_updatememberdistribution",
+			"nameBli": "BLI_UpdateMemberDistribution"
+		},
+                {
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSALDH_189",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2462_bli_searchloansale",
+			"nameBli": "BLI_SearchLoanSale"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_AMORTIZON_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI2785_bli_operationcalculate",
+			"nameBli": "BLI_OperationCalculate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PRODUCTII_203",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PRODUCTII_203",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2812_bli_search_line_nature",
+			"nameBli": "BLI_Search_Line_Nature"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OPERATIEL_780",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3100_bli_search_products_line",
+			"nameBli": "BLI_Search_Products_Line"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATIRD_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CUSTOMERR_876",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3550_bli_search_client",
+			"nameBli": "BLI_Search_Client"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_AMORTIZON_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_OPERATITT_499",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI3583_bli_deleterubrooperation",
+			"nameBli": "BLI_DeleteRubroOperation"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LINEGUAAE_244",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI3603_bli_deleteguaranteeassociate",
+			"nameBli": "BLI_DeleteGuaranteeAssociate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PRODUCTII_203",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI3635_bli_linedistributionadd",
+			"nameBli": "BLI_LineDistributionAdd"
+		},
+                {
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ERRORMASI_217",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3656_bli_savebatchpayment",
+			"nameBli": "BLI_SaveBatchPayment"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI3750_bli_pasotmp",
+			"nameBli": "BLI_Pasotmp"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CREATEOPN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3767_bli_operationcreateone",
+			"nameBli": "BLI_OperationCreateOne"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CONCILIIN_177",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI3841_bli_search_conciliations",
+			"nameBli": "BLI_Search_Conciliations"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ERRORMASI_217",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4026_bli_ingresar_pago_temp",
+			"nameBli": "BLI_Ingresar_Pago_Temp"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_STATESAEO_310",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4202_bli_loanstatus",
+			"nameBli": "BLI_LoanStatus"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_AMORTIZON_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_GENERALRE_262",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4205_bli_operationgeneralparametersupdate",
+			"nameBli": "BLI_OperationGeneralParametersUpdate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4233_bli_operationcreatedef",
+			"nameBli": "BLI_OperationCreateDef"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LINEGUAAE_244",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4278_bli_loanguaranteeassociatequery",
+			"nameBli": "BLI_LoanGuaranteeAssociateQuery"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PAYMENTCI_361",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4382_bli_search_conciliationdetail",
+			"nameBli": "BLI_Search_ConciliationDetail"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_SYNDICASL_725",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4520_bli_syndicated_clean",
+			"nameBli": "BLI_Syndicated_Clean"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_SUMMARYBB_620",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4400_bli_search_members",
+			"nameBli": "BLI_Search_Members"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_SUMMARYTU_369",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4636_bli_search_currentstatusline",
+			"nameBli": "BLI_Search_CurrentStatusLine"
+		},
+                {
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PRODUCTNN_604",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4641_bli_search_products_module",
+			"nameBli": "BLI_Search_Products_Module"
+		},
+                {
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_MEMBERDEL_536",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4754_bli_deletememberdistribution",
+			"nameBli": "BLI_DeleteMemberDistribution"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_DEBTORVWG_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI4878_bli_debtorcreate",
+			"nameBli": "BLI_DebtorCreate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_MASSIVEYM_999",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5015_bli_search_massive_payments",
+			"nameBli": "BLI_Search_Massive_Payments"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OFFICIAEF_453",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5144_bli_transfer_loans",
+			"nameBli": "BLI_Transfer_Loans"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_GROUPMENS_931",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5174_bli_search_groupmembers_line",
+			"nameBli": "BLI_Search_GroupMembers_Line"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANLINCT_267",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5235_bli_updateloanline",
+			"nameBli": "BLI_UpdateLoanLine"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_READJUSNN_654",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5241_bli_loansearchreajustes",
+			"nameBli": "BLI_LoanSearchReajustes"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_MASSIVEKM_279",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5377_bli_ingresar_cargos_temp",
+			"nameBli": "BLI_Ingresar_Cargos_Temp"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_READJUSTC_965",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5433_bli_reajuste_masivo",
+			"nameBli": "BLI_Reajuste_Masivo"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ITEMVALSE_995",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5436_bli_itemrule",
+			"nameBli": "BLI_ItemRule"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSLIDE_580",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5457_bli_loanlineclient",
+			"nameBli": "BLI_LoanLineClient"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PRODUCTGG_589",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5496_bli_buscarconceptofpago",
+			"nameBli": "BLI_BuscarConceptoFPago"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_DEBTORLIS_380",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5761_bli_debtorseach",
+			"nameBli": "BLI_DebtorSeach"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_GENERALIN_300",
+						"moduleId": "LNSPR"
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_GENERALIN_300",
+						"moduleId": "LNSPR"
+					}
+				]
+			},
+			"idBli": "BLI5829_bli_generalinformationquery",
+			"nameBli": "BLI_GeneralInformationQuery"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_RUBROMIHK_919",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5855_bli_consulta_rubro",
+			"nameBli": "BLI_Consulta_Rubro"
+		},
+                {
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_STATUSLII_845",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5889_bli_search_statuses",
+			"nameBli": "BLI_Search_Statuses"
+		},
+        	{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI6027_bli_cancel_massive_payments",
+			"nameBli": "BLI_Cancel_Massive_Payments"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PRODUCTII_203",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI6193_bli_update_line_distribution",
+			"nameBli": "BLI_Update_Line_Distribution"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PRODUCTIE_675",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5904_bli_search_line_distribution",
+			"nameBli": "BLI_Search_Line_Distribution"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PAYMENTLI_612",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI6056_bli_paymentautomaticdelete",
+			"nameBli": "BLI_PaymentAutomaticDelete"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANSALDH_189",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSALAD_395",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_LOANSALDH_189",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6267_bli_processloansale",
+			"nameBli": "BLI_ProcessLoanSale"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_SYNDICASL_725",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6333_bli_syndicatedlist",
+			"nameBli": "BLI_SyndicatedList"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_GENERICSZ_LNSPR",
+						"moduleId": "LNSPR"
+					},
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+					{
+						"entityId": "EN_GENERICSZ_LNSPR",
+						"moduleId": "LNSPR"
+					}
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CREATEOEO_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_CREATEOPN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6342_bli_operationcreate",
+			"nameBli": "BLI_OperationCreate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANSLIGN_522",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI6433_bli_associateguarantee",
+			"nameBli": "BLI_AssociateGuarantee"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATIRD_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6450_bli_getgroupcode",
+			"nameBli": "BLI_GetGroupCode"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OPERATITT_499",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6513_bli_searchrubrooperation",
+			"nameBli": "BLI_SearchRubroOperation"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PRODUCTIE_675",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI6664_bli_delete_line_distribution",
+			"nameBli": "BLI_Delete_Line_Distribution"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_MEMBERDEL_536",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6777_bli_querymemberdistribution",
+			"nameBli": "BLI_QueryMemberDistribution"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_MASSIVEKM_279",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6793_bli_process_statechangemassive",
+			"nameBli": "BLI_Process_StateChangeMassive"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CONCEPTOO_542",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6824_bli_buscarconceptos",
+			"nameBli": "BLI_BuscarConceptos"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_GENERALRE_262",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6836_bli_generalparametersquery",
+			"nameBli": "BLI_GeneralParametersQuery"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI6946_bli_syndicated_query_bank",
+			"nameBli": "BLI_Syndicated_Query_Bank"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANLINCT_267",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7033_bli_loanslinescalculatedate",
+			"nameBli": "BLI_LoansLinesCalculateDate"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_ERRORMASI_217",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI7536_bli_procesamiento_pagos_masivos",
+			"nameBli": "BLI_Procesamiento_Pagos_Masivos"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LINEGUARS_326",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI7547_bli_loanguaranteequery",
+			"nameBli": "BLI_LoanGuaranteeQuery"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANLISTT_467",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI7548_bli_loansearch",
+			"nameBli": "BLI_LoanSearch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_MEMBERSLV_216",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7589_bli_distributionmembers",
+			"nameBli": "BLI_DistributionMembers"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_APAGOCIPF_458",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8007_bli_buscarformaspago",
+			"nameBli": "BLI_BuscarFormasPago"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CATALOGIS_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8476_bli_getcustomergeneralaccountlist",
+			"nameBli": "BLI_GetCustomerGeneralAccountList"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_OFFICALSO_243",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8540_bli_search_loans",
+			"nameBli": "BLI_Search_Loans"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_AMORTIZON_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_OPERATITT_499",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI8569_bli_insertrubrooperation",
+			"nameBli": "BLI_InsertRubroOperation"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI8707_bli_syndicated_create",
+			"nameBli": "BLI_Syndicated_Create"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI8848_bli_debtortmp",
+			"nameBli": "BLI_DebtorTmp"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PAYMENTLI_612",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI8871_bli_paymentautomaticsearch",
+			"nameBli": "BLI_PaymentAutomaticSearch"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_AMORTSIUT_108",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9008_bli_amortsimulacion",
+			"nameBli": "BLI_AmortSimulacion"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_PAYMENTLI_612",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_PAYMENTOM_408",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9305_bli_paymentautomaticquery",
+			"nameBli": "BLI_PaymentAutomaticQuery"
+		},
+		{	
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSLIST_205",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9199_bli_search_loans_lines",
+			"nameBli": "BLI_Search_Loans_Lines"
+		},
+               {
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSALAD_395",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_LOANSALDH_189",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9378_bli_consultloansale",
+			"nameBli": "BLI_ConsultLoanSale"
+		},
+                {
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_VALIDATON_825",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9510_bli_validationeconomicgroup",
+			"nameBli": "BLI_ValidationEconomicGroup"
+		},
+                {
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANSALDH_189",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSALAD_395",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9537_bli_searchloansaledetail",
+			"nameBli": "BLI_SearchLoanSaleDetail"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANSALDH_189",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI9635_bli_deleteloansale",
+			"nameBli": "BLI_DeleteLoanSale"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LINEDISUS_663",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9655_bli_search_line_members",
+			"nameBli": "BLI_Search_Line_Members"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_SYNDICASL_725",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI9864_bli_syndicated_deleted",
+			"nameBli": "BLI_Syndicated_Deleted"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_OPERATINN_LNSPR",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI9914_bli_operationcleartmp",
+			"nameBli": "BLI_OperationClearTmp"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_LOANSALRE_860",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_LOANSALAD_395",
+						"moduleId": "LNSPR",
+						"related": false
+					},
+					{
+						"entityId": "EN_LOANSALDH_189",
+						"moduleId": "LNSPR",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9936_bli_insertloansale",
+			"nameBli": "BLI_InsertLoanSale"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CAUSATION_534",
+						"moduleId": "ASSTS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI9971_bli_causationtransactions",
+			"nameBli": "BLI_CausationTransactions"
+		}
+	]
+}

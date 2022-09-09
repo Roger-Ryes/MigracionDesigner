@@ -1,0 +1,84 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_5973_48889_606",
+		"controlName": "QV_5973_48889",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "DetailPaymentForm",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_DETAILAP_5973",
+		"controlName": "DetailPaymentFormQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_DETAILAP_5973.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_DETAILTM_1603",
+		"controlName": "DetailAmountsToCancelQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_DETAILTM_1603.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_5973_48889",
+		"controlName": "QV_5973_48889",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "DetailPaymentForm",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_DISBURSEMT_116810",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

@@ -1,0 +1,182 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TPAYMENT_NS7",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TPAYMENT_TEC",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTOOGA_DP31",
+		"controlName": "ListaFormaPagoQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_LISTOOGA_DP31.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListaFormaPago",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "economicDestination",
+		"controlId": "Spacer1695",
+		"controlName": "economicDestination",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentForm",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "payFormId",
+		"controlId": "Spacer2675",
+		"controlName": "payFormId",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentForm",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "accountNumber",
+		"controlId": "VA_2481BBVZTGCBDCR_830216",
+		"controlName": "accountNumber",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 3
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEventGrid",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentForm",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "currencyId",
+		"controlId": "VA_4212YIFTVBCOPPD_140216",
+		"controlName": "currencyId",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "PaymentForm",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "clientFullName",
+		"controlId": "VA_6386FQVBTKCYFWG_461216",
+		"controlName": "clientFullName",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEventGrid",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentForm",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "payAmount",
+		"controlId": "VA_8983QPJHQZZOSML_321216",
+		"controlName": "payAmount",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "PaymentForm",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "amountTr",
+		"controlId": "VA_AMOUNTTROZKVYME_221216",
+		"controlName": "amountTr",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentForm",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_PAYMENTMDE_245368",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

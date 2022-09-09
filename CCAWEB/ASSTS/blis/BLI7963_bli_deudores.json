@@ -1,0 +1,159 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7020"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "E"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_ente",
+			"type": "CUSTOM",
+			"value": "pagDeu"
+		}
+	],
+	"name": "BLI_Deudores",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI7963_bli_deudores",
+	"patternName": "BLI_Deudores",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "772c9e51-3186-4c72-b039-8c1eb0b28c0a",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 6,
+			"queryName": "select \u0027Codigo\u0027      = de_cliente,\n           \u0027CE./NIT.\u0027    = en_ced_ruc,\n           \u0027Rol\u0027         = de_rol,\n           \u0027Nombre\u0027      = en_nomlar,\n           \u0027Telefono\u0027    = isnull((select top 1 te_valor\n                                   from cobis..cl_telefono\n                                   where te_ente = de_cliente),\u0027SIN TELEFONO\u0027),\n           \u0027Direccion\u0027   = isnull((select top 1 di_descripcion\n                                   from cobis..cl_direccion\n                                   where di_direccion = de_cliente),\u0027SIN DIRECCION\u0027),\n           \u0027Cob/Central\u0027 = de_cobro_cen\n    from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "772c9e51-3186-4c72-b039-8c1eb0b28c0a",
+			"columns": [
+				{
+					"attributeId": "AT49_CUSTOMDR749",
+					"entityId": "EN_LOANDEBTO_749",
+					"format": "",
+					"name": "Codigo",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_IDCARDFV749",
+					"entityId": "EN_LOANDEBTO_749",
+					"format": "",
+					"name": "CE./NIT.",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_ROLEJPXR749",
+					"entityId": "EN_LOANDEBTO_749",
+					"format": "",
+					"name": "Rol",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_CUSTOMME749",
+					"entityId": "EN_LOANDEBTO_749",
+					"format": "",
+					"name": "Nombre",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_PHONEKRF749",
+					"entityId": "EN_LOANDEBTO_749",
+					"format": "",
+					"name": "Telefono",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_ADDRESSS749",
+					"entityId": "EN_LOANDEBTO_749",
+					"format": "",
+					"name": "Direccion",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_CENTRAOI749",
+					"entityId": "EN_LOANDEBTO_749",
+					"format": "",
+					"name": "Cob/Central",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANDEBTO_749",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanDebtor"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

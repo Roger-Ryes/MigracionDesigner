@@ -1,0 +1,234 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_venta_castiga",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesA"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesB"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesC"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesD"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesE"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesF"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesG"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesH"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesI"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesJ"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_empresa"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_archivo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_siguiente"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_secuencial"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "0250a2b3-eee0-4dba-ac8a-c71681392895",
+				"columns": [
+					"Secuencial",
+					"Fecha",
+					"Empresa",
+					"Estado",
+					"Archivo",
+					"Usuario"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Secuencial\u0027 = ve_secuencial,\r\n          \u0027Fecha\u0027      = ve_fecha,\r\n          \u0027Empresa\u0027    = @w_desc_empresa,\r\n          \u0027Estado\u0027     = ve_estado,\r\n          \u0027Archivo\u0027    = ve_archivo,\r\n          \u0027Usuario\u0027    = ve_usuario\r\n   from"
+			},
+			{
+				"_idQuery": "3ff8d697-3bfd-4771-af9c-23ca3aaaa3b6",
+				"columns": [
+					"Operacion",
+					"Estado",
+					"Error",
+					"Descripcion",
+					"FechaVenta"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Operacion\u0027   = vd_banco,\r\n          \u0027Estado\u0027      = vd_estado,\r\n          \u0027Error\u0027       = vd_error,\r\n          \u0027Descripcion\u0027 = vd_comentario\r\n   from"
+			},
+			{
+				"_idQuery": "891ee1c9-028c-4ead-9bf0-1b1ca5d7c0ba",
+				"columns": [
+					"Secuencial",
+					"Fecha",
+					"Empresa",
+					"Estado",
+					"Archivo",
+					"Usuario"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Secuencial\u0027 = ve_secuencial,\r\n          \u0027Fecha\u0027      = ve_fecha,\r\n          \u0027Empresa\u0027    = ve_empresa,\r\n          \u0027Estado\u0027     = ve_estado,\r\n          \u0027Archivo\u0027    = ve_archivo,\r\n          \u0027Usuario\u0027    = ve_usuario\r\n   from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_cod_tabla"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_desc_empresa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_error"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_empresa"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_castigado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_fc"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_k"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_largo_trama"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_operaciones"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

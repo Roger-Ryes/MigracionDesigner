@@ -1,0 +1,852 @@
+{
+	"filename": "C:\\SPS\\sp_buscar_custodia.sp",
+	"procedure": {
+		"database": "cob_custodia",
+		"name": "sp_buscar_custodia",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_corr"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn_corr"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_filial"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_sucursal"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_custodia"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_propuesta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ingreso"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor_inicial"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor_actual"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_garante"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_instruccion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_poliza"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_inspeccionar"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_motivo_noinsp"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_suficiencia_legal"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_fuente_valor"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_situacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_almacenera"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_aseguradora"
+			},
+			{
+				"dataType": "ctacliente",
+				"direction": "in",
+				"name": "@i_cta_inspeccion"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_direccion_prenda"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_ciudad_prenda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_telefono_prenda"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_mex_prx_inspec"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_modif"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_const"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje_valor"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_periodicidad"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_depositario"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_posee_poliza"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_custodia1"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_custodia2"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_custodia3"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ingreso1"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ingreso2"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ingreso3"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_tipo1"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_cond1"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_cond2"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_cond3"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_param1"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_parte"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cobranza_judicial"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_retiro"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_devolucion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_estado_poliza"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cobrar_comision"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo_compuesto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_compuesto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta_dpf"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "cuenta",
+				"direction": "in",
+				"name": "@i_num_op_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo_externo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_clase"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cobertura"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "0dc196fc-26c0-4443-b9ed-796398061d6b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(b.ct_fecha)\r\n         from"
+			},
+			{
+				"_idQuery": "199b63c6-e91c-4037-bef2-bf477af80bb2",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia,\r\n                \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027 = tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "6f152bab-a9a0-41af-901f-865b031afa8b",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia, \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027=tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "8e7225ea-fbf7-43b1-aebf-9b0a05d6eda3",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia,\r\n                \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027 = tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "06ab4ca9-cb0c-4bfe-95a8-a470917fa811",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia,\r\n                \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027 = tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "f8c6ce3e-6ea9-4d6d-9cf5-c67df2136404",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia, \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027=tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "40c4a380-eaf1-4e29-888c-dd972a3ca239",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia, \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027=tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "bab58759-f9f6-42a5-bbc4-02b5487b6256",
+				"columns": [
+					"CODIGO",
+					"TIPO",
+					"DES",
+					"SECUENCIAL",
+					"SUCURSAL",
+					" "
+				],
+				"editMode": false,
+				"queryText": "select distinct\r\n\t\t\t\t\u0027CODIGO\u0027 = cu_codigo_externo,\r\n                \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027= tc_descripcion,\r\n                \u0027SECUENCIAL\u0027 = cu_custodia,\r\n                \u0027SUCURSAL\u0027 = cu_sucursal,\r\n                \u0027 \u0027 = of_nombre\r\n         from"
+			},
+			{
+				"_idQuery": "b8646ab3-39f7-416d-aee5-dd70d11faeff",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}"
+				],
+				"editMode": false,
+				"queryText": "select cu_codigo_externo,\r\n          cu_sucursal,\r\n          of_nombre,\r\n          cu_tipo,\r\n          tc_descripcion,\r\n          cu_custodia\r\n     from"
+			},
+			{
+				"_idQuery": "63149eb0-5976-42c1-9e58-66f0e5c35c57",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DE",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia, \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DE\u0027=tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = cu_codigo_externo\r\n         from"
+			},
+			{
+				"_idQuery": "0e6fc6fa-a0cb-4cfe-8891-547154f4180f",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027GARANTIA\u0027 = cu_custodia, \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027=tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,@i_formato_fecha),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = cu_codigo_externo\r\n         from"
+			},
+			{
+				"_idQuery": "e9768931-0736-48a5-bfac-8191477215ae",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO",
+					"CLASE",
+					"PORC COBERTURA"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "6bec87f5-6346-4da2-af52-30d75bc94691",
+				"columns": [
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO",
+					"CLASE",
+					"PORC COBERTURA",
+					"CLIENTEGAR"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "char",
+				"name": "@w_abr_cer"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_almacenera"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_aseguradora"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_ciudad_prenda"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cobranza_judicial"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cobrar_comision"
+			},
+			{
+				"dataType": "ctacliente",
+				"name": "@w_cta_inspeccion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cuenta_dpf"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_custodia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_depositario"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_almacenera"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_aseguradora"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_cliente"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_est_custodia"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_estado_poliza"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_fuente_valor"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_garante"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_inspeccionar"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_des_moneda"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_des_motivo_noinsp"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_des_periodicidad"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_des_tipo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_descripcion"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_direccion_prenda"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_estado_poliza"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_const"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_devolucion"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ingreso"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_modif"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_modificacion"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_retiro"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_filial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_fuente_valor"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_garante"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_inspeccionar"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_instruccion"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_mex_prx_inspec"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_motivo_noinsp"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_nro_cliente"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_inspecc"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_perfil"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_periodicidad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_poliza"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje_valor"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_posee_poliza"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_propuesta"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_situacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_status"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_sucursal"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_suficiencia_legal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_telefono_prenda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "login",
+				"name": "@w_usuario_crea"
+			},
+			{
+				"dataType": "login",
+				"name": "@w_usuario_modifica"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_actual"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_conta"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_inicial"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_valor_intervalo"
+			}
+		]
+	}
+}

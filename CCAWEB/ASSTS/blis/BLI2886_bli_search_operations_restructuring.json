@@ -1,0 +1,172 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_ente",
+			"type": "CUSTOM",
+			"value": "ente"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77653"
+		}
+	],
+	"name": "BLI_Search_Operations_Restructuring",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2886_bli_search_operations_restructuring",
+	"patternName": "BLI_Search_Operations_Restructuring",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "bb8db4c4-a675-48c3-8e38-6689b9b9025a",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "bb8db4c4-a675-48c3-8e38-6689b9b9025a",
+			"columns": [
+				{
+					"attributeId": "AT67_TYPELOAN605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT83_NUMLOANN605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_BANKPWAI605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT22_CAPITABL605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_INTERESL605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT83_OTHERITS605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "9",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_RESIDUEE605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "10",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_STATEROO605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "11",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_CURRENCC605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "12",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT66_OVERDUES605",
+					"entityId": "EN_RESTRUCSN_605",
+					"format": "",
+					"name": "13",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_RESTRUCSN_605",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "RestructuringList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_reest_opera",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

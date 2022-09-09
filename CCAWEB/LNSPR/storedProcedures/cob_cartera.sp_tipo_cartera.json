@@ -1,0 +1,239 @@
+{
+	"filename": "D:\\SP\u0027S\\Parametros Evaluacion Tipo de Cartera\\sp_tipo_cartera.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_tipo_cartera",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_car"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_subsegmento"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cod_oper"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tplan"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "55cc7b2f-ad92-44e0-8bde-106204770eca",
+				"columns": [
+					"Tipo Operacion",
+					"Moneda",
+					"Tipo Cartera",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \"Tipo Operacion\" = tc_toperacion,\n             \"Moneda\"         = tc_moneda,\n             \"Tipo Cartera\"   = tc_tipo_car,\n             \"Descripcion\"    = b.valor\n      from"
+			},
+			{
+				"_idQuery": "57362df0-4a5d-4830-9cf5-0ea177f8b1eb",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select 20"
+			},
+			{
+				"_idQuery": "b598c041-b390-475b-80d7-d9da5828a0c0",
+				"columns": [
+					"Tipo Operacion",
+					"Moneda",
+					"Tipo Cartera",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \"Tipo Operacion\" = tc_toperacion,\n             \"Moneda\"         = tc_moneda,\n             \"Tipo Cartera\"   = tc_tipo_car,\n             \"Descripcion\"    = b.valor\n      from"
+			},
+			{
+				"_idQuery": "fe5e5b95-f348-4bfb-886f-1f0396716700",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select 20"
+			},
+			{
+				"_idQuery": "36a8b005-3443-4667-854e-e4d804cb5071",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}"
+				],
+				"editMode": false,
+				"queryText": "select @w_toperacion,\n          @w_det_toperacion,\n          @w_moneda,\n          @w_det_moneda,\n          @w_tipo_car,\n          @w_det_tipocar"
+			},
+			{
+				"_idQuery": "76a09c63-ce97-4116-a3d9-5a30e32c0d2b",
+				"columns": [
+					"Tipo Cartera",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \"Tipo Cartera\"   = b.codigo,\n\t           \"Descripcion\"    = b.valor\n\t     from"
+			},
+			{
+				"_idQuery": "6650ef07-142e-459b-849b-8f33129cb677",
+				"columns": [
+					"Tipo Cartera",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \"Tipo Cartera\"   = b.codigo,\n            \"Descripcion\"    = b.valor\n     from"
+			},
+			{
+				"_idQuery": "85c5545d-5186-4422-aadf-3f4a06cd7d88",
+				"columns": [
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select\n      \"Descripcion\"    = b.valor\n      from"
+			},
+			{
+				"_idQuery": "63a594a5-2a92-44bd-815a-6ccc49ae8d18",
+				"columns": [
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \"Descripcion\"    = b.valor\n     from"
+			},
+			{
+				"_idQuery": "5344f98c-fb0c-4488-800f-d92cf89d2bc0",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select \u0027REEST\u0027"
+			},
+			{
+				"_idQuery": "7802424e-a8da-4a94-bd2e-27d9ca2b8d29",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select \u0027SUST\u0027"
+			},
+			{
+				"_idQuery": "e736e1f3-9221-425d-b86d-4ba1e5b6344f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select \u0027XXXX\u0027"
+			},
+			{
+				"_idQuery": "594d4ed8-0b9e-49c4-850f-5e5e87f1e75d",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "6c2f10a9-535e-47de-aa1e-f9ef9d9d111f",
+				"columns": [
+					"{0}",
+					"{0}",
+					"{1}",
+					"{2}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{4}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_det_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_det_tipocar"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_det_toperacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tabla"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_car"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			}
+		]
+	}
+}

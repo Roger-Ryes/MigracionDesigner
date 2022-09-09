@@ -1,0 +1,165 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_RATERANTS_219",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "RateRangeList"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77667"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_id_rango",
+			"type": "CUSTOM",
+			"value": "idRango"
+		},
+		{
+			"attributeId": "AT46_RANKPFSE219",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_nro_rangos",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT49_RANGENAE219",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_nombre",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT85_CONCEPTT219",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT13_TITLE1GI219",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_titulo1",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT92_TITLE2NR219",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_titulo2",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT11_DATATY1P219",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_tipodato1",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT78_DATATYP2219",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_tipodato2",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT50_RESULT22219",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_result2",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT34_DATATYPP219",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_RATERANTS_219",
+			"format": "",
+			"name": "@i_tdator2",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_InsertUpdate_RateRange",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4417_bli_insertupdate_raterange",
+	"patternName": "BLI_InsertUpdate_RateRange",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_tabla_rubro",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

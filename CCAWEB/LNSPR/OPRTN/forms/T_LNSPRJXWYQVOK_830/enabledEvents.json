@@ -1,0 +1,254 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_MODALOPE_NNN",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_CONCPPTM_GI69",
+		"controlName": "ConceptItemsQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_CONCPPTM_GI69.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ConceptItems",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_RATEGLSL_WM41",
+		"controlName": "RateRangeListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_RATEGLSL_WM41.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "RateRangeList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_REFEEAML_BR93",
+		"controlName": "ReferentialItemsQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_REFEEAML_BR93.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ReferentialItems",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "amount",
+		"controlId": "VA_AMOUNTKDNIXSXCQ_807800",
+		"controlName": "amount",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "associateValue",
+		"controlId": "VA_ASSOCIATEVALEUU_342800",
+		"controlName": "associateValue",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "factor",
+		"controlId": "VA_FACTORTDKMIRESJ_493800",
+		"controlName": "factor",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "item",
+		"controlId": "VA_ITEMUCXHLKNWSIV_574800",
+		"controlName": "item",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "maxRate",
+		"controlId": "VA_MAXRATEVBDOKWML_251800",
+		"controlName": "maxRate",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "minRate",
+		"controlId": "VA_MINRATELDEORMJX_638800",
+		"controlName": "minRate",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentMethod",
+		"controlId": "VA_PAYMENTMETHODDD_767800",
+		"controlName": "paymentMethod",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "percentage",
+		"controlId": "VA_PERCENTAGEOQEOK_815800",
+		"controlName": "percentage",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "priority",
+		"controlId": "VA_PRIORITYGWEJSIO_703800",
+		"controlName": "priority",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "referenceReadjustment",
+		"controlId": "VA_REFERENCEREADSD_344800",
+		"controlName": "referenceReadjustment",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "reference",
+		"controlId": "VA_REFERENCESIEQUP_560800",
+		"controlName": "reference",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "signo",
+		"controlId": "VA_SIGNOOZSLFEAGNU_871800",
+		"controlName": "signo",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_MODALOPERI_484830",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

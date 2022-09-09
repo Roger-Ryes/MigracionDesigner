@@ -1,0 +1,2248 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "LNSPR",
+		"subModuleId": "OPRTN",
+		"taskId": "T_LNSPRHWGYLNWJ_330",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_OPERATIOEE_354330",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../LNSPR/relations/componentKeys.json#/OPRTN/Forms/T_LNSPRHWGYLNWJ_330/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_002T_LNSPRHWGYLNWJ_330_748",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Inicializaci\u00f3n de datos de un ViewContainer, despues de este evento se realiza el segimiento de cambios en los datos",
+						"eventId": 2,
+						"name": "InitData"
+					}
+				},
+				{
+					"customEventId": "CEVC_501T_LNSPRHWGYLNWJ_330_289",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Evento que actua como listener cuando se cierra ventanas modales.",
+						"eventId": 501,
+						"name": "onCloseModal"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN",
+				"taskId": "T_LNSPRHWGYLNWJ_330",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_OPERATIOEE_354330"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "OperationItems",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 1,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_OPERATIMNT_255587",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group1657",
+						"order": 1,
+						"orientation": "V",
+						"queryView": {
+							"actionDesign": "Button",
+							"actions": [
+								"Create,Update,Delete"
+							],
+							"allowPaging": true,
+							"allowPagingStr": "T",
+							"allowSorting": false,
+							"allowSortingStr": "F",
+							"autoSync": false,
+							"componentStyle": null,
+							"confirmRowDeletion": true,
+							"confirmRowDeletionStr": "T",
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"customUrlDialog": null,
+							"deleteCommandEnabled": true,
+							"deleteCommandEnabledStr": "T",
+							"dialogTitleLabelId": "LBL_LNSPR_RUBROFBVM_52414",
+							"editCommandEnabled": true,
+							"editCommandEnabledStr": "T",
+							"editMode": "3",
+							"entityName": {
+								"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/name"
+							},
+							"hasDetail": false,
+							"hasDetailString": "F",
+							"height": null,
+							"includeQueryMembers": [
+								"AT59_REFERENE499",
+								"AT77_ASSOCIAE499",
+								"AT62_RANKPWTK499",
+								"AT98_ITEMPYPK499",
+								"AT71_INSURACE499",
+								"AT89_DESCRITN499",
+								"AT67_FACTORYT499",
+								"AT21_CALCULAE499",
+								"AT90_INSURAPP499",
+								"AT15_ASSOCIEL499",
+								"AT40_SIGNOGVF499",
+								"AT74_MINRATEE499",
+								"AT86_PERCENTE499",
+								"AT28_FINANCDE499",
+								"AT87_AMOUNTAL499",
+								"AT49_MAXRATEE499",
+								"AT79_FACTORJJ499",
+								"AT74_SIGNREDE499",
+								"AT93_TYPEITME499",
+								"AT99_PRIORIYT499",
+								"AT99_REFERECJ499",
+								"AT34_PAYMENMD499"
+							],
+							"insertCommandEnabled": true,
+							"insertCommandEnabledStr": "T",
+							"isCustomized": false,
+							"modalSize": "md",
+							"modeSelection": "Simple",
+							"moduleIdDialog": "LNSPR",
+							"multiSelectEnabledStr": "S",
+							"name": "QV_MC21_OVS27",
+							"options": 2304,
+							"pageSize": 10,
+							"query": {
+								"$ref": "../../../../LNSPR/OPRTN/queries/Q_OPERLSST_KU21.json#"
+							},
+							"queryId": "Q_OPERLSST_KU21",
+							"queryVersion": "1.0.0",
+							"queryViewCustomActions": [
+								{
+									"action": null,
+									"commandImageId": null,
+									"commandName": "RowInserting",
+									"commandOrder": null,
+									"commandType": 0,
+									"customActionId": "CEQV_200QV_MC21_OVS27_755",
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": "T",
+									"eventActions": [
+										{
+											"actionArgs": [
+											],
+											"actionId": "CUSTOM",
+											"actionType": "CUSTOM"
+										}
+									],
+									"executionType": 7,
+									"filter": null,
+									"isCustomized": false,
+									"name": "RowInserting",
+									"options": 0,
+									"queryView": "QV_MC21_OVS27",
+									"queryViewEventType": {
+										"availableExecutionType": 7,
+										"description": "Se ejecuta antes de que los datos insertados en una grilla sean comprometidos",
+										"eventId": 200,
+										"name": "RowInserting"
+									},
+									"serviceName": null,
+									"userControl": {
+										"customizationLayer": "0",
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Button",
+										"type": "A",
+										"userControlId": "Button"
+									}
+								},
+								{
+									"action": null,
+									"commandImageId": null,
+									"commandName": "RowUpdating",
+									"commandOrder": null,
+									"commandType": 0,
+									"customActionId": "CEQV_203QV_MC21_OVS27_671",
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": "T",
+									"eventActions": [
+										{
+											"actionArgs": [
+											],
+											"actionId": "CUSTOM",
+											"actionType": "CUSTOM"
+										}
+									],
+									"executionType": 7,
+									"filter": null,
+									"isCustomized": false,
+									"name": "RowUpdating",
+									"options": 0,
+									"queryView": "QV_MC21_OVS27",
+									"queryViewEventType": {
+										"availableExecutionType": 7,
+										"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+										"eventId": 203,
+										"name": "RowUpdating"
+									},
+									"serviceName": null,
+									"userControl": {
+										"customizationLayer": "0",
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Button",
+										"type": "A",
+										"userControlId": "Button"
+									}
+								},
+								{
+									"action": null,
+									"commandImageId": null,
+									"commandName": "RowDeleting",
+									"commandOrder": null,
+									"commandType": 0,
+									"customActionId": "CEQV_204QV_MC21_OVS27_721",
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": "T",
+									"eventActions": [
+										{
+											"actionArgs": [
+											],
+											"actionId": "CUSTOM",
+											"actionType": "CUSTOM"
+										}
+									],
+									"executionType": 7,
+									"filter": null,
+									"isCustomized": false,
+									"name": "RowDeleting",
+									"options": 0,
+									"queryView": "QV_MC21_OVS27",
+									"queryViewEventType": {
+										"availableExecutionType": 7,
+										"description": "Se ejecuta antes de que los datos eliminados en una grilla sean comprometidos.",
+										"eventId": 204,
+										"name": "RowDeleting"
+									},
+									"serviceName": null,
+									"userControl": {
+										"customizationLayer": "0",
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Button",
+										"type": "A",
+										"userControlId": "Button"
+									}
+								},
+								{
+									"action": null,
+									"commandImageId": null,
+									"commandName": "RowSelecting",
+									"commandOrder": null,
+									"commandType": 0,
+									"customActionId": "CEQV_208QV_MC21_OVS27_802",
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": "T",
+									"eventActions": [
+									],
+									"executionType": 1,
+									"filter": null,
+									"isCustomized": false,
+									"name": "RowSelecting",
+									"options": 0,
+									"queryView": "QV_MC21_OVS27",
+									"queryViewEventType": {
+										"availableExecutionType": 7,
+										"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+										"eventId": 208,
+										"name": "RowSelecting"
+									},
+									"serviceName": null,
+									"userControl": {
+										"customizationLayer": "0",
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Button",
+										"type": "A",
+										"userControlId": "Button"
+									}
+								}
+							],
+							"queryViewId": "QV_MC21_OVS27",
+							"queryViewType": "Grid",
+							"rowCommandAppearance": 0,
+							"style": null,
+							"subModuleIdDialog": "OPRTN",
+							"taskIdDialog": "T_LNSPRJXWYQVOK_830",
+							"taskVersionDialog": "1.0.0",
+							"typeFormDialog": "forms",
+							"userControl": {
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"description": "Designer Grid",
+								"name": "Designer Grid",
+								"type": "I",
+								"userControlId": "Grid"
+							},
+							"viewContainerIdDialog": "VC_MODALOPERI_484830"
+						},
+						"queryViewId": "QV_MC21_OVS27",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT87_AMOUNTAL499"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": -1,
+										"id": "VV_TEXTINPUTBOXXVE_14027585",
+										"maxValue": "1000000",
+										"minValue": "0",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/MSG/MSG_LNSPR_VALORINTO_98795"
+											},
+											"labelId": "MSG_LNSPR_VALORINTO_98795",
+											"moduleId": "LNSPR"
+										},
+										"visualValidationType": {
+											"description": "RangeValues Validation",
+											"visualValidationId": "RangeValues"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_VALORAOIJ_74397"
+									},
+									"labelId": "LBL_LNSPR_VALORAOIJ_74397",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "amount",
+								"options": 0,
+								"order": 14,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_AMOUNTJGMPZXMXY_754587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT66_ANNUALEE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "annualRate",
+								"options": 0,
+								"order": 22,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_ANNUALRATESVRXQ_786587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT21_CALCULAE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_BASECALCL_35805"
+									},
+									"labelId": "LBL_LNSPR_BASECALCL_35805",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "calculationBase",
+								"options": 0,
+								"order": 13,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_CALCULATIONBASA_240587",
+								"width": "150",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT79_CAUSEACW499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "cause",
+								"options": 0,
+								"order": 17,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_CAUSEUVCCDEPMIA_289587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT89_DESCRITN499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_DESCRIPIN_18186"
+									},
+									"labelId": "LBL_LNSPR_DESCRIPIN_18186",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "description",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_DESCRIPTIONRKNO_269587",
+								"width": "100",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT16_DIVIDENP499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "dividendType",
+								"options": 0,
+								"order": 30,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_DIVIDENDTYPEOCS_467587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT67_FACTORYT499"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": -1,
+										"id": "VV_TEXTINPUTBOXCBF_28227589",
+										"maxValue": "1000",
+										"minValue": "0",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/MSG/MSG_LNSPR_VALORINTO_98795"
+											},
+											"labelId": "MSG_LNSPR_VALORINTO_98795",
+											"moduleId": "LNSPR"
+										},
+										"visualValidationType": {
+											"description": "RangeValues Validation",
+											"visualValidationId": "RangeValues"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_FACTORHYG_27995"
+									},
+									"labelId": "LBL_LNSPR_FACTORHYG_27995",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "factor",
+								"options": 0,
+								"order": 8,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_FACTORFVQAPPLTX_853587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT79_FACTORJJ499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_FACTORRAJ_67007"
+									},
+									"labelId": "LBL_LNSPR_FACTORRAJ_67007",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "factorReadjustment",
+								"options": 0,
+								"order": 12,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_FACTORREADJUTET_483587",
+								"width": "125",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT28_FINANCDE499"
+								},
+								"attributeValidations": [
+								],
+								"cacheDuration": 0,
+								"catalogName": null,
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_FINANCIAD_42980"
+									},
+									"labelId": "LBL_LOANS_FINANCIAD_42980",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"minChars": null,
+								"name": "financed",
+								"options": 1,
+								"order": 32,
+								"queryId": null,
+								"queryMemberText": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryMemberValue": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryModule": null,
+								"queryVersion": null,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"type": "none",
+								"userControl": {
+									"type": "I",
+									"userControlId": "DropDownList"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_FINANCEDWVNAAPN_415587",
+								"width": "75",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT26_GRACEOOW499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "grace",
+								"options": 0,
+								"order": 24,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_GRACEGYKAMZUODA_972587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT23_INTERETS499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "interestPeriods",
+								"options": 0,
+								"order": 31,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_INTERESTPERIDDD_253587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT98_ITEMPYPK499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_RUBROFBVM_52414"
+									},
+									"labelId": "LBL_LNSPR_RUBROFBVM_52414",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "item",
+								"options": 1,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_ITEMWXVWWWSCMKV_983587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT49_MAXRATEE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "N:#,######0.000000",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_TASAMAXGS_82810"
+									},
+									"labelId": "LBL_LNSPR_TASAMAXGS_82810",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "maxRate",
+								"options": 0,
+								"order": 34,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_MAXRATENSHCMIGD_796587",
+								"width": "125",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT74_MINRATEE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "N:#,######0.000000",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_TASAMINCJ_91660"
+									},
+									"labelId": "LBL_LNSPR_TASAMINCJ_91660",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "minRate",
+								"options": 0,
+								"order": 33,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_MINRATEJNRPYQJS_276587",
+								"width": "125",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT27_NEGOTIAE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "negotiatedRate",
+								"options": 0,
+								"order": 21,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_NEGOTIATEDRAETT_876587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT61_OTHERRES499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "otherRates",
+								"options": 0,
+								"order": 4,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_OTHERRATESSNGBH_206587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT42_PAYARRER499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "payArrears",
+								"options": 0,
+								"order": 16,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_PAYARREARSBOUUR_140587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT34_PAYMENMD499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_APAGOWSUO_22122"
+									},
+									"labelId": "LBL_LNSPR_APAGOWSUO_22122",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "paymentMethod",
+								"options": 0,
+								"order": 5,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_PAYMENTMETHODDD_439587",
+								"width": "150",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT86_PERCENTE499"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": -1,
+										"id": "VV_TEXTINPUTBOXCJP_46527595",
+										"maxValue": "1000",
+										"minValue": "0",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/MSG/MSG_LNSPR_VALORINTO_98795"
+											},
+											"labelId": "MSG_LNSPR_VALORINTO_98795",
+											"moduleId": "LNSPR"
+										},
+										"visualValidationType": {
+											"description": "RangeValues Validation",
+											"visualValidationId": "RangeValues"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "N:#,######0.000000",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_TASAKBVNZ_56174"
+									},
+									"labelId": "LBL_LOANS_TASAKBVNZ_56174",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "percentage",
+								"options": 0,
+								"order": 15,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_PERCENTAGEJLTCZ_260587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT36_POINTSTS499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "pointsReadjustment",
+								"options": 0,
+								"order": 23,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_POINTSREADJUTTS_146587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT59_POINTSBS499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "points",
+								"options": 0,
+								"order": 18,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_POINTSTESVMWKGH_733587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT99_PRIORIYT499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_PRIORIDAA_88318"
+									},
+									"labelId": "LBL_LOANS_PRIORIDAA_88318",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "priority",
+								"options": 0,
+								"order": 7,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_PRIORITYKZVVIRF_388587",
+								"width": "100",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT11_RECEIVAL499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "receivable",
+								"options": 0,
+								"order": 25,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_RECEIVABLEUNHZR_405587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT59_REFERENE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_REFERENIC_88346"
+									},
+									"labelId": "LBL_LNSPR_REFERENIC_88346",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "reference",
+								"options": 0,
+								"order": 9,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_REFERENCEGBROYB_738587",
+								"width": "150",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT99_REFERECJ499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_REFREAJSU_20053"
+									},
+									"labelId": "LBL_LNSPR_REFREAJSU_20053",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "referenceReadjustment",
+								"options": 0,
+								"order": 11,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_REFERENCEREANET_690587",
+								"width": "150",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT40_SIGNOGVF499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_SIGNODWUU_39563"
+									},
+									"labelId": "LBL_LNSPR_SIGNODWUU_39563",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "signo",
+								"options": 1,
+								"order": 6,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_SIGNOPVGZZIPUAD_330587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT74_SIGNREDE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_SIGNORETA_58140"
+									},
+									"labelId": "LBL_LNSPR_SIGNORETA_58140",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "signReadjustment",
+								"options": 1,
+								"order": 10,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_SIGNREADJUSTNEN_335587",
+								"width": "125",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT62_RANKPWTK499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_RANGOFPVC_28025"
+									},
+									"labelId": "LBL_LNSPR_RANGOFPVC_28025",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "rank",
+								"options": 0,
+								"order": 40,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXAEM_387587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT74_CATEGORR499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "category",
+								"options": 0,
+								"order": 39,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_TEXTINPUTBOXCKX_678587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT71_INSURACE499"
+								},
+								"attributeValidations": [
+								],
+								"cacheDuration": 0,
+								"catalogName": "cu_des_aseguradora",
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_ASEGURADA_82404"
+									},
+									"labelId": "LBL_LNSPR_ASEGURADA_82404",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"minChars": null,
+								"name": "insurance",
+								"options": 0,
+								"order": 37,
+								"queryId": null,
+								"queryMemberText": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryMemberValue": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryModule": null,
+								"queryVersion": null,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"type": "none",
+								"userControl": {
+									"type": "I",
+									"userControlId": "DropDownList"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXKKV_743587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT77_ASSOCIAE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_REFASOCAA_43339"
+									},
+									"labelId": "LBL_LNSPR_REFASOCAA_43339",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "associate",
+								"options": 0,
+								"order": 35,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXNAY_879587",
+								"width": "150",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT90_INSURAPP499"
+								},
+								"attributeValidations": [
+								],
+								"cacheDuration": 0,
+								"catalogName": "cu_tipo_seguro",
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_TIPOSEGOO_23233"
+									},
+									"labelId": "LBL_LNSPR_TIPOSEGOO_23233",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"minChars": null,
+								"name": "insuranceType",
+								"options": 0,
+								"order": 38,
+								"queryId": null,
+								"queryMemberText": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryMemberValue": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryModule": null,
+								"queryVersion": null,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"type": "none",
+								"userControl": {
+									"type": "I",
+									"userControlId": "DropDownList"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXVLP_884587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT15_ASSOCIEL499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "N:#,######0.000000",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_VALORREFO_81387"
+									},
+									"labelId": "LBL_LNSPR_VALORREFO_81387",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "associateValue",
+								"options": 0,
+								"order": 36,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXXQV_567587",
+								"width": "150",
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT48_TOTALREA499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "totalRate",
+								"options": 0,
+								"order": 20,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_TOTALRATEOPJMMR_803587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT93_TYPEITME499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_TIPOLDSKB_46090"
+									},
+									"labelId": "LBL_LNSPR_TIPOLDSKB_46090",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "typeItem",
+								"options": 0,
+								"order": 3,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TYPEITEMJIPMXHQ_437587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT77_TYPEPOII499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "typePoints",
+								"options": 0,
+								"order": 19,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_TYPEPOINTSDTBQI_258587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT89_WARRANYU499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "warrantyAccount",
+								"options": 0,
+								"order": 27,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_WARRANTYACCOUUU_368587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT93_WARRANCE499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "warrantyCoverage",
+								"options": 0,
+								"order": 28,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_WARRANTYCOVEREG_147587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT71_WARRANEY499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "warrantyType",
+								"options": 0,
+								"order": 26,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_WARRANTYTYPETIJ_651587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATITT_499.json#/attributes/AT77_WARRANAV499"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "warrantyValue",
+								"options": 0,
+								"order": 29,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_WARRANTYVALUEEE_381587",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					},
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 3,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"eventType": 0,
+						"groupId": "G_OPERATITIM_774587",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group1466",
+						"order": 2,
+						"orientation": "V",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "Spacer1990",
+								"options": 0,
+								"order": 1,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "I",
+									"userControlId": "Spacer"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_SPACER1990PHNZF_966587",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VAVABUTTONTR__P_260587_903",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+											{
+												"actionArgs": [
+												],
+												"actionId": "CUSTOM",
+												"actionType": "CUSTOM"
+											}
+										],
+										"executionType": 7,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_GUARDARRI_81055"
+									},
+									"labelId": "LBL_LNSPR_GUARDARRI_81055",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "VA_VAVABUTTONTR__P_260587",
+								"options": 0,
+								"order": 2,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VAVABUTTONTR__P_260587",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_OPERATIOIT_587"
+				},
+				"metadataVersion": "7.2.0.2024 BETA",
+				"modules": [
+					{
+						"moduleId": "LNSPR"
+					}
+				],
+				"name": "View of OperationItems"
+			}
+		}
+	]
+}

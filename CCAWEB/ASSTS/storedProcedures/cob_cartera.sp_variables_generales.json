@@ -1,0 +1,61 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_variables_generales",
+		"parameters": [
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "83e79fe6-401c-4497-8b5e-c7abae1f018a",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "d17e3d5b-75cb-4d0f-8149-e74cf92f8f4b",
+				"columns": [
+					"1",
+					"2"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

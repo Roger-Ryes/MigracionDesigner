@@ -1,0 +1,121 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_LOANKYMRI_882",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "Loan"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7049"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_valor",
+			"type": "CUSTOM",
+			"value": "valueDate"
+		},
+		{
+			"attributeId": "AT42_LOANBADK882",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_LOANKYMRI_882",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "sequential"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_observacion",
+			"type": "CUSTOM",
+			"value": "observation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_mov",
+			"type": "CUSTOM",
+			"value": "movDate"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_grupal",
+			"type": "CUSTOM",
+			"value": "isGroup"
+		}
+	],
+	"name": "BLI_ValueDateTransaction",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8763_bli_valuedatetransaction",
+	"patternName": "BLI_ValueDateTransaction",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_fecha_valor",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

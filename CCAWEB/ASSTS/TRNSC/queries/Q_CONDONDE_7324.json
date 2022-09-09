@@ -1,0 +1,192 @@
+{
+    "customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_CONDONDE_7324_475",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+    ],
+    "customizationLayer": 0,
+    "customizationLayerDescription": "ECU",
+	"hasEvents": true,
+    "id": {
+        "queryId": "Q_CONDONDE_7324",
+        "version": "1.0.0"
+    },
+    "isAutomatic": false,
+    "isImported": false,
+    "mainEntityId": "EN_CONDONAII_795",
+    "mainEntityName": "",
+    "mainEntityVersion": "1.0.0",
+    "name": {
+        "$ref": "../../../ASSTS/relations/componentKeys.json#/TRNSC/Queries/Q_CONDONDE_7324/name"
+    },
+    "queryMembers": [
+        {
+			"alias": "totalValue",
+            "attribute": {
+				"$ref": "../../../ASSTS/entities/EN_CONDONAII_795.json#/attributes/AT91_TOTALVAE795"
+            },
+            "customizationLayer": "",
+            "customizationLayerDescription": "",
+            "defaultValue": null,
+            "defaultValueDataType": null,
+            "function": null,
+            "operator": null,
+			"order": 12,
+            "orderBy": null,
+            "orderByDirection": null,
+			"queryMemberId": "QM_CONDO32DE3460_05",
+            "select": true,
+            "selectStr": "T",
+            "where": false,
+            "whereStr": "F"
+        },
+        {
+			"alias": "currentAmount",
+            "attribute": {
+				"$ref": "../../../ASSTS/entities/EN_CONDONAII_795.json#/attributes/AT69_CURRENAA795"
+            },
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+            "defaultValue": null,
+            "defaultValueDataType": null,
+            "function": null,
+            "operator": null,
+			"order": 7,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONDO423N4460_02",
+            "select": true,
+            "selectStr": "T",
+            "where": false,
+            "whereStr": "F"
+        },
+        {
+			"alias": "pastDueAmount",
+            "attribute": {
+				"$ref": "../../../ASSTS/entities/EN_CONDONAII_795.json#/attributes/AT94_PASTDUOM795"
+            },
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+            "defaultValue": null,
+            "defaultValueDataType": null,
+            "function": null,
+            "operator": null,
+			"order": 8,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONDO43D3N598_06",
+            "select": true,
+            "selectStr": "T",
+            "where": false,
+            "whereStr": "F"
+        },
+        {
+			"alias": "observation",
+            "attribute": {
+				"$ref": "../../../ASSTS/entities/EN_CONDONAII_795.json#/attributes/AT89_OBSERVNT795"
+            },
+            "customizationLayer": "",
+            "customizationLayerDescription": "",
+            "defaultValue": null,
+            "defaultValueDataType": null,
+            "function": null,
+            "operator": null,
+			"order": 3,
+            "orderBy": null,
+            "orderByDirection": null,
+			"queryMemberId": "QM_CONDO47E4N217_03",
+            "select": true,
+            "selectStr": "T",
+            "where": false,
+            "whereStr": "F"
+        },
+        {
+			"alias": "concept",
+            "attribute": {
+				"$ref": "../../../ASSTS/entities/EN_CONDONAII_795.json#/attributes/AT98_CONCEPTT795"
+            },
+            "customizationLayer": "",
+            "customizationLayerDescription": "",
+            "defaultValue": null,
+            "defaultValueDataType": null,
+            "function": null,
+            "operator": null,
+			"order": 1,
+            "orderBy": null,
+            "orderByDirection": null,
+			"queryMemberId": "QM_CONDO7DD73376_01",
+            "select": true,
+            "selectStr": "T",
+            "where": false,
+            "whereStr": "F"
+        },
+        {
+			"alias": "dueAmount",
+            "attribute": {
+				"$ref": "../../../ASSTS/entities/EN_CONDONAII_795.json#/attributes/AT79_DUEAMOUN795"
+            },
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+            "defaultValue": null,
+            "defaultValueDataType": null,
+            "function": null,
+            "operator": null,
+			"order": 9,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONDODN273322_03",
+            "select": true,
+            "selectStr": "T",
+            "where": false,
+            "whereStr": "F"
+        },
+        {
+			"alias": "valueToCondone",
+            "attribute": {
+				"$ref": "../../../ASSTS/entities/EN_CONDONAII_795.json#/attributes/AT14_VALUETOO795"
+            },
+            "customizationLayer": "",
+            "customizationLayerDescription": "",
+            "defaultValue": null,
+            "defaultValueDataType": null,
+            "function": null,
+            "operator": null,
+			"order": 13,
+            "orderBy": null,
+            "orderByDirection": null,
+			"queryMemberId": "QM_CONDON4N77621_06",
+            "select": true,
+            "selectStr": "T",
+            "where": false,
+            "whereStr": "F"
+        }
+    ],
+	"related": false,
+    "sqlWhere": null,
+    "subModules": [
+        {
+            "id": {
+                "moduleId": "ASSTS",
+                "subModuleId": "TRNSC"
+            }
+        }
+    ]
+}

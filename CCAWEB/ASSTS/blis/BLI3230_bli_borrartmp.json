@@ -1,0 +1,55 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_OPERATINN_816",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT63_OPERATOI816",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_816",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7002"
+		}
+	],
+	"name": "BLI_BorrarTmp",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3230_bli_borrartmp",
+	"patternName": "BLI_BorrarTmp",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_borrar_tmp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

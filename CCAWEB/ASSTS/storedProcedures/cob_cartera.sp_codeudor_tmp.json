@@ -1,0 +1,141 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_codeudor_tmp.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_codeudor_tmp",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_codeudor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ced_ruc"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_titular"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_borrar"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			}
+		],
+		"queries": [
+		],
+		"variables": [
+			{
+				"dataType": "tinyint",
+				"name": "@w_codeudores"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

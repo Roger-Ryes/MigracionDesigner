@@ -1,0 +1,30 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "G_ASSOCIATIO_613523",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "changeGroup",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "groupEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_ASSOCIATAI_871506",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

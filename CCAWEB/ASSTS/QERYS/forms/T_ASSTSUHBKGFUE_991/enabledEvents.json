@@ -1,0 +1,46 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANIISE_TX62",
+		"controlName": "LoanSyndicatedListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_LOANIISE_TX62.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoanSyndicatedList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_ZV62_ZBH24",
+		"controlName": "QV_ZV62_ZBH24",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSyndicatedList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSYNDIE_790991",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

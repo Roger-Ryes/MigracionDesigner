@@ -1,0 +1,329 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_PAYMRENL_JE45_833",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+			],
+			"executionType": 1,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_PAYMRENL_JE45",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_PAYMENTIC_709",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_PAYMENTIC_709/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_PAYMRENL_JE45/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "totalConvertedDebtC",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT74_TOTALCEE709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMR54445198_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "processDateC",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT10_PROCESAA709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMRE4EJE257_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "valid",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT63_VALIDCZS709"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMRE55NE432_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "header",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT65_HEADERFP709"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMRE5JEE719_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "totalConvertedConceptC",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT76_TOTALCEE709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMREEEL4678_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sequential",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT48_SEQUENAT709"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMREELLL422_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "rowsNumber",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT95_ROWSNURE709"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMREJL44729_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "totalConvertedComissionC",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT47_TOTALCVC709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMRELNL4809_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "commentary",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT77_COMMENRY709"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMRJE4NL285_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "conciliationType",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT39_CONCILEO709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMRJJEEE844_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "blanks",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT99_BLANKSEW709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMRJLNE4751_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "totalConvertedAmountC",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT38_TOTALCTR709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMRLE4LE160_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "channelCodeC",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT54_CHANNEDC709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMRLN55E105_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "registerTypeC",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTIC_709.json#/attributes/AT68_REGISTET709"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMRNEEEE175_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

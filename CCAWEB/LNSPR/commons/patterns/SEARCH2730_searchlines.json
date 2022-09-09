@@ -1,0 +1,17 @@
+{
+	"menuEtiqueta": "MNU_ASSETS_DATALINE",
+	"moduleId": "LNSPR",
+	"patternId": "SEARCH2730_searchlines",
+	"patternName": "SearchLines",
+	"patternType": "Search",
+	"selectedDestination": "designerF",
+	"selectedForm": "T_LNSPRBYPIFLBG_956",
+	"selectedMode": 2,
+	"selectedNavigationModule": "LNSPR",
+	"selectedNavigationSubmodule": "OPRTN",
+	"selectors": {
+		"customerId": "COBIS",
+		"itemId": "SearchLines",
+		"productId": "LNSPR"
+	}
+}

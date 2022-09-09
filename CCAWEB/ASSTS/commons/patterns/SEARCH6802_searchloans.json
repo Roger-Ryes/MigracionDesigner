@@ -1,0 +1,17 @@
+{
+	"menuEtiqueta": "MNU_ASSETS_SEARCH",
+	"moduleId": "ASSTS",
+	"patternId": "SEARCH6802_searchloans",
+	"patternName": "SearchLoans",
+	"patternType": "Search",
+	"selectedDestination": "designerF",
+	"selectedForm": "T_AMORTIZATIOON_261",
+	"selectedMode": 2,
+	"selectedNavigationModule": "ASSTS",
+	"selectedNavigationSubmodule": "CMMNS",
+	"selectors": {
+		"customerId": "COBIS",
+		"itemId": "SearchLoans",
+		"productId": "ASSTS"
+	}
+}

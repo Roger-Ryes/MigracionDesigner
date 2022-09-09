@@ -1,0 +1,58 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77560"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operation",
+			"type": "CONSTANT",
+			"value": "P"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "bankId"
+		}
+	],
+	"name": "BLI_DebtorTmp",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8848_bli_debtortmp",
+	"patternName": "BLI_DebtorTmp",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_codeudor_tmp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

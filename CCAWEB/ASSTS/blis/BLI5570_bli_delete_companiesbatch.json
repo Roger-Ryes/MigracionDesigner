@@ -1,0 +1,173 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_COMPANIDS_402",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesBatch"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77585"
+		},
+		{
+			"attributeId": "AT71_COMPANYY402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_institucion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT27_SEQUENLI402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_lote",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		}
+	],
+	"name": "BLI_Delete_CompaniesBatch",
+	"outputEntity": [
+		{
+			"entityId": "EN_COMPANIDS_402",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesBatch"
+		}
+	],
+	"outputParameters": [
+		{
+			"attributeId": "AT27_SEQUENLI402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_secuencial",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT48_STATUSHT402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_estado",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT60_STATUSNE402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_estado_name",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT43_DATECRET402",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_fecha_creacion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT14_DATEMOEV402",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_fecha_mov",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT34_DESCRITT402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_descripcion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT97_FILENAMM402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_archivo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT41_FILEUPIS402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_file_up",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"patternId": "BLI5570_bli_delete_companiesbatch",
+	"patternName": "BLI_Delete_CompaniesBatch",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_descuento_institucion_lote",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

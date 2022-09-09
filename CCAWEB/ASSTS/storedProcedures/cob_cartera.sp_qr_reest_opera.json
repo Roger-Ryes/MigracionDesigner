@@ -1,0 +1,56 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_reest_opera",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ente"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "bb8db4c4-a675-48c3-8e38-6689b9b9025a",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

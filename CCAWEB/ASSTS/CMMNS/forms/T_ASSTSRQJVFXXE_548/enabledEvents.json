@@ -1,0 +1,46 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_AMORTIAN_8237",
+		"controlName": "AmortizationQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_AMORTIAN_8237.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_QV37_LCP47",
+		"controlName": "QV_QV37_LCP47",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "Amortization",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_AMORTIZATT_397548",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 3
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

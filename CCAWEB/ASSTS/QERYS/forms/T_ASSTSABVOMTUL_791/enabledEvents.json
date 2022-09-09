@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANTUNT_QF10",
+		"controlName": "LoanGuaranteesSuretyQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_LOANTUNT_QF10.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoanGuaranteesSurety",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_UH10_ODY37",
+		"controlName": "QV_UH10_ODY37",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanGuaranteesSurety",
+		"eventsType": "queryViewEventType"
+	}
+]

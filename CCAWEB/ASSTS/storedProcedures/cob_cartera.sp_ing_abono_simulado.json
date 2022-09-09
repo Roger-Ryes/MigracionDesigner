@@ -1,0 +1,400 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_ing_abono_simulado",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_accion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_vig"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_ejecutar"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_retencion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cuota_completa"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_anticipado"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_reduccion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_proyectado"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_aplicacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_prioridades"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_en_linea"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa_prepago"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_verifica_tasas"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dividendo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_bv"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_calcula_devolucion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_no_cheque"
+			},
+			{
+				"dataType": "cuenta",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_mon"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cheque"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cod_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_beneficiario"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cancela"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_renovacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_solo_capital"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor_multa"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_encerar"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_factura"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_mpg"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_mop"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_mn"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_cotizacion_mpg"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_cotizacion_mop"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tcotizacion_mpg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tcotizacion_mop"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_inscripcion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_carga"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_secuencial_ing"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "b020b269-09e2-4fde-abd8-e71b86347c54",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "a440c688-8379-4503-8b25-29c6aa8dea1a",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "6f618422-b3da-4fef-b904-8918414c3d5e",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "d274972b-1a2b-4f3d-b145-ef2e3d07a897",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "1980ade6-69aa-40dd-b335-12232580b44d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "4f6d0077-bc34-40db-86bf-0a2bb08513ab",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "a51da318-93a1-4e0b-a751-62b88e286f01",
+				"columns": [
+					"DESCRIPCION",
+					"DEVOLVER",
+					"INGRESOS"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "e6d2b9d1-1387-4998-a8c4-433a32474b17",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "ff01e115-0361-4555-b621-70134e75542f",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		]
+	}
+}

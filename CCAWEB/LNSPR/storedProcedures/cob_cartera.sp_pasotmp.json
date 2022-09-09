@@ -1,0 +1,76 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_pasotmp",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacionca"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_dividendo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_amortizacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cuota_adicional"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_rubro_op"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_relacion_ptmo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_nomina"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_acciones"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_valores"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+		],
+		"type": "SYBASE"
+	}
+}

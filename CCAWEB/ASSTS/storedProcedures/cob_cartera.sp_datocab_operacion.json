@@ -1,0 +1,92 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_datocab_operacion",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_historico"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "8520aed7-53a3-43c2-be63-65d011320f11",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"21",
+					"22",
+					"23",
+					"24",
+					"25",
+					"26",
+					"27",
+					"28",
+					"29"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

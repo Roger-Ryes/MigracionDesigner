@@ -1,0 +1,265 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_RATEGLSL_WM41_605",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_RATEGLSL_WM41",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_RATERANTS_219",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_RATERANTS_219/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/QERYS/Queries/Q_RATEGLSL_WM41/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "idRange",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT19_IDRANGEE219"
+			},
+			"attributeQuery": "idRange",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEG1L4WL543_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "rank",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT46_RANKPFSE219"
+			},
+			"attributeQuery": "rank",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEG1WLS1602_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "title2",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT92_TITLE2NR219"
+			},
+			"attributeQuery": "title2",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEG1WMM4312_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "rangeName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT49_RANGENAE219"
+			},
+			"attributeQuery": "rangeName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEG44WSM509_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dataTypeR2",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT34_DATATYPP219"
+			},
+			"attributeQuery": "dataTypeR2",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEGLL1SM305_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "concept",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT85_CONCEPTT219"
+			},
+			"attributeQuery": "concept",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEGLM14L887_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "title1",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT13_TITLE1GI219"
+			},
+			"attributeQuery": "title1",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEGLWSLW556_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dataType1",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT11_DATATY1P219"
+			},
+			"attributeQuery": "dataType1",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEGMLWSM521_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "result2",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT50_RESULT22219"
+			},
+			"attributeQuery": "result2",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEGSSWMW579_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dataType2",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_RATERANTS_219.json#/attributes/AT78_DATATYP2219"
+			},
+			"attributeQuery": "dataType2",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_RATEGWLL11448_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS"
+			}
+		}
+	]
+}

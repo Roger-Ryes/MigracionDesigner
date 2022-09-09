@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_BENERRRA_IX77",
+		"controlName": "BeneficiaroQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_BENERRRA_IX77.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "Beneficiaro",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSBENIF_286571",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

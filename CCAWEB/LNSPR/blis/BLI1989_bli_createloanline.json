@@ -1,0 +1,305 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_LOANLINCT_267",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoanLinesCreation"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21026"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "I"
+		},
+		{
+			"attributeId": "AT33_OFFICEJO267",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_oficina",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT65_CLIENTPF267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT32_CUSTOMEG267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_grupo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT12_STARTDAT267",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_fecha_aprob",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT12_STARTDAT267",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_fecha_inicio",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT45_DUEDATEE267",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_fecha_vto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT33_DAYSNURR267",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_dias",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT69_AMOUNTBC267",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_monto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT61_MONEDAOX267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT26_ROTARYRK267",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_rotativa",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT27_SECTOROX267",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_sector",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT37_ESTADOYV267",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_estado",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT48_NATURAEZ267",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_naturaleza",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT23_OBSERVSS267",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_observaciones",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT23_UBICATIO267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_ciudad",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT39_OFFICIAL267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_oficial",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_linea",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_manual",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_desde_can",
+			"type": "CONSTANT",
+			"value": "S"
+		}
+	],
+	"name": "BLI_CreateLoanLine",
+	"outputEntity": [
+		{
+			"entityId": "EN_LOANLINCT_267",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoanLinesCreation"
+		}
+	],
+	"outputParameters": [
+		{
+			"attributeId": "AT91_SECUENIC267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@o_numero",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT71_CODIGOEE267",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@o_li_num_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT48_TRAMITUU267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@o_tramite",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"patternId": "BLI1989_bli_createloanline",
+	"patternName": "BLI_CreateLoanLine",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_linea",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,62 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTCACN_AT28",
+		"controlName": "ListTransactionQueryQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_LISTCACN_AT28.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListTransactionQuery",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_TYPESIAO_HG77",
+		"controlName": "TypeTransactionQueryQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_TYPESIAO_HG77.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "TypeTransactionQuery",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_LM28_ZKS23",
+		"controlName": "QV_LM28_ZKS23",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "ListTransactionQuery",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_TRANSACTON_836272",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

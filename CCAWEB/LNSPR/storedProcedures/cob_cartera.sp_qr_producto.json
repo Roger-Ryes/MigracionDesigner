@@ -1,0 +1,83 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_producto",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_linea_cre"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_categoria"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "180d6325-c3c9-4304-aae0-15d484bd5524",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "42e8d363-25c9-498b-8f92-d0b150d0b336",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "e3973f91-97e3-4018-b521-31cf4bab378b",
+				"columns": [
+					"descripcion",
+					"producto"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

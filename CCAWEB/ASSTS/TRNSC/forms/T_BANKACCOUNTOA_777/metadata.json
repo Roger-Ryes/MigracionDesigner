@@ -1,0 +1,22 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_1IRAKPKDY_241",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_BANKACCNN_291",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_BANKACUC_1987",
+			"related": false,
+			"subModuleId": "TRNSC"
+		}
+	]
+}

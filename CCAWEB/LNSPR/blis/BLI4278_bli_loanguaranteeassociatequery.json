@@ -1,0 +1,188 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "775074"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "G"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tramite",
+			"type": "CUSTOM",
+			"value": "tramite"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CUSTOM",
+			"value": "modo"
+		}
+	],
+	"name": "BLI_LoanGuaranteeAssociateQuery",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4278_bli_loanguaranteeassociatequery",
+	"patternName": "BLI_LoanGuaranteeAssociateQuery",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "5ddc655b-0c42-4925-93d5-e49973ab3e28",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 11,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "5ddc655b-0c42-4925-93d5-e49973ab3e28",
+			"columns": [
+				{
+					"attributeId": "AT24_TRANSACT244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "TRAMITE",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT55_GUARANEE244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "GARANTIA",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT56_TYPEFUTQ244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "TIPO",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_DESCRIPN244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "DES",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_STATEBUK244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "ESTADO",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT32_ADMISSOO244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "INGRESO",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_CURRENYC244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "MONEDA",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_INITIAVL244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "VALOR INICIAL",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_CURRENLL244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "VALOR ACTUAL",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_VALUEMNN244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "VALOR MN",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_CODEXZQY244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "CODIGO",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_CLASEEBU244",
+					"entityId": "EN_LINEGUAAE_244",
+					"format": "",
+					"name": "CLASE",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LINEGUAAE_244",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LineGuaranteesAssociatedList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_gar_propuesta",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

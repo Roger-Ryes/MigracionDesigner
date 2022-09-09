@@ -1,0 +1,313 @@
+{
+	"filename": "C:\\Users\\ecuji\\Documents\\Sprint 6\\tec-ctas-backend\\cobis.sp_catalogo.sql",
+	"procedure": {
+		"database": "cobis",
+		"name": "sp_catalogo",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "bit",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tabla"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo"
+			},
+			{
+				"dataType": "estado",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_central_transmit"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "ee73cb3d-2ff2-42b4-9dae-3911b398d8f3",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": true,
+				"queryText": "select \u0027CODIGO\u0027,\r\n             upper(rtrim(@w_titulo))\u0027        \u0027,\r\n             \u0027ESTADO\u0027"
+			},
+			{
+				"_idQuery": "3d048473-f120-44e4-9124-90541447d00e",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": true,
+				"queryText": "select codigo,\r\n             valor,\r\n             estado\r\n      from"
+			},
+			{
+				"_idQuery": "959f978d-09cf-4808-96bf-a898619b6d45",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": true,
+				"queryText": "select codigo,\r\n             valor,\r\n             estado\r\n      from"
+			},
+			{
+				"_idQuery": "614f659f-7fcb-4cbf-b372-d98c83e9058f",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select \u0027C\u00cbDIGO\u0027, upper(rtrim(@w_titulo))\u0027            \u0027"
+			},
+			{
+				"_idQuery": "b4af8368-953d-4f2f-b26c-f5c6194a98cb",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select  substring(codigo, 1, 5),\r\n          valor\r\n      from"
+			},
+			{
+				"_idQuery": "ac32390f-fbf9-473c-8da3-3ba6dc224f63",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select count(*) from"
+			},
+			{
+				"_idQuery": "f88b0ae9-258f-470c-9cfc-9f8e125e66e2",
+				"columns": [
+					"{0}",
+					"VALOR"
+				],
+				"editMode": true,
+				"queryText": "select  substring(codigo, 1, 5),\r\n             \u0027VALOR         \u0027=valor\r\n      from"
+			},
+			{
+				"_idQuery": "c63c9ad3-7635-4800-8dfc-70a57da40ee0",
+				"columns": [
+					"{0}",
+					"VALOR"
+				],
+				"editMode": true,
+				"queryText": "select  codigo,\r\n             \u0027VALOR         \u0027=valor\r\n      from"
+			},
+			{
+				"_idQuery": "6b6559b8-d4fe-4c2e-aef2-4efbf9d8d2c3",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select \u0027C\u00cbDIGO\u0027, upper(rtrim(@w_titulo))\u0027       \u0027"
+			},
+			{
+				"_idQuery": "aecdf255-fb7d-4e3f-b7a2-da8035a90de8",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select codigo,\r\n             valor\r\n      from"
+			},
+			{
+				"_idQuery": "8333033e-1d27-44a3-b62f-0134f56de5e1",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select count(*) from"
+			},
+			{
+				"_idQuery": "25f77674-abc1-4c0f-be93-d8b39cd6439b",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select codigo,\r\n                valor\r\n         from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "estado",
+				"name": "@v_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@v_valor"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_clave"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_cmdtransrv"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_cod_tabla"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_contador"
+			},
+			{
+				"dataType": "estado",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nt_nombre"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_num_nodos"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_server_logico"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_titulo"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_valor"
+			}
+		]
+	}
+}

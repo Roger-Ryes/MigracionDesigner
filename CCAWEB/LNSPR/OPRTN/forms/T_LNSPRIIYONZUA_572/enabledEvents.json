@@ -1,0 +1,144 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRII_6S6",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRII_7SR",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANAELE_GZ51",
+		"controlName": "LoanSaleListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_LOANAELE_GZ51.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoanSaleList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANELLL_AR48",
+		"controlName": "LoanSaleDetailListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_LOANELLL_AR48.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoanSaleDetailList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_PT51_RHB11",
+		"controlName": "QV_PT51_RHB11",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "hasDetail",
+				"executionType": 1
+			},
+			{
+				"eventName": "conditionalRowDetail",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSaleList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "archive",
+		"controlId": "VA_6427AZGDIHWLKXG_205584",
+		"controlName": "archive",
+		"controlType": "FileUpload",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanSaleFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_GRIDROWCOMMMNAA_525584",
+		"controlName": "VA_GRIDROWCOMMMNAA_525584",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridRowCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanSaleList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONFVNJKMP_639584",
+		"controlName": "VA_VABUTTONFVNJKMP_639584",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSaleFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSALEVA_321572",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

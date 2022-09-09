@@ -1,0 +1,90 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_ERRORMASI_217",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANLISTT_467",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANSEATF_633",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_MASSIVECC_834",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_MASSIVEKM_279",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_MASSIVEYM_999",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_MODALREEA_674",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_READJUSNN_654",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_READJUSTC_965",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_READJUSTE_859",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_LOANSILT_NX50",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_MASSSEOO_AX15",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_MASSTENM_SJ71",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_READJUSM_7240",
+			"related": false,
+			"subModuleId": "OPRTN"
+		}
+	]
+}

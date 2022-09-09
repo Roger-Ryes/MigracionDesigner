@@ -1,0 +1,152 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "I"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "bank"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_archivo",
+			"type": "CUSTOM",
+			"value": "file"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fin_lote",
+			"type": "CUSTOM",
+			"value": "finLote"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_lote",
+			"type": "CUSTOM",
+			"value": "ilote"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_estado",
+			"type": "CUSTOM",
+			"value": "state"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77660"
+		}
+	],
+	"name": "BLI_Process_StateChangeMassive",
+	"outputEntity": [
+	],
+	"outputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_lote",
+			"type": "CUSTOM",
+			"value": "lote"
+		}
+	],
+	"patternId": "BLI6793_bli_process_statechangemassive",
+	"patternName": "BLI_Process_StateChangeMassive",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "7153dcef-668f-4ab1-b5b8-1e0aab0d4d7d",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select \u0027Operacion\u0027 = op_banco, \u0027EstadoComision\u0027 = cm_estado,  \u0027Descripcion\u0027 = cm_desc_error\r\n      from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "7153dcef-668f-4ab1-b5b8-1e0aab0d4d7d",
+			"columns": [
+				{
+					"attributeId": "AT72_OPERATNN279",
+					"entityId": "EN_MASSIVEKM_279",
+					"format": "",
+					"name": "Operacion",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT51_MISTAKEE279",
+					"entityId": "EN_MASSIVEKM_279",
+					"format": "",
+					"name": "Descripcion",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_MASSIVEKM_279",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "MassiveCommissionsMistakes"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_cambio_estado_masivo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

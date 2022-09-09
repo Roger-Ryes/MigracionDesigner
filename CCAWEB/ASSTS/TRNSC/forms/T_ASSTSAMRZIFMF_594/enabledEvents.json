@@ -1,0 +1,138 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSAM_7AT",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSAM_SAA",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTSEAD_QV44",
+		"controlName": "ListaEstadosQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/CMMNS/queries/Q_LISTSEAD_QV44.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListaEstados",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_RESTTITU_BM75",
+		"controlName": "RestructuringListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_RESTTITU_BM75.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "RestructuringList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_UY75_AYT30",
+		"controlName": "QV_UY75_AYT30",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "beforeEnterInLineRow",
+				"executionType": 1
+			},
+			{
+				"eventName": "gridInitColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "gridInitEditColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 3
+			}
+		],
+		"entityName": "RestructuringList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "nameClient",
+		"controlId": "VA_NAMECLIENTSGTLG_620701",
+		"controlName": "nameClient",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "RestructuringFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "capitalize",
+		"controlId": "VA_TEXTINPUTBOXLJF_575701",
+		"controlName": "capitalize",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "RestructuringList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSRESTN_297594",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

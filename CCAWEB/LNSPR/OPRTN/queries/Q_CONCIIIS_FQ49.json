@@ -1,0 +1,89 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_CONCIIIS_FQ49_724",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+			],
+			"executionType": 1,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_CONCIIIS_FQ49",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_CONCILIIN_177",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_CONCILIIN_177/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_CONCIIIS_FQ49/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "conciliation",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCILIIN_177.json#/attributes/AT41_CONCILAA177"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCII4494959_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "desc",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCILIIN_177.json#/attributes/AT38_DESCYTYH177"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONCII4I94517_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

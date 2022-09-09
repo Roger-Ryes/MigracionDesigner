@@ -1,0 +1,380 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "ASSTS",
+		"subModuleId": "QERYS",
+		"taskId": "T_ASSTSFLSVSFLG_975",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_DEFERREDEA_345975",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../ASSTS/relations/componentKeys.json#/QERYS/Forms/T_ASSTSFLSVSFLG_975/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS",
+				"taskId": "T_ASSTSFLSVSFLG_975",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_DEFERREDEA_345975"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "DeferredItemsDetailForm",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 1,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../ASSTS/entities/EN_DEFERRESA_227.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_DEFERREEEI_835134",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group1254",
+						"order": 1,
+						"orientation": "V",
+						"queryView": {
+							"actionDesign": "Button",
+							"actions": [
+							],
+							"allowPaging": true,
+							"allowPagingStr": "T",
+							"allowSorting": false,
+							"allowSortingStr": "F",
+							"autoSync": null,
+							"componentStyle": null,
+							"confirmRowDeletion": false,
+							"confirmRowDeletionStr": "F",
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"customUrlDialog": null,
+							"deleteCommandEnabled": false,
+							"deleteCommandEnabledStr": "F",
+							"dialogTitleLabelId": null,
+							"editCommandEnabled": false,
+							"editCommandEnabledStr": "F",
+							"editMode": "0",
+							"entityName": {
+								"$ref": "../../../../ASSTS/entities/EN_DEFERRESA_227.json#/name"
+							},
+							"hasDetail": false,
+							"hasDetailString": "F",
+							"height": null,
+							"includeQueryMembers": [
+								"AT15_ITEMJVKW227",
+								"AT78_BALANCEE227",
+								"AT35_EARNQQYK227",
+								"AT14_ACUMULET227"
+							],
+							"insertCommandEnabled": false,
+							"insertCommandEnabledStr": "F",
+							"isCustomized": false,
+							"modalSize": null,
+							"modeSelection": "Simple",
+							"moduleIdDialog": null,
+							"multiSelectEnabledStr": "S",
+							"name": "QV_ZY19_NNJ12",
+							"options": 256,
+							"pageSize": 10,
+							"query": {
+								"$ref": "../../../../ASSTS/QERYS/queries/Q_DEFEDLIT_ZB19.json#"
+							},
+							"queryId": "Q_DEFEDLIT_ZB19",
+							"queryVersion": "1.0.0",
+							"queryViewCustomActions": [
+								{
+									"action": null,
+									"commandImageId": null,
+									"commandName": "RowSelecting",
+									"commandOrder": null,
+									"commandType": 0,
+									"customActionId": "CEQV_208QV_ZY19_NNJ12_330",
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": "T",
+									"eventActions": [
+									],
+									"executionType": 1,
+									"filter": null,
+									"isCustomized": false,
+									"name": "RowSelecting",
+									"options": 0,
+									"queryView": "QV_ZY19_NNJ12",
+									"queryViewEventType": {
+										"availableExecutionType": 7,
+										"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+										"eventId": 208,
+										"name": "RowSelecting"
+									},
+									"serviceName": null,
+									"userControl": {
+										"customizationLayer": "0",
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Button",
+										"type": "A",
+										"userControlId": "Button"
+									}
+								}
+							],
+							"queryViewId": "QV_ZY19_NNJ12",
+							"queryViewType": "Grid",
+							"rowCommandAppearance": 0,
+							"style": null,
+							"subModuleIdDialog": null,
+							"taskIdDialog": null,
+							"taskVersionDialog": null,
+							"typeFormDialog": null,
+							"userControl": {
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"description": "Designer Grid",
+								"name": "Designer Grid",
+								"type": "I",
+								"userControlId": "Grid"
+							},
+							"viewContainerIdDialog": null
+						},
+						"queryViewId": "QV_ZY19_NNJ12",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../ASSTS/entities/EN_DEFERRESA_227.json#/attributes/AT15_ITEMJVKW227"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_RUBROIVKT_62353"
+									},
+									"labelId": "LBL_ASSTS_RUBROIVKT_62353",
+									"moduleId": "ASSTS"
+								},
+								"maxRecords": null,
+								"name": "item",
+								"options": 0,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXCNB_210134",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../ASSTS/entities/EN_DEFERRESA_227.json#/attributes/AT35_EARNQQYK227"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DEVENGAIK_41942"
+									},
+									"labelId": "LBL_ASSTS_DEVENGAIK_41942",
+									"moduleId": "ASSTS"
+								},
+								"maxRecords": null,
+								"name": "earn",
+								"options": 0,
+								"order": 3,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXLRO_601134",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../ASSTS/entities/EN_DEFERRESA_227.json#/attributes/AT14_ACUMULET227"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ACUMULAOO_17499"
+									},
+									"labelId": "LBL_ASSTS_ACUMULAOO_17499",
+									"moduleId": "ASSTS"
+								},
+								"maxRecords": null,
+								"name": "acumulated",
+								"options": 0,
+								"order": 4,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXMQJ_914134",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../ASSTS/entities/EN_DEFERRESA_227.json#/attributes/AT78_BALANCEE227"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_SALDODIFF_97213"
+									},
+									"labelId": "LBL_ASSTS_SALDODIFF_97213",
+									"moduleId": "ASSTS"
+								},
+								"maxRecords": null,
+								"name": "balance",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXYQS_545134",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_DEFERREDMT_134"
+				},
+				"metadataVersion": "7.3.2.2124",
+				"modules": [
+					{
+						"moduleId": "ASSTS"
+					}
+				],
+				"name": "View of DeferredItemsDetailForm"
+			}
+		}
+	]
+}

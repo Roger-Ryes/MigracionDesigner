@@ -1,0 +1,295 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_LINERLAR_KA20_208",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_LINERLAR_KA20",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_LINEGUARS_326",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_LINEGUARS_326/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_LINERLAR_KA20/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "currentValue",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT69_CURRENUE326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINER0LRRK854_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "currency",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT35_COINUBUZ326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINER20LK0503_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "type",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT16_TYPELOIG326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINER2RAKR932_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "initialValue",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT78_INITIAEV326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINERA2KA2254_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "description",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT62_DESCRIPO326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINERAKAAR363_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientGar",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT75_CLIENTRR326"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LINERARAKK330_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "minimumValue",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT86_MINIMUUE326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINERK22R2243_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "guarantee",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT80_GUARANET326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINERKLKA0100_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "code",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT86_CODEWWHB326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINERKRRR2282_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clase",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT79_CLASEXGT326"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LINERLAA0R787_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "admissionDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT74_ADMISSNT326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINERR0A0K621_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "state",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_LINEGUARS_326.json#/attributes/AT54_STATEYRJ326"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LINERRAALL588_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

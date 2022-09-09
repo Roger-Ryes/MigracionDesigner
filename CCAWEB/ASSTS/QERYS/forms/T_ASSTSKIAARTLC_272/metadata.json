@@ -1,0 +1,30 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_FILTERTSC_512",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_LISTTRAON_556",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_LISTCACN_AT28",
+			"related": false,
+			"subModuleId": "QERYS"
+		},
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_TYPESIAO_HG77",
+			"related": false,
+			"subModuleId": "QERYS"
+		}
+	]
+}

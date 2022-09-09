@@ -1,0 +1,138 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_CATALGSE_OT52_409",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"id": {
+		"queryId": "Q_CATALGSE_LNSPR",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_CATALOGIS_LNSPR",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_CATALOGIS_LNSPR/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_CATALGSE_LNSPR/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "producto",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CATALOGIS_LNSPR.json#/attributes/AT31_PRODUCOO376"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CATAL2STOT167_01",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "value1",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CATALOGIS_LNSPR.json#/attributes/AT46_VALUE1YF376"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CATAL55OE2756_02",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "code",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CATALOGIS_LNSPR.json#/attributes/AT13_CODEHYBM376"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CATAL5TT2E913_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "value2",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CATALOGIS_LNSPR.json#/attributes/AT51_VALUE2LK376"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CATALGGSTS891_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

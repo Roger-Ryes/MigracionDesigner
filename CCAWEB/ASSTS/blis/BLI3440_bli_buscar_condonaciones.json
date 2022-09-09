@@ -1,0 +1,129 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7276"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "R"
+		}
+	],
+	"name": "BLI_Buscar_Condonaciones",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3440_bli_buscar_condonaciones",
+	"patternName": "BLI_Buscar_Condonaciones",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "ffea2ccc-6bcd-43c7-a739-14916746b102",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ffea2ccc-6bcd-43c7-a739-14916746b102",
+			"columns": [
+				{
+					"attributeId": "AT98_CONCEPTT795",
+					"entityId": "EN_CONDONAII_795",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_OBSERVNT795",
+					"entityId": "EN_CONDONAII_795",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_CURRENAA795",
+					"entityId": "EN_CONDONAII_795",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT94_PASTDUOM795",
+					"entityId": "EN_CONDONAII_795",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_DUEAMOUN795",
+					"entityId": "EN_CONDONAII_795",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_TOTALVAE795",
+					"entityId": "EN_CONDONAII_795",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CONDONAII_795",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CondonationDetail"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_porc_condonacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

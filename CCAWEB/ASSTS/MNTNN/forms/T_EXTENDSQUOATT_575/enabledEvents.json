@@ -1,0 +1,80 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_CURRENAT_2921",
+		"controlName": "CurrentQuotasQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_CURRENAT_2921.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_EXTENDEX_5312",
+		"controlName": "ExtendsQuotaExtQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_EXTENDEX_5312.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_2921_98487",
+		"controlName": "QV_2921_98487",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "CurrentQuotas",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_5312_48027",
+		"controlName": "QV_5312_48027",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "ExtendsQuotaExt",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "extendsDate",
+		"controlId": "Spacer2497",
+		"controlName": "extendsDate",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			},
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "ExtendsQuota",
+		"eventsType": "visualAttributeEventType"
+	}
+]

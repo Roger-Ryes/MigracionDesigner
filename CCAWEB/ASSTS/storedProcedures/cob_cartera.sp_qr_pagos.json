@@ -1,0 +1,222 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_pagos",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_pago"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_pago_can"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cancela"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_calcula_devolucion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda_pago"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda_op"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor_pagar_moneda_op"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_prec_moneda_op"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_cotizacion"
+			},
+			{
+				"dataType": "money",
+				"direction": "out",
+				"name": "@o_monto_prec_moneda_pago"
+			},
+			{
+				"dataType": "money",
+				"direction": "out",
+				"name": "@o_valor_pagar_moneda_pago"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_tipo_cambio"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_cotiz_destino"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_cot_usd"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_factor"
+			},
+			{
+				"dataType": "char",
+				"direction": "out",
+				"name": "@o_tipo_op"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "9320080f-68c4-4333-a4e2-e39f84a64b08",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "1d10272e-1120-4fd4-8758-0ffa3b567d67",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "ed866772-a42c-4798-87c0-380534f65928",
+				"columns": [
+					"1",
+					"2",
+					"3"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "d1275d2d-1a6c-43ff-a8b1-42aebb1ff12f",
+				"columns": [
+					"1"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "792f3018-ff33-40f3-b6fc-ae80f1835771",
+				"columns": [
+					"1"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "e0c45dce-1c9e-4250-a0fd-d6e61a2f6263",
+				"columns": [
+					"1",
+					"2"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "ae2dafc8-83a4-4105-a360-12ff2b6e30e4",
+				"columns": [
+					"DESCRIPCION",
+					"DEVOLVER",
+					"INGRESOS"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

@@ -1,0 +1,50 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_FUNDQJFL_8975",
+		"controlName": "FundQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_FUNDQJFL_8975.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_8975_37395",
+		"controlName": "QV_8975_37395",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "Fund",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_FUNDWJCLLL_877237",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

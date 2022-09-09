@@ -1,0 +1,80 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77668"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CUSTOM",
+			"value": "modo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_id_rango",
+			"type": "CUSTOM",
+			"value": "idRango"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		}
+	],
+	"name": "BLI_Delete_Ranges",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6252_bli_delete_ranges",
+	"patternName": "BLI_Delete_Ranges",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_tabla_rango",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,162 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_DEBTORZN_LNSPR",
+		"controlName": "DebtorEntityQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_DEBTORZN_LNSPR.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_MV07_KFL31",
+		"controlName": "QV_MV07_KFL31",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "DebtorEntity",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "amount",
+		"controlId": "VA_AMOUNTFVWTEWBDA_761899",
+		"controlName": "amount",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "code",
+		"controlId": "VA_CODEKUNNZDIHWDU_476899",
+		"controlName": "code",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationCRUDFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "creditLine",
+		"controlId": "VA_CREDITLINEGFBUT_718899",
+		"controlName": "creditLine",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "debtType",
+		"controlId": "VA_DEBTTYPELMRNXVE_296899",
+		"controlName": "debtType",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "official",
+		"controlId": "VA_OFFICIALFUSJDJB_630899",
+		"controlName": "official",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 7
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "ubication",
+		"controlId": "VA_UBICATIONEIZYDH_113899",
+		"controlName": "ubication",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 7
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONTWR88_356899",
+		"controlName": "VA_VAVABUTTONTWR88_356899",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationCRUDFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONWNJI5_490899",
+		"controlName": "VA_VAVABUTTONWNJI5_490899",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_PASSIVEPIF_144956",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

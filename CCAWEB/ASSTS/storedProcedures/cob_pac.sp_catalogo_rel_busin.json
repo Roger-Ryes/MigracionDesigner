@@ -1,0 +1,620 @@
+{
+	"filename": "C:\\Users\\jgutierrez.FNA\\Desktop\\sp.sp",
+	"procedure": {
+		"database": "cob_pac",
+		"name": "sp_catalogo_rel_busin",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_nivel"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tabla"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tabla_rel"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo_0"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo_1"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo_2"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo_3"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo_4"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_campos"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "12639ff6-aa5d-4f46-a53a-e1111164201c",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select rtrim(cobis..cl_catalogo.codigo) ,\r\n             convert(varchar(48),valor)\r\n        from"
+			},
+			{
+				"_idQuery": "64424ccd-7a78-47ab-96e2-0eee27f84f40",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select rtrim(cobis..cl_catalogo.codigo) ,\r\n             convert(varchar(48),valor)\r\n        from"
+			},
+			{
+				"_idQuery": "0c9d43f3-18db-4e4c-8753-6085c7e0e0cb",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select rtrim(cobis..cl_catalogo.codigo) ,\r\n             convert(varchar(48),valor)\r\n        from"
+			},
+			{
+				"_idQuery": "b32649bb-7e63-4a2a-8b9c-0455b88c07cb",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "2736e138-5111-4010-8865-4595c3f9d7eb",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "0226365e-41d2-455a-a14d-83036a6c0dab",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "73b9cbc2-4854-401c-a638-e45bbb4d4856",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "1bbcf6df-fb0f-47ff-8faa-60cfbbefb119",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "a4abf909-b5f7-4fd5-9728-c573f93acc64",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "7c0062f3-718b-4761-a657-1fdcecc41653",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "1f54c193-40bd-4af6-94a3-6d2e15a54dd1",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "456b2a1d-2f3b-4414-bd80-724ae6e71066",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "90ca7f42-3af8-48e5-9169-bfbcc4730dce",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "db834832-dc7f-4bc0-ae6b-afa0cab1a939",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "7d981b25-5707-492d-8c39-926e71a7d011",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "a03b1ab8-b23a-4372-8483-fd98e1352cad",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "5f923dec-3096-4a6e-a3e4-454731ae7ade",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo ,\r\n                ca.valor\r\n           from"
+			},
+			{
+				"_idQuery": "9d9cfa3b-7a46-47f2-a9f8-1aa12389fcba",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select rtrim(cobis..cl_catalogo.codigo) ,\r\n             convert(varchar(48),valor)\r\n        from"
+			},
+			{
+				"_idQuery": "a4a28290-21ed-426f-850c-c10badb4e900",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select rtrim(cobis..cl_catalogo.codigo) ,\r\n             convert(varchar(48),valor)\r\n        from"
+			},
+			{
+				"_idQuery": "3637bf05-fc92-422a-ad35-94961db2b012",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select rtrim(cobis..cl_catalogo.codigo) ,\r\n             convert(varchar(48),valor)\r\n        from"
+			},
+			{
+				"_idQuery": "5b9380e2-0ea0-4228-9295-12f28bb5faed",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor\r\n        from"
+			},
+			{
+				"_idQuery": "7843269f-0e8c-41cd-99b0-4a6bf0399903",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor\r\n        from"
+			},
+			{
+				"_idQuery": "ca2bc5ff-71c4-4248-8add-175375eb591d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor\r\n        from"
+			},
+			{
+				"_idQuery": "06544567-9dd4-42b4-8fbe-876668eb0d40",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor\r\n        from"
+			},
+			{
+				"_idQuery": "d55a9791-c23d-42f6-9890-e3ac56f99253",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select tr_campo_1"
+			},
+			{
+				"_idQuery": "a9eb11bd-ec49-4669-bef7-885a9405f12c",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "2d84f73b-42c1-47b5-a99a-47461d2359f6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "d790c2e1-1cd8-4010-86c6-94a65247f098",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "d780a148-ce74-415e-89d7-578625f219d0",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "f180b873-568d-49eb-9106-f71d70569d36",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "8b10fd4b-76ca-4df2-beaa-974d4c179695",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "d93e2b40-ac15-4177-8605-84a50653355b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "7f2ab199-67b3-40c1-ac06-ca5e3fbf43b1",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select tr_campo_1"
+			},
+			{
+				"_idQuery": "3076df6e-5508-4bd8-a8e5-3140118a8bd8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "3b0a2fdd-c75a-4c16-9583-cf951acdba40",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "4d38e819-ce4b-49de-b5e1-1d7340af91f4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "7823aa2f-62fa-4631-8ec2-02e7b9784933",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "664405a8-1058-419e-8abb-f611e879c00d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "39f5edfb-8cae-4cee-8205-a5d196722579",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "bdbb6c0f-f1ae-43e6-b865-947ac1543209",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.valor from"
+			},
+			{
+				"_idQuery": "4fb95e89-d3cd-4dcb-a255-f4f4b032873f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select valor\r\n        from"
+			},
+			{
+				"_idQuery": "f988d435-eff6-4b29-ba87-1fb0beac4227",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select valor\r\n       from"
+			},
+			{
+				"_idQuery": "a1918d7f-8d40-4ce1-ae23-0d19b7ce8219",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "9738bdfc-0200-400a-b5dd-7edcda6d5ef0",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "39f8f01b-c2b9-4481-bf78-716c752fc6ae",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select codigo"
+			},
+			{
+				"_idQuery": "cac4c5b0-de95-4a4c-87b9-8b4a8fa55be7",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "7c9cc61e-3d4e-4f02-b5d8-829e27c21ce1",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "cf57e8b7-15d8-44f3-96c4-5bff182afea7",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "75c868b1-c149-4489-bb3c-0a03b1c39887",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "fc21804e-b942-433e-9c81-5d0ed8b62af9",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "9f3c6a23-48a7-4360-b63c-900652ae9030",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "ccf2f3bf-3d52-43f0-bfd9-1dd4122d30aa",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "68b7810a-73bc-4917-a5a1-c706dd24f655",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_error"
+			},
+			{
+				"_idQuery": "53389978-c563-4f9f-8803-cb59f8c1eef9",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ca.codigo"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_base"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_campo_codigo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_campo_descripcion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_coma"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_id"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_len"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_query"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tabla_real"
+			}
+		]
+	}
+}

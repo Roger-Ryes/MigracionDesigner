@@ -1,0 +1,113 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_OPERATINU_418",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "OperationCRUDFormEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7450"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_opcion",
+			"type": "CONSTANT",
+			"value": "B"
+		},
+		{
+			"attributeId": "AT11_CODEXORG418",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINU_418",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_GetGroupCode",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8708_bli_getgroupcode",
+	"patternName": "BLI_GetGroupCode",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "1011be64-e055-45ae-b3c9-d79e4cf67ee9",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "select en_grupo\r\n\t\t      ,isnull(en_sector,\u0027000010\u0027)\r\n\t\t\t  ,isnull(en_actividad,\u002704200002\u0027)\r\n    from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "1011be64-e055-45ae-b3c9-d79e4cf67ee9",
+			"columns": [
+				{
+					"attributeId": "AT58_GROUPCOD816",
+					"entityId": "EN_OPERATINN_816",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_DESECOOI816",
+					"entityId": "EN_OPERATINN_816",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_DESCECCI816",
+					"entityId": "EN_OPERATINN_816",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_OPERATINN_816",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_crear_operacion_grp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

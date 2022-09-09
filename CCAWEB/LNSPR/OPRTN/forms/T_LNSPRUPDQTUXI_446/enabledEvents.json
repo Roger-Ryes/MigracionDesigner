@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_MODAALAS_TP83",
+		"controlName": "ModalTasaEntityQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_MODAALAS_TP83.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ModalTasaEntity",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_CU83_UDH39",
+		"controlName": "QV_CU83_UDH39",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "ModalTasaEntity",
+		"eventsType": "queryViewEventType"
+	}
+]

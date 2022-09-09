@@ -1,0 +1,77 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_AGGREGAIE_510",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AggregateDeferredItemsEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT50_OPERATNN510",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AGGREGAIE_510",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT62_ITEMTTCH510",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AGGREGAIE_510",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77695"
+		}
+	],
+	"name": "BLI_PaymentAggregateDeferredItems",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8605_bli_paymentaggregatedeferreditems",
+	"patternName": "BLI_PaymentAggregateDeferredItems",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_eliminar_seg_desemp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,75 @@
+{
+	"filename": "C:\\Users\\jgutierrez.FNA\\Desktop\\sp_cuotas_adicionales.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_cuotas_adicionales",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dividendo"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "e0c2baff-f250-4c8e-959d-6e73dfc36a12",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": true,
+				"queryText": "select cat_dividendo,convert(varchar(10),dit_fecha_ven,@i_formato_fecha), cat_cuota,dit_de_capital\r\n   from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

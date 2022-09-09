@@ -1,0 +1,143 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_PRODUCTII_203",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ProductLineDistribution"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21023"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "U"
+		},
+		{
+			"attributeId": "AT28_SEQUENTT203",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_PRODUCTII_203",
+			"format": "",
+			"name": "@i_numero",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "CUSTOM",
+			"value": "tOperacion"
+		},
+		{
+			"attributeId": "AT88_AMOUNTEY203",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_PRODUCTII_203",
+			"format": "",
+			"name": "@i_monto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT52_PRODUCTT203",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_PRODUCTII_203",
+			"format": "",
+			"name": "@i_producto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT78_CURRENYC203",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_PRODUCTII_203",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT81_CLIENTCO203",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_PRODUCTII_203",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_controla_producto",
+			"type": "CUSTOM",
+			"value": "controlaProd"
+		},
+		{
+			"attributeId": "AT39_OBSERVSA203",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_PRODUCTII_203",
+			"format": "",
+			"name": "@i_observaciones",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_Update_Line_Distribution",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6193_bli_update_line_distribution",
+	"patternName": "BLI_Update_Line_Distribution",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_lin_ope_moneda",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

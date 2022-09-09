@@ -1,0 +1,194 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7142"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "P"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_CausationTransactions",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9971_bli_causationtransactions",
+	"patternName": "BLI_CausationTransactions",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "99a76a10-a037-4946-a1c6-5c0e2887c2b5",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "2fe25062-71da-484b-bacf-05200f0f7d04",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 10,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "2fe25062-71da-484b-bacf-05200f0f7d04",
+			"columns": [
+				{
+					"attributeId": "AT11_DATETRNA534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Fecha Trn",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_DATEREDE534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Fecha Ref",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_DIVIDEND534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Dividendo",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT52_CONCEPTT534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Concepto",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_COINYBHA534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Moneda",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_AMOUNTMP534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Monto",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_AMOUNTNM534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Monto MN",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_STATEQSA534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Estado",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_PRICEHNB534",
+					"entityId": "EN_CAUSATION_534",
+					"format": "",
+					"name": "Cotizacion",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CAUSATION_534",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "Causation"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_trn",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

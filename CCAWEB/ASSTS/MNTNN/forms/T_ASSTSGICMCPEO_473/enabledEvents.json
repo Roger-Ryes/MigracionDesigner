@@ -1,0 +1,80 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_ONERIAAL_UR42",
+		"controlName": "OneRankListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_ONERIAAL_UR42.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "OneRankList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_SK42_AAN67",
+		"controlName": "QV_SK42_AAN67",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "beforeEnterInLineRow",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowInserting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 7
+			}
+		],
+		"entityName": "OneRankList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "date",
+		"controlId": "VA_DATEATAJJMIOPBZ_980961",
+		"controlName": "date",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OneRankFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_ONERANKGVL_254473",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

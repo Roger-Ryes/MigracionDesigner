@@ -1,0 +1,982 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+		{
+			"action": null,
+			"causesValidation": false,
+			"causesValidationAsString": "F",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TLNSPRWQ_853_997",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TLNSPRWQ_853"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_GUARDARRI_81055"
+				},
+				"labelId": "LBL_LNSPR_GUARDARRI_81055",
+				"moduleId": "LNSPR"
+			},
+			"layoutType": "Command",
+			"name": "Command2",
+			"options": 0,
+			"order": 1,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		},
+		{
+			"action": null,
+			"causesValidation": false,
+			"causesValidationAsString": "F",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TLNSPRWQ_N5S_695",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TLNSPRWQ_N5S"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_LIMPIARVF_75606"
+				},
+				"labelId": "LBL_LOANS_LIMPIARVF_75606",
+				"moduleId": "LNSPR"
+			},
+			"layoutType": "Command",
+			"name": "Command2",
+			"options": 0,
+			"order": 2,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		}
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "LNSPR",
+		"subModuleId": "OPRTN",
+		"taskId": "T_LNSPRWQVPGSSG_618",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_BATCHMASSS_336618",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../LNSPR/relations/componentKeys.json#/OPRTN/Forms/T_LNSPRWQVPGSSG_618/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_008T_LNSPRWQVPGSSG_618_253",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 1,
+						"description": "Se ejecuta antes de renderizar un ViewContainer, permite realizar personalizaciones visuales",
+						"eventId": 8,
+						"name": "Render"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN",
+				"taskId": "T_LNSPRWQVPGSSG_618",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_BATCHMASSS_336618"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "BatchMassivePaymentsForm",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"titleLabel": {
+				"defaultValue": {
+					"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_PAGOSMAVH_34904"
+				},
+				"labelId": "LBL_LNSPR_PAGOSMAVH_34904",
+				"moduleId": "LNSPR"
+			},
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 3,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../LNSPR/entities/EN_LOANSEATF_633.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_BATCHMAINN_688436",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group1719",
+						"order": 1,
+						"orientation": "V",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_LOANSEATF_633.json#/attributes/AT35_ARCHIVOO633"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_ARCHIVORFAULKWH_987436_475",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+											{
+												"actionArgs": [
+												],
+												"actionId": "CUSTOM",
+												"actionType": "CUSTOM"
+											}
+										],
+										"executionType": 7,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_CARGARAVO_29365"
+									},
+									"labelId": "LBL_LOANS_CARGARAVO_29365",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "archivo",
+								"options": 0,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "I",
+									"userControlId": "FileUpload"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_ARCHIVORFAULKWH_987436",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					},
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 1,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_BATCHMASTP_249436",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group2496",
+						"order": 2,
+						"orientation": "V",
+						"queryView": {
+							"actionDesign": "Button",
+							"actions": [
+							],
+							"allowPaging": true,
+							"allowPagingStr": "T",
+							"allowSorting": false,
+							"allowSortingStr": "F",
+							"autoSync": null,
+							"componentStyle": null,
+							"confirmRowDeletion": false,
+							"confirmRowDeletionStr": "F",
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"customUrlDialog": null,
+							"deleteCommandEnabled": false,
+							"deleteCommandEnabledStr": "F",
+							"dialogTitleLabelId": null,
+							"editCommandEnabled": false,
+							"editCommandEnabledStr": "F",
+							"editMode": "0",
+							"entityName": {
+								"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/name"
+							},
+							"hasDetail": false,
+							"hasDetailString": "F",
+							"height": null,
+							"includeQueryMembers": [
+								"AT44_CURRENTE999",
+								"AT90_DATEPATY999",
+								"AT82_DESCRIPN999",
+								"AT18_VALUEPAY999",
+								"AT79_ERRORLYM999",
+								"AT93_NUMBREBA999",
+								"AT74_PAYMENTT999",
+								"AT53_CUSTOMEN999",
+								"AT26_NUMBERCO999"
+							],
+							"insertCommandEnabled": false,
+							"insertCommandEnabledStr": "F",
+							"isCustomized": false,
+							"modalSize": null,
+							"modeSelection": "Simple",
+							"moduleIdDialog": null,
+							"multiSelectEnabledStr": "S",
+							"name": "QV_WR71_MYK57",
+							"options": 2304,
+							"pageSize": 10,
+							"query": {
+								"$ref": "../../../../LNSPR/OPRTN/queries/Q_MASSTENM_SJ71.json#"
+							},
+							"queryId": "Q_MASSTENM_SJ71",
+							"queryVersion": "1.0.0",
+							"queryViewCustomActions": [
+								{
+									"action": null,
+									"commandImageId": null,
+									"commandName": "RowSelecting",
+									"commandOrder": null,
+									"commandType": 0,
+									"customActionId": "CEQV_208QV_WR71_MYK57_720",
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": "T",
+									"eventActions": [
+									],
+									"executionType": 1,
+									"filter": null,
+									"isCustomized": false,
+									"name": "RowSelecting",
+									"options": 0,
+									"queryView": "QV_WR71_MYK57",
+									"queryViewEventType": {
+										"availableExecutionType": 7,
+										"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+										"eventId": 208,
+										"name": "RowSelecting"
+									},
+									"serviceName": null,
+									"userControl": {
+										"customizationLayer": "0",
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Button",
+										"type": "A",
+										"userControlId": "Button"
+									}
+								}
+							],
+							"queryViewId": "QV_WR71_MYK57",
+							"queryViewType": "Grid",
+							"rowCommandAppearance": 0,
+							"style": null,
+							"subModuleIdDialog": null,
+							"taskIdDialog": null,
+							"taskVersionDialog": null,
+							"typeFormDialog": null,
+							"userControl": {
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"description": "Designer Grid",
+								"name": "Designer Grid",
+								"type": "I",
+								"userControlId": "Grid"
+							},
+							"viewContainerIdDialog": null
+						},
+						"queryViewId": "QV_WR71_MYK57",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT90_DATEPATY999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_FECHAVALR_40841"
+									},
+									"labelId": "LBL_LNSPR_FECHAVALR_40841",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "datePayment",
+								"options": 0,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "I",
+									"userControlId": "DateField"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_DATEFIELDRJLBIW_571436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT78_SEQUENTT999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "sequentialPM",
+								"options": 0,
+								"order": 10,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_TEXTINPUTBOXCHF_516436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT53_CUSTOMEN999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_CLIENTEOR_78949"
+									},
+									"labelId": "LBL_LNSPR_CLIENTEOR_78949",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "customerName",
+								"options": 0,
+								"order": 3,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXCLK_733436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT93_NUMBREBA999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_OPERACIOO_86900"
+									},
+									"labelId": "LBL_LOANS_OPERACIOO_86900",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "numberBank",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXESE_841436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT79_ERRORLYM999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_DESCRIPIN_18186"
+									},
+									"labelId": "LBL_LNSPR_DESCRIPIN_18186",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "errorPM",
+								"options": 0,
+								"order": 9,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXJFS_403436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT44_CURRENTE999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_MONEDAFCA_83005"
+									},
+									"labelId": "LBL_LNSPR_MONEDAFCA_83005",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "currencyPayment",
+								"options": 0,
+								"order": 4,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXJJV_466436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT28_ENDLOTMM999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "endLotePM",
+								"options": 0,
+								"order": 13,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_TEXTINPUTBOXMOP_204436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT26_NUMBERCO999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_NOCUENTAA_41516"
+									},
+									"labelId": "LBL_LNSPR_NOCUENTAA_41516",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "numberAccount",
+								"options": 0,
+								"order": 7,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXPVE_204436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT51_FILEPMOQ999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "filePM",
+								"options": 0,
+								"order": 12,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_TEXTINPUTBOXPWB_936436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT18_VALUEPAY999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_VALORAPAA_34434"
+									},
+									"labelId": "LBL_LNSPR_VALORAPAA_34434",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "valuePay",
+								"options": 0,
+								"order": 6,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXQST_156436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT85_LOTPMZHS999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 0,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "lotePM",
+								"options": 0,
+								"order": 11,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 0,
+								"visualAttributeId": "VA_TEXTINPUTBOXSOI_794436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT82_DESCRIPN999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_ESTADOEAI_33340"
+									},
+									"labelId": "LBL_LNSPR_ESTADOEAI_33340",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "description",
+								"options": 0,
+								"order": 8,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXTAV_198436",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT74_PAYMENTT999"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_APAGOWSUO_22122"
+									},
+									"labelId": "LBL_LNSPR_APAGOWSUO_22122",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "formPayment",
+								"options": 0,
+								"order": 5,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXTSE_297436",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_BATCHMASIM_436"
+				},
+				"metadataVersion": "7.2.2.2115",
+				"modules": [
+					{
+						"moduleId": "LNSPR"
+					}
+				],
+				"name": "View of BatchMassivePaymentsForm"
+			}
+		}
+	]
+}

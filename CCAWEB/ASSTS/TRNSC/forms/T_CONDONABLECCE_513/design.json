@@ -1,0 +1,271 @@
+{
+	"autoCrudStr": "F",
+	"commands": [
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"id": {
+		"moduleId": "ASSTS",
+		"subModuleId": "TRNSC",
+		"taskId": "T_CONDONABLECCE_513",
+		"version": "1.0.0"
+	},
+	"isImported": false,
+	"mainViewContainerId": "VC_CONDONABPP_384513",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../ASSTS/relations/componentKeys.json#/TRNSC/Forms/T_CONDONABLECCE_513/name"
+	},
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_002T_CONDONABLECCE_513_511",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"executionType": 3,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Inicializaci\ufffdn de datos de un ViewContainer, despues de este evento se realiza el segimiento de cambios en los datos",
+						"eventId": 2,
+						"name": "InitData"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC",
+				"taskId": "T_CONDONABLECCE_513",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_CONDONABPP_384513"
+			},
+			"layoutType": "Group",
+			"name": "CondonableConceptsListForm",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"columnsNum": 1,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../ASSTS/entities/EN_CONDONAOB_448.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_CONDONAPIE_826726",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"layoutType": "Group",
+						"name": "Group1733",
+						"orientation": "V",
+						"queryView": {
+							"actionDesign": "Button",
+							"actions": [
+							],
+							"allowPaging": false,
+							"allowPagingStr": "F",
+							"allowSorting": false,
+							"allowSortingStr": "F",
+							"confirmRowDeletion": false,
+							"confirmRowDeletionStr": "F",
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"customUrlDialog": null,
+							"deleteCommandEnabled": false,
+							"deleteCommandEnabledStr": "F",
+							"dialogTitleLabelId": null,
+							"editCommandEnabled": false,
+							"editCommandEnabledStr": "F",
+							"editMode": "0",
+							"entityName": "CondonableConcepts",
+							"hasDetail": false,
+							"hasDetailString": "F",
+							"includeQueryMembers": [
+								"AT36_CONCEPTT448",
+								"AT35_DESCRIPI448"
+							],
+							"insertCommandEnabled": false,
+							"insertCommandEnabledStr": "F",
+							"modeSelection": "Simple",
+							"moduleIdDialog": null,
+							"multiSelectEnabledStr": "S",
+							"name": "QV_2096_93069",
+							"options": 0,
+							"pageSize": null,
+							"query": {
+								"$ref": "../../../../ASSTS/MNTNN/queries/Q_CONDONEN_2096.json#"
+							},
+							"queryId": "Q_CONDONEN_2096",
+							"queryVersion": "1.0.0",
+							"queryViewCustomActions": [
+								{
+									"action": null,
+									"commandImageId": null,
+									"commandName": "RowSelecting",
+									"commandOrder": null,
+									"commandType": 0,
+									"customActionId": "CEQV_208QV_2096_93069_986",
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": "T",
+									"executionType": 3,
+									"filter": null,
+									"name": "RowSelecting",
+									"queryView": "QV_2096_93069",
+									"queryViewEventType": {
+										"availableExecutionType": 7,
+										"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+										"eventId": 208,
+										"name": "RowSelecting"
+									},
+									"serviceName": null,
+									"userControl": {
+										"customizationLayer": "0",
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Button",
+										"type": "A",
+										"userControlId": "Button"
+									}
+								}
+							],
+							"queryViewId": "QV_2096_93069",
+							"queryViewType": "Grid",
+							"rowCommandAppearance": 0,
+							"subModuleIdDialog": null,
+							"taskIdDialog": "1.0.0",
+							"taskVersionDialog": null,
+							"userControl": {
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"description": "Designer Grid",
+								"name": "Designer Grid",
+								"type": "I",
+								"userControlId": "Grid"
+							},
+							"viewContainerIdDialog": null
+						},
+						"queryViewId": "QV_2096_93069",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../ASSTS/entities/EN_CONDONAOB_448.json#/attributes/AT36_CONCEPTT448"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_RUBROFKGQ_42963"
+									},
+									"labelId": "LBL_ASSTS_RUBROFKGQ_42963",
+									"moduleId": "ASSTS"
+								},
+								"maxRecords": null,
+								"name": "concept",
+								"options": 0,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXNQQ_137726",
+								"width": "100"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../ASSTS/entities/EN_CONDONAOB_448.json#/attributes/AT35_DESCRIPI448"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DESCRIPNI_65857"
+									},
+									"labelId": "LBL_ASSTS_DESCRIPNI_65857",
+									"moduleId": "ASSTS"
+								},
+								"maxRecords": null,
+								"name": "description",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXQEJ_639726",
+								"width": null
+							}
+						]
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_CONDONABSC_726"
+				},
+				"modules": [
+					{
+						"moduleId": "ASSTS"
+					}
+				],
+				"name": "View of CondonableConceptsListForm"
+			}
+		}
+	]
+}

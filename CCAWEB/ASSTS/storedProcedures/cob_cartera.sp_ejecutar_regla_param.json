@@ -1,0 +1,206 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\ejereglapar.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_ejecutar_regla_param",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_opcion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_seguro"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_regla"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_variables"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_separador"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_vig_ini"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_vig_fin"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_categoria"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_folio"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial_trn"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_return_variableR"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_return_resultsR"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_last_condition_parentR"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "9108caac-7fea-41ad-9735-09263c366c2e",
+				"columns": [
+					"VARIABLE",
+					"RESULT",
+					"CONDICION"
+				],
+				"editMode": false,
+				"queryText": "select \u0027VARIABLE\u0027  \t= @w_return_variable,\r\n\t\t\t\t\t\u0027RESULT\u0027\t  \t= @w_return_results,\r\n\t\t\t\t\t\u0027CONDICION\u0027\t= @w_last_condition_parent"
+			},
+			{
+				"_idQuery": "332c1346-cecb-4802-bf01-60b7af90df76",
+				"columns": [
+					"VARIABLE",
+					"RESULT",
+					"CONDICION",
+					"MONTO SEGURO",
+					"PRECIO MENSUAL"
+				],
+				"editMode": false,
+				"queryText": "select \u0027VARIABLE\u0027  \t = @w_return_variable,\r\n\t\t\t\t\t\u0027RESULT\u0027\t  \t = @w_return_results,\r\n\t\t\t\t\t\u0027CONDICION\u0027\t\t = @w_last_condition_parent,\r\n\t\t\t\t\t\u0027MONTO SEGURO\u0027\t = @w_monto_seguro,\r\n\t\t\t\t\t\u0027PRECIO MENSUAL\u0027 = @w_precio_mensual"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_vig_fin"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_vig_ini"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_frecuencia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_last_condition_parent"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_seguro"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_precio_mensual"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_regla"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_return_results"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_return_variable"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_seguro_basico"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_variables"
+			}
+		]
+	}
+}

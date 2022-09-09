@@ -1,0 +1,137 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77562"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operation",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "bankId"
+		}
+	],
+	"name": "BLI_DebtorSeach",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5761_bli_debtorseach",
+	"patternName": "BLI_DebtorSeach",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "cd2502f0-31ec-48fb-ad2d-87bb70d5c0b4",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "cd2502f0-31ec-48fb-ad2d-87bb70d5c0b4",
+			"columns": [
+				{
+					"attributeId": "AT70_CLIENTLO380",
+					"entityId": "EN_DEBTORLIS_380",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_CLIENTRA380",
+					"entityId": "EN_DEBTORLIS_380",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_CLIENTOJ380",
+					"entityId": "EN_DEBTORLIS_380",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_CLIENTNE380",
+					"entityId": "EN_DEBTORLIS_380",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT50_CLIENTDI380",
+					"entityId": "EN_DEBTORLIS_380",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT67_SEQUENIT380",
+					"entityId": "EN_DEBTORLIS_380",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT64_CENTRALL380",
+					"entityId": "EN_DEBTORLIS_380",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_DEBTORLIS_380",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "DebtorList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_codeudor_tmp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,119 @@
+/*CABECERA*/
+
+
+/*DATOS DEL PRESTAMO*/
+cobis-header + #VC_GENERALIAO_289119
+
+/*.cb-view-container-root*/
+    {
+    padding: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: auto;
+}
+
+.cb-form-header .dropdown-menu {
+    overflow-y: auto;
+}
+
+
+cobis-header + #VC_LOANSHISOO_808949
+
+/*.cb-view-container-root*/
+    {
+    padding: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: auto;
+}
+
+/*FIN CABECERA*/
+
+
+/*RENOVACIONES*/
+#G_REFINANLII_228515 .row .col-xs-3 {
+    margin-top: -22px !important;
+    margin-bottom: -17px !important;
+}
+
+#G_REFINANIER_696515 .row .col-xs-3 {
+    margin-top: -22px !important;
+    margin-bottom: -17px !important;
+}
+
+#G_REFINANRIA_736515 .row .col-xs-3 {
+    margin-top: -10px !important;
+    margin-bottom: -17px !important;
+}
+
+
+#G_REFINANRIA_736515 .row .col-xs-9 .form-group .cb-control {
+    text-align: right;
+}
+
+
+#G_REFINANLII_228515 .row .col-xs-3 .form-group .cb-control {
+    text-align: right;
+}
+
+#G_REFINANIER_696515 .row .col-xs-3 .form-group .cb-control {
+    text-align: right;
+}
+
+#G_REFINANLII_228515 .row .col-xs-3 .form-group .cb-control #VA_VASIMPLELABELLL_584515 {
+    float: left;
+}
+
+#G_REFINANLII_228515 .row .col-xs-3 .form-group .cb-control #VA_VASIMPLELABELLL_975515 {
+    float: left;
+}
+
+#G_REFINANLII_228515 .row .col-xs-3 .form-group .cb-control #VA_VASIMPLELABELLL_604515 {
+    float: left;
+}
+
+/*total*/
+#G_REFINANIER_696515 .row .col-xs-3 .form-group .cb-control #VA_VASIMPLELABELLL_324515 {
+    float: left;
+}
+
+#G_REFINANIER_696515 .row .col-xs-3 .form-group .cb-control #VA_VASIMPLELABELLL_416515 {
+    float: left;
+}
+
+/*RENOVACIONES FIN*/
+
+
+
+/* REESTRUCTURACION*/
+
+#G_LOANSREUNT_576701 .row .col-xs-3 {
+    margin-top: -22px !important;
+    margin-bottom: -17px !important;
+}
+
+
+#G_LOANSREUNT_576701 .row .col-xs-3 .form-group .cb-control {
+    text-align: right;
+}
+
+#G_LOANSREUNT_576701 .row .col-xs-3 .form-group .cb-control #VA_VASIMPLELABELLL_931701 {
+    float: left;
+}
+
+/*REESTRUCTURACION FIN*/
+
+
+/* RUBROS DIFERIDOS */
+#QV_JT23_FZW47 .k-grid-header th.k-header,
+.k-filter-row th {
+    text-align: left;
+    white-space: normal;
+}
+
+
+
+/*ALINEACION TEXTO GRID*/
+div.k-grid table tbody td.grid-list-no-right {
+    text-align: left
+}

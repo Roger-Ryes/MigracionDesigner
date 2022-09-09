@@ -1,0 +1,338 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_ECPR_JAA30_396",
+		"controlName": "QV_ECPR_JAA30",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationEntity",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_AMORTITI_LNSPR",
+		"controlName": "AmortizationEntityQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_AMORTITI_LNSPR.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_ECPR_JAA30",
+		"controlName": "QV_ECPR_JAA30",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "afterLeaveInLineRow",
+				"executionType": 1
+			},
+			{
+				"eventName": "beforeEnterInLineRow",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowDeleting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowInserting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationEntity",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "graceDividend",
+		"controlId": "VA_9468GILHMJRMZIF_745198",
+		"controlName": "graceDividend",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "fee",
+		"controlId": "VA_FEEOFWVFIUKFNPP_635198",
+		"controlName": "fee",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "fee",
+		"controlId": "VA_FEEOLAUUHKGPDCB_657198",
+		"controlName": "fee",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "firstDueDate",
+		"controlId": "VA_FIRSTDUEDATEACN_138198",
+		"controlName": "firstDueDate",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "fixedPayementDay",
+		"controlId": "VA_FIXEDPAYEMENYTY_637198",
+		"controlName": "fixedPayementDay",
+		"controlType": "CheckBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "termGraceCapital",
+		"controlId": "VA_TERMGRACECAPTAT_881198",
+		"controlName": "termGraceCapital",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "termGraceInterest",
+		"controlId": "VA_TERMGRACEINTTET_849198",
+		"controlName": "termGraceInterest",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "term",
+		"controlId": "VA_TERMMUMJBESVPSA_498198",
+		"controlName": "term",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "typeAmortization",
+		"controlId": "VA_TYPEAMORTIZATTN_681198",
+		"controlName": "typeAmortization",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "typeGrace",
+		"controlId": "VA_TYPEGRACEBHAAVJ_350198",
+		"controlName": "typeGrace",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "AmortizationFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONNPM_2_987198",
+		"controlName": "VA_VAVABUTTONNPM_2_987198",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONNXJJ__482198",
+		"controlName": "VA_VAVABUTTONNXJJ__482198",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONOH3FZ_246198",
+		"controlName": "VA_VAVABUTTONOH3FZ_246198",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONPJ080_778198",
+		"controlName": "VA_VAVABUTTONPJ080_778198",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONRDGI5_636198",
+		"controlName": "VA_VAVABUTTONRDGI5_636198",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONVJFY0_286198",
+		"controlName": "VA_VAVABUTTONVJFY0_286198",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONZDFPF_173198",
+		"controlName": "VA_VAVABUTTONZDFPF_173198",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_OPERATIOPA_648633",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "changeGroup",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

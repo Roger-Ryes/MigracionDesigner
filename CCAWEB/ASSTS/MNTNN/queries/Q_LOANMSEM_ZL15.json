@@ -1,0 +1,875 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_LOANMSEM_ZL15_513",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_LOANMSEM_ZL15",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_LOANITEIL_824",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_LOANITEIL_824/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/MNTNN/Queries/Q_LOANMSEM_ZL15/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "payArrears",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT52_PAYARRSS824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM15LM5178_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "warrantyValue",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT83_WARRANEV824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 25,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM1LLMS283_25",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "warrantyType",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT32_WARRANYY824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 22,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM1LSSS259_22",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "points",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT92_POINTSPB824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 11,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM1LZZS763_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "associate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT96_ASSOCIET824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 36,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM1SZ1L527_36",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "factor",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT54_FACTORXA824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 30,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM1ZEM1718_30",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "paymentMethod",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT26_PAYMENDD824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM1ZS5L747_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "financed",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT82_FINANCEE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 33,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM1ZZSE470_33",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "maxRate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT30_MAXRATEE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 35,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM5EZZ5990_35",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "referenceReadjustment",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT63_REFERERN824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 18,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM5MEL5817_18",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "grace",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT16_GRACEQJU824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 19,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM5S5SS182_19",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "factorReadjustment",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT31_FACTORJU824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 31,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM5SSZZ795_31",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "interestPeriods",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT58_INTERERT824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 27,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANM5ZM51192_27",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "receivable",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT78_RECEIVLL824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 40,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANME5MLZ233_21",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "category",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT75_CATEGORY824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMELE1M784_40",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "percentage",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT42_PERCENTE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 32,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMESS1E831_32",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "warrantyAccount",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT65_WARRANTT824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 23,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANML1EL5882_23",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "warrantyCoverage",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT81_WARRANEE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 24,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANML1SLZ333_24",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "description",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT60_DESCRIOT824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 21,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLM15E734_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "amount",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT55_AMOUNTLG824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLM5MM918_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "totalRate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT41_TOTALRAA824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 13,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLMLM5253_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "reference",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT98_REFERECE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLMMZS969_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "typePoints",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT12_TYPEPOSI824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 12,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLSLMM965_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "item",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT78_ITEMIJKU824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLZ1SL980_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "associateValue",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT22_ASSOCIUA824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 37,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLZL5S990_37",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "otherRates",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT53_OTHERRTT824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 28,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMLZZ5Z415_28",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "rank",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT43_RANKEMGK824"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_LOANMM5E5E795_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "annualRate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT25_ANNUALRR824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 15,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMS5EES305_15",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "signo",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT63_SIGNONZP824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMS5LM1325_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "cause",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT96_CAUSERGJ824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMSEL5E857_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "minRate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT94_MINRATEE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 34,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMSS1E5380_34",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "calculationBase",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT58_CALCULBS824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 20,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMSZSS5461_20",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "bank",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT19_BANKVRLP824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 29,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZ1MM5792_29",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "insuranceType",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT41_INSURAPE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 39,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZ5S5M389_39",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "insurance",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT89_INSURAEN824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 38,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZELLE400_38",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "signReadjustment",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT44_SIGNREJD824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 16,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZL1E1532_16",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "priority",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT18_PRIORITT824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZML5M850_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "pointsReadjustment",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT68_POINTSEU824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 17,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZMLL5202_17",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "negotationRate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT82_NEGOTAOI824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 14,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZSE11565_14",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "typeItem",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT63_TYPEITEM824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZSZ5L372_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dividendType",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANITEIL_824.json#/attributes/AT33_DIVIDENE824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 26,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LOANMZZLMZ119_26",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "MNTNN"
+			}
+		}
+	]
+}

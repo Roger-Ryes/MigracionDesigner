@@ -1,0 +1,1802 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+		{
+			"action": null,
+			"causesValidation": false,
+			"causesValidationAsString": "F",
+			"close": true,
+			"closeAsString": "T",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TASSTSVI_9TC_981",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TASSTSVI_9TC"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CANCELARR_70217"
+				},
+				"labelId": "LBL_ASSTS_CANCELARR_70217",
+				"moduleId": "ASSTS"
+			},
+			"layoutType": "Command",
+			"name": "Command2",
+			"options": 0,
+			"order": 2,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		},
+		{
+			"action": null,
+			"causesValidation": true,
+			"causesValidationAsString": "T",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TASSTSVI_S4A_737",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TASSTSVI_S4A"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_GUARDARRI_81055"
+				},
+				"labelId": "LBL_ASSTS_GUARDARRI_81055",
+				"moduleId": "ASSTS"
+			},
+			"layoutType": "Command",
+			"name": "Command1",
+			"options": 0,
+			"order": 1,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		}
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "ASSTS",
+		"subModuleId": "TRNSC",
+		"taskId": "T_ASSTSVIKJRAKP_845",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_COMPANYCEE_242845",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../ASSTS/relations/componentKeys.json#/TRNSC/Forms/T_ASSTSVIKJRAKP_845/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_002T_ASSTSVIKJRAKP_845_963",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Inicializaci\u00f3n de datos de un ViewContainer, despues de este evento se realiza el segimiento de cambios en los datos",
+						"eventId": 2,
+						"name": "InitData"
+					}
+				},
+				{
+					"customEventId": "CEVC_008T_ASSTSVIKJRAKP_845_807",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 1,
+						"description": "Se ejecuta antes de renderizar un ViewContainer, permite realizar personalizaciones visuales",
+						"eventId": 8,
+						"name": "Render"
+					}
+				},
+				{
+					"customEventId": "CEVC_501T_ASSTSVIKJRAKP_845_654",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Evento que actua como listener cuando se cierra ventanas modales.",
+						"eventId": 501,
+						"name": "onCloseModal"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC",
+				"taskId": "T_ASSTSVIKJRAKP_845",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_COMPANYCEE_242845"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "CompanyCreateForm",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 1,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"eventType": 0,
+						"groupId": "G_COMPANYACR_999399",
+						"groups": [
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 4,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_COMPANYECE_756399",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1821",
+								"order": 1,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "Spacer1915",
+										"options": 0,
+										"order": 2,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "Spacer1915",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT10_INSTITUN376"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": null,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CDIGOINIC_90755"
+											},
+											"labelId": "LBL_ASSTS_CDIGOINIC_90755",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "institution",
+										"options": 2080,
+										"order": 1,
+										"readOnly": 11,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_INSTITUTIONBQXY_678399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT67_RUCBJYNS376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_RUCHZFGFPZCYSSW_36339956",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											},
+											{
+												"compareOperator": 0,
+												"id": "VV_RUCHZFGFPZCYSSW_36339934",
+												"visualValidationType": {
+													"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+													"visualValidationId": "InputRestriction"
+												}
+											}
+										],
+										"colSpan": 2,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_RUCOPKJYJ_12792"
+											},
+											"labelId": "LBL_ASSTS_RUCOPKJYJ_12792",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "ruc",
+										"options": 32,
+										"order": 3,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_RUCHZFGFPZCYSSW_363399",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 4,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_COMPANYCTE_467399",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2791",
+								"order": 2,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT14_DIRECCOI376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_ADDRESSDAOSWZAE_64839959",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											}
+										],
+										"colSpan": 2,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DIRECCINN_30768"
+											},
+											"labelId": "LBL_ASSTS_DIRECCINN_30768",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "address",
+										"options": 32,
+										"order": 2,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_ADDRESSDAOSWZAE_648399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT11_NOMBREOK376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_COMPANYNAMEZNHG_69939964",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											}
+										],
+										"colSpan": 2,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_NOMBRECMM_80342"
+											},
+											"labelId": "LBL_ASSTS_NOMBRECMM_80342",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "companyName",
+										"options": 32,
+										"order": 1,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_COMPANYNAMEZNHG_699399",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_COMPANYTCT_526399",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1901",
+								"order": 3,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT17_CONTACTT376"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CONTACTOO_49432"
+											},
+											"labelId": "LBL_ASSTS_CONTACTOO_49432",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "contact",
+										"options": 32,
+										"order": 2,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_CONTACTZVFBCLKT_306399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT78_PAYMENEE376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_PAYMENTAREASIKP_34139922",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											}
+										],
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_REACOBROO_55398"
+											},
+											"labelId": "LBL_ASSTS_REACOBROO_55398",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "paymentArea",
+										"options": 32,
+										"order": 3,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_PAYMENTAREASIKP_341399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT32_PHONEYYH376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": 1,
+												"id": "VV_PHONEECCKKVFLPC_58539949",
+												"visualValidationType": {
+													"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+													"visualValidationId": "InputRestriction"
+												}
+											}
+										],
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_TELFONOPO_65834"
+											},
+											"labelId": "LBL_ASSTS_TELFONOPO_65834",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "phone",
+										"options": 32,
+										"order": 1,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_PHONEECCKKVFLPC_585399",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 12,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_COMPANYAEE_130399",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2114",
+								"order": 4,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT90_PAYMENNE376"
+										},
+										"attributeValidations": [
+										],
+										"cacheDuration": 0,
+										"catalogName": null,
+										"colSpan": 5,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"entityQuery": null,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_FRECUENDE_67079"
+											},
+											"labelId": "LBL_ASSTS_FRECUENDE_67079",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "paymentFrequency",
+										"options": 0,
+										"order": 3,
+										"orientation": "H",
+										"queryId": null,
+										"queryMemberText": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryMemberValue": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryModule": null,
+										"queryVersion": null,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "RadioButtonList"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_PAYMENTFREQUNCN_755399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT54_PAYMENNA376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_PAYMENTPERCEEAT_84139919",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											},
+											{
+												"compareOperator": -1,
+												"id": "VV_PAYMENTPERCEEAT_84139995",
+												"maxValue": "99.99",
+												"minValue": "1.00",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_PORCENTA9_55570"
+													},
+													"labelId": "MSG_ASSTS_PORCENTA9_55570",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "RangeValues Validation",
+													"visualValidationId": "RangeValues"
+												}
+											}
+										],
+										"colSpan": 3,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_SERVICIOD_53492"
+											},
+											"labelId": "LBL_ASSTS_SERVICIOD_53492",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "paymentPercentage",
+										"options": 32,
+										"order": 1,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_PAYMENTPERCEEAT_841399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT89_PATMENTT376"
+										},
+										"attributeValidations": [
+										],
+										"cacheDuration": 0,
+										"catalogName": null,
+										"colSpan": 4,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"entityQuery": null,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_APAGOSEOC_29261"
+											},
+											"labelId": "LBL_ASSTS_APAGOSEOC_29261",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "paymentFormService",
+										"options": 0,
+										"order": 2,
+										"orientation": "H",
+										"queryId": null,
+										"queryMemberText": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryMemberValue": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryModule": null,
+										"queryVersion": null,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "RadioButtonList"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_PAYMENTSERVICCC_447399",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 12,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_COMPANYECE_272399",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2354",
+								"order": 5,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT35_ACCOUNTT376"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 5,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+											{
+												"customEventId": "CEVA_305VA_ACCOUNTNAAOFHSO_558399_651",
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": "T",
+												"eventActions": [
+												],
+												"executionType": 1,
+												"filter": null,
+												"isEnabled": true,
+												"visualAttributeEventType": {
+													"availableExecutionType": 1,
+													"description": "Permite abrir una ventana modal desde TextInputButton",
+													"eventId": 305,
+													"name": "OpenEvent"
+												}
+											}
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_NROCUENAT_58031"
+											},
+											"labelId": "LBL_ASSTS_NROCUENAT_58031",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "account",
+										"options": 0,
+										"order": 3,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputButton"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_ACCOUNTNAAOFHSO_558399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT54_CLIENTEE376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_CLIENTRGTMTTEWO_90639964",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											}
+										],
+										"colSpan": 3,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+											{
+												"customEventId": "CEVA_305VA_CLIENTRGTMTTEWO_906399_616",
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": "T",
+												"eventActions": [
+												],
+												"executionType": 1,
+												"filter": null,
+												"isEnabled": true,
+												"visualAttributeEventType": {
+													"availableExecutionType": 1,
+													"description": "Permite abrir una ventana modal desde TextInputButton",
+													"eventId": 305,
+													"name": "OpenEvent"
+												}
+											}
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 11,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CLIENTEMG_56892"
+											},
+											"labelId": "LBL_ASSTS_CLIENTEMG_56892",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "client",
+										"options": 2048,
+										"order": 1,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputButton"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_CLIENTRGTMTTEWO_906399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT12_PAYMENST376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_PAYMENTUVUDGASL_45039971",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											}
+										],
+										"cacheDuration": 0,
+										"catalogName": null,
+										"colSpan": 4,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+											{
+												"customEventId": "CEVA_104VA_PAYMENTUVUDGASL_450399_276",
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": "T",
+												"eventActions": [
+												],
+												"executionType": 1,
+												"filter": null,
+												"isEnabled": true,
+												"visualAttributeEventType": {
+													"availableExecutionType": 7,
+													"description": "Se ejecuta al cambiar el valor de un VisualAttribute",
+													"eventId": 104,
+													"name": "Changed"
+												}
+											}
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"entityQuery": "EN_LISTAAPOA_604",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_APAGOPQXA_89595"
+											},
+											"labelId": "LBL_ASSTS_APAGOPQXA_89595",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"minChars": null,
+										"name": "paymentForm",
+										"options": 32,
+										"order": 2,
+										"queryId": "Q_LISTOOGA_DP31",
+										"queryMemberText": {
+											"attribute": {
+												"attributeId": "AT25_DESCRICI604",
+												"name": "descripcion"
+											},
+											"queryMemberId": "QM_LISTOPD1PG679_02"
+										},
+										"queryMemberValue": {
+											"attribute": {
+												"attributeId": "AT60_PRODUCTT604",
+												"name": "producto"
+											},
+											"queryMemberId": "QM_LISTOPPGAD356_01"
+										},
+										"queryModule": "ASSTS",
+										"queryVersion": "1.0.0",
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"type": "none",
+										"userControl": {
+											"type": "I",
+											"userControlId": "DropDownList"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_PAYMENTUVUDGASL_450399",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 12,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_COMPANYRTT_593399",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2128",
+								"order": 6,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attributeValidations": [
+										],
+										"colSpan": 2,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "Spacer2283",
+										"options": 0,
+										"order": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "Spacer2283",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attributeValidations": [
+										],
+										"colSpan": 2,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "Spacer2797",
+										"options": 0,
+										"order": 3,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "Spacer2797",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT39_AGREEMEN376"
+										},
+										"attributeValidations": [
+										],
+										"cacheDuration": 0,
+										"catalogName": null,
+										"colSpan": 3,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"entityQuery": null,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CONVENIOO_84856"
+											},
+											"labelId": "LBL_ASSTS_CONVENIOO_84856",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "agreement",
+										"options": 0,
+										"order": 9,
+										"orientation": "H",
+										"queryId": null,
+										"queryMemberText": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryMemberValue": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryModule": null,
+										"queryVersion": null,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "RadioButtonList"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_AGREEMENTZHTVHP_162399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT72_ANTIQUYI376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": 1,
+												"id": "VV_ANTIQUITYRFLXWZ_65939980",
+												"visualValidationType": {
+													"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+													"visualValidationId": "InputRestriction"
+												}
+											},
+											{
+												"compareOperator": -1,
+												"id": "VV_ANTIQUITYRFLXWZ_65939949",
+												"maxValue": "99",
+												"minValue": "1",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_SEDEBERZE_11968"
+													},
+													"labelId": "MSG_ASSTS_SEDEBERZE_11968",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "RangeValues Validation",
+													"visualValidationId": "RangeValues"
+												}
+											}
+										],
+										"colSpan": 2,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ANTIGEDDD_85913"
+											},
+											"labelId": "LBL_ASSTS_ANTIGEDDD_85913",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "antiquity",
+										"options": 32,
+										"order": 6,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_ANTIQUITYRFLXWZ_659399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT24_CATEGOYR376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": 0,
+												"id": "VV_CATEGORYYTSTFKH_32839928",
+												"visualValidationType": {
+													"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+													"visualValidationId": "InputRestriction"
+												}
+											}
+										],
+										"colSpan": 3,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CATEGORAA_59396"
+											},
+											"labelId": "LBL_ASSTS_CATEGORAA_59396",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "category",
+										"options": 32,
+										"order": 5,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_CATEGORYYTSTFKH_328399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT90_CLASSINC376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": 0,
+												"id": "VV_CLASSIFICATIOOO_86039942",
+												"visualValidationType": {
+													"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+													"visualValidationId": "InputRestriction"
+												}
+											}
+										],
+										"colSpan": 4,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CLASIFIIC_39554"
+											},
+											"labelId": "LBL_ASSTS_CLASIFIIC_39554",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "classification",
+										"options": 32,
+										"order": 2,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_CLASSIFICATIOOO_860399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT42_RATEAPPL376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_RATEAPPLYPXKFDI_82339930",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											},
+											{
+												"compareOperator": -1,
+												"id": "VV_RATEAPPLYPXKFDI_82339994",
+												"maxValue": "99.99",
+												"minValue": "1",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_PORCENTA9_55570"
+													},
+													"labelId": "MSG_ASSTS_PORCENTA9_55570",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "RangeValues Validation",
+													"visualValidationId": "RangeValues"
+												}
+											}
+										],
+										"colSpan": 3,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_TASAAAPCR_88019"
+											},
+											"labelId": "LBL_ASSTS_TASAAAPCR_88019",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "rateApply",
+										"options": 32,
+										"order": 4,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_RATEAPPLYPXKFDI_823399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT24_STATEEDP376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": -1,
+												"id": "VV_STATEENISMIMLSA_52139950",
+												"validateMessageLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_CAMPOREUI_74379"
+													},
+													"labelId": "MSG_ASSTS_CAMPOREUI_74379",
+													"moduleId": "ASSTS"
+												},
+												"visualValidationType": {
+													"description": "Required Validation",
+													"visualValidationId": "Required"
+												}
+											}
+										],
+										"cacheDuration": 0,
+										"catalogName": "ca_estados_reg",
+										"colSpan": 3,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"entityQuery": null,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ESTADOEAI_33340"
+											},
+											"labelId": "LBL_ASSTS_ESTADOEAI_33340",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"minChars": null,
+										"name": "state",
+										"options": 1,
+										"order": 1,
+										"queryId": null,
+										"queryMemberText": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryMemberValue": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryModule": null,
+										"queryVersion": null,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"type": "none",
+										"userControl": {
+											"type": "I",
+											"userControlId": "DropDownList"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_STATEENISMIMLSA_521399",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../ASSTS/entities/EN_COMPANYEP_376.json#/attributes/AT73_TERMHXTO376"
+										},
+										"attributeValidations": [
+											{
+												"compareOperator": 1,
+												"id": "VV_TERMZDNRKAQLHBA_73039952",
+												"visualValidationType": {
+													"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+													"visualValidationId": "InputRestriction"
+												}
+											}
+										],
+										"colSpan": 2,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "########",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PLAZOYJVK_49555"
+											},
+											"labelId": "LBL_ASSTS_PLAZOYJVK_49555",
+											"moduleId": "ASSTS"
+										},
+										"maxRecords": null,
+										"name": "term",
+										"options": 32,
+										"order": 7,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TERMZDNRKAQLHBA_730399",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							}
+						],
+						"isCustomized": false,
+						"layoutType": "GroupLayout",
+						"name": "GroupLayout1301",
+						"order": 1,
+						"style": null,
+						"visible": 4095
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_COMPANYCAE_399"
+				},
+				"metadataVersion": "7.2.0.2024 BETA",
+				"modules": [
+					{
+						"moduleId": "ASSTS"
+					}
+				],
+				"name": "View of CompanyCreateForm"
+			}
+		}
+	]
+}

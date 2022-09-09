@@ -1,0 +1,535 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_COMPTOTD_SH98_705",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_COMPTOTD_SH98",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_COMPANITI_423",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_COMPANITI_423/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/TRNSC/Queries/Q_COMPTOTD_SH98/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "dateCreateBatch",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT32_DATECRAE423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPT8S89T757_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "commentClient",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT71_COMMENCN423"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_COMPT98OTO600_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateMoveDiscounts",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT71_DATEMONS423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 11,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPT99OHS227_18",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateExpirationDiscounts",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT82_DATEEXAR423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPT9D988609_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sequentialDiscounts",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT61_SEQUENLT423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPT9D98T656_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statusBatch",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT99_STATUSCT423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPT9HT8D604_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "commentCompany",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT45_COMMENNT423"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_COMPT9OD8O134_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "client",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT35_CLIENTBJ423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPT9STS8921_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "company",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT10_COMPANYY423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTD8SDS445_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "bank",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT85_BANKIDBF423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTDHOHT238_19",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "percentage",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT12_PERCENTA423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTDOTOS597_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateMoveBatch",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT94_DATEMOEE423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTO98DH862_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "debitAll",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT65_DEBITALL423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 21,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTO9T8O149_16",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statusDiscountsName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT63_STATUSOO423"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_COMPTO9THD644_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "documentValue",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT87_DOCUMETV423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 12,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTOH9OH800_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fee",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT98_FEEZBKZT423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 13,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTOSO88732_14",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "description",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT54_DESCRIIT423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 14,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTS8DDT798_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sequentialBatch",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT47_SEQUENII423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 15,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTSO8HS428_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statusDiscounts",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT31_STATEDSN423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 16,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTSOST8440_17",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "operation",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT26_OPERATON423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 17,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTSTD9S337_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT11_CLIENTEN423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 18,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTT8HSS607_21",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "documentType",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT68_DOCUMEPT423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 19,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTTOHT9960_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "companyName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT88_COMAPNAN423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 20,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTTSSD9832_20",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "debit",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANITI_423.json#/attributes/AT95_DEBITNFN423"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPTTT8OD595_15",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC"
+			}
+		}
+	]
+}

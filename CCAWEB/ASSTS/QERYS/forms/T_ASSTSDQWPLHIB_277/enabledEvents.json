@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "G_TESTEAUPBW_755658",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "changeGroup",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "groupEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_AMORTIAN_8237",
+		"controlName": "AmortizationQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_AMORTIAN_8237.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	}
+]

@@ -1,0 +1,18 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_DETARTNC_LQ51",
+		"controlName": "DetailTransactionQueryQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_DETARTNC_LQ51.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "DetailTransactionQuery",
+		"eventsType": "queryEventType"
+	}
+]

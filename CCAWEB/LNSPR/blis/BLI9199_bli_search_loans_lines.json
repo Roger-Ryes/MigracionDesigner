@@ -1,0 +1,255 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21026"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "G"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_numero",
+			"type": "CUSTOM",
+			"value": "sequencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_num_banco",
+			"type": "CUSTOM",
+			"value": "lineCod"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_oficina",
+			"type": "CUSTOM",
+			"value": "office"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tramite",
+			"type": "CUSTOM",
+			"value": "procedure"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "clientCod"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_grupo",
+			"type": "CUSTOM",
+			"value": "groupCod"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_inicio",
+			"type": "CUSTOM",
+			"value": "creationDate"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_vto",
+			"type": "CUSTOM",
+			"value": "expirationDate"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "coinCod"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_estado",
+			"type": "CUSTOM",
+			"value": "status"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_op_banco",
+			"type": "CUSTOM",
+			"value": "loanCod"
+		}
+	],
+	"name": "BLI_Search_Loans_Lines",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9199_bli_search_loans_lines",
+	"patternName": "BLI_Search_Loans_Lines",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "3458c3ea-c3c8-4b1d-a662-c07f38c6da78",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 14,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "3458c3ea-c3c8-4b1d-a662-c07f38c6da78",
+			"columns": [
+				{
+					"attributeId": "AT35_SEQUENLI205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_LINECODD205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT31_NATUREZZ205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_COINDECC205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT18_AMOUNTHU205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_OFFICECC205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT36_NAMECLIE205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_NAMEGRPO205",
+					"entityId": "EN_LOANSLIST_205",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANSLIST_205",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoansLinesList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_linea",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

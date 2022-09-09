@@ -1,0 +1,42 @@
+{
+	"clientTemplateEvents": 3,
+	"culture": "culture",
+	"metadataVersion": "8.0.0.2216",
+	"moduleId": "LNSPR",
+	"modules": [
+		{
+			"moduleId": "ASSTS",
+			"moduleName": "ASSETS",
+			"subModules": [
+				{
+					"subModuleId": "QERYS",
+					"subModuleName": "QUERIES"
+				},
+				{
+					"subModuleId": "CMMNS",
+					"subModuleName": "COMMONS"
+				},
+				{
+					"subModuleId": "MNTNN",
+					"subModuleName": "MAINTENANCE"
+				},
+				{
+					"subModuleId": "TRNSC",
+					"subModuleName": "TRANSACTIONS"
+				}
+			]
+		},
+		{
+			"moduleId": "LNSPR",
+			"moduleName": "LOANSOPERATION",
+			"subModules": [
+				{
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION"
+				}
+			]
+		}
+	],
+	"projectName": "CCAWEB",
+	"subModuleId": "OPRTN"
+}

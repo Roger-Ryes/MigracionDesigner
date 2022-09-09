@@ -1,0 +1,135 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21433"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CUSTOM",
+			"value": "mode"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "CUSTOM",
+			"value": "operation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_idProducto",
+			"type": "CONSTANT",
+			"value": "AHO"
+		}
+	],
+	"name": "BLI_DocumentsPrinting",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3419_bli_documentsprinting",
+	"patternName": "BLI_DocumentsPrinting",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "a1f5d7ca-f0f2-4203-baed-5fc586da9fb8",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 3,
+			"queryName": "SELECT\r\n\t        \u0027Documento\u0027 = id_documento,\r\n\t\t\t\u0027Operacion\u0027 = id_toperacion+\u0027 (\u0027+b.valor+\u0027)\u0027,\r\n\t\t\t\u0027Producto\u0027 = id_producto,\r\n\t\t\t\u0027Moneda\u0027 = convert(char(2),id_moneda)+\u0027 (\u0027+mo_descripcion+\u0027)\u0027,\r\n\t\t\t\u0027Descripcion\u0027 = id_descripcion,\r\n\t\t\t\u0027Template\u0027 = id_template,\r\n\t\t\t\u0027Mnemonico\u0027= id_mnemonico,\r\n\t\t\t\u0027TIPO\u0027     = \u0027\u0027,\r\n\t\t\t\u0027MEDIO APROBACION\u0027 = \u0027S\u0027,\r\n\t\t\t\u0027CONDICION\u0027 = \u00271\u0027\r\n\t    FROM"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "a1f5d7ca-f0f2-4203-baed-5fc586da9fb8",
+			"columns": [
+				{
+					"attributeId": "AT42_IDDOCUNS109",
+					"entityId": "EN_PRINTINDC_109",
+					"format": "",
+					"name": "Documento",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT37_DOCUMETS109",
+					"entityId": "EN_PRINTINDC_109",
+					"format": "",
+					"name": "Descripcion",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_TEMPLADD109",
+					"entityId": "EN_PRINTINDC_109",
+					"format": "",
+					"name": "Template",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_MNEMONIC109",
+					"entityId": "EN_PRINTINDC_109",
+					"format": "",
+					"name": "Mnemonico",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PRINTINDC_109",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "PrintingDocuments"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_imp_documento",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

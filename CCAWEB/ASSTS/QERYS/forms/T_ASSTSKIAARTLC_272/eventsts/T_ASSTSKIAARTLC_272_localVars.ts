@@ -1,0 +1,1 @@
+/* variables locales de T_ASSTSKIAARTLC_272*/

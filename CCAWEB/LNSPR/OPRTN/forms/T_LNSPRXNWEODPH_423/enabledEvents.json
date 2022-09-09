@@ -1,0 +1,144 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_JQ56_BYK87_540",
+		"controlName": "QV_JQ56_BYK87",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "OfficialOfficeTransferList",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRXN_W2R",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_OFFILILC_KJ11",
+		"controlName": "OfficialQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_OFFILILC_KJ11.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "Official",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_OFFILLLL_SV56",
+		"controlName": "OfficalOfficeTransferListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_OFFILLLL_SV56.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "OfficialOfficeTransferList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_JQ56_BYK87",
+		"controlName": "QV_JQ56_BYK87",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "gridInitColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "gridInitEditColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 1
+			}
+		],
+		"entityName": "OfficialOfficeTransferList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "originOffice",
+		"controlId": "VA_ORIGINOFFICEUMK_654800",
+		"controlName": "originOffice",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OfficialOfficeTransferFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "originOfficial",
+		"controlId": "VA_ORIGINOFFICILAA_229800",
+		"controlName": "originOfficial",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OfficialOfficeTransferFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "transferType",
+		"controlId": "VA_TRANSFERTYPETWU_989800",
+		"controlName": "transferType",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OfficialOfficeTransferFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_OFFICIALNF_999423",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

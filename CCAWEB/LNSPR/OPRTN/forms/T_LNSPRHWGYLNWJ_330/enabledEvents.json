@@ -1,0 +1,76 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_OPERLSST_KU21",
+		"controlName": "OperationItemsListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_OPERLSST_KU21.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_MC21_OVS27",
+		"controlName": "QV_MC21_OVS27",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowInserting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 7
+			}
+		],
+		"entityName": "OperationItemsList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONTR__P_260587",
+		"controlName": "VA_VAVABUTTONTR__P_260587",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_OPERATIOEE_354330",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

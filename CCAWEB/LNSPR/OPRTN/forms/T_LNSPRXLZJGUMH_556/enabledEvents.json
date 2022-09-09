@@ -1,0 +1,136 @@
+[
+	{
+		"attributeName": "customerName",
+		"controlId": "VA_CLIENTENOMBREEE_802412",
+		"controlName": "customerName",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "startDate",
+		"controlId": "VA_FECHAAPROBACIOO_814412",
+		"controlName": "startDate",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "dueDate",
+		"controlId": "VA_FECHAVENCIMINOT_231412",
+		"controlName": "dueDate",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "nature",
+		"controlId": "VA_NATURALEZAOPFBV_807412",
+		"controlName": "nature",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "daysNumber",
+		"controlId": "VA_NUMDIASKUFOWPOC_532412",
+		"controlName": "daysNumber",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "official",
+		"controlId": "VA_OFFICIALWHTPNAJ_913412",
+		"controlName": "official",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "ubication",
+		"controlId": "VA_UBICATIONVMLBHG_987412",
+		"controlName": "ubication",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONBWOPFCN_144412",
+		"controlName": "VA_VABUTTONBWOPFCN_144412",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanLinesCreation",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANLINENS_928556",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

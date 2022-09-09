@@ -1,0 +1,76 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\reporte_consent.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_consentimiento",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacion"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "b339c846-d936-461f-bd9f-3e2d9cb5bd34",
+				"columns": [
+					"client",
+					"operation",
+					"office",
+					"certifynumber",
+					"vigency",
+					"titularname",
+					"firstname",
+					"lastname",
+					"birthdate"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "8e8bc03d-ab07-460c-bb85-0af2622be3d5",
+				"columns": [
+					"safetype"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "ebc93254-c9df-46eb-8a7d-693d121710a4",
+				"columns": [
+					"beneficiaryname",
+					"beneficiaryrelationship",
+					"percentaje"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_ofi_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

@@ -1,0 +1,132 @@
+{
+	"filename": "F:\\InfoGeneral\\ConvertidorJson\\convertidor\\cob_cartera.sp_sindicado.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_sindicado",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion_cartera"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "d93b763d-85cd-49b7-9084-da38915421f7",
+				"columns": [
+					"Participante",
+					"Nombre Participante",
+					"Rol",
+					"%",
+					"Monto Participante",
+					"Correo"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Participante\u0027        = si_banco_participante,\r\n          \u0027Nombre Participante\u0027 = fr_nombre,\r\n          \u0027Rol\u0027                 = si_rol,\r\n          \u0027%\u0027                   = si_porcentaje,\r\n          \u0027Monto Participante\u0027  = si_monto_participante,\r\n          \u0027Correo\u0027              = si_correo\r\n   from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_poserr"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo"
+			}
+		]
+	}
+}

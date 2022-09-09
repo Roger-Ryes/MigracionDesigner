@@ -1,0 +1,1993 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "Consolidate View",
+	"cobisPatternId": 1,
+	"commands": [
+		{
+			"action": null,
+			"causesValidation": true,
+			"causesValidationAsString": "T",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TASSTSPE_16S_930",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TASSTSPE_16S"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_TRANSMITR_50090"
+				},
+				"labelId": "LBL_ASSTS_TRANSMITR_50090",
+				"moduleId": "ASSTS"
+			},
+			"layoutType": "Command",
+			"name": "Command1",
+			"options": 0,
+			"order": 1,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		},
+		{
+			"action": null,
+			"causesValidation": true,
+			"causesValidationAsString": "T",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TASSTSPE_87R_115",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TASSTSPE_87R"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_IMPRIMIRR_18630"
+				},
+				"labelId": "LBL_ASSTS_IMPRIMIRR_18630",
+				"moduleId": "ASSTS"
+			},
+			"layoutType": "Command",
+			"name": "Command2",
+			"options": 0,
+			"order": 2,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		}
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": {
+		"headerCustomEvents": [
+			{
+				"customEventId": "CECM_015CM_CGENERIC_HDR_208",
+				"executionType": 7,
+				"headerEventType": {
+					"availableExecutionType": 7,
+					"description": "Permite personalizar la acci\u00f3n a ejecutarla",
+					"eventId": 10,
+					"name": "ExecuteCommand"
+				},
+				"isEnabled": true
+			},
+			{
+				"customEventId": "FDCM_015HD_PRODUCTO_5GT_207",
+				"executionType": 1,
+				"headerEventType": {
+					"availableExecutionType": 1,
+					"description": "Permite personalizar los customDialogParameters al navegar o abrir modales",
+					"eventId": 601,
+					"name": "beforeHeaderNavigate"
+				},
+				"isEnabled": true
+			},
+			{
+				"customEventId": "LDHD_010HD_PRODUCTO_5GT_121",
+				"executionType": 2,
+				"headerEventType": {
+					"availableExecutionType": 7,
+					"description": "Permite cargar acciones a la cabecera",
+					"eventId": 600,
+					"name": "LoadHeader"
+				},
+				"isEnabled": true
+			}
+		],
+		"headerId": "HD_HEADERLSO_968",
+		"name": {
+			"$ref": "../../../../ASSTS/commons/patterns/header_HD_HEADERLSO_968.json#/name"
+		},
+		"userControl": {
+			"type": "A",
+			"userControlId": "LoadHeader"
+		}
+	},
+	"id": {
+		"moduleId": "ASSTS",
+		"subModuleId": "TRNSC",
+		"taskId": "T_ASSTSPENVMXNQ_619",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_PROJECTIRJ_862619",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../ASSTS/relations/componentKeys.json#/TRNSC/Forms/T_ASSTSPENVMXNQ_619/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_002T_ASSTSPENVMXNQ_619_637",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Inicializaci\u00f3n de datos de un ViewContainer, despues de este evento se realiza el segimiento de cambios en los datos",
+						"eventId": 2,
+						"name": "InitData"
+					}
+				},
+				{
+					"customEventId": "CEVC_008T_ASSTSPENVMXNQ_619_379",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 1,
+						"description": "Se ejecuta antes de renderizar un ViewContainer, permite realizar personalizaciones visuales",
+						"eventId": 8,
+						"name": "Render"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC",
+				"taskId": "T_ASSTSPENVMXNQ_619",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_PROJECTIRJ_862619"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "ProjectionReadjustmentForm",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"titleLabel": {
+				"defaultValue": {
+					"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PROYECCIN_27776"
+				},
+				"labelId": "LBL_ASSTS_PROYECCIN_27776",
+				"moduleId": "ASSTS"
+			},
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"componentStyle": null,
+						"customEvents": [
+							{
+								"customEventId": "CEVC_106G_PROJECTENT_572798_242",
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": "T",
+								"eventActions": [
+								],
+								"executionType": 1,
+								"filter": null,
+								"isEnabled": true,
+								"viewContainerEventType": {
+									"availableExecutionType": 7,
+									"description": "Evento change para pesta\u00f1as, collapsible y accordion",
+									"eventId": 106,
+									"name": "ChangeGroup"
+								}
+							}
+						],
+						"enabled": 4095,
+						"eventType": 106,
+						"groupId": "G_PROJECTENT_572798",
+						"groups": [
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_PROJECTNTR_773798",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1356",
+								"order": 1,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_TABLAAMZR_85560"
+									},
+									"labelId": "LBL_ASSTS_TABLAAMZR_85560",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "Spacer2930",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "Spacer2930",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 106,
+								"groupId": "G_PROJECTNDI_257798",
+								"groups": [
+									{
+										"collapsedStr": "T",
+										"colSpan": 1,
+										"columnsNum": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_PROJECTROE_758798",
+										"htmlSection": "T",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "Group2936",
+										"order": 1,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"titleLabel": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_RUBROSAEW_67124"
+											},
+											"labelId": "LBL_ASSTS_RUBROSAEW_67124",
+											"moduleId": "ASSTS"
+										},
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"colSpan": 1,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "G_PROJECTROE_758798-default-blank",
+												"options": 0,
+												"order": 0,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"userControl": {
+													"type": "I",
+													"userControlId": "Spacer"
+												},
+												"visible": 4095,
+												"visualAttributeId": "G_PROJECTROE_758798-default-blank",
+												"width": null,
+												"widthComposite": "D"
+											}
+										]
+									},
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"columnsNum": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_PROJECTOAS_769798",
+										"htmlSection": "T",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "Group2873",
+										"order": 2,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"titleLabel": {
+											"defaultValue": {
+												"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_TASASWEXW_63256"
+											},
+											"labelId": "LBL_ASSTS_TASASWEXW_63256",
+											"moduleId": "ASSTS"
+										},
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"colSpan": 1,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "G_PROJECTOAS_769798-default-blank",
+												"options": 0,
+												"order": 0,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"userControl": {
+													"type": "I",
+													"userControlId": "Spacer"
+												},
+												"visible": 4095,
+												"visualAttributeId": "G_PROJECTOAS_769798-default-blank",
+												"width": null,
+												"widthComposite": "D"
+											}
+										]
+									}
+								],
+								"isCustomized": false,
+								"layoutType": "GroupLayout",
+								"name": "AccordionLayout1750",
+								"order": 2,
+								"parentLayoutType": "TabbedLayout",
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_RUBROSYSA_16960"
+									},
+									"labelId": "LBL_ASSTS_RUBROSYSA_16960",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_PROJECTSIE_690798",
+								"groups": [
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"columnsNum": 4,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"entity": {
+											"$ref": "../../../../ASSTS/entities/EN_PROJECTNM_545.json#"
+										},
+										"eventType": 0,
+										"groupId": "G_PROJECTIEM_631798",
+										"htmlSection": "F",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "Group1842",
+										"order": 1,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_PROJECTNM_545.json#/attributes/AT66_FECHAREA545"
+												},
+												"attributeValidations": [
+													{
+														"compareOperator": -1,
+														"id": "VV_DATEREADJUSTNEM_34179821",
+														"validateMessageLabel": {
+															"defaultValue": {
+																"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_REQUERIDO_35484"
+															},
+															"labelId": "MSG_ASSTS_REQUERIDO_35484",
+															"moduleId": "ASSTS"
+														},
+														"visualValidationType": {
+															"description": "Required Validation",
+															"visualValidationId": "Required"
+														}
+													}
+												],
+												"colSpan": 2,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+													{
+														"customEventId": "CEVA_104VA_DATEREADJUSTNEM_341798_407",
+														"customizationLayer": 0,
+														"customizationLayerDescription": "ECU",
+														"enabled": "T",
+														"eventActions": [
+														],
+														"executionType": 1,
+														"filter": null,
+														"isEnabled": true,
+														"visualAttributeEventType": {
+															"availableExecutionType": 7,
+															"description": "Se ejecuta al cambiar el valor de un VisualAttribute",
+															"eventId": 104,
+															"name": "Changed"
+														}
+													}
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"format": null,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_FECHASILN_40353"
+													},
+													"labelId": "LBL_ASSTS_FECHASILN_40353",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dateReadjustment",
+												"options": 0,
+												"order": 1,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"userControl": {
+													"type": "I",
+													"userControlId": "DateField"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_DATEREADJUSTNEM_341798",
+												"width": null,
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_PROJECTNM_545.json#/attributes/AT10_PORCENJE545"
+												},
+												"attributeValidations": [
+													{
+														"compareOperator": -1,
+														"id": "VV_PERCENTAGEKQGYS_54079898",
+														"validateMessageLabel": {
+															"defaultValue": {
+																"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_REQUERIDO_35484"
+															},
+															"labelId": "MSG_ASSTS_REQUERIDO_35484",
+															"moduleId": "ASSTS"
+														},
+														"visualValidationType": {
+															"description": "Required Validation",
+															"visualValidationId": "Required"
+														}
+													},
+													{
+														"compareOperator": -1,
+														"id": "VV_PERCENTAGEKQGYS_54079866",
+														"maxValue": "99.99",
+														"minValue": "0.01",
+														"validateMessageLabel": {
+															"defaultValue": {
+																"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/MSG/MSG_ASSTS_VALORFURN_83073"
+															},
+															"labelId": "MSG_ASSTS_VALORFURN_83073",
+															"moduleId": "ASSTS"
+														},
+														"visualValidationType": {
+															"description": "RangeValues Validation",
+															"visualValidationId": "RangeValues"
+														}
+													}
+												],
+												"colSpan": 1,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+													{
+														"customEventId": "CEVA_104VA_PERCENTAGEKQGYS_540798_231",
+														"customizationLayer": 0,
+														"customizationLayerDescription": "ECU",
+														"enabled": "T",
+														"eventActions": [
+														],
+														"executionType": 1,
+														"filter": null,
+														"isEnabled": true,
+														"visualAttributeEventType": {
+															"availableExecutionType": 7,
+															"description": "Se ejecuta al cambiar el valor de un VisualAttribute",
+															"eventId": 104,
+															"name": "Changed"
+														}
+													}
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"format": "",
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PORCENTST_41449"
+													},
+													"labelId": "LBL_ASSTS_PORCENTST_41449",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "percentage",
+												"options": 0,
+												"order": 2,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_PERCENTAGEKQGYS_540798",
+												"width": null,
+												"widthComposite": "D"
+											}
+										]
+									},
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"columnsNum": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"entity": {
+											"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#"
+										},
+										"eventType": 0,
+										"groupId": "G_PROJECTETN_881798",
+										"htmlSection": "F",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "Group2286",
+										"order": 2,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"queryView": {
+											"actionDesign": "Button",
+											"actions": [
+											],
+											"allowPaging": true,
+											"allowPagingStr": "T",
+											"allowSorting": false,
+											"allowSortingStr": "F",
+											"autoSync": null,
+											"componentStyle": null,
+											"confirmRowDeletion": false,
+											"confirmRowDeletionStr": "F",
+											"customEvents": [
+											],
+											"customizationLayer": 0,
+											"customizationLayerDescription": "ECU",
+											"customUrlDialog": null,
+											"deleteCommandEnabled": false,
+											"deleteCommandEnabledStr": "F",
+											"dialogTitleLabelId": null,
+											"editCommandEnabled": false,
+											"editCommandEnabledStr": "F",
+											"editMode": "0",
+											"entityName": {
+												"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/name"
+											},
+											"hasDetail": false,
+											"hasDetailString": "F",
+											"height": null,
+											"includeQueryMembers": [
+												"AT80_DIVIDEDD173",
+												"AT55_DINAMY1A173",
+												"AT91_DINAMYEL173",
+												"AT41_SALEDATT173",
+												"AT63_DINAMYAL173",
+												"AT71_DINAMYAN173",
+												"AT39_DINAMYBB173",
+												"AT66_DINAMYC1173",
+												"AT71_STATEUKP173",
+												"AT49_DINAMY1C173",
+												"AT27_QUOTADAY173",
+												"AT72_DINAMYAN173",
+												"AT24_DINAMYNB173",
+												"AT20_DINAMYN7173",
+												"AT46_DINAMYBB173",
+												"AT88_DINAMYEC173",
+												"AT51_DINAMY10173",
+												"AT47_DINAMY3B173",
+												"AT40_BALANCEE173",
+												"AT72_PORROGAA173",
+												"AT12_DINAMYAN173",
+												"AT39_QUOTAKOP173"
+											],
+											"insertCommandEnabled": false,
+											"insertCommandEnabledStr": "F",
+											"isCustomized": false,
+											"modalSize": null,
+											"modeSelection": "Simple",
+											"moduleIdDialog": null,
+											"multiSelectEnabledStr": "S",
+											"name": "QV_EB77_IIB88",
+											"options": 2312,
+											"pageSize": 12,
+											"query": {
+												"$ref": "../../../../ASSTS/TRNSC/queries/Q_LISTCEEE_FJ77.json#"
+											},
+											"queryId": "Q_LISTCEEE_FJ77",
+											"queryVersion": "1.0.0",
+											"queryViewCustomActions": [
+												{
+													"action": null,
+													"commandImageId": null,
+													"commandName": "RowSelecting",
+													"commandOrder": null,
+													"commandType": 0,
+													"customActionId": "CEQV_208QV_EB77_IIB88_375",
+													"customizationLayer": 0,
+													"customizationLayerDescription": "ECU",
+													"enabled": "T",
+													"eventActions": [
+													],
+													"executionType": 1,
+													"filter": null,
+													"isCustomized": false,
+													"name": "RowSelecting",
+													"options": 0,
+													"queryView": "QV_EB77_IIB88",
+													"queryViewEventType": {
+														"availableExecutionType": 7,
+														"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+														"eventId": 208,
+														"name": "RowSelecting"
+													},
+													"serviceName": null,
+													"userControl": {
+														"customizationLayer": "0",
+														"customizationLayerDescription": "ECU",
+														"description": "Designer Button",
+														"type": "A",
+														"userControlId": "Button"
+													}
+												}
+											],
+											"queryViewId": "QV_EB77_IIB88",
+											"queryViewType": "Grid",
+											"rowCommandAppearance": 0,
+											"style": null,
+											"subModuleIdDialog": null,
+											"taskIdDialog": null,
+											"taskVersionDialog": null,
+											"typeFormDialog": null,
+											"userControl": {
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"description": "Designer Grid",
+												"name": "Designer Grid",
+												"type": "I",
+												"userControlId": "Grid"
+											},
+											"viewContainerIdDialog": null
+										},
+										"queryViewId": "QV_EB77_IIB88",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT63_DINAMYAL173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS4VLE_47341"
+													},
+													"labelId": "LBL_ASSTS_ITEMS4VLE_47341",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance4",
+												"options": 0,
+												"order": 8,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXBRK_956798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT49_DINAMY1C173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS15DN_79167"
+													},
+													"labelId": "LBL_ASSTS_ITEMS15DN_79167",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance15",
+												"options": 0,
+												"order": 19,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXEED_699798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT40_BALANCEE173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_SALDOCAPI_87055"
+													},
+													"labelId": "LBL_ASSTS_SALDOCAPI_87055",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "balance",
+												"options": 0,
+												"order": 4,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXEMA_362798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT72_PORROGAA173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PRORROGAA_86150"
+													},
+													"labelId": "LBL_ASSTS_PRORROGAA_86150",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "porroga",
+												"options": 0,
+												"order": 22,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXHQO_214798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT80_DIVIDEDD173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CUOTAJJEW_83973"
+													},
+													"labelId": "LBL_ASSTS_CUOTAJJEW_83973",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dividend",
+												"options": 0,
+												"order": 1,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXIRV_798798",
+												"width": null,
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT24_DINAMYNB173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS14FH_36578"
+													},
+													"labelId": "LBL_ASSTS_ITEMS14FH_36578",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance14",
+												"options": 0,
+												"order": 18,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXJEN_944798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT20_DINAMYN7173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS7AWJ_73578"
+													},
+													"labelId": "LBL_ASSTS_ITEMS7AWJ_73578",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance7",
+												"options": 0,
+												"order": 11,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXJHE_279798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT41_SALEDATT173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_FECHAVENO_73738"
+													},
+													"labelId": "LBL_ASSTS_FECHAVENO_73738",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "saleDate",
+												"options": 0,
+												"order": 2,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXJOX_193798",
+												"width": "150",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT12_DINAMYAN173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS5CXM_39896"
+													},
+													"labelId": "LBL_ASSTS_ITEMS5CXM_39896",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance5",
+												"options": 0,
+												"order": 9,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXMFC_126798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT39_DINAMYBB173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS8GKH_60641"
+													},
+													"labelId": "LBL_ASSTS_ITEMS8GKH_60641",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance8",
+												"options": 0,
+												"order": 12,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXMZY_199798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT39_QUOTAKOP173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_VALORCUTO_78445"
+													},
+													"labelId": "LBL_ASSTS_VALORCUTO_78445",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "quota",
+												"options": 0,
+												"order": 20,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXOFN_496798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT71_DINAMYAN173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "dinamyBalance2",
+												"options": 0,
+												"order": 6,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXPNQ_361798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT47_DINAMY3B173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS13DP_67312"
+													},
+													"labelId": "LBL_ASSTS_ITEMS13DP_67312",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance13",
+												"options": 0,
+												"order": 17,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXQYU_619798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT72_DINAMYAN173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS12CW_83556"
+													},
+													"labelId": "LBL_ASSTS_ITEMS12CW_83556",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance12",
+												"options": 0,
+												"order": 16,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXRLU_443798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT91_DINAMYEL173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "dinamyBalance3",
+												"options": 0,
+												"order": 7,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXSDM_686798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT66_DINAMYC1173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS11LX_20957"
+													},
+													"labelId": "LBL_ASSTS_ITEMS11LX_20957",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance11",
+												"options": 0,
+												"order": 15,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXUGQ_329798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT55_DINAMY1A173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "dinamyBalance1",
+												"options": 0,
+												"order": 5,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXULR_853798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT51_DINAMY10173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS10DS_49370"
+													},
+													"labelId": "LBL_ASSTS_ITEMS10DS_49370",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance10",
+												"options": 0,
+												"order": 14,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXUTO_178798",
+												"width": null,
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT71_STATEUKP173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ESTADOEAI_33340"
+													},
+													"labelId": "LBL_ASSTS_ESTADOEAI_33340",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "state",
+												"options": 0,
+												"order": 21,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXVFJ_525798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT27_QUOTADAY173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DIASIVQBJ_73578"
+													},
+													"labelId": "LBL_ASSTS_DIASIVQBJ_73578",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "quotaDay",
+												"options": 0,
+												"order": 3,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXVFQ_438798",
+												"width": "50",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT46_DINAMYBB173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS6BMJ_40131"
+													},
+													"labelId": "LBL_ASSTS_ITEMS6BMJ_40131",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance6",
+												"options": 0,
+												"order": 10,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXXFA_745798",
+												"width": "100",
+												"widthComposite": "D"
+											},
+											{
+												"aggregate": {
+													"description": "sum",
+													"id": "sum",
+													"tooltip": {
+														"defaultValue": {
+															"$ref": "../../../../DSGNR/assets/languages/DSGNR.json#/DSGNR/LBL/SYS_DSGNR_AGSUM_00041"
+														},
+														"labelId": "SYS_DSGNR_AGSUM_00041",
+														"moduleId": "DSGNR"
+													}
+												},
+												"aggregateId": "sum",
+												"attribute": {
+													"$ref": "../../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT88_DINAMYEC173"
+												},
+												"attributeValidations": [
+												],
+												"colSpan": 1,
+												"componentInGrid": true,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"enabled": 4095,
+												"include": 4095,
+												"isCustomized": false,
+												"label": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ITEMS9XLA_24163"
+													},
+													"labelId": "LBL_ASSTS_ITEMS9XLA_24163",
+													"moduleId": "ASSTS"
+												},
+												"maxRecords": null,
+												"name": "dinamyBalance9",
+												"options": 0,
+												"order": 13,
+												"readOnly": 8,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"textRows": 0,
+												"userControl": {
+													"type": "I",
+													"userControlId": "TextInputBox"
+												},
+												"visible": 4095,
+												"visualAttributeId": "VA_TEXTINPUTBOXXFI_631798",
+												"width": "100",
+												"widthComposite": "D"
+											}
+										]
+									}
+								],
+								"isCustomized": false,
+								"layoutType": "GroupLayout",
+								"name": "GroupLayout1541",
+								"order": 3,
+								"parentLayoutType": "TabbedLayout",
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_SIMULACJS_15300"
+									},
+									"labelId": "LBL_ASSTS_SIMULACJS_15300",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095
+							}
+						],
+						"isCustomized": false,
+						"layoutType": "TabbedLayout",
+						"name": "TabbedLayout1365",
+						"order": 1,
+						"style": null,
+						"visible": 4095
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_PROJECTIOE_798"
+				},
+				"metadataVersion": "7.2.0.2019",
+				"modules": [
+					{
+						"moduleId": "ASSTS"
+					}
+				],
+				"name": "View of ProjectionReadjustmentForm"
+			}
+		}
+	]
+}

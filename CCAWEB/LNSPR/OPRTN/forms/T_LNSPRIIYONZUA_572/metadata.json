@@ -1,0 +1,36 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_LOANSALAD_395",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANSALDH_189",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANSALRE_860",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_LOANAELE_GZ51",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_LOANELLL_AR48",
+			"related": false,
+			"subModuleId": "OPRTN"
+		}
+	]
+}

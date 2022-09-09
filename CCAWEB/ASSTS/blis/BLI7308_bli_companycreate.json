@@ -1,0 +1,297 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_COMPANYEP_376",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "Company"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CUSTOM",
+			"value": "trn"
+		},
+		{
+			"attributeId": "AT10_INSTITUN376",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_institucion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT67_RUCBJYNS376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_ruc",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT54_CLIENTEE376",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT11_NOMBREOK376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_nombre",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT14_DIRECCOI376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_direccion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT32_PHONEYYH376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_telefono",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT17_CONTACTT376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_contacto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT78_PAYMENEE376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_area_cobro",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT54_PAYMENNA376",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_porcent_servi_cobro",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT89_PATMENTT376",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_forma_pago_servicio",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT90_PAYMENNE376",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_frecuencia_desc",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT12_PAYMENST376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_forma_pago",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT35_ACCOUNTT376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_cuenta",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT24_STATEEDP376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_estado",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT37_ARCHIVEE376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_archivo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT90_CLASSINC376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_clasificacion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT73_TERMHXTO376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_plazo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT24_CATEGOYR376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_categoria",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT72_ANTIQUYI376",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_antiguedad",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT39_AGREEMEN376",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_convenio",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT42_RATEAPPL376",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "in",
+			"entityId": "EN_COMPANYEP_376",
+			"format": "",
+			"name": "@i_tasa_aplicar",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operation"
+		}
+	],
+	"name": "BLI_CompanyCreate",
+	"outputEntity": [
+	],
+	"outputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_institucion",
+			"type": "CUSTOM",
+			"value": "institution"
+		}
+	],
+	"patternId": "BLI7308_bli_companycreate",
+	"patternName": "BLI_CompanyCreate",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_descuento_institucion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

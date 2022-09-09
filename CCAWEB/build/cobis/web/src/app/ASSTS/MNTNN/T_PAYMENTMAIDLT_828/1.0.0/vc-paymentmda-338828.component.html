@@ -1,0 +1,63 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-paymentmaidlt-828 " [formGroup]="vc.viewState.T_PAYMENTMAIDLT_828"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_PAYMENTMDA_338828.enabled, 'VC_PAYMENTMDA_338828')" [properties]="vc.viewState.VC_PAYMENTMDA_338828" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTNNO_964701.enabled, 'G_PAYMENTNNO_964701', 'VC_PAYMENTMDA_338828')" *ngIf="isVisible('G_PAYMENTNNO_964701')" [properties]="vc.viewState.G_PAYMENTNNO_964701" [mode]="vc.mode"> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTAMA_728701.enabled, 'G_PAYMENTAMA_728701', 'G_PAYMENTNNO_964701', 'MethodsRetention',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('G_PAYMENTAMA_728701',true)" [properties]="vc.viewState.G_PAYMENTAMA_728701" [mode]="vc.mode" formGroupName="MethodsRetention"> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CURRENCYRETETTO_736701.enabled, 'VA_CURRENCYRETETTO_736701', 'G_PAYMENTAMA_728701', 'MethodsRetention.currencyRetention',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_CURRENCYRETETTO_736701')" [properties]="vc.viewState.VA_CURRENCYRETETTO_736701" [mode]="vc.mode" formControlName="currencyRetention" [dataSource]="vc.catalogs.VA_CURRENCYRETETTO_736701"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_ACTIVEPASSIVEEE_865701.enabled, 'VA_ACTIVEPASSIVEEE_865701', 'G_PAYMENTAMA_728701', 'MethodsRetention.activePassive',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_ACTIVEPASSIVEEE_865701')" [properties]="vc.viewState.VA_ACTIVEPASSIVEEE_865701" [mode]="vc.mode" formControlName="activePassive" [dataSource]="vc.catalogs.VA_ACTIVEPASSIVEEE_865701"> 
+        </cobis-dropdownlist> 
+        <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_PRODUCTOFQZHBKU_354701.enabled, 'VA_PRODUCTOFQZHBKU_354701', 'G_PAYMENTAMA_728701', 'MethodsRetention.product',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_PRODUCTOFQZHBKU_354701')" [properties]="vc.viewState.VA_PRODUCTOFQZHBKU_354701" [mode]="vc.mode" formControlName="product"></cobis-textinputbox> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTCCT_512701.enabled, 'G_PAYMENTCCT_512701', 'G_PAYMENTNNO_964701', 'MethodsRetention',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('G_PAYMENTCCT_512701',true)" [properties]="vc.viewState.G_PAYMENTCCT_512701" [mode]="vc.mode" formGroupName="MethodsRetention"> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CATEGORYPGXZQCK_157701.enabled, 'VA_CATEGORYPGXZQCK_157701', 'G_PAYMENTCCT_512701', 'MethodsRetention.category',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_CATEGORYPGXZQCK_157701')" [properties]="vc.viewState.VA_CATEGORYPGXZQCK_157701" [mode]="vc.mode" formControlName="category" [dataSource]="vc.catalogs.VA_CATEGORYPGXZQCK_157701"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_DISBURSEMENTDSI_289701.enabled, 'VA_DISBURSEMENTDSI_289701', 'G_PAYMENTCCT_512701', 'MethodsRetention.disbursement',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_DISBURSEMENTDSI_289701')" [properties]="vc.viewState.VA_DISBURSEMENTDSI_289701" [mode]="vc.mode" formControlName="disbursement" [dataSource]="vc.catalogs.VA_DISBURSEMENTDSI_289701" (onChange)="change($event,'VA_DISBURSEMENTDSI_289701')"> 
+        </cobis-dropdownlist> 
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_VALUECODEEKTKMB_372701.enabled, 'VA_VALUECODEEKTKMB_372701', 'G_PAYMENTCCT_512701', 'MethodsRetention.valueCode',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_VALUECODEEKTKMB_372701')" [properties]="vc.viewState.VA_VALUECODEEKTKMB_372701" [mode]="vc.mode" formControlName="valueCode"></cobis-numericinputbox> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTLNN_635701.enabled, 'G_PAYMENTLNN_635701', 'G_PAYMENTNNO_964701', 'MethodsRetention',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('G_PAYMENTLNN_635701',true)" [properties]="vc.viewState.G_PAYMENTLNN_635701" [mode]="vc.mode" formGroupName="MethodsRetention"> 
+        <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_DESCRIPTIONSUZS_167701.enabled, 'VA_DESCRIPTIONSUZS_167701', 'G_PAYMENTLNN_635701', 'MethodsRetention.description',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_DESCRIPTIONSUZS_167701')" [properties]="vc.viewState.VA_DESCRIPTIONSUZS_167701" [mode]="vc.mode" formControlName="description"></cobis-textinputbox>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_PAYMENTMETHODSD_816701.enabled, 'VA_PAYMENTMETHODSD_816701', 'G_PAYMENTLNN_635701', 'MethodsRetention.paymentMethods',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_PAYMENTMETHODSD_816701')" [properties]="vc.viewState.VA_PAYMENTMETHODSD_816701" [mode]="vc.mode" formControlName="paymentMethods" [dataSource]="vc.catalogs.VA_PAYMENTMETHODSD_816701"> 
+        </cobis-dropdownlist> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTMNE_859701.enabled, 'G_PAYMENTMNE_859701', 'G_PAYMENTNNO_964701', 'MethodsRetention',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('G_PAYMENTMNE_859701',true)" [properties]="vc.viewState.G_PAYMENTMNE_859701" [mode]="vc.mode" formGroupName="MethodsRetention"> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_BANKSERVICESDQR_160701.enabled, 'VA_BANKSERVICESDQR_160701', 'G_PAYMENTMNE_859701', 'MethodsRetention.bankServices',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_BANKSERVICESDQR_160701')" [properties]="vc.viewState.VA_BANKSERVICESDQR_160701" [mode]="vc.mode" formControlName="bankServices" [dataSource]="vc.catalogs.VA_BANKSERVICESDQR_160701"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_PAYMENTATXPGDKX_602701.enabled, 'VA_PAYMENTATXPGDKX_602701', 'G_PAYMENTMNE_859701', 'MethodsRetention.paymentATX',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_PAYMENTATXPGDKX_602701')" [properties]="vc.viewState.VA_PAYMENTATXPGDKX_602701" [mode]="vc.mode" formControlName="paymentATX" [dataSource]="vc.catalogs.VA_PAYMENTATXPGDKX_602701" (onChange)="change($event,'VA_PAYMENTATXPGDKX_602701')"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_PAYMENTAUTLPCHV_485701.enabled, 'VA_PAYMENTAUTLPCHV_485701', 'G_PAYMENTMNE_859701', 'MethodsRetention.paymentAut',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_PAYMENTAUTLPCHV_485701')" [properties]="vc.viewState.VA_PAYMENTAUTLPCHV_485701" [mode]="vc.mode" formControlName="paymentAut" [dataSource]="vc.catalogs.VA_PAYMENTAUTLPCHV_485701" (onChange)="change($event,'VA_PAYMENTAUTLPCHV_485701')"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_PAYMENTKWAZXHOL_773701.enabled, 'VA_PAYMENTKWAZXHOL_773701', 'G_PAYMENTMNE_859701', 'MethodsRetention.payment',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_PAYMENTKWAZXHOL_773701')" [properties]="vc.viewState.VA_PAYMENTKWAZXHOL_773701" [mode]="vc.mode" formControlName="payment" [dataSource]="vc.catalogs.VA_PAYMENTKWAZXHOL_773701" (onChange)="change($event,'VA_PAYMENTKWAZXHOL_773701')"> 
+        </cobis-dropdownlist> 
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_RETENTIONDAYSSS_990701.enabled, 'VA_RETENTIONDAYSSS_990701', 'G_PAYMENTMNE_859701', 'MethodsRetention.retentiondays',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_RETENTIONDAYSSS_990701')" [properties]="vc.viewState.VA_RETENTIONDAYSSS_990701" [mode]="vc.mode" formControlName="retentiondays"></cobis-numericinputbox>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_4075QLSXXQCUIPT_367701.enabled, 'VA_4075QLSXXQCUIPT_367701', 'G_PAYMENTMNE_859701', 'MethodsRetention.over',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_4075QLSXXQCUIPT_367701')" [properties]="vc.viewState.VA_4075QLSXXQCUIPT_367701" [mode]="vc.mode" formControlName="over" [dataSource]="vc.catalogs.VA_4075QLSXXQCUIPT_367701"> 
+        </cobis-dropdownlist> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PAYMENTOEI_853701.enabled, 'G_PAYMENTOEI_853701', 'G_PAYMENTNNO_964701', 'MethodsRetention',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('G_PAYMENTOEI_853701',true)" [properties]="vc.viewState.G_PAYMENTOEI_853701" [mode]="vc.mode" formGroupName="MethodsRetention"> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CANALAHHGQQRYXT_909701.enabled, 'VA_CANALAHHGQQRYXT_909701', 'G_PAYMENTOEI_853701', 'MethodsRetention.canal',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_CANALAHHGQQRYXT_909701')" [properties]="vc.viewState.VA_CANALAHHGQQRYXT_909701" [mode]="vc.mode" formControlName="canal" [dataSource]="vc.catalogs.VA_CANALAHHGQQRYXT_909701"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_PCOBISNSCZVLGJB_151701.enabled, 'VA_PCOBISNSCZVLGJB_151701', 'G_PAYMENTOEI_853701', 'MethodsRetention.pcobis',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_PCOBISNSCZVLGJB_151701')" [properties]="vc.viewState.VA_PCOBISNSCZVLGJB_151701" [mode]="vc.mode" formControlName="pcobis" [dataSource]="vc.catalogs.VA_PCOBISNSCZVLGJB_151701"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_STATEUKNKICEOOK_121701.enabled, 'VA_STATEUKNKICEOOK_121701', 'G_PAYMENTOEI_853701', 'MethodsRetention.state',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_STATEUKNKICEOOK_121701')" [properties]="vc.viewState.VA_STATEUKNKICEOOK_121701" [mode]="vc.mode" formControlName="state" [dataSource]="vc.catalogs.VA_STATEUKNKICEOOK_121701"> 
+        </cobis-dropdownlist> 
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_TRANSACCTIONKAF_634701.enabled, 'VA_TRANSACCTIONKAF_634701', 'G_PAYMENTOEI_853701', 'MethodsRetention.transacction',vc.viewState.T_PAYMENTMAIDLT_828)" *ngIf="isVisible('VA_TRANSACCTIONKAF_634701')" [properties]="vc.viewState.VA_TRANSACCTIONKAF_634701" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_TRANSACCTIONKAF_634701" formControlName="transacction"></cobis-radiobuttonlist> 
+       </cobis-groupbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TPAYMENT_TM7.enabled,'CM_TPAYMENT_TM7')" *ngIf="isVisible('CM_TPAYMENT_TM7')" [properties]="vc.viewState.CM_TPAYMENT_TM7" [mode]="vc.mode" (onClick)="executeCommand('CM_TPAYMENT_TM7',vc.viewState.CM_TPAYMENT_TM7.name,vc.viewState.CM_TPAYMENT_TM7.causesValidation,vc.viewState.CM_TPAYMENT_TM7.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TPAYMENT_08P.enabled,'CM_TPAYMENT_08P')" *ngIf="isVisible('CM_TPAYMENT_08P')" [properties]="vc.viewState.CM_TPAYMENT_08P" [mode]="vc.mode" (onClick)="executeCommand('CM_TPAYMENT_08P',vc.viewState.CM_TPAYMENT_08P.name,vc.viewState.CM_TPAYMENT_08P.causesValidation,vc.viewState.CM_TPAYMENT_08P.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

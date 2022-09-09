@@ -1,0 +1,105 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_OPERATIRD_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationCRUDFormEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "O"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "714500"
+		},
+		{
+			"attributeId": "AT70_CODEFEKA462",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_OPERATIRD_LNSPR",
+			"format": "",
+			"name": "@i_ente",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_Search_Client",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3550_bli_search_client",
+	"patternName": "BLI_Search_Client",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "7d0980ed-eceb-4b12-b2d8-19990eb19de2",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "select in_ente_d, en_nombre\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "7d0980ed-eceb-4b12-b2d8-19990eb19de2",
+			"columns": [
+				{
+					"attributeId": "AT86_CUSTOMEM876",
+					"entityId": "EN_CUSTOMERR_876",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_CUSTOMRR876",
+					"entityId": "EN_CUSTOMERR_876",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CUSTOMERR_876",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "CustomerEntity"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

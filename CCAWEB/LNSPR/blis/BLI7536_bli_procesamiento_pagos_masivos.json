@@ -1,0 +1,132 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "P"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_ing",
+			"type": "CUSTOM",
+			"value": "fechaIngreso"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7308"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_lote",
+			"type": "CUSTOM",
+			"value": "ilotePMP"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fin_lote",
+			"type": "CUSTOM",
+			"value": "finlotePMP"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_archivo",
+			"type": "CUSTOM",
+			"value": "archivoPMP"
+		}
+	],
+	"name": "BLI_Procesamiento_Pagos_Masivos",
+	"outputEntity": [
+	],
+	"outputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_lote",
+			"type": "CUSTOM",
+			"value": "olotePMP"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_secuencial",
+			"type": "CUSTOM",
+			"value": "osecuencialPM"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_procesa",
+			"type": "CUSTOM",
+			"value": "oprocesa"
+		}
+	],
+	"patternId": "BLI7536_bli_procesamiento_pagos_masivos",
+	"patternName": "BLI_Procesamiento_Pagos_Masivos",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_ERRORMASI_217",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ErrorMassivePayments"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_pago_masivo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,148 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRZY_1_0",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRZY_K05",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRZY_N35",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRZY_RL6",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "customer",
+		"controlId": "VA_CUSTOMERMUPBSTT_916199",
+		"controlName": "customer",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEventGrid",
+				"executionType": 1
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentType",
+		"controlId": "VA_PAYMENTSTYPESSS_684199",
+		"controlName": "paymentsTypes",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "reference",
+		"controlId": "VA_REFERENCEUFYFMY_654199",
+		"controlName": "reference",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEventGrid",
+				"executionType": 1
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "value",
+		"controlId": "VA_VALUEXDSHNMADTK_664199",
+		"controlName": "value",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_PAYMENTSGR_815507",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

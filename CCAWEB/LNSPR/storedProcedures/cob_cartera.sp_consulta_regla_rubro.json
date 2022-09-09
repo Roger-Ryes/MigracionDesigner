@@ -1,0 +1,163 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_consulta_regla_rubro",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "money",
+				"direction": "out",
+				"name": "@o_valor_rubro"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_porcentaje"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "11a88925-4744-4a92-b2b3-ba22d7230c08",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT max(bph_codsequential) FROM"
+			},
+			{
+				"_idQuery": "68a05951-0c03-4837-ae60-75d4d7c220f2",
+				"columns": [
+					"Tipo",
+					"Descripcion",
+					"Clase",
+					"Referencia",
+					"Descripcion",
+					"VaorDefault",
+					"Signo_default",
+					"Total_default",
+					"Signo_minimo",
+					"Total_minimo",
+					"Signo_maximo",
+					"Total_maximo",
+					"Sector",
+					"Des_sector",
+					"Valor_rubro",
+					"Valor_maximo",
+					"{16}",
+					"{17}"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Tipo\u0027          = null,\r\n      \u0027Descripcion\u0027    = null,\r\n      \u0027Clase\u0027          = null,\r\n      \u0027Referencia\u0027     = @w_regla_parametrizada,\r\n      \u0027Descripcion\u0027    = null,\r\n      \u0027VaorDefault\u0027    = @w_valor_rubro,\r\n      \u0027Signo_default\u0027  = null,\r\n      \u0027Total_default\u0027  = null,\r\n      \u0027Signo_minimo\u0027   = null,\r\n      \u0027Total_minimo\u0027   = null,\r\n      \u0027Signo_maximo\u0027   = null,\r\n      \u0027Total_maximo\u0027   = null,\r\n      \u0027Sector\u0027         = @w_sector,\r\n      \u0027Des_sector\u0027     = @w_des_sector,\r\n      \u0027Valor_rubro\u0027    = @w_valor_rubro,\r\n      \u0027Valor_maximo\u0027   =  null,\r\n      null,\r\n      null"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_sector"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_ejecutar_reglas"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_id_regla"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_regla_parametrizada"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_sector"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tasa_aplicar"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_rubro"
+			}
+		]
+	}
+}

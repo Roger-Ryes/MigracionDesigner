@@ -1,0 +1,147 @@
+{
+	"filename": "C:\\Users\\jquitora\\Documents\\SP\\sp_crear_tmp.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_crear_tmp",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_accion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "472237b8-d9e9-4f38-8f08-319676613a31",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ro_concepto\n   from"
+			},
+			{
+				"_idQuery": "b62e22b7-9732-41ce-be50-e51ffad18a3f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @i_banco"
+			},
+			{
+				"_idQuery": "c24658e7-0993-404f-87c7-c30ef26d030b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_operacion_nueva"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@w_concepto"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dias_pasar"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_dit_fecha_ven"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_div_temp"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_gracia_cap"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_gracia_int"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_multiplo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_num_div"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion_nueva"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion_orig"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_cap"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_int"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_cap"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_amortizacion"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_rubro"
+			},
+			{
+				"dataType": "insensitive",
+				"name": "cursor_rubros"
+			}
+		]
+	}
+}

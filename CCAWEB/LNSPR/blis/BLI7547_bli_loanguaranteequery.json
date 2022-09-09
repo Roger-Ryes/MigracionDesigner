@@ -1,0 +1,232 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21548"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "L"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CUSTOM",
+			"value": "modo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CUSTOM",
+			"value": "tipo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_custodia",
+			"type": "CUSTOM",
+			"value": "custodia"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_estado",
+			"type": "CUSTOM",
+			"value": "estado"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "cliente"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_clase",
+			"type": "CUSTOM",
+			"value": "clase"
+		}
+	],
+	"name": "BLI_LoanGuaranteeQuery",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI7547_bli_loanguaranteequery",
+	"patternName": "BLI_LoanGuaranteeQuery",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "6bec87f5-6346-4da2-af52-30d75bc94691",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 13,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "6bec87f5-6346-4da2-af52-30d75bc94691",
+			"columns": [
+				{
+					"attributeId": "AT80_GUARANET326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "GARANTIA",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_TYPELOIG326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "TIPO",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT62_DESCRIPO326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "DES",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_STATEYRJ326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "ESTADO",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_ADMISSNT326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "INGRESO",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT35_COINUBUZ326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "MONEDA",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_INITIAEV326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "VALOR INICIAL",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_CURRENUE326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "VALOR ACTUAL",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_MINIMUUE326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "VALOR MN",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_CODEWWHB326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "CODIGO",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_CLASEXGT326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "CLASE",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT75_CLIENTRR326",
+					"entityId": "EN_LINEGUARS_326",
+					"format": "",
+					"name": "CLIENTEGAR",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LINEGUARS_326",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LineGuaranteesList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_custodia.sp_buscar_custodia",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

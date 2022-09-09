@@ -1,0 +1,750 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "LNSPR",
+		"subModuleId": "OPRTN",
+		"taskId": "T_LNSPRWENJKGKJ_579",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_LOANDEBOLR_210579",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../LNSPR/relations/componentKeys.json#/OPRTN/Forms/T_LNSPRWENJKGKJ_579/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_008T_LNSPRWENJKGKJ_579_877",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 1,
+						"description": "Se ejecuta antes de renderizar un ViewContainer, permite realizar personalizaciones visuales",
+						"eventId": 8,
+						"name": "Render"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN",
+				"taskId": "T_LNSPRWENJKGKJ_579",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_LOANDEBOLR_210579"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "LoanDeborList",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 1,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"eventType": 0,
+						"groupId": "G_LOANDEBLLI_586445",
+						"groups": [
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_LOANDEBSTL_457445",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1911",
+								"order": 1,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"queryView": {
+									"actionDesign": "Button",
+									"actions": [
+									],
+									"allowPaging": true,
+									"allowPagingStr": "T",
+									"allowSorting": false,
+									"allowSortingStr": "F",
+									"autoSync": null,
+									"componentStyle": null,
+									"confirmRowDeletion": false,
+									"confirmRowDeletionStr": "F",
+									"customEvents": [
+									],
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"customUrlDialog": null,
+									"deleteCommandEnabled": false,
+									"deleteCommandEnabledStr": "F",
+									"dialogTitleLabelId": null,
+									"editCommandEnabled": false,
+									"editCommandEnabledStr": "F",
+									"editMode": "0",
+									"entityName": {
+										"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/name"
+									},
+									"hasDetail": false,
+									"hasDetailString": "F",
+									"height": null,
+									"includeQueryMembers": [
+										"AT80_CLIENTOJ380",
+										"AT50_CLIENTDI380",
+										"AT39_CLIENTNE380",
+										"AT70_CLIENTLO380"
+									],
+									"insertCommandEnabled": false,
+									"insertCommandEnabledStr": "F",
+									"isCustomized": false,
+									"modalSize": null,
+									"modeSelection": "Simple",
+									"moduleIdDialog": null,
+									"multiSelectEnabledStr": "S",
+									"name": "QV_VI44_NQR57",
+									"options": 2048,
+									"pageSize": 5,
+									"query": {
+										"$ref": "../../../../LNSPR/OPRTN/queries/Q_DEBTSOLR_XT44.json#"
+									},
+									"queryId": "Q_DEBTSOLR_XT44",
+									"queryVersion": "1.0.0",
+									"queryViewCustomActions": [
+										{
+											"action": null,
+											"commandImageId": null,
+											"commandName": "RowSelecting",
+											"commandOrder": null,
+											"commandType": 0,
+											"customActionId": "CEQV_208QV_VI44_NQR57_397",
+											"customizationLayer": 0,
+											"customizationLayerDescription": "ECU",
+											"enabled": "T",
+											"eventActions": [
+											],
+											"executionType": 1,
+											"filter": null,
+											"isCustomized": false,
+											"name": "RowSelecting",
+											"options": 0,
+											"queryView": "QV_VI44_NQR57",
+											"queryViewEventType": {
+												"availableExecutionType": 7,
+												"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+												"eventId": 208,
+												"name": "RowSelecting"
+											},
+											"serviceName": null,
+											"userControl": {
+												"customizationLayer": "0",
+												"customizationLayerDescription": "ECU",
+												"description": "Designer Button",
+												"type": "A",
+												"userControlId": "Button"
+											}
+										}
+									],
+									"queryViewId": "QV_VI44_NQR57",
+									"queryViewType": "Grid",
+									"rowCommandAppearance": 0,
+									"style": null,
+									"subModuleIdDialog": null,
+									"taskIdDialog": null,
+									"taskVersionDialog": null,
+									"typeFormDialog": null,
+									"userControl": {
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Grid",
+										"name": "Designer Grid",
+										"type": "I",
+										"userControlId": "Grid"
+									},
+									"viewContainerIdDialog": null
+								},
+								"queryViewId": "QV_VI44_NQR57",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT67_SEQUENIT380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "sequential",
+										"options": 0,
+										"order": 1,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXCUD_128445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT48_OPERATII380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "operation",
+										"options": 0,
+										"order": 12,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXEYS_414445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT64_CENTRALL380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "centralRisk",
+										"options": 0,
+										"order": 6,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXFHG_165445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT70_CLIENTLO380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_ROLNDGMQN_51274"
+											},
+											"labelId": "LBL_LOANS_ROLNDGMQN_51274",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "clientRol",
+										"options": 0,
+										"order": 3,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXHWA_904445",
+										"width": "25",
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT59_CLIENTIM380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "clientMainId",
+										"options": 0,
+										"order": 8,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXIAA_403445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT80_CLIENTOJ380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_CODCLIETT_20856"
+											},
+											"labelId": "LBL_LNSPR_CODCLIETT_20856",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "client",
+										"options": 0,
+										"order": 2,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXILW_913445",
+										"width": "25",
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT89_CLIENTRA380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "clientOperation",
+										"options": 0,
+										"order": 9,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXIZR_364445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT50_CLIENTDI380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_CEDULARCU_43901"
+											},
+											"labelId": "LBL_LNSPR_CEDULARCU_43901",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "clientId",
+										"options": 0,
+										"order": 4,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXKKE_296445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT39_CLIENTNE380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_NOMBRECNI_63306"
+											},
+											"labelId": "LBL_LNSPR_NOMBRECNI_63306",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "clientName",
+										"options": 0,
+										"order": 5,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXMAG_163445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT66_SYSSESNS380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "sysSession",
+										"options": 0,
+										"order": 10,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXMIH_434445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT73_CLIENTAM380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "clientMainName",
+										"options": 0,
+										"order": 13,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXTEO_163445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT48_CLIENTAN380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "clientMain",
+										"options": 0,
+										"order": 11,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXTQG_927445",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT71_SYSUSERR380"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "sysUser",
+										"options": 0,
+										"order": 7,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXUCB_292445",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							}
+						],
+						"isCustomized": false,
+						"layoutType": "GroupLayout",
+						"name": "GroupLayout1752",
+						"order": 1,
+						"style": null,
+						"visible": 4095
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_LOANDEBOLL_445"
+				},
+				"metadataVersion": "7.2.0.2024 BETA",
+				"modules": [
+					{
+						"moduleId": "LNSPR"
+					}
+				],
+				"name": "View of LoanDeborList"
+			}
+		}
+	]
+}

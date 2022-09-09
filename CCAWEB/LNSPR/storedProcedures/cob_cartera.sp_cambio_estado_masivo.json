@@ -1,0 +1,181 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_cambio_estado_masivo",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_comentario"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_archivo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_fin_lote"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_lote"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_lote"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado_desc"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "7153dcef-668f-4ab1-b5b8-1e0aab0d4d7d",
+				"columns": [
+					"Operacion",
+					"EstadoComision",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Operacion\u0027 = op_banco, \u0027EstadoComision\u0027 = cm_estado,  \u0027Descripcion\u0027 = cm_desc_error\r\n      from"
+			},
+			{
+				"_idQuery": "0af7d7e7-6546-4b98-b2e8-48d81f5f6453",
+				"columns": [
+					"Operacion",
+					"EstadoComision",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Operacion\u0027 = cm_banco, \u0027EstadoComision\u0027 = cm_estado,  \u0027Descripcion\u0027 = cm_desc_error\r\n      from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_comentario"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_anulado"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_cancelado"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_credito"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_novigente"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_vencido"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_vigente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_estado_registro"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_nrows"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_sec_previo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

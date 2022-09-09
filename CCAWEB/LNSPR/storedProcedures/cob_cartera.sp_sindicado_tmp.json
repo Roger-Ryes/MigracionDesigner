@@ -1,0 +1,91 @@
+{
+	"filename": "F:\\InfoGeneral\\ConvertidorJson\\convertidor\\cob_cartera.sp_sindicado_tmp.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_sindicado_tmp",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion_cartera"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_banco_participante"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_rol"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_participante"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_correo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_sindicado"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "e685eb0d-e7d2-4705-94a3-f34aacd3744e",
+				"columns": [
+					"Participante",
+					"Nombre Participante",
+					"Rol",
+					"%",
+					"Monto Participante",
+					"Correo"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Participante\u0027        = sit_banco_participante,\r\n          \u0027Nombre Participante\u0027 = fr_nombre,\r\n          \u0027Rol\u0027                 = sit_rol,\r\n          \u0027%\u0027                   = sit_porcentaje,\r\n          \u0027Monto Participante\u0027  = sit_monto_participante,\r\n          \u0027Correo\u0027              = sit_correo\r\n   from"
+			},
+			{
+				"_idQuery": "ed1709df-452f-4ea5-8d68-55c37f0d9834",
+				"columns": [
+					"CodBanco",
+					"NombreBanco"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+		]
+	}
+}

@@ -1,0 +1,111 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_proyecccion_reajuste",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_reajuste"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "dd7bf2a8-c1e2-4149-8887-78d560bacb2a",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "5afd7ab2-efaf-44fd-9659-925d8092fb17",
+				"columns": [
+					"DIVIDENDO",
+					"FECHA_VEN",
+					"DIAS_CUOTA",
+					"SALDO_CAP",
+					"RUBRO1",
+					"RUBRO2",
+					"RUBRO3",
+					"RUBRO4",
+					"RUBRO5",
+					"RUBRO6",
+					"RUBRO7",
+					"RUBRO8",
+					"RUBRO9",
+					"RUBRO10",
+					"RUBRO11",
+					"RUBRO12",
+					"RUBRO13",
+					"RUBRO14",
+					"RUBRO15",
+					"CUOTA",
+					"ESTADO",
+					"PORROGA"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "4478a943-faca-4552-b56d-deae40db1999",
+				"columns": [
+					"DIVIDENDO",
+					"VENCIMIENTO",
+					"SALDO_CAP",
+					"RUBRO1",
+					"RUBRO2",
+					"RUBRO3",
+					"RUBRO4",
+					"RUBRO5",
+					"CUOTA",
+					"ESTADO"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

@@ -1,0 +1,112 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-lnspr cb-t-lnsprshdbnxgh-268 " [formGroup]="vc.viewState.T_LNSPRSHDBNXGH_268"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container-fluid"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_LOANSOPETN_404268.enabled, 'VC_LOANSOPETN_404268')" [properties]="vc.viewState.VC_LOANSOPETN_404268" [mode]="vc.mode"> 
+      <cobis-collapsible-container [disabled]="isDisabled( vc.viewState.G_LOANSOPPAE_509518.enabled, 'G_LOANSOPPAE_509518', 'VC_LOANSOPETN_404268')" *ngIf="isVisible('G_LOANSOPPAE_509518')" [mode]="vc.mode" [properties]="vc.viewState.G_LOANSOPPAE_509518"> 
+       <cobis-collapsible-item [disabled]="isDisabled( vc.viewState.G_LOANSOPTET_690518_item.enabled, 'G_LOANSOPTET_690518_item', 'G_LOANSOPPAE_509518')" *ngIf="isVisible('G_LOANSOPTET_690518_item')" [properties]="vc.viewState.G_LOANSOPTET_690518_item" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSOPTET_690518.enabled, 'G_LOANSOPTET_690518', 'G_LOANSOPTET_690518_item')" *ngIf="isVisible('G_LOANSOPTET_690518')" [properties]="vc.viewState.G_LOANSOPTET_690518" [mode]="vc.mode"> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSOPTAT_344518.enabled, 'G_LOANSOPTAT_344518', 'G_LOANSOPTET_690518', 'OperationEntity',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('G_LOANSOPTAT_344518',true)" [properties]="vc.viewState.G_LOANSOPTAT_344518" [mode]="vc.mode" formGroupName="OperationEntity"> 
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_TYPEOPERATIONNN_178518.enabled, 'VA_TYPEOPERATIONNN_178518', 'G_LOANSOPTAT_344518', 'OperationEntity.typeOperation',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_TYPEOPERATIONNN_178518')" [properties]="vc.viewState.VA_TYPEOPERATIONNN_178518" [mode]="vc.mode" formControlName="typeOperation" [dataSource]="vc.catalogs.VA_TYPEOPERATIONNN_178518"> 
+          </cobis-dropdownlist> 
+          <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_OPERATIONACVLVA_383518.enabled, 'VA_OPERATIONACVLVA_383518', 'G_LOANSOPTAT_344518', 'OperationEntity.operation',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_OPERATIONACVLVA_383518')" [properties]="vc.viewState.VA_OPERATIONACVLVA_383518" [mode]="vc.mode" formControlName="operation"></cobis-textinputbox>
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_MONEYYUNMNTCAPG_708518.enabled, 'VA_MONEYYUNMNTCAPG_708518', 'G_LOANSOPTAT_344518', 'OperationEntity.money',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_MONEYYUNMNTCAPG_708518')" [properties]="vc.viewState.VA_MONEYYUNMNTCAPG_708518" [mode]="vc.mode" formControlName="money" [dataSource]="vc.catalogs.VA_MONEYYUNMNTCAPG_708518"> 
+          </cobis-dropdownlist> 
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_SUBSEGMENTIHNRO_703518.enabled, 'VA_SUBSEGMENTIHNRO_703518', 'G_LOANSOPTAT_344518', 'OperationEntity.subsegment',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_SUBSEGMENTIHNRO_703518')" [properties]="vc.viewState.VA_SUBSEGMENTIHNRO_703518" [mode]="vc.mode" formControlName="subsegment" [dataSource]="vc.catalogs.VA_SUBSEGMENTIHNRO_703518"> 
+          </cobis-dropdownlist> 
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_SECTORFUBPMDRRG_875518.enabled, 'VA_SECTORFUBPMDRRG_875518', 'G_LOANSOPTAT_344518', 'OperationEntity.sector',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_SECTORFUBPMDRRG_875518')" [properties]="vc.viewState.VA_SECTORFUBPMDRRG_875518" [mode]="vc.mode" formControlName="sector" [dataSource]="vc.catalogs.VA_SECTORFUBPMDRRG_875518"> 
+          </cobis-dropdownlist> 
+          <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_AMOUNTQYVZWOGGF_373518.enabled, 'VA_AMOUNTQYVZWOGGF_373518', 'G_LOANSOPTAT_344518', 'OperationEntity.amount',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_AMOUNTQYVZWOGGF_373518')" [properties]="vc.viewState.VA_AMOUNTQYVZWOGGF_373518" [mode]="vc.mode" formControlName="amount"></cobis-numericinputbox>
+          <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_AMOUNTAPPROVEDD_905518.enabled, 'VA_AMOUNTAPPROVEDD_905518', 'G_LOANSOPTAT_344518', 'OperationEntity.amountApproved',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_AMOUNTAPPROVEDD_905518')" [properties]="vc.viewState.VA_AMOUNTAPPROVEDD_905518" [mode]="vc.mode" formControlName="amountApproved"></cobis-numericinputbox>
+          <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_STATEDJGEIHUNRY_453518.enabled, 'VA_STATEDJGEIHUNRY_453518', 'G_LOANSOPTAT_344518', 'OperationEntity.state',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_STATEDJGEIHUNRY_453518')" [properties]="vc.viewState.VA_STATEDJGEIHUNRY_453518" [mode]="vc.mode" formControlName="state"></cobis-textinputbox>
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_FINANCIALDESNIO_774518.enabled, 'VA_FINANCIALDESNIO_774518', 'G_LOANSOPTAT_344518', 'OperationEntity.financialDestination',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_FINANCIALDESNIO_774518')" [properties]="vc.viewState.VA_FINANCIALDESNIO_774518" [mode]="vc.mode" formControlName="financialDestination" [dataSource]="vc.catalogs.VA_FINANCIALDESNIO_774518"> 
+          </cobis-dropdownlist> 
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_ECONOMICACTIIVV_350518.enabled, 'VA_ECONOMICACTIIVV_350518', 'G_LOANSOPTAT_344518', 'OperationEntity.economicActivity',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_ECONOMICACTIIVV_350518')" [properties]="vc.viewState.VA_ECONOMICACTIIVV_350518" [mode]="vc.mode" formControlName="economicActivity" [dataSource]="vc.catalogs.VA_ECONOMICACTIIVV_350518"> 
+          </cobis-dropdownlist> 
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_OFFICIALWGEPOTD_393518.enabled, 'VA_OFFICIALWGEPOTD_393518', 'G_LOANSOPTAT_344518', 'OperationEntity.official',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_OFFICIALWGEPOTD_393518')" [properties]="vc.viewState.VA_OFFICIALWGEPOTD_393518" [mode]="vc.mode" formControlName="official" [dataSource]="vc.catalogs.VA_OFFICIALWGEPOTD_393518"> 
+          </cobis-dropdownlist> 
+          <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_OFFICESTHMPCXJO_201518.enabled, 'VA_OFFICESTHMPCXJO_201518', 'G_LOANSOPTAT_344518', 'OperationEntity.office',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_OFFICESTHMPCXJO_201518')" [properties]="vc.viewState.VA_OFFICESTHMPCXJO_201518" [mode]="vc.mode" formControlName="office" [dataSource]="vc.catalogs.VA_OFFICESTHMPCXJO_201518"> 
+          </cobis-dropdownlist> 
+          <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_CREATIONDATEPOZ_377518.enabled, 'VA_CREATIONDATEPOZ_377518', 'G_LOANSOPTAT_344518', 'OperationEntity.creationDate',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_CREATIONDATEPOZ_377518')" [properties]="vc.viewState.VA_CREATIONDATEPOZ_377518" [mode]="vc.mode" formControlName="creationDate"></cobis-datefield>
+          <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_EXPIRATIONDAETE_274518.enabled, 'VA_EXPIRATIONDAETE_274518', 'G_LOANSOPTAT_344518', 'OperationEntity.expirationDate',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_EXPIRATIONDAETE_274518')" [properties]="vc.viewState.VA_EXPIRATIONDAETE_274518" [mode]="vc.mode" formControlName="expirationDate"></cobis-datefield>
+          <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_FIRSTDUEDATEPFW_397518.enabled, 'VA_FIRSTDUEDATEPFW_397518', 'G_LOANSOPTAT_344518', 'OperationEntity.firstDueDate',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_FIRSTDUEDATEPFW_397518')" [properties]="vc.viewState.VA_FIRSTDUEDATEPFW_397518" [mode]="vc.mode" formControlName="firstDueDate"></cobis-datefield>
+          <cobis-checkbox [attr.disabled]="isDisabled( vc.viewState.VA_SYNDICATEDRJKWH_210518.enabled, 'VA_SYNDICATEDRJKWH_210518', 'G_LOANSOPTAT_344518', 'OperationEntity.syndicated',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_SYNDICATEDRJKWH_210518')" [properties]="vc.viewState.VA_SYNDICATEDRJKWH_210518" [mode]="vc.mode" formControlName="syndicated"></cobis-checkbox> 
+          <cobis-spacer *ngIf="isVisible('VA_SPACER1946PMOCU_341518')" [properties]="vc.viewState.VA_SPACER1946PMOCU_341518"></cobis-spacer> 
+         </cobis-groupbox> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSOPIEI_892518.enabled, 'G_LOANSOPIEI_892518', 'G_LOANSOPTET_690518', 'OperationEntity',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('G_LOANSOPIEI_892518',true)" [properties]="vc.viewState.G_LOANSOPIEI_892518" [mode]="vc.mode" formGroupName="OperationEntity"> 
+          <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_CREDITORTYPEBLZ_645518.enabled, 'VA_CREDITORTYPEBLZ_645518', 'G_LOANSOPIEI_892518', 'OperationEntity.creditorType',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_CREDITORTYPEBLZ_645518')" [properties]="vc.viewState.VA_CREDITORTYPEBLZ_645518" [mode]="vc.mode" formControlName="creditorType"></cobis-textinputbox>
+          <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_CREDITLINEDUXXM_372518.enabled, 'VA_CREDITLINEDUXXM_372518', 'G_LOANSOPIEI_892518', 'OperationEntity.creditLine',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_CREDITLINEDUXXM_372518')" [properties]="vc.viewState.VA_CREDITLINEDUXXM_372518" [mode]="vc.mode" formControlName="creditLine"></cobis-textinputbox>
+          <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_REGISTRATIONURR_119518.enabled, 'VA_REGISTRATIONURR_119518', 'G_LOANSOPIEI_892518', 'OperationEntity.registrationNumber',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_REGISTRATIONURR_119518')" [properties]="vc.viewState.VA_REGISTRATIONURR_119518" [mode]="vc.mode" formControlName="registrationNumber"></cobis-textinputbox>
+          <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_CONTRACTNUMBERR_842518.enabled, 'VA_CONTRACTNUMBERR_842518', 'G_LOANSOPIEI_892518', 'OperationEntity.contractNumber',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_CONTRACTNUMBERR_842518')" [properties]="vc.viewState.VA_CONTRACTNUMBERR_842518" [mode]="vc.mode" formControlName="contractNumber"></cobis-textinputbox> 
+         </cobis-groupbox> 
+        </cobis-groupbox> 
+       </cobis-collapsible-item> 
+       <cobis-collapsible-item [disabled]="isDisabled( vc.viewState.G_LOANSOPEDA_286518_item.enabled, 'G_LOANSOPEDA_286518_item', 'G_LOANSOPPAE_509518')" *ngIf="isVisible('G_LOANSOPEDA_286518_item')" [properties]="vc.viewState.G_LOANSOPEDA_286518_item" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSOPEDA_286518.enabled, 'G_LOANSOPEDA_286518', 'G_LOANSOPPAE_509518', 'OperationEntity',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('G_LOANSOPEDA_286518',true)" [properties]="vc.viewState.G_LOANSOPEDA_286518" [mode]="vc.mode" formGroupName="OperationEntity"> 
+         <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_DEBTTYPEANMTYAF_618518.enabled, 'VA_DEBTTYPEANMTYAF_618518', 'G_LOANSOPEDA_286518', 'OperationEntity.debtType',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_DEBTTYPEANMTYAF_618518')" [properties]="vc.viewState.VA_DEBTTYPEANMTYAF_618518" [mode]="vc.mode" formControlName="debtType"></cobis-textinputbox>
+         <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_AUTHDATEMFJNOLR_674518.enabled, 'VA_AUTHDATEMFJNOLR_674518', 'G_LOANSOPEDA_286518', 'OperationEntity.authDate',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_AUTHDATEMFJNOLR_674518')" [properties]="vc.viewState.VA_AUTHDATEMFJNOLR_674518" [mode]="vc.mode" formControlName="authDate"></cobis-datefield>
+         <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_AUTHNUMBERVDCKC_206518.enabled, 'VA_AUTHNUMBERVDCKC_206518', 'G_LOANSOPEDA_286518', 'OperationEntity.authNumber',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_AUTHNUMBERVDCKC_206518')" [properties]="vc.viewState.VA_AUTHNUMBERVDCKC_206518" [mode]="vc.mode" formControlName="authNumber"></cobis-textinputbox>
+         <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_REPOSITIONXBXIX_294518.enabled, 'VA_REPOSITIONXBXIX_294518', 'G_LOANSOPEDA_286518', 'OperationEntity.formReposition',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_REPOSITIONXBXIX_294518')" [properties]="vc.viewState.VA_REPOSITIONXBXIX_294518" [mode]="vc.mode" formControlName="formReposition"></cobis-textinputbox>
+         <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_SUBFINANCINGBDK_943518.enabled, 'VA_SUBFINANCINGBDK_943518', 'G_LOANSOPEDA_286518', 'OperationEntity.subFinancing',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_SUBFINANCINGBDK_943518')" [properties]="vc.viewState.VA_SUBFINANCINGBDK_943518" [mode]="vc.mode" formControlName="subFinancing"></cobis-textinputbox>
+         <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_FINANMARKETKWUR_337518.enabled, 'VA_FINANMARKETKWUR_337518', 'G_LOANSOPEDA_286518', 'OperationEntity.finanMarket',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_FINANMARKETKWUR_337518')" [properties]="vc.viewState.VA_FINANMARKETKWUR_337518" [mode]="vc.mode" formControlName="finanMarket"></cobis-textinputbox>
+         <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_FACILITYNUMBEEE_816518.enabled, 'VA_FACILITYNUMBEEE_816518', 'G_LOANSOPEDA_286518', 'OperationEntity.facilityNumber',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('VA_FACILITYNUMBEEE_816518')" [properties]="vc.viewState.VA_FACILITYNUMBEEE_816518" [mode]="vc.mode" formControlName="facilityNumber"></cobis-textinputbox> 
+        </cobis-groupbox> 
+       </cobis-collapsible-item> 
+      </cobis-collapsible-container> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSOPENT_770518.enabled, 'G_LOANSOPENT_770518', 'VC_LOANSOPETN_404268', 'SyndicatedList',vc.viewState.T_LNSPRSHDBNXGH_268)" *ngIf="isVisible('G_LOANSOPENT_770518',true)" [properties]="vc.viewState.G_LOANSOPENT_770518" [mode]="vc.mode" formGroupName="SyndicatedList"> 
+       <cobis-grid #QV_GM97_JJJ11_Grid [properties]="vc.viewState.QV_GM97_JJJ11" [mode]="vc.mode" [formGroupGrid]="vc.model.SyndicatedListRowData.formGroup" [dataSource]="vc.model.SyndicatedList" [model]="vc.model" (gridInitDetailTemplate)="gridInitDetailTemplate($event)" (showGridRowDetailIcon)="showGridRowDetailIcon($event)" (gridInitColumnTemplate)="gridInitColumnTemplate($event)" (gridInitEditColumnTemplate)="gridInitEditColumnTemplate($event)" (onSaveRow)="gridSaveRow($event)"> 
+        <!--Start Column codParticipants --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXHVY_271518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXHVY_271518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+        </ng-template> 
+        <!--Start Column nameParticipants --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXKXI_794518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ dataItem[column.field] }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXKXI_794518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+        </ng-template> 
+        <!--Start Column percentageParticipants --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXCTZ_403518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXCTZ_403518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+        </ng-template> 
+        <!--Start Column roleP --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXNKA_174518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ dataItem[column.field] }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXNKA_174518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+        </ng-template> 
+        <!--Start Column mail --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXPKT_357518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ dataItem[column.field] }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXPKT_357518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+        </ng-template> 
+        <!--Start Column amountParticipants --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXKNN_414518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXKNN_414518'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+        </ng-template> 
+       </cobis-grid> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

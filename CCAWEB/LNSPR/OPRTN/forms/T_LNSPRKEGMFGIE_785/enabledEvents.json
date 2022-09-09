@@ -1,0 +1,110 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_APAGOOOO_YV30",
+		"controlName": "FormaPagoQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_APAGOOOO_YV30.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "FormaPago",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "benefitInterestRate",
+		"controlId": "VA_4223IMHHOSVYCXY_300309",
+		"controlName": "benefitInterestRate",
+		"controlType": "CheckBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "GeneralParametersQuery",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentMethod",
+		"controlId": "VA_PAYMENTMETHODDD_220309",
+		"controlName": "paymentMethod",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "GeneralParametersQuery",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "readjustable",
+		"controlId": "VA_READJUSTABLELXP_279309",
+		"controlName": "readjustable",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "GeneralParametersQuery",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONFIRPTAQ_308309",
+		"controlName": "VA_VABUTTONFIRPTAQ_308309",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONOHXRHAO_106309",
+		"controlName": "VA_VABUTTONOHXRHAO_106309",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "GeneralParametersQuery",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_OPERATIONN_207785",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

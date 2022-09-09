@@ -1,0 +1,34 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "G_GENERALTII_344243",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "changeGroup",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "groupEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_GENERALIAN_158721",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

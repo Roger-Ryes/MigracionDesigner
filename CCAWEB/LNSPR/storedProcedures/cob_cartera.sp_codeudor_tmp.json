@@ -1,0 +1,111 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_codeudor_tmp",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "double",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_codeudor"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_rol"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cel_ruc"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_titular"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_central_riesgo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operation"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_borrar"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desde_cre"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "cd2502f0-31ec-48fb-ad2d-87bb70d5c0b4",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

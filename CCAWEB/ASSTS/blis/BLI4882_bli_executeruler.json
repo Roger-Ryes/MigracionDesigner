@@ -1,0 +1,129 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_RULERDATT_835",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "RulerData"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77530"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_opcion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "AT20_SAFEAMTT835",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_RULERDATT_835",
+			"format": "",
+			"name": "@i_monto_seguro",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT20_NAMERURL835",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_RULERDATT_835",
+			"format": "",
+			"name": "@i_regla",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT29_FREQUECC835",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_RULERDATT_835",
+			"format": "",
+			"name": "@i_folio",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_ExecuteRuler",
+	"outputEntity": [
+		{
+			"entityId": "EN_RULERESUT_794",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "RulerResult"
+		}
+	],
+	"outputParameters": [
+		{
+			"attributeId": "AT86_RETURNLA794",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_RULERESUT_794",
+			"format": "",
+			"name": "@o_return_variableR",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT71_RETURNSS794",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_RULERESUT_794",
+			"format": "",
+			"name": "@o_return_resultsR",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT34_LASTCOIT794",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "EN_RULERESUT_794",
+			"format": "",
+			"name": "@o_last_condition_parentR",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"patternId": "BLI4882_bli_executeruler",
+	"patternName": "BLI_ExecuteRuler",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_ejecutar_regla_param",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

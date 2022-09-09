@@ -1,0 +1,46 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_DEBTSOLR_XT44",
+		"controlName": "DebtorListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_DEBTSOLR_XT44.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "DebtorList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_VI44_NQR57",
+		"controlName": "QV_VI44_NQR57",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "DebtorList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANDEBOLR_210579",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

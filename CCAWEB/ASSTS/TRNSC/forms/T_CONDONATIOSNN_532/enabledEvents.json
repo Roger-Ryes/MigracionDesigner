@@ -1,0 +1,110 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TCONDONA_NAN",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TCONDONA_SS3",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_CONDONDE_7324",
+		"controlName": "CondonationDetailQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_CONDONDE_7324.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_7324_98967",
+		"controlName": "QV_7324_98967",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "beforeEnterInLineRow",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 1
+			}
+		],
+		"entityName": "CondonationDetail",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "valueToCondone",
+		"controlId": "VA_TEXTINPUTBOXECH_722764",
+		"controlName": "valueToCondone",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "CondonationDetail",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "concept",
+		"controlId": "VA_TEXTINPUTBOXVSD_563764",
+		"controlName": "concept",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "CondonationDetail",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_CONDONATON_778532",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

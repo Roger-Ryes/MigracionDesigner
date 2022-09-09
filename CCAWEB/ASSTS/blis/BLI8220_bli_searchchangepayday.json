@@ -1,0 +1,113 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_CHANGEPAD_908",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ChangePayDayEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77669"
+		},
+		{
+			"attributeId": "AT27_OPERATIO908",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_CHANGEPAD_908",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		}
+	],
+	"name": "BLI_SearchChangePayDay",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8220_bli_searchchangepayday",
+	"patternName": "BLI_SearchChangePayDay",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "ef44ef91-cf0d-4c46-9de2-6cef66ff975b",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "select @w_operacion, @w_nombclie1, @w_dia_pago_act, @w_mant_cuota"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ef44ef91-cf0d-4c46-9de2-6cef66ff975b",
+			"columns": [
+				{
+					"attributeId": "AT83_CLIENTWS908",
+					"entityId": "EN_CHANGEPAD_908",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT64_CURRENYA908",
+					"entityId": "EN_CHANGEPAD_908",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_KEEPQUOO908",
+					"entityId": "EN_CHANGEPAD_908",
+					"format": "",
+					"name": "{3}",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CHANGEPAD_908",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ChangePayDayEntity"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_camb_diapago",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

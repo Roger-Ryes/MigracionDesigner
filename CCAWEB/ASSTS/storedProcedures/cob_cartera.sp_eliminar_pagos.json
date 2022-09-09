@@ -1,0 +1,287 @@
+{
+	"filename": "C:\\Users\\jgomez.COBISCORP\\Downloads\\SPS\\sp_eliminar_pagos.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_eliminar_pagos",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_corr"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn_corr"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial_ing"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_en_linea"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_pago_ext"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "7a2d8648-3d74-4258-b142-28db9ec47832",
+				"columns": [
+					"SECUENCIAL",
+					"FECHA",
+					"USUARIO",
+					"OFICINA",
+					"RETENCION",
+					"CUOTA COMPLETA",
+					"ANTICIPOS",
+					"TIPO REDUCCION",
+					"TIPO COBRO"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027SECUENCIAL\u0027     = convert(varchar(12),ab_secuencial_ing),\r\n      \u0027FECHA\u0027          = convert(varchar(12),ab_fecha_ing,@i_formato_fecha),\r\n      \u0027USUARIO\u0027        = ab_usuario,\r\n      \u0027OFICINA\u0027        = ab_oficina,\r\n      \u0027RETENCION\u0027      = ab_dias_retencion,\r\n      \u0027CUOTA COMPLETA\u0027 = ab_cuota_completa,\r\n      \u0027ANTICIPOS\u0027      = ab_aceptar_anticipos,\r\n      \u0027TIPO REDUCCION\u0027 = ab_tipo_reduccion,\r\n      \u0027TIPO COBRO\u0027     = ab_tipo_cobro\r\n      from"
+			},
+			{
+				"_idQuery": "986b9aa7-0077-46fe-90ef-06a4d621e1cd",
+				"columns": [
+					"TIPO",
+					"CONCEPTO",
+					"CUENTA",
+					"MONEDA",
+					"MONTO MPG",
+					"MONTO MOP"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027TIPO\u0027       = abd_tipo,\r\n      \u0027CONCEPTO\u0027   = abd_concepto,\r\n      \u0027CUENTA\u0027     = abd_cuenta,\r\n      \u0027MONEDA \u0027    = abd_moneda,\r\n      \u0027MONTO MPG\u0027  = convert(float, abd_monto_mpg),\r\n      \u0027MONTO MOP\u0027  = convert(float, abd_monto_mop)\r\n      from"
+			},
+			{
+				"_idQuery": "c86e9b1c-5263-4f9b-8f88-3cab0e64ab72",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select codigo\r\n                         from"
+			},
+			{
+				"_idQuery": "76a7fe8a-32ef-4668-a885-3d3abd1af64e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select cp_codvalor\r\n                            from"
+			},
+			{
+				"_idQuery": "70756e40-4a59-4321-b28b-740ea1fdb9f9",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}"
+				],
+				"editMode": false,
+				"queryText": "select cp_producto_reversa, abd_tipo,   abs(abd_monto_mpg),\r\n                       abd_moneda,          abd_cuenta, cp_codvalor,   cp_pcobis\r\n                from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "cuenta",
+				"name": "@w_abd_cuenta"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_abd_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_abd_monto_mpg"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_abd_tipo"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco_alterno"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_calificacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_codvalor"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_cp_pcobis"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_forma_original"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_forma_pago"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_forma_reversa"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_gar_admisible"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_linea_fpago"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficina_ifase"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficina_op"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_op_tipo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_prod_rev"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reestructuracion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_registro"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial_retro"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial_rpa"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_oficina_ifase"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "cursor",
+				"name": "cursor_afecta_productos"
+			}
+		]
+	}
+}

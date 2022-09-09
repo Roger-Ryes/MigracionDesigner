@@ -1,0 +1,135 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CONSTANT",
+			"value": "2"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "A"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "currency"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_linea_cre",
+			"type": "CUSTOM",
+			"value": "opType"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7076"
+		}
+	],
+	"name": "BLI_BuscarFormasPago",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8007_bli_buscarformaspago",
+	"patternName": "BLI_BuscarFormasPago",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "42e8d363-25c9-498b-8f92-d0b150d0b336",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "42e8d363-25c9-498b-8f92-d0b150d0b336",
+			"columns": [
+				{
+					"attributeId": "AT30_PRODUCTO458",
+					"entityId": "EN_APAGOCIPF_458",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_DESCRIPP458",
+					"entityId": "EN_APAGOCIPF_458",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_CATEGORI458",
+					"entityId": "EN_APAGOCIPF_458",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_PCOBISUV458",
+					"entityId": "EN_APAGOCIPF_458",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_APAGOCIPF_458",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "FormaPago"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_producto",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

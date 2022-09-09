@@ -1,0 +1,196 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7309"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "I"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_base_con",
+			"type": "CUSTOM",
+			"value": "baseCon"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_base_cal",
+			"type": "CUSTOM",
+			"value": "baseCal"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor",
+			"type": "CUSTOM",
+			"value": "valor"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_comentario",
+			"type": "CUSTOM",
+			"value": "comentario"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fin_lote",
+			"type": "CUSTOM",
+			"value": "finLote"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_archivo",
+			"type": "CUSTOM",
+			"value": "archivo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_lote",
+			"type": "CUSTOM",
+			"value": "ilote"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "moneda"
+		}
+	],
+	"name": "BLI_Ingresar_Cargos_Temp",
+	"outputEntity": [
+	],
+	"outputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_lote",
+			"type": "CUSTOM",
+			"value": "lote"
+		}
+	],
+	"patternId": "BLI5377_bli_ingresar_cargos_temp",
+	"patternName": "BLI_Ingresar_Cargos_Temp",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "176a8f27-347c-44fe-8806-b7e2aef140a1",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "176a8f27-347c-44fe-8806-b7e2aef140a1",
+			"columns": [
+				{
+					"attributeId": "AT72_OPERATNN279",
+					"entityId": "EN_MASSIVEKM_279",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT51_MISTAKEE279",
+					"entityId": "EN_MASSIVEKM_279",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_MASSIVEKM_279",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "MassiveCommissionsMistakes"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_cargos_masivos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

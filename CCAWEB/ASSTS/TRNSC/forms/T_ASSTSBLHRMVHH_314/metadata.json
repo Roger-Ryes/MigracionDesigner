@@ -1,0 +1,12 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_COMPANILF_154",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		}
+	],
+	"queries": [
+	]
+}

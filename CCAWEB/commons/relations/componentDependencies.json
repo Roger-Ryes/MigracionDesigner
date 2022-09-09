@@ -1,0 +1,8617 @@
+{
+	"CompositeForms": {
+		"T_APPLYCLAUSEEE_533": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_AMORTIZATIOON_261",
+				"T_LOANHEADERNFI_316"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APLICARIP_57468",
+				"LBL_ASSTS_CLAUSULRI_36820"
+			]
+		},
+		"T_ASSTSSZCLDZTQ_839": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_ASSTSAXELGOQQ_915",
+				"T_LOANHEADERNFI_316"
+			],
+			"header": [
+				"HD_HEADERLSO_968"
+			],
+			"labels": [
+				"LBL_ASSTS_CALCULARR_78724",
+				"LBL_ASSTS_NEGOCIANI_54038"
+			]
+		},
+		"T_EXTENDSQUONTA_926": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_EXTENDSQUOATT_575",
+				"T_LOANHEADERNFI_316"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_PRORROGRR_30298"
+			]
+		},
+		"T_LNSPRMBVLAOGA_193": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LNSPRDTSDFSKQ_539",
+				"T_LNSPRGNPCEXYE_633",
+				"T_LNSPRHWGYLNWJ_330",
+				"T_LNSPRKEGMFGIE_785"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_AMORTIZII_74160",
+				"LBL_LNSPR_CREACINTM_36009",
+				"LBL_LNSPR_INACINGNN_54588",
+				"LBL_LNSPR_PARMETROG_15063",
+				"LBL_LNSPR_RUBROSIFS_16769",
+				"LBL_LNSPR_TRANSMIRR_86351"
+			]
+		},
+		"T_LNSPRTZAAOTEC_626": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LNSPRDTSDFSKQ_539",
+				"T_LNSPRGNPCEXYE_633",
+				"T_LNSPRHWGYLNWJ_330",
+				"T_LNSPRKEGMFGIE_785"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_AMORTIZII_74160",
+				"LBL_LNSPR_FINALIZAA_98850",
+				"LBL_LNSPR_INACINGNN_54588",
+				"LBL_LNSPR_PARMETROG_15063",
+				"LBL_LNSPR_RUBROSIFS_16769",
+				"LBL_LNSPR_SIMULACMO_93778"
+			]
+		},
+		"T_LNSPRVJAKOEIC_908": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LNSPRGNPCEXYE_633",
+				"T_LNSPRHWGYLNWJ_330",
+				"T_LNSPRKEGMFGIE_785",
+				"T_LNSPRSHDBNXGH_268"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_AMORTIZII_74160",
+				"LBL_LNSPR_INACINGNN_54588",
+				"LBL_LNSPR_PARMETROG_15063",
+				"LBL_LNSPR_RUBROSIFS_16769",
+				"LBL_LNSPR_TRANSMIRR_86351"
+			]
+		},
+		"T_LNSPRYTTPAWOT_832": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LNSPRBYPIFLBG_956",
+				"T_LNSPRGNPCEXYE_633",
+				"T_LNSPRHWGYLNWJ_330",
+				"T_LNSPRKEGMFGIE_785"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_AMORTIZII_74160",
+				"LBL_LNSPR_CREACINVP_46417",
+				"LBL_LNSPR_INACINGNN_54588",
+				"LBL_LNSPR_PARMETROG_15063",
+				"LBL_LNSPR_RUBROSIFS_16769",
+				"LBL_LNSPR_TRANSMIRR_86351"
+			]
+		},
+		"T_LOANDISBURSAA_275": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_DISBURSEMENNN_810",
+				"T_LOANHEADERNFI_316"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ENVIARRFA_30717"
+			]
+		},
+		"T_LOANSTATUSGNI_120": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_AMORTIZATIOON_261",
+				"T_LOANSTATUSNGH_840"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CAMBIOEOA_47107",
+				"LBL_ASSTS_GUARDARRI_81055"
+			]
+		},
+		"T_PAYMENTSMANII_157": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_ASSTSIOIYHVWE_604",
+				"T_PAYMENTSTENLV_850"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CONDONASE_22340",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_NEGOCIANI_54038",
+				"LBL_ASSTS_PRIORIDAA_58251",
+				"LBL_ASSTS_SOBRANTSE_66830"
+			]
+		},
+		"T_PROJECTINGSTR_344": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LOANHEADERNFI_316",
+				"T_PROJECTIONTOG_425"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_INGRESOOR_92676"
+			]
+		},
+		"T_PROJECTIONNQI_244": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LOANHEADERNFI_316",
+				"T_PROJECTIONATU_621"
+			],
+			"header": [
+				"HD_HEADERLSO_968"
+			],
+			"labels": [
+				"LBL_ASSTS_CALCULARR_78724"
+			]
+		},
+		"T_REAJUSTESRCSN_872": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LOANHEADERNFI_316",
+				"T_REAJUSTECAMMB_801"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CERRARGRF_18229",
+				"LBL_ASSTS_REAJUSTEC_42213"
+			]
+		},
+		"T_VALUEDATEMINN_689": {
+			"blis": [
+			],
+			"externalForms": {
+			},
+			"forms": [
+				"T_LOANHEADERNFI_316",
+				"T_VALUEDATEUVDU_861"
+			],
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APLICARIP_57468",
+				"LBL_ASSTS_FECHAVALO_78292"
+			]
+		}
+	},
+	"Entities": {
+		"EN_11DQLOHQU_562": {
+			"labels": [
+			]
+		},
+		"EN_14HHEOYJC_258": {
+			"labels": [
+			]
+		},
+		"EN_16QOLIKHU_146": {
+			"labels": [
+			]
+		},
+		"EN_1IRAKPKDY_241": {
+			"labels": [
+			]
+		},
+		"EN_ACTIVETIT_417": {
+			"labels": [
+			]
+		},
+		"EN_AGGREGAIE_510": {
+			"labels": [
+			]
+		},
+		"EN_AMORTIZAI_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_AMORTIZON_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_AMORTIZRM_749": {
+			"labels": [
+			]
+		},
+		"EN_AMORTIZTI_956": {
+			"labels": [
+			]
+		},
+		"EN_AMORTIZTO_416": {
+			"labels": [
+			]
+		},
+		"EN_AMORTIZTT_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_AMORTSIUT_108": {
+			"labels": [
+			]
+		},
+		"EN_APAGOCIPF_458": {
+			"labels": [
+			]
+		},
+		"EN_CATALOGDC_502": {
+			"labels": [
+			]
+		},
+		"EN_CATALOGIS_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CAUSATION_534": {
+			"labels": [
+			]
+		},
+		"EN_CHANGEPAD_908": {
+			"labels": [
+			]
+		},
+		"EN_COMPANIDS_402": {
+			"labels": [
+			]
+		},
+		"EN_COMPANIER_251": {
+			"labels": [
+			]
+		},
+		"EN_COMPANIHA_370": {
+			"labels": [
+			]
+		},
+		"EN_COMPANILF_154": {
+			"labels": [
+			]
+		},
+		"EN_COMPANILL_950": {
+			"labels": [
+			]
+		},
+		"EN_COMPANINS_178": {
+			"labels": [
+			]
+		},
+		"EN_COMPANITI_423": {
+			"labels": [
+			]
+		},
+		"EN_COMPANYEP_376": {
+			"labels": [
+			]
+		},
+		"EN_CONCEPTOO_542": {
+			"labels": [
+			]
+		},
+		"EN_CONCEPTSS_476": {
+			"labels": [
+			]
+		},
+		"EN_CONCEPTTE_520": {
+			"labels": [
+			]
+		},
+		"EN_CONCILIIN_177": {
+			"labels": [
+			]
+		},
+		"EN_CREATEOAA_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREATEOAE_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREATEOEO_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREATEOHE_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREATEONE_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREATEOPN_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREATEORR_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREATEOTV_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_CREDITHAE_597": {
+			"labels": [
+			]
+		},
+		"EN_CUSTOMERR_876": {
+			"labels": [
+			]
+		},
+		"EN_DATAPASFI_669": {
+			"labels": [
+			]
+		},
+		"EN_DEBTORLIS_380": {
+			"labels": [
+			]
+		},
+		"EN_DEBTORRTO_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_DEBTORVWG_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_DEFERRESA_227": {
+			"labels": [
+				"LBL_ASSTS_ACUMULAOO_17499",
+				"LBL_ASSTS_DEVENGAIK_41942",
+				"LBL_ASSTS_RUBROIVKT_62353",
+				"LBL_ASSTS_SALDOCPEI_91372"
+			]
+		},
+		"EN_DEFERRESI_770": {
+			"labels": [
+				"LBL_ASSTS_DIVIDENDD_33129"
+			]
+		},
+		"EN_DETAILNEO_741": {
+			"labels": [
+			]
+		},
+		"EN_DETAILTCN_643": {
+			"labels": [
+			]
+		},
+		"EN_DETAILTIC_851": {
+			"labels": [
+			]
+		},
+		"EN_ERRORMASI_217": {
+			"labels": [
+			]
+		},
+		"EN_FILTERCAN_772": {
+			"labels": [
+			]
+		},
+		"EN_FILTERTSC_512": {
+			"labels": [
+			]
+		},
+		"EN_GENERALAT_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_GENERALIN_300": {
+			"labels": [
+			]
+		},
+		"EN_GENERALLA_491": {
+			"labels": [
+				"LBL_ASSTS_ALIANZAGS_47473",
+				"LBL_ASSTS_CAMPAATBE_64172",
+				"LBL_ASSTS_CLUSULAAC_59426",
+				"LBL_ASSTS_DETALLEAA_65612",
+				"LBL_ASSTS_DIFERIDNI_94027",
+				"LBL_ASSTS_ESTADOOPP_34510",
+				"LBL_ASSTS_FECHADEXX_12370",
+				"LBL_ASSTS_FECHAEMRU_40499",
+				"LBL_ASSTS_GRUPOFAOG_28346",
+				"LBL_ASSTS_IMPRIMEXO_74503",
+				"LBL_ASSTS_MARCADARJ_68074",
+				"LBL_ASSTS_MONTOAPBD_71203",
+				"LBL_ASSTS_MONTODEOD_23440",
+				"LBL_ASSTS_NATURALLE_94099",
+				"LBL_ASSTS_NOCOMEXLF_12979",
+				"LBL_ASSTS_NOREFERET_38657",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_OPERACIIC_44820",
+				"LBL_ASSTS_OPPASIVAE_81115",
+				"LBL_ASSTS_PORCENTCN_76531",
+				"LBL_ASSTS_PRECANCLR_55986",
+				"LBL_ASSTS_PROCESALC_92024",
+				"LBL_ASSTS_RECONOCAR_36694",
+				"LBL_ASSTS_SALDOCAAI_86331",
+				"LBL_ASSTS_SALDODIOR_28205",
+				"LBL_ASSTS_SALDOREMO_75006",
+				"LBL_ASSTS_SALDOTOAL_26299",
+				"LBL_ASSTS_TIPOCAMOO_21626"
+			]
+		},
+		"EN_GENERALRE_262": {
+			"labels": [
+			]
+		},
+		"EN_GENERICSZ_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_GROUPMENS_931": {
+			"labels": [
+			]
+		},
+		"EN_GROUPOPAR_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_GUARANTIA_165": {
+			"labels": [
+			]
+		},
+		"EN_INGOTRCSA_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_ITEMDNXXM_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_ITEMVALSE_995": {
+			"labels": [
+			]
+		},
+		"EN_LINEDISTU_478": {
+			"labels": [
+			]
+		},
+		"EN_LINEDISUS_663": {
+			"labels": [
+			]
+		},
+		"EN_LINEGUAAE_244": {
+			"labels": [
+			]
+		},
+		"EN_LINEGUARS_326": {
+			"labels": [
+			]
+		},
+		"EN_LISTAAPOA_604": {
+			"labels": [
+			]
+		},
+		"EN_LISTGUALA_595": {
+			"labels": [
+			]
+		},
+		"EN_LISTTRAON_556": {
+			"labels": [
+			]
+		},
+		"EN_LOANDEFFR_694": {
+			"labels": [
+				"LBL_ASSTS_DESCRIPIN_18186",
+				"LBL_ASSTS_DEVOLVERR_24242",
+				"LBL_ASSTS_INGRESOHM_26023"
+			]
+		},
+		"EN_LOANGUAEE_670": {
+			"labels": [
+			]
+		},
+		"EN_LOANINTCC_337": {
+			"labels": [
+				"LBL_ASSTS_ESTADOEAI_33340"
+			]
+		},
+		"EN_LOANITEAS_980": {
+			"labels": [
+			]
+		},
+		"EN_LOANITEIL_824": {
+			"labels": [
+			]
+		},
+		"EN_LOANKYMRI_882": {
+			"labels": [
+				"LBL_ASSTS_CATEGORAA_59396",
+				"LBL_ASSTS_CDIGOCLEN_93241",
+				"LBL_ASSTS_CODGRUPOO_65478",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHADEML_21240",
+				"LBL_ASSTS_INICIOPAT_61275",
+				"LBL_ASSTS_MONTOAPAO_55680",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_SALDOOPII_56896",
+				"LBL_ASSTS_VALORCUTO_78445",
+				"LBL_ASSTS_VENCIMIAO_62654",
+				"LBL_ASSTS_VENCIMIXC_19669"
+			]
+		},
+		"EN_LOANLINCT_267": {
+			"labels": [
+			]
+		},
+		"EN_LOANLISTT_467": {
+			"labels": [
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LOANS_SELECCIOE_40160"
+			]
+		},
+		"EN_LOANLISTT_LNSPR": {
+			"labels": [
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LOANS_SELECCIOE_40160"
+			]
+		},
+		"EN_LOANPOLYI_750": {
+			"labels": [
+			]
+		},
+		"EN_LOANRATES_507": {
+			"labels": [
+			]
+		},
+		"EN_LOANSALAD_395": {
+			"labels": [
+				"LBL_LNSPR_DESCRIPIN_18186",
+				"LBL_LNSPR_ERRORAWHP_83580",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAVETA_87721",
+				"LBL_LOANS_OPERACIOO_86900"
+			]
+		},
+		"EN_LOANSALDH_189": {
+			"labels": [
+				"LBL_LNSPR_ARCHIVOCI_89407",
+				"LBL_LNSPR_EMPRESAJZ_94816",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAIWCD_53719",
+				"LBL_LNSPR_SECUENCAI_74208",
+				"LBL_LNSPR_USUARIOBC_38458"
+			]
+		},
+		"EN_LOANSALRE_860": {
+			"labels": [
+			]
+		},
+		"EN_LOANSEACI_824": {
+			"labels": [
+			]
+		},
+		"EN_LOANSEATF_633": {
+			"labels": [
+				"LBL_LNSPR_PRXIMORTU_38940",
+				"LBL_LNSPR_SELECCIER_50249"
+			]
+		},
+		"EN_LOANSEATF_LNSPR": {
+			"labels": [
+				"LBL_LNSPR_PRXIMORTU_38940",
+				"LBL_LNSPR_SELECCIER_50249"
+			]
+		},
+		"EN_LOANSLIDE_580": {
+			"labels": [
+			]
+		},
+		"EN_LOANSLIES_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_LOANSLIGN_522": {
+			"labels": [
+			]
+		},
+		"EN_LOANSLIST_205": {
+			"labels": [
+			]
+		},
+		"EN_LOANSLITT_661": {
+			"labels": [
+			]
+		},
+		"EN_LOANSYNST_476": {
+			"labels": [
+			]
+		},
+		"EN_LOCATIONN_235": {
+			"labels": [
+			]
+		},
+		"EN_MASSIVECC_834": {
+			"labels": [
+			]
+		},
+		"EN_MASSIVEKM_279": {
+			"labels": [
+			]
+		},
+		"EN_MASSIVEYM_999": {
+			"labels": [
+			]
+		},
+		"EN_MEMBERDEL_536": {
+			"labels": [
+			]
+		},
+		"EN_MEMBERSLV_216": {
+			"labels": [
+			]
+		},
+		"EN_METHODSRT_271": {
+			"labels": [
+			]
+		},
+		"EN_MODALREEA_674": {
+			"labels": [
+			]
+		},
+		"EN_MODALTASS_500": {
+			"labels": [
+			]
+		},
+		"EN_NEGOTIATI_654": {
+			"labels": [
+			]
+		},
+		"EN_NOAPPLITN_882": {
+			"labels": [
+			]
+		},
+		"EN_OFFICALSO_243": {
+			"labels": [
+			]
+		},
+		"EN_OFFICIAEF_453": {
+			"labels": [
+			]
+		},
+		"EN_OFFICIALL_431": {
+			"labels": [
+			]
+		},
+		"EN_ONERANKIT_349": {
+			"labels": [
+			]
+		},
+		"EN_ONERANKSI_954": {
+			"labels": [
+			]
+		},
+		"EN_OPERATIAR_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_OPERATIEL_780": {
+			"labels": [
+			]
+		},
+		"EN_OPERATINN_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_OPERATIRD_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_OPERATITT_499": {
+			"labels": [
+			]
+		},
+		"EN_ORIGINALD_717": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTCI_361": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTDM_324": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTEO_200": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTIC_709": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTLI_612": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTOI_386": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTOM_408": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTZD_123": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTZY_669": {
+			"labels": [
+			]
+		},
+		"EN_PAYMENTZY_LNSPR": {
+			"labels": [
+			]
+		},
+		"EN_PRODUCTGG_589": {
+			"labels": [
+			]
+		},
+		"EN_PRODUCTIE_675": {
+			"labels": [
+			]
+		},
+		"EN_PRODUCTII_203": {
+			"labels": [
+			]
+		},
+		"EN_PRODUCTNN_604": {
+			"labels": [
+			]
+		},
+		"EN_PROJECTTI_953": {
+			"labels": [
+			]
+		},
+		"EN_RATERANTS_219": {
+			"labels": [
+			]
+		},
+		"EN_READJUSNN_654": {
+			"labels": [
+				"LBL_LOANS_SELECCIOE_40160"
+			]
+		},
+		"EN_READJUSTC_965": {
+			"labels": [
+			]
+		},
+		"EN_READJUSTE_859": {
+			"labels": [
+				"LBL_LNSPR_FACTORJPF_54491",
+				"LBL_LNSPR_OPERACINN_33130",
+				"LBL_LNSPR_PORCENTAA_34368",
+				"LBL_LNSPR_REFERENIC_88346",
+				"LBL_LNSPR_RUBROFBVM_52414",
+				"LBL_LNSPR_SIGNODWUU_39563"
+			]
+		},
+		"EN_READJUSTP_721": {
+			"labels": [
+			]
+		},
+		"EN_REAJUSTBB_191": {
+			"labels": [
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_MANTCUOTT_96843",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_TIPOLDSKB_46090"
+			]
+		},
+		"EN_REAJUSTEE_221": {
+			"labels": [
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_FACTORQJB_54710",
+				"LBL_ASSTS_PORCENTAE_66428",
+				"LBL_ASSTS_REFERENCL_42296",
+				"LBL_ASSTS_SIGNORIHO_57042"
+			]
+		},
+		"EN_REFERENTL_754": {
+			"labels": [
+			]
+		},
+		"EN_REFINANCA_619": {
+			"labels": [
+			]
+		},
+		"EN_REFINANLC_582": {
+			"labels": [
+			]
+		},
+		"EN_REPORTALL_977": {
+			"labels": [
+			]
+		},
+		"EN_RESTRUCNR_396": {
+			"labels": [
+			]
+		},
+		"EN_RESTRUCSN_605": {
+			"labels": [
+			]
+		},
+		"EN_RESTRUCUI_404": {
+			"labels": [
+			]
+		},
+		"EN_REVERSEDO_653": {
+			"labels": [
+			]
+		},
+		"EN_RUBROMIHK_919": {
+			"labels": [
+			]
+		},
+		"EN_SEARCHGNT_461": {
+			"labels": [
+			]
+		},
+		"EN_STATESAEO_310": {
+			"labels": [
+			]
+		},
+		"EN_STATUSLII_845": {
+			"labels": [
+			]
+		},
+		"EN_SUBSECTIA_632": {
+			"labels": [
+			]
+		},
+		"EN_SUMMARYAT_170": {
+			"labels": [
+			]
+		},
+		"EN_SUMMARYTU_369": {
+			"labels": [
+			]
+		},
+		"EN_SYNDICASL_725": {
+			"labels": [
+			]
+		},
+		"EN_TWORANGEE_293": {
+			"labels": [
+			]
+		},
+		"EN_TWORANGIL_738": {
+			"labels": [
+			]
+		},
+		"EN_TYPETRAOI_816": {
+			"labels": [
+			]
+		},
+		"EN_VALIDATOE_493": {
+			"labels": [
+			]
+		},
+		"EN_VALIDATON_825": {
+			"labels": [
+			]
+		},
+		"EN_VALUEDAET_237": {
+			"labels": [
+			]
+		}
+	},
+	"Forms": {
+		"T_AMORTIZATIDTE_881": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZIQ_340": [
+					"AT23_STATUSEE340",
+					"AT54_ACCUMUAE340",
+					"AT56_SEQUENLI340",
+					"AT58_PAIDVFCY340",
+					"AT60_QUOTEYPC340",
+					"AT61_ITEMQDYX340",
+					"AT92_GRACERVL340",
+					"AT98_PERIODSM340"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACUMULAOO_17499",
+				"LBL_ASSTS_CUOTAJJEW_83973",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_GRACIAVXF_14263",
+				"LBL_ASSTS_PAGADOQEI_51658",
+				"LBL_ASSTS_PERIODOSP_24297",
+				"LBL_ASSTS_RUBROFKGQ_42963",
+				"LBL_ASSTS_SECUENCAI_43909"
+			],
+			"queries": {
+				"Q_AMORTITT_8477": [
+					"QM_AMORT4488I483_08",
+					"QM_AMORT77477431_02",
+					"QM_AMORT7777T320_01",
+					"QM_AMORT777T8281_07",
+					"QM_AMORT8T784670_05",
+					"QM_AMORTT7T88539_06",
+					"QM_AMORTT84T4348_03",
+					"QM_AMORTT8T4I391_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_AMORTIZATIOON_261": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2ZNYDYMCX_592": [
+					"AT10_ITEMS122592",
+					"AT11_ITEMS6DA592",
+					"AT13_ITEMS2OT592",
+					"AT13_ITEMS8ZO592",
+					"AT15_ITEMS100592",
+					"AT17_ITEMS9BT592",
+					"AT18_SHAREVEL592",
+					"AT25_DAYSFBZN592",
+					"AT33_EXPIRANO592",
+					"AT35_ITEMS3HC592",
+					"AT37_ITEMS5ZX592",
+					"AT51_ITEMS4SF592",
+					"AT54_ITEMS7OM592",
+					"AT63_STATEQEV592",
+					"AT65_PORROGAA592",
+					"AT71_SHAREPCW592",
+					"AT72_ITEMS133592",
+					"AT74_ITEMS144592",
+					"AT83_BALANCCA592",
+					"AT84_ITEMS111592",
+					"AT89_ITEMS155592",
+					"AT97_ITEMS1UJ592"
+				],
+				"EN_ITEMSLONA_118": [
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CUOTASNJN_88896",
+				"LBL_ASSTS_DIASATRSA_81828",
+				"LBL_ASSTS_DIASIVQBJ_73578",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAVENE_58948",
+				"LBL_ASSTS_SALDOCAPI_87055",
+				"LBL_ASSTS_VALORCUTO_78445"
+			],
+			"queries": {
+				"Q_AMORTIAN_8237": [
+					"QM_AMORT2A2N8357_04",
+					"QM_AMORT2NNA3973_08",
+					"QM_AMORT33NA3368_22",
+					"QM_AMORT3787A283_01",
+					"QM_AMORT3NN3N314_14",
+					"QM_AMORT783II959_20",
+					"QM_AMORT78N8I395_15",
+					"QM_AMORT7AA8I995_09",
+					"QM_AMORT7I7I8807_11",
+					"QM_AMORT7N77N945_17",
+					"QM_AMORT83I87121_10",
+					"QM_AMORT88AAA933_06",
+					"QM_AMORT88NAI518_05",
+					"QM_AMORTAAAA7742_12",
+					"QM_AMORTAI2A3316_16",
+					"QM_AMORTAI783837_19",
+					"QM_AMORTI2I73601_21",
+					"QM_AMORTI7A28734_03",
+					"QM_AMORTIA82A558_13",
+					"QM_AMORTIN387127_18",
+					"QM_AMORTIN7A2307_02",
+					"QM_AMORTNIIA2736_07"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSABPPZROU_506": {
+			"blis": [
+			],
+			"entities": {
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CERRARGRF_18229",
+				"LBL_ASSTS_NEGOCINRO_11718"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSABVOMTUL_791": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANGUAEE_670": [
+					"AT20_CUSTOMRE670",
+					"AT41_DESCRIIP670",
+					"AT53_CREATEOD670",
+					"AT66_CUSTOMEE670",
+					"AT69_CURRENUE670",
+					"AT75_GUARANSE670",
+					"AT96_STATUSSG670",
+					"AT99_CURRENYY670"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CODIGOCIE_36603",
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_ESTADOGIA_21734",
+				"LBL_ASSTS_FECHAINGG_82521",
+				"LBL_ASSTS_GARANTIAA_11754",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_NOMBRECNI_63306",
+				"LBL_ASSTS_VALORACUA_99891"
+			],
+			"queries": {
+				"Q_LOANTUNT_QF10": [
+					"QM_LOANT1FU01627_05",
+					"QM_LOANTF1NN0820_08",
+					"QM_LOANTNQU0F179_02",
+					"QM_LOANTQNQTQ540_04",
+					"QM_LOANTT0N1F102_06",
+					"QM_LOANTT1NTQ203_01",
+					"QM_LOANTU0N0T701_07",
+					"QM_LOANTUUFFF143_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSAMRZIFMF_594": {
+			"blis": [
+			],
+			"entities": {
+				"EN_GENERALSR_979": [
+				],
+				"EN_OPERATINN_816": [
+				],
+				"EN_RESTRUCNR_396": [
+					"AT58_LOCALCYY396",
+					"AT76_OPCURRYY396",
+					"AT82_RESTRUET396",
+					"AT98_AMOUNTYA396"
+				],
+				"EN_RESTRUCSN_605": [
+					"AT13_CAPITAIZ605",
+					"AT22_CAPITABL605",
+					"AT26_INTERESL605",
+					"AT26_REESTTLR605",
+					"AT28_STATEROO605",
+					"AT53_RESIDUEE605",
+					"AT66_FINALOPP605",
+					"AT66_OVERDUES605",
+					"AT67_TYPELOAN605",
+					"AT69_TOTALCPP605",
+					"AT72_CURRENCC605",
+					"AT82_BANKPWAI605",
+					"AT82_TOPAYEWQ605",
+					"AT83_OTHERITS605"
+				],
+				"EN_RESTRUCUI_404": [
+					"AT77_NAMECLIN404"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APAGAROXF_56847",
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_CAPITALII_22595",
+				"LBL_ASSTS_CLIENTEMG_56892",
+				"LBL_ASSTS_CUOTASVEN_82891",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_LIMPIARAM_44649",
+				"LBL_ASSTS_MONEDALAO_14345",
+				"LBL_ASSTS_MONEDAOSP_67116",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_NROPRESAA_77247",
+				"LBL_ASSTS_OPFINALCB_24086",
+				"LBL_ASSTS_OTROSRURR_25485",
+				"LBL_ASSTS_PLAZORELL_79044",
+				"LBL_ASSTS_REESTOAYR_46697",
+				"LBL_ASSTS_REESTRURC_23393",
+				"LBL_ASSTS_SALDOCAPI_87055",
+				"LBL_ASSTS_SALDOINTE_15519",
+				"LBL_ASSTS_TIPOPREMM_37747",
+				"LBL_ASSTS_TIPOREEUS_62112",
+				"LBL_ASSTS_TOTALARUE_92373",
+				"LBL_ASSTS_TOTALCAZA_55159",
+				"LBL_ASSTS_VALORAPAA_99910",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+				"Q_LISTSEAD_QV44": [
+					"QM_LISTSD4A4Q959_02",
+					"QM_LISTSEV4QD853_01"
+				],
+				"Q_RESTTITU_BM75": [
+					"",
+					"",
+					"QM_LISTSD4A4Q959_02",
+					"QM_LISTSEV4QD853_01",
+					"QM_RESTT55MIB421_12",
+					"QM_RESTT5BBTT355_08",
+					"QM_RESTT5BMU7629_04",
+					"QM_RESTT5BU5I455_06",
+					"QM_RESTT7IBII791_01",
+					"QM_RESTTB755M909_02",
+					"QM_RESTTB7TIU915_07",
+					"QM_RESTTI5IU5101_13",
+					"QM_RESTTIBTB5739_11",
+					"QM_RESTTM57UU584_01",
+					"QM_RESTTM7BUI677_05",
+					"QM_RESTTM7T5U249_01",
+					"QM_RESTTUT5BI577_09",
+					"QM_RESTTUUM5B242_10"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSAXELGOQQ_915": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2ZNYDYMCX_592": [
+				],
+				"EN_AMORTIZSO_630": [
+				],
+				"EN_LOANKYMRI_882": [
+				],
+				"EN_NEGOTIATI_654": [
+				],
+				"EN_PAYMENTZY_669": [
+					"AT42_AMOUNTTT669",
+					"AT53_CURRENCY669",
+					"AT83_AMOUNTER669"
+				],
+				"EN_QUOTEDETA_803": [
+					"AT11_INACTIVE803",
+					"AT24_ACTIVEQS803",
+					"AT62_TOTALUTI803",
+					"AT65_DESCRIOP803",
+					"AT97_EXPIREDD803"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_MONEDALEE_61099",
+				"LBL_ASSTS_MONTOPAGO_63640",
+				"LBL_ASSTS_MONTOPRAC_46646",
+				"LBL_ASSTS_NOVIGENTT_94041",
+				"LBL_ASSTS_TOTALBPNF_51557",
+				"LBL_ASSTS_VENCIDOUG_82584",
+				"LBL_ASSTS_VIGENTEON_55349",
+				"MSG_ASSTS_SEDEBERZE_11978"
+			],
+			"queries": {
+				"Q_QUOTEDLA_2540": [
+					"QM_QUOTE24554198_05",
+					"QM_QUOTE4L524200_03",
+					"QM_QUOTEAL5D2418_01",
+					"QM_QUOTEDA5D4748_04",
+					"QM_QUOTEL525L718_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSBIBQRXFV_119": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+				"HD_HEADERLSO_968"
+			],
+			"labels": [
+				"LBL_ASSTS_ABONOSBOQ_70064",
+				"LBL_ASSTS_ACTUALIAA_39645",
+				"LBL_ASSTS_CARTERAIV_98543",
+				"LBL_ASSTS_COMISINES_30295",
+				"LBL_ASSTS_DEUDORESS_24940",
+				"LBL_ASSTS_GARANTASS_13684",
+				"LBL_ASSTS_GARANTESS_89598",
+				"LBL_ASSTS_INACINGAA_67127",
+				"LBL_ASSTS_OPERACIIR_11664",
+				"LBL_ASSTS_OPERACISS_10684",
+				"LBL_ASSTS_OPRENOVUE_79044",
+				"LBL_ASSTS_PLIZASKSR_34183",
+				"LBL_ASSTS_PRESTAMOO_87993",
+				"LBL_ASSTS_PRSTAMOOD_41837",
+				"LBL_ASSTS_REAJUSTPS_38809",
+				"LBL_ASSTS_SEGUROSYH_11523",
+				"LBL_ASSTS_TRANSACEN_33079"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSBLHRMVHH_314": {
+			"blis": [
+			],
+			"entities": {
+				"EN_COMPANILF_154": [
+					"AT12_DOCUMEAU154",
+					"AT25_FEELOQWN154",
+					"AT27_STATUSMM154",
+					"AT47_CLIENTYM154",
+					"AT50_DATEEXSS154",
+					"AT54_ERRORDCS154",
+					"AT61_BANKDPHQ154",
+					"AT61_DEBITALL154",
+					"AT67_CLIENTNM154",
+					"AT77_DEBITXGL154",
+					"AT94_DESCRINC154",
+					"AT96_DOCUMETP154"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_CODCLIENN_10354",
+				"LBL_ASSTS_COMENTARI_46421",
+				"LBL_ASSTS_ERRORENHV_15304",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAVECN_28249",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_IDENTIFCI_68121",
+				"LBL_ASSTS_NOMBRESTM_14925",
+				"LBL_ASSTS_OPERACINN_38893",
+				"LBL_ASSTS_TIPOIDETI_14247",
+				"LBL_ASSTS_TOTALADDA_46303",
+				"LBL_ASSTS_VALORADEO_59689",
+				"LBL_ASSTS_VALORCUTO_78445",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSCNYHAQPM_525": {
+			"blis": [
+			],
+			"entities": {
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_AMORTIZCA_54924",
+				"LBL_ASSTS_PARMETRLL_70277",
+				"LBL_ASSTS_RUBROSAEW_67124",
+				"LBL_ASSTS_SALIRVFSG_51278",
+				"LBL_ASSTS_TRANSMITR_50090"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSDXZMZWIL_957": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANITEIL_824": [
+					"AT18_PRIORITT824",
+					"AT22_ASSOCIUA824",
+					"AT26_PAYMENDD824",
+					"AT30_MAXRATEE824",
+					"AT31_FACTORJU824",
+					"AT41_INSURAPE824",
+					"AT42_PERCENTE824",
+					"AT43_RANKEMGK824",
+					"AT44_SIGNREJD824",
+					"AT54_FACTORXA824",
+					"AT55_AMOUNTLG824",
+					"AT58_CALCULBS824",
+					"AT60_DESCRIOT824",
+					"AT63_REFERERN824",
+					"AT63_SIGNONZP824",
+					"AT63_TYPEITEM824",
+					"AT78_ITEMIJKU824",
+					"AT82_FINANCEE824",
+					"AT89_INSURAEN824",
+					"AT94_MINRATEE824",
+					"AT96_ASSOCIET824",
+					"AT98_REFERECE824"
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APAGOWSUO_22122",
+				"LBL_ASSTS_ASEGURADA_82404",
+				"LBL_ASSTS_BASECALCL_35805",
+				"LBL_ASSTS_DESASOCAA_12767",
+				"LBL_ASSTS_DESCRIPIN_18186",
+				"LBL_ASSTS_FACTORHYG_27995",
+				"LBL_ASSTS_FACTORRAJ_67007",
+				"LBL_ASSTS_FINANCIAO_40117",
+				"LBL_ASSTS_PRIORIDDD_58504",
+				"LBL_ASSTS_RANGOPAYZ_92039",
+				"LBL_ASSTS_REFASOCAA_43339",
+				"LBL_ASSTS_REFERENCL_42296",
+				"LBL_ASSTS_REFREAJSU_20053",
+				"LBL_ASSTS_RUBROFBVM_52414",
+				"LBL_ASSTS_SIGNODWUU_39563",
+				"LBL_ASSTS_SIGNORETA_58140",
+				"LBL_ASSTS_TASAMAXGS_82810",
+				"LBL_ASSTS_TASAMINCJ_91660",
+				"LBL_ASSTS_TASAQDBMK_45779",
+				"LBL_ASSTS_TIPOLDSKB_46090",
+				"LBL_ASSTS_TIPOSEGOO_23233",
+				"LBL_ASSTS_VALORAOIJ_74397",
+				"LBL_ASSTS_VALORREFO_81387"
+			],
+			"queries": {
+				"Q_LOANMSEM_ZL15": [
+					"QM_LOANM1SZ1L527_36",
+					"QM_LOANM1ZEM1718_30",
+					"QM_LOANM1ZS5L747_04",
+					"QM_LOANM1ZZSE470_33",
+					"QM_LOANM5EZZ5990_35",
+					"QM_LOANM5MEL5817_18",
+					"QM_LOANM5SSZZ795_31",
+					"QM_LOANMESS1E831_32",
+					"QM_LOANMLM15E734_02",
+					"QM_LOANMLM5MM918_05",
+					"QM_LOANMLMMZS969_09",
+					"QM_LOANMLZ1SL980_01",
+					"QM_LOANMLZL5S990_37",
+					"QM_LOANMM5E5E795_01",
+					"QM_LOANMS5LM1325_10",
+					"QM_LOANMSS1E5380_34",
+					"QM_LOANMSZSS5461_20",
+					"QM_LOANMZ5S5M389_39",
+					"QM_LOANMZELLE400_38",
+					"QM_LOANMZL1E1532_16",
+					"QM_LOANMZML5M850_06",
+					"QM_LOANMZSZ5L372_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSECRXYFPY_431": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DETAILTIC_851": [
+					"AT18_MONEYHML851",
+					"AT22_ACCOUNTT851",
+					"AT26_STATEMLL851",
+					"AT29_BENEFIAY851",
+					"AT47_AMOUNTMN851",
+					"AT64_AMOUNTSH851",
+					"AT69_CODVALOR851",
+					"AT86_DIVIDENN851",
+					"AT90_AFFECTTT851",
+					"AT92_ENTRYGQH851"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_AFECTACII_71770",
+				"LBL_ASSTS_BENEFICII_99714",
+				"LBL_ASSTS_CERRARRUT_40473",
+				"LBL_ASSTS_CODIGOVLO_98625",
+				"LBL_ASSTS_CUENTADIA_22037",
+				"LBL_ASSTS_DETALLEIT_38069",
+				"LBL_ASSTS_DIVIDENDD_92569",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONTOEMFX_52083",
+				"LBL_ASSTS_MONTOMNYT_95969",
+				"LBL_ASSTS_RUBROFKGQ_42963"
+			],
+			"queries": {
+				"Q_DETARTNC_LQ51": [
+					"QM_DETAR1LCTN222_09",
+					"QM_DETAR1QNN1975_04",
+					"QM_DETAR55CNN696_08",
+					"QM_DETAR5TC5T402_05",
+					"QM_DETARC155L143_07",
+					"QM_DETARLTTT5623_01",
+					"QM_DETARN55TQ518_03",
+					"QM_DETARQCQ11254_02",
+					"QM_DETARQNQQT626_10",
+					"QM_DETART51QT430_06"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSEFYTNIXU_871": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZON_LNSPR": [
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_AMORTIZCA_54924",
+				"LBL_ASSTS_DESEMBOSC_80562",
+				"LBL_ASSTS_ENVIARRFA_30717",
+				"LBL_ASSTS_INACINGAA_67127",
+				"LBL_ASSTS_RUBROSAEW_67124"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSEGPPJJUA_289": {
+			"blis": [
+			],
+			"entities": {
+				"EN_OPERATINN_816": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACEPTARDV_64984",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_ESTSEGUBA_29830"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSEUKYTEJC_220": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LISTAESDS_959": [
+				],
+				"EN_LOANSEACI_824": [
+					"AT53_MIGRATER824",
+					"AT64_CODCURYC824",
+					"AT73_DISBURDT824",
+					"AT75_TYPEWSUY824",
+					"AT82_NUMPRODR824",
+					"AT83_OFFICEOE824",
+					"AT97_STATUSDD824"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ESTADOPEM_54793",
+				"LBL_ASSTS_FECHADEBE_42043",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_NUMTRMIET_51783",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_PRSTAMOIO_81821",
+				"LBL_ASSTS_TIPOOPERC_17964",
+				"MSG_ASSTS_SEDEBERZE_11978"
+			],
+			"queries": {
+				"Q_LISTSEAD_QV44": [
+					"QM_LISTSD4A4Q959_02",
+					"QM_LISTSEV4QD853_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSEYKPQBME_621": {
+			"blis": [
+				"BLI1131_bli_selectionloansintercycle"
+			],
+			"entities": {
+				"EN_LOANINTCC_337": [
+					"AT18_CODCURNR337",
+					"AT30_AMOUNTPB337",
+					"AT32_DESOPERT337",
+					"AT39_LOANBAIN337",
+					"AT59_DISBURTT337",
+					"AT59_EXPIRAEN337",
+					"AT60_NUMPROCC337",
+					"AT68_DESSTAUS337",
+					"AT77_CLIENTNE337",
+					"AT83_CLIENTDI337"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CDIGOCLEN_93241",
+				"LBL_ASSTS_CODMONEDD_59972",
+				"LBL_ASSTS_ESTADOPEM_54793",
+				"LBL_ASSTS_FECHADEBE_42043",
+				"LBL_ASSTS_FECHAVEMT_35968",
+				"LBL_ASSTS_MONTOPROM_71868",
+				"LBL_ASSTS_NOMBRECNI_63306",
+				"LBL_ASSTS_NUMPRSTAM_17241",
+				"LBL_ASSTS_NUMTRMIET_51783",
+				"LBL_ASSTS_TIPOPREMM_37747"
+			],
+			"queries": {
+				"Q_LOANLIIR_OP62": [
+					"QM_LOANL26P6P275_05",
+					"QM_LOANL2III2281_06",
+					"QM_LOANLI2IIO633_11",
+					"QM_LOANLI62IR398_03",
+					"QM_LOANLII6II792_01",
+					"QM_LOANLIII66594_04",
+					"QM_LOANLOPP2O974_02",
+					"QM_LOANLPIOIP591_12",
+					"QM_LOANLR2III654_13",
+					"QM_LOANLRI6IP890_07"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSFLSVSFLG_975": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DEFERRESA_227": [
+					"AT14_ACUMULET227",
+					"AT15_ITEMJVKW227",
+					"AT35_EARNQQYK227",
+					"AT78_BALANCEE227"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACUMULAOO_17499",
+				"LBL_ASSTS_DEVENGAIK_41942",
+				"LBL_ASSTS_RUBROIVKT_62353",
+				"LBL_ASSTS_SALDODIFF_97213"
+			],
+			"queries": {
+				"Q_DEFEDLIT_ZB19": [
+					"QM_DEFED1I19B398_04",
+					"QM_DEFED9LLBB727_02",
+					"QM_DEFED9ZZ1I898_03",
+					"QM_DEFEDZLTLZ769_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSFPNDGGEH_445": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANITEAS_980": [
+				],
+				"EN_LOANITEIL_824": [
+					"AT18_PRIORITT824",
+					"AT22_ASSOCIUA824",
+					"AT26_PAYMENDD824",
+					"AT30_MAXRATEE824",
+					"AT31_FACTORJU824",
+					"AT41_INSURAPE824",
+					"AT42_PERCENTE824",
+					"AT43_RANKEMGK824",
+					"AT44_SIGNREJD824",
+					"AT54_FACTORXA824",
+					"AT55_AMOUNTLG824",
+					"AT58_CALCULBS824",
+					"AT60_DESCRIOT824",
+					"AT63_REFERERN824",
+					"AT63_SIGNONZP824",
+					"AT63_TYPEITEM824",
+					"AT78_ITEMIJKU824",
+					"AT82_FINANCEE824",
+					"AT89_INSURAEN824",
+					"AT94_MINRATEE824",
+					"AT96_ASSOCIET824",
+					"AT98_REFERECE824"
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APAGOWSUO_22122",
+				"LBL_ASSTS_ASEGURADA_82404",
+				"LBL_ASSTS_ASOCIARFV_34210",
+				"LBL_ASSTS_BASECLCOO_14808",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_DESCRIPII_28027",
+				"LBL_ASSTS_FACTORHYG_27995",
+				"LBL_ASSTS_FACTORRAJ_67007",
+				"LBL_ASSTS_FINANCIAO_40117",
+				"LBL_ASSTS_MNIMAGAZC_15390",
+				"LBL_ASSTS_MXIMAVINR_88310",
+				"LBL_ASSTS_PRIORIDDD_58504",
+				"LBL_ASSTS_REFASOCAA_43339",
+				"LBL_ASSTS_REFERENCL_42296",
+				"LBL_ASSTS_REFREAJSU_20053",
+				"LBL_ASSTS_RUBROFBVM_52414",
+				"LBL_ASSTS_SIGNODWUU_39563",
+				"LBL_ASSTS_SIGNORETA_58140",
+				"LBL_ASSTS_SUBSIDIOO_12700",
+				"LBL_ASSTS_TASAQDBMK_45779",
+				"LBL_ASSTS_TIPOLDSKB_46090",
+				"LBL_ASSTS_TIPOSEGOO_23233",
+				"LBL_ASSTS_VALORAOIJ_74397",
+				"LBL_ASSTS_VALORREFO_81387",
+				"MSG_ASSTS_VALORINTO_98795"
+			],
+			"queries": {
+				"Q_CONCTITE_DD65": [
+					"QM_CONCT655IT649_01",
+					"QM_CONCTE6I5T356_02"
+				],
+				"Q_RATEGLSL_WM41": [
+					"QM_RATEG1L4WL543_01",
+					"QM_RATEG44WSM509_03"
+				],
+				"Q_REFEEAML_BR93": [
+					"QM_REFEE3AM3R706_02",
+					"QM_REFEE3AM3R706_02",
+					"QM_REFEEB9MM3507_01",
+					"QM_REFEEB9MM3507_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSGGBHCCXI_580": {
+			"blis": [
+			],
+			"entities": {
+				"EN_COMPANIDS_402": [
+					"AT14_DATEMOEV402",
+					"AT27_SEQUENLI402",
+					"AT34_DESCRITT402",
+					"AT38_COMPANMN402",
+					"AT43_DATECRET402",
+					"AT60_STATUSNE402",
+					"AT71_COMPANYY402",
+					"AT75_EXECUTEE402",
+					"AT97_FILENAMM402"
+				],
+				"EN_COMPANILF_154": [
+					"AT12_DOCUMEAU154",
+					"AT25_FEELOQWN154",
+					"AT27_STATUSMM154",
+					"AT47_CLIENTYM154",
+					"AT50_APPROVDE154",
+					"AT50_DATEEXSS154",
+					"AT54_ERRORDCS154",
+					"AT61_BANKDPHQ154",
+					"AT61_DEBITALL154",
+					"AT67_CLIENTNM154",
+					"AT77_DEBITXGL154",
+					"AT91_SEQUENLT154",
+					"AT94_DESCRINC154",
+					"AT96_DOCUMETP154"
+				],
+				"EN_COMPANINS_178": [
+				],
+				"EN_COMPANITI_423": [
+					"AT11_CLIENTEN423",
+					"AT35_CLIENTBJ423",
+					"AT63_STATUSOO423",
+					"AT65_DEBITALL423",
+					"AT68_DOCUMEPT423",
+					"AT71_COMMENCN423",
+					"AT82_DATEEXAR423",
+					"AT85_BANKIDBF423",
+					"AT87_DOCUMETV423",
+					"AT95_DEBITNFN423",
+					"AT98_FEEZBKZT423"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APROBARLC_14087",
+				"LBL_ASSTS_CARGARAVI_75931",
+				"LBL_ASSTS_CODCLIENN_10354",
+				"LBL_ASSTS_CODCOMPAA_40823",
+				"LBL_ASSTS_COMENTARI_46421",
+				"LBL_ASSTS_ELIMINARR_32029",
+				"LBL_ASSTS_ERRORENHV_15304",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_ESTADOLOT_42162",
+				"LBL_ASSTS_FECHACRCN_57827",
+				"LBL_ASSTS_FECHAULOV_17258",
+				"LBL_ASSTS_FECHAVENO_73738",
+				"LBL_ASSTS_GENERARQW_88331",
+				"LBL_ASSTS_GRABARCOG_74932",
+				"LBL_ASSTS_IDENTIFCC_26989",
+				"LBL_ASSTS_LIMPIARAM_44649",
+				"LBL_ASSTS_NOLOTEWVB_20010",
+				"LBL_ASSTS_NOMBRECMM_80342",
+				"LBL_ASSTS_NOMBRESTM_14925",
+				"LBL_ASSTS_NONSYXWRW_43467",
+				"LBL_ASSTS_OBSERVAIO_80053",
+				"LBL_ASSTS_OPERACION_46998",
+				"LBL_ASSTS_PROCESANE_78354",
+				"LBL_ASSTS_PROCESARR_55017",
+				"LBL_ASSTS_PROCESATC_84453",
+				"LBL_ASSTS_TIPOARCOH_71497",
+				"LBL_ASSTS_TIPOIDENI_24975",
+				"LBL_ASSTS_TOTALADDA_46303",
+				"LBL_ASSTS_VALORADEO_59689",
+				"LBL_ASSTS_VALORCUTO_78445",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+				"Q_COMPLSIN_RZ93": [
+					"QM_COMPL3SSIN566_10",
+					"QM_COMPLI3IR3304_01",
+					"QM_COMPLI3SZI312_05",
+					"QM_COMPLIRS3R986_11",
+					"QM_COMPLN333S795_01",
+					"QM_COMPLNISIS887_07",
+					"QM_COMPLNR99Z323_06",
+					"QM_COMPLR3Z3Z140_03",
+					"QM_COMPLRII3N276_08",
+					"QM_COMPLRIIZR944_02",
+					"QM_COMPLRIR3R331_09",
+					"QM_COMPLZIRRN915_02",
+					"QM_COMPLZZ9IZ249_04",
+					"QM_COMPLZZI9I542_13",
+					"QM_COMPT98OTO600_04",
+					"QM_COMPT9D988609_10",
+					"QM_COMPT9STS8921_09",
+					"QM_COMPTDHOHT238_19",
+					"QM_COMPTO9T8O149_16",
+					"QM_COMPTO9THD644_06",
+					"QM_COMPTOH9OH800_12",
+					"QM_COMPTOSO88732_14",
+					"QM_COMPTT8HSS607_21",
+					"QM_COMPTTOHT9960_11",
+					"QM_COMPTTT8OD595_15"
+				],
+				"Q_COMPTOTD_SH98": [
+					"QM_COMPL3SSIN566_10",
+					"QM_COMPLI3IR3304_01",
+					"QM_COMPLI3SZI312_05",
+					"QM_COMPLIRS3R986_11",
+					"QM_COMPLN333S795_01",
+					"QM_COMPLNISIS887_07",
+					"QM_COMPLNR99Z323_06",
+					"QM_COMPLR3Z3Z140_03",
+					"QM_COMPLRII3N276_08",
+					"QM_COMPLRIIZR944_02",
+					"QM_COMPLRIR3R331_09",
+					"QM_COMPLZIRRN915_02",
+					"QM_COMPLZZ9IZ249_04",
+					"QM_COMPLZZI9I542_13",
+					"QM_COMPT98OTO600_04",
+					"QM_COMPT9D988609_10",
+					"QM_COMPT9STS8921_09",
+					"QM_COMPTDHOHT238_19",
+					"QM_COMPTO9T8O149_16",
+					"QM_COMPTO9THD644_06",
+					"QM_COMPTOH9OH800_12",
+					"QM_COMPTOSO88732_14",
+					"QM_COMPTT8HSS607_21",
+					"QM_COMPTTOHT9960_11",
+					"QM_COMPTTT8OD595_15"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSGICMCPEO_473": {
+			"blis": [
+			],
+			"entities": {
+				"EN_1IRAKPKDY_241": [
+				],
+				"EN_ONERANKIT_349": [
+					"AT97_DATEZLQG349"
+				],
+				"EN_ONERANKSI_954": [
+					"AT16_SEQUENAT954",
+					"AT44_DATENLAK954",
+					"AT64_RATEGIVT954",
+					"AT67_MINVALEE954",
+					"AT79_VALUEDUS954",
+					"AT81_MAXVALEU954"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_DESCRIPII_28027",
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_RESULT2SQ_58424",
+				"LBL_ASSTS_SECLJYBZO_20989",
+				"LBL_ASSTS_TASAQDBMK_45779",
+				"LBL_ASSTS_TIPOLDSKB_46090",
+				"LBL_ASSTS_TITULO1NM_43797",
+				"LBL_ASSTS_TITULO1XM_99185",
+				"MSG_ASSTS_VALORFURN_83073"
+			],
+			"queries": {
+				"Q_ONERIAAL_UR42": [
+					"",
+					"",
+					"QM_ONERI4LL2A227_03",
+					"QM_ONERIA4UAL791_07",
+					"QM_ONERIALRRL407_04",
+					"QM_ONERIARRA4457_05",
+					"QM_ONERILALAR989_08",
+					"QM_ONERIU42AA296_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSHRTAYJID_195": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AGGREGAIE_510": [
+					"AT62_ITEMTTCH510",
+					"AT98_AMOUNTFZ510"
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_MONTOEMFX_52083",
+				"LBL_ASSTS_TRANSMITR_50090"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSIOIYHVWE_604": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LEFTOVEAR_480": [
+				],
+				"EN_LOANKYMRI_882": [
+				],
+				"EN_LOANPAYOM_966": [
+					"AT23_VENCIDUL966",
+					"AT30_VIGENTLL966",
+					"AT32_VIGENTTC966",
+					"AT56_TOTALEII966",
+					"AT71_TOTALPEE966",
+					"AT76_VENCIDLI966"
+				],
+				"EN_NEGOTIATI_654": [
+				],
+				"EN_PAYMENTGU_119": [
+					"AT41_PAYMENPY119",
+					"AT41_REFERENE119",
+					"AT56_CURRENCC119",
+					"AT83_VALUERCK119",
+					"AT88_DATEJDVE119"
+				],
+				"EN_PAYMENTIC_146": [
+					"AT18_DESCRINN146",
+					"AT40_CODIGOZT146",
+					"AT76_ETIQUEAA146"
+				],
+				"EN_PAYMENTOT_664": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APAGOBVMQ_59941",
+				"LBL_ASSTS_FECHAPAOO_88132",
+				"LBL_ASSTS_MONEDAWBW_49541",
+				"LBL_ASSTS_MONTOXNTV_69592",
+				"LBL_ASSTS_PAGOSBHJO_80531",
+				"LBL_ASSTS_REFERENCC_20812",
+				"LBL_ASSTS_TOTALEXIG_45949",
+				"LBL_ASSTS_TOTALPRDE_33829",
+				"LBL_ASSTS_VENCIDOCI_64154",
+				"LBL_ASSTS_VENCIDOGL_99403",
+				"LBL_ASSTS_VIGENTEAR_47847",
+				"LBL_ASSTS_VIGENTECI_82085"
+			],
+			"queries": {
+				"Q_PAYMGPOE_BC76": [
+					"QM_PAYMG7E6CO317_01",
+					"QM_PAYMGCPC7O144_03",
+					"QM_PAYMGOOE76239_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSJRUQRHCH_579": {
+			"blis": [
+				"BLI9054_bli_no_applied_payments"
+			],
+			"entities": {
+				"EN_NOAPPLITN_882": [
+					"AT15_USUARIOO882",
+					"AT23_FECHABIZ882",
+					"AT30_OFICINAA882",
+					"AT46_SECUENAA882",
+					"AT54_TIPOCOBR882",
+					"AT61_RETENCIN882",
+					"AT92_TIPOREID882",
+					"AT95_CUOTACPM882",
+					"AT97_ANTICIPS882"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ANTICIPSS_79918",
+				"LBL_ASSTS_APLICARIP_57468",
+				"LBL_ASSTS_CERRARGRF_18229",
+				"LBL_ASSTS_CUOTACOMM_65443",
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_PAGOSNOAA_17723",
+				"LBL_ASSTS_RETENCIOO_15179",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_TIPOCOBRO_50413",
+				"LBL_ASSTS_TIPOREDNU_76608",
+				"LBL_ASSTS_USUARIOTE_48852"
+			],
+			"queries": {
+				"Q_NOAPYYTA_XK68": [
+					"QM_NOAPY8886A515_03",
+					"QM_NOAPY8KK88211_08",
+					"QM_NOAPYAYAXY572_05",
+					"QM_NOAPYK86TY387_06",
+					"QM_NOAPYKXKXA355_09",
+					"QM_NOAPYKYKYY612_01",
+					"QM_NOAPYY8AXY956_04",
+					"QM_NOAPYYK6YT490_07",
+					"QM_NOAPYYTA6K428_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSKIAARTLC_272": {
+			"blis": [
+			],
+			"entities": {
+				"EN_FILTERTSC_512": [
+					"AT35_STATEPQW512",
+					"AT50_ENDDATEE512",
+					"AT63_NUMBEROL512",
+					"AT74_STARTDTA512",
+					"AT96_TYPETRCN512"
+				],
+				"EN_LISTTRAON_556": [
+					"AT15_NUMBERON556",
+					"AT26_STATEBOK556",
+					"AT27_TRANSATT556",
+					"AT72_TRANSAOI556",
+					"AT79_TRANSAEO556",
+					"AT83_SEQUENLA556",
+					"AT84_CODCLINT556",
+					"AT91_USERONSI556",
+					"AT99_SECOPERV556"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_CLIENTEMG_56892",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAFINN_90563",
+				"LBL_ASSTS_FECHAINOO_62253",
+				"LBL_ASSTS_FECHAREFF_73060",
+				"LBL_ASSTS_FECHATRAN_38220",
+				"LBL_ASSTS_NOPRESTOO_33534",
+				"LBL_ASSTS_NOPRSTAOO_95464",
+				"LBL_ASSTS_SECOPEORF_50164",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_TIPOTRAAA_70772",
+				"LBL_ASSTS_TRANSACCC_75316",
+				"LBL_ASSTS_TRANSACCN_70941",
+				"LBL_ASSTS_USUARIOTE_48852",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+				"Q_LISTCACN_AT28": [
+					"",
+					"",
+					"QM_LISTC22CTA632_01",
+					"QM_LISTC8A222800_04",
+					"QM_LISTC8NAA8246_01",
+					"QM_LISTCAAATC687_03",
+					"QM_LISTCAANNA867_07",
+					"QM_LISTCAT2AA895_05",
+					"QM_LISTCNA8AC169_06",
+					"QM_LISTCTC2N8462_01",
+					"QM_LISTCTC8TT568_02",
+					"QM_TYPESG77OH656_02",
+					"QM_TYPESG7HO7493_01"
+				],
+				"Q_TYPESIAO_HG77": [
+					"QM_TYPESG77OH656_02",
+					"QM_TYPESG7HO7493_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSKMGDPSCM_203": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DEFERRESI_770": [
+					"AT14_ITEMS144770",
+					"AT19_ITEMS3JM770",
+					"AT22_ITEMS1EE770",
+					"AT29_ITEMS6RP770",
+					"AT34_ITEMS8YY770",
+					"AT36_ITEMS111770",
+					"AT38_ITEMS7OM770",
+					"AT48_ITEMS5DY770",
+					"AT58_ITEMS4ZI770",
+					"AT63_ITEMS100770",
+					"AT72_ITEMS122770",
+					"AT73_ITEMS133770",
+					"AT74_ITEMS2OO770",
+					"AT85_DIVIDEDD770",
+					"AT93_ITEMS155770",
+					"AT99_ITEMS9EP770"
+				],
+				"EN_ITEMSLONA_118": [
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_DIVIDENDD_33129",
+				"LBL_ASSTS_IMPRIMIRR_18630"
+			],
+			"queries": {
+				"Q_DEFEMTIT_WQ23": [
+					"QM_DEFEM2QTW2141_16",
+					"QM_DEFEM2TTT2246_05",
+					"QM_DEFEM2W2T2335_06",
+					"QM_DEFEM2WTQQ227_04",
+					"QM_DEFEM333IW921_09",
+					"QM_DEFEMII3W3942_03",
+					"QM_DEFEMIQI2T927_14",
+					"QM_DEFEMQ3Q2I804_15",
+					"QM_DEFEMT2W2W117_01",
+					"QM_DEFEMT2WIT663_12",
+					"QM_DEFEMT3IWW450_11",
+					"QM_DEFEMTIII2729_08",
+					"QM_DEFEMTQTQT910_13",
+					"QM_DEFEMTTTTT889_10",
+					"QM_DEFEMTWT2T822_07",
+					"QM_DEFEMTWW3W962_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSLFJQNQTJ_171": {
+			"blis": [
+			],
+			"entities": {
+				"EN_CHANGEPAD_908": [
+					"AT16_NEWPAYDD908",
+					"AT62_REASONZT908",
+					"AT64_CURRENYA908",
+					"AT96_KEEPQUOO908"
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APLICARIP_57468",
+				"LBL_ASSTS_DAPAGOATL_75540",
+				"LBL_ASSTS_DAPAGONOV_96579",
+				"LBL_ASSTS_MANTIENTC_17171",
+				"LBL_ASSTS_MOTIVOWHI_49864",
+				"MSG_ASSTS_ELMOTIVEE_44777"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSMABINVRB_160": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANPOLYI_750": [
+					"AT24_DATEENNO750",
+					"AT33_AMOUNTNR750",
+					"AT44_COVERAEG750",
+					"AT63_DESCRIPN750",
+					"AT63_FVALIDTY750",
+					"AT63_POLICYXA750",
+					"AT65_STATEPCY750",
+					"AT71_CODEEXNE750",
+					"AT73_FENDOREE750",
+					"AT74_AMOUNTOL750",
+					"AT82_FVALIDNN750",
+					"AT96_INSURANN750"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ASEGURADR_42036",
+				"LBL_ASSTS_COBERTUAR_35986",
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_ESTADOPOZ_17970",
+				"LBL_ASSTS_FECHAENSS_45794",
+				"LBL_ASSTS_FECHAFIED_27007",
+				"LBL_ASSTS_FECHAVENO_73738",
+				"LBL_ASSTS_FECHAVINA_43492",
+				"LBL_ASSTS_GARANTIAA_11754",
+				"LBL_ASSTS_MONTOENDO_97022",
+				"LBL_ASSTS_MONTOPOLA_95748",
+				"LBL_ASSTS_POLIZAZVK_89366"
+			],
+			"queries": {
+				"Q_LOANPIPY_QP44": [
+					"QM_LOANP44PPP573_08",
+					"QM_LOANP4P444471_04",
+					"QM_LOANPIII4Q179_01",
+					"QM_LOANPIQ4IP868_01",
+					"QM_LOANPP44P4774_07",
+					"QM_LOANPPP44P674_10",
+					"QM_LOANPPPPPI225_09",
+					"QM_LOANPQ44QI933_06",
+					"QM_LOANPQ44YP701_13",
+					"QM_LOANPY4Y44568_02",
+					"QM_LOANPYP4Y4852_03",
+					"QM_LOANPYQIYQ523_12"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSNXKZRVUH_117": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DATAPASFI_669": [
+					"AT10_CONTRANR669",
+					"AT13_FINANCMI669",
+					"AT20_AUTHDATT669",
+					"AT21_DEBTTYEE669",
+					"AT33_TERMTYEP669",
+					"AT62_SUBFINNC669",
+					"AT79_FINANCNL669",
+					"AT88_FACILIRR669",
+					"AT89_AUTHNUMR669",
+					"AT96_CREDITYE669"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CAUSAFITN_32147",
+				"LBL_ASSTS_FACILITER_93212",
+				"LBL_ASSTS_FECHAAUIR_69328",
+				"LBL_ASSTS_LNEAFINON_91280",
+				"LBL_ASSTS_NMEROCOON_79264",
+				"LBL_ASSTS_NOAUTORSC_90429",
+				"LBL_ASSTS_PLAZOYJVK_49555",
+				"LBL_ASSTS_TIPOACRED_91137",
+				"LBL_ASSTS_TIPODEUAA_82972",
+				"LBL_ASSTS_TIPOPLAZZ_65289"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSOGDWIAAO_949": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+				"HD_HEADERLSO_968"
+			],
+			"labels": [
+				"LBL_ASSTS_ABONOSBOQ_70064",
+				"LBL_ASSTS_HISTRICRS_74801",
+				"LBL_ASSTS_INACINGAA_67127",
+				"LBL_ASSTS_TRANSACEN_33079"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSPENVMXNQ_619": {
+			"blis": [
+			],
+			"entities": {
+				"EN_ITEMSLONA_118": [
+				],
+				"EN_LISTPROSS_173": [
+					"AT12_DINAMYAN173",
+					"AT20_DINAMYN7173",
+					"AT24_DINAMYNB173",
+					"AT27_QUOTADAY173",
+					"AT39_DINAMYBB173",
+					"AT39_QUOTAKOP173",
+					"AT40_BALANCEE173",
+					"AT41_SALEDATT173",
+					"AT46_DINAMYBB173",
+					"AT47_DINAMY3B173",
+					"AT49_DINAMY1C173",
+					"AT51_DINAMY10173",
+					"AT55_DINAMY1A173",
+					"AT63_DINAMYAL173",
+					"AT66_DINAMYC1173",
+					"AT71_DINAMYAN173",
+					"AT71_STATEUKP173",
+					"AT72_DINAMYAN173",
+					"AT72_PORROGAA173",
+					"AT80_DIVIDEDD173",
+					"AT88_DINAMYEC173",
+					"AT91_DINAMYEL173"
+				],
+				"EN_PROJECTNM_545": [
+					"AT10_PORCENJE545",
+					"AT66_FECHAREA545"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+				"HD_HEADERLSO_968"
+			],
+			"labels": [
+				"LBL_ASSTS_CUOTAJJEW_83973",
+				"LBL_ASSTS_DIASIVQBJ_73578",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHASILN_40353",
+				"LBL_ASSTS_FECHAVENO_73738",
+				"LBL_ASSTS_IMPRIMIRR_18630",
+				"LBL_ASSTS_ITEMS10DS_49370",
+				"LBL_ASSTS_ITEMS11LX_20957",
+				"LBL_ASSTS_ITEMS12CW_83556",
+				"LBL_ASSTS_ITEMS13DP_67312",
+				"LBL_ASSTS_ITEMS14FH_36578",
+				"LBL_ASSTS_ITEMS15DN_79167",
+				"LBL_ASSTS_ITEMS4VLE_47341",
+				"LBL_ASSTS_ITEMS5CXM_39896",
+				"LBL_ASSTS_ITEMS6BMJ_40131",
+				"LBL_ASSTS_ITEMS7AWJ_73578",
+				"LBL_ASSTS_ITEMS8GKH_60641",
+				"LBL_ASSTS_ITEMS9XLA_24163",
+				"LBL_ASSTS_PORCENTST_41449",
+				"LBL_ASSTS_PRORROGAA_86150",
+				"LBL_ASSTS_PROYECCIN_27776",
+				"LBL_ASSTS_RUBROSAEW_67124",
+				"LBL_ASSTS_SALDOCAPI_87055",
+				"LBL_ASSTS_TABLAAMZR_85560",
+				"LBL_ASSTS_TASASWEXW_63256",
+				"LBL_ASSTS_TRANSMITR_50090",
+				"LBL_ASSTS_VALORCUTO_78445",
+				"MSG_ASSTS_REQUERIDO_35484",
+				"MSG_ASSTS_VALORFURN_83073"
+			],
+			"queries": {
+				"Q_LISTCEEE_FJ77": [
+					"QM_LISTC777J7953_01",
+					"QM_LISTC77EJJ650_05",
+					"QM_LISTC77J7J997_07",
+					"QM_LISTC7F7EE499_02",
+					"QM_LISTC7JJEE250_08",
+					"QM_LISTCE7EEE362_06",
+					"QM_LISTCE7EF7394_12",
+					"QM_LISTCE7EJE546_15",
+					"QM_LISTCEE77J373_21",
+					"QM_LISTCEE7JE875_19",
+					"QM_LISTCEEEF7313_03",
+					"QM_LISTCEEF7E114_16",
+					"QM_LISTCEF777875_18",
+					"QM_LISTCEF7JE511_11",
+					"QM_LISTCEFE7E853_10",
+					"QM_LISTCEJEEJ596_13",
+					"QM_LISTCF777E313_14",
+					"QM_LISTCF7EEE525_17",
+					"QM_LISTCFE7F7164_04",
+					"QM_LISTCFEJEE883_22",
+					"QM_LISTCFEJFJ136_09",
+					"QM_LISTCFFJEE873_20"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSQMEVBPIH_868": {
+			"blis": [
+				"BLI8971_bli_consultasegurosoperacion"
+			],
+			"entities": {
+				"EN_SEGUROSQK_316": [
+					"AT30_TYPEHFLS316",
+					"AT31_FOLIOMRC316",
+					"AT34_DATEVAII316",
+					"AT59_STATUSED316",
+					"AT60_AMOUNTMC316",
+					"AT79_DATEVANL316",
+					"AT81_CLIENTAM316"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CLIENTEMG_56892",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAVINF_89760",
+				"LBL_ASSTS_FECHAVINN_83098",
+				"LBL_ASSTS_FOLIOYLJO_43258",
+				"LBL_ASSTS_MONTOEMFX_52083",
+				"LBL_ASSTS_PLAZOYJVK_49555",
+				"LBL_ASSTS_TIPOSEGUU_33394"
+			],
+			"queries": {
+				"Q_SEGUSSRS_HF84": [
+					"QM_SEGUS4H448976_02",
+					"QM_SEGUS4SSFF243_11",
+					"QM_SEGUS84R84457_09",
+					"QM_SEGUS8HSHF837_01",
+					"QM_SEGUSRFS8R861_03",
+					"QM_SEGUSRRHFR181_12",
+					"QM_SEGUSSR8SF940_10"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSQUQPUYMT_694": {
+			"blis": [
+				"BLI6234_bli_reverttransactions",
+				"BLI9673_bli_activatetransactions",
+				"BLI9971_bli_causationtransactions"
+			],
+			"entities": {
+				"EN_ACTIVETIT_417": [
+					"AT15_SECUENTT417",
+					"AT16_USEROVSR417",
+					"AT40_OPERATIO417",
+					"AT47_TRANSAOT417",
+					"AT49_OBSERVOT417",
+					"AT53_STATEQAB417",
+					"AT76_DATETRNA417",
+					"AT85_DATERERR417"
+				],
+				"EN_CAUSATION_534": [
+					"AT11_DATETRNA534",
+					"AT11_DIVIDEND534",
+					"AT33_COINYBHA534",
+					"AT48_DATEREDE534",
+					"AT49_PRICEHNB534",
+					"AT52_CONCEPTT534",
+					"AT84_AMOUNTMP534",
+					"AT90_STATEQSA534",
+					"AT91_AMOUNTNM534"
+				],
+				"EN_REVERSEDO_653": [
+					"AT39_OPERATON653",
+					"AT50_DATETRTT653",
+					"AT60_STAREUIZ653",
+					"AT64_USERMIJC653",
+					"AT67_TRANSAIN653",
+					"AT85_SECUENII653",
+					"AT92_OBSERVTI653",
+					"AT94_DATERERR653"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CAUSACISE_60906",
+				"LBL_ASSTS_CONCEPTOO_69025",
+				"LBL_ASSTS_COTIZACON_57682",
+				"LBL_ASSTS_DIVIDENDD_33129",
+				"LBL_ASSTS_ESTADOMCM_48125",
+				"LBL_ASSTS_FECHAREFF_66746",
+				"LBL_ASSTS_FECHATRNN_17177",
+				"LBL_ASSTS_MONEDAGWI_30015",
+				"LBL_ASSTS_MONTOMNDV_14693",
+				"LBL_ASSTS_MONTOTMIL_28007",
+				"LBL_ASSTS_OBSERVACC_16512",
+				"LBL_ASSTS_PRESTAMOO_72526",
+				"LBL_ASSTS_SECUENCLL_64974",
+				"LBL_ASSTS_TRANSACAT_32533",
+				"LBL_ASSTS_TRANSACIR_39436",
+				"LBL_ASSTS_TRANSACOI_13307",
+				"LBL_ASSTS_USUARIORT_71336"
+			],
+			"queries": {
+				"Q_ACTIERNI_WO73": [
+					"QM_ACTIE3NRIO770_06",
+					"QM_ACTIE73NWI210_01",
+					"QM_ACTIE7ONW3151_03",
+					"QM_ACTIEI33WO439_07",
+					"QM_ACTIENWOI7956_01",
+					"QM_ACTIEO77RN550_05",
+					"QM_ACTIEORRW3150_02",
+					"QM_ACTIER7RI7959_04",
+					"QM_CAUSA111T9507_04",
+					"QM_CAUSA9199H917_07",
+					"QM_CAUSA9T1NH697_01",
+					"QM_CAUSAH19HT843_08",
+					"QM_CAUSAHNTTU410_06",
+					"QM_CAUSAHUTOU654_05",
+					"QM_CAUSAN9OH1364_02",
+					"QM_CAUSAON99T803_01",
+					"QM_CAUSAUNOTO503_03",
+					"QM_REVES5AE5R355_01",
+					"QM_REVES5O5A5567_07",
+					"QM_REVES5OOAE894_05",
+					"QM_REVESAT5RT410_03",
+					"QM_REVESATA5T772_06",
+					"QM_REVESRORR5715_04",
+					"QM_REVESTAO5T949_02"
+				],
+				"Q_CAUSAONT_HU91": [
+					"QM_ACTIE3NRIO770_06",
+					"QM_ACTIE73NWI210_01",
+					"QM_ACTIE7ONW3151_03",
+					"QM_ACTIEI33WO439_07",
+					"QM_ACTIEO77RN550_05",
+					"QM_ACTIEORRW3150_02",
+					"QM_ACTIER7RI7959_04",
+					"QM_CAUSA111T9507_04",
+					"QM_CAUSA9199H917_07",
+					"QM_CAUSA9T1NH697_01",
+					"QM_CAUSAH19HT843_08",
+					"QM_CAUSAHNTTU410_06",
+					"QM_CAUSAHUTOU654_05",
+					"QM_CAUSAN9OH1364_02",
+					"QM_CAUSAON99T803_01",
+					"QM_CAUSAUNOTO503_03",
+					"QM_REVES5AE5R355_01",
+					"QM_REVES5O5A5567_07",
+					"QM_REVES5OOAE894_05",
+					"QM_REVESAT5RT410_03",
+					"QM_REVESATA5T772_06",
+					"QM_REVESRORR5715_04",
+					"QM_REVESTAO5T949_02"
+				],
+				"Q_REVESETA_RO55": [
+					"QM_ACTIE3NRIO770_06",
+					"QM_ACTIE73NWI210_01",
+					"QM_ACTIE7ONW3151_03",
+					"QM_ACTIEI33WO439_07",
+					"QM_ACTIENWOI7956_01",
+					"QM_ACTIEO77RN550_05",
+					"QM_ACTIEORRW3150_02",
+					"QM_ACTIER7RI7959_04",
+					"QM_CAUSA111T9507_04",
+					"QM_CAUSA9199H917_07",
+					"QM_CAUSA9T1NH697_01",
+					"QM_CAUSAH19HT843_08",
+					"QM_CAUSAHNTTU410_06",
+					"QM_CAUSAHUTOU654_05",
+					"QM_CAUSAN9OH1364_02",
+					"QM_CAUSAON99T803_01",
+					"QM_CAUSAUNOTO503_03",
+					"QM_REVES5AE5R355_01",
+					"QM_REVES5O5A5567_07",
+					"QM_REVES5OOAE894_05",
+					"QM_REVESAT5RT410_03",
+					"QM_REVESATA5T772_06",
+					"QM_REVESO5E5E520_01",
+					"QM_REVESRORR5715_04",
+					"QM_REVESTAO5T949_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSROZTLMPE_144": {
+			"blis": [
+			],
+			"entities": {
+				"EN_COMPANIER_251": [
+					"AT62_INSTITIO251",
+					"AT78_COMPANYN251",
+					"AT92_RUCQTLUH251"
+				],
+				"EN_COMPANILL_950": [
+					"AT12_RUCSIKAY950",
+					"AT54_PHONEZEP950",
+					"AT63_COMPANYA950",
+					"AT99_INSTITII950"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_CDIGOINIC_90755",
+				"LBL_ASSTS_CODIGOYTZ_84859",
+				"LBL_ASSTS_EMPRESANI_35782",
+				"LBL_ASSTS_NOMBRECMM_80342",
+				"LBL_ASSTS_NOMBREULS_81822",
+				"LBL_ASSTS_RUCOPKJYJ_12792",
+				"LBL_ASSTS_TELEFONOO_76252"
+			],
+			"queries": {
+				"Q_COMPIISI_NI17": [
+					"",
+					"",
+					"QM_COMPI7SSS1587_01",
+					"QM_COMPIIII7S489_14",
+					"QM_COMPIIIIII180_12",
+					"QM_COMPIISI7S674_21"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSRQJVFXXE_548": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2ZNYDYMCX_592": [
+					"AT11_ITEMS6DA592",
+					"AT13_ITEMS2OT592",
+					"AT18_SHAREVEL592",
+					"AT25_DAYSFBZN592",
+					"AT33_EXPIRANO592",
+					"AT35_ITEMS3HC592",
+					"AT37_ITEMS5ZX592",
+					"AT51_ITEMS4SF592",
+					"AT63_STATEQEV592",
+					"AT65_PORROGAA592",
+					"AT71_SHAREPCW592",
+					"AT83_BALANCCA592",
+					"AT97_ITEMS1UJ592"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CAPHKBGAT_46080",
+				"LBL_ASSTS_COMMORAQO_84198",
+				"LBL_ASSTS_CUOTASNJN_88896",
+				"LBL_ASSTS_DIASIVQBJ_73578",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAVENE_58948",
+				"LBL_ASSTS_IMOWWWZTH_92506",
+				"LBL_ASSTS_INTBQVBSN_86454",
+				"LBL_ASSTS_IVACMORAA_51556",
+				"LBL_ASSTS_IVAINTEVZ_92036",
+				"LBL_ASSTS_SALDOCAPI_87055",
+				"LBL_ASSTS_VALORCUTO_78445"
+			],
+			"queries": {
+				"Q_AMORTIAN_8237": [
+					"QM_AMORT2A2N8357_04",
+					"QM_AMORT2NNA3973_08",
+					"QM_AMORT3787A283_01",
+					"QM_AMORT7AA8I995_09",
+					"QM_AMORT7I7I8807_11",
+					"QM_AMORT83I87121_10",
+					"QM_AMORT88AAA933_06",
+					"QM_AMORT88NAI518_05",
+					"QM_AMORTAAAA7742_12",
+					"QM_AMORTI7A28734_03",
+					"QM_AMORTIA82A558_13",
+					"QM_AMORTIN7A2307_02",
+					"QM_AMORTNIIA2736_07"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSSJVXBFJD_286": {
+			"blis": [
+				"BLI2543_bli_detail_no_applied_payment"
+			],
+			"entities": {
+				"EN_DETAILNEO_741": [
+					"AT19_TIPOYEPX741",
+					"AT31_CONCEPTO741",
+					"AT32_MONTOMGG741",
+					"AT53_MONEDAKA741",
+					"AT53_MONTOMOP741",
+					"AT77_CUENTACZ741"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CERRARGRF_18229",
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_CUENTADIA_22037",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONTOMOPP_42194",
+				"LBL_ASSTS_MONTOMPGG_93181",
+				"LBL_ASSTS_TIPOLDSKB_46090"
+			],
+			"queries": {
+				"Q_DETAYILY_DP76": [
+					"QM_DETAY7IIYL135_04",
+					"QM_DETAY7Y6D6925_06",
+					"QM_DETAYDDLYD159_03",
+					"QM_DETAYIYL76246_01",
+					"QM_DETAYL6LPD159_05",
+					"QM_DETAYL6PI6325_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSSMJDYNLF_161": {
+			"blis": [
+			],
+			"entities": {
+				"EN_COMPANIHA_370": [
+					"AT36_SEQUENII370",
+					"AT43_DATEMOEE370",
+					"AT50_DATECRAE370",
+					"AT97_STATUSEM370"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ARCHIVOCR_73673",
+				"LBL_ASSTS_ESTADOLOT_42162",
+				"LBL_ASSTS_FECHACRIA_50331",
+				"LBL_ASSTS_NOLOTEWVB_20010",
+				"LBL_ASSTS_OBSERVACC_16512",
+				"LBL_ASSTS_ULTMOVINI_75387"
+			],
+			"queries": {
+				"Q_COMPATAT_EY63": [
+					"QM_COMPA6A3T3837_03",
+					"QM_COMPA6Y66T923_06",
+					"QM_COMPAAEYTT528_04",
+					"QM_COMPAE6TY3343_09"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSUFGAMLTW_237": {
+			"blis": [
+			],
+			"entities": {
+				"EN_FUNDMJKIO_384": [
+					"AT31_AMOUNTOR384",
+					"AT39_SPONSORR384",
+					"AT57_FUNDNAEE384",
+					"AT66_VALIDIDY384",
+					"AT71_STATUSOO384",
+					"AT74_AVAILABE384",
+					"AT97_USEDVAUE384"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_AUMENTOTO_45456",
+				"LBL_ASSTS_CDIGOFUTN_63507",
+				"LBL_ASSTS_CRDITOCSL_10382",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAVIGC_60000",
+				"LBL_ASSTS_FUENTEROO_22709",
+				"LBL_ASSTS_MANEJOFOO_89494",
+				"LBL_ASSTS_MONTOORNI_91217",
+				"LBL_ASSTS_NOMBREDOF_51654",
+				"LBL_ASSTS_SALDODISO_27034",
+				"LBL_ASSTS_TIPOFUENN_62952",
+				"LBL_ASSTS_VALORREDR_65983",
+				"LBL_ASSTS_VALORUTZL_53340"
+			],
+			"queries": {
+				"Q_FUNDQJFL_8975": [
+					"QM_FUNDQ5L8FL779_01",
+					"QM_FUNDQ987J9144_05",
+					"QM_FUNDQFJJJF772_06",
+					"QM_FUNDQFLJL8567_02",
+					"QM_FUNDQFLLJJ573_01",
+					"QM_FUNDQL55LJ948_01",
+					"QM_FUNDQLF7J7980_08"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSUHBKGFUE_991": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANSYNST_476": [
+					"AT18_CODPARPI476",
+					"AT52_MAILPART476",
+					"AT62_PERCENPA476",
+					"AT75_AMOUNTPI476",
+					"AT91_NAMEPACN476",
+					"AT96_ROLEPATS476"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CODPARTTT_65299",
+				"LBL_ASSTS_CORREOWGJ_72729",
+				"LBL_ASSTS_MONTOPATT_88081",
+				"LBL_ASSTS_NOMBREULS_81822",
+				"LBL_ASSTS_PARTFOSGD_89580",
+				"LBL_ASSTS_ROLDOBJMA_96413"
+			],
+			"queries": {
+				"Q_LOANIISE_TX62": [
+					"QM_LOANI26ITT739_05",
+					"QM_LOANI6TX22584_06",
+					"QM_LOANII2XII472_02",
+					"QM_LOANII6XSS196_01",
+					"QM_LOANIX2T2E678_03",
+					"QM_LOANIXSI6T551_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSVDYQFQAP_288": {
+			"blis": [
+				"BLI4424_bli_selectionloanschildren"
+			],
+			"entities": {
+				"EN_LOANCHINR_908": [
+					"AT14_DISBURET908",
+					"AT16_CLIENTDD908",
+					"AT22_LOANBANN908",
+					"AT27_DESSTATU908",
+					"AT43_AMOUNTFE908",
+					"AT50_NUMPRORR908",
+					"AT81_CODCURER908",
+					"AT87_EXPIRAON908",
+					"AT93_DESOPEAO908",
+					"AT95_CLIENTEA908"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CDIGOCLEN_93241",
+				"LBL_ASSTS_CODMONEDD_59972",
+				"LBL_ASSTS_ESTADOPEM_54793",
+				"LBL_ASSTS_FECHADEBE_42043",
+				"LBL_ASSTS_FECHAVENE_58948",
+				"LBL_ASSTS_MONTOPROM_71868",
+				"LBL_ASSTS_NOMBRECNI_63306",
+				"LBL_ASSTS_NUMPRSTAM_17241",
+				"LBL_ASSTS_NUMTRMIET_51783",
+				"LBL_ASSTS_TIPOPREMM_37747"
+			],
+			"queries": {
+				"Q_LOANNRCH_EQ75": [
+					"QM_LOANN55HHQ583_12",
+					"QM_LOANN5C7RR913_01",
+					"QM_LOANN5CR7E914_02",
+					"QM_LOANN5E7RE588_05",
+					"QM_LOANN77EHE711_13",
+					"QM_LOANNEHEHC331_04",
+					"QM_LOANNHQ5QC977_07",
+					"QM_LOANNQ7Q5H837_06",
+					"QM_LOANNQHE77172_11",
+					"QM_LOANNR77C7818_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSVIKJRAKP_845": {
+			"blis": [
+			],
+			"entities": {
+				"EN_COMPANILL_950": [
+				],
+				"EN_COMPANYEP_376": [
+					"AT10_INSTITUN376",
+					"AT11_NOMBREOK376",
+					"AT12_PAYMENST376",
+					"AT14_DIRECCOI376",
+					"AT17_CONTACTT376",
+					"AT24_CATEGOYR376",
+					"AT24_STATEEDP376",
+					"AT32_PHONEYYH376",
+					"AT35_ACCOUNTT376",
+					"AT39_AGREEMEN376",
+					"AT42_RATEAPPL376",
+					"AT54_CLIENTEE376",
+					"AT54_PAYMENNA376",
+					"AT67_RUCBJYNS376",
+					"AT72_ANTIQUYI376",
+					"AT73_TERMHXTO376",
+					"AT78_PAYMENEE376",
+					"AT89_PATMENTT376",
+					"AT90_CLASSINC376",
+					"AT90_PAYMENNE376"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ANTIGEDDD_85913",
+				"LBL_ASSTS_APAGOPQXA_89595",
+				"LBL_ASSTS_APAGOSEOC_29261",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_CATEGORAA_59396",
+				"LBL_ASSTS_CDIGOINIC_90755",
+				"LBL_ASSTS_CLASIFIIC_39554",
+				"LBL_ASSTS_CLIENTEMG_56892",
+				"LBL_ASSTS_CONTACTOO_49432",
+				"LBL_ASSTS_CONVENIOO_84856",
+				"LBL_ASSTS_DIRECCINN_30768",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FRECUENDE_67079",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_NOMBRECMM_80342",
+				"LBL_ASSTS_NROCUENAT_58031",
+				"LBL_ASSTS_PLAZOYJVK_49555",
+				"LBL_ASSTS_REACOBROO_55398",
+				"LBL_ASSTS_RUCOPKJYJ_12792",
+				"LBL_ASSTS_SERVICIOD_53492",
+				"LBL_ASSTS_TASAAAPCR_88019",
+				"LBL_ASSTS_TELFONOPO_65834",
+				"MSG_ASSTS_CAMPOREUI_74379",
+				"MSG_ASSTS_PORCENTA9_55570",
+				"MSG_ASSTS_SEDEBERZE_11968"
+			],
+			"queries": {
+				"Q_LISTOOGA_DP31": [
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSWJQZCYYQ_887": {
+			"blis": [
+			],
+			"entities": {
+				"EN_TWORANGEE_293": [
+					"AT79_DATEFHSL293"
+				],
+				"EN_TWORANGIL_738": [
+					"AT26_DATEIHKJ738",
+					"AT41_SEQUENAI738",
+					"AT43_MAXVAL2E738",
+					"AT43_MINVAL1E738",
+					"AT60_VARIABLE738",
+					"AT61_MAXVALUE738",
+					"AT74_MINVAL22738",
+					"AT99_RATEYYUB738"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_DESCRIPII_28027",
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_SECLJYBZO_20989",
+				"LBL_ASSTS_TASAQDBMK_45779",
+				"LBL_ASSTS_VARIABLEE_54112",
+				"MSG_ASSTS_VALORFURN_83073"
+			],
+			"queries": {
+				"Q_TWORILTS_QE88": [
+					"",
+					"",
+					"",
+					"",
+					"QM_TWORI88888900_04",
+					"QM_TWORIESQE8895_03",
+					"QM_TWORIETSEL855_09",
+					"QM_TWORIL8EES401_07",
+					"QM_TWORIQ8T8L116_06",
+					"QM_TWORISTTLS931_02",
+					"QM_TWORITELS8204_08",
+					"QM_TWORITQ8Q8450_05"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSXWJMINKN_821": {
+			"blis": [
+			],
+			"entities": {
+				"EN_RATERANTS_219": [
+					"AT11_DATATY1P219",
+					"AT13_TITLE1GI219",
+					"AT34_DATATYPP219",
+					"AT46_RANKPFSE219",
+					"AT49_RANGENAE219",
+					"AT50_RESULT22219",
+					"AT78_DATATYP2219",
+					"AT85_CONCEPTT219",
+					"AT92_TITLE2NR219"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_IDDAHWEGE_20448",
+				"LBL_ASSTS_NOMBREULS_81822",
+				"LBL_ASSTS_RANGOPAYZ_92039",
+				"LBL_ASSTS_RANGOVAAA_60267",
+				"LBL_ASSTS_RESULT2SQ_58424",
+				"LBL_ASSTS_TIPODAT22_26251",
+				"LBL_ASSTS_TIPODATOO_50429",
+				"LBL_ASSTS_TIPODATOR_78992",
+				"LBL_ASSTS_TITULO1NG_48999",
+				"LBL_ASSTS_TITULO2RJ_77924",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+				"Q_RATEGLSL_WM41": [
+					"QM_RATEG1WLS1602_02",
+					"QM_RATEG1WMM4312_06",
+					"QM_RATEG44WSM509_03",
+					"QM_RATEGLL1SM305_10",
+					"QM_RATEGLM14L887_04",
+					"QM_RATEGLWSLW556_05",
+					"QM_RATEGMLWSM521_08",
+					"QM_RATEGSSWMW579_09",
+					"QM_RATEGWLL11448_07"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSXYNOAKAL_995": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DETAILTCN_643": [
+					"AT14_AFFECTNI643",
+					"AT17_DIVIDEDN643",
+					"AT35_COINCGCT643",
+					"AT54_PRICERYT643",
+					"AT57_CODEVAUL643",
+					"AT60_AMOUNTMM643",
+					"AT69_BENEFIRY643",
+					"AT75_STATEHKL643",
+					"AT84_BILLMOOT643",
+					"AT88_AMOUNTZU643",
+					"AT98_HEADINGG643"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_AFECTACON_47829",
+				"LBL_ASSTS_BENEFICRA_50223",
+				"LBL_ASSTS_CODVALORR_46935",
+				"LBL_ASSTS_COTIZACNN_31924",
+				"LBL_ASSTS_CUENTAFGE_63328",
+				"LBL_ASSTS_DIVIDENDD_33129",
+				"LBL_ASSTS_ESTADOMCM_48125",
+				"LBL_ASSTS_MONEDAGWI_30015",
+				"LBL_ASSTS_MONTOMNDV_14693",
+				"LBL_ASSTS_MONTOTMIL_28007",
+				"LBL_ASSTS_RUBROIVKT_62353"
+			],
+			"queries": {
+				"Q_DETASSOL_MC22": [
+					"QM_DETAS2L222768_05",
+					"QM_DETAS2MSM2601_01",
+					"QM_DETAS2S222461_02",
+					"QM_DETAS2SOC2265_07",
+					"QM_DETASC2CSS827_09",
+					"QM_DETASCC2SC760_03",
+					"QM_DETASCOCSC439_01",
+					"QM_DETASLMCOM288_10",
+					"QM_DETASM22O2772_08",
+					"QM_DETASM2O2O168_06",
+					"QM_DETASOMSSL134_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ASSTSZHWXXEQV_571": {
+			"blis": [
+			],
+			"entities": {
+				"EN_BENEFICOR_713": [
+					"AT11_BIRTHDAA713",
+					"AT23_CLIENTAN713",
+					"AT26_RELATINN713",
+					"AT57_POSTALCC713",
+					"AT74_TELEPHOE713",
+					"AT84_ADDRESSS713",
+					"AT98_PERCENTA713"
+				],
+				"EN_SEGUROSQK_316": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BENEFICII_99714",
+				"LBL_ASSTS_CDIGOPOST_81106",
+				"LBL_ASSTS_DIRECCINN_30768",
+				"LBL_ASSTS_FECHANAME_52426",
+				"LBL_ASSTS_PARENTEOS_75242",
+				"LBL_ASSTS_PORCENTAE_66428",
+				"LBL_ASSTS_TELFONOPO_65834"
+			],
+			"queries": {
+				"Q_BENERRRA_IX77": [
+					"QM_BENER7IAIR929_12",
+					"QM_BENERAR7R7643_04",
+					"QM_BENERI7I7A626_13",
+					"QM_BENERI7XRI353_10",
+					"QM_BENERIRXI7324_05",
+					"QM_BENERRR7R7308_01",
+					"QM_BENERXIRXA198_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_BANKACCOUNTIS_944": {
+			"blis": [
+			],
+			"entities": {
+				"EN_BANKACCNN_291": [
+					"AT42_ACCOUNTT291",
+					"AT47_CUSTOMEO291",
+					"AT53_ACCOUNNN291"
+				],
+				"EN_PAYMENTZY_669": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CLIENTEWV_22561",
+				"LBL_ASSTS_CUENTADIA_22037",
+				"LBL_ASSTS_NOMBREULS_81822"
+			],
+			"queries": {
+				"Q_BANKACUC_1987": [
+					"QM_BANKA8977C307_03",
+					"QM_BANKA9C8CU656_02",
+					"QM_BANKAU7C78549_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_BANKACCOUNTOA_777": {
+			"blis": [
+			],
+			"entities": {
+				"EN_1IRAKPKDY_241": [
+				],
+				"EN_BANKACCNN_291": [
+					"AT42_ACCOUNTT291",
+					"AT47_CUSTOMEO291",
+					"AT53_ACCOUNNN291"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CLIENTEWV_22561",
+				"LBL_ASSTS_CUENTADIA_22037",
+				"LBL_ASSTS_NOMBREULS_81822"
+			],
+			"queries": {
+				"Q_BANKACUC_1987": [
+					"QM_BANKA8977C307_03",
+					"QM_BANKA9C8CU656_02",
+					"QM_BANKAU7C78549_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_CONDONABLECCE_513": {
+			"entities": {
+				"EN_CONDONAOB_448": [
+					"AT35_DESCRIPI448",
+					"AT36_CONCEPTT448"
+				]
+			},
+			"labels": [
+				"LBL_ASSTS_DESCRIPNI_65857",
+				"LBL_ASSTS_RUBROFKGQ_42963"
+			],
+			"queries": {
+				"Q_CONDONEN_2096": [
+					"QM_CONDOE9096756_01",
+					"QM_CONDON9N62443_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_CONDONATIOSNN_532": {
+			"blis": [
+			],
+			"entities": {
+				"EN_CONDONAII_795": [
+					"AT14_VALUETOO795",
+					"AT69_CURRENAA795",
+					"AT79_DUEAMOUN795",
+					"AT89_OBSERVNT795",
+					"AT91_TOTALVAE795",
+					"AT94_PASTDUOM795",
+					"AT98_CONCEPTT795"
+				],
+				"EN_SERVERPRA_884": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_OBSERVACC_16512",
+				"LBL_ASSTS_PORVENCER_21871",
+				"LBL_ASSTS_TOTALBPNF_51557",
+				"LBL_ASSTS_VALORACAR_43691",
+				"LBL_ASSTS_VENCIDOUG_82584",
+				"LBL_ASSTS_VIGENTEON_55349",
+				"MSG_ASSTS_ELCAMPOOC_91834",
+				"MSG_ASSTS_ELCAMPOON_25357"
+			],
+			"queries": {
+				"Q_CONDONDE_7324": [
+					"QM_CONDO32DE3460_05",
+					"QM_CONDO423N4460_02",
+					"QM_CONDO43D3N598_06",
+					"QM_CONDO47E4N217_03",
+					"QM_CONDO7DD73376_01",
+					"QM_CONDODN273322_03",
+					"QM_CONDON4N77621_06"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_DISBURSEMENNN_810": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DETAILANC_439": [
+					"AT24_DESCRIOT439",
+					"AT44_VALUELCR439"
+				],
+				"EN_DETAILPNN_835": [
+					"AT21_CURRENNE835",
+					"AT23_PRENOTFI835",
+					"AT28_OFFICEID835",
+					"AT28_SEQUENTT835",
+					"AT29_OBSERVAN835",
+					"AT50_AMOUNTOP835",
+					"AT51_BENEFICC835",
+					"AT56_DISBURNT835",
+					"AT57_INDEXKGR835",
+					"AT71_QUOTEOPP835",
+					"AT72_ACCOUNTT835",
+					"AT72_AMOUNTEH835",
+					"AT72_AMOUNTMM835",
+					"AT79_TYPEQUNA835",
+					"AT86_QUOTEGAO835",
+					"AT89_QUOTETYE835",
+					"AT92_PRODUCER835",
+					"AT98_OFFICEAM835",
+					"AT99_CURRENID835"
+				],
+				"EN_DISBURSTE_282": [
+					"AT11_DIFFERNC282",
+					"AT77_SUMTOTLA282"
+				],
+				"EN_GENERALSR_979": [
+				],
+				"EN_LIQUIDATT_728": [
+					"AT76_SUMTOTLL728"
+				],
+				"EN_LOANADDOI_167": [
+					"AT16_LOANDAEE167",
+					"AT19_CURRENCC167",
+					"AT23_QUOTATOI167",
+					"AT65_LBLAMOTA167",
+					"AT86_QUOTETOP167"
+				],
+				"EN_LOANINSTC_482": [
+				],
+				"EN_LOANKYMRI_882": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ARUJAZZWD_36528",
+				"LBL_ASSTS_BENEFICII_99714",
+				"LBL_ASSTS_CATEGORAI_18464",
+				"LBL_ASSTS_CODOFICII_21157",
+				"LBL_ASSTS_CONCEPTEN_27056",
+				"LBL_ASSTS_COTIZACNN_31924",
+				"LBL_ASSTS_COTIZIXLE_90326",
+				"LBL_ASSTS_COTIZOPLX_93409",
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_DETALLEAR_35261",
+				"LBL_ASSTS_DETALLEES_47444",
+				"LBL_ASSTS_DIFERENCC_25127",
+				"LBL_ASSTS_ENVIARRFA_30717",
+				"LBL_ASSTS_FECHADEBE_42043",
+				"LBL_ASSTS_INSACHVDD_55034",
+				"LBL_ASSTS_MONEDAOAA_82257",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONLYCWKQ_22133",
+				"LBL_ASSTS_NONSYXWRW_43467",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_REFERENAI_72258",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_TCGUTJEYQ_91264",
+				"LBL_ASSTS_TCOPOIVKZ_88167",
+				"LBL_ASSTS_TIPOCOTAA_28357",
+				"LBL_ASSTS_TOTALALRD_64279",
+				"LBL_ASSTS_TOTALDEEE_75722",
+				"LBL_ASSTS_VALORESIU_20319",
+				"LBL_ASSTS_VALORMNDJ_15135",
+				"LBL_ASSTS_VALORNPRH_26284",
+				"LBL_ASSTS_VALOROEQM_99484",
+				"LBL_ASSTS_VALOROPMP_71937",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+				"Q_DETAILAP_5973": [
+					"QM_DETAI0L666395_01",
+					"QM_DETAI39377985_11",
+					"QM_DETAI39LA3338_01",
+					"QM_DETAI3LP35769_04",
+					"QM_DETAI3LP3L605_07",
+					"QM_DETAI3P793625_10",
+					"QM_DETAI5AAP5376_13",
+					"QM_DETAI755LA310_06",
+					"QM_DETAI79P99584_18",
+					"QM_DETAI7L5P9228_15",
+					"QM_DETAI7L9A7139_03",
+					"QM_DETAI99357938_05",
+					"QM_DETAI9AAA5967_09",
+					"QM_DETAIA79AL815_02",
+					"QM_DETAIAP3L5579_14",
+					"QM_DETAIL35LP998_12",
+					"QM_DETAIL37A3699_08",
+					"QM_DETAIP975L107_19",
+					"QM_DETAIPAA7P854_17",
+					"QM_DETAIPP9PL461_16",
+					"QM_DETAIT3633573_01"
+				],
+				"Q_DETAILTM_1603": [
+					"QM_DETAI0L666395_01",
+					"QM_DETAI39377985_11",
+					"QM_DETAI39LA3338_01",
+					"QM_DETAI3LP35769_04",
+					"QM_DETAI3LP3L605_07",
+					"QM_DETAI3P793625_10",
+					"QM_DETAI5AAP5376_13",
+					"QM_DETAI755LA310_06",
+					"QM_DETAI79P99584_18",
+					"QM_DETAI7L5P9228_15",
+					"QM_DETAI7L9A7139_03",
+					"QM_DETAI99357938_05",
+					"QM_DETAI9AAA5967_09",
+					"QM_DETAIA79AL815_02",
+					"QM_DETAIAP3L5579_14",
+					"QM_DETAIL35LP998_12",
+					"QM_DETAIL37A3699_08",
+					"QM_DETAIP975L107_19",
+					"QM_DETAIPAA7P854_17",
+					"QM_DETAIPP9PL461_16",
+					"QM_DETAIT3633573_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_DOCUMENTPRIII_678": {
+			"blis": [
+				"BLI3419_bli_documentsprinting"
+			],
+			"entities": {
+				"EN_ACCOUNTCC_880": [
+				],
+				"EN_ACCOUNTLI_514": [
+				],
+				"EN_AMORTIZAE_932": [
+				],
+				"EN_AMORTIZAG_129": [
+				],
+				"EN_AMORTIZTO_416": [
+				],
+				"EN_AMORTIZTO_619": [
+				],
+				"EN_ANEXDATDO_786": [
+				],
+				"EN_BENEFICIE_901": [
+				],
+				"EN_CARTALITS_857": [
+				],
+				"EN_COMMISSEN_406": [
+				],
+				"EN_CONSENTIC_355": [
+				],
+				"EN_CREDITOCB_250": [
+				],
+				"EN_FINANCIOA_113": [
+				],
+				"EN_GENERALAT_504": [
+				],
+				"EN_LOANCHINR_908": [
+				],
+				"EN_LOANINSTC_482": [
+				],
+				"EN_PRINTINDC_109": [
+					"AT37_DOCUMETS109",
+					"AT40_ITEMHPJR109",
+					"AT42_IDDOCUNS109"
+				],
+				"EN_RECEIPTNN_147": [
+				],
+				"EN_SAVINGDSS_425": [
+				],
+				"EN_SEGUROSQK_316": [
+				],
+				"EN_USERCONTX_432": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CODIGOYTZ_84859",
+				"LBL_ASSTS_DOCUMENSS_30547",
+				"LBL_ASSTS_IMPRIMIRR_18630",
+				"LBL_ASSTS_ITEMCTOAI_47020"
+			],
+			"queries": {
+				"Q_PRINTICM_3105": [
+					"QM_PRINT3CMC3692_01",
+					"QM_PRINT5CMCM428_03",
+					"QM_PRINTIM315633_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_EXTENDSQUOATT_575": {
+			"blis": [
+			],
+			"entities": {
+				"EN_CURRENTQQ_270": [
+					"AT20_STARTDAE270",
+					"AT46_STATETIH270",
+					"AT58_TOTALCKB270",
+					"AT65_ENDDATEE270",
+					"AT76_QUOTAOPG270",
+					"AT81_OTHERSPZ270",
+					"AT87_CAPITALL270",
+					"AT89_INTERETS270"
+				],
+				"EN_EXTENDSTU_507": [
+					"AT14_CAPITALL507",
+					"AT17_STARTDAE507",
+					"AT23_INTERESX507",
+					"AT37_STATENUW507",
+					"AT65_OTHERSEU507",
+					"AT96_ENDDATEE507",
+					"AT96_TOTALVQB507",
+					"AT98_QUOTAEXX507"
+				],
+				"EN_EXTENDSUT_567": [
+					"AT10_NUMBEROQ567",
+					"AT65_MAXIMUTA567",
+					"AT66_DATEEXST567",
+					"AT92_EXPIRADE567"
+				],
+				"EN_LOANINSTC_482": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CAPITALBZ_88457",
+				"LBL_ASSTS_CUOTASPRA_93874",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAINIC_17794",
+				"LBL_ASSTS_FECHAMXPR_21186",
+				"LBL_ASSTS_FECHAPRRR_50144",
+				"LBL_ASSTS_FECHAVENE_91475",
+				"LBL_ASSTS_INTERESWJ_80123",
+				"LBL_ASSTS_NROCUOTAA_13299",
+				"LBL_ASSTS_OTROSRURR_25485",
+				"LBL_ASSTS_PRRROGAER_90410",
+				"LBL_ASSTS_TOTALCUTA_93906"
+			],
+			"queries": {
+				"Q_CURRENAT_2921": [
+					"QM_CURRE1NNN2422_05",
+					"QM_CURRE2T229293_02",
+					"QM_CURRE2T921554_07",
+					"QM_CURRE929N9693_01",
+					"QM_CURRE992TA385_06",
+					"QM_CURRE9TNT2654_03",
+					"QM_CURRET9AAT516_04",
+					"QM_CURRETA291967_01",
+					"QM_EXTEN1122D953_01",
+					"QM_EXTEN21512725_06",
+					"QM_EXTEN2EXEE522_02",
+					"QM_EXTEN2EXXE263_07",
+					"QM_EXTEN33X3D136_01",
+					"QM_EXTEN5322D966_05",
+					"QM_EXTEN55X2X423_04",
+					"QM_EXTEN5EED3653_03"
+				],
+				"Q_EXTENDEX_5312": [
+					"QM_CURRE1NNN2422_05",
+					"QM_CURRE2T229293_02",
+					"QM_CURRE2T921554_07",
+					"QM_CURRE929N9693_01",
+					"QM_CURRE992TA385_06",
+					"QM_CURRE9TNT2654_03",
+					"QM_CURRET9AAT516_04",
+					"QM_CURRETA291967_01",
+					"QM_EXTEN1122D953_01",
+					"QM_EXTEN21512725_06",
+					"QM_EXTEN2EXEE522_02",
+					"QM_EXTEN2EXXE263_07",
+					"QM_EXTEN33X3D136_01",
+					"QM_EXTEN5322D966_05",
+					"QM_EXTEN55X2X423_04",
+					"QM_EXTEN5EED3653_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_GENERALINAOIT_347": {
+			"blis": [
+			],
+			"entities": {
+				"EN_14HHEOYJC_258": [
+					"AT02_1HDFNEOY258",
+					"AT03_2HNZJIAV258",
+					"AT04_3YRVILSE258",
+					"AT05_4QQFLXNV258",
+					"AT06_5ZTXXBWH258",
+					"AT07_6SGMBQVD258",
+					"AT08_7AYQTOGH258"
+				],
+				"EN_GENERALLA_491": [
+					"AT12_COL111GT491",
+					"AT12_COL35KBE491",
+					"AT12_COL92VNG491",
+					"AT13_COL14YAR491",
+					"AT16_COL155HK491",
+					"AT17_COL141JR491",
+					"AT17_COL32HDB491",
+					"AT19_COL150JD491",
+					"AT19_COL38HWX491",
+					"AT20_COL82NGT491",
+					"AT21_COL116HO491",
+					"AT21_COL24EJG491",
+					"AT21_COL88IBT491",
+					"AT23_COL10LXO491",
+					"AT24_COL153SP491",
+					"AT25_COL22KOS491",
+					"AT27_COL25NKL491",
+					"AT28_COL144ZT491",
+					"AT33_COL100VN491",
+					"AT33_COL119UX491",
+					"AT33_COL148YB491",
+					"AT34_COL133BS491",
+					"AT39_COL91TKO491",
+					"AT40_COL140JE491",
+					"AT40_COL156FE491",
+					"AT43_COL17OXH491",
+					"AT47_COL49TNJ491",
+					"AT48_COL160GA491",
+					"AT49_COL18WVS491",
+					"AT52_COL37LWK491",
+					"AT53_COL157YB491",
+					"AT54_COL146EV491",
+					"AT57_COL93JHG491",
+					"AT58_COL103KB491",
+					"AT58_COL136XL491",
+					"AT58_COL46GMH491",
+					"AT59_COL128SQ491",
+					"AT59_COL70KDV491",
+					"AT60_COL138LD491",
+					"AT60_COL96LLF491",
+					"AT61_COL106ME491",
+					"AT61_COL94SBJ491",
+					"AT61_COL97LJP491",
+					"AT62_COL169GW491",
+					"AT63_COL113XA491",
+					"AT65_COL33FWA491",
+					"AT67_COL74PRQ491",
+					"AT68_BALLOOEF491",
+					"AT69_COL102RQ491",
+					"AT69_COL95IYB491",
+					"AT70_COL151DU491",
+					"AT71_COL80KQN491",
+					"AT72_COL112RE491",
+					"AT72_COL159EX491",
+					"AT72_COL170XB491",
+					"AT73_COL4HRES491",
+					"AT74_COL63PUP491",
+					"AT74_COMPANSD491",
+					"AT75_COL158NB491",
+					"AT77_COL28PUD491",
+					"AT77_COL44OEY491",
+					"AT78_COL77PPP491",
+					"AT79_COL16IVN491",
+					"AT80_COL161GW491",
+					"AT80_COL48SAS491",
+					"AT80_COL89RHR491",
+					"AT81_COL137CC491",
+					"AT84_COL139XX491",
+					"AT85_COL54YKS491",
+					"AT86_COL23LXG491",
+					"AT86_COL81WRS491",
+					"AT86_COL83JWS491",
+					"AT87_COL127US491",
+					"AT88_COL11XUV491",
+					"AT88_COL132FM491",
+					"AT88_COL149PC491",
+					"AT88_COL34GWI491",
+					"AT89_COL13AZM491",
+					"AT89_COL3QLEY491",
+					"AT91_COL53MOC491",
+					"AT92_COL154VB491",
+					"AT94_COL134OU491",
+					"AT95_COL98JRI491",
+					"AT96_COL30GNE491",
+					"AT98_COL71XRW491"
+				],
+				"EN_LOANINSTC_482": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ABOGADOOO_21860",
+				"LBL_ASSTS_ACTIVIDDO_51539",
+				"LBL_ASSTS_ADMINISNT_11301",
+				"LBL_ASSTS_AHORROMDD_31177",
+				"LBL_ASSTS_APAGOPQXA_89595",
+				"LBL_ASSTS_BASECLCLU_56377",
+				"LBL_ASSTS_CALCULACT_91300",
+				"LBL_ASSTS_CALIFICET_92262",
+				"LBL_ASSTS_CALIFICNO_68506",
+				"LBL_ASSTS_CATEGORTA_48611",
+				"LBL_ASSTS_CAUSALDLE_65221",
+				"LBL_ASSTS_CICLOSDEE_70012",
+				"LBL_ASSTS_CICLOSDOU_83486",
+				"LBL_ASSTS_CIUDADOWX_60477",
+				"LBL_ASSTS_CLASECAAR_47647",
+				"LBL_ASSTS_COBRANZAA_71245",
+				"LBL_ASSTS_CUOTABALM_92280",
+				"LBL_ASSTS_CUPOCRDTI_19665",
+				"LBL_ASSTS_DAPAGOCVP_50161",
+				"LBL_ASSTS_DASDELAOO_32774",
+				"LBL_ASSTS_DASGRACAA_67492",
+				"LBL_ASSTS_DASMORAAT_28115",
+				"LBL_ASSTS_DASMORATI_28104",
+				"LBL_ASSTS_DESTINOCE_73285",
+				"LBL_ASSTS_DESTINOOI_53871",
+				"LBL_ASSTS_DIFERIDNI_94027",
+				"LBL_ASSTS_DIRECCICG_85645",
+				"LBL_ASSTS_DIRECCIEL_96339",
+				"LBL_ASSTS_EDADLACET_95722",
+				"LBL_ASSTS_EMPRESAND_22329",
+				"LBL_ASSTS_ESTADOCRN_89020",
+				"LBL_ASSTS_EVITARDDA_31627",
+				"LBL_ASSTS_FECHAAPCN_19760",
+				"LBL_ASSTS_FECHACAIT_74724",
+				"LBL_ASSTS_FECHADEOS_48240",
+				"LBL_ASSTS_FECHALTOO_39934",
+				"LBL_ASSTS_FECHALTTT_31717",
+				"LBL_ASSTS_FECHAPRIM_57148",
+				"LBL_ASSTS_FECHAPROG_10804",
+				"LBL_ASSTS_FECHAVECC_96232",
+				"LBL_ASSTS_FINANCITT_72718",
+				"LBL_ASSTS_GARANTIAA_86084",
+				"LBL_ASSTS_GRUPOECCI_16695",
+				"LBL_ASSTS_INACINDOU_54590",
+				"LBL_ASSTS_INACINFEN_59763",
+				"LBL_ASSTS_LLAVEFIRN_58448",
+				"LBL_ASSTS_LNEACRDTO_48406",
+				"LBL_ASSTS_MESGRACAI_83900",
+				"LBL_ASSTS_MONTOAPBD_71203",
+				"LBL_ASSTS_MONTODEOD_23440",
+				"LBL_ASSTS_NMERORENN_52628",
+				"LBL_ASSTS_NMERORERU_53366",
+				"LBL_ASSTS_NODESEMOO_55920",
+				"LBL_ASSTS_NOTRMITEE_74697",
+				"LBL_ASSTS_OPERACIED_32635",
+				"LBL_ASSTS_OPERACINI_16531",
+				"LBL_ASSTS_ORIGENLOR_50930",
+				"LBL_ASSTS_PAGOADIAL_89040",
+				"LBL_ASSTS_PAGOSDEOA_39140",
+				"LBL_ASSTS_PERMITECA_18156",
+				"LBL_ASSTS_PERMITEEE_35071",
+				"LBL_ASSTS_PERMITETT_45382",
+				"LBL_ASSTS_PERODOSAO_51516",
+				"LBL_ASSTS_PERODOSIE_78309",
+				"LBL_ASSTS_PERODOSIL_10161",
+				"LBL_ASSTS_PERODOSIO_78507",
+				"LBL_ASSTS_PERODOSUE_60819",
+				"LBL_ASSTS_PLAZOEZCX_65608",
+				"LBL_ASSTS_PRESIDEGR_31216",
+				"LBL_ASSTS_PRESTAMIA_77621",
+				"LBL_ASSTS_PROGRAMIA_80361",
+				"LBL_ASSTS_PRSTAMOCV_96028",
+				"LBL_ASSTS_REAJUSTAE_35292",
+				"LBL_ASSTS_REAJUSTEE_13520",
+				"LBL_ASSTS_RECALCUAA_80422",
+				"LBL_ASSTS_RECONOCAR_36694",
+				"LBL_ASSTS_REFERENAC_11270",
+				"LBL_ASSTS_REFERENCC_20812",
+				"LBL_ASSTS_RENOVACSE_44398",
+				"LBL_ASSTS_SALDOALCO_75666",
+				"LBL_ASSTS_SALDOALEC_65454",
+				"LBL_ASSTS_SALDOCAAI_86331",
+				"LBL_ASSTS_SALDODIOR_28205",
+				"LBL_ASSTS_SALDOREMO_75006",
+				"LBL_ASSTS_SALDOTOAL_26299",
+				"LBL_ASSTS_SEACEPTAO_97874",
+				"LBL_ASSTS_SITUACINE_16890",
+				"LBL_ASSTS_SOLOPAGCT_38138",
+				"LBL_ASSTS_TABLAAMIO_45588",
+				"LBL_ASSTS_TASACOSEN_92538",
+				"LBL_ASSTS_TELFONOOA_88199",
+				"LBL_ASSTS_TIPOCOBRO_94502",
+				"LBL_ASSTS_TIPOOPERA_18465",
+				"LBL_ASSTS_TIPOTABCZ_61680",
+				"LBL_ASSTS_ULTIMODII_19737",
+				"LBL_ASSTS_VALORTAVS_66035",
+				"LBL_ASSTS_VALORVEOC_61297",
+				"LBL_ASSTS_VALORVEON_28016"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_GENERALINFFHA_866": {
+			"blis": [
+			],
+			"entities": {
+				"EN_SUMMARYAT_170": [
+					"AT16_CAPITALL170",
+					"AT24_INTERERR170",
+					"AT57_TOTALIRN170",
+					"AT64_STATUSOZ170",
+					"AT67_OTHERIMT170"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CAPITALBZ_88457",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_ESTADOPST_41961",
+				"LBL_ASSTS_INTERESWJ_80123",
+				"LBL_ASSTS_OTROSRYRP_40547",
+				"LBL_ASSTS_RESUMENSN_25970",
+				"LBL_ASSTS_TOTALBPNF_51557"
+			],
+			"queries": {
+				"Q_SUMMARST_6100": [
+					"QM_SUMMA00ST6466_02",
+					"QM_SUMMAR0R00535_01",
+					"QM_SUMMASRT6S259_04",
+					"QM_SUMMAT0166411_01",
+					"QM_SUMMATR06R480_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_ITEMSLOANSUXI_712": {
+			"blis": [
+			],
+			"entities": {
+				"EN_OPERATIOE_197": [
+					"AT11_INTEREPS197",
+					"AT15_DESCRIPT197",
+					"AT15_POINTSYY197",
+					"AT16_TABLEOTE197",
+					"AT17_REAJUSPT197",
+					"AT18_PAYMENTH197",
+					"AT19_ITEMTYPE197",
+					"AT24_CHARGENR197",
+					"AT26_CAUSEJWV197",
+					"AT27_BASECAOT197",
+					"AT31_REAJUSNN197",
+					"AT34_SIGNVYDC197",
+					"AT36_LATEPAYN197",
+					"AT45_VALUETEL197",
+					"AT48_DIVIDEYY197",
+					"AT50_REAJUSNN197",
+					"AT52_CONCEPTT197",
+					"AT53_ANNUALFE197",
+					"AT60_WARRANYE197",
+					"AT63_POINTSAU197",
+					"AT65_NEGOTITR197",
+					"AT66_WARRANUY197",
+					"AT67_REFERENE197",
+					"AT69_COVERAEN197",
+					"AT74_WARRANET197",
+					"AT78_PRIORITT197",
+					"AT80_FINANCDE197",
+					"AT80_VALUEIST197",
+					"AT84_GAINLJFX197",
+					"AT88_MINRATEE197",
+					"AT95_MAXRATEE197"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BASECLCLU_56377",
+				"LBL_ASSTS_CAUSAWSDF_28774",
+				"LBL_ASSTS_COBERTUGA_99369",
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_FINANCIAO_40117",
+				"LBL_ASSTS_FPAGORPAW_90895",
+				"LBL_ASSTS_GRACIAVXF_14263",
+				"LBL_ASSTS_NOPERIODT_82606",
+				"LBL_ASSTS_NROGARATA_77976",
+				"LBL_ASSTS_PAGAMORAA_45490",
+				"LBL_ASSTS_PORCOBRRM_45131",
+				"LBL_ASSTS_PRIORIDDD_58504",
+				"LBL_ASSTS_REFERENAI_46054",
+				"LBL_ASSTS_REFERENAI_72258",
+				"LBL_ASSTS_RUBROFKGQ_42963",
+				"LBL_ASSTS_SIGNOREJJ_83381",
+				"LBL_ASSTS_SIGNORIHO_57042",
+				"LBL_ASSTS_TABLAOTSS_47101",
+				"LBL_ASSTS_TASAEFECA_65157",
+				"LBL_ASSTS_TASAMAXLW_11434",
+				"LBL_ASSTS_TASAMINZJ_60465",
+				"LBL_ASSTS_TASANEGCD_62769",
+				"LBL_ASSTS_TIPODIVOE_98503",
+				"LBL_ASSTS_TIPOGARAT_87847",
+				"LBL_ASSTS_TIPOPUNSS_34777",
+				"LBL_ASSTS_TIPORUBRR_96500",
+				"LBL_ASSTS_VALORGANA_72320",
+				"LBL_ASSTS_VALORNPRH_26284",
+				"LBL_ASSTS_VALORPUSN_71021",
+				"LBL_ASSTS_VALORPUSS_38342",
+				"LBL_ASSTS_VALORTAAT_13849"
+			],
+			"queries": {
+				"Q_OPERATNY_7536": [
+					"QM_OPERA3377N339_01",
+					"QM_OPERA337Y5439_10",
+					"QM_OPERA35N55346_16",
+					"QM_OPERA35Y55431_02",
+					"QM_OPERA37NY5680_23",
+					"QM_OPERA37Y7N574_04",
+					"QM_OPERA3NT5Y964_17",
+					"QM_OPERA55763946_28",
+					"QM_OPERA5Y3NN781_01",
+					"QM_OPERA5Y576245_21",
+					"QM_OPERA635N7148_15",
+					"QM_OPERA6536T879_01",
+					"QM_OPERA6N637613_12",
+					"QM_OPERA6NYT3226_26",
+					"QM_OPERA6TN75821_02",
+					"QM_OPERA6TTY7442_24",
+					"QM_OPERA6Y3YY761_08",
+					"QM_OPERA6Y736433_07",
+					"QM_OPERA757TT468_05",
+					"QM_OPERA7T3NT814_22",
+					"QM_OPERAN3N36184_18",
+					"QM_OPERAN5NNN656_03",
+					"QM_OPERAN7635795_20",
+					"QM_OPERAT36NY459_13",
+					"QM_OPERAT37N3272_09",
+					"QM_OPERAT3Y5Y751_06",
+					"QM_OPERAT636T100_27",
+					"QM_OPERATT7Y3238_19",
+					"QM_OPERAYNN5Y332_25",
+					"QM_OPERAYTNN6233_14",
+					"QM_OPERAYY33N639_11"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LEFTOVERPALDD_459": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LEFTOVEAR_480": [
+					"AT39_CURRENYY480",
+					"AT50_NOTEXHBJ480",
+					"AT71_REFERENE480",
+					"AT74_VALUEXWT480",
+					"AT76_PAYMENYY480"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACEPTARDV_64984",
+				"LBL_ASSTS_APAGOPQXA_89595",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_MONTOEMFX_52083",
+				"LBL_ASSTS_OBSERVANN_50010",
+				"LBL_ASSTS_REFERENCC_20812"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRACJAQDUP_527": {
+			"blis": [
+			],
+			"entities": {
+				"EN_GENERALRE_262": [
+				],
+				"EN_PAYMENTLI_612": [
+					"AT49_CLIENTXI612",
+					"AT53_INSTITIN612",
+					"AT68_ACCOUNTT612",
+					"AT76_CLIENTEE612",
+					"AT76_PAYMENOM612",
+					"AT76_PERCENAA612",
+					"AT84_CLIENTNA612"
+				],
+				"EN_PAYMENTOM_408": [
+					"AT10_PAYMENTH408",
+					"AT17_ACCOUNTT408",
+					"AT20_BANCOYYX408",
+					"AT21_CLIENTNN408",
+					"AT34_INSTITNM408",
+					"AT51_PERCENGE408",
+					"AT68_COMMENST408"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APAGOWSUO_22122",
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_CERRARSEA_57663",
+				"LBL_LNSPR_CLIENTEOR_78949",
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_COMENTAOO_63544",
+				"LBL_LNSPR_CUENTASKC_50998",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_INSTITUNC_81989",
+				"LBL_LNSPR_INSTITUNI_53772",
+				"LBL_LNSPR_NOMBRECNI_63306",
+				"LBL_LNSPR_NROCUENAT_39594",
+				"LBL_LNSPR_OPERACINN_33130",
+				"LBL_LNSPR_PORCENTAA_34368",
+				"LBL_LOANS_ROLNDGMQN_51274",
+				"MSG_LNSPR_CAMPOREIQ_59717",
+				"MSG_LNSPR_PORCENT0E_11592"
+			],
+			"queries": {
+				"Q_PAYMANAM_TY74": [
+					"QM_PAYMA44NNT655_02",
+					"QM_PAYMAM7Y74976_10",
+					"QM_PAYMAMNTAA783_08",
+					"QM_PAYMAN47AA647_06",
+					"QM_PAYMANA44T107_03",
+					"QM_PAYMANNM4M221_05",
+					"QM_PAYMAYAMMA662_09"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRASFFUCSU_551": {
+			"blis": [
+			],
+			"entities": {
+				"EN_SUMMARYTU_369": [
+					"AT20_AVAILAEE369",
+					"AT32_CURRENET369",
+					"AT41_DESCMOEN369",
+					"AT49_APPROVED369",
+					"AT85_PRODUCTT369",
+					"AT89_USEDEQPM369"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APROBADOO_26217",
+				"LBL_LNSPR_COTIZMVEW_51468",
+				"LBL_LNSPR_DISPONILE_55740",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_RESUMENSH_39385",
+				"LBL_LOANS_PRODUCTOO_67575",
+				"LBL_LOANS_UTILIZAOO_53309"
+			],
+			"queries": {
+				"Q_SUMMUSYU_GO80": [
+					"QM_SUMMU8O8YO708_06",
+					"QM_SUMMU8S8Y0229_03",
+					"QM_SUMMUOGOYU266_04",
+					"QM_SUMMUSSGSU338_01",
+					"QM_SUMMUYGO80428_07",
+					"QM_SUMMUYGOYO463_05"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRBYPIFLBG_956": {
+			"blis": [
+			],
+			"entities": {
+				"EN_CREATEOEO_LNSPR": [
+				],
+				"EN_CREATEOPN_LNSPR": [
+				],
+				"EN_DEBTORVWG_LNSPR": [
+					"AT21_CODEDVZK667",
+					"AT39_IDNUMBRE667",
+					"AT49_FULLNAME667",
+					"AT62_ROLELICR667"
+				],
+				"EN_GENERICSZ_LNSPR": [
+				],
+				"EN_OPERATINN_LNSPR": [
+					"AT16_AUTHNUMM313",
+					"AT21_CONTRARB313",
+					"AT25_MONEYCFC313",
+					"AT26_SUBFINIG313",
+					"AT27_FACILITY313",
+					"AT28_OFFICEEL313",
+					"AT31_AUTHDAEE313",
+					"AT35_PLAZOGCK313",
+					"AT35_UBICATOO313",
+					"AT37_OFFICIAA313",
+					"AT39_PLAZODSC313",
+					"AT41_STATETES313",
+					"AT42_FIRSTDUU313",
+					"AT42_REGISTOM313",
+					"AT42_TYPEOPNT313",
+					"AT48_CREATINO313",
+					"AT56_CREDITOY313",
+					"AT61_CREDITEE313",
+					"AT63_AMOUNTRE313",
+					"AT63_EXPIRAOE313",
+					"AT65_FINANMAA313",
+					"AT67_AMOUNTZP313",
+					"AT75_DEBTTYPE313",
+					"AT86_REPOSINT313",
+					"AT98_OPERATNO313"
+				],
+				"EN_OPERATIRD_LNSPR": [
+					"AT43_FULLNAEE462",
+					"AT70_CODEFEKA462"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_AREPOSINN_21211",
+				"LBL_LNSPR_CAUSAFIBO_36044",
+				"LBL_LNSPR_CEDULARCU_43901",
+				"LBL_LNSPR_CODFONDER_77959",
+				"LBL_LNSPR_CODIGOPYS_88202",
+				"LBL_LNSPR_DATOSADCO_69155",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FACILITMB_28174",
+				"LBL_LNSPR_FECHA1ETV_13102",
+				"LBL_LNSPR_FECHAAUZN_27676",
+				"LBL_LNSPR_LNEAFINIM_93553",
+				"LBL_LNSPR_MERCADOOV_74755",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOAPOB_87983",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_NMEROCONN_68981",
+				"LBL_LNSPR_NOAUTORIN_87158",
+				"LBL_LNSPR_NOMBREFDN_59796",
+				"LBL_LNSPR_NOREGISRT_17780",
+				"LBL_LNSPR_OFICIALCI_17854",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_OPERACINN_33130",
+				"LBL_LNSPR_PLAZOYJVK_49555",
+				"LBL_LNSPR_TIPOACRER_55798",
+				"LBL_LNSPR_TIPODEUAA_52427",
+				"LBL_LNSPR_TIPOLDSKB_46090",
+				"LBL_LNSPR_TIPOOPERN_51275",
+				"LBL_LNSPR_TIPOPLAOZ_41477",
+				"LBL_LNSPR_UBICACINN_15086",
+				"LBL_LOANS_AADIRWOQO_72396",
+				"LBL_LOANS_CREARGIPQ_98198",
+				"LBL_LOANS_DESCRIPON_29367",
+				"LBL_LOANS_FECHACREN_63456",
+				"LBL_LOANS_FECHAVENI_35637",
+				"LBL_LOANS_NOMBRETPH_86356",
+				"LBL_LOANS_ROLNDGMQN_51274",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+				"Q_DEBTORZN_LNSPR": [
+					"QM_DEBTO207ZN299_01",
+					"QM_DEBTO2NNZ7631_04",
+					"QM_DEBTO77R2R984_02",
+					"QM_DEBTOR2N22863_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRDNBKFOTI_411": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANLISTT_467": [
+					"AT10_NUMPROUE882",
+					"AT16_DESCRIMI467",
+					"AT18_SELECCNO467",
+					"AT21_CLIENTAF467",
+					"AT42_LOANBADK882",
+					"AT49_AMOUNTSI467",
+					"AT52_CLIENTCE467",
+					"AT57_DESOPETI882",
+					"AT74_CURRENYC467",
+					"AT87_STATETNW467"
+				],
+				"EN_LOANSEATF_633": [
+					"AT19_NUMIDEII633",
+					"AT22_TYPEKHLP633",
+					"AT35_ARCHIVOO633",
+					"AT40_DISBURNE633",
+					"AT47_AVANCESH633",
+					"AT56_SELECCTO633",
+					"AT57_CODCURCC633",
+					"AT59_MIGRATOE633",
+					"AT66_NUMPRORC633",
+					"AT74_OFFICEHF633",
+					"AT74_OPERATOO633",
+					"AT89_STATETMJ633"
+				],
+				"EN_MASSIVEKM_279": [
+				],
+				"EN_STATESAEO_310": [
+					"AT64_DESCSTUA310"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_BUSCARKBJ_59373",
+				"LBL_LNSPR_CAMBIOEVD_13994",
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_CRITERIOO_80936",
+				"LBL_LNSPR_ERRORAWHP_83580",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_ESTADONVO_87517",
+				"LBL_LNSPR_ESTADOPEM_54793",
+				"LBL_LNSPR_FECHADEBE_42043",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOPREO_81448",
+				"LBL_LNSPR_NOMBRECNI_63306",
+				"LBL_LNSPR_NUMPRESTO_78484",
+				"LBL_LNSPR_NUMPRSTOO_30963",
+				"LBL_LNSPR_NUMTRAMEE_83198",
+				"LBL_LNSPR_NUMTRMITE_20261",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_PROCESARR_13459",
+				"LBL_LNSPR_PRSTAMOIO_81821",
+				"LBL_LNSPR_SELECCIER_50249",
+				"LBL_LNSPR_TIPOOPERN_51275",
+				"LBL_LNSPR_TIPOPREMM_37747",
+				"LBL_LOANS_CARGARAVO_29365",
+				"LBL_LOANS_FECHAVENI_35637",
+				"LBL_LOANS_LIMPIARVF_75606",
+				"LBL_LOANS_SELECCIOE_40160",
+				"MSG_LNSPR_CAMPOREIQ_59717"
+			],
+			"queries": {
+				"Q_LOANSILT_NX50": [
+					"",
+					"",
+					"QM_LOANS0TTX5233_13",
+					"QM_LOANSII0II346_03",
+					"QM_LOANSIXLI5940_03",
+					"QM_LOANSIXTIN559_04",
+					"QM_LOANST0XN0819_01",
+					"QM_LOANSTT5NT589_03",
+					"QM_LOANSX5N5N774_15",
+					"QM_LOANSX5XLI523_05",
+					"QM_LOANSXLXIT321_03",
+					"QM_LOANSXTXNT242_02",
+					"QM_STATS2LAT2328_02",
+					"QM_STATSLMTTL999_01",
+					"QM_STATSS5SSL767_01",
+					"QM_STATST1LST858_02"
+				],
+				"Q_STATSTSS_LA52": [
+					"QM_STATS2LAT2328_02",
+					"QM_STATSS5SSL767_01"
+				],
+				"Q_STATSTTL_MS41": [
+					"QM_STATSLMTTL999_01",
+					"QM_STATST1LST858_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRDTSDFSKQ_539": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZAI_LNSPR": [
+				],
+				"EN_AMORTIZON_LNSPR": [
+				],
+				"EN_AMORTIZTT_LNSPR": [
+				],
+				"EN_CREATEOEO_LNSPR": [
+				],
+				"EN_CREATEOPN_LNSPR": [
+				],
+				"EN_CUSTOMERR_876": [
+				],
+				"EN_DEBTORVWG_LNSPR": [
+					"AT21_CODEDVZK667",
+					"AT39_IDNUMBRE667",
+					"AT49_FULLNAME667",
+					"AT54_TYPERPDV667",
+					"AT60_DESCRION667",
+					"AT62_ROLELICR667",
+					"AT81_SCORELPY667"
+				],
+				"EN_GENERALRE_262": [
+				],
+				"EN_GENERICSZ_LNSPR": [
+				],
+				"EN_OPERATINN_LNSPR": [
+					"AT25_MONEYCFC313",
+					"AT28_OFFICEEL313",
+					"AT32_FINANCIO313",
+					"AT35_PLAZOGCK313",
+					"AT35_UBICATOO313",
+					"AT37_OFFICIAA313",
+					"AT39_PLAZODSC313",
+					"AT41_STATETES313",
+					"AT42_FIRSTDUU313",
+					"AT42_TYPEOPNT313",
+					"AT48_CREATINO313",
+					"AT61_CREDITEE313",
+					"AT63_AMOUNTRE313",
+					"AT63_EXPIRAOE313",
+					"AT67_AMOUNTZP313",
+					"AT89_ECONOMIA313",
+					"AT89_SYNDICEESPR",
+					"AT95_TYPESYNDSPR",
+					"AT98_OPERATNO313"
+				],
+				"EN_OPERATIRD_LNSPR": [
+					"AT12_ROLENXSZ462",
+					"AT43_FULLNAEE462",
+					"AT70_CODEFEKA462"
+				],
+				"EN_SYNDICASL_725": [
+					"AT20_PERCENCA725",
+					"AT22_CODPARCA725",
+					"AT75_ROLEPSHP725",
+					"AT76_AMOUNTAT725",
+					"AT82_NAMEPAIA725",
+					"AT98_MAILJAZJ725"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CALIFICIO_82060",
+				"LBL_LNSPR_CEDULARUU_47659",
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_CODIGOPYS_88202",
+				"LBL_LNSPR_CODPARTPN_76216",
+				"LBL_LNSPR_CORREOHMW_60459",
+				"LBL_LNSPR_DESCRIPIN_18186",
+				"LBL_LNSPR_DESTINOFC_88919",
+				"LBL_LNSPR_DESTINONN_50314",
+				"LBL_LNSPR_DEUDORPRP_47896",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHA1ETV_13102",
+				"LBL_LNSPR_LNEACRDOI_38962",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOAPOB_87983",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_MONTOPATT_30192",
+				"LBL_LNSPR_NOMBRECNI_63306",
+				"LBL_LNSPR_OFICIALCI_17854",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_OPERACINN_33130",
+				"LBL_LNSPR_PARTGBUSR_65411",
+				"LBL_LNSPR_PLAZOYJVK_49555",
+				"LBL_LNSPR_SINDICADO_26170",
+				"LBL_LNSPR_TIPOLDSKB_46090",
+				"LBL_LNSPR_TIPOOPERN_51275",
+				"LBL_LNSPR_TIPOPLAOZ_41477",
+				"LBL_LNSPR_TIPOSINCI_73214",
+				"LBL_LNSPR_UBICACINN_15086",
+				"LBL_LOANS_AADIRWOQO_72396",
+				"LBL_LOANS_CREARGIPQ_98198",
+				"LBL_LOANS_FECHACREN_63456",
+				"LBL_LOANS_FECHAVENI_35637",
+				"LBL_LOANS_NOMBRETPH_86356",
+				"LBL_LOANS_ROLNDGMQN_51274",
+				"MSG_LNSPR_CAMPOREIQ_59717",
+				"MSG_LNSPR_CANTIDARO_19894",
+				"MSG_LNSPR_MONTOAPUB_34754",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+				"Q_DEBTORZN_LNSPR": [
+					"QM_DEBTO207ZN299_01",
+					"QM_DEBTO22077314_06",
+					"QM_DEBTO2NNZ7631_04",
+					"QM_DEBTO77R2R984_02",
+					"QM_DEBTO7NZR0422_07",
+					"QM_DEBTOR2N22863_03",
+					"QM_DEBTORR2N2153_05",
+					"QM_SYNDA2XWCX751_01",
+					"QM_SYNDACCTT9403_03",
+					"QM_SYNDACTWCW120_04",
+					"QM_SYNDACWT2C449_02",
+					"QM_SYNDAX2TXX897_05",
+					"QM_SYNDAX9XW2426_06"
+				],
+				"Q_SYNDATCT_WX29": [
+					"QM_DEBTO207ZN299_01",
+					"QM_DEBTO22077314_06",
+					"QM_DEBTO2NNZ7631_04",
+					"QM_DEBTO77R2R984_02",
+					"QM_DEBTO7NZR0422_07",
+					"QM_DEBTOR2N22863_03",
+					"QM_DEBTORR2N2153_05",
+					"QM_SYNDA2XWCX751_01",
+					"QM_SYNDACCTT9403_03",
+					"QM_SYNDACTWCW120_04",
+					"QM_SYNDACWT2C449_02",
+					"QM_SYNDAX2TXX897_05",
+					"QM_SYNDAX9XW2426_06"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPREHKSWWGN_923": {
+			"blis": [
+			],
+			"entities": {
+				"EN_SUMMARYBB_620": [
+					"AT21_NAMEMEBB620",
+					"AT32_DESMONEE620",
+					"AT39_APPROVED620",
+					"AT41_USEDYNUD620",
+					"AT90_AVAILALE620",
+					"AT96_QUOTEWFC620"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APROBADOO_26217",
+				"LBL_LNSPR_COTIZMVEW_51468",
+				"LBL_LNSPR_DISPONILE_55740",
+				"LBL_LNSPR_MIEMBROWH_34553",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LOANS_UTILIZAOO_53309"
+			],
+			"queries": {
+				"Q_SUMMESYE_DM68": [
+					"QM_SUMMED66S6351_04",
+					"QM_SUMMEDY8M8365_03",
+					"QM_SUMMEDYSDY559_02",
+					"QM_SUMMEE88ED171_05",
+					"QM_SUMMES88DE788_06",
+					"QM_SUMMESY8SD580_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRFYCKEVVP_737": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANSLIES_LNSPR": [
+					"AT29_MONEDAKQ185",
+					"AT40_NUMPRETT185",
+					"AT42_ESTADOBV185",
+					"AT50_CRITEROO185",
+					"AT53_DATEINII185",
+					"AT61_NATURAZL185",
+					"AT62_DATEVTOO185",
+					"AT68_CLIENTSE185",
+					"AT78_NUMLINEA185",
+					"AT92_NUMTRAIE185",
+					"AT95_OFICINAA185"
+				],
+				"EN_LOANSLIST_205": [
+					"AT18_AMOUNTHU205",
+					"AT31_NATUREZZ205",
+					"AT35_SEQUENLI205",
+					"AT36_NAMECLIE205",
+					"AT39_NAMEGRPO205",
+					"AT65_OFFICECC205",
+					"AT96_LINECODD205",
+					"AT99_COINDECC205"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_BSQUEDAME_20219",
+				"LBL_LNSPR_BUSCARKBJ_59373",
+				"LBL_LNSPR_CLIENTEPO_59022",
+				"LBL_LNSPR_CRITERIOO_80936",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAINII_43454",
+				"LBL_LNSPR_GRUPOOBAY_84995",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_NATURALZA_90237",
+				"LBL_LNSPR_NUMLINEAA_10714",
+				"LBL_LNSPR_NUMLNEABW_84697",
+				"LBL_LNSPR_NUMPRSTOO_30963",
+				"LBL_LNSPR_NUMTRMITE_20261",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_SECUENCAI_74208",
+				"LBL_LOANS_CLIENTEQM_27248",
+				"LBL_LOANS_FECHAVENI_35637",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+				"Q_LOANSISS_EV86": [
+					"",
+					"",
+					"QM_LOANS6S8IS590_02",
+					"QM_LOANS886VI870_07",
+					"QM_LOANS8ESSS405_05",
+					"QM_LOANS8IESS884_04",
+					"QM_LOANSEIV86915_01",
+					"QM_LOANSIS868604_06",
+					"QM_LOANSSESE8152_03",
+					"QM_LOANSVV8ES293_08"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRGNPCEXYE_633": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZAI_LNSPR": [
+				],
+				"EN_AMORTIZON_LNSPR": [
+					"AT10_BASEINTE802",
+					"AT10_MONTHGAR802",
+					"AT12_SOLIDATR802",
+					"AT12_TYPEGRAC802",
+					"AT13_GENERAUN802",
+					"AT15_BALLONEFSPR",
+					"AT20_AMOUNTNS802",
+					"AT20_TERMGRAT802",
+					"AT24_AVOIDHSA802",
+					"AT29_INITIATE802",
+					"AT29_OPERATEN802",
+					"AT30_FEEMOIOG802",
+					"AT33_FIXEDPAA802",
+					"AT35_GRACEDNNSPR",
+					"AT35_IVABYWSY802",
+					"AT39_DAYSGRET802",
+					"AT43_TIRFEEVYSPR",
+					"AT43_VALUEDTT802",
+					"AT47_NUMOPENA802",
+					"AT50_FIRSTDTUSPR",
+					"AT50_RANDOMEC802",
+					"AT53_EXTENDPT802",
+					"AT56_TERMGRSE802",
+					"AT60_INTERETS802",
+					"AT63_TYPEAMRA802",
+					"AT66_REDISCTN802",
+					"AT72_TERMCATA802",
+					"AT76_TYPEFEEE802",
+					"AT88_TERMTYEE802",
+					"AT89_PAYMENYT802",
+					"AT91_TERMINEE802",
+					"AT98_TERMVNJO802"
+				],
+				"EN_AMORTIZRM_749": [
+				],
+				"EN_AMORTIZTT_LNSPR": [
+					"AT14_DYNAMI5F379",
+					"AT14_DYNAMIFE379",
+					"AT23_FEEYPGIU379",
+					"AT25_DYNAMIFL379",
+					"AT27_DYNAMI1E379",
+					"AT38_DYNAMIEI379",
+					"AT40_DYNAMID1379",
+					"AT47_DYNAMIFF379",
+					"AT48_DYNAMIE4379",
+					"AT49_DYNAMIE3379",
+					"AT49_DYNAMIIL379",
+					"AT51_DYNAMIFC379",
+					"AT55_EXPIRAEE379",
+					"AT57_DYNAMIFE379",
+					"AT58_DYNAMIC6379",
+					"AT62_BALANCLI379",
+					"AT66_DYNAMICL379",
+					"AT66_DYNAMIIE379",
+					"AT78_DYNAMIDC379",
+					"AT80_DIVIDEND379",
+					"AT80_DYNAMI6C379",
+					"AT89_DYNAMI21379",
+					"AT94_DYNAMIFL379",
+					"AT96_DYNAMIII379"
+				],
+				"EN_CREATEOPN_LNSPR": [
+				],
+				"EN_GENERALRE_262": [
+				],
+				"EN_GENERICSZ_LNSPR": [
+				],
+				"EN_ITEMDNXXM_LNSPR": [
+				],
+				"EN_OPERATINN_LNSPR": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_ACOBROGRR_70469",
+				"LBL_LNSPR_CUOTABAON_17343",
+				"LBL_LNSPR_EVITARDAR_30713",
+				"LBL_LNSPR_FECHA1ENI_10027",
+				"LBL_LNSPR_FECHAVALR_40841",
+				"LBL_LNSPR_IMPRIMIRR_54076",
+				"LBL_LNSPR_NUMDIVARD_99309",
+				"LBL_LNSPR_PLAZOYJVK_49555",
+				"LBL_LNSPR_TASAIVAAE_29597",
+				"LBL_LNSPR_TASATOTAA_19550",
+				"LBL_LNSPR_TIPOAMOCN_60024",
+				"LBL_LNSPR_TIPOOPERN_51275",
+				"LBL_LNSPR_TIPOPLAOZ_41477",
+				"LBL_LNSPR_TIRJAFJMF_82035",
+				"LBL_LOANS_ADICIONAA_20544",
+				"LBL_LOANS_BASECLCOO_88666",
+				"LBL_LOANS_CALCULARR_36878",
+				"LBL_LOANS_CUOTAINTL_31668",
+				"LBL_LOANS_CUOTAQUGL_10106",
+				"LBL_LOANS_DAPAGOUDL_21888",
+				"LBL_LOANS_DASGRACAM_55117",
+				"LBL_LOANS_DIVIDENOO_68814",
+				"LBL_LOANS_FECHAPADE_78424",
+				"LBL_LOANS_FECHAPAGJ_50615",
+				"LBL_LOANS_FECHARENO_30734",
+				"LBL_LOANS_GENERARSE_14617",
+				"LBL_LOANS_GRACIAYDM_14967",
+				"LBL_LOANS_GUARDARRY_43346",
+				"LBL_LOANS_IMPRIMISS_89532",
+				"LBL_LOANS_MESGRACII_45853",
+				"LBL_LOANS_MONTOPEGS_72415",
+				"LBL_LOANS_NUMOPERCA_22664",
+				"LBL_LOANS_PAGOLEYID_82535",
+				"LBL_LOANS_PCAPMXIYV_12380",
+				"LBL_LOANS_PERGRACIA_37297",
+				"LBL_LOANS_PERGRACIS_30530",
+				"LBL_LOANS_PINTLRXZD_97383",
+				"LBL_LOANS_RECALCUAR_13089",
+				"LBL_LOANS_SALDOCAPP_21556",
+				"LBL_LOANS_TIPOCUOTT_42607",
+				"LBL_LOANS_VENCIMINO_55304",
+				"MSG_LOANS_ESTECAMAE_46076"
+			],
+			"queries": {
+				"Q_AMORTITI_LNSPR": [
+					"QM_AMORT39T83853_09",
+					"QM_AMORT66IT8206_06",
+					"QM_AMORT66TT6183_17",
+					"QM_AMORT6I3I6763_01",
+					"QM_AMORT6I6I6210_18",
+					"QM_AMORT6I96I909_07",
+					"QM_AMORT6IT88223_08",
+					"QM_AMORT86TI9608_01",
+					"QM_AMORT8939I368_02",
+					"QM_AMORT8I6I8188_12",
+					"QM_AMORT8I9I9430_19",
+					"QM_AMORT93633148_16",
+					"QM_AMORT999I6811_15",
+					"QM_AMORT9II38132_10",
+					"QM_AMORT9T669985_05",
+					"QM_AMORTI3683902_14",
+					"QM_AMORTI3988343_03",
+					"QM_AMORTI3I8T859_20",
+					"QM_AMORTII3II478_13",
+					"QM_AMORTII8I9253_04",
+					"QM_AMORTITIII500_02",
+					"QM_AMORTT39T6751_21",
+					"QM_AMORTT9I6I184_03",
+					"QM_AMORTTT93I286_11"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRHWGYLNWJ_330": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZAI_LNSPR": [
+				],
+				"EN_AMORTIZON_LNSPR": [
+				],
+				"EN_AMORTIZTT_LNSPR": [
+				],
+				"EN_GENERALRE_262": [
+				],
+				"EN_GENERICSZ_LNSPR": [
+				],
+				"EN_OPERATINN_LNSPR": [
+				],
+				"EN_OPERATITT_499": [
+					"AT15_ASSOCIEL499",
+					"AT21_CALCULAE499",
+					"AT28_FINANCDE499",
+					"AT34_PAYMENMD499",
+					"AT40_SIGNOGVF499",
+					"AT49_MAXRATEE499",
+					"AT59_REFERENE499",
+					"AT62_RANKPWTK499",
+					"AT67_FACTORYT499",
+					"AT71_INSURACE499",
+					"AT74_MINRATEE499",
+					"AT74_SIGNREDE499",
+					"AT77_ASSOCIAE499",
+					"AT79_FACTORJJ499",
+					"AT86_PERCENTE499",
+					"AT87_AMOUNTAL499",
+					"AT89_DESCRITN499",
+					"AT90_INSURAPP499",
+					"AT93_TYPEITME499",
+					"AT98_ITEMPYPK499",
+					"AT99_PRIORIYT499",
+					"AT99_REFERECJ499"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APAGOWSUO_22122",
+				"LBL_LNSPR_ASEGURADA_82404",
+				"LBL_LNSPR_BASECALCL_35805",
+				"LBL_LNSPR_DESCRIPIN_18186",
+				"LBL_LNSPR_FACTORHYG_27995",
+				"LBL_LNSPR_FACTORRAJ_67007",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_RANGOFPVC_28025",
+				"LBL_LNSPR_REFASOCAA_43339",
+				"LBL_LNSPR_REFERENIC_88346",
+				"LBL_LNSPR_REFREAJSU_20053",
+				"LBL_LNSPR_RUBROFBVM_52414",
+				"LBL_LNSPR_SIGNODWUU_39563",
+				"LBL_LNSPR_SIGNORETA_58140",
+				"LBL_LNSPR_TASAMAXGS_82810",
+				"LBL_LNSPR_TASAMINCJ_91660",
+				"LBL_LNSPR_TIPOLDSKB_46090",
+				"LBL_LNSPR_TIPOSEGOO_23233",
+				"LBL_LNSPR_VALORAOIJ_74397",
+				"LBL_LNSPR_VALORREFO_81387",
+				"LBL_LOANS_FINANCIAD_42980",
+				"LBL_LOANS_PRIORIDAA_88318",
+				"LBL_LOANS_TASAKBVNZ_56174",
+				"MSG_LNSPR_VALORINTO_98795"
+			],
+			"queries": {
+				"Q_OPERLSST_KU21": [
+					"QM_OPERL12T12619_09",
+					"QM_OPERL1SKST506_01",
+					"QM_OPERL2TSTU421_01",
+					"QM_OPERLK221U199_01",
+					"QM_OPERLS2T2K515_01",
+					"QM_OPERLS2USS180_02",
+					"QM_OPERLSKS2S474_01",
+					"QM_OPERLSST22144_20",
+					"QM_OPERLSSUTU353_02",
+					"QM_OPERLST12S915_02",
+					"QM_OPERLST1S2564_10",
+					"QM_OPERLST1SS982_01",
+					"QM_OPERLSTKKK778_01",
+					"QM_OPERLSTSSS376_01",
+					"QM_OPERLT2K1U655_05",
+					"QM_OPERLTSKKK751_02",
+					"QM_OPERLTSUUK922_02",
+					"QM_OPERLTTSSK838_16",
+					"QM_OPERLU1S1K958_03",
+					"QM_OPERLU1TKS273_06",
+					"QM_OPERLUS1ST151_18",
+					"QM_OPERLUUT21412_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRHZIKGUNT_664": {
+			"blis": [
+			],
+			"entities": {
+				"EN_CATALOGIS_LNSPR": [
+					"AT13_CODEHYBM376",
+					"AT46_VALUE1YF376",
+					"AT51_VALUE2LK376"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_NOMBRECNI_63306",
+				"LBL_LOANS_CUENTAORO_42946"
+			],
+			"queries": {
+				"Q_CATALGSE_LNSPR": [
+					"QM_CATAL55OE2756_02",
+					"QM_CATAL5TT2E913_01",
+					"QM_CATALGGSTS891_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRIIYONZUA_572": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANSALAD_395": [
+					"AT25_ERRORDIT395",
+					"AT34_ERRORWCZ395",
+					"AT43_DATESAEL395",
+					"AT53_STATEQXU395",
+					"AT82_OPERATOO395"
+				],
+				"EN_LOANSALDH_189": [
+					"AT11_SEQUENAL189",
+					"AT17_COMPANYY189",
+					"AT27_DATENBMJ189",
+					"AT33_ERRORMKH189",
+					"AT45_USERCCHU189",
+					"AT54_STATESLK189"
+				],
+				"EN_LOANSALRE_860": [
+					"AT15_ARCHIVEE860",
+					"AT28_COMPANYY860"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_ARCHIVOCI_89407",
+				"LBL_LNSPR_BUSCARKBJ_59373",
+				"LBL_LNSPR_DESCRIPNC_75776",
+				"LBL_LNSPR_EMPRESAJZ_94816",
+				"LBL_LNSPR_ERRORAWHP_83580",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAIWCD_53719",
+				"LBL_LNSPR_FECHAVETA_87721",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_OPERACINN_33130",
+				"LBL_LNSPR_PROCESARR_13459",
+				"LBL_LNSPR_SECUENCAI_74208",
+				"LBL_LNSPR_TIPOARCXX_95214",
+				"LBL_LNSPR_USUARIOBC_38458",
+				"LBL_LNSPR_VENTACAET_55114",
+				"LBL_LOANS_CARGARAVO_29365",
+				"LBL_LOANS_LIMPIARVF_75606",
+				"MSG_LNSPR_CAMPOREIQ_59717"
+			],
+			"queries": {
+				"Q_LOANAELE_GZ51": [
+					"",
+					"",
+					"",
+					"",
+					"QM_LOANA11Z5E513_05",
+					"QM_LOANA1ZLEG961_02",
+					"QM_LOANAEELZL913_04",
+					"QM_LOANAEG1G5451_03",
+					"QM_LOANAGEZ1E866_01",
+					"QM_LOANALZGEG653_01"
+				],
+				"Q_LOANELLL_AR48": [
+					"",
+					"",
+					"QM_LOANA11Z5E513_05",
+					"QM_LOANA1ZLEG961_02",
+					"QM_LOANAEELZL913_04",
+					"QM_LOANAEG1G5451_03",
+					"QM_LOANAGEZ1E866_01",
+					"QM_LOANALZGEG653_01",
+					"QM_LOANE8LLRR725_02",
+					"QM_LOANEL4A8R246_05",
+					"QM_LOANELLLLL757_06",
+					"QM_LOANELLRL8182_01",
+					"QM_LOANERARLL601_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRJXWYQVOK_830": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZAI_LNSPR": [
+				],
+				"EN_AMORTIZON_LNSPR": [
+				],
+				"EN_AMORTIZTT_LNSPR": [
+				],
+				"EN_GENERALRE_262": [
+				],
+				"EN_GENERICSZ_LNSPR": [
+				],
+				"EN_ITEMVALSE_995": [
+				],
+				"EN_OPERATINN_LNSPR": [
+				],
+				"EN_OPERATITT_499": [
+					"AT15_ASSOCIEL499",
+					"AT21_CALCULAE499",
+					"AT28_FINANCDE499",
+					"AT34_PAYMENMD499",
+					"AT40_SIGNOGVF499",
+					"AT49_MAXRATEE499",
+					"AT59_REFERENE499",
+					"AT62_RANKPWTK499",
+					"AT67_FACTORYT499",
+					"AT71_INSURACE499",
+					"AT74_MINRATEE499",
+					"AT74_SIGNREDE499",
+					"AT77_ASSOCIAE499",
+					"AT79_FACTORJJ499",
+					"AT86_PERCENTE499",
+					"AT87_AMOUNTAL499",
+					"AT89_DESCRITN499",
+					"AT90_INSURAPP499",
+					"AT93_TYPEITME499",
+					"AT98_ITEMPYPK499",
+					"AT99_PRIORIYT499",
+					"AT99_REFERECJ499"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APAGOWSUO_22122",
+				"LBL_LNSPR_ASEGURADA_82404",
+				"LBL_LNSPR_BASECLCLU_56377",
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_DESCRIPNC_75776",
+				"LBL_LNSPR_FACTORHYG_27995",
+				"LBL_LNSPR_FACTORRAJ_67007",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_MNIMALJCZ_69933",
+				"LBL_LNSPR_MXIMAVCSS_98881",
+				"LBL_LNSPR_REFASOCAA_43339",
+				"LBL_LNSPR_REFERENIC_88346",
+				"LBL_LNSPR_REFREAJSU_20053",
+				"LBL_LNSPR_RUBROFBVM_52414",
+				"LBL_LNSPR_SIGNODWUU_39563",
+				"LBL_LNSPR_SIGNORETA_58140",
+				"LBL_LNSPR_SUBSIDIAO_46775",
+				"LBL_LNSPR_TIPOLDSKB_46090",
+				"LBL_LNSPR_TIPOSEGOO_23233",
+				"LBL_LNSPR_VALORAOIJ_74397",
+				"LBL_LNSPR_VALORREFO_81387",
+				"LBL_LOANS_FINANCIAD_42980",
+				"LBL_LOANS_PRIORIDAA_88318",
+				"LBL_LOANS_TASAKBVNZ_56174",
+				"MSG_LNSPR_CAMPOREIQ_59717",
+				"MSG_LNSPR_VALORINTO_98795"
+			],
+			"queries": {
+				"Q_CONCPPTM_GI69": [
+					"QM_CONCPGI69G923_01",
+					"QM_CONCPT96IM775_02"
+				],
+				"Q_RATEGLSL_WM41": [
+					"QM_RATEG1L4WL543_01",
+					"QM_RATEG44WSM509_03"
+				],
+				"Q_REFEEAML_BR93": [
+					"QM_REFEE3AM3R706_02",
+					"QM_REFEE3AM3R706_02",
+					"QM_REFEEB9MM3507_01",
+					"QM_REFEEB9MM3507_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRKEGMFGIE_785": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZON_LNSPR": [
+				],
+				"EN_GENERALRE_262": [
+					"AT12_BENEFIIT262",
+					"AT20_RESTRUCR262",
+					"AT23_KINDPAEY262",
+					"AT25_READJUTB262",
+					"AT44_BENEFIRE262",
+					"AT46_PAYFULEE262",
+					"AT47_METHODNM262",
+					"AT49_PERIODIY262",
+					"AT58_ALLOWSNR262",
+					"AT58_INTEREMP262",
+					"AT72_ACCEPTAD262",
+					"AT78_TYPEPATT262",
+					"AT86_CASHPASS262"
+				],
+				"EN_GENERICSZ_LNSPR": [
+				],
+				"EN_OPERATINN_LNSPR": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APAGOVQRF_51833",
+				"LBL_LNSPR_BENEFICSI_57450",
+				"LBL_LNSPR_ESTABLEEE_58254",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_PERMITEGA_17261",
+				"LBL_LNSPR_PERMITERR_47180",
+				"LBL_LNSPR_PERODOREU_60621",
+				"LBL_LNSPR_SEACEPTPD_46652",
+				"LBL_LNSPR_SOLOPAGPE_90120",
+				"LBL_LNSPR_TASABASEC_16082",
+				"LBL_LOANS_PERMITEAE_24309",
+				"LBL_LOANS_REAJUSTBB_76643"
+			],
+			"queries": {
+				"Q_APAGOOOO_YV30": [
+					"QM_APAGOV3Y3Y859_04",
+					"QM_APAGOYVV0O277_06"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRKWSPLJPI_575": {
+			"blis": [
+			],
+			"entities": {
+				"EN_INGOTRCSA_LNSPR": [
+					"AT46_DIVFINAA824",
+					"AT57_CONCEPTO824",
+					"AT67_VALORAAB824",
+					"AT70_BASECATL824",
+					"AT70_CURRENYY824",
+					"AT93_DIVINIAI824",
+					"AT94_REFEREAA824"
+				],
+				"EN_MASSIVEKM_279": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_BASECLCLU_56377",
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_COMENTAOO_63544",
+				"LBL_LNSPR_CONCEPTOO_29972",
+				"LBL_LNSPR_CUOTADESD_67554",
+				"LBL_LNSPR_CUOTAHAAS_11841",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_PROCESARR_13459",
+				"LBL_LNSPR_VALORGGEY_80898",
+				"MSG_LNSPR_CAMPOREIQ_59717",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRMFFWJGJE_921": {
+			"blis": [
+			],
+			"entities": {
+				"EN_ERRORMASI_217": [
+				],
+				"EN_LOANLISTT_467": [
+					"AT10_NUMPROUE882",
+					"AT16_DESCRIMI467",
+					"AT18_SELECCNO467",
+					"AT21_CLIENTAF467",
+					"AT42_LOANBADK882",
+					"AT49_AMOUNTSI467",
+					"AT52_CLIENTCE467",
+					"AT57_DESOPETI882",
+					"AT59_EXPIRAAO467",
+					"AT74_CURRENYC467",
+					"AT78_DISBURTE467",
+					"AT87_STATETNW467"
+				],
+				"EN_LOANSEATF_633": [
+					"AT10_CONDITON633",
+					"AT19_NUMIDEII633",
+					"AT22_TYPEKHLP633",
+					"AT35_ARCHIVOO633",
+					"AT40_DISBURNE633",
+					"AT47_AVANCESH633",
+					"AT56_SELECCTO633",
+					"AT57_CODCURCC633",
+					"AT59_MIGRATOE633",
+					"AT66_NUMPRORC633",
+					"AT74_OFFICEHF633",
+					"AT74_OPERATOO633",
+					"AT88_NEXTREAA750",
+					"AT89_STATETMJ633"
+				],
+				"EN_MASSIVECC_834": [
+					"AT22_MISTAKEE834",
+					"AT29_AMOUNTPP834",
+					"AT35_HEADINGG834",
+					"AT35_OPERATON834",
+					"AT64_CURRENYC834",
+					"AT65_DESCRITN834"
+				],
+				"EN_MASSIVEKM_279": [
+				],
+				"EN_MASSIVEYM_999": [
+					"AT18_VALUEPAY999",
+					"AT26_NUMBERCO999",
+					"AT44_CURRENTE999",
+					"AT53_CUSTOMEN999",
+					"AT74_PAYMENTT999",
+					"AT79_ERRORLYM999",
+					"AT82_DESCRIPN999",
+					"AT90_DATEPATY999",
+					"AT93_NUMBREBA999"
+				],
+				"EN_MODALREEA_674": [
+				],
+				"EN_READJUSNN_654": [
+					"AT10_REFERENE654",
+					"AT11_PERCENET654",
+					"AT16_SPECIALD654",
+					"AT52_FACTORSS654",
+					"AT63_SIGNOOWS654",
+					"AT72_OPERATOI654",
+					"AT73_READJDTT654",
+					"AT79_CLIENTDT654",
+					"AT79_SELECCNN654"
+				],
+				"EN_READJUSTC_965": [
+				],
+				"EN_READJUSTE_859": [
+					"AT13_ITEMMXXD859",
+					"AT18_TASAMINN859",
+					"AT32_REFEREEN859",
+					"AT37_READJUET859",
+					"AT39_FACTOROA859",
+					"AT58_MANTIETO859",
+					"AT62_SIGNVLWP859",
+					"AT99_PERCENEE859"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APAGOVQRF_51833",
+				"LBL_LNSPR_BSQUEDASS_55923",
+				"LBL_LNSPR_BUSCARKBJ_59373",
+				"LBL_LNSPR_BUSCARYEV_82731",
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_CATEGORAA_59396",
+				"LBL_LNSPR_CLIENTEOR_78949",
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_CODIGOCEN_52038",
+				"LBL_LNSPR_CODMONEDD_59972",
+				"LBL_LNSPR_COMENTAOO_63544",
+				"LBL_LNSPR_CONCEPTOO_29972",
+				"LBL_LNSPR_CRITERIBS_16700",
+				"LBL_LNSPR_CRITERIOO_80936",
+				"LBL_LNSPR_DATOSRESA_30161",
+				"LBL_LNSPR_DESCRIPNC_75776",
+				"LBL_LNSPR_ERRORJGSK_63293",
+				"LBL_LNSPR_ESPECIALL_51217",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_ESTADOPEM_54793",
+				"LBL_LNSPR_FACTORHYG_27995",
+				"LBL_LNSPR_FACTORJPF_54491",
+				"LBL_LNSPR_FECHADEBE_42043",
+				"LBL_LNSPR_FECHAIWCD_53719",
+				"LBL_LNSPR_FECHAPAGG_27345",
+				"LBL_LNSPR_FECHAVENE_58948",
+				"LBL_LNSPR_GRUPOOBAY_84995",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_MANTIENTA_73559",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONEDATUB_92849",
+				"LBL_LNSPR_MONTOPREO_81448",
+				"LBL_LNSPR_NOCUENTAA_41516",
+				"LBL_LNSPR_NOMBRECNI_63306",
+				"LBL_LNSPR_NUMPRESTO_78484",
+				"LBL_LNSPR_NUMPRSTOO_83774",
+				"LBL_LNSPR_NUMTRAMEE_83198",
+				"LBL_LNSPR_NUMTRMITE_20261",
+				"LBL_LNSPR_OFICINAHX_44623",
+				"LBL_LNSPR_PORCENTAA_34368",
+				"LBL_LNSPR_PORCENTEA_34636",
+				"LBL_LNSPR_PROCESARR_13459",
+				"LBL_LNSPR_PRSTAMOIO_81821",
+				"LBL_LNSPR_PRXIMORTU_38940",
+				"LBL_LNSPR_REAJUSTAL_89572",
+				"LBL_LNSPR_REAJUSTSA_64030",
+				"LBL_LNSPR_REFERENCI_15145",
+				"LBL_LNSPR_REFERENIC_88346",
+				"LBL_LNSPR_RUBROFBVM_52414",
+				"LBL_LNSPR_SELECCIER_50249",
+				"LBL_LNSPR_SIGNODWUU_39563",
+				"LBL_LNSPR_SIGNOZRFG_66096",
+				"LBL_LNSPR_TASAMINCJ_91660",
+				"LBL_LNSPR_TIPOARCXX_95214",
+				"LBL_LNSPR_TIPOOPERN_51275",
+				"LBL_LNSPR_TIPOPREMM_37747",
+				"LBL_LNSPR_VALORAPAA_34434",
+				"LBL_LOANS_APLICARPZ_99718",
+				"LBL_LOANS_CARGARAVO_29365",
+				"LBL_LOANS_LIMPIARVF_75606",
+				"LBL_LOANS_NOMBRETPH_86356",
+				"LBL_LOANS_OPERACIOO_86900",
+				"LBL_LOANS_SELECCIOE_40160",
+				"MSG_LNSPR_CAMPOREIQ_59717",
+				"MSG_LNSPR_SEDEBERZE_11978",
+				"MSG_LNSPR_VALORFU00_79611",
+				"MSG_LNSPR_VALORFUO0_46912"
+			],
+			"queries": {
+				"Q_LOANSILT_NX50": [
+					"",
+					"",
+					"",
+					"",
+					"QM_LOANS0TTX5233_13",
+					"QM_LOANS0X5NT136_07",
+					"QM_LOANS5T5T0703_26",
+					"QM_LOANSII0II346_03",
+					"QM_LOANSIXLI5940_03",
+					"QM_LOANSIXTIN559_04",
+					"QM_LOANST0XN0819_01",
+					"QM_LOANSTT5NT589_03",
+					"QM_LOANSX5N5N774_15",
+					"QM_LOANSX5XLI523_05",
+					"QM_LOANSXLXIT321_03",
+					"QM_LOANSXTXNT242_02",
+					"QM_MASSS1EEEO858_04",
+					"QM_MASSSAO1A1771_01",
+					"QM_MASSSOE1OA636_02",
+					"QM_MASSSX1O1A414_01",
+					"QM_MASSSXA5AX801_03",
+					"QM_MASSSXOXA5314_01",
+					"QM_MASST177S7505_02",
+					"QM_MASST7EJ1S586_06",
+					"QM_MASSTJ1J1N876_05",
+					"QM_MASSTJJMSM423_08",
+					"QM_MASSTM7N1N887_01",
+					"QM_MASSTMMENE211_07",
+					"QM_MASSTNM1J1181_04",
+					"QM_MASSTS1MJS682_03",
+					"QM_MASSTSN17J702_01",
+					"QM_READJ0M7S7785_30",
+					"QM_READJ0US2S949_32",
+					"QM_READJ2200S174_37",
+					"QM_READJ2SU2U372_35",
+					"QM_READJ40U20333_01",
+					"QM_READJ42M44781_03",
+					"QM_READJ44U2S982_18",
+					"QM_READJ4S0S2840_33",
+					"QM_READJ7M22U518_34"
+				],
+				"Q_MASSSEOO_AX15": [
+					"",
+					"",
+					"",
+					"",
+					"QM_LOANS0TTX5233_13",
+					"QM_LOANS0X5NT136_07",
+					"QM_LOANS5T5T0703_26",
+					"QM_LOANSII0II346_03",
+					"QM_LOANSIXLI5940_03",
+					"QM_LOANSIXTIN559_04",
+					"QM_LOANST0XN0819_01",
+					"QM_LOANSTT5NT589_03",
+					"QM_LOANSX5N5N774_15",
+					"QM_LOANSX5XLI523_05",
+					"QM_LOANSXLXIT321_03",
+					"QM_LOANSXTXNT242_02",
+					"QM_MASSS1EEEO858_04",
+					"QM_MASSSAO1A1771_01",
+					"QM_MASSSOE1OA636_02",
+					"QM_MASSSX1O1A414_01",
+					"QM_MASSSXA5AX801_03",
+					"QM_MASSSXOXA5314_01",
+					"QM_MASST177S7505_02",
+					"QM_MASST7EJ1S586_06",
+					"QM_MASSTJ1J1N876_05",
+					"QM_MASSTJJMSM423_08",
+					"QM_MASSTM7N1N887_01",
+					"QM_MASSTMMENE211_07",
+					"QM_MASSTNM1J1181_04",
+					"QM_MASSTS1MJS682_03",
+					"QM_MASSTSN17J702_01",
+					"QM_READJ0M7S7785_30",
+					"QM_READJ0US2S949_32",
+					"QM_READJ2200S174_37",
+					"QM_READJ2SU2U372_35",
+					"QM_READJ40U20333_01",
+					"QM_READJ42M44781_03",
+					"QM_READJ44U2S982_18",
+					"QM_READJ4S0S2840_33",
+					"QM_READJ7M22U518_34"
+				],
+				"Q_MASSTENM_SJ71": [
+					"",
+					"",
+					"",
+					"",
+					"QM_LOANS0TTX5233_13",
+					"QM_LOANS0X5NT136_07",
+					"QM_LOANS5T5T0703_26",
+					"QM_LOANSII0II346_03",
+					"QM_LOANSIXLI5940_03",
+					"QM_LOANSIXTIN559_04",
+					"QM_LOANST0XN0819_01",
+					"QM_LOANSTT5NT589_03",
+					"QM_LOANSX5N5N774_15",
+					"QM_LOANSX5XLI523_05",
+					"QM_LOANSXLXIT321_03",
+					"QM_LOANSXTXNT242_02",
+					"QM_MASSS1EEEO858_04",
+					"QM_MASSSAO1A1771_01",
+					"QM_MASSSOE1OA636_02",
+					"QM_MASSSX1O1A414_01",
+					"QM_MASSSXA5AX801_03",
+					"QM_MASSSXOXA5314_01",
+					"QM_MASST177S7505_02",
+					"QM_MASST7EJ1S586_06",
+					"QM_MASSTJ1J1N876_05",
+					"QM_MASSTJJMSM423_08",
+					"QM_MASSTM7N1N887_01",
+					"QM_MASSTMMENE211_07",
+					"QM_MASSTNM1J1181_04",
+					"QM_MASSTS1MJS682_03",
+					"QM_MASSTSN17J702_01",
+					"QM_READJ0M7S7785_30",
+					"QM_READJ0US2S949_32",
+					"QM_READJ2200S174_37",
+					"QM_READJ2SU2U372_35",
+					"QM_READJ40U20333_01",
+					"QM_READJ42M44781_03",
+					"QM_READJ44U2S982_18",
+					"QM_READJ4S0S2840_33",
+					"QM_READJ7M22U518_34"
+				],
+				"Q_READJUSM_7240": [
+					"",
+					"",
+					"",
+					"",
+					"QM_LOANS0TTX5233_13",
+					"QM_LOANS0X5NT136_07",
+					"QM_LOANS5T5T0703_26",
+					"QM_LOANSII0II346_03",
+					"QM_LOANSIXLI5940_03",
+					"QM_LOANSIXTIN559_04",
+					"QM_LOANST0XN0819_01",
+					"QM_LOANSTT5NT589_03",
+					"QM_LOANSX5N5N774_15",
+					"QM_LOANSX5XLI523_05",
+					"QM_LOANSXLXIT321_03",
+					"QM_LOANSXTXNT242_02",
+					"QM_MASSS1EEEO858_04",
+					"QM_MASSSAO1A1771_01",
+					"QM_MASSSOE1OA636_02",
+					"QM_MASSSX1O1A414_01",
+					"QM_MASSSXA5AX801_03",
+					"QM_MASSSXOXA5314_01",
+					"QM_MASST177S7505_02",
+					"QM_MASST7EJ1S586_06",
+					"QM_MASSTJ1J1N876_05",
+					"QM_MASSTJJMSM423_08",
+					"QM_MASSTM7N1N887_01",
+					"QM_MASSTMMENE211_07",
+					"QM_MASSTNM1J1181_04",
+					"QM_MASSTS1MJS682_03",
+					"QM_MASSTSN17J702_01",
+					"QM_READJ0M7S7785_30",
+					"QM_READJ0US2S949_32",
+					"QM_READJ2200S174_37",
+					"QM_READJ2SU2U372_35",
+					"QM_READJ40U20333_01",
+					"QM_READJ42M44781_03",
+					"QM_READJ44U2S982_18",
+					"QM_READJ4S0S2840_33",
+					"QM_READJ7M22U518_34"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRNBKRHAIB_194": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANLINCT_267": [
+				],
+				"EN_MEMBERDEL_536": [
+					"AT29_CONTROML536",
+					"AT43_AVAILABB536",
+					"AT61_USEDJXTL536",
+					"AT77_MEMBERSR536",
+					"AT80_CURRENCY536",
+					"AT93_AMOUNTXL536",
+					"AT98_OBSERVSI536"
+				],
+				"EN_MEMBERSLV_216": [
+					"AT13_UTILIZAD216",
+					"AT16_CODLINEE216",
+					"AT30_CONTROLL216",
+					"AT31_OBSERVAN216",
+					"AT36_MONEDAKB216",
+					"AT71_MIEMBROO216",
+					"AT74_SECUENAI216",
+					"AT81_MONTOSXY216",
+					"AT87_DISPONEI216"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_CDIGOLNEA_16925",
+				"LBL_LNSPR_CONTROLOA_79038",
+				"LBL_LNSPR_DISPONILE_55740",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_MIEMBROMR_17587",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_OBSERVAEC_93216",
+				"LBL_LNSPR_SECUENCAI_74208",
+				"LBL_LOANS_UTILIZAOO_53309",
+				"MSG_LNSPR_CAMPOREIQ_59717",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+				"Q_GROUEIRS_WN63": [
+					"QM_GROUESSSSN400_01",
+					"QM_GROUEWNI3I455_02"
+				],
+				"Q_MEMBIAAA_BE92": [
+					"QM_GROUESSSSN400_01",
+					"QM_GROUEWNI3I455_02",
+					"QM_MEMBI2E22A653_05",
+					"QM_MEMBI9EEE9904_04",
+					"QM_MEMBIA9229900_06",
+					"QM_MEMBIAAAAA140_02",
+					"QM_MEMBIAAABA913_01",
+					"QM_MEMBIAAB99843_07",
+					"QM_MEMBIBA9AE334_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRNRRVDNTA_721": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANSLIDE_580": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+				"HD_USCREDIEE_109"
+			],
+			"labels": [
+				"LBL_LNSPR_DATOSLAEE_73448",
+				"LBL_LNSPR_DISTRIBOR_73854",
+				"LBL_LNSPR_DISTRIBUR_28401",
+				"LBL_LNSPR_GARANTALE_80459",
+				"LBL_LNSPR_INACINLEI_13426"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRQGEMJIOM_705": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LINEGUAAE_244": [
+					"AT17_CURRENYC244",
+					"AT20_VALUEMNN244",
+					"AT32_ADMISSOO244",
+					"AT39_CODEXZQY244",
+					"AT41_STATEBUK244",
+					"AT55_GUARANEE244",
+					"AT56_TYPEFUTQ244",
+					"AT58_CURRENLL244",
+					"AT63_INITIAVL244",
+					"AT98_DESCRIPN244"
+				],
+				"EN_LINEGUARS_326": [
+					"AT16_TYPELOIG326",
+					"AT35_COINUBUZ326",
+					"AT54_STATEYRJ326",
+					"AT62_DESCRIPO326",
+					"AT69_CURRENUE326",
+					"AT74_ADMISSNT326",
+					"AT78_INITIAEV326",
+					"AT80_GUARANET326",
+					"AT86_CODEWWHB326",
+					"AT86_MINIMUUE326"
+				],
+				"EN_LOANLINCT_267": [
+				],
+				"EN_LOANSLIGN_522": [
+					"AT16_TYPETBBT522",
+					"AT42_GUARANEP522",
+					"AT52_GUARANEE522",
+					"AT65_CODLINEE522",
+					"AT70_SEQUENIA522",
+					"AT82_CLIENTNE522",
+					"AT89_GUARANTT522",
+					"AT91_GUARANEE522"
+				],
+				"EN_VALIDATOE_493": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_BUSCARKBJ_59373",
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_CLASESBZB_24652",
+				"LBL_LNSPR_CLIENTEPO_59022",
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_CODIGOPYS_88202",
+				"LBL_LNSPR_CODLNEAKU_40615",
+				"LBL_LNSPR_DESCRIPIN_18186",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_ESTADOGRT_81847",
+				"LBL_LNSPR_FECHAINRR_39137",
+				"LBL_LNSPR_GARANTIAA_48312",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_SECUENCAI_74208",
+				"LBL_LNSPR_TIPOGARAA_90134",
+				"LBL_LNSPR_TIPOLDSKB_46090",
+				"LBL_LNSPR_TRAMITETH_10529",
+				"LBL_LNSPR_VALORACUL_54068",
+				"LBL_LNSPR_VALORGATT_11492",
+				"LBL_LNSPR_VALORINIL_53288",
+				"LBL_LNSPR_VALORMNTF_18609",
+				"LBL_LOANS_GARANTARW_17635"
+			],
+			"queries": {
+				"Q_LINELAAN_WU84": [
+					"",
+					"",
+					"QM_LINEL4W4N8185_08",
+					"QM_LINELA8UWN183_04",
+					"QM_LINELAWAUW595_06",
+					"QM_LINELNA4NW211_07",
+					"QM_LINELNAW44190_03",
+					"QM_LINELNW8A8820_09",
+					"QM_LINELU44A4743_05",
+					"QM_LINELUNWW4822_01",
+					"QM_LINELWU48N286_02",
+					"QM_LINELWUN88531_10",
+					"QM_LINER0LRRK854_08",
+					"QM_LINER20LK0503_06",
+					"QM_LINER2RAKR932_02",
+					"QM_LINERA2KA2254_07",
+					"QM_LINERAKAAR363_03",
+					"QM_LINERK22R2243_09",
+					"QM_LINERKLKA0100_01",
+					"QM_LINERKRRR2282_10",
+					"QM_LINERR0A0K621_05",
+					"QM_LINERRAALL588_04"
+				],
+				"Q_LINERLAR_KA20": [
+					"",
+					"",
+					"",
+					"",
+					"QM_LINEL4W4N8185_08",
+					"QM_LINELA8UWN183_04",
+					"QM_LINELAWAUW595_06",
+					"QM_LINELNA4NW211_07",
+					"QM_LINELNAW44190_03",
+					"QM_LINELNW8A8820_09",
+					"QM_LINELU44A4743_05",
+					"QM_LINELUNWW4822_01",
+					"QM_LINELWU48N286_02",
+					"QM_LINELWUN88531_10",
+					"QM_LINER0LRRK854_08",
+					"QM_LINER20LK0503_06",
+					"QM_LINER2RAKR932_02",
+					"QM_LINERA2KA2254_07",
+					"QM_LINERAKAAR363_03",
+					"QM_LINERK22R2243_09",
+					"QM_LINERKLKA0100_01",
+					"QM_LINERKRRR2282_10",
+					"QM_LINERR0A0K621_05",
+					"QM_LINERRAALL588_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRRLRKZDAH_793": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANLINCT_267": [
+				],
+				"EN_VALIDATON_825": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_DISTRIBOR_73854",
+				"LBL_LNSPR_DISTRIBUR_28401",
+				"LBL_LNSPR_GARANTALE_80459",
+				"LBL_LNSPR_LNEACRDOI_38962"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRSBSNRATX_181": {
+			"blis": [
+			],
+			"entities": {
+				"EN_OPERATIEL_780": [
+				],
+				"EN_PRODUCTIE_675": [
+					"AT18_CLIENTOO675",
+					"AT27_USEDPMLG675",
+					"AT32_PRODUCTT675",
+					"AT38_OBSERVTT675",
+					"AT39_AVAILALB675",
+					"AT70_CONTROMA675",
+					"AT78_DESCCURC675",
+					"AT87_AMOUNTUS675",
+					"AT96_OPTYPELA675"
+				],
+				"EN_PRODUCTII_203": [
+					"AT28_SEQUENTT203",
+					"AT31_OPTYPEAC203",
+					"AT39_OBSERVSA203",
+					"AT44_OPTYPESS203",
+					"AT52_PRODUCTT203",
+					"AT67_USEDZVAM203",
+					"AT69_AVAILABL203",
+					"AT78_CODLINEE203",
+					"AT78_CURRENYC203",
+					"AT80_CONTROSL203",
+					"AT81_CLIENTCO203",
+					"AT88_AMOUNTEY203"
+				],
+				"EN_PRODUCTNN_604": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_CODLNEAKU_40615",
+				"LBL_LNSPR_CONTROLOA_79038",
+				"LBL_LNSPR_DISPONILE_55740",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_MIEMBRONE_59331",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_OBSERVACE_16379",
+				"LBL_LNSPR_SECUENCAI_74208",
+				"LBL_LNSPR_TIPOOPENA_59322",
+				"LBL_LNSPR_TIPOOPERN_51275",
+				"LBL_LOANS_CLIENTEQM_27248",
+				"LBL_LOANS_PRODUCTOO_67575",
+				"LBL_LOANS_UTILIZAOO_53309",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+				"Q_LINEIERT_DW35": [
+					"QM_LINEI3E3R5572_02",
+					"QM_LINEIRW5WT791_01"
+				],
+				"Q_OPEREEOA_SH40": [
+					"QM_OPEREA040O600_02",
+					"QM_OPEREA040O600_02",
+					"QM_OPEREAH0A4430_01",
+					"QM_OPEREAH0A4430_01"
+				],
+				"Q_PRODLUDT_UJ17": [
+					"QM_LINEI3E3R5572_02",
+					"QM_LINEIRW5WT791_01",
+					"QM_OPEREA040O600_02",
+					"QM_OPEREA040O600_02",
+					"QM_OPEREAH0A4430_01",
+					"QM_OPEREAH0A4430_01",
+					"QM_PRODL771U7744_07",
+					"QM_PRODLD7UDJ886_03",
+					"QM_PRODLDDTJ7794_09",
+					"QM_PRODLDT7TU287_02",
+					"QM_PRODLT1JT1379_06",
+					"QM_PRODLTJTUU189_08",
+					"QM_PRODLTU1T1817_10",
+					"QM_PRODLTU7DT100_01",
+					"QM_PRODLU7U17918_05",
+					"QM_PRODTS98WI432_02",
+					"QM_PRODTWI9SN654_01"
+				],
+				"Q_PRODTSNI_WK98": [
+					"QM_PRODTS98WI432_02",
+					"QM_PRODTWI9SN654_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRSCSIDSOD_858": {
+			"blis": [
+			],
+			"entities": {
+				"EN_OPERATINN_LNSPR": [
+					"AT11_PARTICIASPR",
+					"AT67_AMOUNTZP313",
+					"AT68_AMOUNTPASPR",
+					"AT83_TYPEPATTSPR",
+					"AT90_PERCENTTSPR",
+					"AT97_MAILNKWPSPR"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CORREOHMW_60459",
+				"LBL_LNSPR_MONTODIPN_56241",
+				"LBL_LNSPR_MONTOPAAI_44222",
+				"LBL_LNSPR_PARTICIPT_49306",
+				"LBL_LNSPR_PORCENTAC_51005",
+				"LBL_LOANS_AADIRWOQO_72396",
+				"LBL_LOANS_ROLNDGMQN_51274",
+				"MSG_LNSPR_CAMPOREIQ_59717",
+				"MSG_LNSPR_VALORNODE_52171"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRSHDBNXGH_268": {
+			"blis": [
+			],
+			"entities": {
+				"EN_AMORTIZON_LNSPR": [
+				],
+				"EN_GENERALAT_LNSPR": [
+				],
+				"EN_GENERALIN_300": [
+				],
+				"EN_GENERALRE_262": [
+				],
+				"EN_GENERICSZ_LNSPR": [
+				],
+				"EN_OPERATINN_LNSPR": [
+					"AT12_SUBSEGEE313",
+					"AT16_AUTHNUMM313",
+					"AT21_CONTRARB313",
+					"AT25_MONEYCFC313",
+					"AT26_SUBFINIG313",
+					"AT27_FACILITY313",
+					"AT28_OFFICEEL313",
+					"AT31_AUTHDAEE313",
+					"AT32_FINANCIO313",
+					"AT33_SECTORWX313",
+					"AT37_OFFICIAA313",
+					"AT41_STATETES313",
+					"AT42_FIRSTDUU313",
+					"AT42_REGISTOM313",
+					"AT42_TYPEOPNT313",
+					"AT48_CREATINO313",
+					"AT56_CREDITOY313",
+					"AT61_CREDITEE313",
+					"AT63_AMOUNTRE313",
+					"AT63_EXPIRAOE313",
+					"AT65_FINANMAA313",
+					"AT67_AMOUNTZP313",
+					"AT75_DEBTTYPE313",
+					"AT86_REPOSINT313",
+					"AT89_ECONOMIA313",
+					"AT89_SYNDICEESPR",
+					"AT98_OPERATNO313"
+				],
+				"EN_SYNDICASL_725": [
+					"AT20_PERCENCA725",
+					"AT22_CODPARCA725",
+					"AT75_ROLEPSHP725",
+					"AT76_AMOUNTAT725",
+					"AT82_NAMEPAIA725",
+					"AT98_MAILJAZJ725"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_AREPOSINN_21211",
+				"LBL_LNSPR_CAUSAFIBO_36044",
+				"LBL_LNSPR_CODPARTPN_76216",
+				"LBL_LNSPR_CORREOHMW_60459",
+				"LBL_LNSPR_DATOSADCO_69155",
+				"LBL_LNSPR_DESTINOFC_88919",
+				"LBL_LNSPR_DESTINONN_50314",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FACILITMB_28174",
+				"LBL_LNSPR_FECHA1ENI_10027",
+				"LBL_LNSPR_FECHAAUZN_27676",
+				"LBL_LNSPR_FECHACRNI_60847",
+				"LBL_LNSPR_FECHAVENE_58948",
+				"LBL_LNSPR_LINEAFIEN_44317",
+				"LBL_LNSPR_MERCADOOV_74755",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_MONTOPATT_30192",
+				"LBL_LNSPR_NMEROCONN_68981",
+				"LBL_LNSPR_NOAUTORIN_87158",
+				"LBL_LNSPR_NOREGISRT_17780",
+				"LBL_LNSPR_OFICIALCI_17854",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_PARTGBUSR_65411",
+				"LBL_LNSPR_SINDICADO_26170",
+				"LBL_LNSPR_TIPOACRER_55798",
+				"LBL_LNSPR_TIPODEUAA_52427",
+				"LBL_LNSPR_TIPOOPERA_56822",
+				"LBL_LOANS_MONTOAPAR_32732",
+				"LBL_LOANS_NOMBRETPH_86356",
+				"LBL_LOANS_NROOPERIN_32746",
+				"LBL_LOANS_ROLNDGMQN_51274",
+				"LBL_LOANS_SECTORQEZ_42002",
+				"LBL_LOANS_SUBSEGMEN_82660"
+			],
+			"queries": {
+				"Q_SYNDCEAL_LH97": [
+					"QM_SYNDC9799L199_02",
+					"QM_SYNDCA779L258_03",
+					"QM_SYNDCEELLL355_05",
+					"QM_SYNDCLAHA9401_04",
+					"QM_SYNDCLAHLL933_01",
+					"QM_SYNDCLL7EA192_06"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRSZYOCYQK_511": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANSALAD_395": [
+					"AT25_ERRORDIT395",
+					"AT34_ERRORWCZ395",
+					"AT43_DATESAEL395",
+					"AT53_STATEQXU395",
+					"AT82_OPERATOO395"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_DESCRIPIN_18186",
+				"LBL_LNSPR_ERRORAWHP_83580",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAVETA_87721",
+				"LBL_LOANS_OPERACIOO_86900"
+			],
+			"queries": {
+				"Q_LOANELLL_AR48": [
+					"QM_LOANE8LLRR725_02",
+					"QM_LOANEL4A8R246_05",
+					"QM_LOANELLLLL757_06",
+					"QM_LOANELLRL8182_01",
+					"QM_LOANERARLL601_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRUJMIKLPE_451": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANSEATF_633": [
+					"AT22_TYPEKHLP633",
+					"AT40_DISBURNE633",
+					"AT57_CODCURCC633",
+					"AT59_MIGRATOE633",
+					"AT66_NUMPRORC633",
+					"AT74_OFFICEHF633",
+					"AT89_STATETMJ633"
+				],
+				"EN_STATESAEO_310": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_ESTADOPEM_54793",
+				"LBL_LNSPR_FECHADEBE_42043",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_NUMTRMITE_20261",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_PRSTAMOIO_81821",
+				"LBL_LNSPR_TIPOOPERN_51275",
+				"MSG_LNSPR_SEDEBERZE_11978"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRUPDQTUXI_446": {
+			"blis": [
+			],
+			"entities": {
+				"EN_MODALTASS_500": [
+					"AT41_DESCRINN500",
+					"AT44_IDENTIIF500",
+					"AT80_CLASENYN500",
+					"AT84_TASAPITT500"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CLASESBZB_24652",
+				"LBL_LNSPR_DESCRIPNC_75776",
+				"LBL_LNSPR_IDENTIFCD_64931",
+				"LBL_LNSPR_TASAPITKQ_16457"
+			],
+			"queries": {
+				"Q_MODAALAS_TP83": [
+					"QM_MODAAAPAAL114_01",
+					"QM_MODAAPA3SA542_03",
+					"QM_MODAAPTAL3915_04",
+					"QM_MODAATA33A808_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRWENJKGKJ_579": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DEBTORLIS_380": [
+					"AT39_CLIENTNE380",
+					"AT50_CLIENTDI380",
+					"AT70_CLIENTLO380",
+					"AT80_CLIENTOJ380"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CEDULARCU_43901",
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_NOMBRECNI_63306",
+				"LBL_LOANS_ROLNDGMQN_51274"
+			],
+			"queries": {
+				"Q_DEBTSOLR_XT44": [
+					"QM_DEBTS44T4T976_04",
+					"QM_DEBTS4OLLR395_06",
+					"QM_DEBTS4ROOL442_11",
+					"QM_DEBTSLX4T4441_05"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRWQVPGSSG_618": {
+			"blis": [
+			],
+			"entities": {
+				"EN_ERRORMASI_217": [
+				],
+				"EN_LOANSEATF_633": [
+					"AT35_ARCHIVOO633"
+				],
+				"EN_MASSIVEYM_999": [
+					"AT18_VALUEPAY999",
+					"AT26_NUMBERCO999",
+					"AT44_CURRENTE999",
+					"AT53_CUSTOMEN999",
+					"AT74_PAYMENTT999",
+					"AT79_ERRORLYM999",
+					"AT82_DESCRIPN999",
+					"AT90_DATEPATY999",
+					"AT93_NUMBREBA999"
+				],
+				"EN_PAYMENTZY_LNSPR": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APAGOWSUO_22122",
+				"LBL_LNSPR_CLIENTEOR_78949",
+				"LBL_LNSPR_DESCRIPIN_18186",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAVALR_40841",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_NOCUENTAA_41516",
+				"LBL_LNSPR_PAGOSMAVH_34904",
+				"LBL_LNSPR_VALORAPAA_34434",
+				"LBL_LOANS_CARGARAVO_29365",
+				"LBL_LOANS_LIMPIARVF_75606",
+				"LBL_LOANS_OPERACIOO_86900"
+			],
+			"queries": {
+				"Q_MASSTENM_SJ71": [
+					"QM_MASST177S7505_02",
+					"QM_MASST7EJ1S586_06",
+					"QM_MASSTJ1J1N876_05",
+					"QM_MASSTJJMSM423_08",
+					"QM_MASSTM7N1N887_01",
+					"QM_MASSTMMENE211_07",
+					"QM_MASSTNM1J1181_04",
+					"QM_MASSTS1MJS682_03",
+					"QM_MASSTSN17J702_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRXLZJGUMH_556": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANLINCT_267": [
+					"AT12_STARTDAT267",
+					"AT23_OBSERVSS267",
+					"AT23_UBICATIO267",
+					"AT26_AVAILABB267",
+					"AT26_ROTARYRK267",
+					"AT27_SECTOROX267",
+					"AT33_DAYSNURR267",
+					"AT33_OFFICEJO267",
+					"AT37_ESTADOYV267",
+					"AT39_OFFICIAL267",
+					"AT43_USEDBCMQ267",
+					"AT45_DUEDATEE267",
+					"AT48_NATURAEZ267",
+					"AT48_TRAMITUU267",
+					"AT61_MONEDAOX267",
+					"AT66_CUSTOMEN267",
+					"AT69_AMOUNTBC267",
+					"AT71_CODIGOEE267",
+					"AT91_SECUENIC267"
+				],
+				"EN_MEMBERSLV_216": [
+				],
+				"EN_VALIDATON_825": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_CODLNEAKU_40615",
+				"LBL_LNSPR_DISPONILE_55740",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAINII_43454",
+				"LBL_LNSPR_FONDEADOR_63367",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_NATURALZA_90237",
+				"LBL_LNSPR_NMEROTRIM_88711",
+				"LBL_LNSPR_NRODASREL_14817",
+				"LBL_LNSPR_OBSERVACE_16379",
+				"LBL_LNSPR_OFICIALCI_17854",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_ROTATIVAA_85636",
+				"LBL_LNSPR_SECUENCAI_74208",
+				"LBL_LNSPR_UBICACINN_15086",
+				"LBL_LOANS_FECHAVENI_35637",
+				"LBL_LOANS_SECTORQEZ_42002",
+				"LBL_LOANS_UTILIZAOO_53309",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRXNWEODPH_423": {
+			"blis": [
+			],
+			"entities": {
+				"EN_OFFICALSO_243": [
+					"AT18_GROUPCED243",
+					"AT20_LOANSSTT243",
+					"AT28_CURRENCO243",
+					"AT29_BANKIDTF243",
+					"AT40_EXPIRAAO243",
+					"AT46_DISBURTA243",
+					"AT49_AMOUNTJZ243",
+					"AT69_PROCESMU243",
+					"AT77_CLIENTOO243",
+					"AT86_OFFICEEE243",
+					"AT88_CATEGORR243",
+					"AT90_OFFICILA243",
+					"AT92_SELECTDE243",
+					"AT95_CLIENTAE243",
+					"AT99_LOANTYEE243"
+				],
+				"EN_OFFICIAEF_453": [
+					"AT34_ORIGINFC453",
+					"AT37_ORIGINIF453",
+					"AT53_DESTINTF453",
+					"AT75_TRANSFEP453",
+					"AT84_REASONVM453",
+					"AT91_DESTINLC453"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_BUSCARKBJ_59373",
+				"LBL_LNSPR_CATEGORII_28618",
+				"LBL_LNSPR_CODCLIETT_20856",
+				"LBL_LNSPR_DESTINOEC_23642",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_ESTADOPST_36165",
+				"LBL_LNSPR_FECHADEBE_42043",
+				"LBL_LNSPR_GRUPOOBAY_84995",
+				"LBL_LNSPR_MONEDAFCA_83005",
+				"LBL_LNSPR_MONTOPREO_81448",
+				"LBL_LNSPR_MOTIVONDC_67143",
+				"LBL_LNSPR_NOMBRECNI_63306",
+				"LBL_LNSPR_NUMPRESTO_78484",
+				"LBL_LNSPR_NUMTRAMEE_83198",
+				"LBL_LNSPR_OFICIALCI_17854",
+				"LBL_LNSPR_OFICINAGV_33565",
+				"LBL_LNSPR_ORIGENJLN_13505",
+				"LBL_LNSPR_SELECCIRA_72320",
+				"LBL_LNSPR_TIPOPREMM_37747",
+				"LBL_LNSPR_TRASLADFF_12580",
+				"LBL_LNSPR_TRASLADRA_39650",
+				"LBL_LOANS_SELECCIOE_40160",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+				"Q_OFFILILC_KJ11": [
+					"QM_OFFILJJJ11483_02",
+					"QM_OFFILJJJ11483_02",
+					"QM_OFFILJLILC561_01",
+					"QM_OFFILJLILC561_01"
+				],
+				"Q_OFFILLLL_SV56": [
+					"",
+					"",
+					"QM_OFFIL56LLS662_10",
+					"QM_OFFIL66VL5575_02",
+					"QM_OFFIL6VLVS677_06",
+					"QM_OFFILJJJ11483_02",
+					"QM_OFFILJJJ11483_02",
+					"QM_OFFILJLILC561_01",
+					"QM_OFFILJLILC561_01",
+					"QM_OFFILL5LL5934_09",
+					"QM_OFFILLL55L905_01",
+					"QM_OFFILLL5S6525_03",
+					"QM_OFFILLLSLS895_08",
+					"QM_OFFILLVLLV233_01",
+					"QM_OFFILSLL5V211_07",
+					"QM_OFFILSLLSL926_04",
+					"QM_OFFILV5VLL772_06",
+					"QM_OFFILVL5LL503_05",
+					"QM_OFFILVLSLL109_02",
+					"QM_OFFILVS5S6487_11",
+					"QM_OFFILVVLLL701_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LNSPRZYRPKNSX_507": {
+			"blis": [
+			],
+			"entities": {
+				"EN_PAYMENTEO_200": [
+				],
+				"EN_PAYMENTZY_LNSPR": [
+					"AT32_PAYMENTS669",
+					"AT37_DATEIISZ669",
+					"AT46_REFERECN669",
+					"AT53_CURRENCY669",
+					"AT62_VALUEGQO669",
+					"AT77_CUSTOMEE669",
+					"AT99_NOTESOKT669"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_LNSPR_APAGOVQRF_51833",
+				"LBL_LNSPR_CANCELARR_70217",
+				"LBL_LNSPR_COBRARAFT_16046",
+				"LBL_LNSPR_DESCRIPNI_65857",
+				"LBL_LNSPR_FECHAQWBP_23514",
+				"LBL_LNSPR_GUARDARRI_81055",
+				"LBL_LNSPR_INGRESORA_23779",
+				"LBL_LNSPR_MONEDATUB_92849",
+				"LBL_LNSPR_MONTOEMFX_52083",
+				"LBL_LNSPR_PROCESARR_13459",
+				"LBL_LNSPR_REFERENCI_47355",
+				"MSG_LNSPR_DEBEINGRS_33262",
+				"MSG_LNSPR_ELVALOROO_17736",
+				"MSG_LNSPR_INGRESEHA_96071",
+				"MSG_LOANS_REQUERIOD_32696"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LOANDEBTORUIG_168": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANDEBTO_749": [
+					"AT27_CENTRAOI749",
+					"AT39_ADDRESSS749",
+					"AT49_CUSTOMDR749",
+					"AT58_CUSTOMME749",
+					"AT72_PHONEKRF749",
+					"AT78_IDCARDFV749",
+					"AT91_ROLEJPXR749"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CENITANEL_46995",
+				"LBL_ASSTS_COBCENTAR_80329",
+				"LBL_ASSTS_CODIGOCIE_36603",
+				"LBL_ASSTS_DIRECCINO_22395",
+				"LBL_ASSTS_NOMBREULS_81822",
+				"LBL_ASSTS_ROLDOBJMA_96413",
+				"LBL_ASSTS_TELEFONOO_76252"
+			],
+			"queries": {
+				"Q_LOANDEBB_6719": [
+					"QM_LOAND1B9E7979_07",
+					"QM_LOAND1EE91363_02",
+					"QM_LOAND6BB76923_03",
+					"QM_LOAND7B7B1519_06",
+					"QM_LOAND971E7794_01",
+					"QM_LOANDBE691343_05",
+					"QM_LOANDE6796543_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LOANHEADERDTD_544": {
+			"entities": {
+				"EN_LOANKYMRI_882": [
+					"AT39_STARTDEE882",
+					"AT50_ENDDATEE882",
+					"AT56_IDCARDUU882",
+					"AT90_EFFECTAU882",
+					"AT96_OFFICEPU882"
+				]
+			},
+			"labels": [
+				"LBL_ASSTS_CDULANWRY_45332",
+				"LBL_ASSTS_FECHAINCC_83803",
+				"LBL_ASSTS_FECHAVENE_58948",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_TASAEFECA_65157"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LOANHEADERHHG_696": {
+			"entities": {
+				"EN_LOANKYMRI_882": [
+					"AT21_BALANCDD882",
+					"AT42_LOANBADK882",
+					"AT50_ENDDATEE882",
+					"AT66_STATUSOB882",
+					"AT71_CLIENTNA882",
+					"AT85_NEXTPAMT882",
+					"AT91_AMOUNTMO882"
+				]
+			},
+			"labels": [
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LOANHEADERNFI_316": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANKYMRI_882": [
+					"AT21_BALANCDD882",
+					"AT42_LOANBADK882",
+					"AT66_STATUSOB882",
+					"AT91_AMOUNTMO882",
+					"AT96_OFFICEPU882"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_CLIENTEWV_22561",
+				"LBL_ASSTS_DATOSGEAL_65676",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_MASINACIN_18792",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_PRSTAMOFK_44930",
+				"LBL_ASSTS_SALDOEXBB_70535",
+				"LBL_ASSTS_TIPOCRDOO_69382"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LOANSEARCHSWA_959": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANKYMRI_882": [
+					"AT10_NUMPROUE882",
+					"AT24_CODMONDD882",
+					"AT42_LOANBADK882",
+					"AT57_DESOPETI882",
+					"AT62_GROUPTNG882",
+					"AT66_CATEGOGO882",
+					"AT66_STATUSOB882",
+					"AT68_CLIENTII882",
+					"AT71_CLIENTNA882",
+					"AT76_DISBURTS882",
+					"AT76_EXPIRAEE882",
+					"AT91_AMOUNTMO882"
+				],
+				"EN_LOANSEACI_824": [
+					"AT21_GROUPOWD824",
+					"AT37_AVANCERR824",
+					"AT50_OPERATON824",
+					"AT53_MIGRATER824",
+					"AT58_NUMIDENN824",
+					"AT64_CODCURYC824",
+					"AT73_DISBURDT824",
+					"AT75_TYPEWSUY824",
+					"AT82_NUMPRODR824",
+					"AT83_OFFICEOE824",
+					"AT97_STATUSDD824"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BSQUEDASS_55923",
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_CATEGORAI_18464",
+				"LBL_ASSTS_CODCLIENN_10354",
+				"LBL_ASSTS_CODIGOCEN_52038",
+				"LBL_ASSTS_CRITERIBS_16700",
+				"LBL_ASSTS_CRITERIOO_80936",
+				"LBL_ASSTS_ESTADOPEM_54793",
+				"LBL_ASSTS_ESTADOPOT_95000",
+				"LBL_ASSTS_FECHADEBE_42043",
+				"LBL_ASSTS_FECHAVENE_58948",
+				"LBL_ASSTS_GRUPALODU_58244",
+				"LBL_ASSTS_GRUPOOBAY_84995",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONTOPRAM_67448",
+				"LBL_ASSTS_NOMBRECNI_63306",
+				"LBL_ASSTS_NUMPRESAT_15246",
+				"LBL_ASSTS_NUMPRSTOO_83774",
+				"LBL_ASSTS_NUMTRAMTT_81104",
+				"LBL_ASSTS_NUMTRMITE_20261",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_PRSTAMOIO_81821",
+				"LBL_ASSTS_TIPOOPERC_17964",
+				"LBL_ASSTS_TIPOPREMM_37747",
+				"MSG_ASSTS_SEDEBERZE_11978"
+			],
+			"queries": {
+				"Q_LISTSEAD_QV44": [
+					"QM_LISTSD4A4Q959_02",
+					"QM_LISTSEV4QD853_01"
+				],
+				"Q_LOANDPQM_3009": [
+					"",
+					"",
+					"QM_LISTSD4A4Q959_02",
+					"QM_LISTSEV4QD853_01",
+					"QM_LOAND03399254_15",
+					"QM_LOAND09093442_16",
+					"QM_LOAND0MMQM126_02",
+					"QM_LOAND0QPM0367_04",
+					"QM_LOAND30999140_05",
+					"QM_LOAND903PM469_11",
+					"QM_LOANDM9M3M269_13",
+					"QM_LOANDP9MMM888_01",
+					"QM_LOANDPP030147_16",
+					"QM_LOANDPQ9Q0771_22",
+					"QM_LOANDQPP00391_05",
+					"QM_LOANDQQ93Q518_06"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_LOANSTATUSNGH_840": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANKYMRI_882": [
+					"AT45_STATUSYO882",
+					"AT59_NEWSTASS882"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ESTADOACU_72691",
+				"LBL_ASSTS_NUEVOESTA_11189",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_LOANWARRANTYT_123": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANWARRY_642": [
+					"AT13_CODCLINN642",
+					"AT13_CURRENYY642",
+					"AT17_WARRANTY642",
+					"AT25_CURRENAL642",
+					"AT51_DESCRION642",
+					"AT77_STATUSAR642",
+					"AT79_CUSTOMER642",
+					"AT92_CREATENO642"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CODIGOCIE_36603",
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_ESTADOGIA_21734",
+				"LBL_ASSTS_FECHAINGG_82521",
+				"LBL_ASSTS_GARANTIAA_11754",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_NOMBRECNI_63306",
+				"LBL_ASSTS_VALORACUA_99891"
+			],
+			"queries": {
+				"Q_LOANWATN_1941": [
+					"QM_LOANW14TA9743_03",
+					"QM_LOANW1NNA1695_06",
+					"QM_LOANW4ATAT819_02",
+					"QM_LOANW91914844_04",
+					"QM_LOANW91N41946_07",
+					"QM_LOANWA99TA463_05",
+					"QM_LOANWAN1N9569_08",
+					"QM_LOANWT19T4487_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_NEGOTIATIOTML_700": {
+			"blis": [
+			],
+			"entities": {
+				"EN_NEGOTIATI_654": [
+					"AT11_PAYMENPT654",
+					"AT29_INTEREAA654",
+					"AT31_ADDITINN654",
+					"AT82_REDUCTEE654",
+					"AT83_FULLFEEE654"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACEPTARDV_64984",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_CUOTACOMM_65443",
+				"LBL_ASSTS_PERMITEDN_59825",
+				"LBL_ASSTS_TIPOINTSR_53012",
+				"LBL_ASSTS_TIPOPAGEO_93906",
+				"LBL_ASSTS_TIPOPAGOO_57001"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_PAYMENTDETMFP_722": {
+			"blis": [
+			],
+			"entities": {
+				"EN_PAYMENTTI_348": [
+					"AT28_AMOUNTHG348",
+					"AT29_SEQUENLA348",
+					"AT31_AMOUNTNN348",
+					"AT47_DESCRIOO348",
+					"AT62_ACCOUNTT348",
+					"AT84_STATUSIO348",
+					"AT86_MONEYDIP348",
+					"AT99_FEEGCNAA348"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CUENTADIA_22037",
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_DIVIDENDD_92569",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONTOMLEE_47379",
+				"LBL_ASSTS_MONTOMOPP_42194",
+				"LBL_ASSTS_SECUENCAA_14570"
+			],
+			"queries": {
+				"Q_PAYMENTT_1707": [
+					"QM_PAYME0017T819_04",
+					"QM_PAYME0701N418_02",
+					"QM_PAYME077NT999_03",
+					"QM_PAYME1N10N699_01",
+					"QM_PAYME7T7T7677_08",
+					"QM_PAYME7TTN0644_07",
+					"QM_PAYMEN71N1993_06",
+					"QM_PAYMET077T702_05"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_PAYMENTMAIDLT_828": {
+			"blis": [
+			],
+			"entities": {
+				"EN_METHODSRT_271": [
+					"AT13_PAYMENTU271",
+					"AT27_VALUECEO271",
+					"AT28_TRANSACO271",
+					"AT30_RETENTNN271",
+					"AT40_CANALFYR271",
+					"AT44_PRODUCTT271",
+					"AT56_CATEGORR271",
+					"AT57_BANKSECR271",
+					"AT57_PAYMENTT271",
+					"AT59_OVERCHMC271",
+					"AT63_CURRENNN271",
+					"AT65_PAYMENTX271",
+					"AT87_DESCRIPO271",
+					"AT88_PAYMENSE271",
+					"AT93_ACTIVEIP271",
+					"AT94_DISBURSS271",
+					"AT94_PCOBISAE271",
+					"AT95_STATELNK271"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACEPTARDV_64984",
+				"LBL_ASSTS_APAGORERR_42797",
+				"LBL_ASSTS_CANALGFWW_89486",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_CATEGORAA_59396",
+				"LBL_ASSTS_CDIGOVAOR_33178",
+				"LBL_ASSTS_DASRETECN_29008",
+				"LBL_ASSTS_DESCRIPNI_65857",
+				"LBL_ASSTS_DESEMBOLS_13177",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_IDENTIFCR_66965",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_PAGOPORAA_60202",
+				"LBL_ASSTS_PAGOSAUTT_59705",
+				"LBL_ASSTS_PAGOSBHJO_80531",
+				"LBL_ASSTS_PRODUCTIB_77965",
+				"LBL_ASSTS_SERVICIOA_67043",
+				"LBL_ASSTS_SOBRANTSE_66830",
+				"LBL_ASSTS_TIPOCARTR_61359",
+				"MSG_ASSTS_CAMPOREUI_74379"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_PAYMENTMAIETA_586": {
+			"blis": [
+			],
+			"entities": {
+				"EN_METHODSRT_271": [
+					"AT44_PRODUCTT271",
+					"AT87_DESCRIPO271"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_IDENTIFCR_66965",
+				"LBL_ASSTS_MANTENIAO_32034"
+			],
+			"queries": {
+				"Q_METHODIR_7546": [
+					"QM_METHO456RD946_02",
+					"QM_METHO55D65365_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_PAYMENTMODEEE_368": {
+			"blis": [
+			],
+			"entities": {
+				"EN_DISBURSTE_282": [
+					"AT11_DIFFERNC282",
+					"AT77_SUMTOTLA282"
+				],
+				"EN_GENERALSR_979": [
+				],
+				"EN_LOANADDOI_167": [
+				],
+				"EN_LOANKYMRI_882": [
+				],
+				"EN_PAYMENTZD_123": [
+					"AT19_QUOTATII123",
+					"AT21_RESTRINI123",
+					"AT27_AMOUNTRR123",
+					"AT27_CHECKNBU123",
+					"AT32_ECONOMAD123",
+					"AT39_OFFICEII123",
+					"AT54_CURRENDC123",
+					"AT54_QUOTETYP123",
+					"AT56_CLIENTEM123",
+					"AT69_PROMOTER123",
+					"AT78_PAYAMOUU123",
+					"AT83_CONEPTWT123",
+					"AT97_PAYIDUGR123",
+					"AT98_ACCOUNUB123"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACEPTARDV_64984",
+				"LBL_ASSTS_APAGOPQXA_89595",
+				"LBL_ASSTS_BENEFICII_99714",
+				"LBL_ASSTS_CANCELARR_99965",
+				"LBL_ASSTS_CHEQUECLR_65293",
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_COTIZACNN_31924",
+				"LBL_ASSTS_CRUCERECI_95868",
+				"LBL_ASSTS_DESTINOCE_57201",
+				"LBL_ASSTS_DIFERENQI_53704",
+				"LBL_ASSTS_MONEDADEO_21507",
+				"LBL_ASSTS_OFICINAHX_44623",
+				"LBL_ASSTS_PLAZOYJVK_49555",
+				"LBL_ASSTS_REFERENAI_72258",
+				"LBL_ASSTS_TIPOCOTAA_28357",
+				"LBL_ASSTS_TOTALDEEE_75722",
+				"LBL_ASSTS_VALORNPRH_26284",
+				"LBL_ASSTS_VALOROPZW_68487",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+				"Q_LISTOOGA_DP31": [
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_PAYMENTSTENLV_850": {
+			"blis": [
+			],
+			"entities": {
+				"EN_GENERALSR_979": [
+				],
+				"EN_LEFTOVEAR_480": [
+				],
+				"EN_LOANDEFFR_694": [
+					"AT14_VALUEMZT694",
+					"AT55_ITEMASKY694",
+					"AT87_INGRESSS694"
+				],
+				"EN_LOANKYMRI_882": [
+				],
+				"EN_NEGOTIATI_654": [
+				],
+				"EN_PAYMENTOT_664": [
+				],
+				"EN_PAYMENTZY_669": [
+					"AT10_AMOUNTQX669",
+					"AT15_TYPEQUNT669",
+					"AT18_RETENTNN669",
+					"AT19_TYPEQUIN669",
+					"AT32_PAYMENTS669",
+					"AT37_DATEIISZ669",
+					"AT42_AMOUNTTT669",
+					"AT45_QUOTATOI669",
+					"AT46_REFERECN669",
+					"AT53_CURRENCY669",
+					"AT54_NUMCHEKC669",
+					"AT60_FINEPRAN669",
+					"AT61_OPERATRE669",
+					"AT62_VALUEGQO669",
+					"AT73_QUOTATIN669",
+					"AT77_CUSTOMEE669",
+					"AT83_AMOUNTER669",
+					"AT84_NEGOTITD669",
+					"AT86_BANKCZUQ669",
+					"AT87_ONLINEZV669",
+					"AT99_NOTESOKT669"
+				],
+				"EN_PRIORITII_152": [
+					"AT30_PRIORITT152",
+					"AT77_ITEMFUQE152"
+				],
+				"EN_QUOTATIUO_860": [
+					"AT30_DATERVCF860",
+					"AT41_VALUEKRT860",
+					"AT62_CURRENCT860",
+					"AT74_RESULTRD860"
+				],
+				"EN_QUOTEDETA_803": [
+					"AT11_INACTIVE803",
+					"AT24_ACTIVEQS803",
+					"AT62_TOTALUTI803",
+					"AT65_DESCRIOP803",
+					"AT97_EXPIREDD803"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_APAGOPQXA_89595",
+				"LBL_ASSTS_APLICAELN_71517",
+				"LBL_ASSTS_BANCOPEGT_42609",
+				"LBL_ASSTS_CHEQUEBCI_27043",
+				"LBL_ASSTS_COBRARAFT_16046",
+				"LBL_ASSTS_CONVERSSN_95041",
+				"LBL_ASSTS_COTIZACNN_31924",
+				"LBL_ASSTS_DESCRIPIN_18186",
+				"LBL_ASSTS_DESCRIPNI_65857",
+				"LBL_ASSTS_DEVOLUCBO_36197",
+				"LBL_ASSTS_DEVOLVERR_24242",
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_INGRESOHM_26023",
+				"LBL_ASSTS_INGRESOLL_37785",
+				"LBL_ASSTS_MONEDADPO_82566",
+				"LBL_ASSTS_MONEDAOAA_82257",
+				"LBL_ASSTS_MONTOEMFX_52083",
+				"LBL_ASSTS_MULTAPRCI_95892",
+				"LBL_ASSTS_NEGOCIAOD_40984",
+				"LBL_ASSTS_NOVIGENTT_94041",
+				"LBL_ASSTS_REFERENCI_47355",
+				"LBL_ASSTS_RETENCINN_79250",
+				"LBL_ASSTS_SALDOOPII_56896",
+				"LBL_ASSTS_SALDOPRCN_87630",
+				"LBL_ASSTS_TIPOCOTAA_28357",
+				"LBL_ASSTS_TIPOCOTRJ_94945",
+				"LBL_ASSTS_TOTALAOJT_55920",
+				"LBL_ASSTS_VALORAPAA_99910",
+				"LBL_ASSTS_VENCIDOUG_82584",
+				"LBL_ASSTS_VIGENTEON_55349",
+				"MSG_ASSTS_ELVALOROO_17736",
+				"MSG_ASSTS_REQUERIDO_35484",
+				"MSG_ASSTS_SEDEBERZE_11978",
+				"MSG_ASSTS_VALORFURN_83073"
+			],
+			"queries": {
+				"Q_DEFETRFT_LJ32": [
+					"QM_DEFETJLR33617_01",
+					"QM_DEFETRJJTT487_02",
+					"QM_DEFETTF2R2276_03",
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01",
+					"QM_PRIOR51135208_01",
+					"QM_PRIORII33T635_02",
+					"QM_QUOTA51U6T210_03",
+					"QM_QUOTAN1NTN712_02",
+					"QM_QUOTANT56T703_04",
+					"QM_QUOTAT1NNU486_01",
+					"QM_QUOTE24554198_05",
+					"QM_QUOTE4L524200_03",
+					"QM_QUOTEAL5D2418_01",
+					"QM_QUOTEDA5D4748_04",
+					"QM_QUOTEL525L718_02"
+				],
+				"Q_LISTOOGA_DP31": [
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01"
+				],
+				"Q_PRIORIIT_3510": [
+					"QM_DEFETJLR33617_01",
+					"QM_DEFETRJJTT487_02",
+					"QM_DEFETTF2R2276_03",
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01",
+					"QM_PRIOR51135208_01",
+					"QM_PRIORII33T635_02",
+					"QM_QUOTA51U6T210_03",
+					"QM_QUOTAN1NTN712_02",
+					"QM_QUOTANT56T703_04",
+					"QM_QUOTAT1NNU486_01",
+					"QM_QUOTE24554198_05",
+					"QM_QUOTE4L524200_03",
+					"QM_QUOTEAL5D2418_01",
+					"QM_QUOTEDA5D4748_04",
+					"QM_QUOTEL525L718_02"
+				],
+				"Q_QUOTATNU_1156": [
+					"QM_DEFETJLR33617_01",
+					"QM_DEFETRJJTT487_02",
+					"QM_DEFETTF2R2276_03",
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01",
+					"QM_PRIOR51135208_01",
+					"QM_PRIORII33T635_02",
+					"QM_QUOTA51U6T210_03",
+					"QM_QUOTAN1NTN712_02",
+					"QM_QUOTANT56T703_04",
+					"QM_QUOTAT1NNU486_01",
+					"QM_QUOTE24554198_05",
+					"QM_QUOTE4L524200_03",
+					"QM_QUOTEAL5D2418_01",
+					"QM_QUOTEDA5D4748_04",
+					"QM_QUOTEL525L718_02"
+				],
+				"Q_QUOTEDLA_2540": [
+					"QM_DEFETJLR33617_01",
+					"QM_DEFETRJJTT487_02",
+					"QM_DEFETTF2R2276_03",
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01",
+					"QM_PRIOR51135208_01",
+					"QM_PRIORII33T635_02",
+					"QM_QUOTA51U6T210_03",
+					"QM_QUOTAN1NTN712_02",
+					"QM_QUOTANT56T703_04",
+					"QM_QUOTAT1NNU486_01",
+					"QM_QUOTE24554198_05",
+					"QM_QUOTE4L524200_03",
+					"QM_QUOTEAL5D2418_01",
+					"QM_QUOTEDA5D4748_04",
+					"QM_QUOTEL525L718_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_PAYMENTUTOUGP_714": {
+			"blis": [
+			],
+			"entities": {
+				"EN_PAYMENTZY_669": [
+					"AT10_AMOUNTQX669",
+					"AT11_REFERECA669",
+					"AT18_RETENTNN669",
+					"AT21_REDUCTIP669",
+					"AT31_USERGUMY669",
+					"AT32_PAYMENTS669",
+					"AT35_CLASSCHA669",
+					"AT37_DATEIISZ669",
+					"AT39_COLLECOT669",
+					"AT44_ENTIREEE669",
+					"AT53_CURRENCY669",
+					"AT68_DATEPAYY669",
+					"AT68_SEQUENAT669",
+					"AT70_ADVANCEE669",
+					"AT74_SEQUENIT669",
+					"AT89_SEQUENPI669",
+					"AT89_STATUSVP669",
+					"AT95_REGIONLL669",
+					"AT99_NOTESOKT669"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ANTICIPSS_79918",
+				"LBL_ASSTS_APAGOPQXA_89595",
+				"LBL_ASSTS_CLASEBNBK_90328",
+				"LBL_ASSTS_COMENTARI_46421",
+				"LBL_ASSTS_CUENTAREN_88192",
+				"LBL_ASSTS_CUOTACOMM_65443",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAINGG_82521",
+				"LBL_ASSTS_FECHAPAGG_95277",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONTOEMFX_52083",
+				"LBL_ASSTS_REGIONALL_39718",
+				"LBL_ASSTS_RETENCIOO_15179",
+				"LBL_ASSTS_SECFFRHRZ_68817",
+				"LBL_ASSTS_SECINGJFM_10718",
+				"LBL_ASSTS_SECPAGABK_28190",
+				"LBL_ASSTS_TIPOCOBRO_50413",
+				"LBL_ASSTS_TIPOREDNU_76608",
+				"LBL_ASSTS_USUARIOTE_48852"
+			],
+			"queries": {
+				"Q_PAYMENTT_5030": [
+					"QM_PAYME00003552_23",
+					"QM_PAYME00005829_01",
+					"QM_PAYME03T5T381_11",
+					"QM_PAYME0500N820_28",
+					"QM_PAYME0NNTN576_17",
+					"QM_PAYME0TN53597_22",
+					"QM_PAYME3533T812_19",
+					"QM_PAYME3T3T5239_20",
+					"QM_PAYME3TT3N703_07",
+					"QM_PAYME50T30904_27",
+					"QM_PAYME5T300415_03",
+					"QM_PAYMEN005T380_16",
+					"QM_PAYMEN035T223_04",
+					"QM_PAYMENTNT0358_21",
+					"QM_PAYMENTT3N731_25",
+					"QM_PAYMET03T0522_18",
+					"QM_PAYMET0T0N368_02",
+					"QM_PAYMET33TN938_24",
+					"QM_PAYMETT53T505_26"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_PRIORITIESENY_489": {
+			"blis": [
+			],
+			"entities": {
+				"EN_PRIORITII_152": [
+					"AT30_PRIORITT152",
+					"AT77_ITEMFUQE152"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACEPTARDV_64984",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_PRIORIDDD_58504",
+				"LBL_ASSTS_RUBROFKGQ_42963"
+			],
+			"queries": {
+				"Q_PRIORIIT_3510": [
+					"QM_PRIOR51135208_01",
+					"QM_PRIORII33T635_02"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_PROJECTIONATU_621": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANINSTC_482": [
+				],
+				"EN_LOANKYMRI_882": [
+				],
+				"EN_PROJECTTI_953": [
+					"AT11_MONTOVIC953",
+					"AT20_MONTOPNE953",
+					"AT26_FECHAPRO953",
+					"AT40_DIASPRCO953",
+					"AT75_TIPOCACU953",
+					"AT78_MONTOVVD953",
+					"AT98_DATEPRSE953"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_DIASPROCA_33799",
+				"LBL_ASSTS_FECHAPRON_57586",
+				"LBL_ASSTS_FECHAPRSC_69139",
+				"LBL_ASSTS_MODALIDOC_51998",
+				"LBL_ASSTS_MONTOPRCE_54604",
+				"LBL_ASSTS_MONTOVEDC_35140",
+				"LBL_ASSTS_MONTOVIEE_67403",
+				"LBL_ASSTS_PROYECCTI_84293",
+				"MSG_ASSTS_REQUERIDO_35484"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_PROJECTIONTOG_425": {
+			"blis": [
+			],
+			"entities": {
+				"EN_INGOTRCSA_824": [
+					"AT21_SECUENCL824",
+					"AT46_DIVFINAA824",
+					"AT48_FECHAXAR824",
+					"AT57_CONCEPTO824",
+					"AT67_VALORAAB824",
+					"AT93_DIVINIAI824",
+					"AT94_REFEREAA824"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_DIVHASTAA_21887",
+				"LBL_ASSTS_DIVINICII_26095",
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_REFERENAI_72258",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_VALORNPRH_26284"
+			],
+			"queries": {
+				"Q_INGOTRSR_8396": [
+					"QM_INGOT3336R237_05",
+					"QM_INGOT639RR348_06",
+					"QM_INGOT6R66S789_02",
+					"QM_INGOT9SSRS727_07",
+					"QM_INGOTR396R871_03",
+					"QM_INGOTRR33R943_01",
+					"QM_INGOTS6R6R727_04"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_QUOTADETAISOY_745": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANKYMRI_882": [
+				],
+				"EN_PAYMENTZY_669": [
+				],
+				"EN_PREPAYMAA_382": [
+				],
+				"EN_QUOTEDETP_862": [
+					"AT22_STATUSJQ862",
+					"AT51_EXPIREDD862",
+					"AT61_PAYMENTT862",
+					"AT83_NUMQUOTT862"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_NUMCUOTAA_86215",
+				"LBL_ASSTS_PAGOWQQEJ_67772",
+				"LBL_ASSTS_VENCECLRT_51039"
+			],
+			"queries": {
+				"Q_QUOTEDPM_4705": [
+					"QM_QUOTE45457522_03",
+					"QM_QUOTE4M55P717_04",
+					"QM_QUOTEM4D7M278_02",
+					"QM_QUOTEPDPM4748_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_RATESMODALKUB_953": {
+			"blis": [
+			],
+			"entities": {
+				"EN_1IRAKPKDY_241": [
+				],
+				"EN_RATESTIRW_494": [
+					"AT14_REFEREUV494",
+					"AT17_TYPEPONS494",
+					"AT25_VALUEDET494",
+					"AT26_NUMBERMI494",
+					"AT43_LOCKEDMI494",
+					"AT57_VALUEMXA494",
+					"AT61_PORTFOSO494",
+					"AT61_VALUEMIN494",
+					"AT65_LOCKEDLL494",
+					"AT69_VALUEMQK494",
+					"AT80_LOCKEDXX494",
+					"AT86_SIGNODEA494",
+					"AT87_SIGNMAXX494",
+					"AT96_SIGNMINN494"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_MNIMOQXTO_64583",
+				"LBL_ASSTS_MXIMOWBZU_39119",
+				"LBL_ASSTS_NMDECIMLA_32351",
+				"LBL_ASSTS_SECTORYDN_72932",
+				"LBL_ASSTS_SIGNORIHO_57042",
+				"LBL_ASSTS_TIPOPUNOS_62324",
+				"LBL_ASSTS_VALORDEOE_50169",
+				"LBL_ASSTS_VALORNPRH_26284",
+				"LBL_ASSTS_VALORREEA_62571",
+				"MSG_ASSTS_REQUERIDO_35484",
+				"MSG_ASSTS_VALORFURN_83073"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_RATESPTSITVKK_186": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANRATES_507": [
+					"AT15_REFERERA507",
+					"AT17_SIGNTOAY507",
+					"AT29_VALUERAC507",
+					"AT39_CURRENTR507",
+					"AT41_VALUETPY507",
+					"AT59_ANUALEFA507",
+					"AT71_SPREADPY507",
+					"AT72_SEQUENAT507",
+					"AT81_ITEMZSAC507",
+					"AT85_QUOTAKSY507",
+					"AT95_UPDATEDO507",
+					"AT97_DATERERE507"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_FECHAMODD_53824",
+				"LBL_ASSTS_FECHATASC_22366",
+				"LBL_ASSTS_NOCUOTACN_33552",
+				"LBL_ASSTS_RUBROFKGQ_42963",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_SIGNOAPLL_32241",
+				"LBL_ASSTS_SPREADACC_20484",
+				"LBL_ASSTS_TASAACTLL_22656",
+				"LBL_ASSTS_TASAEFECA_65157",
+				"LBL_ASSTS_TASAREFEI_65089",
+				"LBL_ASSTS_VALORAPLI_55165",
+				"LBL_ASSTS_VALORTALS_42653"
+			],
+			"queries": {
+				"Q_LOANRATE_7625": [
+					"QM_LOANR5A665977_11",
+					"QM_LOANR5T5A7250_03",
+					"QM_LOANR65AAT572_04",
+					"QM_LOANR667AT583_02",
+					"QM_LOANR67ATT787_06",
+					"QM_LOANR6AA75434_08",
+					"QM_LOANR727TT566_10",
+					"QM_LOANRA772A257_05",
+					"QM_LOANRA7A66684_09",
+					"QM_LOANRAT27T733_07",
+					"QM_LOANRET26E598_01",
+					"QM_LOANRT52AE547_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_REAJUSTECAMMB_801": {
+			"blis": [
+			],
+			"entities": {
+				"EN_1IRAKPKDY_241": [
+				],
+				"EN_REAJUSTBB_191": [
+					"AT21_FECHAOFI191",
+					"AT28_TIPOQBOA191",
+					"AT54_SECUENAC191",
+					"AT57_MANTCUAT191"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_MANTCUOTT_96843",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_TIPOLDSKB_46090"
+			],
+			"queries": {
+				"Q_REAJUSBC_5831": [
+					"QM_REAJU355SC116_01",
+					"QM_REAJU5S3B1182_02",
+					"QM_REAJUB88SS143_04",
+					"QM_REAJUSBS3C738_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_REAJUSTEDEFTF_264": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANKYMRI_882": [
+				],
+				"EN_REAJUSTBB_191": [
+				],
+				"EN_REAJUSTEE_221": [
+					"AT42_CONCEPTO221",
+					"AT68_SIGNOBWL221",
+					"AT92_PORCENJJ221",
+					"AT95_FACTORRR221",
+					"AT97_REFERENA221"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_DETALLEEE_62584",
+				"LBL_ASSTS_FACTORQJB_54710",
+				"LBL_ASSTS_PORCENTAE_66428",
+				"LBL_ASSTS_REFERENCL_42296",
+				"LBL_ASSTS_SIGNORIHO_57042",
+				"MSG_ASSTS_VALORDEER_67727"
+			],
+			"queries": {
+				"Q_REAJUSTE_2618": [
+					"QM_REAJU1866E559_04",
+					"QM_REAJU1E82T584_05",
+					"QM_REAJU626TE781_01",
+					"QM_REAJU628S6335_02",
+					"QM_REAJUT2TTE721_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_REFINANCEDALA_857": {
+			"blis": [
+			],
+			"entities": {
+				"EN_REFINANLC_582": [
+					"AT25_TRANSANC582",
+					"AT34_INITIAAA582",
+					"AT53_TYPERTKJ582",
+					"AT67_LOANWAUS582",
+					"AT78_LINEUGLL582",
+					"AT85_OFFICIDL582",
+					"AT94_TOTALTCA582"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_FUNCIONRA_97040",
+				"LBL_ASSTS_MONTOORGI_46642",
+				"LBL_ASSTS_OPERACION_46998",
+				"LBL_ASSTS_SALDORENN_27297",
+				"LBL_ASSTS_TIPOCREDT_20131",
+				"LBL_ASSTS_TIPOLDSKB_46090",
+				"LBL_ASSTS_TRAMITEDA_19554"
+			],
+			"queries": {
+				"Q_REFINAOS_1949": [
+					"QM_REFIN449O9338_15",
+					"QM_REFIN4999A759_09",
+					"QM_REFIN91SOA342_01",
+					"QM_REFIN99A99966_04",
+					"QM_REFIN9A1OO544_02",
+					"QM_REFINA9191501_08",
+					"QM_REFINS4AS9573_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_REFINANCELISS_781": {
+			"blis": [
+			],
+			"entities": {
+				"EN_GENERALSR_979": [
+				],
+				"EN_REFINANCA_619": [
+					"AT10_ADDICIAP619",
+					"AT14_ADDITILL619",
+					"AT14_CLIENTEN619",
+					"AT18_PAYMENAY619",
+					"AT18_TYPEFEEE619",
+					"AT21_TERMINEE619",
+					"AT29_PERIODII619",
+					"AT30_TOTALRNI619",
+					"AT38_BAKOPETR619",
+					"AT39_CAPITAAL619",
+					"AT46_ADITIONL619",
+					"AT49_TOTALTWO619",
+					"AT52_ACCOUNTT619",
+					"AT52_NEWLOARY619",
+					"AT52_PAYMETCN619",
+					"AT56_GRACEDVD619",
+					"AT56_OTHERBAL619",
+					"AT58_PREVENGT619",
+					"AT59_TERMGRET619",
+					"AT63_VALUEPAY619",
+					"AT68_TYPEREVT619",
+					"AT74_CAPITABA619",
+					"AT75_TERMGRPE619",
+					"AT77_FIXEDPAA619",
+					"AT77_TYPEGREA619",
+					"AT78_BASICISA619",
+					"AT79_OVERDUEE619",
+					"AT80_CAPITACO619",
+					"AT80_OPERATYT619",
+					"AT84_OTHERBAN619",
+					"AT88_NEWLOAMM619",
+					"AT91_ADITIOLN619",
+					"AT98_TERMCATA619"
+				],
+				"EN_REFINANLC_582": [
+					"AT15_SELECTEE582",
+					"AT25_OTHERCAA582",
+					"AT30_OVERDUSE582",
+					"AT34_CURRENCP582",
+					"AT34_INITIAAA582",
+					"AT35_ORIGINAT582",
+					"AT59_DEFAULCN582",
+					"AT67_LOANWAUS582",
+					"AT78_LINEUGLL582",
+					"AT86_INTEREAA582",
+					"AT89_CAPITABA582",
+					"AT97_RESIDURR582"
+				],
+				"EN_RULERDATT_835": [
+				],
+				"EN_RULERESUT_794": [
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ACOBROGAI_62184",
+				"LBL_ASSTS_APAGOKXFB_84081",
+				"LBL_ASSTS_APLICASBO_86638",
+				"LBL_ASSTS_BUSCARYEV_82731",
+				"LBL_ASSTS_CAPITALZZ_22928",
+				"LBL_ASSTS_CLIENTEWV_22561",
+				"LBL_ASSTS_CUENTADRA_18812",
+				"LBL_ASSTS_CUOTASVCE_30944",
+				"LBL_ASSTS_DAPAGOQIJ_45913",
+				"LBL_ASSTS_FECHAPAFA_15171",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_LIMPIARAM_44649",
+				"LBL_ASSTS_MONEDAOVV_49430",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONLOCALL_78733",
+				"LBL_ASSTS_MONTOORGI_46642",
+				"LBL_ASSTS_NACEVENOD_29221",
+				"LBL_ASSTS_NROPRESAA_77247",
+				"LBL_ASSTS_NUMDIVARR_93213",
+				"LBL_ASSTS_OPERACIAR_42315",
+				"LBL_ASSTS_PCAPYCICP_34048",
+				"LBL_ASSTS_PERGRACAA_52779",
+				"LBL_ASSTS_PERGRACNI_21279",
+				"LBL_ASSTS_PINTEMLFG_25013",
+				"LBL_ASSTS_PLAZOORIG_11054",
+				"LBL_ASSTS_PLAZORELL_79044",
+				"LBL_ASSTS_PLAZOYJVK_49555",
+				"LBL_ASSTS_PROGRAMNE_62110",
+				"LBL_ASSTS_RENOVACMA_67253",
+				"LBL_ASSTS_SALDOCAPI_87055",
+				"LBL_ASSTS_SALDOINTE_15519",
+				"LBL_ASSTS_SALDOMOAR_33879",
+				"LBL_ASSTS_SALDOOTOR_60497",
+				"LBL_ASSTS_SALDOOTSO_22130",
+				"LBL_ASSTS_SELECCION_40905",
+				"LBL_ASSTS_TIPOCUOAA_49907",
+				"LBL_ASSTS_TIPOOPERC_17964",
+				"LBL_ASSTS_TIPOPLAZZ_65289",
+				"LBL_ASSTS_TIPOPREMM_37747",
+				"LBL_ASSTS_TIPORENCC_42776",
+				"LBL_ASSTS_TOTALAREE_10091",
+				"LBL_ASSTS_TOTALOPNI_48989",
+				"LBL_ASSTS_VALORADCI_85333",
+				"LBL_ASSTS_VALORAPAA_99910",
+				"LBL_ASSTS_VALORNPRH_26284",
+				"MSG_ASSTS_REQUERIDO_35484",
+				"MSG_ASSTS_SEDEBERZE_11978"
+			],
+			"queries": {
+				"Q_LISTOOGA_DP31": [
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01"
+				],
+				"Q_REFINAAA_3375": [
+					"QM_LISTOPD1PG679_02",
+					"QM_LISTOPPGAD356_01",
+					"QM_REFIN33AA5755_12",
+					"QM_REFIN33AAA628_13",
+					"QM_REFIN3AA5A953_08",
+					"QM_REFIN73A33305_15",
+					"QM_REFIN7A33A253_17",
+					"QM_REFIN7A35A550_10",
+					"QM_REFINA3335199_01",
+					"QM_REFINA3A35360_02",
+					"QM_REFINA7333600_18",
+					"QM_REFINAA377432_11",
+					"QM_REFINAA3A7121_14",
+					"QM_REFINAA7A5170_03"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_REFINANCELSSO_386": {
+			"entities": {
+				"EN_REFINANLA_273": [
+					"AT13_OBSERVST273",
+					"AT66_AMOUNTCC273",
+					"AT78_LOANAMOU273",
+					"AT98_DELIVECS273"
+				],
+				"EN_REFINANLC_582": [
+					"AT16_TOTALBCN582",
+					"AT34_INITIAAA582",
+					"AT54_QUOTATNO582",
+					"AT55_CURRENDE582",
+					"AT67_LOANWAUS582",
+					"AT78_LINEUGLL582",
+					"AT94_TOTALTCA582"
+				],
+				"EN_REFINANOM_289": [
+					"AT21_PREVIOTS289",
+					"AT41_QUOTASAT289",
+					"AT78_CONCEPTS289",
+					"AT91_CONCEPTT289"
+				]
+			},
+			"labels": [
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_COTIZACNN_31924",
+				"LBL_ASSTS_DATOSLAEE_51137",
+				"LBL_ASSTS_ENTREGACA_60626",
+				"LBL_ASSTS_ESTADOCAO_43748",
+				"LBL_ASSTS_ESTADOCOT_53322",
+				"LBL_ASSTS_LNEAWPTLE_75914",
+				"LBL_ASSTS_MONEDATUB_92849",
+				"LBL_ASSTS_MONTOORGI_46642",
+				"LBL_ASSTS_NOOPERAOC_23583",
+				"LBL_ASSTS_OBLIGANRR_23695",
+				"LBL_ASSTS_OBSERVAOO_32947",
+				"LBL_ASSTS_PRSTAMORA_59340",
+				"LBL_ASSTS_RUBROSCLP_83562",
+				"LBL_ASSTS_SALDOTOLL_54355",
+				"LBL_ASSTS_TOTALLAAC_72481",
+				"LBL_ASSTS_TOTALPRTO_69722",
+				"LBL_ASSTS_TOTALRENN_38363"
+			],
+			"queries": {
+				"Q_REFINACL_2890": [
+					"QM_REFIN020AC797_06",
+					"QM_REFIN02LA2593_02",
+					"QM_REFIN08L02599_03",
+					"QM_REFIN22LLC721_05",
+					"QM_REFIN66N66142_02",
+					"QM_REFIN866AN976_03",
+					"QM_REFIN86ANN263_01",
+					"QM_REFIN886N7244_04",
+					"QM_REFIN898L2471_04",
+					"QM_REFIN9C2L8931_07",
+					"QM_REFINCLLLC604_01"
+				],
+				"Q_REFINANE_6687": [
+					"QM_REFIN020AC797_06",
+					"QM_REFIN02LA2593_02",
+					"QM_REFIN08L02599_03",
+					"QM_REFIN22LLC721_05",
+					"QM_REFIN66N66142_02",
+					"QM_REFIN866AN976_03",
+					"QM_REFIN86ANN263_01",
+					"QM_REFIN886N7244_04",
+					"QM_REFIN898L2471_04",
+					"QM_REFIN9C2L8931_07",
+					"QM_REFINCLLLC604_01"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_TESTWKHELVLBD_756": {
+			"blis": [
+			],
+			"entities": {
+				"EN_INGOTRCSA_824": [
+					"AT32_RANGEVRU824",
+					"AT46_DIVFINAA824",
+					"AT57_CONCEPTO824",
+					"AT67_VALORAAB824",
+					"AT70_BASECATL824",
+					"AT93_DIVINIAI824",
+					"AT94_REFEREAA824"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_BASECLCLU_56377",
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_COMENTAOO_63544",
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_CUOTADESD_67554",
+				"LBL_ASSTS_CUOTAHAAS_11841",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_RANGOHORR_73584",
+				"LBL_ASSTS_VALORGGEY_80898",
+				"MSG_ASSTS_VALORFURN_83073"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_TYPERATESMALA_545": {
+			"blis": [
+			],
+			"entities": {
+				"EN_1IRAKPKDY_241": [
+				],
+				"EN_VALUERATE_478": [
+					"AT14_IDENTIIE478",
+					"AT89_CLASECUE478",
+					"AT98_DESCRIPN478"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CANCELARR_70217",
+				"LBL_ASSTS_CLASEBNBK_90328",
+				"LBL_ASSTS_DESCRIPNI_65857",
+				"LBL_ASSTS_GUARDARRI_81055",
+				"LBL_ASSTS_IDENTIFCR_66965"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_VALUEDATEUVDU_861": {
+			"blis": [
+			],
+			"entities": {
+				"EN_LOANINSTC_482": [
+				],
+				"EN_LOANKYMRI_882": [
+					"AT19_LASTPRED882"
+				],
+				"EN_TRANSACOA_147": [
+					"AT32_DATEREFF193",
+					"AT35_SECUENTA193",
+					"AT55_STATUSJB193",
+					"AT63_USERDUKD193",
+					"AT66_OPERATII193",
+					"AT69_TRANSAIO147",
+					"AT87_DATETRAN193"
+				],
+				"EN_VALUEDAET_237": [
+					"AT54_VALUEDET530",
+					"AT79_OBSERVTI237"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAREFF_99584",
+				"LBL_ASSTS_FECHATRNN_93009",
+				"LBL_ASSTS_FECHAVALO_78292",
+				"LBL_ASSTS_OBSERVANN_50010",
+				"LBL_ASSTS_PRESTAMOO_68068",
+				"LBL_ASSTS_PRSTAMOCV_96028",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_TRANSACCC_75316",
+				"LBL_ASSTS_TRANSACCI_56568",
+				"LBL_ASSTS_ULTPROCEO_10293",
+				"LBL_ASSTS_USUARIOTE_48852",
+				"MSG_ASSTS_LAOBSERIA_20926"
+			],
+			"queries": {
+				"Q_TRANSACO_1244": [
+					"QM_TRANS412C4399_04",
+					"QM_TRANS441AC179_02",
+					"QM_TRANSA1ACA247_07",
+					"QM_TRANSA4OA2436_03",
+					"QM_TRANSCA2AO373_06",
+					"QM_TRANSCCACA364_01",
+					"QM_TRANSO241A350_05"
+				]
+			},
+			"subForms": [
+			]
+		},
+		"T_VALUERATESFBO_932": {
+			"blis": [
+			],
+			"entities": {
+				"EN_RATESTIRW_494": [
+					"AT14_REFEREUV494",
+					"AT17_TYPEPONS494",
+					"AT25_VALUEDET494",
+					"AT26_NUMBERMI494",
+					"AT57_VALUEMXA494",
+					"AT61_PORTFOSO494",
+					"AT61_VALUEMIN494",
+					"AT86_SIGNODEA494",
+					"AT87_SIGNMAXX494",
+					"AT96_SIGNMINN494"
+				],
+				"EN_VALUERATE_478": [
+					"AT14_IDENTIIE478",
+					"AT45_RATEPITT478",
+					"AT89_CLASECUE478",
+					"AT98_DESCRIPN478"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_ASSTS_CLASEBNBK_90328",
+				"LBL_ASSTS_DESCRIPOO_35259",
+				"LBL_ASSTS_IDENTIFCR_66965",
+				"LBL_ASSTS_NUMDECIEE_20117",
+				"LBL_ASSTS_REFERENCI_47355",
+				"LBL_ASSTS_SECTORYDN_72932",
+				"LBL_ASSTS_SIGDEFEOC_85304",
+				"LBL_ASSTS_SIGMAXIOM_73301",
+				"LBL_ASSTS_SIGMINIMO_52027",
+				"LBL_ASSTS_TASAPITGY_32459",
+				"LBL_ASSTS_TASASWEXW_63256",
+				"LBL_ASSTS_TIPOPUNOS_62324",
+				"LBL_ASSTS_TIPOTASAA_68977",
+				"LBL_ASSTS_VALDEFEOO_14049",
+				"LBL_ASSTS_VALMAXIOM_82307",
+				"LBL_ASSTS_VALMINIMO_80016",
+				"LBL_ASSTS_VALORESIP_53552"
+			],
+			"queries": {
+				"Q_RATESEXU_5693": [
+					"QM_RATES353EU761_04",
+					"QM_RATES53UE9851_02",
+					"QM_RATES5E59E213_13",
+					"QM_RATES6E5U9356_05",
+					"QM_RATES9X3XE320_03",
+					"QM_RATES9XU33106_09",
+					"QM_RATESU5X6X417_10",
+					"QM_RATESU653E804_12",
+					"QM_RATESUU5UX291_06",
+					"QM_RATESX65EX447_08",
+					"QM_TYPER21E2S640_04",
+					"QM_TYPER22SS2693_01",
+					"QM_TYPER2AESS873_02",
+					"QM_TYPERA272A877_03"
+				],
+				"Q_TYPERASE_1722": [
+					"QM_RATES353EU761_04",
+					"QM_RATES53UE9851_02",
+					"QM_RATES5E59E213_13",
+					"QM_RATES6E5U9356_05",
+					"QM_RATES9X3XE320_03",
+					"QM_RATES9XU33106_09",
+					"QM_RATESU5X6X417_10",
+					"QM_RATESU653E804_12",
+					"QM_RATESUU5UX291_06",
+					"QM_RATESX65EX447_08",
+					"QM_TYPER21E2S640_04",
+					"QM_TYPER22SS2693_01",
+					"QM_TYPER2AESS873_02",
+					"QM_TYPERA272A877_03"
+				]
+			},
+			"subForms": [
+			]
+		}
+	},
+	"Queries": {
+		"Q_ACCOUNSS_3580": {
+			"labels": [
+			]
+		},
+		"Q_ACTIERNI_WO73": {
+			"labels": [
+			]
+		},
+		"Q_AMORAZTI_NF61": {
+			"labels": [
+			]
+		},
+		"Q_AMORTIAN_8237": {
+			"labels": [
+			]
+		},
+		"Q_AMORTITI_LNSPR": {
+			"labels": [
+			]
+		},
+		"Q_AMORTITT_8477": {
+			"labels": [
+			]
+		},
+		"Q_APAGOOOO_YV30": {
+			"labels": [
+			]
+		},
+		"Q_BENERRRA_IX77": {
+			"labels": [
+			]
+		},
+		"Q_CATALGSE_LNSPR": {
+			"labels": [
+			]
+		},
+		"Q_CAUSAONT_HU91": {
+			"labels": [
+			]
+		},
+		"Q_COMPATAT_EY63": {
+			"labels": [
+			]
+		},
+		"Q_COMPIISI_NI17": {
+			"labels": [
+			]
+		},
+		"Q_COMPLSIN_RZ93": {
+			"labels": [
+			]
+		},
+		"Q_COMPTOTD_SH98": {
+			"labels": [
+			]
+		},
+		"Q_CONCIIIS_FQ49": {
+			"labels": [
+			]
+		},
+		"Q_CONCPPTM_GI69": {
+			"labels": [
+			]
+		},
+		"Q_CONCTITE_DD65": {
+			"labels": [
+			]
+		},
+		"Q_CONDONDE_7324": {
+			"labels": [
+			]
+		},
+		"Q_CURRENAT_2921": {
+			"labels": [
+			]
+		},
+		"Q_DEBTORZN_LNSPR": {
+			"labels": [
+			]
+		},
+		"Q_DEBTSOLR_XT44": {
+			"labels": [
+			]
+		},
+		"Q_DEFEDLIT_ZB19": {
+			"labels": [
+				"LBL_ASSTS_ACUMULAOO_17499",
+				"LBL_ASSTS_DEVENGAIK_41942",
+				"LBL_ASSTS_RUBROIVKT_62353",
+				"LBL_ASSTS_SALDOCPEI_91372"
+			]
+		},
+		"Q_DEFEMTIT_WQ23": {
+			"labels": [
+				"LBL_ASSTS_DIVIDENDD_33129"
+			]
+		},
+		"Q_DEFETRFT_LJ32": {
+			"labels": [
+				"LBL_ASSTS_DESCRIPIN_18186",
+				"LBL_ASSTS_DEVOLVERR_24242",
+				"LBL_ASSTS_INGRESOHM_26023"
+			]
+		},
+		"Q_DETAILAP_5973": {
+			"labels": [
+			]
+		},
+		"Q_DETAILTM_1603": {
+			"labels": [
+			]
+		},
+		"Q_DETARTNC_LQ51": {
+			"labels": [
+			]
+		},
+		"Q_DETASSOL_MC22": {
+			"labels": [
+			]
+		},
+		"Q_DETAYILY_DP76": {
+			"labels": [
+			]
+		},
+		"Q_EXTENDEX_5312": {
+			"labels": [
+			]
+		},
+		"Q_FUNDQJFL_8975": {
+			"labels": [
+			]
+		},
+		"Q_GROUEIRS_WN63": {
+			"labels": [
+			]
+		},
+		"Q_GUAREEIT_UA14": {
+			"labels": [
+			]
+		},
+		"Q_ITEMUACV_NX25": {
+			"labels": [
+			]
+		},
+		"Q_LINEIERT_DW35": {
+			"labels": [
+			]
+		},
+		"Q_LINELAAN_WU84": {
+			"labels": [
+			]
+		},
+		"Q_LINERLAR_KA20": {
+			"labels": [
+			]
+		},
+		"Q_LISTANAG_EZ71": {
+			"labels": [
+			]
+		},
+		"Q_LISTCACN_AT28": {
+			"labels": [
+			]
+		},
+		"Q_LISTCEEE_FJ77": {
+			"labels": [
+			]
+		},
+		"Q_LISTOOGA_DP31": {
+			"labels": [
+			]
+		},
+		"Q_LISTSEAD_QV44": {
+			"labels": [
+			]
+		},
+		"Q_LOANAELE_GZ51": {
+			"labels": [
+				"LBL_LNSPR_ARCHIVOCI_89407",
+				"LBL_LNSPR_EMPRESAJZ_94816",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAIWCD_53719",
+				"LBL_LNSPR_SECUENCAI_74208"
+			]
+		},
+		"Q_LOANDEBB_6719": {
+			"labels": [
+			]
+		},
+		"Q_LOANDPQM_3009": {
+			"labels": [
+				"LBL_ASSTS_CATEGORAA_59396",
+				"LBL_ASSTS_CDIGOCLEN_93241",
+				"LBL_ASSTS_CODGRUPOO_65478",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_MONTOAPBD_71203"
+			]
+		},
+		"Q_LOANELLL_AR48": {
+			"labels": [
+				"LBL_LNSPR_DESCRIPIN_18186",
+				"LBL_LNSPR_ERRORAWHP_83580",
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LNSPR_FECHAVETA_87721",
+				"LBL_LOANS_OPERACIOO_86900"
+			]
+		},
+		"Q_LOANIBUZ_3992": {
+			"labels": [
+				"LBL_ASSTS_FECHAINCC_83803",
+				"LBL_ASSTS_MONTOPROM_71868",
+				"LBL_ASSTS_NOMBREGRR_11223",
+				"LBL_ASSTS_NUMPRSTRA_65807"
+			]
+		},
+		"Q_LOANIISE_TX62": {
+			"labels": [
+			]
+		},
+		"Q_LOANLIIR_OP62": {
+			"labels": [
+				"LBL_ASSTS_ESTADOEAI_33340"
+			]
+		},
+		"Q_LOANMSEM_ZL15": {
+			"labels": [
+			]
+		},
+		"Q_LOANNRCH_EQ75": {
+			"labels": [
+			]
+		},
+		"Q_LOANPIPY_QP44": {
+			"labels": [
+			]
+		},
+		"Q_LOANRATE_7625": {
+			"labels": [
+			]
+		},
+		"Q_LOANSILT_NX50": {
+			"labels": [
+				"LBL_LNSPR_ESTADOEAI_33340",
+				"LBL_LOANS_SELECCIOE_40160"
+			]
+		},
+		"Q_LOANSISS_EV86": {
+			"labels": [
+			]
+		},
+		"Q_LOANSLSN_UR29": {
+			"labels": [
+			]
+		},
+		"Q_LOANSTNN_5541": {
+			"labels": [
+				"LBL_ASSTS_ESTADOEAI_33340"
+			]
+		},
+		"Q_LOANTUNT_QF10": {
+			"labels": [
+			]
+		},
+		"Q_LOANWATN_1941": {
+			"labels": [
+			]
+		},
+		"Q_MASSSCEE_GY13": {
+			"labels": [
+			]
+		},
+		"Q_MASSSEOO_AX15": {
+			"labels": [
+			]
+		},
+		"Q_MASSTENM_SJ71": {
+			"labels": [
+			]
+		},
+		"Q_MEMBEESE_CY90": {
+			"labels": [
+			]
+		},
+		"Q_MEMBIAAA_BE92": {
+			"labels": [
+			]
+		},
+		"Q_METHODIR_7546": {
+			"labels": [
+				"LBL_ASSTS_IDENTIFRD_90451"
+			]
+		},
+		"Q_MODAALAS_TP83": {
+			"labels": [
+			]
+		},
+		"Q_NOAPYYTA_XK68": {
+			"labels": [
+			]
+		},
+		"Q_OFFILILC_KJ11": {
+			"labels": [
+			]
+		},
+		"Q_OFFILLLL_SV56": {
+			"labels": [
+			]
+		},
+		"Q_ONERIAAL_UR42": {
+			"labels": [
+			]
+		},
+		"Q_OPERATNY_7536": {
+			"labels": [
+			]
+		},
+		"Q_OPEREEOA_SH40": {
+			"labels": [
+			]
+		},
+		"Q_OPERLSST_KU21": {
+			"labels": [
+			]
+		},
+		"Q_PAYMANAM_TY74": {
+			"labels": [
+			]
+		},
+		"Q_PAYMENII_8495": {
+			"labels": [
+				"LBL_ASSTS_BANCOPEGT_42609",
+				"LBL_ASSTS_CTAEXPEIE_88433",
+				"LBL_ASSTS_ESTADOEAI_33340",
+				"LBL_ASSTS_FECHAENVV_38174",
+				"LBL_ASSTS_FECHAPRSC_69139",
+				"LBL_ASSTS_IDENTIFCI_68121",
+				"LBL_ASSTS_NROCTADIT_66216",
+				"LBL_ASSTS_OPERACICO_14654",
+				"LBL_ASSTS_REFERENAA_79934",
+				"LBL_ASSTS_TIPOIDETI_21234",
+				"LBL_ASSTS_TIPOPAGOO_46459",
+				"LBL_ASSTS_TRANSACCC_32542",
+				"LBL_ASSTS_VALORDEIR_79807",
+				"LBL_ASSTS_VALORDEOA_75123"
+			]
+		},
+		"Q_PAYMENTT_5030": {
+			"labels": [
+			]
+		},
+		"Q_PAYMRENL_JE45": {
+			"labels": [
+			]
+		},
+		"Q_PAYMSSIL_RR14": {
+			"labels": [
+			]
+		},
+		"Q_PAYMTTCL_IB70": {
+			"labels": [
+			]
+		},
+		"Q_PRINTICM_3105": {
+			"labels": [
+			]
+		},
+		"Q_PRODLUDT_UJ17": {
+			"labels": [
+			]
+		},
+		"Q_PRODTSNI_WK98": {
+			"labels": [
+			]
+		},
+		"Q_QUOTEDPM_4705": {
+			"labels": [
+			]
+		},
+		"Q_RATEGLSL_WM41": {
+			"labels": [
+			]
+		},
+		"Q_RATESEXU_5693": {
+			"labels": [
+			]
+		},
+		"Q_READJUSM_7240": {
+			"labels": [
+				"LBL_LOANS_NOMBRETPH_86356",
+				"LBL_LOANS_SELECCIOE_40160"
+			]
+		},
+		"Q_REAJUSBC_5831": {
+			"labels": [
+				"LBL_ASSTS_FECHAQWBP_23514",
+				"LBL_ASSTS_MANTCUOTT_96843",
+				"LBL_ASSTS_SECUENCAA_14570",
+				"LBL_ASSTS_TIPOLDSKB_46090"
+			]
+		},
+		"Q_REAJUSTE_2618": {
+			"labels": [
+				"LBL_ASSTS_CONCEPTOO_16181",
+				"LBL_ASSTS_FACTORQJB_54710",
+				"LBL_ASSTS_PORCENTAE_66428",
+				"LBL_ASSTS_REFERENCL_42296",
+				"LBL_ASSTS_SIGNORIHO_57042"
+			]
+		},
+		"Q_REFEEAML_BR93": {
+			"labels": [
+			]
+		},
+		"Q_REFINAAA_3375": {
+			"labels": [
+			]
+		},
+		"Q_REFINAOS_1949": {
+			"labels": [
+			]
+		},
+		"Q_RESTTITU_BM75": {
+			"labels": [
+			]
+		},
+		"Q_REVESETA_RO55": {
+			"labels": [
+			]
+		},
+		"Q_SEGUSSRS_HF84": {
+			"labels": [
+			]
+		},
+		"Q_STATSTSS_LA52": {
+			"labels": [
+			]
+		},
+		"Q_STATSTTL_MS41": {
+			"labels": [
+			]
+		},
+		"Q_SUMMARST_6100": {
+			"labels": [
+				"LBL_ASSTS_CAPITALBZ_88457",
+				"LBL_ASSTS_INTERSYOO_12825",
+				"LBL_ASSTS_OTROSRYRP_40547",
+				"LBL_ASSTS_TOTALAOJT_55920"
+			]
+		},
+		"Q_SUMMESYE_DM68": {
+			"labels": [
+			]
+		},
+		"Q_SUMMUSYU_GO80": {
+			"labels": [
+			]
+		},
+		"Q_SYNDATCT_WX29": {
+			"labels": [
+			]
+		},
+		"Q_SYNDCEAL_LH97": {
+			"labels": [
+			]
+		},
+		"Q_TRANSACO_1244": {
+			"labels": [
+			]
+		},
+		"Q_TWORILTS_QE88": {
+			"labels": [
+			]
+		},
+		"Q_TYPERASE_1722": {
+			"labels": [
+			]
+		},
+		"Q_TYPESIAO_HG77": {
+			"labels": [
+			]
+		}
+	}
+}

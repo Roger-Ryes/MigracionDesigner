@@ -1,0 +1,97 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_LOANSLIGN_522",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoansLineGuarantee"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "775073"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "N"
+		},
+		{
+			"attributeId": "AT65_CODLINEE522",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_LOANSLIGN_522",
+			"format": "",
+			"name": "@i_num_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_LoanGuaranteeProcedure",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9883_bli_loanguaranteeprocedure",
+	"patternName": "BLI_LoanGuaranteeProcedure",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "c3c778b6-8d8d-4542-b0a8-2fd73df0e0ce",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 3,
+			"queryName": "SELECT li_tramite\r\n   FROM"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "c3c778b6-8d8d-4542-b0a8-2fd73df0e0ce",
+			"columns": [
+				{
+					"attributeId": "AT94_PROCEDEE493",
+					"entityId": "EN_VALIDATOE_493",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_VALIDATOE_493",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ValidationProcedure"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_gar_propuesta",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

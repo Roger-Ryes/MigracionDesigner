@@ -1,0 +1,132 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77691"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_dividendo",
+			"type": "CUSTOM",
+			"value": "dividend"
+		}
+	],
+	"name": "BLI_ConsultDeferredItemsDetail",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6875_bli_consultdeferreditemsdetail",
+	"patternName": "BLI_ConsultDeferredItemsDetail",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "99a76a10-a037-4946-a1c6-5c0e2887c2b5",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "ca888807-e264-4988-aa11-14e741bf33da",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 12,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ca888807-e264-4988-aa11-14e741bf33da",
+			"columns": [
+				{
+					"attributeId": "AT15_ITEMJVKW227",
+					"entityId": "EN_DEFERRESA_227",
+					"format": "",
+					"name": "Rubro",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_BALANCEE227",
+					"entityId": "EN_DEFERRESA_227",
+					"format": "",
+					"name": "Saldo",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT35_EARNQQYK227",
+					"entityId": "EN_DEFERRESA_227",
+					"format": "",
+					"name": "Devenga",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT14_ACUMULET227",
+					"entityId": "EN_DEFERRESA_227",
+					"format": "",
+					"name": "Acumulado",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_DEFERRESA_227",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DeferredItemsDetailList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_trn",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

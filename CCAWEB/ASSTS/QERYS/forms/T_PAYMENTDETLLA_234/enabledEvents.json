@@ -1,0 +1,16 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_PAYMENTD_9784",
+		"controlName": "PaymentDetailQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": 3
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	}
+]

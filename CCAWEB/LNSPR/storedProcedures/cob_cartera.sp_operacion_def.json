@@ -1,0 +1,346 @@
+{
+	"filename": "C:\\Users\\jquitora\\Documents\\SP\\sp_operacion_def.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_operacion_def",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "out",
+				"name": "@o_cumple"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_tipo_cca_new"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_subsegmento_new"
+			}
+		],
+		"queries": [
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@w_actividad_destino_ant"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_actividad_destino_new"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_actividad_destino"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_alicuota_aho"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_alicuota"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_clase_bloqueo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente_ant"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente_new"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cont_div"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_cta_ahorro"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_cta_certificado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cumple"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_doble_alicuota"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_fin"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_venc_fact"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_venc"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_fvenf"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_log"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_ant"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_new"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_ant"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_capital"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_new"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_tmanual"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_nfactor_reaj_ro"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_nfactor_reaj"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nreferencial_ro"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nreferencial"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_nsigno_ro"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_nsigno"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_num_empleado"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_op_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca_new"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca_tmp"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_per_reaj_orig"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_reajuste"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajustable_orig"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajustable"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_subsegmento_cca_ant"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_subsegmento_cca_new"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_subsegmento_cca"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_bloqueo"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_cca_ant"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_cca_new"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_cca"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_producto"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_tabla"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion_ant"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion_bce_ant"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion_bce_new"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion_bce"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tplazo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_alicuota_aho"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_alicuota"
+			}
+		]
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7131"
+		}
+	],
+	"name": "BLI_Search_Statuses",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5889_bli_search_statuses",
+	"patternName": "BLI_Search_Statuses",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "87ee850e-a321-41e7-9166-991dcc2d899c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 3,
+			"queryName": "select es_codigo,es_descripcion from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "87ee850e-a321-41e7-9166-991dcc2d899c",
+			"columns": [
+				{
+					"attributeId": "AT95_CODEIUMW845",
+					"entityId": "EN_STATUSLII_845",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_STATEKLW845",
+					"entityId": "EN_STATUSLII_845",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_STATUSLII_845",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "StatusList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_estados",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

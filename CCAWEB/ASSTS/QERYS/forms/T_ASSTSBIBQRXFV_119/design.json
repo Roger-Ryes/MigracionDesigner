@@ -1,0 +1,1576 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "Consolidate View",
+	"cobisPatternId": 1,
+	"commands": [
+		{
+			"action": null,
+			"causesValidation": false,
+			"causesValidationAsString": "F",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TASSTSBI_BA1_277",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TASSTSBI_BA1"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ACTUALIAA_39645"
+				},
+				"labelId": "LBL_ASSTS_ACTUALIAA_39645",
+				"moduleId": "ASSTS"
+			},
+			"layoutType": "Command",
+			"name": "Command1",
+			"options": 0,
+			"order": 1,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		}
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "T",
+	"header": {
+		"headerCustomEvents": [
+			{
+				"customEventId": "CECM_015CM_CGENERIC_HDR_208",
+				"executionType": 7,
+				"headerEventType": {
+					"availableExecutionType": 7,
+					"description": "Permite personalizar la acci\u00f3n a ejecutarla",
+					"eventId": 10,
+					"name": "ExecuteCommand"
+				},
+				"isEnabled": true
+			},
+			{
+				"customEventId": "FDCM_015HD_PRODUCTO_5GT_207",
+				"executionType": 1,
+				"headerEventType": {
+					"availableExecutionType": 1,
+					"description": "Permite personalizar los customDialogParameters al navegar o abrir modales",
+					"eventId": 601,
+					"name": "beforeHeaderNavigate"
+				},
+				"isEnabled": true
+			},
+			{
+				"customEventId": "LDHD_010HD_PRODUCTO_5GT_121",
+				"executionType": 2,
+				"headerEventType": {
+					"availableExecutionType": 7,
+					"description": "Permite cargar acciones a la cabecera",
+					"eventId": 600,
+					"name": "LoadHeader"
+				},
+				"isEnabled": true
+			}
+		],
+		"headerId": "HD_HEADERLSO_968",
+		"name": {
+			"$ref": "../../../../ASSTS/commons/patterns/header_HD_HEADERLSO_968.json#/name"
+		},
+		"userControl": {
+			"type": "A",
+			"userControlId": "LoadHeader"
+		}
+	},
+	"id": {
+		"moduleId": "ASSTS",
+		"subModuleId": "QERYS",
+		"taskId": "T_ASSTSBIBQRXFV_119",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_GENERALIAO_289119",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../ASSTS/relations/componentKeys.json#/QERYS/Forms/T_ASSTSBIBQRXFV_119/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_002T_ASSTSBIBQRXFV_119_781",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Inicializaci\u00f3n de datos de un ViewContainer, despues de este evento se realiza el segimiento de cambios en los datos",
+						"eventId": 2,
+						"name": "InitData"
+					}
+				},
+				{
+					"customEventId": "CEVC_008T_ASSTSBIBQRXFV_119_997",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 1,
+						"description": "Se ejecuta antes de renderizar un ViewContainer, permite realizar personalizaciones visuales",
+						"eventId": 8,
+						"name": "Render"
+					}
+				},
+				{
+					"customEventId": "CEVC_501T_ASSTSBIBQRXFV_119_701",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Evento que actua como listener cuando se cierra ventanas modales.",
+						"eventId": 501,
+						"name": "onCloseModal"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS",
+				"taskId": "T_ASSTSBIBQRXFV_119",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_GENERALIAO_289119"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "GeneralInformationMain",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"titleLabel": {
+				"defaultValue": {
+					"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PRESTAMOO_87993"
+				},
+				"labelId": "LBL_ASSTS_PRESTAMOO_87993",
+				"moduleId": "ASSTS"
+			},
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"componentStyle": null,
+						"customEvents": [
+							{
+								"customEventId": "CEVC_106G_GENERALNTN_956193_649",
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": "T",
+								"eventActions": [
+								],
+								"executionType": 1,
+								"filter": null,
+								"isEnabled": true,
+								"viewContainerEventType": {
+									"availableExecutionType": 7,
+									"description": "Evento change para pesta\u00f1as, collapsible y accordion",
+									"eventId": 106,
+									"name": "ChangeGroup"
+								}
+							}
+						],
+						"enabled": 4095,
+						"eventType": 106,
+						"groupId": "G_GENERALNTN_956193",
+						"groups": [
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALIIO_430193",
+								"groups": [
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"columnsNum": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALAIN_757193",
+										"htmlSection": "T",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "Group2426",
+										"order": 1,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"colSpan": 1,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "G_GENERALAIN_757193-default-blank",
+												"options": 0,
+												"order": 0,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"userControl": {
+													"type": "I",
+													"userControlId": "Spacer"
+												},
+												"visible": 4095,
+												"visualAttributeId": "G_GENERALAIN_757193-default-blank",
+												"width": null,
+												"widthComposite": "D"
+											}
+										]
+									},
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"columnsNum": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALMMI_992193",
+										"htmlSection": "T",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "Group2533",
+										"order": 2,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"colSpan": 1,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "G_GENERALMMI_992193-default-blank",
+												"options": 0,
+												"order": 0,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"userControl": {
+													"type": "I",
+													"userControlId": "Spacer"
+												},
+												"visible": 4095,
+												"visualAttributeId": "G_GENERALMMI_992193-default-blank",
+												"width": null,
+												"widthComposite": "D"
+											}
+										]
+									}
+								],
+								"isCustomized": false,
+								"layoutType": "GroupLayout",
+								"name": "GroupLayout1660",
+								"order": 1,
+								"parentLayoutType": "TabbedLayout",
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ESTADOACU_72691"
+									},
+									"labelId": "LBL_ASSTS_ESTADOACU_72691",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALINN_164193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2797",
+								"order": 2,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_INACINGAA_67127"
+									},
+									"labelId": "LBL_ASSTS_INACINGAA_67127",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALINN_164193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALINN_164193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALNNA_591193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1358",
+								"order": 3,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_CARTERAIV_98543"
+									},
+									"labelId": "LBL_ASSTS_CARTERAIV_98543",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALNNA_591193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALNNA_591193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALOII_638193",
+								"groups": [
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALNTA_133193",
+										"groups": [
+											{
+												"collapsedStr": "F",
+												"colSpan": 1,
+												"columnsNum": 1,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"enabled": 4095,
+												"eventType": 0,
+												"groupId": "G_GENERALNOA_127193",
+												"htmlSection": "T",
+												"independentValidation": "F",
+												"isCustomized": false,
+												"layoutType": "Group",
+												"name": "Group1940",
+												"order": 1,
+												"orientation": "V",
+												"parentLayoutType": "CollapsibleLayout",
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"style": null,
+												"titleLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DEUDORESS_24940"
+													},
+													"labelId": "LBL_ASSTS_DEUDORESS_24940",
+													"moduleId": "ASSTS"
+												},
+												"visible": 4095,
+												"visualAttributes": [
+													{
+														"aggregate": null,
+														"aggregateId": null,
+														"colSpan": 1,
+														"componentInGrid": false,
+														"componentStyle": null,
+														"customEvents": [
+														],
+														"customizationLayer": 0,
+														"customizationLayerDescription": "ECU",
+														"include": 4095,
+														"isCustomized": false,
+														"maxRecords": null,
+														"name": "G_GENERALNOA_127193-default-blank",
+														"options": 0,
+														"order": 0,
+														"responsiveLayouts": null,
+														"responsivity": false,
+														"sizeWidthComposite": null,
+														"style": null,
+														"userControl": {
+															"type": "I",
+															"userControlId": "Spacer"
+														},
+														"visible": 4095,
+														"visualAttributeId": "G_GENERALNOA_127193-default-blank",
+														"width": null,
+														"widthComposite": "D"
+													}
+												]
+											}
+										],
+										"isCustomized": false,
+										"layoutType": "CollapsibleLayout",
+										"name": "CollapsibleLayout2866",
+										"order": 1,
+										"parentLayoutType": "GroupLayout",
+										"style": null,
+										"visible": 4095
+									},
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALNTN_772193",
+										"groups": [
+											{
+												"collapsedStr": "F",
+												"colSpan": 1,
+												"columnsNum": 1,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"enabled": 4095,
+												"eventType": 0,
+												"groupId": "G_GENERALNMM_828193",
+												"htmlSection": "T",
+												"independentValidation": "F",
+												"isCustomized": false,
+												"layoutType": "Group",
+												"name": "Group2837",
+												"order": 1,
+												"orientation": "V",
+												"parentLayoutType": "CollapsibleLayout",
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"style": null,
+												"titleLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_GARANTESS_89598"
+													},
+													"labelId": "LBL_ASSTS_GARANTESS_89598",
+													"moduleId": "ASSTS"
+												},
+												"visible": 4095,
+												"visualAttributes": [
+													{
+														"aggregate": null,
+														"aggregateId": null,
+														"colSpan": 1,
+														"componentInGrid": false,
+														"componentStyle": null,
+														"customEvents": [
+														],
+														"customizationLayer": 0,
+														"customizationLayerDescription": "ECU",
+														"include": 4095,
+														"isCustomized": false,
+														"maxRecords": null,
+														"name": "G_GENERALNMM_828193-default-blank",
+														"options": 0,
+														"order": 0,
+														"responsiveLayouts": null,
+														"responsivity": false,
+														"sizeWidthComposite": null,
+														"style": null,
+														"userControl": {
+															"type": "I",
+															"userControlId": "Spacer"
+														},
+														"visible": 4095,
+														"visualAttributeId": "G_GENERALNMM_828193-default-blank",
+														"width": null,
+														"widthComposite": "D"
+													}
+												]
+											}
+										],
+										"isCustomized": false,
+										"layoutType": "CollapsibleLayout",
+										"name": "CollapsibleLayout2747",
+										"order": 2,
+										"parentLayoutType": "GroupLayout",
+										"style": null,
+										"visible": 4095
+									},
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALNNT_446193",
+										"groups": [
+											{
+												"collapsedStr": "F",
+												"colSpan": 1,
+												"columnsNum": 1,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"enabled": 4095,
+												"eventType": 0,
+												"groupId": "G_GENERALNIN_596193",
+												"htmlSection": "T",
+												"independentValidation": "F",
+												"isCustomized": false,
+												"layoutType": "Group",
+												"name": "Group2455",
+												"order": 1,
+												"orientation": "V",
+												"parentLayoutType": "CollapsibleLayout",
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"style": null,
+												"titleLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_GARANTASS_13684"
+													},
+													"labelId": "LBL_ASSTS_GARANTASS_13684",
+													"moduleId": "ASSTS"
+												},
+												"visible": 4095,
+												"visualAttributes": [
+													{
+														"aggregate": null,
+														"aggregateId": null,
+														"colSpan": 1,
+														"componentInGrid": false,
+														"componentStyle": null,
+														"customEvents": [
+														],
+														"customizationLayer": 0,
+														"customizationLayerDescription": "ECU",
+														"include": 4095,
+														"isCustomized": false,
+														"maxRecords": null,
+														"name": "G_GENERALNIN_596193-default-blank",
+														"options": 0,
+														"order": 0,
+														"responsiveLayouts": null,
+														"responsivity": false,
+														"sizeWidthComposite": null,
+														"style": null,
+														"userControl": {
+															"type": "I",
+															"userControlId": "Spacer"
+														},
+														"visible": 4095,
+														"visualAttributeId": "G_GENERALNIN_596193-default-blank",
+														"width": null,
+														"widthComposite": "D"
+													}
+												]
+											}
+										],
+										"isCustomized": false,
+										"layoutType": "CollapsibleLayout",
+										"name": "CollapsibleLayout2595",
+										"order": 3,
+										"parentLayoutType": "GroupLayout",
+										"style": null,
+										"visible": 4095
+									},
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALAAA_144193",
+										"groups": [
+											{
+												"collapsedStr": "F",
+												"colSpan": 1,
+												"columnsNum": 1,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"enabled": 4095,
+												"eventType": 0,
+												"groupId": "G_GENERALTTN_154193",
+												"htmlSection": "T",
+												"independentValidation": "F",
+												"isCustomized": false,
+												"layoutType": "Group",
+												"name": "Group2467",
+												"order": 1,
+												"orientation": "V",
+												"parentLayoutType": "CollapsibleLayout",
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"style": null,
+												"titleLabel": {
+													"defaultValue": {
+														"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PLIZASKSR_34183"
+													},
+													"labelId": "LBL_ASSTS_PLIZASKSR_34183",
+													"moduleId": "ASSTS"
+												},
+												"visible": 4095,
+												"visualAttributes": [
+													{
+														"aggregate": null,
+														"aggregateId": null,
+														"colSpan": 1,
+														"componentInGrid": false,
+														"componentStyle": null,
+														"customEvents": [
+														],
+														"customizationLayer": 0,
+														"customizationLayerDescription": "ECU",
+														"include": 4095,
+														"isCustomized": false,
+														"maxRecords": null,
+														"name": "G_GENERALTTN_154193-default-blank",
+														"options": 0,
+														"order": 0,
+														"responsiveLayouts": null,
+														"responsivity": false,
+														"sizeWidthComposite": null,
+														"style": null,
+														"userControl": {
+															"type": "I",
+															"userControlId": "Spacer"
+														},
+														"visible": 4095,
+														"visualAttributeId": "G_GENERALTTN_154193-default-blank",
+														"width": null,
+														"widthComposite": "D"
+													}
+												]
+											}
+										],
+										"isCustomized": false,
+										"layoutType": "CollapsibleLayout",
+										"name": "CollapsibleLayout2488",
+										"order": 4,
+										"parentLayoutType": "GroupLayout",
+										"style": null,
+										"visible": 4095
+									}
+								],
+								"isCustomized": false,
+								"layoutType": "GroupLayout",
+								"name": "GroupLayout2612",
+								"order": 4,
+								"parentLayoutType": "TabbedLayout",
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_GARANTADS_87414"
+									},
+									"labelId": "LBL_ASSTS_GARANTADS_87414",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALIOT_600193",
+								"groups": [
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"columnsNum": 3,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALAAM_308193",
+										"htmlSection": "T",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "LoanItemsGroup",
+										"order": 1,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"colSpan": 1,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "G_GENERALAAM_308193-default-blank",
+												"options": 0,
+												"order": 0,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"userControl": {
+													"type": "I",
+													"userControlId": "Spacer"
+												},
+												"visible": 4095,
+												"visualAttributeId": "G_GENERALAAM_308193-default-blank",
+												"width": null,
+												"widthComposite": "D"
+											}
+										]
+									},
+									{
+										"collapsedStr": "F",
+										"colSpan": 1,
+										"columnsNum": 3,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"enabled": 4095,
+										"eventType": 0,
+										"groupId": "G_GENERALMTO_993193",
+										"htmlSection": "T",
+										"independentValidation": "F",
+										"isCustomized": false,
+										"layoutType": "Group",
+										"name": "LoanRatesGroup",
+										"order": 2,
+										"orientation": "V",
+										"parentLayoutType": "GroupLayout",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"style": null,
+										"visible": 4095,
+										"visualAttributes": [
+											{
+												"aggregate": null,
+												"aggregateId": null,
+												"colSpan": 1,
+												"componentInGrid": false,
+												"componentStyle": null,
+												"customEvents": [
+												],
+												"customizationLayer": 0,
+												"customizationLayerDescription": "ECU",
+												"include": 4095,
+												"isCustomized": false,
+												"maxRecords": null,
+												"name": "G_GENERALMTO_993193-default-blank",
+												"options": 0,
+												"order": 0,
+												"responsiveLayouts": null,
+												"responsivity": false,
+												"sizeWidthComposite": null,
+												"style": null,
+												"userControl": {
+													"type": "I",
+													"userControlId": "Spacer"
+												},
+												"visible": 4095,
+												"visualAttributeId": "G_GENERALMTO_993193-default-blank",
+												"width": null,
+												"widthComposite": "D"
+											}
+										]
+									}
+								],
+								"isCustomized": false,
+								"layoutType": "GroupLayout",
+								"name": "GroupLayout2907",
+								"order": 5,
+								"parentLayoutType": "TabbedLayout",
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_RUBROSYSA_16960"
+									},
+									"labelId": "LBL_ASSTS_RUBROSYSA_16960",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALOTN_662193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1134",
+								"order": 6,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ABONOSBOQ_70064"
+									},
+									"labelId": "LBL_ASSTS_ABONOSBOQ_70064",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALOTN_662193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALOTN_662193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALNNN_702193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2225",
+								"order": 7,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_TRANSACEN_33079"
+									},
+									"labelId": "LBL_ASSTS_TRANSACEN_33079",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALNNN_702193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALNNN_702193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALNNM_609193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2595",
+								"order": 8,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_OPRENOVUE_79044"
+									},
+									"labelId": "LBL_ASSTS_OPRENOVUE_79044",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALNNM_609193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALNNM_609193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALMIN_860193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2572",
+								"order": 9,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_OPERACISS_10684"
+									},
+									"labelId": "LBL_ASSTS_OPERACISS_10684",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALMIN_860193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALMIN_860193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALOAT_762193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2185",
+								"order": 10,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_OPERACIIR_11664"
+									},
+									"labelId": "LBL_ASSTS_OPERACIIR_11664",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALOAT_762193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALOAT_762193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALTAM_466193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2584",
+								"order": 11,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_SEGUROSYH_11523"
+									},
+									"labelId": "LBL_ASSTS_SEGUROSYH_11523",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALTAM_466193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALTAM_466193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALAIA_225193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2446",
+								"order": 12,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_REAJUSTPS_38809"
+									},
+									"labelId": "LBL_ASSTS_REAJUSTPS_38809",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALAIA_225193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALAIA_225193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALANN_232193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1643",
+								"order": 13,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PRSTAMOOD_41837"
+									},
+									"labelId": "LBL_ASSTS_PRSTAMOOD_41837",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALANN_232193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALANN_232193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_GENERALTAI_721193",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1496",
+								"order": 14,
+								"orientation": "V",
+								"parentLayoutType": "TabbedLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_COMISINES_30295"
+									},
+									"labelId": "LBL_ASSTS_COMISINES_30295",
+									"moduleId": "ASSTS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_GENERALTAI_721193-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_GENERALTAI_721193-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							}
+						],
+						"isCustomized": false,
+						"layoutType": "TabbedLayout",
+						"name": "TabbedLayout1110",
+						"order": 1,
+						"style": null,
+						"titleLabel": {
+							"defaultValue": {
+								"$ref": "../../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_PRSTAMOOD_41837"
+							},
+							"labelId": "LBL_ASSTS_PRSTAMOOD_41837",
+							"moduleId": "ASSTS"
+						},
+						"visible": 4095
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_GENERALINA_193"
+				},
+				"metadataVersion": "7.2.0.2019",
+				"modules": [
+					{
+						"moduleId": "ASSTS"
+					}
+				],
+				"name": "View of GeneralInformationMain"
+			}
+		}
+	]
+}

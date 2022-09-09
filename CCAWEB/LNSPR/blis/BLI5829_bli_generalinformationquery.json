@@ -1,0 +1,392 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_GENERALIN_300",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "GeneralInformation"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT84_NUMEROCI300",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALIN_300",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7860"
+		}
+	],
+	"name": "BLI_GeneralInformationQuery",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5829_bli_generalinformationquery",
+	"patternName": "BLI_GeneralInformationQuery",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "30691dec-2f15-440b-97cf-21d92fbb33ad",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 13,
+			"queryName": "select\n   @w_operacionca,\n   @w_banco,\n   @w_tramite,\n   @w_lin_credito,\n   @w_estado,\n   @w_cliente,\n   @w_toperacion,\n   @w_desc_toperacion,\n   @w_moneda,\n   @w_desc_moneda,\n   @w_oficina,\n   @w_oficial,\n   convert(varchar(10),@w_fecha_ini,@i_formato_fecha),\n   convert(varchar(10),@w_fecha_fin,@i_formato_fecha),\n   convert(varchar(10),@w_fecha_prox_pag,@i_formato_fecha),\n   @w_monto,\n   @w_tplazo,\n   @w_desc_tplazo,\n   @w_plazo,\n   @w_tdividendo,\n   @w_desc_tdividendo,\n   @w_periodo_cap,\n   @w_periodo_int,\n   @w_periodos_gracia,\n   @w_periodos_gracia_int,\n   @w_dist_gracia,\n   @w_destino,\n   @w_desc_destino,\n   @w_ciudad,\n   @w_desc_ciudad,\n   @w_nem_producto,\n   @w_desc_producto,\n   @w_cuenta,\n   @w_reajuste_periodo,\n   convert(varchar(10),@w_reajuste_fecha,@i_formato_fecha),\n   @w_reajuste_num,\n   @w_renovacion,\n   @w_num_renovacion,\n   @w_precancelacion,\n   @w_tipo,\n   @w_porcentaje_fin,\n   @w_tasa_fin,\n   @w_cuota_completa,\n   @w_anticipado_int,\n   @w_reajuste_intereses,\n   @w_reduccion,\n   @w_cuota_anticipada,\n   @w_dias_anio,\n   @w_tipo_amortizacion,\n   @w_cuota_fija,\n   @w_cuota,\n   @w_cuota_capital,\n   @w_dias_gracia,\n   @w_dia_pago,\n   @w_desc_ofi,\n   @w_inicio,\n   @w_fin,\n   @w_nombre,\n   @w_tasa,\n   @w_referencial,\n   @w_desc_referencial,\n   @w_nom_oficial,\n   0,\n   @w_reajuste_especial,\n   @w_sector,\n   @w_des_sector,\n   @w_anterior,\n   @w_migrada,\n   @w_refer,\n   @w_desembolso,\n   convert(varchar(10),@w_fecha_liq,@i_formato_fecha),\n   @w_cuota_adic,\n   @w_meses_hip,\n   @w_monto_aprobado,\n   @w_tipo_aplicacion,\n   @w_gracia_int,\n   @w_mes_gracia,\n   @w_num_dec,\n   @w_fecha_fija,\n   @w_reajuste,\n   @w_evitar_feriados,\n   convert(varchar(10),@w_fecha_ult_proceso,@i_formato_fecha),\n   @w_saldo_operacion,\n   @w_pcobis,\n   @w_alicuota,\n   @w_cta_certificado,\n   @w_cta_ahorro,\n   @w_tipo_bloqueo,\n   @w_clase_bloqueo,\n   @w_saldo_desbloqueo,\n   isnull(@w_valor_bloqueo, 0),\n   @w_alicuota_aho,\n   @w_saldo_desbloqueo_aho,\n   isnull(@w_valor_bloqueo_aho, 0),\n   @w_doble_alicuota,\n   @w_des_alicuota,\n   @w_des_alicuota_aho,\n   @w_actividad_destino,\n   @w_desc_actividad_destino,\n   @w_compania,\n   @w_desc_compania,\n   @w_tipo_cca,\n   @w_desc_tipo_cca,\n   @w_monto_seguro,\n   @w_cuota1,\n   convert(varchar(10),@w_fecha1,@i_formato_fecha),\n   convert(varchar(10),@w_fecha2,@i_formato_fecha),\n   @w_cuotan,\n   convert(varchar(10),@w_fecha3,@i_formato_fecha),\n   @w_comfa,\n   @w_tipo_det,\n   @w_tramo_det,\n   @w_descrip_det,\n   @w_tipo_bien,\n   @w_desc_bien,\n   @w_renta,\n   @w_comseg,\n   @w_comfc,\n   @w_tipo_subsegmento,\n   @w_descripcion_subsegmento,\n   @w_toperacion_bce,\n   @w_cservicio,\n   convert(varchar(10),@w_fecha_fin_orig,@i_formato_fecha),\n   isnull(@w_monto_cap, @w_monto),\n   round(@w_tasa_efectiva,@w_num_dec),\n   @w_op_precancelada,\n   @w_cobranza,\n   @w_est_cobranza,\n   @w_plan,\n   @w_fech_titularizacion,\n   @w_fech_colocacion,\n   @w_clte_fideicomiso,\n   @w_tramo,\n   @w_tipo_tip,\n   @w_fech_retorno,\n   @w_opera_reeref,\n   @w_cant_ref,\n   @w_cant_ree,\n   @w_aseguradora_veh,\n   @w_aseguradora_des,\n   @w_fondeador"
+		},
+		{
+			"_idQuery": "dffc37c4-fc32-432f-a1b3-fbe7acd002c5",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 14,
+			"queryName": "select\n\t@w_operacionca,\n\t@w_banco,\n\t@w_tramite,\n\t@w_lin_credito,\n\t@w_estado,\n\t@w_cliente,\n\t@w_toperacion,\n\t@w_desc_toperacion,\n\t@w_moneda,\n\t@w_desc_moneda,\n\t@w_oficina,\n\t@w_oficial,\n\tconvert(varchar(10),@w_fecha_ini,@i_formato_fecha),\n\tconvert(varchar(10),@w_fecha_fin,@i_formato_fecha),\n\tconvert(varchar(10),@w_fecha_prox_pag,@i_formato_fecha),\n\t@w_monto,\n\t@w_tplazo,\n\t@w_desc_tplazo,\n\t@w_plazo,\n\t@w_tdividendo,\n\t@w_desc_tdividendo,\n\t@w_periodo_cap,\n\t@w_periodo_int,\n\t@w_periodos_gracia,\n\t@w_periodos_gracia_int,\n\t@w_dist_gracia,\n\t@w_destino,\n\t@w_desc_destino,\n\t@w_ciudad,\n\t@w_desc_ciudad,\n\t@w_nem_producto,\n\t@w_desc_producto,\n\t@w_cuenta,\n\t@w_reajuste_periodo,\n\tconvert(varchar(10),@w_reajuste_fecha,@i_formato_fecha),\n\t@w_reajuste_num,\n\t@w_renovacion,\n\t@w_num_renovacion,\n\t@w_precancelacion,\n\t@w_tipo,\n\t@w_porcentaje_fin,\n\t@w_tasa_fin,\n\t@w_cuota_completa,\n\t@w_anticipado_int,\n\t@w_reajuste_intereses,\n\t@w_reduccion,\n\t@w_cuota_anticipada,\n\t@w_dias_anio,\n\t@w_tipo_amortizacion,\n\t@w_cuota_fija,\n\t@w_cuota,\n\t@w_cuota_capital,\n\t@w_dias_gracia,\n\t@w_dia_pago,\n\t@w_desc_ofi,\n\t@w_inicio,\n\t@w_fin,\n\t@w_nombre,\n\t@w_tasa,\n\t@w_referencial,\n\t@w_desc_referencial,\n\t@w_nom_oficial,\n\t0,\n\t@w_reajuste_especial,\n\t@w_sector,\n\t@w_des_sector,\n\t@w_anterior,\n\t@w_migrada,\n\t@w_refer,\n\t@w_desembolso,\n\tconvert(varchar(10),@w_fecha_liq,@i_formato_fecha),\n\t@w_cuota_adic,\n\t@w_meses_hip,\n\t@w_monto_aprobado,\n\t@w_tipo_aplicacion,\n\t@w_gracia_int,\n\t@w_mes_gracia,\n\t@w_num_dec,\n\t@w_fecha_fija,\n\t@w_reajuste,\n\t@w_evitar_feriados,\n\tconvert(varchar(10),@w_fecha_ult_proceso,@i_formato_fecha),\n\t@w_saldo_operacion,\n\t@w_pcobis,\n\t@w_alicuota,\n\t@w_cta_certificado,\n\t@w_cta_ahorro,\n\t@w_tipo_bloqueo,\n\t@w_clase_bloqueo,\n\t@w_saldo_desbloqueo,\n\tisnull(@w_valor_bloqueo, 0),\n\t@w_alicuota_aho,\n\t@w_saldo_desbloqueo_aho,\n\tisnull(@w_valor_bloqueo_aho, 0),\n\t@w_doble_alicuota,\n\t@w_des_alicuota,\n\t@w_des_alicuota_aho,\n\t@w_actividad_destino,\n\t@w_desc_actividad_destino,\n\t@w_compania,\n\t@w_desc_compania,\n\t@w_tipo_cca,\n\t@w_desc_tipo_cca,\n\t@w_monto_seguro,\n\t@w_cuota1,\n\tconvert(varchar(10),@w_fecha1,@i_formato_fecha),\n\tconvert(varchar(10),@w_fecha2,@i_formato_fecha),\n\t@w_cuotan,\n\tconvert(varchar(10),@w_fecha3,@i_formato_fecha),\n\t@w_comfa,\n\t@w_tipo_det,\n\t@w_tramo_det,\n\t@w_descrip_det,\n\t@w_tipo_bien,\n\t@w_desc_bien,\n\t@w_renta,\n\t@w_comseg,\n\t@w_comfc,\n\t@w_tipo_subsegmento,\n\t@w_descripcion_subsegmento,\n\t@w_toperacion_bce,\n\t@w_cservicio,\n\tconvert(varchar(10),@w_fecha_fin_orig,@i_formato_fecha),\n\tisnull(@w_monto_cap, @w_monto),\n\tround(@w_tasa_efectiva,@w_num_dec),\n\t@w_op_precancelada,\n\t@w_cobranza,\n\t@w_est_cobranza,\n\t@w_plan,\n\t@w_cuota_segura,\n   @w_opera_reeref,\n   @w_cant_ref,\n   @w_cant_ree"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "30691dec-2f15-440b-97cf-21d92fbb33ad",
+			"columns": [
+				{
+					"attributeId": "AT53_CODOPEIR300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_NUMEROCI300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT56_TRAMITEE300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_LINEACTE300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{3}",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT57_ESTADOSW300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{4}",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_IDCLIENT300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{5}",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_TIPOOPIR300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{6}",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT57_TIPOOPCC300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{7}",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_IDMONEDA300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{8}",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT52_OFICINAA300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{10}",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_IDOFICLL300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{11}",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_FECHACIC300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "dd/MM/yyyy",
+					"name": "{12}",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_FECHAVIC300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "dd/MM/yyyy",
+					"name": "{13}",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_MONTOOPA300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{15}",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_TIPOPEOR300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{16}",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_PERIODSS300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{18}",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT81_PERIODPL300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{21}",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT70_PERIODTE300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{22}",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_PERGRACA300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{23}",
+					"position": 24,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_PERGRAAS300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{24}",
+					"position": 25,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_DESTINOR300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{26}",
+					"position": 27,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT59_CIUDADZB300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{29}",
+					"position": 30,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_CUENTAOP300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{32}",
+					"position": 33,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT57_FECHAPRE300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{34}",
+					"position": 35,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_NOMBRECN300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{57}",
+					"position": 58,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT68_FECHALDA300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{70}",
+					"position": 71,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_MONTOAAR300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{73}",
+					"position": 74,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_FECHAUIR300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{81}",
+					"position": 82,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_SALDOOII300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{82}",
+					"position": 83,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_SEGMENOT300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{90}",
+					"position": 91,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_ACTIVIIA300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{104}",
+					"position": 105,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT22_FECHAPCN300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "dd/MM/yyyy",
+					"name": "{108}",
+					"position": 109,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_CODSTAEE300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{147}",
+					"position": 148,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_FONDEAOO300",
+					"entityId": "EN_GENERALIN_300",
+					"format": "",
+					"name": "{156}",
+					"position": 157,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		},
+		{
+			"_idQuery": "dffc37c4-fc32-432f-a1b3-fbe7acd002c5",
+			"columns": [
+				{
+					"attributeId": "AT35_GRACEDNNSPR",
+					"entityId": "EN_AMORTIZON_LNSPR",
+					"format": "",
+					"name": "{22}",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "AmortizationFormEntity"
+		},
+		{
+			"entityId": "EN_GENERALIN_300",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "GeneralInformation"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

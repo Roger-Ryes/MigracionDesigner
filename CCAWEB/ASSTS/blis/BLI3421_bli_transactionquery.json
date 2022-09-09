@@ -1,0 +1,246 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_FILTERTSC_512",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "FilterTransactionQuery"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7142"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "A"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "pagSec"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_desde",
+			"type": "CUSTOM",
+			"value": "fechaD"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_hasta",
+			"type": "CUSTOM",
+			"value": "fechaH"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_estado",
+			"type": "CUSTOM",
+			"value": "estado"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo_tran",
+			"type": "CUSTOM",
+			"value": "tipoTrans"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacionca",
+			"type": "CUSTOM",
+			"value": "pagOpe"
+		}
+	],
+	"name": "BLI_TransactionQuery",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3421_bli_transactionquery",
+	"patternName": "BLI_TransactionQuery",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "99a76a10-a037-4946-a1c6-5c0e2887c2b5",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "122315f5-7a9f-4c9c-a7c3-a09ad4d092dc",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 7,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "122315f5-7a9f-4c9c-a7c3-a09ad4d092dc",
+			"columns": [
+				{
+					"attributeId": "AT15_NUMBERON556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "",
+					"name": "Operacion",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT83_SEQUENLA556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "",
+					"name": "Secuencial",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_TRANSATT556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "",
+					"name": "Transaccion",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_TRANSAEO556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "dd/MM/yyyy",
+					"name": "Fecha Trn",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_TRANSAOI556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "dd/MM/yyyy",
+					"name": "Fecha Ref",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_STATEBOK556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "",
+					"name": "Estado",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_CODCLINT556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "",
+					"name": "Cliente",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_USERONSI556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "",
+					"name": "Usuario",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_SECOPERV556",
+					"entityId": "EN_LISTTRAON_556",
+					"format": "",
+					"name": "Sec_ope   ",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LISTTRAON_556",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ListTransactionQuery"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_trn",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

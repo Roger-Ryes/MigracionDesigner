@@ -1,0 +1,1154 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "714500"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_General_Information",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI7672_bli_general_information",
+	"patternName": "BLI_General_Information",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "1b00f4cd-6b07-4e72-af7a-1276a04b11c6",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 15,
+			"queryName": "select\r\n@w_operacionca,\r\n@w_banco,\r\n@w_tramite,\r\n@w_lin_credito,\r\n@w_estado,\r\n@w_cliente,\r\n@w_toperacion,\r\n@w_desc_toperacion,\r\n@w_moneda,\r\n@w_desc_entidad,\r\n@w_oficina,\r\n@w_oficial,\r\nconvert(varchar(10),@w_fecha_ini,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_fin,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_prox_pag,@i_formato_fecha),\r\nconvert(float, @w_monto),\r\n@w_tplazo,\r\n@w_desc_tplazo,\r\n@w_plazo,\r\n@w_tdividendo,\r\n@w_desc_tdividendo,\r\n@w_periodo_cap,\r\n@w_periodo_int,\r\n@w_periodos_gracia,\r\n@w_periodos_gracia_int,\r\n@w_dist_gracia,\r\n@w_destino,\r\n@w_desc_destino,\r\n@w_ciudad,\r\n@w_desc_ciudad,\r\n@w_nem_producto,\r\n@w_desc_producto,\r\n@w_cuenta,\r\n@w_reajuste_periodo,\r\nconvert(varchar(10),@w_reajuste_fecha,@i_formato_fecha),\r\n@w_reajuste_num,\r\n@w_renovacion,\r\n@w_num_renovacion,\r\n@w_precancelacion,\r\n@w_tipo,\r\n@w_porcentaje_fin,\r\n@w_tasa_fin,\r\n@w_cuota_completa,\r\n@w_anticipado_int,\r\n@w_reajuste_intereses,\r\n@w_reduccion,\r\n@w_cuota_anticipada,\r\n@w_dias_anio,\r\n@w_tipo_amortizacion,\r\n@w_cuota_fija,\r\nconvert(float, @w_cuota),\r\nconvert(float, @w_cuota_capital),\r\n@w_dias_gracia,\r\n@w_dia_pago,\r\n@w_desc_ofi,\r\n@w_inicio,\r\n@w_fin,\r\n@w_nombre,\r\n@w_tasa,\r\n@w_referencial,\r\n@w_desc_referencial,\r\n@w_opcion_cap,\r\n0,\r\n@w_reajuste_especial,\r\n@w_banca,\r\n@w_des_sector,\r\n@w_anterior,\r\n@w_migrada,\r\n@w_refer,\r\n@w_desembolso,\r\nconvert(varchar(10),@w_fecha_liq,@i_formato_fecha),\r\n@w_cuota_adic,\r\n@w_meses_hip,\r\nconvert(float, @w_monto_aprobado),\r\n@w_tipo_aplicacion,\r\n@w_gracia_int,\r\n@w_mes_gracia,\r\n@w_num_dec,\r\n@w_fecha_fija,\r\n@w_reajuste,\r\n@w_evitar_feriados,\r\nconvert(varchar(10),@w_fecha_ult_proceso,@i_formato_fecha),\r\nconvert(float, @w_saldo_operacion),\r\n@w_dias_clausula,\r\n@w_clausula_aplicada,\r\n@w_periodo_crecimiento,\r\n@w_tasa_crecimiento,\r\n@w_desc_direccion,\r\n@w_desc_tipo,\r\n@w_clase_cartera,\r\n@w_desc_clase_cartera,\r\n@w_des_programa,\r\n@w_desc_origen_fondos,\r\n@w_desc_calificacion,\r\n@w_numero_reest,\r\nconvert(float, @w_saldo_operacion_finan),\r\nconvert(varchar(10),@w_fecha_ult_rees,@i_formato_fecha),\r\n@w_dias_venc_completo,\r\n@w_fondos_propios ,\r\n@w_prd_cobis ,\r\n@w_ref_exterior,\r\n@w_sujeta_nego,\r\n@w_ref_red,\r\nconvert(float, @w_sal_pro_pon),\r\n@w_tipo_empresa   ,\r\n@w_desc_t_empresa,\r\n@w_validacion   ,\r\n@w_desc_tmnio_empresa,\r\nconvert(varchar(10),@w_fecha_pri_cuota,@i_formato_fecha),\r\n@w_des_naturaleza,\r\n@w_base_calculo,\r\n@w_recalcular,\r\n@w_dia_habil,\r\n@w_usa_tasa_eq ,\r\n@w_grupo_fact,\r\n@w_dias_cap_ven,\r\n@w_bvirtual,\r\n@w_extracto,\r\n@w_reestructuracion,\r\n@w_subtipo,\r\nconvert(varchar(10),@w_fecha_embarque,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_dex,@i_formato_fecha),\r\n@w_num_deuda_ext,\r\n@w_nace_vencida,\r\n@w_num_comex,\r\n@w_calcula_devolucion,\r\n@w_des_edad,\r\n@w_estado_cobranza,\r\n@w_op_pasiva_externa,\r\nconvert(money,@w_op_margen_redescuento),\r\nconvert(char(10),@w_fecha_migracion, @i_formato_fecha),\r\n@w_nom_abogado,\r\n@w_total_diferido,\r\n@w_pendiente_diferido,\r\n@w_capitalizado,\r\n@w_telefonos,\r\n@w_direccion1,\r\n@w_vlr_rec_ini,\r\n@w_vlr_x_amort,\r\n@w_op_padre,\r\n@w_op_hija,\r\n@w_tramite_max,\r\n@w_des_alianza,\r\n@w_llave_finagro,\r\n@w_finagro,\r\n@w_gar_finagro,\r\n@w_sector"
+		},
+		{
+			"_idQuery": "e108d5ba-7e1d-44cc-98dd-5651a7b57ef6",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 16,
+			"queryName": "select\r\n@w_mercado_objetivo,\r\n@w_des_mercado_objetivo,\r\n@w_tipo_productor,\r\n@w_des_tipo_productor,\r\n@w_desc_moneda,\r\n@w_nom_oficial,\r\n@w_mercado,\r\n@w_des_mercado,\r\n@w_cod_actividad,\r\n@w_des_actprod,\r\n@w_num_desemb,\r\n@w_desc_situacion,\r\n@w_total_desc_causal,\r\nconvert(varchar(10),@w_fecha_castigo,@i_formato_fecha),\r\n@w_calif_orig,\r\n@w_desc_calif_orig,\r\n@w_calif_segui,\r\n@w_desc_calif_segui,\r\n@w_toperacion,\r\n@w_desc_toperacion,\r\n@w_campana,\r\n@w_camp_det"
+		},
+		{
+			"_idQuery": "aaaaef4c-eaa4-406b-b9a9-c722efb6ff07",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 17,
+			"queryName": "select\r\n@w_vx_valor_vencido,\r\n@w_vx_monto,\r\n@w_vx_monto_max,\r\n@w_vx_valor_vencido_rec,\r\n@w_vx_monto_rec"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "1b00f4cd-6b07-4e72-af7a-1276a04b11c6",
+			"columns": [
+				{
+					"attributeId": "AT13_COL1XVKZ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_COL2KKNL491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_COL3QLEY491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_COL4HRES491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{3}",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT75_COL5WARP491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{4}",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_COL6RQXO491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{5}",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_COL7QSGO491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{6}",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_COL8CFRE491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{7}",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_COL9KTTY491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{8}",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_COL10LXO491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{9}",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT10_COL12GFC491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{11}",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_COL13AZM491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{12}",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT13_COL14YAR491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{13}",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_COL15OGY491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{14}",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_COL16IVN491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{15}",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_COL18WVS491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{17}",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT64_COL19GTA491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{18}",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_COL20NCM491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{19}",
+					"position": 20,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_COL21ZIE491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{20}",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_COL22KOS491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{21}",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_COL23LXG491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{22}",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_COL24EJG491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{23}",
+					"position": 24,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_COL25NKL491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{24}",
+					"position": 25,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_COL26LOB491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{25}",
+					"position": 26,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_COL27YEH491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{26}",
+					"position": 27,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_COL28PUD491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{27}",
+					"position": 28,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT59_COL29TAK491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{28}",
+					"position": 29,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_COL30GNE491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{29}",
+					"position": 30,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_COL31LIL491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{30}",
+					"position": 31,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_COL32HDB491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{31}",
+					"position": 32,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_COL33FWA491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{32}",
+					"position": 33,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_COL34GWI491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{33}",
+					"position": 34,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_COL35KBE491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{34}",
+					"position": 35,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_COL36BYU491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{35}",
+					"position": 36,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT52_COL37LWK491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{36}",
+					"position": 37,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_COL38HWX491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{37}",
+					"position": 38,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT97_COL39JSY491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{38}",
+					"position": 39,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_COL40UYG491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{39}",
+					"position": 40,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT75_COL41KNQ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{40}",
+					"position": 41,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT64_COL42URF491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{41}",
+					"position": 42,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_COL43PPD491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{42}",
+					"position": 43,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_COL44OEY491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{43}",
+					"position": 44,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_COL45RSV491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{44}",
+					"position": 45,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_COL46GMH491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{45}",
+					"position": 46,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_COL47DUD491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{46}",
+					"position": 47,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_COL48SAS491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{47}",
+					"position": 48,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT47_COL49TNJ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{48}",
+					"position": 49,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT93_COL50TCK491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{49}",
+					"position": 50,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_COL51AJY491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{50}",
+					"position": 51,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT46_COL52VFM491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{51}",
+					"position": 52,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_COL53MOC491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{52}",
+					"position": 53,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT85_COL54YKS491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{53}",
+					"position": 54,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_COL55MGC491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{54}",
+					"position": 55,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT50_COL56HOY491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{55}",
+					"position": 56,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_COL62OAC491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{61}",
+					"position": 62,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT59_COL70KDV491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{69}",
+					"position": 70,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_COL71XRW491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{70}",
+					"position": 71,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT67_COL74PRQ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{73}",
+					"position": 74,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_COL77PPP491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{76}",
+					"position": 77,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_COL80KQN491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{79}",
+					"position": 80,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_COL81WRS491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{80}",
+					"position": 81,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_COL82NGT491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{81}",
+					"position": 82,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_COL83JWS491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{82}",
+					"position": 83,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_COL84RKG491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{83}",
+					"position": 84,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_COL85DWF491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{84}",
+					"position": 85,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_COL88IBT491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{87}",
+					"position": 88,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_COL89RHR491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{88}",
+					"position": 89,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_COL91TKO491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{90}",
+					"position": 91,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_COL92VNG491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{91}",
+					"position": 92,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT57_COL93JHG491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{92}",
+					"position": 93,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_COL94SBJ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{93}",
+					"position": 94,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_COL95IYB491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{94}",
+					"position": 95,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_COL96LLF491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{95}",
+					"position": 96,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_COL97LJP491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{96}",
+					"position": 97,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_COL98JRI491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{97}",
+					"position": 98,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_COL106ME491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{105}",
+					"position": 106,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_COL110KR491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{109}",
+					"position": 110,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_COL112RE491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{111}",
+					"position": 112,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_COL113XA491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{112}",
+					"position": 113,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_COL114XR491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{113}",
+					"position": 114,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_COL115RA491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{114}",
+					"position": 115,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_COL116HO491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{115}",
+					"position": 116,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_COL117WE491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{116}",
+					"position": 117,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_COL118LU491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{117}",
+					"position": 118,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_COL127US491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{126}",
+					"position": 127,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT59_COL128SQ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{127}",
+					"position": 128,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT52_COL129AW491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{128}",
+					"position": 129,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_COL130ST491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{129}",
+					"position": 130,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_COL131UZ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{130}",
+					"position": 131,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_COL132FM491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{131}",
+					"position": 132,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_COL133BS491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{132}",
+					"position": 133,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT94_COL134OU491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{133}",
+					"position": 134,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_COL135BC491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{134}",
+					"position": 135,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_COL136XL491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{135}",
+					"position": 136,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT81_COL137CC491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{136}",
+					"position": 137,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_COL138LD491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{137}",
+					"position": 138,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_COL139XX491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{138}",
+					"position": 139,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT40_COL140JE491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{139}",
+					"position": 140,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_COL141JR491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{140}",
+					"position": 141,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_COL142DT491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{141}",
+					"position": 142,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_COL143MQ491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{142}",
+					"position": 143,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_COL144ZT491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{143}",
+					"position": 144,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_COL145EM491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{144}",
+					"position": 145,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_COL146EV491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{145}",
+					"position": 146,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT83_COL147NA491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{146}",
+					"position": 147,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT62_COL169GW491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{152}",
+					"position": 153,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_COL170XB491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{153}",
+					"position": 154,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_COL171NG491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{154}",
+					"position": 155,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT68_BALLOOEF491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{160}",
+					"position": 161,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_COMPANSD491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{162}",
+					"position": 163,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_SECTORSD491",
+					"entityId": "EN_GENERALLA_491",
+					"format": "",
+					"name": "{165}",
+					"position": 166,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		},
+		{
+			"_idQuery": "e108d5ba-7e1d-44cc-98dd-5651a7b57ef6",
+			"columns": [
+				{
+					"attributeId": "AT64_COL9OJXA954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{8}",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_COL10TIW954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{9}",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_COL11EIG954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{10}",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_COL12DJR954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{11}",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT52_COL13FDN954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{12}",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_COL15ITI954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{14}",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT35_COL16FXW954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{15}",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_COL17ECE954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{16}",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_COL18VAI954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{17}",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT47_COL21LOC954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{20}",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT70_COL22GYI954",
+					"entityId": "EN_COLUMNSIV_954",
+					"format": "",
+					"name": "{21}",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		},
+		{
+			"_idQuery": "aaaaef4c-eaa4-406b-b9a9-c722efb6ff07",
+			"columns": [
+				{
+					"attributeId": "AT19_COL1DWCF435",
+					"entityId": "EN_COLUMNSIV_435",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_COL2CSCS435",
+					"entityId": "EN_COLUMNSIV_435",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT83_COL3YHLP435",
+					"entityId": "EN_COLUMNSIV_435",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_COL4CSIH435",
+					"entityId": "EN_COLUMNSIV_435",
+					"format": "",
+					"name": "{3}",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_COL5RCHB435",
+					"entityId": "EN_COLUMNSIV_435",
+					"format": "",
+					"name": "{4}",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 3,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_COLUMNSIV_435",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ColumnsDataValueIII"
+		},
+		{
+			"entityId": "EN_COLUMNSIV_954",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ColumnsDataValueII"
+		},
+		{
+			"entityId": "EN_GENERALLA_491",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ColumnsDataValue"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

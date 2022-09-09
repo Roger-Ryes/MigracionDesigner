@@ -1,0 +1,341 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_DEBTSOLR_XT44_230",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_DEBTSOLR_XT44",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_DEBTORLIS_380",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_DEBTORLIS_380/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_DEBTSOLR_XT44/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "operation",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT48_OPERATII380"
+			},
+			"attributeQuery": "operation",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 11,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTS44L4R399_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientMainName",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT73_CLIENTAM380"
+			},
+			"attributeQuery": "clientMainName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 12,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTS44O44238_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "client",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT80_CLIENTOJ380"
+			},
+			"attributeQuery": "client",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTS44T4T976_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientMain",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT48_CLIENTAN380"
+			},
+			"attributeQuery": "clientMain",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTS44X4T683_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sequential",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT67_SEQUENIT380"
+			},
+			"attributeQuery": "sequential",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTS4L4LO531_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientId",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT50_CLIENTDI380"
+			},
+			"attributeQuery": "clientId",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTS4OLLR395_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientName",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT39_CLIENTNE380"
+			},
+			"attributeQuery": "clientName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTS4ROOL442_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientRol",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT70_CLIENTLO380"
+			},
+			"attributeQuery": "clientRol",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTSLX4T4441_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sysSession",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT66_SYSSESNS380"
+			},
+			"attributeQuery": "sysSession",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTSOL44X777_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "centralRisk",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT64_CENTRALL380"
+			},
+			"attributeQuery": "centralRisk",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTST4TXX720_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientMainId",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT59_CLIENTIM380"
+			},
+			"attributeQuery": "clientMainId",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 13,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTST4X4L827_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientOperation",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT89_CLIENTRA380"
+			},
+			"attributeQuery": "clientOperation",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTSTXOOX159_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sysUser",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_DEBTORLIS_380.json#/attributes/AT71_SYSUSERR380"
+			},
+			"attributeQuery": "sysUser",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEBTSTXRTR457_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

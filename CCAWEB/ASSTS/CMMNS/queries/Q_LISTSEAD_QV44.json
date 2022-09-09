@@ -1,0 +1,139 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_LISTSEAD_QV44_822",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_LISTSEAD_QV44",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_LISTAESDS_959",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_LISTAESDS_959/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/CMMNS/Queries/Q_LISTSEAD_QV44/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "aceptaPago",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAESDS_959.json#/attributes/AT62_ACEPTAPO959"
+			},
+			"attributeQuery": "aceptaPago",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "3",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTS4Q4V4224_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "descripcion",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAESDS_959.json#/attributes/AT18_DESCRIIC959"
+			},
+			"attributeQuery": "descripcion",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTSD4A4Q959_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "procesa",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAESDS_959.json#/attributes/AT46_PROCESAA959"
+			},
+			"attributeQuery": "procesa",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTSD4QAE902_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "codigo",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTAESDS_959.json#/attributes/AT25_CODIGOJF959"
+			},
+			"attributeQuery": "codigo",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTSEV4QD853_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "CMMNS"
+			}
+		}
+	]
+}

@@ -1,0 +1,231 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_desembolso_parcial",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco_real"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco_ficticio"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_desembolso"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_oficina_chg"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_beneficiario"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_ds"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_moneda_ds"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_cotiz_ds"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tcotiz_ds"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda_op"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_cotiz_op"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tcotiz_op"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_pasar_tmp"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_consulta"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_capitalizacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion_ach"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_nom_producto"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cod_banco_ach"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desde_cre"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cheque"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_prenotificacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_carga"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_liq"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_proceso"
+			},
+			{
+				"dataType": "char",
+				"direction": "out",
+				"name": "@o_respuesta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+		],
+		"type": "SYBASE"
+	}
+}

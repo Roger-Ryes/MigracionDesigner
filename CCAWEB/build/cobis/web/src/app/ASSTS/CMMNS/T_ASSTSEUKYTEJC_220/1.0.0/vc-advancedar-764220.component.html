@@ -1,0 +1,31 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-asstseukytejc-220 " [formGroup]="vc.viewState.T_ASSTSEUKYTEJC_220"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_ADVANCEDAR_764220.enabled, 'VC_ADVANCEDAR_764220')" [properties]="vc.viewState.VC_ADVANCEDAR_764220" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_ADVANCERLA_757521.enabled, 'G_ADVANCERLA_757521', 'VC_ADVANCEDAR_764220')" *ngIf="isVisible('G_ADVANCERLA_757521')" [properties]="vc.viewState.G_ADVANCERLA_757521" [mode]="vc.mode"> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_ADVANCEHAA_340521.enabled, 'G_ADVANCEHAA_340521', 'G_ADVANCERLA_757521', 'LoanSearchFilter',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('G_ADVANCEHAA_340521',true)" [properties]="vc.viewState.G_ADVANCEHAA_340521" [mode]="vc.mode" formGroupName="LoanSearchFilter"> 
+        <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_NUMPROCEDURESSS_883521.enabled, 'VA_NUMPROCEDURESSS_883521', 'G_ADVANCEHAA_340521', 'LoanSearchFilter.numProcedures',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('VA_NUMPROCEDURESSS_883521')" [properties]="vc.viewState.VA_NUMPROCEDURESSS_883521" [mode]="vc.mode" formControlName="numProcedures" (onCustomInputRestriction)="customValidation($event,'VA_NUMPROCEDURESSS_883521')"></cobis-textinputbox>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_OFFICEIZBTWUGLQ_256521.enabled, 'VA_OFFICEIZBTWUGLQ_256521', 'G_ADVANCEHAA_340521', 'LoanSearchFilter.office',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('VA_OFFICEIZBTWUGLQ_256521')" [properties]="vc.viewState.VA_OFFICEIZBTWUGLQ_256521" [mode]="vc.mode" formControlName="office" [dataSource]="vc.catalogs.VA_OFFICEIZBTWUGLQ_256521"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CODCURRENCYWYFH_403521.enabled, 'VA_CODCURRENCYWYFH_403521', 'G_ADVANCEHAA_340521', 'LoanSearchFilter.codCurrency',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('VA_CODCURRENCYWYFH_403521')" [properties]="vc.viewState.VA_CODCURRENCYWYFH_403521" [mode]="vc.mode" formControlName="codCurrency" [dataSource]="vc.catalogs.VA_CODCURRENCYWYFH_403521"> 
+        </cobis-dropdownlist> 
+        <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_DISBURSEMENTDAE_580521.enabled, 'VA_DISBURSEMENTDAE_580521', 'G_ADVANCEHAA_340521', 'LoanSearchFilter.disbursementDate',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('VA_DISBURSEMENTDAE_580521')" [properties]="vc.viewState.VA_DISBURSEMENTDAE_580521" [mode]="vc.mode" formControlName="disbursementDate"></cobis-datefield>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_STATUSBETIKSGLY_234521.enabled, 'VA_STATUSBETIKSGLY_234521', 'G_ADVANCEHAA_340521', 'LoanSearchFilter.status',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('VA_STATUSBETIKSGLY_234521')" [properties]="vc.viewState.VA_STATUSBETIKSGLY_234521" [mode]="vc.mode" formControlName="status" [dataSource]="vc.queries.Q_LISTSEAD_QV44"> 
+        </cobis-dropdownlist> 
+        <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_MIGRATEDOPERTVT_332521.enabled, 'VA_MIGRATEDOPERTVT_332521', 'G_ADVANCEHAA_340521', 'LoanSearchFilter.migratedOper',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('VA_MIGRATEDOPERTVT_332521')" [properties]="vc.viewState.VA_MIGRATEDOPERTVT_332521" [mode]="vc.mode" formControlName="migratedOper" (onCustomInputRestriction)="customValidation($event,'VA_MIGRATEDOPERTVT_332521')"></cobis-textinputbox>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_TYPEQKEVCBCXYDI_286521.enabled, 'VA_TYPEQKEVCBCXYDI_286521', 'G_ADVANCEHAA_340521', 'LoanSearchFilter.type',vc.viewState.T_ASSTSEUKYTEJC_220)" *ngIf="isVisible('VA_TYPEQKEVCBCXYDI_286521')" [properties]="vc.viewState.VA_TYPEQKEVCBCXYDI_286521" [mode]="vc.mode" formControlName="type" [dataSource]="vc.catalogs.VA_TYPEQKEVCBCXYDI_286521"> 
+        </cobis-dropdownlist> 
+       </cobis-groupbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

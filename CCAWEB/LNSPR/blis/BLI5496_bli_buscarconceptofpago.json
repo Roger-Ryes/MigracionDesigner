@@ -1,0 +1,143 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CONSTANT",
+			"value": "8"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "V"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_producto",
+			"type": "CUSTOM",
+			"value": "producto"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "currency"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7076"
+		}
+	],
+	"name": "BLI_BuscarConceptoFPago",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5496_bli_buscarconceptofpago",
+	"patternName": "BLI_BuscarConceptoFPago",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "42e8d363-25c9-498b-8f92-d0b150d0b336",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "42e8d363-25c9-498b-8f92-d0b150d0b336",
+			"columns": [
+				{
+					"attributeId": "AT37_PRODUCOO589",
+					"entityId": "EN_PRODUCTGG_589",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT14_DESCRINI589",
+					"entityId": "EN_PRODUCTGG_589",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT46_RETENCNN589",
+					"entityId": "EN_PRODUCTGG_589",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_CATEGOII589",
+					"entityId": "EN_PRODUCTGG_589",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_COBISQNI589",
+					"entityId": "EN_PRODUCTGG_589",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PRODUCTGG_589",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ProductoFormaPago"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_producto",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

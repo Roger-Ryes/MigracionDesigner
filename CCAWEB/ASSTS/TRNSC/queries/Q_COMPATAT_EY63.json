@@ -1,0 +1,264 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_COMPATAT_EY63_895",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_COMPATAT_EY63",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_COMPANIHA_370",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_COMPANIHA_370/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/TRNSC/Queries/Q_COMPATAT_EY63/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "company",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT85_COMPANYY370"
+			},
+			"attributeQuery": "company",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPA3T663383_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "executeOnline",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT93_EXECUTNE370"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_COMPA3TE36973_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sequential",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT36_SEQUENII370"
+			},
+			"attributeQuery": "sequential",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPA6A3T3837_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateCreate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT50_DATECRAE370"
+			},
+			"attributeQuery": "dateCreate",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPA6Y66T923_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "companyName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT76_COMPANYA370"
+			},
+			"attributeQuery": "companyName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPAAEAET184_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateMove",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT43_DATEMOEE370"
+			},
+			"attributeQuery": "dateMove",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPAAEYTT528_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statusName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT97_STATUSEM370"
+			},
+			"attributeQuery": "statusName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPAE6TY3343_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fileName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT33_FILENAME370"
+			},
+			"attributeQuery": "fileName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPATAEAY165_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statusId",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT49_STATUSID370"
+			},
+			"attributeQuery": "statusId",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPAY66TE178_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "description",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_COMPANIHA_370.json#/attributes/AT24_DESCRIOP370"
+			},
+			"attributeQuery": "description",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_COMPAYATTT258_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC"
+			}
+		}
+	]
+}

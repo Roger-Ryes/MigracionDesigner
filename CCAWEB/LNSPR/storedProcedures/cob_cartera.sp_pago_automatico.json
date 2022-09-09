@@ -1,0 +1,187 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_pago_automatico",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacion_ca"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_forma_pago"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_institucion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_rol"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_comentario"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_mode"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta_old"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_institucion_old"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente_old"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_rubro"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tfpago"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_prioridad"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "d5cb0e68-179e-466c-8e31-9fc218946e85",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "b8e59a96-2f04-440b-b7fc-71b79ff7919c",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

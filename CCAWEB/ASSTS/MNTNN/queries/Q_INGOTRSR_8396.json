@@ -1,0 +1,190 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_INGOTRSR_8396_831",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 3,
+				"description": "Sobreescribe la ejecuci\ufffdn de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"id": {
+		"queryId": "Q_INGOTRSR_8396",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_INGOTRCSA_824",
+	"mainEntityName": "",
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/MNTNN/Queries/Q_INGOTRSR_8396/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "concepto",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_INGOTRCSA_824.json#/attributes/AT57_CONCEPTO824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_INGOT3336R237_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "valor",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_INGOTRCSA_824.json#/attributes/AT67_VALORAAB824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_INGOT639RR348_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "divInicial",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_INGOTRCSA_824.json#/attributes/AT93_DIVINIAI824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_INGOT6R66S789_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "referencia",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_INGOTRCSA_824.json#/attributes/AT94_REFEREAA824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_INGOT9SSRS727_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "divHasta",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_INGOTRCSA_824.json#/attributes/AT46_DIVFINAA824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_INGOTR396R871_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "secuencial",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_INGOTRCSA_824.json#/attributes/AT21_SECUENCL824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_INGOTRR33R943_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fecha",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_INGOTRCSA_824.json#/attributes/AT48_FECHAXAR824"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_INGOTS6R6R727_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "MNTNN"
+			}
+		}
+	]
+}

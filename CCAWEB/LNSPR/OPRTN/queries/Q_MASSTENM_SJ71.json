@@ -1,0 +1,315 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_MASSTENM_SJ71_681",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_MASSTENM_SJ71",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_MASSIVEYM_999",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_MASSIVEYM_999/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_MASSTENM_SJ71/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "currencyPayment",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT44_CURRENTE999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASST177S7505_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "filePM",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT51_FILEPMOQ999"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_MASST1JJS1358_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "datePayment",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT90_DATEPATY999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASST7EJ1S586_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "lotePM",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT85_LOTPMZHS999"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 12,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_MASSTE1ENE705_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sequentialPM",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT78_SEQUENTT999"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_MASSTEEMEN207_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "description",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT82_DESCRIPN999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASSTJ1J1N876_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "valuePay",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT18_VALUEPAY999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASSTJJMSM423_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "error",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT79_ERRORLYM999"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_MASSTM7N1N887_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "numbreBank",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT93_NUMBREBA999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASSTMMENE211_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "endLotePM",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT28_ENDLOTMM999"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 11,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_MASSTMSNN7172_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "formPayment",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT74_PAYMENTT999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASSTNM1J1181_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "customerName",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT53_CUSTOMEN999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASSTS1MJS682_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "numberAccount",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_MASSIVEYM_999.json#/attributes/AT26_NUMBERCO999"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_MASSTSN17J702_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

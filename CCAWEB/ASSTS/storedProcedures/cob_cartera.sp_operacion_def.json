@@ -1,0 +1,65 @@
+{
+	"filename": "D:\\TFS\\Principal\\tec-cca-backend\\spsql\\operdef.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_operacion_def",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_claseoper"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+		],
+		"variables": [
+			{
+				"dataType": "char",
+				"name": "@w_commit"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

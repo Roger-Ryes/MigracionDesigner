@@ -1,0 +1,50 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-reajustecammb-801 " [formGroup]="vc.viewState.T_REAJUSTECAMMB_801"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_REAJUSTEMF_738801.enabled, 'VC_REAJUSTEMF_738801')" [properties]="vc.viewState.VC_REAJUSTEMF_738801" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_REAJUSTMEC_674319.enabled, 'G_REAJUSTMEC_674319', 'VC_REAJUSTEMF_738801', 'ReadjustmentLoanCab',vc.viewState.T_REAJUSTECAMMB_801)" *ngIf="isVisible('G_REAJUSTMEC_674319',true)" [properties]="vc.viewState.G_REAJUSTMEC_674319" [mode]="vc.mode" formGroupName="ReadjustmentLoanCab"> 
+       <cobis-grid #QV_5831_17646_Grid [properties]="vc.viewState.QV_5831_17646" [mode]="vc.mode" [formGroupGrid]="vc.model.ReadjustmentLoanCabRowData.formGroup" [dataSource]="vc.model.ReadjustmentLoanCab" [model]="vc.model" (gridInitDetailTemplate)="gridInitDetailTemplate($event)" (showGridRowDetailIcon)="showGridRowDetailIcon($event)" (gridInitColumnTemplate)="gridInitColumnTemplate($event)" (gridInitEditColumnTemplate)="gridInitEditColumnTemplate($event)" (onSaveRow)="gridSaveRow($event)" (onUpdateRow)="gridRowUpdating($event)" (onAppendRecord)="appendRecord($event)" (onRemoveRow)="gridRowDeleting($event)" (onRowSelecting)="gridRowSelecting($event)"> 
+        <!--Start Column fecha --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXCKZ_136319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ designer.intlService.formatDate( dataItem[column.field], columnItem.properties.format) }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXCKZ_136319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-datefield [attr.disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-datefield> 
+        </ng-template> 
+        <!--Start Column mantCuota --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXQCR_748319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ columnItem.data$ | async | gridColumn: dataItem[column.field]: columnItem }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXQCR_748319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-dropdownlist [attr.disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [frmControl]="formGroup.get(column.field)" [properties]="columnItem.properties" [dataSource]="vc.catalogs.VA_TEXTINPUTBOXQCR_748319"> 
+         </cobis-dropdownlist> 
+        </ng-template> 
+        <!--Start Column secuencial --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXKUR_906319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXKUR_906319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+        </ng-template> 
+        <!--Start Column tipo --> 
+        <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXPIL_163319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+          {{ columnItem.data$ | async | gridColumn: dataItem[column.field]: columnItem }} 
+        </ng-template> 
+        <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXPIL_163319'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+         <cobis-dropdownlist [attr.disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [frmControl]="formGroup.get(column.field)" [properties]="columnItem.properties" [dataSource]="vc.catalogs.VA_TEXTINPUTBOXPIL_163319"> 
+         </cobis-dropdownlist> 
+        </ng-template> 
+       </cobis-grid> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

@@ -1,0 +1,80 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_TWORILTS_QE88",
+		"controlName": "TwoRangesListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_TWORILTS_QE88.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "TwoRangesList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_TJ88_MTX55",
+		"controlName": "QV_TJ88_MTX55",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "beforeEnterInLineRow",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowInserting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 7
+			}
+		],
+		"entityName": "TwoRangesList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "date",
+		"controlId": "VA_DATEAMIJYBUPQWJ_858861",
+		"controlName": "date",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "TwoRangesFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_TWORANGESS_307887",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

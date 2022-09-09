@@ -1,0 +1,459 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_GENERICSZ_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "GenericEntity"
+		},
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT79_PREVIOUM313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_anterior",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT81_MIGRATOI313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_migrada",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "debtorCode"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_nombre",
+			"type": "CUSTOM",
+			"value": "debtorName"
+		},
+		{
+			"attributeId": "AT33_SECTORWX313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_sector",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT42_TYPEOPNT313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT28_OFFICEEL313",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_oficina",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT25_MONEYCFC313",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT74_REFERECN313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_comentario",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT37_OFFICIAA313",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_oficial",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT48_CREATINO313",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_fecha_ini",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT67_AMOUNTZP313",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_monto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT63_AMOUNTRE313",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_monto_aprobado",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT32_FINANCIO313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_destino",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT61_CREDITEE313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_lin_credito",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT35_UBICATOO313",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_ciudad",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CUSTOM",
+			"value": "dateFormat"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_no_banco",
+			"type": "CUSTOM",
+			"value": "isASimulation"
+		},
+		{
+			"attributeId": "AT89_ECONOMIA313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_tipo_empresa",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT35_PLAZOGCK313",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_plazo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT39_PLAZODSC313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_tplazo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT23_ANCHOREDSPR",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_fondeador",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT42_FIRSTDUU313",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_fecha_ven_pc",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_simulacion",
+			"type": "CUSTOM",
+			"value": "simulacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_desde_front_cca",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_codeudor",
+			"type": "CUSTOM",
+			"value": "codeudor"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7010"
+		}
+	],
+	"name": "BLI_OperationCreate",
+	"outputEntity": [
+		{
+			"entityId": "EN_GENERICSZ_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "GenericEntity"
+		}
+	],
+	"outputParameters": [
+		{
+			"attributeId": "AT98_VALUE1WX839",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_GENERICSZ_LNSPR",
+			"format": "",
+			"name": "@o_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"patternId": "BLI6342_bli_operationcreate",
+	"patternName": "BLI_OperationCreate",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "0a760b4e-ec1c-4a84-89c2-9c7da7a0da2b",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "7e6833da-e77a-496a-8857-4d13fb57e957",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "8444c5ac-4c21-405c-aee4-d1ffcf6b3e18",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 3,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "a660f720-cf12-4da1-8d8d-ad322495ff53",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 4,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "87cdf81e-f43d-472a-a0ce-1ef1345109e6",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 5,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "f21f8da4-da48-4bb1-8fe0-aa1e780819f6",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 6,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "42aaf7fb-b8f6-4d36-9f9c-95350e62bcea",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 7,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "7e6833da-e77a-496a-8857-4d13fb57e957",
+			"columns": [
+				{
+					"attributeId": "AT11_VALUE1BV986",
+					"entityId": "EN_CREATEOPN_LNSPR",
+					"format": "dd/MM/yyyy",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": true
+		},
+		{
+			"_idQuery": "8444c5ac-4c21-405c-aee4-d1ffcf6b3e18",
+			"columns": [
+				{
+					"attributeId": "AT40_VALUE1IN234",
+					"entityId": "EN_CREATEOEO_LNSPR",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 3,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CREATEOEO_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "CreateOperationTwo"
+		},
+		{
+			"entityId": "EN_CREATEOPN_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "CreateOperationOne"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_crear_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

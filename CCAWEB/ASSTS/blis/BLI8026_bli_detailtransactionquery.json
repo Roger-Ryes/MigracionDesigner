@@ -1,0 +1,257 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7142"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_estado",
+			"type": "CUSTOM",
+			"value": "pagEstado"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_dividendo",
+			"type": "CUSTOM",
+			"value": "pagDivi"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "CUSTOM",
+			"value": "pagCon"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo_tran",
+			"type": "CUSTOM",
+			"value": "transaction"
+		},
+                {
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacionca",
+			"type": "CUSTOM",
+			"value": "operation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_ref",
+			"type": "CUSTOM",
+			"value": "dateRef"
+		}
+	],
+	"name": "BLI_DetailTransactionQuery",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8026_bli_detailtransactionquery",
+	"patternName": "BLI_DetailTransactionQuery",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "99a76a10-a037-4946-a1c6-5c0e2887c2b5",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "6e881d7b-0556-456b-bfa8-70b37371e4ce",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "6e881d7b-0556-456b-bfa8-70b37371e4ce",
+			"columns": [
+				{
+					"attributeId": "AT86_DIVIDENN851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Dividendo",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_ENTRYGQH851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Rubro",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_STATEMLL851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Estado",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT18_MONEYHML851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Moneda",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT64_AMOUNTSH851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Monto",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT47_AMOUNTMN851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Monto MN",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_CODVALOR851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Codvalor",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_AFFECTTT851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Afectacion",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT22_ACCOUNTT851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Cuenta",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_BENEFIAY851",
+					"entityId": "EN_DETAILTIC_851",
+					"format": "",
+					"name": "Beneficiario",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_DETAILTIC_851",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DetailTransactionQuery"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_trn",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

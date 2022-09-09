@@ -1,0 +1,66 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSCN_5TN",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSCN_T8S",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "G_RESTRUCTID_433261",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "changeGroup",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "groupEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_RESTRUCTEG_166525",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

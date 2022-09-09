@@ -1,0 +1,168 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CUSTOM",
+			"value": "trn"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "101"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda_pago",
+			"type": "CUSTOM",
+			"value": "monedaPago"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda_op",
+			"type": "CUSTOM",
+			"value": "monedaOp"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor_pagar_moneda_op",
+			"type": "CUSTOM",
+			"value": "valorPagar"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_monto_prec_moneda_op",
+			"type": "CUSTOM",
+			"value": "saldoPrec"
+		},
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cotizacion",
+			"type": "CUSTOM",
+			"value": "cotiz"
+		}
+	],
+	"name": "BLI_Montos_Pagos",
+	"outputEntity": [
+	],
+	"outputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_monto_prec_moneda_pago",
+			"type": "CUSTOM",
+			"value": "montoPrec"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_valor_pagar_moneda_pago",
+			"type": "CUSTOM",
+			"value": "montoPag"
+		},
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_cotiz_destino",
+			"type": "CUSTOM",
+			"value": "cotizDestino"
+		},
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_factor",
+			"type": "CUSTOM",
+			"value": "factor"
+		}
+	],
+	"patternId": "BLI4235_bli_montos_pagos",
+	"patternName": "BLI_Montos_Pagos",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_pagos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

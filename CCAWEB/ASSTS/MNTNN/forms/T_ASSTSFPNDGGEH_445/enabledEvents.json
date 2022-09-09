@@ -1,0 +1,250 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSFP_3SA",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_CONCTITE_DD65",
+		"controlName": "ConceptItemsQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_CONCTITE_DD65.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ConceptItems",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_RATEGLSL_WM41",
+		"controlName": "RateRangeListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_RATEGLSL_WM41.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "RateRangeList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_REFEEAML_BR93",
+		"controlName": "ReferentialItemsQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_REFEEAML_BR93.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ReferentialItems",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "amount",
+		"controlId": "VA_AMOUNTFAWDLDZLX_436980",
+		"controlName": "amount",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "associateValue",
+		"controlId": "VA_ASSOCIATEVALUEE_791980",
+		"controlName": "associateValue",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "factor",
+		"controlId": "VA_FACTOROWCCFAZFG_876980",
+		"controlName": "factor",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "reference",
+		"controlId": "VA_GRACEBSRSLHPWZD_368980",
+		"controlName": "reference",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "item",
+		"controlId": "VA_ITEMJIJOVTYJBHS_939980",
+		"controlName": "item",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "maxRate",
+		"controlId": "VA_MAXRATENAXLOHPN_726980",
+		"controlName": "maxRate",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "minRate",
+		"controlId": "VA_MINRATEWSNBWPYC_520980",
+		"controlName": "minRate",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentMethod",
+		"controlId": "VA_PAYMENTMETHODDD_900980",
+		"controlName": "paymentMethod",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "percentage",
+		"controlId": "VA_PERCENTAGEPOUVM_313980",
+		"controlName": "percentage",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "priority",
+		"controlId": "VA_PRIORITYDAWHSWY_831980",
+		"controlName": "priority",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "referenceReadjustment",
+		"controlId": "VA_REFERENCEREAUUU_417980",
+		"controlName": "referenceReadjustment",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "signo",
+		"controlId": "VA_SIGNOWUDEEEWFGZ_407980",
+		"controlName": "signo",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_MODALLOAIS_799445",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

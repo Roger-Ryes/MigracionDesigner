@@ -1,0 +1,86 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "B"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77651"
+		}
+	],
+	"name": "BLI_Syndicated_Query_Bank",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6946_bli_syndicated_query_bank",
+	"patternName": "BLI_Syndicated_Query_Bank",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "ed1709df-452f-4ea5-8d68-55c37f0d9834",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ed1709df-452f-4ea5-8d68-55c37f0d9834",
+			"columns": [
+				{
+					"attributeId": "AT33_CODBANKKSPR",
+					"entityId": "EN_OPERATINN_LNSPR",
+					"format": "",
+					"name": "CodBanco",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_NAMEBANKSPR",
+					"entityId": "EN_OPERATINN_LNSPR",
+					"format": "",
+					"name": "NombreBanco",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_sindicado_tmp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

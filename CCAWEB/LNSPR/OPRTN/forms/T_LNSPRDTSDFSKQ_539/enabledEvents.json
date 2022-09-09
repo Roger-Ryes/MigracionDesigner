@@ -1,0 +1,250 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_VE29_XZB37_960",
+		"controlName": "QV_VE29_XZB37",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "SyndicatedList",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_DEBTORZN_LNSPR",
+		"controlName": "DebtorEntityQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_DEBTORZN_LNSPR.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_SYNDATCT_WX29",
+		"controlName": "SyndicatedListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_SYNDATCT_WX29.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "SyndicatedList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_VE29_XZB37",
+		"controlName": "QV_VE29_XZB37",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 3
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "SyndicatedList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_YWPR_NOE85",
+		"controlName": "QV_YWPR_NOE85",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 1
+			}
+		],
+		"entityName": "DebtorEntity",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "amountApproved",
+		"controlId": "VA_AMOUNTAPPROVEDE_512221",
+		"controlName": "amountApproved",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "amount",
+		"controlId": "VA_AMOUNTPCRKOKHWA_216221",
+		"controlName": "amount",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "code",
+		"controlId": "VA_CODEWKXBYDDSGNQ_399221",
+		"controlName": "code",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationCRUDFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "creditLine",
+		"controlId": "VA_CREDITLINEUOUCM_252221",
+		"controlName": "creditLine",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "official",
+		"controlId": "VA_OFFICIALHKVNOOZ_385221",
+		"controlName": "official",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 7
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "syndicated",
+		"controlId": "VA_SYNDICATEDMLJZC_821221",
+		"controlName": "syndicated",
+		"controlType": "CheckBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 3
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "typeSyndicated",
+		"controlId": "VA_TYPESYNDICATEEE_795221",
+		"controlName": "typeSyndicated",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "ubication",
+		"controlId": "VA_UBICATIONZGLTDO_878221",
+		"controlName": "ubication",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONVLCBANL_971221",
+		"controlName": "VA_VABUTTONVLCBANL_971221",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "OperationCRUDFormEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONXCGGMOI_839221",
+		"controlName": "VA_VABUTTONXCGGMOI_839221",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_OPERATIONL_208539",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

@@ -1,0 +1,167 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7020"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "G"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_codigo_externo",
+			"type": "CUSTOM",
+			"value": "pagGarantia"
+		}
+	],
+	"name": "BLI_Garantias",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6250_bli_garantias",
+	"patternName": "BLI_Garantias",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "eba5b470-de36-4af2-9929-6419bff38ce1",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 22,
+			"queryName": "select\n      distinct  gp_garantia as GARANTIA,\n                cu_estado as ESTADO_GAR,\n                substring(cu_tipo,1,15)+\u0027   \u0027+substring(tc_descripcion,1,20) as DESCRIPCION,\n                cg_ente as COD_CLIENTE,\n                substring(cg_nombre,1,25) as NOMBRE_CLIENTE,\n                convert(float,cu_valor_inicial) as VALOR_ACTUAL,\n                cu_moneda as MON,\n                convert(varchar(10),cu_fecha_ingreso,103) as F_INGRESO\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "eba5b470-de36-4af2-9929-6419bff38ce1",
+			"columns": [
+				{
+					"attributeId": "AT17_WARRANTY642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "GARANTIA",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_STATUSAR642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "ESTADO_GAR",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT51_DESCRION642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "DESCRIPCION",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT13_CODCLINN642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "COD_CLIENTE",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_CUSTOMER642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "NOMBRE_CLIENTE",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_CURRENAL642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "VALOR_ACTUAL",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT13_CURRENYY642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "MON",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_CREATENO642",
+					"entityId": "EN_LOANWARRY_642",
+					"format": "",
+					"name": "F_INGRESO",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANWARRY_642",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanWarranty"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

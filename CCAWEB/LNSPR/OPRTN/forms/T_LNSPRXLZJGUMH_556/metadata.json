@@ -1,0 +1,24 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_LOANLINCT_267",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_MEMBERSLV_216",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_VALIDATON_825",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+	]
+}

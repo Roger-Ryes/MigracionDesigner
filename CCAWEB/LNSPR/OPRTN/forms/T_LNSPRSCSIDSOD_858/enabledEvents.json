@@ -1,0 +1,76 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRSC_7TC",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "amountParticipants",
+		"controlId": "VA_AMOUNTPARTICTSP_895405",
+		"controlName": "amountParticipants",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "mail",
+		"controlId": "VA_MAILHXHVMKQUYBR_360405",
+		"controlName": "mail",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "participantS",
+		"controlId": "VA_PARTICIPANTSTOP_981405",
+		"controlName": "participantS",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_SYNDICATDI_660858",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

@@ -1,0 +1,94 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TLEFTOVE__3S",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TLEFTOVE_V_5",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "paymentType",
+		"controlId": "VA_TEXTINPUTBOXAQZ_901369",
+		"controlName": "paymentType",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "LeftOverPayment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "reference",
+		"controlId": "VA_TEXTINPUTBOXJMX_394369",
+		"controlName": "reference",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "LeftOverPayment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "currencyType",
+		"controlId": "VA_TEXTINPUTBOXSZZ_277369",
+		"controlName": "currencyType",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "LeftOverPayment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LEFTOVERPM_168459",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

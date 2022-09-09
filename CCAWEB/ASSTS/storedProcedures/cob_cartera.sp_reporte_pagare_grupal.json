@@ -1,0 +1,121 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\sp_reporte_pagare.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_pagare_grupal",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_opbanco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_documento"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "983bce97-7451-4491-8287-a5c052ee3e3e",
+				"columns": [
+					"moneda",
+					"monto"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "43ea0400-775f-4b51-8e2b-b09dd2eda140",
+				"columns": [
+					"reca",
+					"monto",
+					"ciudad",
+					"dirgrupo",
+					"codmoneda",
+					"moneda",
+					"porcentaje",
+					"dividendo",
+					"frecuencia",
+					"vencimiento",
+					"prjemora"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "32db4d3e-bd1f-4476-b57b-102949b96c8e",
+				"columns": [
+					"miembro",
+					"calle",
+					"nro",
+					"nroint",
+					"colonia",
+					"estado",
+					"municipio",
+					"codpostal"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "d54183f7-80ac-4db7-99dc-fa06b1b757ed",
+				"columns": [
+					"numgrupo",
+					"nombregrupo",
+					"var1",
+					"var2",
+					"var3",
+					"var4",
+					"var5",
+					"var6",
+					"var7",
+					"var8",
+					"var9",
+					"var10",
+					"var11",
+					"var12",
+					"var13",
+					"var14"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_param_dir_neg"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_param_dir"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

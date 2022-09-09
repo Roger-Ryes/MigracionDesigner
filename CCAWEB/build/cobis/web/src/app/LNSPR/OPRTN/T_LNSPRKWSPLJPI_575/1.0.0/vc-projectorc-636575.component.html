@@ -1,0 +1,33 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-lnspr cb-t-lnsprkwspljpi-575 " [formGroup]="vc.viewState.T_LNSPRKWSPLJPI_575"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_PROJECTORC_636575.enabled, 'VC_PROJECTORC_636575')" [properties]="vc.viewState.VC_PROJECTORC_636575" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PROJECTHSS_834696.enabled, 'G_PROJECTHSS_834696', 'VC_PROJECTORC_636575', 'OtherCharges',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('G_PROJECTHSS_834696',true)" [properties]="vc.viewState.G_PROJECTHSS_834696" [mode]="vc.mode" formGroupName="OtherCharges"> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CURRENCYTRTBCCA_970696.enabled, 'VA_CURRENCYTRTBCCA_970696', 'G_PROJECTHSS_834696', 'OtherCharges.currency',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('VA_CURRENCYTRTBCCA_970696')" [properties]="vc.viewState.VA_CURRENCYTRTBCCA_970696" [mode]="vc.mode" formControlName="currency" [dataSource]="vc.catalogs.VA_CURRENCYTRTBCCA_970696" (onCascadeChange)="loadCatalogCascadeChange($event,'VA_CURRENCYTRTBCCA_970696', 'VA_CONCEPTFHEMXUHJ_108696')"> 
+       </cobis-dropdownlist> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CONCEPTFHEMXUHJ_108696.enabled, 'VA_CONCEPTFHEMXUHJ_108696', 'G_PROJECTHSS_834696', 'OtherCharges.concept',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('VA_CONCEPTFHEMXUHJ_108696')" [properties]="vc.viewState.VA_CONCEPTFHEMXUHJ_108696" [mode]="vc.mode" formControlName="concept" [dataSource]="vc.catalogs.VA_CONCEPTFHEMXUHJ_108696"> 
+       </cobis-dropdownlist> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_VALUENGWHVWDDNU_188696.enabled, 'VA_VALUENGWHVWDDNU_188696', 'G_PROJECTHSS_834696', 'OtherCharges.value',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('VA_VALUENGWHVWDDNU_188696')" [properties]="vc.viewState.VA_VALUENGWHVWDDNU_188696" [mode]="vc.mode" formControlName="value" (onChange)="change($event,'VA_VALUENGWHVWDDNU_188696')" (onCustomValidate)="customValidate($event,'VA_VALUENGWHVWDDNU_188696')"></cobis-numericinputbox> 
+      </cobis-groupbox> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_PROJECTRTE_923696.enabled, 'G_PROJECTRTE_923696', 'VC_PROJECTORC_636575', 'OtherCharges',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('G_PROJECTRTE_923696',true)" [properties]="vc.viewState.G_PROJECTRTE_923696" [mode]="vc.mode" formGroupName="OtherCharges"> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_INIDIVYCRRTXBCX_837696.enabled, 'VA_INIDIVYCRRTXBCX_837696', 'G_PROJECTRTE_923696', 'OtherCharges.iniDiv',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('VA_INIDIVYCRRTXBCX_837696')" [properties]="vc.viewState.VA_INIDIVYCRRTXBCX_837696" [mode]="vc.mode" formControlName="iniDiv" (onCustomInputRestriction)="customValidation($event,'VA_INIDIVYCRRTXBCX_837696')"></cobis-numericinputbox>
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_DIVUPYMACQXCZMH_148696.enabled, 'VA_DIVUPYMACQXCZMH_148696', 'G_PROJECTRTE_923696', 'OtherCharges.divUp',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('VA_DIVUPYMACQXCZMH_148696')" [properties]="vc.viewState.VA_DIVUPYMACQXCZMH_148696" [mode]="vc.mode" formControlName="divUp" (onCustomInputRestriction)="customValidation($event,'VA_DIVUPYMACQXCZMH_148696')"></cobis-numericinputbox>
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_BASECALCULATOII_165696.enabled, 'VA_BASECALCULATOII_165696', 'G_PROJECTRTE_923696', 'OtherCharges.baseCalculation',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('VA_BASECALCULATOII_165696')" [properties]="vc.viewState.VA_BASECALCULATOII_165696" [mode]="vc.mode" formControlName="baseCalculation" (onCustomInputRestriction)="customValidation($event,'VA_BASECALCULATOII_165696')"></cobis-numericinputbox>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_COMMENTARYNUYIB_733696.enabled, 'VA_COMMENTARYNUYIB_733696', 'G_PROJECTRTE_923696', 'OtherCharges.commentary',vc.viewState.T_LNSPRKWSPLJPI_575)" *ngIf="isVisible('VA_COMMENTARYNUYIB_733696')" [properties]="vc.viewState.VA_COMMENTARYNUYIB_733696" [mode]="vc.mode" formControlName="commentary"></cobis-textinputbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_PROJECTO_N34.enabled,'CM_PROJECTO_N34')" *ngIf="isVisible('CM_PROJECTO_N34')" [properties]="vc.viewState.CM_PROJECTO_N34" [mode]="vc.mode" (onClick)="executeCommand('CM_PROJECTO_N34',vc.viewState.CM_PROJECTO_N34.name,vc.viewState.CM_PROJECTO_N34.causesValidation,vc.viewState.CM_PROJECTO_N34.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_PROJECTO_TRS.enabled,'CM_PROJECTO_TRS')" *ngIf="isVisible('CM_PROJECTO_TRS')" [properties]="vc.viewState.CM_PROJECTO_TRS" [mode]="vc.mode" (onClick)="executeCommand('CM_PROJECTO_TRS',vc.viewState.CM_PROJECTO_TRS.name,vc.viewState.CM_PROJECTO_TRS.causesValidation,vc.viewState.CM_PROJECTO_TRS.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

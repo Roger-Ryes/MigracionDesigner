@@ -1,0 +1,452 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\repcaratula.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_caratula_cred",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nemonico"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "1a8a3a1a-1d56-4e0f-98c1-ab0410baad0e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select y.valor from"
+			},
+			{
+				"_idQuery": "e147fbd6-5a54-4fca-a8ac-169475f196bd",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(ro_porcentaje, 0) from"
+			},
+			{
+				"_idQuery": "9cf6e2c9-c44e-43e2-988a-b40e3990829a",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select y.valor from"
+			},
+			{
+				"_idQuery": "fca8f730-5362-44b9-a1c6-0bd56f5737bf",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(ro_porcentaje, 0) from"
+			},
+			{
+				"_idQuery": "5b172f37-b060-407d-8289-33df20ef312e",
+				"columns": [
+					"TipoCredito",
+					"Cat",
+					"TasaInteres",
+					"MontoCredito",
+					"TotalAPagar",
+					"PlazoCredito",
+					"FechaLimite",
+					"FechaCorte",
+					"FlagSeguroOpcional",
+					"FlagSeguroOblig",
+					"Reca",
+					"TipoCreditoInterc",
+					"CatInterc",
+					"TasaInteresInterc",
+					"MontoCreditoInterc",
+					"TotalAPagarInterc",
+					"PlazoCreditoInterc",
+					"FechaLimiteInterc",
+					"FechaCorteInterc",
+					"FlagSeguroOpcionalInterc",
+					"FlagSeguroObligInterc",
+					"SimboloMoneda"
+				],
+				"editMode": false,
+				"queryText": "select isnull(@w_desc_topera,\u0027 \u0027) as \u0027TipoCredito\u0027,\r\n           isnull(@w_cat_desc, \u0027 \u0027)   as \u0027Cat\u0027,\r\n           isnull(@w_tasa_int,0)      as \u0027TasaInteres\u0027,\r\n           isnull(@w_monto,0)         as \u0027MontoCredito\u0027,\r\n           isnull(@w_monto_pagar,0)   as \u0027TotalAPagar\u0027,\r\n           isnull(@w_plazo_frecuencia, \u0027 \u0027) as \u0027PlazoCredito\u0027,\r\n           isnull(convert(varchar(10),@w_fecha_fin,103), \u0027 \u0027)    as \u0027FechaLimite\u0027,\r\n           isnull(convert(varchar(10),@w_fecha_corte, 103), \u0027 \u0027) as \u0027FechaCorte\u0027,\r\n           isnull(@w_seg_opcional, \u0027 \u0027) as \u0027FlagSeguroOpcional\u0027,\r\n           isnull(@w_seg_obligatorio,\u0027 \u0027) as \u0027FlagSeguroOblig\u0027,\r\n           isnull(@w_reca, \u0027 \u0027)           as \u0027Reca\u0027,\r\n            isnull(@w_desc_topera_I,\u0027 \u0027)      as \u0027TipoCreditoInterc\u0027,\r\n            isnull(@w_cat_desc_I,\u0027 \u0027)         as \u0027CatInterc\u0027,\r\n            isnull(@w_tasa_int_I,0)           as \u0027TasaInteresInterc\u0027,\r\n            isnull(@w_monto_I,0)              as \u0027MontoCreditoInterc\u0027,\r\n            isnull(@w_monto_pagar_I,0)        as \u0027TotalAPagarInterc\u0027,\r\n            isnull(@w_plazo_frecuencia_I,\u0027 \u0027) as \u0027PlazoCreditoInterc\u0027,\r\n            isnull(convert(varchar(10),@w_fecha_fin_I,103), \u0027 \u0027)   as \u0027FechaLimiteInterc\u0027,\r\n            isnull(convert(varchar(10), @w_fecha_corte_I,103),\u0027 \u0027) as \u0027FechaCorteInterc\u0027,\r\n            isnull(@w_seg_opcional_I, \u0027 \u0027) as \u0027FlagSeguroOpcionalInterc\u0027,\r\n            isnull(@w_seg_obligatorio_I,\u0027 \u0027) as \u0027FlagSeguroObligInterc\u0027,\r\n            isnull(@w_simbolo,\u0027 \u0027) as \u0027SimboloMoneda\u0027"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cat_desc_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cat_desc"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_cat_I"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_cat"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_ciclo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_commit"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cotizacion_hoy"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_frecuencia_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_frecuencia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_topera_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_topera"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_corte_I"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_corte"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_desemb"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_fin_I"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_fin"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ing"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_inicial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_frecuencia_I"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_frecuencia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_grupo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_nacional"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_desembolso"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_pagar_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_pagar_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_pagar"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_seguro"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_cap"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_comdes"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_ivacod"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_ivaint"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre_grupo"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_credito"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_cuenta"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_op_forma_pago"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_oper_padre"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_periodicidad_pago"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_plazo_frecuencia_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_plazo_frecuencia"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo_I"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo_op"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_promotor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_reca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_rol_act"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_rowcount"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_seg_obligatorio_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_seg_obligatorio"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_seg_opcional_I"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_seg_opcional"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_simbolo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sucursal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tasa_anual_fija"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_int_I"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_int"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_grupal"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_operacion_I"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_operacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_orden"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_seguro"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_tramite"
+			}
+		]
+	}
+}

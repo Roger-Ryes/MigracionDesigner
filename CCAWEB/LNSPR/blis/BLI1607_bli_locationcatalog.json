@@ -1,0 +1,127 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "1562"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CONSTANT",
+			"value": "A"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CUSTOM",
+			"value": "mode"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_ciudad",
+			"type": "CUSTOM",
+			"value": "city"
+		}
+	],
+	"name": "BLI_LocationCatalog",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI1607_bli_locationcatalog",
+	"patternName": "BLI_LocationCatalog",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "099c6df0-f1b7-420c-9b2b-6b56a3fc864e",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "select \u0027Cod.\u0027 = ci_ciudad, \u0027Nombre\u0027 = ci_descripcion, \u0027Pais\u0027 = pa_descripcion\n                  from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "099c6df0-f1b7-420c-9b2b-6b56a3fc864e",
+			"columns": [
+				{
+					"attributeId": "AT38_CODENPCR235",
+					"entityId": "EN_LOCATIONN_235",
+					"format": "",
+					"name": "Cod.",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_LOCATINE235",
+					"entityId": "EN_LOCATIONN_235",
+					"format": "",
+					"name": "Nombre",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_COUNTRYY235",
+					"entityId": "EN_LOCATIONN_235",
+					"format": "",
+					"name": "Pais",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOCATIONN_235",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "Location"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.sp_ciudad",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

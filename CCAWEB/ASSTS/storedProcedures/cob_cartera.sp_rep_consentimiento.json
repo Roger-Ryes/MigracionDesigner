@@ -1,0 +1,341 @@
+{
+	"filename": "I:\\SPR-2019-16\\CAR-S269384-TEC Reporte de Consentimiento Cr\ufffddito y Servicios Grupal\\sp\\cob_cartera.sp_rep_consentimiento.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_rep_consentimiento",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "395e67b7-14f4-46e2-a5e6-bfc193b17359",
+				"columns": [
+					"OperacionHija",
+					"NoOperacion",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "select \u0027OperacionHija\u0027   = op_operacion,\r\n       \u0027NoOperacion\u0027     = op_ref_grupal,\r\n       \u0027Rol\u0027"
+			},
+			{
+				"_idQuery": "43cb1ce5-2a3c-4844-8d98-67cfa2a1be0c",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select y.valor from"
+			},
+			{
+				"_idQuery": "61b52b65-05e8-45b7-a328-a0b7bccbae70",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select substring(p_p_apellido,1,20) + \u0027 \u0027 + substring(p_s_apellido,1,20) + \u0027 \u0027 + substring(en_nombre,1,20) +\u0027 \u0027 + substring(p_s_nombre,1,20)\r\n                            from"
+			},
+			{
+				"_idQuery": "713eb75c-3c9d-47c3-aeee-37441bb2c223",
+				"columns": [
+					"\u0027OperacionHija\u0027",
+					"\u0027NoOperacion\u0027",
+					"\u0027Rol\u0027",
+					"\u0027NoCliente\u0027",
+					"\u0027MontoCredito\u0027",
+					"\u0027MontoAhorro\u0027",
+					"\u0027MontoLiquidacion\u0027",
+					"\u0027ValorSegBasico",
+					"\u0027ValorSegVoluntario\u0027",
+					"\u0027DepositoInicial\u0027",
+					"\u0027MontoEntregar\u0027",
+					"\u0027ProgramaPrevencion\u0027",
+					"\u0027NoCertificado\u0027",
+					"\u0027FechaVigencia\u0027",
+					"\u0027Beneficiario\u0027",
+					"\u0027Parentesco\u0027",
+					"\u0027%Asignado\u0027",
+					"\u0027CodigoCliente\u0027"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_ciclo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_commit"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cotizacion_hoy"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_frecuencia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_desemb"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ing"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_inicial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_frecuencia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_grupo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_nacional"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_desembolso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_pagar_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_pagar"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_seguro"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_cap"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_comdes"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_ivacod"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_ivaint"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre_grupo"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_credito"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_cuenta"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_op_forma_pago"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_periodicidad_pago"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_plazo_frecuencia"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo_op"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_promotor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_reca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_rol_act"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_rowcount"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_simbolo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sucursal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tasa_anual_fija"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_operacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_orden"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_seguro"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_tramite"
+			}
+		]
+	}
+}

@@ -1,0 +1,415 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\sp_parroquia_busin.sp",
+	"procedure": {
+		"database": "cob_pac",
+		"name": "sp_parroquia_busin",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_h"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_parroquia"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ciudad"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_zona"
+			},
+			{
+				"dataType": "estado",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_ultimo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_central_transmit"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_rowcount"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cod_postal"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "2dc26f52-1728-4f99-ae42-d916960b3ba6",
+				"columns": [
+					"Cod.Ciudad",
+					"Nombre de Ciudad",
+					"Cod.Parroq.",
+					"Nombre Parroquia",
+					"Tipo",
+					"Descr. del Tipo",
+					"Cod.Zona",
+					"Nombre de la Zona",
+					"Estado"
+				],
+				"editMode": false,
+				"queryText": "Select    \u0027Cod.Ciudad\u0027 = pq_ciudad,\r\n        \u0027Nombre de Ciudad\u0027 =substring( ci_descripcion,1,30),\r\n        \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n        \u0027Nombre Parroquia\u0027 = substring( pq_descripcion,1,30),\r\n        \u0027Tipo\u0027 = pq_tipo,\r\n        \u0027Descr. del Tipo\u0027 =substring( x.valor,1,30),\r\n        \u0027Cod.Zona\u0027 = pq_zona,\r\n        \u0027Nombre de la Zona\u0027 =substring( a.valor,1,30),\r\n        \u0027Estado\u0027 = pq_estado\r\n    from"
+			},
+			{
+				"_idQuery": "dd0e897c-290d-4ef1-9ded-345136529cbb",
+				"columns": [
+					"Cod.Ciudad",
+					"Nombre de Ciudad",
+					"Cod.Parroq.",
+					"Nombre Parroquia",
+					"Tipo",
+					"Descr. del Tipo",
+					"Cod.Zona",
+					"Nombre de la Zona",
+					"Estado"
+				],
+				"editMode": false,
+				"queryText": "Select    \u0027Cod.Ciudad\u0027 = pq_ciudad,\r\n        \u0027Nombre de Ciudad\u0027 =substring( ci_descripcion,1,30),\r\n        \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n        \u0027Nombre Parroquia\u0027 = substring( pq_descripcion,1,30),\r\n        \u0027Tipo\u0027 = pq_tipo,\r\n        \u0027Descr. del Tipo\u0027 =substring( x.valor,1,30),\r\n        \u0027Cod.Zona\u0027 = pq_zona,\r\n        \u0027Nombre de la Zona\u0027 =substring( a.valor,1,30),\r\n        \u0027Estado\u0027 = pq_estado\r\n    from"
+			},
+			{
+				"_idQuery": "0cfa92bc-fab8-41ea-8102-10992eb39476",
+				"columns": [
+					"Cod.Ciudad",
+					"Nombre de Ciudad",
+					"Cod.Parroq.",
+					"Nombre Parroquia",
+					"Tipo",
+					"Descr. del Tipo",
+					"Cod.Zona",
+					"Nombre de la Zona",
+					"Estado"
+				],
+				"editMode": false,
+				"queryText": "Select    \u0027Cod.Ciudad\u0027 = pq_ciudad,\r\n        \u0027Nombre de Ciudad\u0027 =substring( ci_descripcion,1,30),\r\n        \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n        \u0027Nombre Parroquia\u0027 = substring( pq_descripcion,1,30),\r\n        \u0027Tipo\u0027 = pq_tipo,\r\n        \u0027Descr. del Tipo\u0027 =substring( x.valor,1,30),\r\n        \u0027Cod.Zona\u0027 = pq_zona,\r\n        \u0027Nombre de la Zona\u0027 =substring( a.valor,1,30),\r\n        \u0027Estado\u0027 = pq_estado\r\n    from"
+			},
+			{
+				"_idQuery": "9dd3659c-a47f-472d-a88b-66a5fd4484ac",
+				"columns": [
+					"Cod.Ciudad",
+					"Nombre de Ciudad",
+					"Cod.Parroq.",
+					"Nombre Parroquia",
+					"Tipo",
+					"Descr. del Tipo",
+					"Cod.Zona",
+					"Nombre de la Zona",
+					"Estado"
+				],
+				"editMode": false,
+				"queryText": "Select    \u0027Cod.Ciudad\u0027 = pq_ciudad,\r\n        \u0027Nombre de Ciudad\u0027 =substring( ci_descripcion,1,30),\r\n        \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n        \u0027Nombre Parroquia\u0027 = substring( pq_descripcion,1,30),\r\n        \u0027Tipo\u0027 = pq_tipo,\r\n        \u0027Descr. del Tipo\u0027 =substring( x.valor,1,30),\r\n        \u0027Cod.Zona\u0027 = pq_zona,\r\n        \u0027Nombre de la Zona\u0027 =substring( a.valor,1,30),\r\n        \u0027Estado\u0027 = pq_estado\r\n    from"
+			},
+			{
+				"_idQuery": "55459c80-4728-44f4-8e9f-dd1ad4caef20",
+				"columns": [
+					"Cod.Ciudad",
+					"Nombre de Ciudad",
+					"Cod.Parroq.",
+					"Nombre Parroquia",
+					"Tipo",
+					"Descr. del Tipo",
+					"Cod.Zona",
+					"Nombre de la Zona",
+					"Estado"
+				],
+				"editMode": false,
+				"queryText": "Select    \u0027Cod.Ciudad\u0027 = pq_ciudad,\r\n        \u0027Nombre de Ciudad\u0027 = substring( ci_descripcion,1,30),\r\n        \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n        \u0027Nombre Parroquia\u0027 = substring( pq_descripcion,1,30),\r\n        \u0027Tipo\u0027 = pq_tipo,\r\n        \u0027Descr. del Tipo\u0027 =substring( x.valor,1,30),\r\n        \u0027Cod.Zona\u0027 = pq_zona,\r\n        \u0027Nombre de la Zona\u0027 =substring( a.valor,1,30),\r\n        \u0027Estado\u0027 = pq_estado\r\n    from"
+			},
+			{
+				"_idQuery": "f8a60f6b-b09b-438f-ab46-ecafc3ef529e",
+				"columns": [
+					"Cod.Parroq.",
+					"Parroquia"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n                       \u0027Parroquia\u0027 = substring(pq_descripcion,1,30)\r\n                  from"
+			},
+			{
+				"_idQuery": "8820596d-cc9e-4815-af2b-c65169aa3ff0",
+				"columns": [
+					"Cod.Parroq.",
+					"Parroquia"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n                       \u0027Parroquia\u0027 = substring(pq_descripcion,1,30)\r\n                  from"
+			},
+			{
+				"_idQuery": "84c1c9d2-f85e-4f83-98f0-1f75c89a0f6e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select pq_descripcion\r\n              from"
+			},
+			{
+				"_idQuery": "8fea738e-2655-4183-9811-587e6ead1e0c",
+				"columns": [
+					"Cod.Parroq.",
+					"Parroquia",
+					"Cod. Zona",
+					"Zona"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n                      \u0027Parroquia\u0027 = substring(pq_descripcion,1,30),\r\n                      \u0027Cod. Zona\u0027 = pq_zona,\r\n                      \u0027Zona\u0027 = substring(valor,1,30)\r\n                 from"
+			},
+			{
+				"_idQuery": "4807568b-cfef-41e0-a60b-b8e0fc5a748f",
+				"columns": [
+					"Cod.Parroq.",
+					"Parroquia",
+					"Cod. Zona",
+					"Zona"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n                      \u0027Parroquia\u0027 = substring(pq_descripcion,1,30),\r\n                      \u0027Cod. Zona\u0027 = pq_zona,\r\n                      \u0027Zona\u0027 = substring(valor,1,30)\r\n                 from"
+			},
+			{
+				"_idQuery": "6cf25862-7f60-4663-8cfc-9d0fe148fc5a",
+				"columns": [
+					"Cod.Parroq.",
+					"Parroquia",
+					"Cod. Zona",
+					"Zona"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Cod.Parroq.\u0027 = pq_parroquia,\r\n                   \u0027Parroquia\u0027 = substring(pq_descripcion,1,30),\r\n                   \u0027Cod. Zona\u0027 = pq_zona,\r\n                   \u0027Zona\u0027 = substring(valor,1,30)\r\n              from"
+			},
+			{
+				"_idQuery": "16f023c1-75ed-4170-befb-c89cdd8f4642",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "select pq_descripcion, pq_zona, valor\r\n          from"
+			},
+			{
+				"_idQuery": "6277c738-ab1b-4aa8-8543-3cae7b67d55e",
+				"columns": [
+					"CODIGO",
+					"DETALLE"
+				],
+				"editMode": false,
+				"queryText": "select \u0027CODIGO\u0027    = pq_parroquia,\r\n                   \u0027DETALLE\u0027   = pq_descripcion\r\n            from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@o_parroquia"
+			},
+			{
+				"dataType": "int",
+				"name": "@v_ciudad"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@v_descripcion"
+			},
+			{
+				"dataType": "estado",
+				"name": "@v_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@v_tipo"
+			},
+			{
+				"dataType": "char",
+				"name": "@v_zona"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cambio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ciudad"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_clave"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cmdtransrv"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_codigo_c"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_codigo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_contador"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion"
+			},
+			{
+				"dataType": "estado",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nt_nombre"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_num_nodos"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_zona"
+			}
+		]
+	}
+}

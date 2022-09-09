@@ -1,0 +1,94 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7050"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha",
+			"type": "CUSTOM",
+			"value": "fecha"
+		}
+	],
+	"name": "BLI_ParametrosGeneralesCartera",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5915_bli_parametrosgeneralescartera",
+	"patternName": "BLI_ParametrosGeneralesCartera",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "83e79fe6-401c-4497-8b5e-c7abae1f018a",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "d17e3d5b-75cb-4d0f-8149-e74cf92f8f4b",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "d17e3d5b-75cb-4d0f-8149-e74cf92f8f4b",
+			"columns": [
+				{
+					"attributeId": "AT68_LOCALCNR979",
+					"entityId": "EN_GENERALSR_979",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_CODDOLAA979",
+					"entityId": "EN_GENERALSR_979",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_GENERALSR_979",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "GeneralParameters"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_variables_generales",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

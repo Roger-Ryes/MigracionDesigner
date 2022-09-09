@@ -1,0 +1,142 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_alicuota_toperacion.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_alicuota_toperacion",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_corr"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn_corr"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_opcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_alicuota"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_eliminar_alicuota"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "42733259-1155-4bb6-8c37-eba40b546a7b",
+				"columns": [
+					"Destino",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select Destino = A.codigo, Descripcion = A.valor\n          from"
+			},
+			{
+				"_idQuery": "d06be8e8-9360-4d79-8312-a3e20380e4d6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select A.valor\n          from"
+			},
+			{
+				"_idQuery": "ca57d7e6-34a6-47c4-8bbf-41b090b4d857",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

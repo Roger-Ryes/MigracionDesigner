@@ -1,0 +1,108 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "CUSTOM",
+			"value": "tipo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "currency"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7065"
+		}
+	],
+	"name": "BLI_BuscarConceptos",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6824_bli_buscarconceptos",
+	"patternName": "BLI_BuscarConceptos",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "64e0bf97-95a0-4272-8c0b-088131bfb88b",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "64e0bf97-95a0-4272-8c0b-088131bfb88b",
+			"columns": [
+				{
+					"attributeId": "AT44_CONCEPOO542",
+					"entityId": "EN_CONCEPTOO_542",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_DESCRIII542",
+					"entityId": "EN_CONCEPTOO_542",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CONCEPTOO_542",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "Concepto"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_otros_cargos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

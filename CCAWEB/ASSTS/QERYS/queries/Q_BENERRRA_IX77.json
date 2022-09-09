@@ -1,0 +1,361 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_BENERRRA_IX77_850",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "BLI2518_bli_consultabeneficiariossegurooperacion",
+					"actionType": "BLI"
+				},
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 2,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_BENERRRA_IX77",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_BENEFICOR_713",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_BENEFICOR_713/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/QERYS/Queries/Q_BENERRRA_IX77/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "sequence",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT59_SEQUENCE713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "6",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENER77XII265_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "relationShipID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT74_RELATIIS713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "8",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENER7I7X7527_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "address",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT84_ADDRESSS713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "11",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENER7IAIR929_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "cedID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT67_CEDIDKZO713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "7",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENER7X777137_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "loanBankID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT96_LOANBAII713"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_BENER7XI7I880_01",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "clientID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT19_CLIENTII713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERAA777854_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "loanID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT59_LOANIDRJ713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "5",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERAARRX829_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "relationShip",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT26_RELATINN713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "3",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERAR7R7643_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "percentage",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT98_PERCENTA713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "12",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERI7I7A626_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "telephone",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT74_TELEPHOE713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "9",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERI7XRI353_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "postalCode",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT57_POSTALCC713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "4",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERIRXI7324_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "product",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT76_PRODUCTT713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "10",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERRAXAX230_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "birthDate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT11_BIRTHDAA713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERRR7R7308_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "typeID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT98_TYPEIDKL713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "13",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERRXXA7403_14",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_BENEFICOR_713.json#/attributes/AT23_CLIENTAN713"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_BENERXIRXA198_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS"
+			}
+		}
+	]
+}

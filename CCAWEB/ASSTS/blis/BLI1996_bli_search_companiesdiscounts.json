@@ -1,0 +1,244 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77582"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_institucion",
+			"type": "CUSTOM",
+			"value": "institution"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_lote",
+			"type": "CUSTOM",
+			"value": "batchId"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		}
+	],
+	"name": "BLI_Search_CompaniesDiscounts",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI1996_bli_search_companiesdiscounts",
+	"patternName": "BLI_Search_CompaniesDiscounts",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "28109bee-1e02-4564-ae64-9c6a48c6a046",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "28109bee-1e02-4564-ae64-9c6a48c6a046",
+			"columns": [
+				{
+					"attributeId": "AT26_OPERATON423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT85_BANKIDBF423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT32_DATECRAE423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT35_CLIENTBJ423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_CLIENTEO423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT68_DOCUMEPT423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_DOCUMETV423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_CLIENTEN423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_DATEEXAR423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "11",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_FEEZBKZT423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "12",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_PERCENTA423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "13",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_DEBITNFN423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "14",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_DEBITALL423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "15",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT10_PAYALLSB423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "16",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT10_COMPANYY423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "18",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_COMAPNAN423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "19",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_DESCRIIT423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "20",
+					"position": 20,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_STATUSOO423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "21",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_COMMENNT423",
+					"entityId": "EN_COMPANITI_423",
+					"format": "",
+					"name": "22",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_COMPANITI_423",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesDiscountsList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_descuento_institucion_lote",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,170 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21326"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_numero",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "cliente"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "moneda"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "CUSTOM",
+			"value": "tOperacion"
+		}
+	],
+	"name": "BLI_Search_CurrentStatusLine",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4636_bli_search_currentstatusline",
+	"patternName": "BLI_Search_CurrentStatusLine",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "8f567195-a5de-458a-9124-18287bb5465c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 13,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "8f567195-a5de-458a-9124-18287bb5465c",
+			"columns": [
+				{
+					"attributeId": "AT85_PRODUCTT369",
+					"entityId": "EN_SUMMARYTU_369",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT37_CODMONYY369",
+					"entityId": "EN_SUMMARYTU_369",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_DESCMOEN369",
+					"entityId": "EN_SUMMARYTU_369",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_APPROVED369",
+					"entityId": "EN_SUMMARYTU_369",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_USEDEQPM369",
+					"entityId": "EN_SUMMARYTU_369",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_AVAILAEE369",
+					"entityId": "EN_SUMMARYTU_369",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT32_CURRENET369",
+					"entityId": "EN_SUMMARYTU_369",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_SUMMARYTU_369",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "SummaryStatus"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_linea",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

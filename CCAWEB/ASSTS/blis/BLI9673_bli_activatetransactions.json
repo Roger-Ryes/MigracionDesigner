@@ -1,0 +1,186 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7142"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "T"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_ActivateTransactions",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9673_bli_activatetransactions",
+	"patternName": "BLI_ActivateTransactions",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "99a76a10-a037-4946-a1c6-5c0e2887c2b5",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "65337bab-08e6-47ab-9031-44b2749b0b16",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 11,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "65337bab-08e6-47ab-9031-44b2749b0b16",
+			"columns": [
+				{
+					"attributeId": "AT47_TRANSAOT417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Transaccion",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_SECUENTT417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Secuencial",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT40_OPERATIO417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Operacion",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_DATETRNA417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Fecha Trn",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT85_DATERERR417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Fecha Ref",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_STATEQAB417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Estado",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_USEROVSR417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Usuario",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_OBSERVOT417",
+					"entityId": "EN_ACTIVETIT_417",
+					"format": "",
+					"name": "Observacion",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_ACTIVETIT_417",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ActiveTransaction"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_trn",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

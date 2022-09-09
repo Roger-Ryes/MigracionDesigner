@@ -1,0 +1,86 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_rubros_diferidos_web",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_opcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_historico"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_dividendo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_spid"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "faf74ee6-e456-4cef-bbc2-fca80c3ed0ae",
+				"columns": [
+					"1",
+					"2"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "dbe4a63f-6cf9-451e-99df-ac96b7bfef64",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "a0c1e6e0-f840-4d17-aad9-f68e6664d902",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		]
+	}
+}

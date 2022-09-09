@@ -1,0 +1,181 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_tabla_rango",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_id_rango"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor1min"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor1max"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor2min"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor2max"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_tabla"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor1"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor2"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_variable"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipovalor"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_tasa"
+			},
+			{
+				"dataType": "money",
+				"direction": "out",
+				"name": "@o_result2"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "685cc003-0d9b-4a2a-a4a5-3c5790bc6be4",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "ed84555c-2068-446b-bba6-badd5247786c",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "0d9be557-8c8a-49e0-9929-fad6fb947662",
+				"columns": [
+					"1",
+					"2"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

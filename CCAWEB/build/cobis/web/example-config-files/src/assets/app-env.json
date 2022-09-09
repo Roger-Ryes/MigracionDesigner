@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "contextPath": "CWC/services",
+  "apiAuthKey": "6kQUUJ0wKg8JIzO6Jxx6O2jNgRWeCZjsaOfcfRgj",
+  "apiCwcKey": "qwertyuioplkjhgfdsa2",
+  "endUserTerminal": "186.28.75.10",
+  "channel": "20",
+  "baseApiAuthUrl": "https://3ci27igqhk.execute-api.us-east-1.amazonaws.com/v1",
+  "baseApiCwcUrl": "https://8w3i7qnk5i.execute-api.us-east-1.amazonaws.com/v1",
+  "aws_s3": true,
+  "microfrontend_garantias": "http://localhost:4201",
+  "microfrontend_cuentas": "http://localhost:4202",
+  "microfrontend_banco_cobis": "http://dsg-microfe-banco-cobis.s3-website.us-east-2.amazonaws.com",
+  "configurationEnv": "dm1",
+  "replaceHost": false,
+  "s3BucketName": "cwc-ng12-container-4.0",
+  "s3CompatibleBucketRegion": "us-east-2",
+  "internationalizationPath": "assets/i18n",
+
+  
+  "dsgUrlRestService": "http://localhost:8080",
+  "dsgUrlVC": "http://127.0.0.1:5000/proxy",
+  "customerApiUrl": "https://79mj9n8i28.execute-api.us-east-1.amazonaws.com/v2/customers",
+  "customerApiKey": "dev1-qwertyuioplkjhgfdsa2dv"
+}

@@ -1,0 +1,131 @@
+{
+	"filename": "C:\\Users\\jhernandez\\Downloads\\sp_tdividendo.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_tdividendo",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_factor"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_texto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "d2662b03-400d-43ed-a2ec-cec5986a58db",
+				"columns": [
+					"Codigo",
+					"Tipo de dividendo",
+					"Factor",
+					"Estado",
+					"Texto"
+				],
+				"editMode": true,
+				"queryText": "select \"Codigo\"            = td_tdividendo,\r\n             \"Tipo de dividendo\" = substring( td_descripcion,1,30),\r\n             \"Factor\"            = td_factor,\r\n             \"Estado\"            = td_estado,\r\n             \"Texto\"             = td_texto\r\n        from"
+			},
+			{
+				"_idQuery": "ca3f469e-3da5-4f78-a2fa-a9d534431925",
+				"columns": [
+					"Codigo",
+					"Tipo de dividendo",
+					"Factor",
+					"Estado",
+					"Texto"
+				],
+				"editMode": true,
+				"queryText": "select \"Codigo\"            = td_tdividendo,\r\n             \"Tipo de dividendo\" = substring( td_descripcion,1,30),\r\n             \"Factor\"            = td_factor,\r\n             \"Estado\"            = td_estado,\r\n             \"Texto\"             = td_texto\r\n        from"
+			},
+			{
+				"_idQuery": "2c1fd769-62bc-4c8f-a323-01eb31c8ec15",
+				"columns": [
+					"Dias"
+				],
+				"editMode": true,
+				"queryText": "select  \"Dias\" = td_factor\r\n     from"
+			},
+			{
+				"_idQuery": "03a9a48d-6c83-4477-8803-fe6e2268de82",
+				"columns": [
+					"Codigo",
+					"Descripcion",
+					"Factor",
+					"Texto"
+				],
+				"editMode": true,
+				"queryText": "select \"Codigo\"      = td_tdividendo,\r\n                \"Descripcion\" = td_descripcion,\r\n                \"Factor\"      = td_factor,\r\n                \"Texto\"       = td_texto\r\n           from"
+			},
+			{
+				"_idQuery": "702cfe02-5b2b-4225-8cde-b886b277fc8a",
+				"columns": [
+					"Codigo",
+					"Descripcion",
+					"Factor",
+					"Texto"
+				],
+				"editMode": true,
+				"queryText": "select \"Codigo\"      = td_tdividendo,\r\n                \"Descripcion\" = td_descripcion,\r\n                \"Factor\"      = td_factor,\r\n                \"Texto\"       = td_texto\r\n           from"
+			},
+			{
+				"_idQuery": "5ea7edc6-3860-4a8a-8a0e-73261b787428",
+				"columns": [
+					"Descripcion",
+					"Factor",
+					"Texto"
+				],
+				"editMode": true,
+				"queryText": "select  \"Descripcion\"= td_descripcion,\r\n                 \"Factor\"     = td_factor,\r\n                 \"Texto\"      = td_texto\r\n           from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_oficiales.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_oficiales",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "cea31247-e2e5-4e97-9ca1-a7582cba5e50",
+				"columns": [
+					"OFICIAL",
+					"NOMBRE",
+					"NIVEL"
+				],
+				"editMode": false,
+				"queryText": "select \u0027OFICIAL\u0027 = oc_oficial, \u0027NOMBRE\u0027 = fu_nombre, \u0027NIVEL\u0027 = valor\n      from"
+			},
+			{
+				"_idQuery": "410a66e7-ed85-4c6a-8699-f4f793f0553d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select codigo from"
+			},
+			{
+				"_idQuery": "3c4cdcb9-e78b-47f1-818b-f6b072afb3cf",
+				"columns": [
+					"NOMBRE"
+				],
+				"editMode": false,
+				"queryText": "select \u0027NOMBRE\u0027 = fu_nombre\n      from"
+			},
+			{
+				"_idQuery": "3097ddcf-7031-4e2b-984b-e59580f6e07c",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_hoy"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

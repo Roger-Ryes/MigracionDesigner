@@ -1,0 +1,219 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_cuenta_cobis.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_cuenta_cobis",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_pcobis"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_opera"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "3b58b7ad-966c-4af3-91f9-bf507b250405",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "select ah_cuenta, ltrim(rtrim(ah_cta_banco)), ltrim(rtrim(ah_nombre))\n            from"
+			},
+			{
+				"_idQuery": "35a54a49-0153-4fc6-8a79-40d442ea258b",
+				"columns": [
+					"Cuenta",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select \"Cuenta\" = cc_cta_banco,\n               \"Cta Basa\""
+			},
+			{
+				"_idQuery": "50f73e98-f92b-470a-b9bf-3fad28fed39c",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT cc_cta_banco_ba FROM"
+			},
+			{
+				"_idQuery": "bf776ec0-671d-4846-8f5d-251994965e94",
+				"columns": [
+					"Cuenta",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select \"Cuenta\" = ah_cta_banco,\n               \"Cta Basa\""
+			},
+			{
+				"_idQuery": "b602bca9-f240-4655-8970-e38a65fbd3bb",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT cta_basa FROM"
+			},
+			{
+				"_idQuery": "d2ff1b53-ad03-47c5-8e7d-6e2134b5a803",
+				"columns": [
+					"Cuenta",
+					"Propietario"
+				],
+				"editMode": false,
+				"queryText": "select Cuenta = substring(ah_cta_banco, 1, 15), Propietario = ah_nombre\n          from"
+			},
+			{
+				"_idQuery": "19465fc0-a44a-4a9e-bbda-558167502bb4",
+				"columns": [
+					"Cuenta",
+					"Propietario"
+				],
+				"editMode": false,
+				"queryText": "select Cuenta = substring(ah_cta_banco, 1, 15), Propietario = ah_nombre\n          from"
+			},
+			{
+				"_idQuery": "112b80a5-2ee6-45ed-8b67-77527e3049e7",
+				"columns": [
+					"Cuenta",
+					"Propietario"
+				],
+				"editMode": false,
+				"queryText": "select Cuenta = substring(ah_cta_banco, 1, 15), Propietario = ah_nombre\n          from"
+			},
+			{
+				"_idQuery": "e2d476fb-6737-427d-8f9c-404597b3c085",
+				"columns": [
+					"Cuenta",
+					"Propietario"
+				],
+				"editMode": false,
+				"queryText": "select Cuenta = substring(ah_cta_banco, 1, 15), Propietario = ah_nombre\n          from"
+			},
+			{
+				"_idQuery": "ca8922e2-df2f-420b-ae4d-fcef9823f96e",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_ah_cta_banco"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ah_cuenta"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ah_nombre"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_mmin"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_pcobis"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_prod_banc"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_contable"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_para_girar"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

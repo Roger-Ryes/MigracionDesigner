@@ -1,0 +1,51 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-lnspr cb-t-lnsprkegmfgie-785 " [formGroup]="vc.viewState.T_LNSPRKEGMFGIE_785"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_OPERATIONN_207785.enabled, 'VC_OPERATIONN_207785')" [properties]="vc.viewState.VC_OPERATIONN_207785" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_OPERATIREA_304309.enabled, 'G_OPERATIREA_304309', 'VC_OPERATIONN_207785')" *ngIf="isVisible('G_OPERATIREA_304309')" [properties]="vc.viewState.G_OPERATIREA_304309" [mode]="vc.mode"> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_OPERATILGA_375309.enabled, 'G_OPERATILGA_375309', 'G_OPERATIREA_304309', 'GeneralParametersQuery',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('G_OPERATILGA_375309',true)" [properties]="vc.viewState.G_OPERATILGA_375309" [mode]="vc.mode" formGroupName="GeneralParametersQuery"> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_PAYMENTMETHODDD_220309.enabled, 'VA_PAYMENTMETHODDD_220309', 'G_OPERATILGA_375309', 'GeneralParametersQuery.paymentMethod',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_PAYMENTMETHODDD_220309')" [properties]="vc.viewState.VA_PAYMENTMETHODDD_220309" [mode]="vc.mode" formControlName="paymentMethod" [dataSource]="vc.queries.Q_APAGOOOO_YV30" (onChange)="change($event,'VA_PAYMENTMETHODDD_220309')"> 
+        </cobis-dropdownlist> 
+        <cobis-button [disabled]="isDisabled(vc.viewState.VA_VABUTTONOHXRHAO_106309.enabled,'VA_VABUTTONOHXRHAO_106309', 'G_OPERATILGA_375309')" *ngIf="isVisible('VA_VABUTTONOHXRHAO_106309')" [properties]="vc.viewState.VA_VABUTTONOHXRHAO_106309" [mode]="vc.mode" (onClick)="executeCommand('VA_VABUTTONOHXRHAO_106309',vc.viewState.VA_VABUTTONOHXRHAO_106309.name,vc.viewState.VA_VABUTTONOHXRHAO_106309.causesValidation)"></cobis-button> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_OPERATISNM_844309.enabled, 'G_OPERATISNM_844309', 'G_OPERATIREA_304309', 'GeneralParametersQuery',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('G_OPERATISNM_844309',true)" [properties]="vc.viewState.G_OPERATISNM_844309" [mode]="vc.mode" formGroupName="GeneralParametersQuery"> 
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_ALLOWSRENEWALLL_150309.enabled, 'VA_ALLOWSRENEWALLL_150309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.allowsRenewal',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_ALLOWSRENEWALLL_150309')" [properties]="vc.viewState.VA_ALLOWSRENEWALLL_150309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_ALLOWSRENEWALLL_150309" formControlName="allowsRenewal"></cobis-radiobuttonlist> 
+        <cobis-spacer *ngIf="isVisible('Spacer2788')" [properties]="vc.viewState.Spacer2788"></cobis-spacer>
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_READJUSTABLELXP_279309.enabled, 'VA_READJUSTABLELXP_279309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.readjustable',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_READJUSTABLELXP_279309')" [properties]="vc.viewState.VA_READJUSTABLELXP_279309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_READJUSTABLELXP_279309" formControlName="readjustable" (onChange)="change($event,'VA_READJUSTABLELXP_279309')"></cobis-radiobuttonlist> 
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_RESTRUCTURINGGG_731309.enabled, 'VA_RESTRUCTURINGGG_731309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.restructuring',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_RESTRUCTURINGGG_731309')" [properties]="vc.viewState.VA_RESTRUCTURINGGG_731309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_RESTRUCTURINGGG_731309" formControlName="restructuring"></cobis-radiobuttonlist> 
+        <cobis-spacer *ngIf="isVisible('Spacer2903')" [properties]="vc.viewState.Spacer2903"></cobis-spacer>
+        <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_PERIODICITYEHNN_689309.enabled, 'VA_PERIODICITYEHNN_689309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.periodicity',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_PERIODICITYEHNN_689309')" [properties]="vc.viewState.VA_PERIODICITYEHNN_689309" [mode]="vc.mode" formControlName="periodicity"></cobis-numericinputbox>
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_ACCEPTADDITIYNN_323309.enabled, 'VA_ACCEPTADDITIYNN_323309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.acceptAdditionalPayment',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_ACCEPTADDITIYNN_323309')" [properties]="vc.viewState.VA_ACCEPTADDITIYNN_323309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_ACCEPTADDITIYNN_323309" formControlName="acceptAdditionalPayment"></cobis-radiobuttonlist> 
+        <cobis-spacer *ngIf="isVisible('Spacer2650')" [properties]="vc.viewState.Spacer2650"></cobis-spacer>
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_INTERESTPAYMNNE_508309.enabled, 'VA_INTERESTPAYMNNE_508309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.interestPayment',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_INTERESTPAYMNNE_508309')" [properties]="vc.viewState.VA_INTERESTPAYMNNE_508309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_INTERESTPAYMNNE_508309" formControlName="interestPayment"></cobis-radiobuttonlist> 
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_PAYFULLFEEVHEVU_441309.enabled, 'VA_PAYFULLFEEVHEVU_441309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.payFullFee',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_PAYFULLFEEVHEVU_441309')" [properties]="vc.viewState.VA_PAYFULLFEEVHEVU_441309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_PAYFULLFEEVHEVU_441309" formControlName="payFullFee"></cobis-radiobuttonlist> 
+        <cobis-spacer *ngIf="isVisible('Spacer2718')" [properties]="vc.viewState.Spacer2718"></cobis-spacer>
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_KINDPAYMENTDUCW_586309.enabled, 'VA_KINDPAYMENTDUCW_586309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.kindPayment',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_KINDPAYMENTDUCW_586309')" [properties]="vc.viewState.VA_KINDPAYMENTDUCW_586309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_KINDPAYMENTDUCW_586309" formControlName="kindPayment"></cobis-radiobuttonlist> 
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_CASHPAYMENTSUUG_169309.enabled, 'VA_CASHPAYMENTSUUG_169309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.cashPayments',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_CASHPAYMENTSUUG_169309')" [properties]="vc.viewState.VA_CASHPAYMENTSUUG_169309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_CASHPAYMENTSUUG_169309" formControlName="cashPayments"></cobis-radiobuttonlist> 
+        <cobis-spacer *ngIf="isVisible('Spacer2649')" [properties]="vc.viewState.Spacer2649"></cobis-spacer>
+        <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_TYPEPAYMENTNPPY_513309.enabled, 'VA_TYPEPAYMENTNPPY_513309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.typePayment',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_TYPEPAYMENTNPPY_513309')" [properties]="vc.viewState.VA_TYPEPAYMENTNPPY_513309" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_TYPEPAYMENTNPPY_513309" formControlName="typePayment"></cobis-radiobuttonlist> 
+        <cobis-spacer *ngIf="isVisible('Spacer1700')" [properties]="vc.viewState.Spacer1700"></cobis-spacer> 
+        <cobis-spacer *ngIf="isVisible('Spacer2104')" [properties]="vc.viewState.Spacer2104"></cobis-spacer>
+        <cobis-checkbox [attr.disabled]="isDisabled( vc.viewState.VA_4223IMHHOSVYCXY_300309.enabled, 'VA_4223IMHHOSVYCXY_300309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.benefitInterestRate',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_4223IMHHOSVYCXY_300309')" [properties]="vc.viewState.VA_4223IMHHOSVYCXY_300309" [mode]="vc.mode" formControlName="benefitInterestRate" (onChange)="change($event,'VA_4223IMHHOSVYCXY_300309')"></cobis-checkbox> 
+        <cobis-spacer *ngIf="isVisible('Spacer2761')" [properties]="vc.viewState.Spacer2761"></cobis-spacer> 
+        <cobis-spacer *ngIf="isVisible('Spacer2882')" [properties]="vc.viewState.Spacer2882"></cobis-spacer>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_9193TCVDUUBRZAN_137309.enabled, 'VA_9193TCVDUUBRZAN_137309', 'G_OPERATISNM_844309', 'GeneralParametersQuery.benefitBaseRate',vc.viewState.T_LNSPRKEGMFGIE_785)" *ngIf="isVisible('VA_9193TCVDUUBRZAN_137309')" [properties]="vc.viewState.VA_9193TCVDUUBRZAN_137309" [mode]="vc.mode" formControlName="benefitBaseRate" [dataSource]="vc.catalogs.VA_9193TCVDUUBRZAN_137309"> 
+        </cobis-dropdownlist> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_OPERATINPL_449309.enabled, 'G_OPERATINPL_449309', 'G_OPERATIREA_304309')" *ngIf="isVisible('G_OPERATINPL_449309')" [properties]="vc.viewState.G_OPERATINPL_449309" [mode]="vc.mode"> 
+        <cobis-spacer *ngIf="isVisible('Spacer1931')" [properties]="vc.viewState.Spacer1931"></cobis-spacer>
+        <cobis-button [disabled]="isDisabled(vc.viewState.VA_VABUTTONFIRPTAQ_308309.enabled,'VA_VABUTTONFIRPTAQ_308309', 'G_OPERATINPL_449309')" *ngIf="isVisible('VA_VABUTTONFIRPTAQ_308309')" [properties]="vc.viewState.VA_VABUTTONFIRPTAQ_308309" [mode]="vc.mode" (onClick)="executeCommand('VA_VABUTTONFIRPTAQ_308309',vc.viewState.VA_VABUTTONFIRPTAQ_308309.name,vc.viewState.VA_VABUTTONFIRPTAQ_308309.causesValidation)"></cobis-button> 
+       </cobis-groupbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

@@ -1,0 +1,55 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7064"
+		},
+		{
+			"attributeId": "AT98_OPERATNO313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_OperationCreateDef",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4233_bli_operationcreatedef",
+	"patternName": "BLI_OperationCreateDef",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_operacion_def",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

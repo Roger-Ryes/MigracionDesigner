@@ -1,0 +1,140 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77676"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_empresa",
+			"type": "CUSTOM",
+			"value": "company"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_siguiente",
+			"type": "CUSTOM",
+			"value": "pagSec"
+		}
+	],
+	"name": "BLI_SearchLoanSale",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2462_bli_searchloansale",
+	"patternName": "BLI_SearchLoanSale",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "0250a2b3-eee0-4dba-ac8a-c71681392895",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select \u0027Secuencial\u0027 = ve_secuencial,\r\n          \u0027Fecha\u0027      = ve_fecha,\r\n          \u0027Empresa\u0027    = @w_desc_empresa,\r\n          \u0027Estado\u0027     = ve_estado,\r\n          \u0027Archivo\u0027    = ve_archivo,\r\n          \u0027Usuario\u0027    = ve_usuario\r\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "0250a2b3-eee0-4dba-ac8a-c71681392895",
+			"columns": [
+				{
+					"attributeId": "AT11_SEQUENAL189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Secuencial",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_DATENBMJ189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Fecha",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_COMPANYY189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Empresa",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_STATESLK189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Estado",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_ERRORMKH189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Archivo",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_USERCCHU189",
+					"entityId": "EN_LOANSALDH_189",
+					"format": "",
+					"name": "Usuario",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANSALDH_189",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoanSaleList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_venta_castiga",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

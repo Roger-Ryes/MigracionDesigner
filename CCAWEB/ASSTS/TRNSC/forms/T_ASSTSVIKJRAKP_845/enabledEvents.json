@@ -1,0 +1,110 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSVI_9TC",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSVI_S4A",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTOOGA_DP31",
+		"controlName": "ListaFormaPagoQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_LISTOOGA_DP31.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListaFormaPago",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "account",
+		"controlId": "VA_ACCOUNTNAAOFHSO_558399",
+		"controlName": "account",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "Company",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "client",
+		"controlId": "VA_CLIENTRGTMTTEWO_906399",
+		"controlName": "client",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "Company",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentForm",
+		"controlId": "VA_PAYMENTUVUDGASL_450399",
+		"controlName": "paymentForm",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "Company",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_COMPANYCEE_242845",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

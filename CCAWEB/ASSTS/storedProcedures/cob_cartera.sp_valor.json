@@ -1,0 +1,369 @@
+{
+	"filename": "D:\\SP\u0027S\\Valores Tasas a Aplicar\\sp_valor.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_valor",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipoh"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_clase"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo_default"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor_default"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo_maximo"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor_maximo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo_minimo"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor_minimo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_referencia"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_sector"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_opcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_cartera"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_subsegmento"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "4f4834a6-e3e0-4cd7-99fb-d89975037803",
+				"columns": [
+					"Identificador",
+					"Descripcion",
+					"Clase"
+				],
+				"editMode": false,
+				"queryText": "select \"Identificador\" = va_tipo,\n             \"Descripcion\"   = substring(va_descripcion,1,50),\n             \"Clase\"         = va_clase\n        from"
+			},
+			{
+				"_idQuery": "a060246d-acf8-43e5-9c4a-4b33ae0afcfe",
+				"columns": [
+					"Identificador",
+					"Tip.CCA",
+					"Subsegmento",
+					"Sig. Defecto",
+					"Val. Defecto",
+					"Sig. Minimo",
+					"Val. Minimo",
+					"Sig. Maximo",
+					"Val. Maximo",
+					"Referencia"
+				],
+				"editMode": false,
+				"queryText": "select \"Identificador\"= vd_tipo,\n              \"Tip.CCA\"      = vd_tipo_cartera,\n\t      \"Subsegmento\"  = vd_subsegmento,\n              \"Sig. Defecto\" = vd_signo_default,\n              \"Val. Defecto\" = vd_valor_default,\n              \"Sig. Minimo\"  = vd_signo_minimo,\n              \"Val. Minimo\"  = vd_valor_minimo,\n              \"Sig. Maximo\"  = vd_signo_maximo,\n              \"Val. Maximo\"  = vd_valor_maximo,\n              \"Referencia\"   = vd_referencia\n        from"
+			},
+			{
+				"_idQuery": "bd397fda-070a-4a29-9a5a-c97c2c3aa36c",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n                                   from"
+			},
+			{
+				"_idQuery": "c8a85fe4-95e4-44d7-a1cd-5c06feb4eb45",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}"
+				],
+				"editMode": false,
+				"queryText": "select @w_tipo,\n      @w_descripcion,\n      @w_clase,\n      @w_referencia,\n      @v_descripcion,\n      @v_valor_default,\n      @w_signo_default,\n      @w_valor_default,\n      @w_signo_minimo,\n      @w_valor_minimo,\n      @w_signo_maximo,\n      @w_valor_maximo,\n      @i_sector,\n      @w_des_sector,\n      @i_tipo_cartera,\n      @w_des_tcartera,\n      @i_subsegmento,\n      @w_des_subsegmento"
+			},
+			{
+				"_idQuery": "cd5ccaf6-01da-492f-b155-07d357552522",
+				"columns": [
+					"Identificador",
+					"Descripcion",
+					"Clase"
+				],
+				"editMode": false,
+				"queryText": "select \"Identificador\" = va_tipo,\n             \"Descripcion\"   = substring(va_descripcion,1,35),\n             \"Clase\"         = va_clase\n        from"
+			},
+			{
+				"_idQuery": "d7b5f1c4-b65c-4af7-8d36-1b857194b04d",
+				"columns": [
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \"Descripcion\"= va_descripcion\n        from"
+			},
+			{
+				"_idQuery": "c74f6c20-753c-4f35-b83b-368ede2d5e77",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}"
+				],
+				"editMode": false,
+				"queryText": "select  va_tipo,\n              substring(va_descripcion,1,35),\n              A.vd_referencia,\n              A.vd_signo_default,\n              A.vd_valor_default,\n              vr_valor\n       from"
+			},
+			{
+				"_idQuery": "389753d2-1d7b-45c8-8967-8ea4eaa7b981",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n                                from"
+			},
+			{
+				"_idQuery": "bfb56033-1488-40f4-8de2-24f9e384fa37",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(vr_secuencial)\n                                from"
+			},
+			{
+				"_idQuery": "4100cbc1-b70a-4e61-b5f1-e80b7f96c876",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "select @w_descripcion, @w_valor, @w_cliente"
+			},
+			{
+				"_idQuery": "ff101c31-df17-42f1-bd15-7ce40572bf3c",
+				"columns": [
+					"Codigo",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select \"Codigo\" = B.codigo,\n             \"Descripcion\" = B.valor\n        from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@v_descripcion"
+			},
+			{
+				"dataType": "float",
+				"name": "@v_valor_default"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clase"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave2"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave3"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_sector"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_subsegmento"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_tcartera"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_descripcion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_tasa_xseg"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_tasa_xtcca"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_hh"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_mm"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_referencia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_default"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_maximo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_signo_minimo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ss"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_default"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_maximo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_minimo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor"
+			},
+			{
+				"dataType": "insensitive",
+				"name": "registro"
+			}
+		]
+	}
+}

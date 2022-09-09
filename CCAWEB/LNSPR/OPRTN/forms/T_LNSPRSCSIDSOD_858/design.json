@@ -1,0 +1,606 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+		{
+			"action": null,
+			"causesValidation": true,
+			"causesValidationAsString": "T",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TLNSPRSC_7TC_765",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TLNSPRSC_7TC"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_AADIRWOQO_72396"
+				},
+				"labelId": "LBL_LOANS_AADIRWOQO_72396",
+				"moduleId": "LNSPR"
+			},
+			"layoutType": "Command",
+			"name": "Command1",
+			"options": 0,
+			"order": 1,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		}
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "LNSPR",
+		"subModuleId": "OPRTN",
+		"taskId": "T_LNSPRSCSIDSOD_858",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_SYNDICATDI_660858",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../LNSPR/relations/componentKeys.json#/OPRTN/Forms/T_LNSPRSCSIDSOD_858/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_002T_LNSPRSCSIDSOD_858_398",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Inicializaci\u00f3n de datos de un ViewContainer, despues de este evento se realiza el segimiento de cambios en los datos",
+						"eventId": 2,
+						"name": "InitData"
+					}
+				},
+				{
+					"customEventId": "CEVC_501T_LNSPRSCSIDSOD_858_211",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Evento que actua como listener cuando se cierra ventanas modales.",
+						"eventId": 501,
+						"name": "onCloseModal"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN",
+				"taskId": "T_LNSPRSCSIDSOD_858",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_SYNDICATDI_660858"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "SyndicatedListForm",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 3,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../LNSPR/entities/EN_OPERATINN_LNSPR.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_SYNDICALLT_242405",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group1361",
+						"order": 1,
+						"orientation": "V",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATINN_LNSPR.json#/attributes/AT67_AMOUNTZP313"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_MONTODIPN_56241"
+									},
+									"labelId": "LBL_LNSPR_MONTODIPN_56241",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "amount",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_AMOUNTNHJBKJSFP_420405",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATINN_LNSPR.json#/attributes/AT68_AMOUNTPASPR"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": -1,
+										"id": "VV_AMOUNTPARTICTSP_89540512",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/MSG/MSG_LNSPR_CAMPOREIQ_59717"
+											},
+											"labelId": "MSG_LNSPR_CAMPOREIQ_59717",
+											"moduleId": "LNSPR"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									},
+									{
+										"compareOperator": 3,
+										"id": "VV_AMOUNTPARTICTSP_89540523",
+										"minValue": "0",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/MSG/MSG_LNSPR_VALORNODE_52171"
+											},
+											"labelId": "MSG_LNSPR_VALORNODE_52171",
+											"moduleId": "LNSPR"
+										},
+										"visualValidationType": {
+											"description": "Compare Validation",
+											"visualValidationId": "Compare"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_104VA_AMOUNTPARTICTSP_895405_664",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Se ejecuta al cambiar el valor de un VisualAttribute",
+											"eventId": 104,
+											"name": "Changed"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_MONTOPAAI_44222"
+									},
+									"labelId": "LBL_LNSPR_MONTOPAAI_44222",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "amountParticipants",
+								"options": 0,
+								"order": 5,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_AMOUNTPARTICTSP_895405",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATINN_LNSPR.json#/attributes/AT97_MAILNKWPSPR"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": -1,
+										"id": "VV_MAILHXHVMKQUYBR_36040526",
+										"visualValidationType": {
+											"description": "Custom Validation",
+											"visualValidationId": "CustomValidate"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_316VA_MAILHXHVMKQUYBR_360405_893",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 1,
+											"description": "Permite personalizar una validacion asociada a un visual attribute",
+											"eventId": 316,
+											"name": "CustomValidate"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_CORREOHMW_60459"
+									},
+									"labelId": "LBL_LNSPR_CORREOHMW_60459",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "mail",
+								"options": 0,
+								"order": 4,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_MAILHXHVMKQUYBR_360405",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATINN_LNSPR.json#/attributes/AT11_PARTICIASPR"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_305VA_PARTICIPANTSTOP_981405_321",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 1,
+											"description": "Permite abrir una ventana modal desde TextInputButton",
+											"eventId": 305,
+											"name": "OpenEvent"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_PARTICIPT_49306"
+									},
+									"labelId": "LBL_LNSPR_PARTICIPT_49306",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "participantS",
+								"options": 0,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputButton"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_PARTICIPANTSTOP_981405",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATINN_LNSPR.json#/attributes/AT90_PERCENTTSPR"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": -1,
+										"id": "VV_PERCENTAGEPAISA_37840584",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/MSG/MSG_LNSPR_CAMPOREIQ_59717"
+											},
+											"labelId": "MSG_LNSPR_CAMPOREIQ_59717",
+											"moduleId": "LNSPR"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_PORCENTAC_51005"
+									},
+									"labelId": "LBL_LNSPR_PORCENTAC_51005",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "percentageParticipants",
+								"options": 0,
+								"order": 6,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_PERCENTAGEPAISA_378405",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../LNSPR/entities/EN_OPERATINN_LNSPR.json#/attributes/AT83_TYPEPATTSPR"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": -1,
+										"id": "VV_TYPEPARTICIPNNN_39740537",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/MSG/MSG_LNSPR_CAMPOREIQ_59717"
+											},
+											"labelId": "MSG_LNSPR_CAMPOREIQ_59717",
+											"moduleId": "LNSPR"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									}
+								],
+								"cacheDuration": 0,
+								"catalogName": null,
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_ROLNDGMQN_51274"
+									},
+									"labelId": "LBL_LOANS_ROLNDGMQN_51274",
+									"moduleId": "LNSPR"
+								},
+								"maxRecords": null,
+								"name": "typeParticipants",
+								"options": 0,
+								"order": 3,
+								"orientation": "H",
+								"queryId": null,
+								"queryMemberText": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryMemberValue": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryModule": null,
+								"queryVersion": null,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "I",
+									"userControlId": "RadioButtonList"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TYPEPARTICIPNNN_397405",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_SYNDICATSS_405"
+				},
+				"metadataVersion": "7.2.0.2024 BETA",
+				"modules": [
+					{
+						"moduleId": "LNSPR"
+					}
+				],
+				"name": "View of SyndicatedListForm"
+			}
+		}
+	]
+}

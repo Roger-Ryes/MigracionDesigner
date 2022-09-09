@@ -1,0 +1,36 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_PAYMGPOE_BC76",
+		"controlName": "PaymentListGroupClientQuery_BC76",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_PAYMGPOE_BC76.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "PaymentListGroupClient",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "paymentsType",
+		"controlId": "VA_1MVJRDIJAIBEKBY_880816",
+		"controlName": "paymentsType",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 3
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "PaymentGroup",
+		"eventsType": "visualAttributeEventType"
+	}
+]

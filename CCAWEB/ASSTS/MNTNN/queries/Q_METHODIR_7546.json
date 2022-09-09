@@ -1,0 +1,91 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_METHODIR_7546_440",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 3,
+				"description": "Sobreescribe la ejecuci\ufffdn de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"id": {
+		"queryId": "Q_METHODIR_7546",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_METHODSRT_271",
+	"mainEntityName": "",
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/MNTNN/Queries/Q_METHODIR_7546/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "description",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_METHODSRT_271.json#/attributes/AT87_DESCRIPO271"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_METHO456RD946_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "product",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_METHODSRT_271.json#/attributes/AT44_PRODUCTT271"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_IDENTIFRD_90451"
+				},
+				"labelId": "LBL_ASSTS_IDENTIFRD_90451",
+				"moduleId": "ASSTS"
+			},
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_METHO55D65365_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "MNTNN"
+			}
+		}
+	]
+}

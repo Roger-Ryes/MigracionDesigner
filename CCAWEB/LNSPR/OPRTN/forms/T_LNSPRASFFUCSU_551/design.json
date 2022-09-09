@@ -1,0 +1,616 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "T",
+	"header": null,
+	"id": {
+		"moduleId": "LNSPR",
+		"subModuleId": "OPRTN",
+		"taskId": "T_LNSPRASFFUCSU_551",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_CURRENTSSN_601551",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../LNSPR/relations/componentKeys.json#/OPRTN/Forms/T_LNSPRASFFUCSU_551/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN",
+				"taskId": "T_LNSPRASFFUCSU_551",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_CURRENTSSN_601551"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "CurrentStatusLineForm",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 2,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"eventType": 0,
+						"groupId": "G_CURRENTSUL_573928",
+						"groups": [
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"eventType": 0,
+								"groupId": "G_CURRENTUAN_658928",
+								"htmlSection": "T",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2166",
+								"order": 1,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"include": 4095,
+										"isCustomized": false,
+										"maxRecords": null,
+										"name": "G_CURRENTUAN_658928-default-blank",
+										"options": 0,
+										"order": 0,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "I",
+											"userControlId": "Spacer"
+										},
+										"visible": 4095,
+										"visualAttributeId": "G_CURRENTUAN_658928-default-blank",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							},
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 1,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_CURRENTNUA_670928",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group2272",
+								"order": 2,
+								"orientation": "V",
+								"parentLayoutType": "GroupLayout",
+								"queryView": {
+									"actionDesign": "Button",
+									"actions": [
+									],
+									"allowPaging": true,
+									"allowPagingStr": "T",
+									"allowSorting": false,
+									"allowSortingStr": "F",
+									"autoSync": null,
+									"componentStyle": null,
+									"confirmRowDeletion": false,
+									"confirmRowDeletionStr": "F",
+									"customEvents": [
+									],
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"customUrlDialog": null,
+									"deleteCommandEnabled": false,
+									"deleteCommandEnabledStr": "F",
+									"dialogTitleLabelId": null,
+									"editCommandEnabled": false,
+									"editCommandEnabledStr": "F",
+									"editMode": "0",
+									"entityName": {
+										"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/name"
+									},
+									"hasDetail": false,
+									"hasDetailString": "F",
+									"height": null,
+									"includeQueryMembers": [
+										"AT20_AVAILAEE369",
+										"AT41_DESCMOEN369",
+										"AT49_APPROVED369",
+										"AT85_PRODUCTT369",
+										"AT32_CURRENET369",
+										"AT89_USEDEQPM369"
+									],
+									"insertCommandEnabled": false,
+									"insertCommandEnabledStr": "F",
+									"isCustomized": false,
+									"modalSize": null,
+									"modeSelection": "Simple",
+									"moduleIdDialog": null,
+									"multiSelectEnabledStr": "S",
+									"name": "QV_HQ80_NZX99",
+									"options": 2306,
+									"pageSize": 5,
+									"query": {
+										"$ref": "../../../../LNSPR/OPRTN/queries/Q_SUMMUSYU_GO80.json#"
+									},
+									"queryId": "Q_SUMMUSYU_GO80",
+									"queryVersion": "1.0.0",
+									"queryViewCustomActions": [
+										{
+											"action": null,
+											"commandImageId": null,
+											"commandName": "RowSelecting",
+											"commandOrder": null,
+											"commandType": 0,
+											"customActionId": "CEQV_208QV_HQ80_NZX99_964",
+											"customizationLayer": 0,
+											"customizationLayerDescription": "ECU",
+											"enabled": "T",
+											"eventActions": [
+											],
+											"executionType": 1,
+											"filter": null,
+											"isCustomized": false,
+											"name": "RowSelecting",
+											"options": 0,
+											"queryView": "QV_HQ80_NZX99",
+											"queryViewEventType": {
+												"availableExecutionType": 7,
+												"description": "Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.",
+												"eventId": 208,
+												"name": "RowSelecting"
+											},
+											"serviceName": null,
+											"userControl": {
+												"customizationLayer": "0",
+												"customizationLayerDescription": "ECU",
+												"description": "Designer Button",
+												"type": "A",
+												"userControlId": "Button"
+											}
+										}
+									],
+									"queryViewId": "QV_HQ80_NZX99",
+									"queryViewType": "Grid",
+									"rowCommandAppearance": 0,
+									"style": null,
+									"subModuleIdDialog": null,
+									"taskIdDialog": null,
+									"taskVersionDialog": null,
+									"typeFormDialog": null,
+									"userControl": {
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"description": "Designer Grid",
+										"name": "Designer Grid",
+										"type": "I",
+										"userControlId": "Grid"
+									},
+									"viewContainerIdDialog": null
+								},
+								"queryViewId": "QV_HQ80_NZX99",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_RESUMENSH_39385"
+									},
+									"labelId": "LBL_LNSPR_RESUMENSH_39385",
+									"moduleId": "LNSPR"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT32_CURRENET369"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_COTIZMVEW_51468"
+											},
+											"labelId": "LBL_LNSPR_COTIZMVEW_51468",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "currencyQuote",
+										"options": 0,
+										"order": 7,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXDDA_394928",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT20_AVAILAEE369"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_DISPONILE_55740"
+											},
+											"labelId": "LBL_LNSPR_DISPONILE_55740",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "available",
+										"options": 0,
+										"order": 6,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXDMY_107928",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT85_PRODUCTT369"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_PRODUCTOO_67575"
+											},
+											"labelId": "LBL_LOANS_PRODUCTOO_67575",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "product",
+										"options": 0,
+										"order": 1,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXEXF_996928",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT41_DESCMOEN369"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_MONEDAFCA_83005"
+											},
+											"labelId": "LBL_LNSPR_MONEDAFCA_83005",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "descMoney",
+										"options": 0,
+										"order": 3,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXIDH_851928",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT49_APPROVED369"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_APROBADOO_26217"
+											},
+											"labelId": "LBL_LNSPR_APROBADOO_26217",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "approved",
+										"options": 0,
+										"order": 4,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXQRS_250928",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT37_CODMONYY369"
+										},
+										"attributeValidations": [
+										],
+										"cacheDuration": 0,
+										"catalogName": "cl_moneda",
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 0,
+										"entityQuery": null,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_MONEDAFCA_83005"
+											},
+											"labelId": "LBL_LNSPR_MONEDAFCA_83005",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"minChars": null,
+										"name": "codMoney",
+										"options": 0,
+										"order": 2,
+										"queryId": null,
+										"queryMemberText": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryMemberValue": {
+											"attribute": {
+												"attributeId": null,
+												"name": null
+											},
+											"queryMemberId": null
+										},
+										"queryModule": null,
+										"queryVersion": null,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"type": "none",
+										"userControl": {
+											"type": "I",
+											"userControlId": "DropDownList"
+										},
+										"visible": 0,
+										"visualAttributeId": "VA_TEXTINPUTBOXSPG_308928",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT89_USEDEQPM369"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": true,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_UTILIZAOO_53309"
+											},
+											"labelId": "LBL_LOANS_UTILIZAOO_53309",
+											"moduleId": "LNSPR"
+										},
+										"maxRecords": null,
+										"name": "used",
+										"options": 0,
+										"order": 5,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_TEXTINPUTBOXURM_280928",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							}
+						],
+						"isCustomized": false,
+						"layoutType": "GroupLayout",
+						"name": "GroupLayout1274",
+						"order": 1,
+						"style": null,
+						"visible": 4095
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_CURRENTSAT_928"
+				},
+				"metadataVersion": "7.2.0.2024 BETA",
+				"modules": [
+					{
+						"moduleId": "LNSPR"
+					}
+				],
+				"name": "View of CurrentStatusLineForm"
+			}
+		}
+	]
+}

@@ -1,0 +1,186 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7038"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_en_linea",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_pago_ext",
+			"type": "CONSTANT",
+			"value": "N"
+		}
+	],
+	"name": "BLI_No_Applied_Payments",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9054_bli_no_applied_payments",
+	"patternName": "BLI_No_Applied_Payments",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "7a2d8648-3d74-4258-b142-28db9ec47832",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select\r\n      \u0027SECUENCIAL\u0027     = convert(varchar(12),ab_secuencial_ing),\r\n      \u0027FECHA\u0027          = convert(varchar(12),ab_fecha_ing,@i_formato_fecha),\r\n      \u0027USUARIO\u0027        = ab_usuario,\r\n      \u0027OFICINA\u0027        = ab_oficina,\r\n      \u0027RETENCION\u0027      = ab_dias_retencion,\r\n      \u0027CUOTA COMPLETA\u0027 = ab_cuota_completa,\r\n      \u0027ANTICIPOS\u0027      = ab_aceptar_anticipos,\r\n      \u0027TIPO REDUCCION\u0027 = ab_tipo_reduccion,\r\n      \u0027TIPO COBRO\u0027     = ab_tipo_cobro\r\n      from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "7a2d8648-3d74-4258-b142-28db9ec47832",
+			"columns": [
+				{
+					"attributeId": "AT46_SECUENAA882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "SECUENCIAL",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_FECHABIZ882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "FECHA",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_USUARIOO882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "USUARIO",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT30_OFICINAA882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "OFICINA",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_RETENCIN882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "RETENCION",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_CUOTACPM882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "CUOTA COMPLETA",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT97_ANTICIPS882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "ANTICIPOS",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_TIPOREID882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "TIPO REDUCCION",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_TIPOCOBR882",
+					"entityId": "EN_NOAPPLITN_882",
+					"format": "",
+					"name": "TIPO COBRO",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_NOAPPLITN_882",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "NoAppliedPayment"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_eliminar_pagos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

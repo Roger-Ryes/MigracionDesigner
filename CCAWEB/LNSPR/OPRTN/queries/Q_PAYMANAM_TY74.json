@@ -1,0 +1,363 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_PAYMANAM_TY74_181",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_PAYMANAM_TY74",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_PAYMENTLI_612",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_PAYMENTLI_612/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_PAYMANAM_TY74/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "paymentMethod",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT76_PAYMENOM612"
+			},
+			"attributeQuery": "paymentMethod",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMA44NNT655_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "paymentName",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT38_PAYMENET612"
+			},
+			"attributeQuery": "paymentName",
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 2,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMA474YA263_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "comments",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT31_COMMENTT612"
+			},
+			"attributeQuery": "comments",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": "",
+			"defaultValueDataType": "",
+			"function": "",
+			"name": "QueryMember",
+			"operator": "",
+			"order": 11,
+			"orderBy": "",
+			"orderByDirection": "",
+			"queryMemberId": "QM_PAYMA7MA4Y765_07",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "institutionOld",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT55_INSTITTT612"
+			},
+			"attributeQuery": "institutionOld",
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 14,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMAA7T7A265_04",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "operation",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT38_OPERATNN612"
+			},
+			"attributeQuery": "operation",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMAAAAYY977_01",
+			"select": false,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "accountOld",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT53_ACCOUNLT612"
+			},
+			"attributeQuery": "accountOld",
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 13,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMAAY77M848_03",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "institutionName",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT53_INSTITIN612"
+			},
+			"attributeQuery": "institutionName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMAM7Y74976_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "percentage",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT76_PERCENAA612"
+			},
+			"attributeQuery": "percentage",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMAMNTAA783_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientRole",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT76_CLIENTEE612"
+			},
+			"attributeQuery": "clientRole",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMAN47AA647_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "bankId",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT45_BANCOEHE612"
+			},
+			"attributeQuery": "bankId",
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 12,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_PAYMAN74AM809_02",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "account",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT68_ACCOUNTT612"
+			},
+			"attributeQuery": "account",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMANA44T107_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "client",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT49_CLIENTXI612"
+			},
+			"attributeQuery": "client",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMANNM4M221_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "institution",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT69_INSTITNT612"
+			},
+			"attributeQuery": "institution",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMANYY4T847_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientName",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_PAYMENTLI_612.json#/attributes/AT84_CLIENTNA612"
+			},
+			"attributeQuery": "clientName",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_PAYMAYAMMA662_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

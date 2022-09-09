@@ -1,0 +1,97 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21023"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "E"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_numero",
+			"type": "CUSTOM",
+			"value": "numero"
+		}
+	],
+	"name": "BLI_Search_Line_Members",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9655_bli_search_line_members",
+	"patternName": "BLI_Search_Line_Members",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "1cbf7170-c8a0-4e0e-b750-160f1c775692",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "1cbf7170-c8a0-4e0e-b750-160f1c775692",
+			"columns": [
+				{
+					"attributeId": "AT69_CODMEMRB663",
+					"entityId": "EN_LINEDISUS_663",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_NAMEMEEE663",
+					"entityId": "EN_LINEDISUS_663",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LINEDISUS_663",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LineDistributionMembers"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_lin_ope_moneda",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

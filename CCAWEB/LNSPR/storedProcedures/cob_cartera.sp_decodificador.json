@@ -1,0 +1,183 @@
+{
+	"filename": "E:\\Web\\FuentesJS\\spsql\\sp_decodificador.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_decodificador",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_fila"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_accion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ini"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dias_anio"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str1"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str2"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str3"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str4"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str5"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str6"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str7"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str8"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str9"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_str10"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_fila"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tasa_minima"
+			}
+		],
+		"queries": [
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_i"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_j"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_k"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_la_fila"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_sc"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_sf"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_valor"
+			}
+		]
+	}
+}

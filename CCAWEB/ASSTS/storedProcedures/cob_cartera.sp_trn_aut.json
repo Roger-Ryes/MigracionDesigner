@@ -1,0 +1,46 @@
+{
+	"filename": "C:\\Users\\jsmolina\\Desktop\\sp_trn_aut.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_trn_aut",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_login"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_pass"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_num_trn"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

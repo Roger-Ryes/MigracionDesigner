@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_CATALGSE_LNSPR",
+		"controlName": "Catalog3ItemsQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_CATALGSE_LNSPR.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "Catalog3Items",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_SEPR_PJZ89",
+		"controlName": "QV_SEPR_PJZ89",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "Catalog3Items",
+		"eventsType": "queryViewEventType"
+	}
+]

@@ -1,0 +1,132 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TPAYMENT_08P",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TPAYMENT_TM7",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "disbursement",
+		"controlId": "VA_DISBURSEMENTDSI_289701",
+		"controlName": "disbursement",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "MethodsRetention",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentATX",
+		"controlId": "VA_PAYMENTATXPGDKX_602701",
+		"controlName": "paymentATX",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "MethodsRetention",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentAut",
+		"controlId": "VA_PAYMENTAUTLPCHV_485701",
+		"controlName": "paymentAut",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "MethodsRetention",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "payment",
+		"controlId": "VA_PAYMENTKWAZXHOL_773701",
+		"controlName": "payment",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "MethodsRetention",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentMethods",
+		"controlId": "VA_PAYMENTMETHODSD_816701",
+		"controlName": "paymentMethods",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 7
+			}
+		],
+		"entityName": "MethodsRetention",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "pcobis",
+		"controlId": "VA_PCOBISNSCZVLGJB_151701",
+		"controlName": "pcobis",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "MethodsRetention",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_PAYMENTMDA_338828",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

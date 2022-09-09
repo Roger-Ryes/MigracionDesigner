@@ -1,0 +1,76 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_traslada_cartera",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina_destino"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficial_destino"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_en_linea"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desde_batch"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_motivo"
+			}
+		],
+		"queries": [
+		],
+		"type": "SYBASE"
+	}
+}

@@ -1,0 +1,211 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_AMORTITT_8477_384",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 3,
+				"description": "Sobreescribe la ejecuci\ufffdn de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"id": {
+		"queryId": "Q_AMORTITT_8477",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_AMORTIZIQ_340",
+	"mainEntityName": "",
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/MNTNN/Queries/Q_AMORTITT_8477/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "sequential",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT56_SEQUENLI340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORT4488I483_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statusItem",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT23_STATUSEE340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORT77477431_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "item",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT61_ITEMQDYX340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORT7777T320_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "accumulated",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT54_ACCUMUAE340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORT777T8281_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "grace",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT92_GRACERVL340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORT8T784670_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "paid",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT58_PAIDVFCY340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORTT7T88539_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "period",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT98_PERIODSM340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORTT84T4348_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "quote",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZIQ_340.json#/attributes/AT60_QUOTEYPC340"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORTT8T4I391_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "MNTNN"
+			}
+		}
+	]
+}

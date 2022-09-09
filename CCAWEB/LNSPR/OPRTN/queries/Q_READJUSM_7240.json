@@ -1,0 +1,969 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_READJUSM_7240_607",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"id": {
+		"queryId": "Q_READJUSM_7240",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_READJUSNN_654",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_READJUSNN_654/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_READJUSM_7240/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "clientCode",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT85_CLIENTEC654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 12,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ020M7534_21",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "previousOption",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT11_PREVIOIU654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 42,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ02424724_01",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "categoryGroup",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT79_CATEGORO654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 20,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ04000472_23",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "operation",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT72_OPERATOI654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ0M7S7785_30",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "lastProcessDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT64_LASTPRAO654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 35,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ0S0UU803_14",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "reference",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT10_REFERENE654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ0US2S949_32",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "readjDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT73_READJDTT654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ2200S174_37",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "numIdentification",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT49_NUMIDEFF654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ22274307_22",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "sequential",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT38_SEQUENII654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 28,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ22M04298_07",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "pastDueBalance",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT23_PASTDUCN654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 26,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ22SM2859_05",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "numProcedure",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT34_NUMPROUC654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 11,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ2MU47366_23",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "unitlDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT75_UNITDATT654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 38,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ2MU74998_17",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "percentage",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT11_PERCENET654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ2SU2U372_35",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "seleccion",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT79_SELECCNN654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_SELECCIOE_40160"
+				},
+				"labelId": "LBL_LOANS_SELECCIOE_40160",
+				"moduleId": "LNSPR"
+			},
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ40U20333_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "specialAdjust",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT16_SPECIALD654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 22,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ42M44781_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "client",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT79_CLIENTDT654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LOANS_NOMBRETPH_86356"
+				},
+				"labelId": "LBL_LOANS_NOMBRETPH_86356",
+				"moduleId": "LNSPR"
+			},
+			"operator": null,
+			"order": 2,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ44U2S982_18",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "amount",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT61_AMOUNTTS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 34,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ4MM0M772_13",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "sign",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT63_SIGNOOWS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ4S0S2840_33",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "officer",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT88_OFFICERR654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 40,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ4S272995_19",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "historical",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT70_HISTORII654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 37,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ4S7S7438_16",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "special",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT49_SPECIALL654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 33,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ4SU22229_12",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "currency",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT96_CURRENYY654"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_READJ4U47S124_02",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "daysPastDue",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT44_DAYSPAUS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 31,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ727M0116_10",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "seqGrid",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT85_SEQGRIDD654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 39,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ727SM125_18",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "disbursementDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT77_DISBURTE654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ74USU548_19",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "factor",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT52_FACTORSS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ7M22U518_34",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "balanceOperation",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT41_BALANCNR654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 29,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ7M47S442_08",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "typeClass",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT19_TYPECLAS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 24,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJ7UMM4503_03",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "type",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT62_TYPECFSL654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 13,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJM7S22211_01",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "oficial",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT14_OFICIALL654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 23,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJMM0M7854_02",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "nextReadjDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT30_NEXTREAE654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 14,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJS240M984_26",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "migratedOperation",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT42_MIGRATOI654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 15,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJS27U7718_10",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "expirationDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT91_EXPIRAEN654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 21,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJS707M148_21",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "condition",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT66_CONDITOI654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 16,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJS7M44273_16",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "product",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT69_PRODUCTT654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 36,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJSM422660_15",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "answList",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT42_ANSWLITS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 30,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJSM7M0499_09",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "creditLine",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT20_CREDITEI654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 25,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJSS02M301_04",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "answerOut",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT91_ANSWEROU654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 41,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJSSM0S240_20",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "process",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT56_PROCESSS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 17,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJU0US7382_12",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "credit",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT27_CREDITWF654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 27,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJU222M478_06",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "office",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT38_OFFICECN654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 18,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJU402S709_07",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "concessionDate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT47_CONCESAS654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 32,
+			"orderBy": "0",
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJUM4M4102_11",
+			"select": false,
+			"selectStr": "F",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "state",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_READJUSNN_654.json#/attributes/AT72_STATEHLJ654"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": null,
+			"operator": null,
+			"order": 19,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_READJUU44S771_11",
+			"select": false,
+			"selectStr": "F",
+			"where": true,
+			"whereStr": "T"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

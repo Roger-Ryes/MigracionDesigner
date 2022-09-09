@@ -1,0 +1,119 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7008"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CONSTANT",
+			"value": "R"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "CONSTANT",
+			"value": "-1"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo_rubro",
+			"type": "CONSTANT",
+			"value": "I"
+		}
+	],
+	"name": "BLI_Consulta_Rubro",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5855_bli_consulta_rubro",
+	"patternName": "BLI_Consulta_Rubro",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "9a4d306e-c02a-4ef7-af10-10c29ea81ae7",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 6,
+			"queryName": "select distinct\n              ru_concepto, co_descripcion\n         from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "9a4d306e-c02a-4ef7-af10-10c29ea81ae7",
+			"columns": [
+				{
+					"attributeId": "AT26_CONCEPTT919",
+					"entityId": "EN_RUBROMIHK_919",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT36_DESCRIPC919",
+					"entityId": "EN_RUBROMIHK_919",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_RUBROMIHK_919",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "Rubro"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_rubro",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

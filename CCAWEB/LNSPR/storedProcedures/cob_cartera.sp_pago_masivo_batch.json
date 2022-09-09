@@ -1,0 +1,147 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_pago_masivo_batch",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ing"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_valor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_forma_pago"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_referencia"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda_pag"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_archivo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_fin_lote"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_lote"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_proceso"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_lote"
+			},
+			{
+				"dataType": "char",
+				"direction": "out",
+				"name": "@o_procesa"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "6780dd11-3bf6-4b71-9852-bafd1ee710cb",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

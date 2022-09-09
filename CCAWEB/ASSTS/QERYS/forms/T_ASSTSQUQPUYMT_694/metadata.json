@@ -1,0 +1,42 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_ACTIVETIT_417",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_CAUSATION_534",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_REVERSEDO_653",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_ACTIERNI_WO73",
+			"related": false,
+			"subModuleId": "QERYS"
+		},
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_CAUSAONT_HU91",
+			"related": false,
+			"subModuleId": "QERYS"
+		},
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_REVESETA_RO55",
+			"related": false,
+			"subModuleId": "QERYS"
+		}
+	]
+}

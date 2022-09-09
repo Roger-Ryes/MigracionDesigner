@@ -1,0 +1,516 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT98_OPERATNO313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_codigo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7143"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		}
+	],
+	"name": "BLI_GeneralParametersQuery",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6836_bli_generalparametersquery",
+	"patternName": "BLI_GeneralParametersQuery",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "e758fa1b-7d9f-44d1-8c57-9a160c7b3f94",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 3,
+			"queryName": "select\r\n@w_operacionca,\r\n@w_banco,\r\n@w_tramite,\r\n@w_lin_credito,\r\n@w_estado,\r\n@w_cliente,\r\n@w_toperacion,\r\n@w_desc_toperacion,\r\n@w_moneda,\r\n@w_desc_moneda,\r\n@w_oficina,\r\n@w_oficial,\r\nconvert(varchar(10),@w_fecha_ini,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_fin,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_prox_pag,@i_formato_fecha),\r\n@w_monto,\r\n@w_tplazo,\r\n@w_desc_tplazo,\r\n@w_plazo,\r\n@w_tdividendo,\r\n@w_desc_tdividendo,\r\n@w_periodo_cap,\r\n@w_periodo_int,\r\n@w_periodos_gracia,\r\n@w_periodos_gracia_int,\r\n@w_dist_gracia  ,\r\n@w_destino,\r\n@w_desc_destino,\r\n@w_ciudad,\r\n@w_desc_ciudad,\r\n@w_nem_producto,\r\n@w_desc_producto,\r\n@w_cuenta,\r\n@w_reajuste_periodo,\r\nconvert(varchar(10),@w_reajuste_fecha,@i_formato_fecha),\r\n@w_reajuste_num,\r\n@w_renovacion,\r\n@w_num_renovacion,\r\n@w_precancelacion,\r\n@w_tipo,\r\n@w_porcentaje_fin,\r\n@w_tasa_fin,\r\n@w_cuota_completa,\r\n@w_anticipado_int,\r\n@w_reajuste_intereses,\r\n@w_reduccion,\r\n@w_cuota_anticipada,\r\n@w_dias_anio,\r\n@w_tipo_amortizacion,\r\n@w_cuota_fija,\r\n@w_cuota,\r\n@w_cuota_capital,\r\n@w_dias_gracia,\r\n@w_dia_pago,\r\n@w_desc_ofi,\r\n@w_inicio,\r\n@w_fin,\r\n@w_nombre,\r\n@w_tasa,\r\n@w_referencial,\r\n@w_desc_referencial,\r\n@w_nom_oficial,\r\n0,\r\n@w_reajuste_especial,\r\n@w_sector,\r\n@w_des_sector,\r\n@w_anterior,\r\n@w_migrada,\r\n@w_refer,\r\n@w_desembolso,\r\nconvert(varchar(10),@w_fecha_liq,@i_formato_fecha),\r\n@w_cuota_adic,\r\n@w_meses_hip,\r\n@w_monto_aprobado,\r\n@w_tipo_aplicacion,\r\n@w_gracia_int,\r\n@w_mes_gracia,\r\n@w_num_dec,\r\n@w_fecha_fija,\r\n@w_reajustable,\r\n@w_evitar_feriados,\r\nconvert(varchar(10),@w_fecha_ini,@i_formato_fecha),\r\n@w_monto,\r\n@w_pcobis,\r\n@w_opt_desde,\r\n@w_opt_hasta,\r\n@w_alicuota,\r\n@w_cta_certificado,\r\n@w_cta_ahorro,\r\n@w_tipo_bloqueo,\r\n@w_clase_bloqueo,\r\n@w_doble_alicuota,\r\n@w_alicuota_aho,\r\n@w_gracia_aleatoria,\r\n@w_seg_trianualizado,\r\n@w_financiar_seg,\r\n@w_plazo_seg,\r\nconvert(varchar(10),@w_fpago_ext,@i_formato_fecha),\r\n@w_base_calculo,\r\n@w_tipo_renta,\r\n@w_plazo_precancelar,\r\n@w_distribuir_seg,\r\n@w_calc_seg,\r\n@w_subsegmento_cca,\r\n@w_toperacion_bce,\r\n@w_div_anioend"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "e758fa1b-7d9f-44d1-8c57-9a160c7b3f94",
+			"columns": [
+				{
+					"attributeId": "AT52_OPERATDN262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_VALUEDAE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "dd/MM/yyyy",
+					"name": "{12}",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_AMOUNTCJ262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{15}",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_TERMTYEE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{16}",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_TERMTBKA262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{18}",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_TYPEFEEE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{19}",
+					"position": 20,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_TYPEDINI262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{20}",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_TERMCAAL262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{21}",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_TERMINSR262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{22}",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT13_TERMGRAA262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{23}",
+					"position": 24,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_TYPEGRAA262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{25}",
+					"position": 26,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_WAYPAYTE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{30}",
+					"position": 31,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_ACCOUNTT262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{32}",
+					"position": 33,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_PERIODIY262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{33}",
+					"position": 34,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_ALLOWSNR262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{36}",
+					"position": 37,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_ALLOWSEP262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{38}",
+					"position": 39,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_VALUE1SL262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{39}",
+					"position": 40,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT46_PAYFULEE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{42}",
+					"position": 43,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_INTEREMP262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{43}",
+					"position": 44,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_TYPEPATT262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{45}",
+					"position": 46,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_ACCEPTAD262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{46}",
+					"position": 47,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_TYPEAMNA262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{48}",
+					"position": 49,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_FEEVSBIY262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{50}",
+					"position": 51,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_DAYSGRDE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{52}",
+					"position": 53,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT22_PAYMENYT262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{53}",
+					"position": 54,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_INTERESS262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{58}",
+					"position": 59,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT75_SPECIATT262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{63}",
+					"position": 64,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT52_SECTORGZ262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{64}",
+					"position": 65,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_AMOUNTEP262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{73}",
+					"position": 74,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_KINDPAEY262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{74}",
+					"position": 75,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_TERMGREC262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{75}",
+					"position": 76,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_MONTHGCA262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{76}",
+					"position": 77,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_FIXEDPAN262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{78}",
+					"position": 79,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_READJUTB262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{79}",
+					"position": 80,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_AVOIDHSA262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{80}",
+					"position": 81,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT93_TYPEUNOO262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{89}",
+					"position": 90,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_TYPELOKC262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{90}",
+					"position": 91,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_BASEINRE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{94}",
+					"position": 95,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_SAFETEMM262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{96}",
+					"position": 97,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT18_EXTENDDM262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{97}",
+					"position": 98,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_CASHPASS262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{100}",
+					"position": 101,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_EQUALDEE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{101}",
+					"position": 102,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_CALCULTA262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{102}",
+					"position": 103,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_IVABCCJF262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{115}",
+					"position": 116,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_RESTRUCR262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{116}",
+					"position": 117,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_BENEFIIT262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{118}",
+					"position": 119,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_BENEFIRE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{119}",
+					"position": 120,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_PAYMENGC262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{120}",
+					"position": 121,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_BALLOOEE262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{121}",
+					"position": 122,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT51_TIRFEEVZ262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{122}",
+					"position": 123,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_GRACEDNN262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{123}",
+					"position": 124,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT35_AGGREGTT262",
+					"entityId": "EN_GENERALRE_262",
+					"format": "",
+					"name": "{124}",
+					"position": 125,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_GENERALRE_262",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "GeneralParametersQuery"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_operacion_tmp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

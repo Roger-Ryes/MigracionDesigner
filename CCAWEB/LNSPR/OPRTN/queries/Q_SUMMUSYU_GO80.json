@@ -1,0 +1,202 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_SUMMUSYU_GO80_836",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_SUMMUSYU_GO80",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_SUMMARYTU_369",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_SUMMARYTU_369/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_SUMMUSYU_GO80/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "available",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT20_AVAILAEE369"
+			},
+			"attributeQuery": "available",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SUMMU8O8YO708_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "descMoney",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT41_DESCMOEN369"
+			},
+			"attributeQuery": "descMoney",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SUMMU8S8Y0229_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "codMoney",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT37_CODMONYY369"
+			},
+			"attributeQuery": "codMoney",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SUMMUGUGUO474_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "approved",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT49_APPROVED369"
+			},
+			"attributeQuery": "approved",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SUMMUOGOYU266_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "product",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT85_PRODUCTT369"
+			},
+			"attributeQuery": "product",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SUMMUSSGSU338_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "currencyQuote",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT32_CURRENET369"
+			},
+			"attributeQuery": "currencyQuote",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SUMMUYGO80428_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "used",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_SUMMARYTU_369.json#/attributes/AT89_USEDEQPM369"
+			},
+			"attributeQuery": "used",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SUMMUYGOYO463_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

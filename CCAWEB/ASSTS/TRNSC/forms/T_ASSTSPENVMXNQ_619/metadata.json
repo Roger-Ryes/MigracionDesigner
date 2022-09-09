@@ -1,0 +1,29 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_ITEMSLONA_118",
+			"isContextEntity": true,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_LISTPROSS_173",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_PROJECTNM_545",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_LISTCEEE_FJ77",
+			"related": false,
+			"subModuleId": "TRNSC"
+		}
+	]
+}

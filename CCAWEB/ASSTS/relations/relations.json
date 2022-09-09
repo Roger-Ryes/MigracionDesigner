@@ -1,0 +1,314 @@
+[
+	{
+		"customizationLayer": 0,
+		"customizationLayerDescription": "ECU",
+		"deleteCascade": false,
+		"deleteCascadeStr": "F",
+		"entityRelationAttributes": [
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT11_CUSTOMEO147",
+					"attributeIdPk": "AT45_CUSTOMDD277"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT25_AMOUNTZD147",
+					"attributeIdPk": "AT61_AMOUNTRY277"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT37_DATEUNLT147",
+					"attributeIdPk": "AT57_DATEUNLI277"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT45_TYPEKPEI147",
+					"attributeIdPk": "AT28_TYPEKUKE277"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT54_CONCILIA147",
+					"attributeIdPk": "AT59_NOTCONLA277"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT58_CONCILST147",
+					"attributeIdPk": "AT26_CONCILUT277"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT66_DATEFRMM147",
+					"attributeIdPk": "AT85_DATEFROM277"
+				}
+			}
+		],
+		"entityRelationshipId": "ER_CONTL_CER_191",
+		"firstEntityId": "EN_CONCILIIC_277",
+		"firstEntityVersion": "1.0.0",
+		"firstMultiplicity": "1",
+		"relationType": "R",
+		"secondEntityId": "EN_CONCILICC_147",
+		"secondEntityVersion": "1.0.0",
+		"secondMultiplicity": "*"
+	},
+	{
+		"customizationLayer": 0,
+		"customizationLayerDescription": "ECU",
+		"deleteCascade": false,
+		"deleteCascadeStr": "F",
+		"entityRelationAttributes": [
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT43_GROUPIDD548",
+					"attributeIdPk": "AT56_IDGROUPP732"
+				}
+			}
+		],
+		"entityRelationshipId": "ER_DOCMS_PAT_113",
+		"firstEntityId": "EN_SCANNEDNC_732",
+		"firstEntityVersion": "1.0.0",
+		"firstMultiplicity": "1",
+		"relationType": "R",
+		"secondEntityId": "EN_DOCUMENTS_548",
+		"secondEntityVersion": "1.0.0",
+		"secondMultiplicity": "*"
+	},
+	{
+		"customizationLayer": 0,
+		"customizationLayerDescription": "ECU",
+		"deleteCascade": false,
+		"deleteCascadeStr": "F",
+		"entityRelationAttributes": [
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT15_PROCEDEE644",
+					"attributeIdPk": "AT64_TRAMITEE732"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT45_LOANYHRY644",
+					"attributeIdPk": "AT70_LOANENKU732"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT65_IDGROUPP644",
+					"attributeIdPk": "AT56_IDGROUPP732"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT93_IDCLIENN644",
+					"attributeIdPk": "AT44_IDCLIENT732"
+				}
+			}
+		],
+		"entityRelationshipId": "ER_HEAUD_CHE_466",
+		"firstEntityId": "EN_SCANNEDNC_732",
+		"firstEntityVersion": "1.0.0",
+		"firstMultiplicity": "1",
+		"relationType": "R",
+		"secondEntityId": "EN_DOCUMENTI_644",
+		"secondEntityVersion": "1.0.0",
+		"secondMultiplicity": "*"
+	},
+	{
+		"customizationLayer": 0,
+		"customizationLayerDescription": "ECU",
+		"deleteCascade": false,
+		"deleteCascadeStr": "F",
+		"entityRelationAttributes": [
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT22_LOANBANN908",
+					"attributeIdPk": "AT42_LOANBADK882"
+				}
+			}
+		],
+		"entityRelationshipId": "ER_LOANN_CIR_542",
+		"firstEntityId": "EN_LOANKYMRI_882",
+		"firstEntityVersion": "1.0.0",
+		"firstMultiplicity": "1",
+		"relationType": "R",
+		"secondEntityId": "EN_LOANCHINR_908",
+		"secondEntityVersion": "1.0.0",
+		"secondMultiplicity": "*"
+	},
+	{
+		"customizationLayer": 0,
+		"customizationLayerDescription": "ECU",
+		"deleteCascade": false,
+		"deleteCascadeStr": "F",
+		"entityRelationAttributes": [
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT39_LOANBAIN337",
+					"attributeIdPk": "AT42_LOANBADK882"
+				}
+			}
+		],
+		"entityRelationshipId": "ER_LOANN_CLL_804",
+		"firstEntityId": "EN_LOANKYMRI_882",
+		"firstEntityVersion": "1.0.0",
+		"firstMultiplicity": "1",
+		"relationType": "R",
+		"secondEntityId": "EN_LOANINTCC_337",
+		"secondEntityVersion": "1.0.0",
+		"secondMultiplicity": "*"
+	},
+	{
+		"customizationLayer": 0,
+		"customizationLayerDescription": "ECU",
+		"deleteCascade": false,
+		"deleteCascadeStr": "F",
+		"entityRelationAttributes": [
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT10_NUMPROUE882",
+					"attributeIdPk": "AT82_NUMPRODR824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT24_CODMONDD882",
+					"attributeIdPk": "AT64_CODCURYC824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT33_MIGRATEO882",
+					"attributeIdPk": "AT53_MIGRATER824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT37_OFFICEID882",
+					"attributeIdPk": "AT83_OFFICEOE824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT42_LOANBADK882",
+					"attributeIdPk": "AT50_OPERATON824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT56_IDCARDUU882",
+					"attributeIdPk": "AT58_NUMIDENN824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT66_STATUSOB882",
+					"attributeIdPk": "AT97_STATUSDD824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT68_CLIENTII882",
+					"attributeIdPk": "AT28_CODCLINN824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT76_DISBURTS882",
+					"attributeIdPk": "AT73_DISBURDT824"
+				}
+			},
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT95_OFFICEID882",
+					"attributeIdPk": "AT57_OFFICERR824"
+				}
+			}
+		],
+		"entityRelationshipId": "ER_LOASI_CNE_508",
+		"firstEntityId": "EN_LOANSEACI_824",
+		"firstEntityVersion": "1.0.0",
+		"firstMultiplicity": "1",
+		"relationType": "R",
+		"secondEntityId": "EN_LOANKYMRI_882",
+		"secondEntityVersion": "1.0.0",
+		"secondMultiplicity": "*"
+	},
+	{
+		"customizationLayer": 0,
+		"customizationLayerDescription": "ECU",
+		"deleteCascade": false,
+		"deleteCascadeStr": "F",
+		"entityRelationAttributes": [
+			{
+				"customizationLayer": 0,
+				"customizationLayerDescription": "ECU",
+				"entityRelationAttributePK": {
+					"attributeIdFk": "AT96_LOANBAII713",
+					"attributeIdPk": "AT47_LOANBAND316"
+				}
+			}
+		],
+		"entityRelationshipId": "ER_SEGSU_CER_914",
+		"firstEntityId": "EN_SEGUROSQK_316",
+		"firstEntityVersion": "1.0.0",
+		"firstMultiplicity": "1",
+		"relationType": "R",
+		"secondEntityId": "EN_BENEFICOR_713",
+		"secondEntityVersion": "1.0.0",
+		"secondMultiplicity": "*"
+	}
+]

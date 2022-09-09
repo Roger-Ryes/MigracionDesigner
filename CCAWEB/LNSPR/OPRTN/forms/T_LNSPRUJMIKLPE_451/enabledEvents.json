@@ -1,0 +1,30 @@
+[
+	{
+		"attributeName": "state",
+		"controlId": "VA_STATEDKAIXFCWPF_698276",
+		"controlName": "state",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_ADVANCEDAE_402451",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 3
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

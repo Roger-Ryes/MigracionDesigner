@@ -1,0 +1,505 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7992"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "I"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "client"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cod_reporte",
+			"type": "CONSTANT",
+			"value": "35"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "bank"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_nemonico",
+			"type": "CONSTANT",
+			"value": "EDOCTA"
+		}
+	],
+	"name": "BLI_AccountStatusTec",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8940_bli_accountstatustec",
+	"patternName": "BLI_AccountStatusTec",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "79743866-7f23-4e19-b29f-52a296b648e7",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 20,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "e29d6e9b-18b6-46dc-98d3-4e8621d5ce4c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 24,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+	{
+			"_idQuery": "79743866-7f23-4e19-b29f-52a296b648e7",
+			"columns": [
+				{
+					"attributeId": "AT83_CLIENTEA514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Nombre",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_SURNAMEE514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "ApellidoPaterno",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT36_SECONDSR514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "ApellidoMaterno",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_STREETKB514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Calle",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_OUTDOOBN514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "NumeroExterior",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_COLONYVP514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Colonia",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_CITYWYKV514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Ciudad",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT93_LOCATIOR514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Localidad",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT67_PROVINCE514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Provincia",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_CLIENTHH514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Telefono",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_AMOUNTYL514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "MontoCredito",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT50_LOANSTTA514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "EstadoCredito",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_BEGINDTE514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "FechaConcesion",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_CATWXSEU514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "CAT",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_RATECXTI514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "TasaInteres",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_MORATORI514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "InteresMoratorio",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT18_OFFICEMA514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Sucursal",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_OFFICEDR514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "DireccionSucursal",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_OFFICEEP514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "TelefonoSucursal",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_REGIONLR514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "DireccionRegional",
+					"position": 20,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT25_REGIONPN514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "TelefonoRegional",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_PASTDUEN514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "SaldoVencido",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_ACTUALEO514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "CuotaActual",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_MINIMUYE514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "PagoMinimo",
+					"position": 24,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_PAYMENLT514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "PagoLiquidar",
+					"position": 25,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_PAYMENTA514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "FechaPagoCOF",
+					"position": 26,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_OPERATNT514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "TipoOperacion",
+					"position": 27,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_URL1BJHF514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Url1",
+					"position": 28,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT22_URL2SOLG514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Url2",
+					"position": 29,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT42_URL3ZDAE514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Url3",
+					"position": 30,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_COMPAND1514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Dato1",
+					"position": 31,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_COMPANT2514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Dato2",
+					"position": 32,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT36_BANKRFCC514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "Rfc",
+					"position": 33,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_TIPOCRET514",
+					"entityId": "EN_ACCOUNTLI_514",
+					"format": "",
+					"name": "TipoCredito",
+					"position": 34,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		},
+		{
+			"_idQuery": "e29d6e9b-18b6-46dc-98d3-4e8621d5ce4c",
+			"columns": [
+				{
+					"attributeId": "AT27_MOVEMEDN880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "FechaMovimiento",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT13_CONCEPTT880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "Concepto",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT14_PAYMENTT880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "Pagos",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT70_CHARGESS880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "Cargos",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT47_CAPITALL880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "Capital",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_MORATONN880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "ComisionMora",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT56_MORATOIT880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "InteresMora",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_INTERETS880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "Interes",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_IVAPBKYZ880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "IVA",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_INSURAEE880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "Seguro",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_SUPERVEP880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "GastoSupervision",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_BALANCEE880",
+					"entityId": "EN_ACCOUNTCC_880",
+					"format": "",
+					"name": "Saldo",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_ACCOUNTCC_880",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AccountStatusTec"
+		},
+		{
+			"entityId": "EN_ACCOUNTLI_514",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AccountStatusTecFilter"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_reporte_datos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

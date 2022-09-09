@@ -1,0 +1,179 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77541"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modulo",
+			"type": "CONSTANT",
+			"value": "CCA"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "CUSTOM",
+			"value": "concepto"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cot_contable",
+			"type": "CUSTOM",
+			"value": "cotContable"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda_origen",
+			"type": "CUSTOM",
+			"value": "monedaOrigen"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor",
+			"type": "CUSTOM",
+			"value": "monto"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda_destino",
+			"type": "CUSTOM",
+			"value": "monedaDestino"
+		}
+	],
+	"name": "BLI_Consulta_Cotizacion",
+	"outputEntity": [
+	],
+	"outputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_cotizacion",
+			"type": "CUSTOM",
+			"value": "cotizacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_valor_convertido",
+			"type": "CUSTOM",
+			"value": "monto"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_tipo_op",
+			"type": "CUSTOM",
+			"value": "tipoCotiz"
+		},
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_cot_usd",
+			"type": "CUSTOM",
+			"value": "cotDolar"
+		},
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_factor",
+			"type": "CUSTOM",
+			"value": "factor"
+		}
+	],
+	"patternId": "BLI5559_bli_consulta_cotizacion",
+	"patternName": "BLI_Consulta_Cotizacion",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_divisas",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,129 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77652"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion_cartera",
+			"type": "CUSTOM",
+			"value": "bankLS"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		}
+	],
+	"name": "BLI_LoanSyndicatedList",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8531_bli_loansyndicatedlist",
+	"patternName": "BLI_LoanSyndicatedList",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "d93b763d-85cd-49b7-9084-da38915421f7",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select \u0027Participante\u0027        = si_banco_participante,\r\n          \u0027Nombre Participante\u0027 = fr_nombre,\r\n          \u0027Rol\u0027                 = si_rol,\r\n          \u0027%\u0027                   = si_porcentaje,\r\n          \u0027Monto Participante\u0027  = si_monto_participante,\r\n          \u0027Correo\u0027              = si_correo\r\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "d93b763d-85cd-49b7-9084-da38915421f7",
+			"columns": [
+				{
+					"attributeId": "AT18_CODPARPI476",
+					"entityId": "EN_LOANSYNST_476",
+					"format": "",
+					"name": "Participante",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_NAMEPACN476",
+					"entityId": "EN_LOANSYNST_476",
+					"format": "",
+					"name": "Nombre Participante",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_ROLEPATS476",
+					"entityId": "EN_LOANSYNST_476",
+					"format": "",
+					"name": "Rol",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT62_PERCENPA476",
+					"entityId": "EN_LOANSYNST_476",
+					"format": "",
+					"name": "%",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT75_AMOUNTPI476",
+					"entityId": "EN_LOANSYNST_476",
+					"format": "",
+					"name": "Monto Participante",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT52_MAILPART476",
+					"entityId": "EN_LOANSYNST_476",
+					"format": "",
+					"name": "Correo",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANSYNST_476",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanSyndicatedList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_sindicado",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

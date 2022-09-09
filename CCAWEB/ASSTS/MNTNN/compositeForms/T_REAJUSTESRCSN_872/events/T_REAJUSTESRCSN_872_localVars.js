@@ -1,0 +1,1 @@
+/* variables locales de T_REAJUSTESRCSN_872*/

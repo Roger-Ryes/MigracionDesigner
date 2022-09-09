@@ -1,0 +1,168 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77668"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CUSTOM",
+			"value": "modo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_id_rango",
+			"type": "CUSTOM",
+			"value": "idRango"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor1min",
+			"type": "CUSTOM",
+			"value": "valor1Min"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor1max",
+			"type": "CUSTOM",
+			"value": "valor1Max"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor2min",
+			"type": "CUSTOM",
+			"value": "valor2Min"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor2max",
+			"type": "CUSTOM",
+			"value": "valor2Max"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tabla",
+			"type": "CUSTOM",
+			"value": "tabla"
+		},
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tasa",
+			"type": "CUSTOM",
+			"value": "tasa"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_variable",
+			"type": "CUSTOM",
+			"value": "variable"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_valor",
+			"type": "CUSTOM",
+			"value": "valor"
+		}
+	],
+	"name": "BLI_InsertUpdate_Ranges",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI1396_bli_insertupdate_ranges",
+	"patternName": "BLI_InsertUpdate_Ranges",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_tabla_rango",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

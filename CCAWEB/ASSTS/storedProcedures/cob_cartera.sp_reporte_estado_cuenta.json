@@ -1,0 +1,1240 @@
+{
+	"filename": "C:\\Users\\fborja\\Desktop\\convertSP\\SP\\sp_reporte_estado_cuenta.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_estado_cuenta",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_filial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "524229ca-f4ec-4128-aa0b-14c68c7d1ba8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select fp_fecha from"
+			},
+			{
+				"_idQuery": "f64338c5-fab6-4e3e-aa45-31c4b5211b53",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select fp_fecha from"
+			},
+			{
+				"_idQuery": "c401099e-344e-479d-bede-7adaf655f02b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0) + isnull(sum(am_gracia),0) - isnull(sum(am_pagado),0)\r\n\t\t\t\t\t    from"
+			},
+			{
+				"_idQuery": "758fde65-b38d-4dbd-833f-f6207dcbe0db",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0)\r\n\t\t\t\t\t    from"
+			},
+			{
+				"_idQuery": "5892c4c1-3cd1-4f55-8c80-5f3ba710453b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(ro_porcentaje, 0) from"
+			},
+			{
+				"_idQuery": "70894668-ca68-42e4-af5e-2617ba7b4011",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(ro_porcentaje, 0) from"
+			},
+			{
+				"_idQuery": "914d9b09-cff9-46a5-a208-16061f291cc8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0)\r\n\t\t\t\t\t    from"
+			},
+			{
+				"_idQuery": "d273be7d-2034-4c73-b396-6339c04b1e32",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0)\r\n\t\t\t\t\t    from"
+			},
+			{
+				"_idQuery": "de088058-e147-4740-b169-4567ed60744b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0) + isnull(sum(am_gracia),0) - isnull(sum(am_pagado),0)\r\n\t\t\t\t\t    from"
+			},
+			{
+				"_idQuery": "bf4a1f0a-5982-4854-a1ea-31006a927c24",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select b.valor from"
+			},
+			{
+				"_idQuery": "3d4f3d64-951b-4e0d-8e9c-c7a4fd3cd127",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select fp_fecha from"
+			},
+			{
+				"_idQuery": "b646fd65-ab07-4fbc-b945-6933b9e802de",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select of_nombre from"
+			},
+			{
+				"_idQuery": "f4fdb2ba-0f8c-452f-b359-d0c0269a754c",
+				"columns": [
+					"NumeroCuenta",
+					"FechaEmision",
+					"NombreAcreditado",
+					"FechaCorte",
+					"NumeroAcreditado",
+					"SaldoInsoluto",
+					"FechaCredito",
+					"MontoPagarCapital",
+					"MontoCredito",
+					"InteresOrdinario",
+					"TasaInteresOrd",
+					"Iva",
+					"TasaInteresMoratorio",
+					"MontoOtrosCargos",
+					"TotalAmortizacion",
+					"Plazo",
+					"MontoPagarPeriodo",
+					"Destino",
+					"PeriodoLiquidacion",
+					"ComisionApetura",
+					"MontoComision",
+					"Cat",
+					"CargosObjetados",
+					"NroCredito",
+					"Promotor",
+					"SimboloMoneda",
+					"TipoOperacion",
+					"Sucursal",
+					"DescMoneda",
+					"PagoCapital",
+					"PagoInteres",
+					"PagoIva",
+					"PagoInteresMoratorio",
+					"PagoOtros"
+				],
+				"editMode": false,
+				"queryText": "select\r\n           @w_nro_cuenta as \u0027NumeroCuenta\u0027,\r\n           @w_fecha_emision as \u0027FechaEmision\u0027,\r\n           @w_nombre_acreditado as \u0027NombreAcreditado\u0027,\r\n           @w_fecha_corte as \u0027FechaCorte\u0027,\r\n           @w_numero_acreditado as \u0027NumeroAcreditado\u0027,\r\n \t   @w_saldo_insoluto as \u0027SaldoInsoluto\u0027,\r\n           @w_fecha_ini as \u0027FechaCredito\u0027,\r\n           @w_monto_pagar as \u0027MontoPagarCapital\u0027,\r\n           @w_monto       as \u0027MontoCredito\u0027,\r\n\t   @w_int_ordinario as \u0027InteresOrdinario\u0027,\r\n           @w_tasa_int   as \u0027TasaInteresOrd\u0027,\r\n           @w_monto_iva as \u0027Iva\u0027,\r\n           @w_tasa_imo as \u0027TasaInteresMoratorio\u0027,\r\n           @w_monto_otros_cargos as \u0027MontoOtrosCargos\u0027,\r\n           @w_tabla_amor as \u0027TotalAmortizacion\u0027,\r\n           @w_plazo_frecuencia as \u0027Plazo\u0027,\r\n\t   @w_monto_periodo_actual as \u0027MontoPagarPeriodo\u0027,\r\n           @w_destino as \u0027Destino\u0027,\r\n           @w_periodo_liq as \u0027PeriodoLiquidacion\u0027,\r\n           @w_com_apertura as \u0027ComisionApetura\u0027,\r\n           @w_monto_com as \u0027MontoComision\u0027,\r\n           @w_cat_desc as \u0027Cat\u0027,\r\n           @w_cargos_objetados as \u0027CargosObjetados\u0027,\r\n           @w_nro_credito as \u0027NroCredito\u0027,\r\n           @w_promotor as \u0027Promotor\u0027,\r\n           isnull(@w_simbolo,\u0027NA\u0027) as \u0027SimboloMoneda\u0027,\r\n           @w_tipo_operacion as \u0027TipoOperacion\u0027,\r\n           isnull(@w_sucursal, \u0027NA\u0027) as \u0027Sucursal\u0027,\r\n           @w_desc_moneda as \u0027DescMoneda\u0027,\r\n           isnull(@w_pago_cap,0) as \u0027PagoCapital\u0027,\r\n           isnull(@w_pago_int,0) as \u0027PagoInteres\u0027,\r\n           isnull(@w_pago_ivaint,0) as \u0027PagoIva\u0027,\r\n           isnull(@w_pago_imo,0) as \u0027PagoInteresMoratorio\u0027,\r\n           isnull(@w_pago_otros,0) as \u0027PagoOtros\u0027"
+			},
+			{
+				"_idQuery": "ca47f376-96f4-4247-a4d5-2b213eb93c01",
+				"columns": [
+					"op",
+					"divi",
+					"fechaven"
+				],
+				"editMode": false,
+				"queryText": "select op_operacion as op, di_dividendo as divi, di_fecha_ven as fechaven"
+			},
+			{
+				"_idQuery": "33b5d60e-052c-40b0-8f28-6ec2fb4faf03",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "6ffc37bc-2653-4f2a-b039-391503658bff",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(am_cuota) from"
+			},
+			{
+				"_idQuery": "46105162-ac29-49dd-97a9-3382bd183c51",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(am_cuota) from"
+			},
+			{
+				"_idQuery": "dde98b15-92e8-437f-8007-2255686b8d7b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0) from"
+			},
+			{
+				"_idQuery": "b327922e-3baf-43d5-982e-b36a78dd85e2",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0) from"
+			},
+			{
+				"_idQuery": "7bf9963c-0376-45d6-9101-4081c407cf03",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(isnull(am_cuota,0)) from"
+			},
+			{
+				"_idQuery": "83045547-b61f-4af6-92f4-f1216b15b205",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(isnull(am_cuota,0)) from"
+			},
+			{
+				"_idQuery": "e1dd8ae0-f870-4ad6-bbb6-a3a502c0e870",
+				"columns": [
+					"{0}",
+					"origen",
+					"estadoDiv"
+				],
+				"editMode": false,
+				"queryText": "select op_operacion,\r\n       \u0027Amortiza  \u0027       as origen,\r\n        di_estado as estadoDiv"
+			},
+			{
+				"_idQuery": "3389e277-23ee-4271-bd31-7daf7be71ae2",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "0118a4db-dc83-4c72-ba8d-4a45a75eaa9a",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "7f0e3ba7-cc24-4296-b69a-9abb8d6bf78b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(saldoInsoluto),0) from"
+			},
+			{
+				"_idQuery": "1780011f-ec46-40c5-b74d-b1ecedd02ba4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(capital),0) from"
+			},
+			{
+				"_idQuery": "1c45384b-0354-4d14-832d-c71de43083f8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(interes),0) from"
+			},
+			{
+				"_idQuery": "d3b27521-17a7-42b0-b181-ba9c65c84a9d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(ivaint),0) from"
+			},
+			{
+				"_idQuery": "b4ae28b5-3476-4e55-823d-72b05e4a367b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(cmo),0) from"
+			},
+			{
+				"_idQuery": "3cdbd7b2-8c92-4418-9c91-7fd3f5fd7623",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(moratorios),0) from"
+			},
+			{
+				"_idQuery": "77c0c246-2d32-4adc-bf7a-bff00f47711b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(otros),0) from"
+			},
+			{
+				"_idQuery": "54eaa844-8b0b-46c5-827b-3bdfda8114db",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(total),0) from"
+			},
+			{
+				"_idQuery": "0fb1a162-bbf3-4877-be92-aac5da328c59",
+				"columns": [
+					"op",
+					"divi",
+					"fechaven"
+				],
+				"editMode": false,
+				"queryText": "select op_operacion as op, di_dividendo as divi, di_fecha_ven as fechaven"
+			},
+			{
+				"_idQuery": "e0a7858f-0003-4fc0-890e-9e075ef527db",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "96eafc51-175c-4c6e-abb1-f98a073d87a7",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "29409b16-a252-4002-89d9-1718dd4a9bc4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "c0c8e7b3-913b-4c1b-b5aa-5cf486d84238",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "f43ff59b-2c2e-4223-9c87-6c46fa5325c8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "542a6567-20df-47bc-bede-db0aa980c440",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "b44181d1-107c-4ca1-9300-24c41317487e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "1cf7b5db-9baa-4895-9700-2b7b30252609",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "267c0ded-d24c-4ea6-a83c-67fa0e9cc2d8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(capital),0) from"
+			},
+			{
+				"_idQuery": "bbba5a30-68f3-4ba8-93ec-54d8bf43e23f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "80cd6dfb-f979-4ac3-b87d-a4d4f0813a3d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "8f42a740-827f-4577-a44a-f9af5a2bc2f7",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "d0d1f156-897a-4608-acc4-5be085ea2ad0",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(interes),0) from"
+			},
+			{
+				"_idQuery": "d2e43f58-9104-4187-b5e2-faa729ac8bb9",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "d82edcdc-36ae-4cfa-a199-24f0f16799ed",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(ivaint),0) from"
+			},
+			{
+				"_idQuery": "482c031d-45bb-4678-95ad-dd75bc7b1338",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "2a755c26-3887-4456-80f0-242585811f1f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(cmo),0) from"
+			},
+			{
+				"_idQuery": "f0645c72-b232-4572-b9fc-6e8c0cd60518",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "e4573919-7819-403f-8fcb-89a91c30b6ee",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(moratorios),0) from"
+			},
+			{
+				"_idQuery": "2bf1a241-a8db-4ded-8bc3-7950213211c6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "cd36e708-e402-4af5-b15b-8d66f58d4e04",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(otros),0) from"
+			},
+			{
+				"_idQuery": "19dc65de-4cd7-40c2-b4b8-7c276aff698f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "54693911-025f-42c3-8fcf-4c6fe12a0698",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(total),0) from"
+			},
+			{
+				"_idQuery": "9ee2a909-8232-4a95-89b1-7c42983a5127",
+				"columns": [
+					"{0}",
+					"origen",
+					"estadoDiv"
+				],
+				"editMode": false,
+				"queryText": "select op_operacion,\r\n       \u0027Pagos\u0027        as origen,\r\n        di_estado     as estadoDiv"
+			},
+			{
+				"_idQuery": "71f8c45f-5f8f-4c59-a83c-7a85c0027601",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "58c85418-dd96-4880-b67a-26d3774b1315",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(capital),0) from"
+			},
+			{
+				"_idQuery": "39180b8f-af1f-4019-ab48-8d3b857a16c6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "7d3dc1de-602e-4db6-9c71-f5a73935d70b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "b06c62bb-1855-47dc-8c18-57070197815d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "b93f22d4-08db-4a14-9763-4837235b59c3",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(interes),0) from"
+			},
+			{
+				"_idQuery": "a50d68a0-c3d4-4b40-8da5-bd5219e5a68f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "28fd3dd2-d9de-4265-9425-4d8acaa372bd",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(ivaint),0) from"
+			},
+			{
+				"_idQuery": "cb6cd850-9ad1-44f6-865a-aa8332e41e35",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "313ef7f7-2ea1-413e-bc77-c706c4c51b04",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(cmo),0) from"
+			},
+			{
+				"_idQuery": "79eaafb7-624d-4305-bff1-d196e2358e4e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "2e8f0cea-01a5-4c2b-8e0b-b33a29eca8aa",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(moratorios),0) from"
+			},
+			{
+				"_idQuery": "efefff03-ddbd-46ea-aa23-e8e530bf62b1",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "a56c19ba-cf31-460b-bee2-bac71663ed15",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(otros),0) from"
+			},
+			{
+				"_idQuery": "e392d70c-cd75-40dd-8051-fc5e0c18823d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "24f128db-7481-44ac-8bb1-60243b205cbc",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(total),0) from"
+			},
+			{
+				"_idQuery": "93501acd-1cbd-4594-9113-32039842e204",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "9429fc8d-52b6-4612-9b86-b704b36d2605",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(amh_cuota + amh_gracia + amh_pagado)\r\n        from"
+			},
+			{
+				"_idQuery": "32b858d4-393b-423b-8531-f0919f30de39",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(dtr_monto),0)\r\n       from"
+			},
+			{
+				"_idQuery": "7a8dfe1e-026b-4da3-83f2-2fac1cf75a6f",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": false,
+				"queryText": "select\r\nop_operacion,\r\norigen,\r\nestadoDiv,\r\nSituacion"
+			},
+			{
+				"_idQuery": "1ce0ff92-6c92-4c70-9f1f-dc86db29a91f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "93d55624-c985-4646-b3c5-d7ec6d4a83db",
+				"columns": [
+					"Operacion",
+					"Origen",
+					"EstadoDividendo",
+					"Situacion",
+					"NumPago",
+					"FechaVenc",
+					"SaldoInsolutoCreditoCame",
+					"SaldoInsolutoInterc",
+					"AmortizaInterc",
+					"AmortizaCame",
+					"InteresCame",
+					"InteresTotal",
+					"IvaInteresTotal",
+					"CmoTotal",
+					"RubMoratorios",
+					"OtrosTotal",
+					"Total",
+					"Esquema",
+					"Folio",
+					"Localidad"
+				],
+				"editMode": false,
+				"queryText": "select\r\nOperacion,\r\nOrigen,\r\nEstadoDividendo,\r\nSituacion,\r\nNumPago,\r\nFechaVenc,\r\nSaldoInsolutoCreditoCame,\r\nSaldoInsolutoInterc,\r\nAmortizaInterc,\r\nAmortizaCame,\r\nInteresCame,\r\nInteresTotal,\r\nIvaInteresTotal,\r\nCmoTotal,\r\nRubMoratorios,\r\nOtrosTotal,\r\nTotal,\r\nEsquema,\r\nFolio,\r\nLocalidad\r\nfrom"
+			},
+			{
+				"_idQuery": "841bb129-af5f-4841-8af4-b93a45da4d4c",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}",
+					"{22}",
+					"{23}",
+					"{24}",
+					"{25}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n       @w_credito_interc,\r\n       @w_credito_came,\r\n       @w_interes_came,\r\n       @w_interes_interc,\r\n       @w_ivainteres_total,\r\n       @w_moratorios_total,\r\n       @w_otros_total,\r\n       @w_total_amortiza,\r\n       @w_cant_pagos,\r\n       @w_credito_interc_pag,\r\n       @w_credito_came_pag,\r\n       @w_interes_came_pag,\r\n       @w_interes_interc_pag,\r\n       @w_ivainteres_total_pag,\r\n       @w_moratorios_total_pag,\r\n       @w_otros_total_pag,\r\n       @w_total_amortiza_pag,\r\n       @w_cant_pagos_interc,\r\n       @w_saldo_cred_interc,\r\n       @w_saldo_int_interc,\r\n       @w_saldo_cred_came,\r\n       @w_saldo_int_came,\r\n       @w_saldo_ivaint,\r\n       @w_saldo_otros,\r\n       @w_saldo_moratorios,\r\n       @w_saldo_total"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cant_pagos_interc"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cant_pagos"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cargos_objetados"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cat_desc"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_cat"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_ciclo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_com_apertura"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_commit"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cotizacion_hoy"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_credito_came_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_credito_came"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_credito_interc_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_credito_interc"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_filial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_frecuencia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_destino"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_corte"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_desemb"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_emision"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ing"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_inicial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_folio"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_frecuencia"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_int_ordinario"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_interes_came_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_interes_came"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_interes_interc_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_interes_interc"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_ivainteres_total_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_ivainteres_total"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_nacional"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_com"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_desembolso"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_iva"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_otros_cargos"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_pagar_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_pagar"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_periodo_actual"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_seguro"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_moratorios_total_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_moratorios_total"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_cap"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_cmo"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_comdes"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_imo"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_ivacod"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_ivaint"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre_acreditado"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_credito"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_cuenta"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_numero_acreditado"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_op_forma_pago"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_otros_total_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_otros_total"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_pago_cap"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_pago_imo"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_pago_int"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_pago_ivaint"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_pago_otros"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_periodicidad_pago"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_periodo_liq"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_plazo_frecuencia"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo_op"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_promotor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_reca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_rol_act"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_rowcount"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_cred_came"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_cred_interc"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_insoluto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_int_came"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_int_interc"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_ivaint"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_moratorios"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_otros"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_total"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_sec_pago"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_simbolo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sucursal"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_tabla_amor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tasa_anual_fija"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_imo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_operacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_orden"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_seguro"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_tramite"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_amortiza_pag"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_amortiza"
+			}
+		]
+	}
+}

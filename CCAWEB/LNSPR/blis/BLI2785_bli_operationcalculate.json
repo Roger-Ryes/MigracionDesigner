@@ -1,0 +1,371 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "AmortizationFormEntity"
+		},
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT98_OPERATNO313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT10_BASEINTE802",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_base_calculo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_calcular_tabla",
+			"type": "CUSTOM",
+			"value": "calcularTabla"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cuota",
+			"type": "CUSTOM",
+			"value": "cuota"
+		},
+		{
+			"attributeId": "AT89_PAYMENYT802",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_dia_fijo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT39_DAYSGRET802",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_dias_gracia",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT12_TYPEGRAC802",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_dist_gracia",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT24_AVOIDHSA802",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_evitar_feriados",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_ini",
+			"type": "CUSTOM",
+			"value": "fechaIni"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_ult_proceso",
+			"type": "CUSTOM",
+			"value": "fechaUltProceso"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CUSTOM",
+			"value": "formatoFecha"
+		},
+		{
+			"attributeId": "AT50_RANDOMEC802",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_gracia_aleatoria",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT20_TERMGRAT802",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_gracia_cap",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT56_TERMGRSE802",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_gracia_int",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT10_MONTHGAR802",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_mes_gracia",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT72_TERMCATA802",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_periodo_cap",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT91_TERMINEE802",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_periodo_int",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT98_TERMVNJO802",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_plazo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tabla_nueva",
+			"type": "CUSTOM",
+			"value": "tablaNueva"
+		},
+		{
+			"attributeId": "AT76_TYPEFEEE802",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_tdividendo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT63_TYPEAMRA802",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_tipo_amortizacion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT88_TERMTYEE802",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_tplazo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7061"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha_fija",
+			"type": "CUSTOM",
+			"value": "fixedPayementDay"
+		},
+		{
+			"attributeId": "AT60_INTERETS802",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_tasa",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_regenera_rubro",
+			"type": "CUSTOM",
+			"value": "regenerarRubros"
+		},
+		{
+			"attributeId": "AT50_FIRSTDTUSPR",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_fecha_pri_cuot",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cuota_ballom",
+			"type": "CUSTOM",
+			"value": "balloonFee"
+		},
+		{
+			"attributeId": "AT35_GRACEDNNSPR",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_div_dist_gracia",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_OperationCalculate",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2785_bli_operationcalculate",
+	"patternName": "BLI_OperationCalculate",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_modificar_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

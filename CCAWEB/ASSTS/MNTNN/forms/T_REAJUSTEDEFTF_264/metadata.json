@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+			"entityId": "EN_LOANKYMRI_882",
+            "isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+        },
+        {
+			"entityId": "EN_REAJUSTBB_191",
+            "isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+        },
+        {
+			"entityId": "EN_REAJUSTEE_221",
+            "isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+        }
+    ],
+    "queries": [
+        {
+            "moduleId": "ASSTS",
+            "queryId": "Q_REAJUSTE_2618",
+			"related": false,
+            "subModuleId": "MNTNN"
+        }
+    ]
+}

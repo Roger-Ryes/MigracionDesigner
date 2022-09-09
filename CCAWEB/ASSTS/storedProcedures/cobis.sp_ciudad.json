@@ -1,0 +1,400 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_ciudad.sp",
+	"procedure": {
+		"database": "cobis",
+		"name": "sp_ciudad",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ciudad"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_provincia"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_pais"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_cod_bce"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_central_transmit"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ciudad_alf"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "05556d65-5452-424c-84c7-b4ffdb0847d4",
+				"columns": [
+					"Codigo",
+					"Ciudad",
+					"Cod. Provincia",
+					"Provincia",
+					"Cod. Pais",
+					"Pais",
+					"Cod.Remesas",
+					"Estado"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Codigo\u0027 = ci_ciudad,\n                   \u0027Ciudad\u0027 = substring(ci_descripcion, 1, 40),\n                   \u0027Cod. Provincia\u0027 = ci_provincia,\n                   \u0027Provincia\u0027 = substring(pv_descripcion, 1, 20),\n                   \u0027Cod. Pais\u0027 = pv_pais,\n                   \u0027Pais\u0027 = substring(pa_descripcion, 1, 20),\n                   \u0027Cod.Remesas\u0027 = ci_cod_remesas,\n                   \u0027Estado\u0027 = ci_estado\n            from"
+			},
+			{
+				"_idQuery": "4d0956b6-07e4-4c92-9f19-23584d085ee0",
+				"columns": [
+					"Codigo",
+					"Ciudad",
+					"Cod. Provincia",
+					"Provincia",
+					"Cod. Pais",
+					"Pais",
+					"Cod.Remesas",
+					"Estado"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Codigo\u0027 = ci_ciudad,\n                     \u0027Ciudad\u0027 = substring(ci_descripcion, 1, 40),\n                     \u0027Cod. Provincia\u0027 = ci_provincia,\n                     \u0027Provincia\u0027 = substring(pv_descripcion, 1, 20),\n                     \u0027Cod. Pais\u0027 = pv_pais,\n                     \u0027Pais\u0027 = substring(pa_descripcion, 1, 20),\n                     \u0027Cod.Remesas\u0027 = ci_cod_remesas,\n                     \u0027Estado\u0027 = ci_estado\n              from"
+			},
+			{
+				"_idQuery": "21665f2b-34a5-4960-ba78-540e3b7831fc",
+				"columns": [
+					"Codigo",
+					"Ciudad",
+					"Cod. Provincia",
+					"Provincia",
+					"Cod.Remesas"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Codigo\u0027 = ci_ciudad,\n                   \u0027Ciudad\u0027 = ci_descripcion,\n                   \u0027Cod. Provincia\u0027 = ci_provincia,\n                   \u0027Provincia\u0027 = pv_descripcion,\n                   \u0027Cod.Remesas\u0027 = ci_cod_remesas\n            from"
+			},
+			{
+				"_idQuery": "a0707657-a0d8-4a99-a2ee-206be683c767",
+				"columns": [
+					"Codigo",
+					"Ciudad",
+					"Cod. Provincia",
+					"Provincia",
+					"Cod.Remesas"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Codigo\u0027 = ci_ciudad,\n                     \u0027Ciudad\u0027 = ci_descripcion,\n                     \u0027Cod. Provincia\u0027 = ci_provincia,\n                     \u0027Provincia\u0027 = pv_descripcion,\n                     \u0027Cod.Remesas\u0027 = ci_cod_remesas\n              from"
+			},
+			{
+				"_idQuery": "099c6df0-f1b7-420c-9b2b-6b56a3fc864e",
+				"columns": [
+					"Cod.",
+					"Nombre",
+					"Pais"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Cod.\u0027 = ci_ciudad, \u0027Nombre\u0027 = ci_descripcion, \u0027Pais\u0027 = pa_descripcion\n                  from"
+			},
+			{
+				"_idQuery": "518f693f-aaef-4378-94d1-ce63fb722438",
+				"columns": [
+					"Cod.",
+					"Nombre",
+					"Pais"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Cod.\u0027 = ci_ciudad, \u0027Nombre\u0027 = ci_descripcion, \u0027Pais\u0027 = pa_descripcion\n                    from"
+			},
+			{
+				"_idQuery": "4b905c78-77d5-4aa9-aca1-83a44f1576dc",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ci_descripcion from"
+			},
+			{
+				"_idQuery": "6cf9841d-0fca-4ee9-9390-525483efec5b",
+				"columns": [
+					"Cod.",
+					"Nombre",
+					"Pais"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Cod.\u0027 = ci_ciudad, \u0027Nombre\u0027 = ci_descripcion, \u0027Pais\u0027 = pa_descripcion\n                        from"
+			},
+			{
+				"_idQuery": "610f07d6-ce17-4966-b9e9-b23a71b02c3f",
+				"columns": [
+					"Cod.",
+					"Nombre",
+					"Pais"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Cod.\u0027 = ci_ciudad, \u0027Nombre\u0027 = ci_descripcion, \u0027Pais\u0027 = pa_descripcion\n                          from"
+			},
+			{
+				"_idQuery": "025b8581-b69a-4c2e-9f62-66ae1398341d",
+				"columns": [
+					"Cod.",
+					"Nombre",
+					"Pais"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Cod.\u0027 = ci_ciudad, \u0027Nombre\u0027 = ci_descripcion, \u0027Pais\u0027 = pa_descripcion\n                          from"
+			},
+			{
+				"_idQuery": "a25d3d45-c447-4ad1-9dda-6b9137ae577d",
+				"columns": [
+					"Cod.",
+					"Nombre",
+					"Pais"
+				],
+				"editMode": true,
+				"queryText": "select \u0027Cod.\u0027 = ci_ciudad, \u0027Nombre\u0027 = ci_descripcion, \u0027Pais\u0027 = pa_descripcion\n                            from"
+			},
+			{
+				"_idQuery": "c6e55701-77de-4e20-ba30-f45230496cde",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select ci_descripcion\n                          from"
+			},
+			{
+				"_idQuery": "b72c8f2b-6a7d-41e3-a0e9-43e3c0a50904",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@o_ciudad"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@v_cod_bce"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@v_descripcion"
+			},
+			{
+				"dataType": "estado",
+				"name": "@v_estado"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@v_pais"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@v_provincia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cambio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_clave"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cmdtransrv"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_cod_bce"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_codigo_c"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_codigo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_contador"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion"
+			},
+			{
+				"dataType": "estado",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nt_nombre"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_num_nodos"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_pais"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_parroq"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_provincia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_server_logico"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			}
+		]
+	}
+}

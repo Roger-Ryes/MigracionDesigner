@@ -1,0 +1,287 @@
+{
+	"EN_AMORTIZTT_LNSPR": {
+		"queries": {
+			"Q_AMORTITI_LNSPR": {
+				"$ref": "../OPRTN/queries/Q_AMORTITI_LNSPR.json#"
+			}
+		}
+	},
+	"EN_APAGOCIPF_458": {
+		"queries": {
+			"Q_APAGOOOO_YV30": {
+				"$ref": "../OPRTN/queries/Q_APAGOOOO_YV30.json#"
+			}
+		}
+	},
+	"EN_CATALOGIS_LNSPR": {
+		"queries": {
+			"Q_CATALGSE_LNSPR": {
+				"$ref": "../OPRTN/queries/Q_CATALGSE_LNSPR.json#"
+			}
+		}
+	},
+	"EN_CONCEPTTE_520": {
+		"queries": {
+			"Q_CONCPPTM_GI69": {
+				"$ref": "../OPRTN/queries/Q_CONCPPTM_GI69.json#"
+			}
+		}
+	},
+	"EN_CONCILIIN_177": {
+		"queries": {
+			"Q_CONCIIIS_FQ49": {
+				"$ref": "../OPRTN/queries/Q_CONCIIIS_FQ49.json#"
+			}
+		}
+	},
+	"EN_DEBTORLIS_380": {
+		"queries": {
+			"Q_DEBTSOLR_XT44": {
+				"$ref": "../OPRTN/queries/Q_DEBTSOLR_XT44.json#"
+			}
+		}
+	},
+	"EN_DEBTORVWG_LNSPR": {
+		"queries": {
+			"Q_DEBTORZN_LNSPR": {
+				"$ref": "../OPRTN/queries/Q_DEBTORZN_LNSPR.json#"
+			}
+		}
+	},
+	"EN_GROUPMENS_931": {
+		"queries": {
+			"Q_GROUEIRS_WN63": {
+				"$ref": "../OPRTN/queries/Q_GROUEIRS_WN63.json#"
+			}
+		}
+	},
+	"EN_GUARANTIA_165": {
+		"queries": {
+		}
+	},
+	"EN_ITEMDNXXM_LNSPR": {
+		"queries": {
+		}
+	},
+	"EN_LINEDISUS_663": {
+		"queries": {
+			"Q_LINEIERT_DW35": {
+				"$ref": "../OPRTN/queries/Q_LINEIERT_DW35.json#"
+			}
+		}
+	},
+	"EN_LINEGUAAE_244": {
+		"queries": {
+			"Q_LINELAAN_WU84": {
+				"$ref": "../OPRTN/queries/Q_LINELAAN_WU84.json#"
+			}
+		}
+	},
+	"EN_LINEGUARS_326": {
+		"queries": {
+			"Q_LINERLAR_KA20": {
+				"$ref": "../OPRTN/queries/Q_LINERLAR_KA20.json#"
+			}
+		}
+	},
+	"EN_LOANLISTT_467": {
+		"queries": {
+			"Q_LOANSILT_NX50": {
+				"$ref": "../OPRTN/queries/Q_LOANSILT_NX50.json#"
+			}
+		}
+	},
+	"EN_LOANSALAD_395": {
+		"queries": {
+			"Q_LOANELLL_AR48": {
+				"$ref": "../OPRTN/queries/Q_LOANELLL_AR48.json#"
+			}
+		}
+	},
+	"EN_LOANSALDH_189": {
+		"queries": {
+			"Q_LOANAELE_GZ51": {
+				"$ref": "../OPRTN/queries/Q_LOANAELE_GZ51.json#"
+			}
+		}
+	},
+	"EN_LOANSLIDE_580": {
+		"queries": {
+		}
+	},
+	"EN_LOANSLIST_205": {
+		"queries": {
+			"Q_LOANSISS_EV86": {
+				"$ref": "../OPRTN/queries/Q_LOANSISS_EV86.json#"
+			}
+		}
+	},
+	"EN_MASSIVECC_834": {
+		"queries": {
+			"Q_MASSSEOO_AX15": {
+				"$ref": "../OPRTN/queries/Q_MASSSEOO_AX15.json#"
+			}
+		}
+	},
+	"EN_MASSIVEYM_999": {
+		"queries": {
+			"Q_MASSTENM_SJ71": {
+				"$ref": "../OPRTN/queries/Q_MASSTENM_SJ71.json#"
+			}
+		}
+	},
+	"EN_MASSIVEKM_279": {
+		"queries": {
+			"Q_MASSSCEE_GY13": {
+				"$ref": "../OPRTN/queries/Q_MASSSCEE_GY13.json#"
+			}
+		}
+	},
+        "EN_MEMBERDEL_536": {
+		"queries": {
+			"Q_MEMBIAAA_BE92": {
+				"$ref": "../OPRTN/queries/Q_MEMBIAAA_BE92.json#"
+			}
+		}
+	},
+	"EN_MEMBERSLV_216": {
+		"queries": {
+			"Q_MEMBEESE_CY90": {
+				"$ref": "../OPRTN/queries/Q_MEMBEESE_CY90.json#"
+			}
+		}
+	},
+	"EN_MODALREEA_674": {
+		"queries": {
+		}
+	},
+	"EN_MODALTASS_500": {
+		"queries": {
+			"Q_MODAALAS_TP83": {
+				"$ref": "../OPRTN/queries/Q_MODAALAS_TP83.json#"
+			}
+		}
+	},
+	"EN_OFFICALSO_243": {
+		"queries": {
+			"Q_OFFILLLL_SV56": {
+				"$ref": "../OPRTN/queries/Q_OFFILLLL_SV56.json#"
+			}
+		}
+	},
+	"EN_OFFICIALL_431": {
+		"queries": {
+			"Q_OFFILILC_KJ11": {
+				"$ref": "../OPRTN/queries/Q_OFFILILC_KJ11.json#"
+			}
+		}
+	},
+	"EN_OPERATIEL_780": {
+		"queries": {
+			"Q_OPEREEOA_SH40": {
+				"$ref": "../OPRTN/queries/Q_OPEREEOA_SH40.json#"
+			}
+		}
+	},
+	"EN_OPERATITT_499": {
+		"queries": {
+			"Q_OPERLSST_KU21": {
+				"$ref": "../OPRTN/queries/Q_OPERLSST_KU21.json#"
+			}
+		}
+	},
+	"EN_PAYMENTCI_361": {
+		"queries": {
+			"Q_PAYMTTCL_IB70": {
+				"$ref": "../OPRTN/queries/Q_PAYMTTCL_IB70.json#"
+			}
+		}
+	},
+	"EN_PAYMENTDM_324": {
+		"queries": {
+			"Q_PAYMSSIL_RR14": {
+				"$ref": "../OPRTN/queries/Q_PAYMSSIL_RR14.json#"
+			}
+		}
+	},
+	"EN_PAYMENTIC_709": {
+		"queries": {
+			"Q_PAYMRENL_JE45": {
+				"$ref": "../OPRTN/queries/Q_PAYMRENL_JE45.json#"
+			}
+		}
+	},
+	"EN_PAYMENTLI_612": {
+		"queries": {
+			"Q_PAYMANAM_TY74": {
+				"$ref": "../OPRTN/queries/Q_PAYMANAM_TY74.json#"
+			}
+		}
+	},
+	"EN_PRODUCTIE_675": {
+		"queries": {
+			"Q_PRODLUDT_UJ17": {
+				"$ref": "../OPRTN/queries/Q_PRODLUDT_UJ17.json#"
+			}
+		}
+	},
+	"EN_PRODUCTNN_604": {
+		"queries": {
+			"Q_PRODTSNI_WK98": {
+				"$ref": "../OPRTN/queries/Q_PRODTSNI_WK98.json#"
+			}
+		}
+	},
+	"EN_READJUSNN_654": {
+		"queries": {
+			"Q_READJUSM_7240": {
+				"$ref": "../OPRTN/queries/Q_READJUSM_7240.json#"
+			}
+		}
+	},
+	"EN_REFERENTL_754": {
+		"queries": {
+			"Q_REFEEAML_BR93": {
+				"$ref": "../OPRTN/queries/Q_REFEEAML_BR93.json#"
+			}
+		}
+	},
+	"EN_STATESAEO_310": {
+		"queries": {
+		}
+	},
+	"EN_STATUSLII_845": {
+		"queries": {
+			"Q_STATSTSS_LA52": {
+				"$ref": "../OPRTN/queries/Q_STATSTSS_LA52.json#"
+			},
+			"Q_STATSTTL_MS41": {
+				"$ref": "../OPRTN/queries/Q_STATSTTL_MS41.json#"
+			}
+		}
+	},
+	"EN_SUMMARYBB_620": {
+		"queries": {
+			"Q_SUMMESYE_DM68": {
+				"$ref": "../OPRTN/queries/Q_SUMMESYE_DM68.json#"
+			}
+		}
+	},
+	"EN_SUMMARYTU_369": {
+		"queries": {
+			"Q_SUMMUSYU_GO80": {
+				"$ref": "../OPRTN/queries/Q_SUMMUSYU_GO80.json#"
+			}
+		}
+	},
+	"EN_SYNDICASL_725": {
+		"queries": {
+			"Q_SYNDATCT_WX29": {
+				"$ref": "../OPRTN/queries/Q_SYNDATCT_WX29.json#"
+			},
+			"Q_SYNDCEAL_LH97": {
+				"$ref": "../OPRTN/queries/Q_SYNDCEAL_LH97.json#"
+			}
+		}
+	}
+}

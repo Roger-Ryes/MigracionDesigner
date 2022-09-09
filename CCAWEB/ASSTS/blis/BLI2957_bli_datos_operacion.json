@@ -1,0 +1,316 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7204"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_Datos_Operacion",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2957_bli_datos_operacion",
+	"patternName": "BLI_Datos_Operacion",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "8520aed7-53a3-43c2-be63-65d011320f11",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "8520aed7-53a3-43c2-be63-65d011320f11",
+			"columns": [
+				{
+					"attributeId": "AT23_OPERATDP882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT70_OPERATPP882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT37_OFFICEID882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_OFFICEPU882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT42_LOANBADK882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT37_LOANIDFI882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_CURRENYY882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_OFFICERR882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_AMOUNTMO882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "9",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT68_CLIENTII882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "10",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_CLIENTNA882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "11",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_IDTYPEBH882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "12",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT56_IDCARDUU882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "13",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_STATUSID882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "14",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT66_STATUSOB882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "15",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_STARTDEE882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "16",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT50_ENDDATEE882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "17",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_FEEENDED882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "18",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT85_NEXTPAMT882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "20",
+					"position": 20,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_EFFECTAU882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "21",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_MAXDATNN882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "22",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_LASTPRED882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "23",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_BALANCDD882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "24",
+					"position": 24,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT31_NATUREPO882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "25",
+					"position": 25,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_AMOUNTAP882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "26",
+					"position": 26,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT55_FONDEARS882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "27",
+					"position": 27,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT83_SECTORVT882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "28",
+					"position": 28,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT36_AMORTINY882",
+					"entityId": "EN_LOANKYMRI_882",
+					"format": "",
+					"name": "29",
+					"position": 29,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANKYMRI_882",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "Loan"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datocab_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

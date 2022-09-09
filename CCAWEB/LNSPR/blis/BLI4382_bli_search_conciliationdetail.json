@@ -1,0 +1,231 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_conciliacion",
+			"type": "CUSTOM",
+			"value": "conciliation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "sequential"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CONSTANT",
+			"value": "1"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77655"
+		}
+	],
+	"name": "BLI_Search_ConciliationDetail",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4382_bli_search_conciliationdetail",
+	"patternName": "BLI_Search_ConciliationDetail",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "52ab6679-f77d-407b-81dd-632befbb8e20",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "52ab6679-f77d-407b-81dd-632befbb8e20",
+			"columns": [
+				{
+					"attributeId": "AT88_REGISTEE361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "TipoRegistro",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_SUPPLYNM361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Suministro",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_PAYMENED361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "FechaPago",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT94_TERMINAD361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Terminal",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_CONVERAD361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "MontoDeuda",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_CONVERNC361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "MontoComision",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_CONVERTE361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "MontoAdicionales",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_CONVEROT361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Total",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_TRANSAEE361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "NumeroTranGKN",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_OPERATUD361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Operacion",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT81_BILLNUDM361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Factura",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_COMPANCC361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "CodigoEmpresa",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_SERVICCD361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "CodigoServicio",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_VALIDUKH361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Valido",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_COMMENTR361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Comentario",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT62_SEQUENIL361",
+					"entityId": "EN_PAYMENTCI_361",
+					"format": "",
+					"name": "Secuencial",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PAYMENTCI_361",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "PaymentConciliationDetailList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_conciliacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,120 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSPE_16S",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSPE_87R",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "G_PROJECTENT_572798",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "changeGroup",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "groupEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTCEEE_FJ77",
+		"controlName": "ListProjectionReadjustementQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_LISTCEEE_FJ77.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListProjectionReadjustement",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_EB77_IIB88",
+		"controlName": "QV_EB77_IIB88",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "ListProjectionReadjustement",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "dateReadjustment",
+		"controlId": "VA_DATEREADJUSTNEM_341798",
+		"controlName": "dateReadjustment",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "SearchProjectionReadjustement",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "percentage",
+		"controlId": "VA_PERCENTAGEKQGYS_540798",
+		"controlName": "percentage",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "SearchProjectionReadjustement",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_PROJECTIRJ_862619",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

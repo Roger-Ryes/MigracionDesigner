@@ -1,0 +1,16 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "VC_PASSIVEPOF_610117",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

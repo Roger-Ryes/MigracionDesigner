@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_DEFEDLIT_ZB19",
+		"controlName": "DeferredItemsDetailListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_DEFEDLIT_ZB19.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "DeferredItemsDetailList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_ZY19_NNJ12",
+		"controlName": "QV_ZY19_NNJ12",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "DeferredItemsDetailList",
+		"eventsType": "queryViewEventType"
+	}
+]
