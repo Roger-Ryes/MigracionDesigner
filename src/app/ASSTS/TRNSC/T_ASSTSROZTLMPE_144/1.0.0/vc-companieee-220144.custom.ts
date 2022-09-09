@@ -160,7 +160,7 @@ export class VcCompanieee220144Custom extends CobisDesignerCustomEvent {
   ) => {
     //here your code
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIMINAET_70731', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIMINAET_70731', false, null, this.ASSTS.timer);
     }
   };
 

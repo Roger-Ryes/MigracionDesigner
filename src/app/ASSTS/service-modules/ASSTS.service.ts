@@ -17,7 +17,7 @@ export class ASSTSService extends CobisDesignerModuleBase {
   /*global designerEvents, console */
 public timer = 3500;
 public container:any = this.cobis.container.tabs;
-public tab = this.cobis.container.tabs.getCurrentTab();
+public tab: any = this.cobis.container.tabs.getCurrentTab();
 //var ASSETS = {
 
 Constants = {

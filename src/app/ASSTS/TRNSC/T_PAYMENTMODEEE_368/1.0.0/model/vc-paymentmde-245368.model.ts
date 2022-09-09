@@ -2,18 +2,21 @@ import { CobisCommonsService } from "cobis-commons";
 import { CobisModelCatalog, CobisDesignerUtil } from "cobis-designer";
 import { DisbursementResult } from "../../../../entities/DisbursementResult";
 import { GeneralParameters } from "../../../../entities/GeneralParameters";
+import { LiquidateResult } from "../../../../entities/LiquidateResult";
 import { LoanAdditionalInformation } from "../../../../entities/LoanAdditionalInformation";
 import { Loan } from "../../../../entities/Loan";
 import { PaymentForm } from "../../../../entities/PaymentForm";
 export class Model {
 private _disbursementResult!: DisbursementResult;
 private _generalParameters!: any;
+private _liquidateResult!: any;
 private _loanAdditionalInformation!: any;
 private _loan!: any;
 private _paymentForm!: PaymentForm;
 constructor(private formGroupArray: any) {
 this._disbursementResult = new DisbursementResult(formGroupArray["DisbursementResult"]);
 this._generalParameters = new GeneralParameters();
+this._liquidateResult = new LiquidateResult();
 this._loanAdditionalInformation = new LoanAdditionalInformation();
 this._loan = new Loan();
 this._paymentForm = new PaymentForm(formGroupArray["PaymentForm"]);
@@ -29,6 +32,12 @@ this._generalParameters = valores;
 }
 public get GeneralParameters(): any {
 return this._generalParameters;
+}
+public set LiquidateResult(valores: any) {
+this._liquidateResult = valores;
+}
+public get LiquidateResult(): any {
+return this._liquidateResult;
 }
 public set LoanAdditionalInformation(valores: any) {
 this._loanAdditionalInformation = valores;

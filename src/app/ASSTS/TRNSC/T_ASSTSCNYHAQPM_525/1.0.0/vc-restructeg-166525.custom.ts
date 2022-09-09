@@ -181,7 +181,7 @@ export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, this.ASSTS.timer);
 
 
       executeCommandCallbackEventArgs.commons.api.viewState.disable('CM_TASSTSCN_5TN');
@@ -215,6 +215,7 @@ export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
         callFromGrid: false
       };
       nav.customDialogParameters = {
+        // TODO
         operation: operacion
 
       };
@@ -266,7 +267,8 @@ export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
     renderEventArgs.commons.execServer = false;
     let nav: any = renderEventArgs.commons.api.navigation;
     let params: any = nav.getCustomDialogParameters();
-    $("button.close").hide();
+    // TODO - NO MOSTRAR EN MODAL x
+    // $("button.close").hide();
     //RUBROS
     nav.address = {
       moduleId: 'LNSPR',

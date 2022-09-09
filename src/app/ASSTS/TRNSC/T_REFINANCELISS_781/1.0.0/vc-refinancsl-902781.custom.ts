@@ -123,7 +123,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     entities.RefinanceLoanFilter.typeGrace = "S";
     entities.RefinanceLoanFilter.typeFee = "M";
 
-
+// TODO
     entities.RefinanceLoanFilter.basicInsurance = "false";
 
   };
@@ -155,14 +155,14 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     let numDividend: any = (entities.RefinanceLoanFilter.graceDividend) ? entities.RefinanceLoanFilter.graceDividend : 0;
     let totalTerm: any = grace + numDividend;
 
-    if (entities.RefinanceLoanFilter.typeGrace == 'S' && totalTerm > entities.RefinanceLoanFilter.newLoanTerm) {
+    if (entities.RefinanceLoanFilter.typeGrace == 'S' && totalTerm > entities.RefinanceLoanFilter.newLoanTerm!) {
 
-      changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELNUMDEDS_61097', false, null, timer);
+      changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELNUMDEDS_61097', false, null, this.ASSTS.timer);
 
       entities.RefinanceLoanFilter.graceDividend = 0;
 
-    } else if (entities.RefinanceLoanFilter.typeGrace == 'S' && entities.RefinanceLoanFilter.graceDividend < 0) {
-      changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELNUMDEER_90307', false, null, timer);
+    } else if (entities.RefinanceLoanFilter.typeGrace == 'S' && entities.RefinanceLoanFilter.graceDividend! < 0) {
+      changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELNUMDEER_90307', false, null, this.ASSTS.timer);
 
       entities.RefinanceLoanFilter.graceDividend = 0;
     }
@@ -316,7 +316,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   task_change_VA_PREVENTIONPRRAM_747515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     if (String(entities.RefinanceLoanFilter.totalRefinance).indexOf(",") != -1) {
-      entities.RefinanceLoanFilter.totalRefinance = parseFloat((entities.RefinanceLoanFilter.totalRefinance).replace(',', ''));
+      entities.RefinanceLoanFilter.totalRefinance = parseFloat((entities.RefinanceLoanFilter.totalRefinance!).replace(',', ''));
 
     }
 
@@ -330,7 +330,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
       let operType: any = entities.RefinanceLoanFilter.operationType;
       if (this.cobis.utils.isUndefined(operType) || operType == null || operType == '') {
         changedEventArgs.commons.execServer = false;
-        changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_DEBESELTA_29044', false, null, timer);
+        changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_DEBESELTA_29044', false, null, this.ASSTS.timer);
         entities.RefinanceLoanFilter.preventionProgram = "NAP";
         changedEventArgs.commons.api.viewState.focus("VA_OPERATIONTYPEEE_619515");
       } else {
@@ -405,13 +405,13 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-      nameAux = this.cobis.container.tabs.getCurrentTab().text;
+    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+      nameAux = this.cobis.container.tabs.getCurrentTab().name;
     } else {
       nameAux = this.cobis.translate("ASSTS.LBL_ASSTS_RENOVACMA_67253");
     }
 
-    this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+    this.ASSTS.container.changeCurrentTab(idAux, urlAux, nameAux, true);
   };
 
 
@@ -437,7 +437,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
       msgResourceID = "ASSTS.MSG_ASSTS_ELCAMPOOR_72789";
     }
 
-    if (!hasError && entities.RefinanceLoanFilter.totalRefinance <= 0) {
+    if (!hasError && entities.RefinanceLoanFilter.totalRefinance! <= 0) {
       hasError = true;
       msgResourceID = "ASSTS.MSG_ASSTS_ELSALDOAU_44947";
     }
@@ -479,7 +479,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
     if (hasError) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(msgResourceID, false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(msgResourceID, false, null, this.ASSTS.timer);
     } else {
       executeCommandEventArgs.commons.execServer = true;
     }
@@ -715,7 +715,7 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
       };
     } else {
       textInputButtonEventArgs.cancel = true;
-      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DEDESELCA_14854", false, null, timer);
+      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DEDESELCA_14854", false, null, this.ASSTS.timer);
     }
   };
 

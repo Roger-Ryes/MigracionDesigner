@@ -109,7 +109,8 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
     }
 
     entities.DisbursementResult.sumTotal = totalDesembolso;
-    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal - entities.DisbursementResult.sumTotal;
+    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal!-entities.DisbursementResult.sumTotal!;
+  // TODO
     diferencia = entities.DisbursementResult.difference;
   };
 
@@ -133,7 +134,7 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
 
     if (entities.LoanAdditionalInformation.dateToDisburse === undefined) {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071', false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071', false, null, this.ASSTS.timer);
       return;
     }
 
@@ -141,7 +142,7 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
 
     let nav: any = gridExecuteCommandEventArgs.commons.api.navigation;
-    if (entities.LiquidateResult.sumTotal > entities.DisbursementResult.sumTotal) {
+    if (entities.LiquidateResult.sumTotal! > entities.DisbursementResult.sumTotal!) {
       nav.label = this.cobis.translate('ASSTS.LBL_ASSTS_APAGOKXFB_84081'); //Forma de Pago
       nav.address = {
         moduleId: 'ASSTS',
@@ -169,7 +170,7 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
       };
       nav.openModalWindow("CEQV_201QV_5973_48889_606", gridExecuteCommandEventArgs);
     } else {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, this.ASSTS.timer);
     }
   };
 
@@ -196,7 +197,7 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
     // Please pay attention to the month (parts[1]); JavaScript counts months from 0:
     // January - 0, February - 1, etc.
     entities.LoanAdditionalInformation.dateToDisburse = new Date(parts[2], parts[0] - 1, parts[1]);
-
+// TODO
     entities.LoanAdditionalInformation.dateToDisburse = kendo.toString(kendo.parseDate(entities.LoanAdditionalInformation.dateToDisburse), JSON.parse(sessionStorage.dateFormat));
 
     if (initDataCallbackEventArgs.success) {
@@ -208,7 +209,7 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
       }
 
       entities.DisbursementResult.sumTotal = totalDesembolso;
-      entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal - entities.DisbursementResult.sumTotal;
+      entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal!-entities.DisbursementResult.sumTotal!;
       diferencia = entities.DisbursementResult.difference;
     }
   };

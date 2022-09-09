@@ -114,7 +114,7 @@ export class VcCondonaton778532Custom extends CobisDesignerCustomEvent {
     if (itemList.length > 0) {
       for (let i: any = 1; i < itemList.length; i++) {
         if (concept === itemList[i].concept) {
-          changeEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELRUBROAD_63160', false, null, timer);
+          changeEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELRUBROAD_63160', false, null, this.ASSTS.timer);
           changeEventArgs.isValid = false;
           return;
         }
@@ -140,11 +140,12 @@ export class VcCondonaton778532Custom extends CobisDesignerCustomEvent {
       changeEventArgs.commons.api.grid.updateRowData(changeEventArgs.rowData, 'pastDueAmount', changeEventArgs.rowData.pastDueAmount);
       changeEventArgs.commons.api.grid.updateRowData(changeEventArgs.rowData, 'dueAmount', changeEventArgs.rowData.dueAmount);
       changeEventArgs.commons.api.grid.updateRowData(changeEventArgs.rowData, 'totalValue', changeEventArgs.rowData.totalValue);
-      $("#VA_TEXTINPUTBOXABB_665764").data("kendoNumericTextBox").focus()
-      $("#VA_TEXTINPUTBOXTSF_920764").data("kendoNumericTextBox").focus()
-      $("#VA_TEXTINPUTBOXBSX_772764").data("kendoNumericTextBox").focus()
-      $("#VA_TEXTINPUTBOXBOS_972764").data("kendoNumericTextBox").focus()
-      $("#VA_TEXTINPUTBOXEPR_994764").focus()
+    // TODO
+      // $("#VA_TEXTINPUTBOXABB_665764").data("kendoNumericTextBox").focus()
+      // $("#VA_TEXTINPUTBOXTSF_920764").data("kendoNumericTextBox").focus()
+      // $("#VA_TEXTINPUTBOXBSX_772764").data("kendoNumericTextBox").focus()
+      // $("#VA_TEXTINPUTBOXBOS_972764").data("kendoNumericTextBox").focus()
+      // $("#VA_TEXTINPUTBOXEPR_994764").focus()
     }
   };
 
@@ -190,7 +191,7 @@ export class VcCondonaton778532Custom extends CobisDesignerCustomEvent {
     }
 
     if (hasError) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(msgResourceID, false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(msgResourceID, false, null, this.ASSTS.timer);
     } else {
       let dataGrid: any = {
         data: entities.CondonationDetail

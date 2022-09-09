@@ -130,6 +130,7 @@ export class VcPaymentmde245368Custom extends CobisDesignerCustomEvent {
     }
 
     if (changedEventArgs.commons.api.viewState.getDataItem("Spacer2675").pCobis == 4) { // ['Nota de DEbito a Cuenta de Aho']
+      // TODO
       $("#VA_2481BBVZTGCBDCR_830216").attr("readonly", true);
     } else {
       $("#VA_2481BBVZTGCBDCR_830216").attr("readonly", false);
@@ -232,8 +233,8 @@ export class VcPaymentmde245368Custom extends CobisDesignerCustomEvent {
 
     changedEventArgs.commons.execServer = false;
 
-    if (changedEventArgs.newValue > entities.DisbursementResult.difference) {
-      changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_VALORDEEA_97215', false, null, timer);
+    if (changedEventArgs.newValue > entities.DisbursementResult.difference!) {
+      changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_VALORDEEA_97215', false, null, this.ASSTS.timer);
       // changeEventArgs.commons.api.viewState.disable('VA_4212YIFTVBCOPPD_140216');
     }
 
@@ -258,15 +259,15 @@ export class VcPaymentmde245368Custom extends CobisDesignerCustomEvent {
 
 
 
-    if (entities.PaymentForm.amountTr > entities.DisbursementResult.difference) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_VALORDEEA_97215', false, null, timer);
+    if (entities.PaymentForm.amountTr! > entities.DisbursementResult.difference!) {
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_VALORDEEA_97215', false, null, this.ASSTS.timer);
       executeCommandEventArgs.commons.execServer = false;
       return;
       // changeEventArgs.commons.api.viewState.disable('VA_4212YIFTVBCOPPD_140216');
     }
 
     if (executeCommandEventArgs.commons.api.viewState.getDataItem("Spacer2675").pCobis == 4 && !entities.PaymentForm.accountNumber) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_CUENTARQA_93919', false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_CUENTARQA_93919', false, null, this.ASSTS.timer);
       executeCommandEventArgs.commons.execServer = false;
       return;
     } else {
@@ -403,7 +404,7 @@ export class VcPaymentmde245368Custom extends CobisDesignerCustomEvent {
       };
     } else {
       textInputButtonEventArgs.cancel = true;
-      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DIGITELEC_98771", false, null, timer);
+      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DIGITELEC_98771", false, null, this.ASSTS.timer);
     }
     //}
   };

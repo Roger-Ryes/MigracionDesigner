@@ -135,7 +135,7 @@ export class VcNoappliesa877579Custom extends CobisDesignerCustomEvent {
   ) => {
 
     if (gridRowCommandCallbackEventArgs.success) {
-      gridRowCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_TRANSACII_82976", false, null, timer);
+      gridRowCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_TRANSACII_82976", false, null, this.ASSTS.timer);
       gridRowCommandCallbackEventArgs.commons.api.grid.refresh('QV_PJ68_WJJ41');
     }
 
@@ -180,7 +180,7 @@ export class VcNoappliesa877579Custom extends CobisDesignerCustomEvent {
     gridRowDeletingCallbackEventArgs: CobisModelGridRowActionCallbackEventArgs
   ) => {
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ELIMINAET_70731", false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ELIMINAET_70731", false, null, this.ASSTS.timer);
     }
   };
 
@@ -219,7 +219,7 @@ export class VcNoappliesa877579Custom extends CobisDesignerCustomEvent {
 
     };
 
-    nav.openModalWindow('QV_RO76_OKE25', gridRowSelectingEventArgs.modelRow);
+    nav.openModalWindow('QV_RO76_OKE25', gridRowSelectingEventArgs.nameEntityGrid);
 
     gridRowSelectingEventArgs.commons.execServer = false;
   };

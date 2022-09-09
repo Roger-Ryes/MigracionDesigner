@@ -201,7 +201,7 @@ export class VcLoanpartir265871Custom extends CobisDesignerCustomEvent {
   ) => {
     if (diferencia != 0) {
       executeCommandEventArgs.commons.execServer = false;
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ERRORELDR_83907', false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ERRORELDR_83907', false, null, this.ASSTS.timer);
     } else {
       executeCommandEventArgs.commons.execServer = true;
     }
@@ -217,7 +217,7 @@ export class VcLoanpartir265871Custom extends CobisDesignerCustomEvent {
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, this.ASSTS.timer);
 
       executeCommandCallbackEventArgs.commons.api.viewState.selectLayout("G_LOANPARSTB_361369", "G_LOANPARBTT_780369");
 

@@ -57,10 +57,10 @@ import {
 } from 'cobis-designer';
 
 
-/* variables locales de T_LOANHEADERNFI_316*/
-
 /* variables locales de T_DISBURSEMENNN_810*/
 
+
+/* variables locales de T_LOANHEADERNFI_316*/
 
 /* variables locales de T_LOANDISBURSAA_275*/
 
@@ -91,10 +91,10 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
   //**********************************************************   
 
 
+  //"TaskId": "T_DISBURSEMENNN_810"
+
   /*"TaskId": "T_LOANHEADERNFI_316",*/
   //Your code here
-
-  //"TaskId": "T_DISBURSEMENNN_810"
 
   //"TaskId": "T_LOANDISBURSAA_275"
 
@@ -121,7 +121,8 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
     }
 
     entities.DisbursementResult.sumTotal = totalDesembolso;
-    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal - entities.DisbursementResult.sumTotal;
+    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal!-entities.DisbursementResult.sumTotal!;
+    // TODO
     diferencia = entities.DisbursementResult.difference;
   };
 
@@ -145,7 +146,7 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
 
 
     if (entities.LoanAdditionalInformation.dateToDisburse === undefined) {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071', false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071', false, null, this.ASSTS.timer);
       return;
     }
 
@@ -153,7 +154,7 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
 
 
     let nav: any = gridExecuteCommandEventArgs.commons.api.navigation;
-    if (entities.LiquidateResult.sumTotal > entities.DisbursementResult.sumTotal) {
+    if (entities.LiquidateResult.sumTotal! > entities.DisbursementResult.sumTotal!) {
       nav.label = this.cobis.translate('ASSTS.LBL_ASSTS_APAGOKXFB_84081'); //Forma de Pago
       nav.address = {
         moduleId: 'ASSTS',
@@ -181,7 +182,7 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
       };
       nav.openModalWindow("CEQV_201QV_5973_48889_606", gridExecuteCommandEventArgs);
     } else {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, this.ASSTS.timer);
     }
   };
 

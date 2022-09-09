@@ -148,9 +148,9 @@ export class VcCompanycee242845Custom extends CobisDesignerCustomEvent {
       api.viewState.disable('G_COMPANYRTT_593399')
       api.grid.refresh('QV_ON17_ABV99');
       if (api.vc.mode == mode.Insert) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_REGISTRAO_10733', false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_REGISTRAO_10733', false, null, this.ASSTS.timer);
       } else if (api.vc.mode == mode.Update) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_REGISTRAO_10733', false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_REGISTRAO_10733', false, null, this.ASSTS.timer);
       }
     }
   };
@@ -187,6 +187,7 @@ export class VcCompanycee242845Custom extends CobisDesignerCustomEvent {
     if (api.vc.mode == mode.Insert) {
       execServer = false;
       //initialize
+      // TODO
       entities.Company.paymentFormService = (entities.Company.paymentFormService) ? entities.Company.Company : 'T';
       entities.Company.paymentFrequency = (entities.Company.paymentFrequency) ? entities.Company.paymentFrequency : 'Q';
       entities.Company.agreement = (entities.Company.agreement) ? entities.Company.agreement : 'N';

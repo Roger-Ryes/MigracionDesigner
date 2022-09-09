@@ -166,6 +166,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
       entities.CompaniesBatch.fileError = null
       entities.CompaniesBatch.description = null
       entities.CompaniesBatch.executeOnline = null
+      // TODO
       entities.CompaniesBatch.path = null
     } else if (opt == 3) { //Change Lote
       entities.CompaniesBatch.fileError = null
@@ -263,7 +264,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
       this.enableMyCommand(entities, executeCommandCallbackEventArgs.commons.api.viewState)
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_CK98_MLY42')
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_NO93_ONZ78')
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ELIMINAET_70731", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ELIMINAET_70731", false, null, this.ASSTS.timer);
     }
   };
 
@@ -289,7 +290,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       this.enableMyCommand(entities, executeCommandCallbackEventArgs.commons.api.viewState)
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DESCUENAS_32493", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DESCUENAS_32493", false, null, this.ASSTS.timer);
     }
   };
 
@@ -318,7 +319,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       this.enableMyCommand(entities, executeCommandCallbackEventArgs.commons.api.viewState)
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_REGISTRAS_48950", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_REGISTRAS_48950", false, null, this.ASSTS.timer);
     }
   };
 
@@ -336,10 +337,10 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
       if (entities.CompaniesDiscountsFileList.length > 0) {
         execServer = true;
       } else {
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.LBL_ASSTS_DEBESELCL_95286", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.LBL_ASSTS_DEBESELCL_95286", false, null, this.ASSTS.timer);
       }
     } else {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ERRORENAA_77685", false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ERRORENAA_77685", false, null, this.ASSTS.timer);
     }
     //executeCommandEventArgs.commons.serverParameters.entityName = true;
     executeCommandEventArgs.commons.execServer = execServer;
@@ -353,10 +354,10 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success && entities.CompaniesBatch.fileError == 0) {
       this.enableMyCommand(entities, executeCommandCallbackEventArgs.commons.api.viewState)
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_SEDEBERZE_11967", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_SEDEBERZE_11967", false, null, this.ASSTS.timer);
     } else {
       entities.CompaniesBatch.fileError = 0
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ERRORENAA_77685", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ERRORENAA_77685", false, null, this.ASSTS.timer);
     }
   };
 
@@ -371,6 +372,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
   ) => {
 
     executeCommandEventArgs.commons.execServer = false;
+    // TODO
     if (entities.CompaniesBatch.company > 0) {
       //open modal
       let nav: any = executeCommandEventArgs.commons.api.navigation;
@@ -421,9 +423,9 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success && entities.CompaniesBatch.fileError == 0) {
       this.enableMyCommand(entities, executeCommandCallbackEventArgs.commons.api.viewState)
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_SEDEBERZE_11967", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_SEDEBERZE_11967", false, null, this.ASSTS.timer);
     } else {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ERRORENAA_77685", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_ERRORENAA_77685", false, null, this.ASSTS.timer);
       entities.CompaniesBatch.fileError = 0
     }
   };
@@ -501,7 +503,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
     executeQueryCallbackEventArgs: CobisModelExecuteQueryCallbackEventArgs
   ) => {
     if (entities.CompaniesDiscountsList != null && entities.CompaniesDiscountsList.length > 0) {
-      executeQueryCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_DECUENTES_22154', false, null, timer)
+      executeQueryCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_DECUENTES_22154', false, null, this.ASSTS.timer)
       this.enableMyCommand(entities, executeQueryCallbackEventArgs.commons.api.viewState)
     }
   };
@@ -589,7 +591,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
     }
 
     if (onCloseModalEventArgs.closedViewContainerId == 'VC_COMPANIECS_544314' &&
-      onCloseModalEventArgs.dialogCloseType == 0 && entities.CompaniesBatch.statusId < 2) {
+      onCloseModalEventArgs.dialogCloseType == 0 && entities.CompaniesBatch.statusId! < 2) {
       if (onCloseModalEventArgs.result && onCloseModalEventArgs.result.response) {
         let data: any = onCloseModalEventArgs.result.response.data;
         data.companyStatusId = (data.companyStatusOk == 'S' ? 1 : 0)

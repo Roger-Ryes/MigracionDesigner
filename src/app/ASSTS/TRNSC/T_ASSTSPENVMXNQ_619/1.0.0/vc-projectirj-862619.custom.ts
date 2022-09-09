@@ -183,9 +183,9 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      Amortization.showTableAmortization("QV_EB77_IIB88", entities, executeCommandCallbackEventArgs);
+      this.ASSTS.Amortization.showTableAmortization("QV_EB77_IIB88", entities, executeCommandCallbackEventArgs);
       executeCommandCallbackEventArgs.commons.api.viewState.show('CM_TASSTSPE_87R');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, this.ASSTS.timer);
     }
   };
 
@@ -198,7 +198,8 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
     let reportTitle: any = this.cobis.translate('ASSTS.LBL_ASSTS_IMPRESINN_23469');
     let reportItem: any = "";
     let reportName: any = "SimulationReadjustement";
-    let infoDate: any = kendo.toString(kendo.parseDate(entities.SearchProjectionReadjustement.dateReadjustment), JSON.parse(sessionStorage.dateFormat)); //Nombre del archivo
+    // TODO
+    // let infoDate: any = kendo.toString(kendo.parseDate(entities.SearchProjectionReadjustement.dateReadjustment), JSON.parse(sessionStorage.dateFormat)); //Nombre del archivo
 
     let args: any = [
       ['report.module', 'cartera'],
@@ -212,7 +213,7 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
       ['monto', entities.Loan.balanceDue]
     ];
 
-    Utils.generarReporte(reportItem, args, reportTitle);
+    this.ASSTS.Utils.generarReporte(reportItem, args, reportTitle);
 
     executeCommandEventArgs.commons.execServer = false;
   };
@@ -266,14 +267,15 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
   task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
     renderEventArgs.commons.execServer = false;
     //FORMAT HEADER
-    entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
-    entities.Loan.amount = kendo.toString(entities.Loan.amount, "n");
-    entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
-    entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    // TODO
+    // entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
+    // entities.Loan.amount = kendo.toString(entities.Loan.amount, "n");
+    // entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
+    // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
 
     for (let i: any = 1; i < 16; i++) {
       renderEventArgs.commons.api.grid.hideColumn("QV_EB77_IIB88", "items" + i);
