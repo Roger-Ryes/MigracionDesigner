@@ -1,0 +1,423 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\repodisper.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_dispersion",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "a4b73676-f99e-4d3d-9a2c-ed606acfe046",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select of_nombre\r\n                              from"
+			},
+			{
+				"_idQuery": "a4accaba-e7e3-4ec8-b35d-997f7e3792de",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select fu_nombre\r\n                              from"
+			},
+			{
+				"_idQuery": "4a6dd536-f095-4443-824a-8a1c823d92cb",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select D.valor\r\n                                                             from"
+			},
+			{
+				"_idQuery": "d575b84c-a7d3-4d81-8399-3023595b7029",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select D.valor\r\n                             from"
+			},
+			{
+				"_idQuery": "33e53617-3c91-4e93-98c8-4e0fceb36df3",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select A.ro_porcentaje\r\n\t\t\t\t\t\t\t  from"
+			},
+			{
+				"_idQuery": "e53327cf-d22c-4240-87d0-63134005f79a",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select en_nombre + \u0027 \u0027+ p_p_apellido + \u0027 \u0027+ p_s_apellido\r\n\t\t\t\t\t\t\t  from"
+			},
+			{
+				"_idQuery": "ad53b896-5d69-45d4-9d3f-94b147ba133d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select en_nombre + \u0027 \u0027+ p_p_apellido + \u0027 \u0027+ p_s_apellido\r\n\t\t\t\t\t\t\t  from"
+			},
+			{
+				"_idQuery": "14699ee4-5b31-4c9e-8103-f5edfa272edd",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select en_nombre + \u0027 \u0027+ p_p_apellido + \u0027 \u0027+ p_s_apellido\r\n\t\t\t\t\t\t\t  from"
+			},
+			{
+				"_idQuery": "c4db2846-d5cb-4506-9599-c6153ba5430e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(ci_ciclo) from"
+			},
+			{
+				"_idQuery": "51fcf53b-4593-4ec8-ac64-b1e1a7a25e48",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(@w_grupo,\u0027\u0027),\r\n       isnull(@w_sucursal,\u0027\u0027),\r\n       isnull(@w_promotor,\u0027\u0027),\r\n       isnull(@w_clasificacion,\u0027\u0027),\r\n       isnull(@w_domicilio,\u0027\u0027),\r\n       isnull(@w_fec_entrega,\u0027\u0027),\r\n       isnull(@w_ciclo,\u0027\u0027),\r\n       isnull(@w_plazo,\u0027\u0027),\r\n       isnull(@w_hora,\u0027\u0027),\r\n       isnull(@w_dia_reunion,\u0027\u0027),\r\n       isnull(@w_hora_reunion,\u0027\u0027),\r\n       isnull(@w_tasa_int,\u0027\u0027),\r\n       isnull(@w_presiName,\u0027\u0027),\r\n       isnull(@w_secreName,\u0027\u0027),\r\n       isnull(@w_tesoName,\u0027\u0027)"
+			},
+			{
+				"_idQuery": "6346236a-d5f1-4f9f-9b46-687307408da6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT  \u0027SEXO\u0027"
+			},
+			{
+				"_idQuery": "674a4c91-19a6-45e5-b166-4267516fab15",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select B.valor\r\n                                   from"
+			},
+			{
+				"_idQuery": "c6f65618-b8f6-4c94-b291-64a503abaeef",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select valor\r\n                                    from"
+			},
+			{
+				"_idQuery": "e6120854-d6d5-414a-b165-98ddccf33a2c",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(so_monto_seguro)\r\n                                    from"
+			},
+			{
+				"_idQuery": "de5ec915-9964-4417-88d2-74c747dacc48",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(ci_ciclo) from"
+			},
+			{
+				"_idQuery": "ecf5cd00-0941-4ee1-b39f-2357ee2e72ec",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "money",
+				"name": "@w_ahorro_acu"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_ahorro_espe"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_base_aho"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_ciclo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clasificacion"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_costo_paque"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_destino"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dia_reunion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_domicilio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_esquema"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_est_anulado"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_est_cancelado"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_est_credito"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_est_novigente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_est_vigente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fec_entrega"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_proceso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_groupName"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_groupNum"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_grupo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_hora_reunion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_hora"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_fin"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_sol"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_name"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_paquete_bas"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_porcent_hija"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_presiName"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_prestamo_cam"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_prestamo_paq"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_prestamo_tot"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_promotor"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_retira_agi"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_retiro_dis"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_secreName"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sexo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sucursal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tasa_int"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tesoName"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_agi"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_gi"
+			}
+		]
+	}
+}

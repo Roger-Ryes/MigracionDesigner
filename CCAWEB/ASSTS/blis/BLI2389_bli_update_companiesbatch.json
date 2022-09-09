@@ -1,0 +1,235 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_COMPANIDS_402",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesBatch"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77586"
+		},
+		{
+			"attributeId": "AT27_SEQUENLI402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT34_DESCRITT402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_descripcion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT71_COMPANYY402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_institucion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT48_STATUSHT402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_estado",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT97_FILENAMM402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_archivo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT32_FILEPACC402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_path",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "U"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_mode",
+			"type": "CUSTOM",
+			"value": "mode"
+		}
+	],
+	"name": "BLI_Update_CompaniesBatch",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2389_bli_update_companiesbatch",
+	"patternName": "BLI_Update_CompaniesBatch",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "1baf5b76-ce0d-436c-9a4d-7324217a6e98",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 3,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "1baf5b76-ce0d-436c-9a4d-7324217a6e98",
+			"columns": [
+				{
+					"attributeId": "AT27_SEQUENLI402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_COMPANYY402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_COMPANMN402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_STATUSHT402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_STATUSNE402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_DESCRITT402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_DATECRET402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT14_DATEMOEV402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT97_FILENAMM402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "9",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_FILEUPIS402",
+					"entityId": "EN_COMPANIDS_402",
+					"format": "",
+					"name": "10",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_COMPANIDS_402",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesBatch"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_descuento_institucion_lote",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,23 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_CONSOLITS_643",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_SUMMARYAT_170",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_SUMMARST_6100",
+			"related": false,
+			"subModuleId": "QERYS"
+		}
+	]
+}

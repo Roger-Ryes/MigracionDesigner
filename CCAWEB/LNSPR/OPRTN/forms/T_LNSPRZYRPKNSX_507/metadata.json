@@ -1,0 +1,30 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_ERRORMASI_217",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_MASSIVEYM_999",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_PAYMENTEO_200",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_PAYMENTZY_LNSPR",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+	]
+}

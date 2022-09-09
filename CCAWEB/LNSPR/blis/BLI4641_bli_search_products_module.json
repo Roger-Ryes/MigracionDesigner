@@ -1,0 +1,97 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77672"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_naturaleza",
+			"type": "CUSTOM",
+			"value": "nature"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "M"
+		}
+	],
+	"name": "BLI_Search_Products_Module",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4641_bli_search_products_module",
+	"patternName": "BLI_Search_Products_Module",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "45b904dd-b7f7-45c5-bc32-cae839be99fc",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select\r\n\t\t\tcodigo,\r\n\t\t\tvalor\r\n\t\tfrom"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "45b904dd-b7f7-45c5-bc32-cae839be99fc",
+			"columns": [
+				{
+					"attributeId": "AT34_CODEYLUF604",
+					"entityId": "EN_PRODUCTNN_604",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_DESCRIIO604",
+					"entityId": "EN_PRODUCTNN_604",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PRODUCTNN_604",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ProductLineList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_productos_linea",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

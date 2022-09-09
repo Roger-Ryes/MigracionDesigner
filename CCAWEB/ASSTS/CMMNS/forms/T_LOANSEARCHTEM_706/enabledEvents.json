@@ -1,0 +1,44 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "QV_3009_87098",
+		"controlName": "QV_3009_87098",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 3
+			}
+		],
+		"entityName": "Loan",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "migratedOper",
+		"controlId": "VA_MIGRATEDOPEROGH_774599",
+		"controlName": "migratedOper",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 3
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONAJZAEAN_647599",
+		"controlName": "VA_VABUTTONAJZAEAN_647599",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 3
+			}
+		],
+		"entityName": "Entity5",
+		"eventsType": "visualAttributeEventType"
+	}
+]

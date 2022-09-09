@@ -1,0 +1,44 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_2ZNYDYMCX_592",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZSO_630",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANKYMRI_882",
+			"isContextEntity": true,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_NEGOTIATI_654",
+			"isContextEntity": true,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_PAYMENTZY_669",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_QUOTEDETA_803",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_QUOTEDLA_2540",
+			"related": false,
+			"subModuleId": "TRNSC"
+		}
+	]
+}

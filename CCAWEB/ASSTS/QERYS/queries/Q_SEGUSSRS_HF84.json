@@ -1,0 +1,321 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_SEGUSSRS_HF84_490",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "BLI8971_bli_consultasegurosoperacion",
+					"actionType": "BLI"
+				},
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_SEGUSSRS_HF84",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_SEGUROSQK_316",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_SEGUROSQK_316/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/QERYS/Queries/Q_SEGUSSRS_HF84/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "group",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT42_GROUPAIQ316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "3",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUS44HRF270_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "type",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT30_TYPEHFLS316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUS4H448976_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "loanBankID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT47_LOANBAND316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "4",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUS4RS8H287_05",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "clientName",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT81_CLIENTAM316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "10",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUS4SSFF243_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "statusDesc",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT59_STATUSED316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "8",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUS84R84457_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateValidityFin",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT79_DATEVANL316"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_SEGUS8HSHF837_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "clientID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT18_CLIENTID316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUSFFR8S884_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "loanID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT53_LOANIDRE316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "5",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUSFH4SS668_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "folio",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT31_FOLIOMRC316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUSRFS8R861_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "term",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT54_TERMPJUI316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "6",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUSRR488383_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dateValidityIni",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT34_DATEVAII316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "11",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUSRRHFR181_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "amount",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT60_AMOUNTMC316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "9",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUSSR8SF940_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "typeID",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_SEGUROSQK_316.json#/attributes/AT57_TYPEIDCX316"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "7",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_SEGUSSRSFR872_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS"
+			}
+		}
+	]
+}

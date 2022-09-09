@@ -1,0 +1,101 @@
+{
+	"filename": "D:\\TFS\\Principal\\tec-cca-backend\\spsql\\diasgrac.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_dias_gracia",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dividendo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_gracia"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_gracia_disp"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "9151b3f0-db51-40d9-a227-e9e6ee68d30e",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n   dit_gracia,\r\n   dit_gracia_disp\r\n   from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_clave1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave2"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_max_dia_grac"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

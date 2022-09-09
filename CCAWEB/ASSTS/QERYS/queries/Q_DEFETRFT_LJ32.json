@@ -1,0 +1,130 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_DEFETRFT_LJ32_132",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+			],
+			"executionType": 1,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_DEFETRFT_LJ32",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_LOANDEFFR_694",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_LOANDEFFR_694/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/QERYS/Queries/Q_DEFETRFT_LJ32/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "value",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANDEFFR_694.json#/attributes/AT14_VALUEMZT694"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DEVOLVERR_24242"
+				},
+				"labelId": "LBL_ASSTS_DEVOLVERR_24242",
+				"moduleId": "ASSTS"
+			},
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFETJLR33617_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "item",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANDEFFR_694.json#/attributes/AT55_ITEMASKY694"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DESCRIPIN_18186"
+				},
+				"labelId": "LBL_ASSTS_DESCRIPIN_18186",
+				"moduleId": "ASSTS"
+			},
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFETRJJTT487_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "ingress",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LOANDEFFR_694.json#/attributes/AT87_INGRESSS694"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_INGRESOHM_26023"
+				},
+				"labelId": "LBL_ASSTS_INGRESOHM_26023",
+				"moduleId": "ASSTS"
+			},
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFETTF2R2276_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS"
+			}
+		}
+	]
+}

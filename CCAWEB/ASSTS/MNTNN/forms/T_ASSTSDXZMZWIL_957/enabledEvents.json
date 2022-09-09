@@ -1,0 +1,60 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_FL15_OEC17_507",
+		"controlName": "QV_FL15_OEC17",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANMSEM_ZL15",
+		"controlName": "LoanItemsListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_LOANMSEM_ZL15.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_FL15_OEC17",
+		"controlName": "QV_FL15_OEC17",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_GRIDROWCOMMMAND_816116",
+		"controlName": "VA_GRIDROWCOMMMAND_816116",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridRowCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanItemsList",
+		"eventsType": "visualAttributeEventType"
+	}
+]

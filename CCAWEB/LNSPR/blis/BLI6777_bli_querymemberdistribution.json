@@ -1,0 +1,145 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21946"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_num_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		}
+	],
+	"name": "BLI_QueryMemberDistribution",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6777_bli_querymemberdistribution",
+	"patternName": "BLI_QueryMemberDistribution",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "04e2bc86-8eb3-4aed-aa02-75218b18146d",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 7,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "04e2bc86-8eb3-4aed-aa02-75218b18146d",
+			"columns": [
+				{
+					"attributeId": "AT16_CODEMERE536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": "Codigo Miembro",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_MEMBERSR536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": " Nombre Miembro",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_CURRENCY536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": " Moneda",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT93_AMOUNTXL536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": " Monto",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_USEDJXTL536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": " Utilizado",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_AVAILABB536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": " Disponible",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_CONTROML536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": " Controla Monto",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_OBSERVSI536",
+					"entityId": "EN_MEMBERDEL_536",
+					"format": "",
+					"name": " Observaciones",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_MEMBERDEL_536",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "MemberDetail"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_lin_grupo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

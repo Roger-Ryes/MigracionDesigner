@@ -1,0 +1,147 @@
+{
+	"filename": "D:\\TFS\\Principal\\tec-cca-backend\\spsql\\cuenta_cobis.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_cuenta_cobis",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente_ali"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_categoria_fpago"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ced_ruc"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_catalogo_banco_ach"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "91fcf1e3-0757-4e18-9591-1f8f66559c33",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select  en_nomlar\r\n   from"
+			},
+			{
+				"_idQuery": "f64bcd76-d059-4ede-b07a-1a1d8cb0c157",
+				"columns": [
+					"Cuenta",
+					"Cliente",
+					"Nombre"
+				],
+				"editMode": true,
+				"queryText": "select\r\n      \u0027Cuenta\u0027  = op_banco,\r\n      \u0027Cliente\u0027 = op_cliente,\r\n      \u0027Nombre\u0027  = op_nombre\r\n      from"
+			},
+			{
+				"_idQuery": "f5b3f890-5885-4a52-b1e1-ced5895c8959",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select \u0027S\u0027"
+			},
+			{
+				"_idQuery": "ddf32378-3150-4f1e-85fe-1edec816a102",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select \u0027N\u0027"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_categoria"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_forma_des"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_pcobis"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_prod_banc"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_cuenta"
+			}
+		]
+	}
+}

@@ -1,0 +1,504 @@
+{
+	"filename": "C:\\Users\\jgutierrez.FNA\\Desktop\\sp_cons_gnral.sp",
+	"procedure": {
+		"database": "cob_credito",
+		"name": "sp_cons_gnral",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_tramite"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_grupo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_transaccion"
+			},
+			{
+				"dataType": "cuenta",
+				"direction": "in",
+				"name": "@i_numero_op_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_secuencia"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_truta"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_etapa"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_estacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_sustituto"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda_fin"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_comite"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ced_ruc"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_valida"
+			},
+			{
+				"dataType": "cuenta",
+				"direction": "out",
+				"name": "@o_num_lin_banco"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "9a1dabc9-7165-49d6-9abc-565ee9fcc9b5",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select @w_moneda, @w_simbolo"
+			},
+			{
+				"_idQuery": "1a7cbb32-2322-497c-a903-464172a7f3e8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_miembro"
+			},
+			{
+				"_idQuery": "9bb63eff-596a-483a-9646-3dce73800ac1",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select @w_monto_inicial,\r\n             @w_valor_actual"
+			},
+			{
+				"_idQuery": "3ff18744-8bdf-46e3-a962-6ef945e9b927",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_valor_actual"
+			},
+			{
+				"_idQuery": "81954b18-a747-4105-86e7-29c2b14f100c",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_flag"
+			},
+			{
+				"_idQuery": "8dedcf8d-d484-4a82-8222-4ced9e901d2f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select @w_num_lin_banco"
+			},
+			{
+				"_idQuery": "3efc4f7e-e2d9-4980-a2dc-e9006be790e1",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}"
+				],
+				"editMode": true,
+				"queryText": "select @w_inc_riesgo,\r\n\t\t         @w_empeora_cal,\r\n\t\t         @w_riesgo_ini,\r\n\t\t         @w_riesgo,\r\n                  \t @w_calificacion,\r\n\t\t         @w_cal,\r\n                         @w_cont_codeudores"
+			},
+			{
+				"_idQuery": "1092e2ae-cd55-47cd-b278-310571085201",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select \u0027N\u0027,\r\n                         @w_num_lin_banco"
+			},
+			{
+				"_idQuery": "9d6b13f0-2fc9-4c40-9564-012665d534ee",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select \"N\""
+			},
+			{
+				"_idQuery": "02477b73-4484-48ed-944e-8d0593bc7ae6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select \"S\""
+			},
+			{
+				"_idQuery": "e6582723-3fd5-49e7-ae14-21f50b2440fa",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select \"N\""
+			},
+			{
+				"_idQuery": "edd4e84d-5e77-4a87-8fad-aedbc9943a0f",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}"
+				],
+				"editMode": true,
+				"queryText": "select\r\n   @w_mensaje,          @w_dindicador,    @w_bases_coincide,\r\n   @w_nombres_coincide, @w_mail,          @w_numero_id"
+			},
+			{
+				"_idQuery": "bbb892bd-ef46-4491-a944-c682a70c3f91",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_bases_coincide"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cal"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_calificacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ciruc"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_ciudad_desc"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_ciudad"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_codigo_oficial"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cont_codeudores"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_estacion"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_des_etapa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dindicador"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_direccion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_empeora_cal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_en_nombre"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_estacion"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_etapa"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_crea"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_flag"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_gcch"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_gpe"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_id"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_inc_riesgo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_mail"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "login",
+				"name": "@w_miembro"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_inicial"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_nivel"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombres_coincide"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_num_lin_banco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_numero_id"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_p_p_apellido"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_p_s_apellido"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_plazo_linea"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_riesgo_ini"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_riesgo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_simbolo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_estacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_etapa"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_tramite"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite_linea"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_actual"
+			}
+		]
+	}
+}

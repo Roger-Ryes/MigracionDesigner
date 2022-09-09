@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_SUMMESYE_DM68",
+		"controlName": "SummaryMembersQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_SUMMESYE_DM68.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "SummaryMembers",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_HR68_RLL81",
+		"controlName": "QV_HR68_RLL81",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "SummaryMembers",
+		"eventsType": "queryViewEventType"
+	}
+]

@@ -1,0 +1,166 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_fecha_valor",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_valor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_observacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_observacion_corto"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_mov"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_en_linea"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_con_abonos"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial_hfm"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_control_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_debug"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_es_atx"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_pago_ext"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_bandera"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_grupal"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_control_pinter"
+			}
+		],
+		"queries": [
+		],
+		"type": "SYBASE"
+	}
+}

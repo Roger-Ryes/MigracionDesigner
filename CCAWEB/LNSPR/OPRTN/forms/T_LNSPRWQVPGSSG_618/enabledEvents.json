@@ -1,0 +1,88 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRWQ_853",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRWQ_N5S",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_MASSTENM_SJ71",
+		"controlName": "MassivePaymentsQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_MASSTENM_SJ71.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "MassivePayments",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_WR71_MYK57",
+		"controlName": "QV_WR71_MYK57",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "MassivePayments",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "archivo",
+		"controlId": "VA_ARCHIVORFAULKWH_987436",
+		"controlName": "archivo",
+		"controlType": "FileUpload",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_BATCHMASSS_336618",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

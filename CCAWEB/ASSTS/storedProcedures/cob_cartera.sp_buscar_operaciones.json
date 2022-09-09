@@ -1,0 +1,150 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_buscar_operaciones",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_grupo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ini"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_migrada"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_siguiente"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_condicion_est"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_num_documento"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_web"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_grupal"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_categoria"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desempar"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_historico"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "dd6bab63-2ae1-48a7-a95c-7397665ad8a1",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"21",
+					"22"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

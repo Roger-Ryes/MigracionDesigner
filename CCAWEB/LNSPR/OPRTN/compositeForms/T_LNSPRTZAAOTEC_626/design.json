@@ -1,0 +1,490 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+		{
+			"action": null,
+			"causesValidation": false,
+			"causesValidationAsString": "F",
+			"close": false,
+			"closeAsString": "F",
+			"commandType": 0,
+			"customEvents": [
+				{
+					"commandEventType": {
+						"availableExecutionType": 7,
+						"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+						"eventId": 10,
+						"name": "ExecuteCommand"
+					},
+					"customEventId": "CECM_010CM_TLNSPRTZ_RRO_215",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+						{
+							"actionArgs": [
+							],
+							"actionId": "CUSTOM",
+							"actionType": "CUSTOM"
+						}
+					],
+					"executionType": 7,
+					"filter": null,
+					"isEnabled": true
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"group": null,
+			"id": {
+				"commandId": "CM_TLNSPRTZ_RRO"
+			},
+			"imageId": null,
+			"isCustomized": false,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_FINALIZAA_98850"
+				},
+				"labelId": "LBL_LNSPR_FINALIZAA_98850",
+				"moduleId": "LNSPR"
+			},
+			"layoutType": "Command",
+			"name": "Command1",
+			"options": 0,
+			"order": 1,
+			"showInMode": 4095,
+			"userControl": {
+				"type": "A",
+				"userControlId": "Button"
+			},
+			"validationGroup": null
+		}
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "LNSPR",
+		"subModuleId": "OPRTN",
+		"taskId": "T_LNSPRTZAAOTEC_626",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_LOANSSIMOO_401626",
+	"metadataErrors": [
+	],
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../relations/componentKeys.json#/OPRTN/CompositeForms/T_LNSPRTZAAOTEC_626/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"changes": false,
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+				{
+					"customEventId": "CEVC_002T_LNSPRTZAAOTEC_626_278",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Inicializaci\u00f3n de datos de un ViewContainer, despues de este evento se realiza el segimiento de cambios en los datos",
+						"eventId": 2,
+						"name": "InitData"
+					}
+				},
+				{
+					"customEventId": "CEVC_008T_LNSPRTZAAOTEC_626_786",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 1,
+						"description": "Se ejecuta antes de renderizar un ViewContainer, permite realizar personalizaciones visuales",
+						"eventId": 8,
+						"name": "Render"
+					}
+				},
+				{
+					"customEventId": "CEVC_501T_LNSPRTZAAOTEC_626_434",
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": "T",
+					"eventActions": [
+					],
+					"executionType": 1,
+					"filter": null,
+					"isEnabled": true,
+					"viewContainerEventType": {
+						"availableExecutionType": 7,
+						"description": "Evento que actua como listener cuando se cierra ventanas modales.",
+						"eventId": 501,
+						"name": "onCloseModal"
+					}
+				}
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"hasAttributesDuplicates": false,
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN",
+				"taskId": "T_LNSPRTZAAOTEC_626",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_LOANSSIMOO_401626"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"metadataVersion": "7.2.0.2024 BETA",
+			"name": "ViewContainerBase",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"titleLabel": {
+				"defaultValue": {
+					"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_SIMULACMO_93778"
+				},
+				"labelId": "LBL_LNSPR_SIMULACMO_93778",
+				"moduleId": "LNSPR"
+			},
+			"viewContainers": [
+				{
+					"breadcrumbs": "Automatic",
+					"collapsedStr": "F",
+					"colSpan": 1,
+					"columnsNum": 1,
+					"componentStyle": null,
+					"customEvents": [
+					],
+					"customizationLayer": 0,
+					"customizationLayerDescription": "ECU",
+					"enabled": 4095,
+					"id": {
+						"moduleId": "LNSPR",
+						"subModuleId": "OPRTN",
+						"taskId": "T_LNSPRTZAAOTEC_626",
+						"taskVersion": "1.0.0",
+						"viewContainerId": "VC_HXNXIGVETR_494626"
+					},
+					"isCustomized": false,
+					"layoutType": "TabbedLayout",
+					"name": "ViewContainerBase",
+					"options": 0,
+					"order": 1,
+					"parentId": "VC_LOANSSIMOO_401626",
+					"responsiveLayouts": null,
+					"responsivity": false,
+					"style": null,
+					"viewContainers": [
+						{
+							"breadcrumbs": "Automatic",
+							"collapsedStr": "F",
+							"colSpan": 1,
+							"columnsNum": 1,
+							"componentStyle": null,
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"enabled": 4095,
+							"id": {
+								"moduleId": "LNSPR",
+								"subModuleId": "OPRTN",
+								"taskId": "T_LNSPRTZAAOTEC_626",
+								"taskVersion": "1.0.0",
+								"viewContainerId": "VC_MWEGHJFEQQ_170626"
+							},
+							"isCustomized": false,
+							"layoutType": "Group",
+							"name": "ViewContainerBase",
+							"options": 0,
+							"order": 1,
+							"parentId": "VC_HXNXIGVETR_494626",
+							"parentLayoutType": "TabbedLayout",
+							"responsiveLayouts": null,
+							"responsivity": false,
+							"style": null,
+							"titleLabel": {
+								"defaultValue": {
+									"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_INACINGNN_54588"
+								},
+								"labelId": "LBL_LNSPR_INACINGNN_54588",
+								"moduleId": "LNSPR"
+							},
+							"viewContainers": [
+								{
+									"breadcrumbs": "Automatic",
+									"collapsedStr": "F",
+									"colSpan": 1,
+									"columnsNum": 1,
+									"componentStyle": null,
+									"customEvents": [
+									],
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": 4095,
+									"id": {
+										"moduleId": "LNSPR",
+										"subModuleId": "OPRTN",
+										"taskId": "T_LNSPRDTSDFSKQ_539",
+										"taskVersion": "1.0.0",
+										"viewContainerId": "VC_ALTRVLDXVF_918539"
+									},
+									"isCustomized": false,
+									"layoutType": "Group",
+									"name": "OperationLoansForm",
+									"options": 0,
+									"order": 1,
+									"parentId": "VC_MWEGHJFEQQ_170626",
+									"parentLayoutType": "Group",
+									"responsiveLayouts": null,
+									"responsivity": false,
+									"style": null,
+									"view": {
+										"$ref": "../../../../LNSPR/OPRTN/forms/T_LNSPRDTSDFSKQ_539/design.json#/viewContainers/0/view"
+									}
+								}
+							]
+						},
+						{
+							"breadcrumbs": "Automatic",
+							"collapsedStr": "F",
+							"colSpan": 1,
+							"columnsNum": 1,
+							"componentStyle": null,
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"enabled": 4095,
+							"id": {
+								"moduleId": "LNSPR",
+								"subModuleId": "OPRTN",
+								"taskId": "T_LNSPRTZAAOTEC_626",
+								"taskVersion": "1.0.0",
+								"viewContainerId": "VC_FUAFKEKXSW_812626"
+							},
+							"isCustomized": false,
+							"layoutType": "Group",
+							"name": "ViewContainerBase",
+							"options": 0,
+							"order": 2,
+							"parentId": "VC_HXNXIGVETR_494626",
+							"parentLayoutType": "TabbedLayout",
+							"responsiveLayouts": null,
+							"responsivity": false,
+							"style": null,
+							"titleLabel": {
+								"defaultValue": {
+									"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_RUBROSIFS_16769"
+								},
+								"labelId": "LBL_LNSPR_RUBROSIFS_16769",
+								"moduleId": "LNSPR"
+							},
+							"viewContainers": [
+								{
+									"breadcrumbs": "Automatic",
+									"collapsedStr": "F",
+									"colSpan": 1,
+									"columnsNum": 1,
+									"componentStyle": null,
+									"customEvents": [
+									],
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": 4095,
+									"id": {
+										"moduleId": "LNSPR",
+										"subModuleId": "OPRTN",
+										"taskId": "T_LNSPRHWGYLNWJ_330",
+										"taskVersion": "1.0.0",
+										"viewContainerId": "VC_OHRULBIEYW_208330"
+									},
+									"isCustomized": false,
+									"layoutType": "Group",
+									"name": "OperationItems",
+									"options": 0,
+									"order": 1,
+									"parentId": "VC_FUAFKEKXSW_812626",
+									"parentLayoutType": "Group",
+									"responsiveLayouts": null,
+									"responsivity": false,
+									"style": null,
+									"view": {
+										"$ref": "../../../../LNSPR/OPRTN/forms/T_LNSPRHWGYLNWJ_330/design.json#/viewContainers/0/view"
+									}
+								}
+							]
+						},
+						{
+							"breadcrumbs": "Automatic",
+							"collapsedStr": "F",
+							"colSpan": 1,
+							"columnsNum": 1,
+							"componentStyle": null,
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"enabled": 4095,
+							"id": {
+								"moduleId": "LNSPR",
+								"subModuleId": "OPRTN",
+								"taskId": "T_LNSPRTZAAOTEC_626",
+								"taskVersion": "1.0.0",
+								"viewContainerId": "VC_TPJGHFAFBF_762626"
+							},
+							"isCustomized": false,
+							"layoutType": "Group",
+							"name": "ViewContainerBase",
+							"options": 0,
+							"order": 3,
+							"parentId": "VC_HXNXIGVETR_494626",
+							"parentLayoutType": "TabbedLayout",
+							"responsiveLayouts": null,
+							"responsivity": false,
+							"style": null,
+							"titleLabel": {
+								"defaultValue": {
+									"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_PARMETROG_15063"
+								},
+								"labelId": "LBL_LNSPR_PARMETROG_15063",
+								"moduleId": "LNSPR"
+							},
+							"viewContainers": [
+								{
+									"breadcrumbs": "Automatic",
+									"collapsedStr": "F",
+									"colSpan": 1,
+									"columnsNum": 1,
+									"componentStyle": null,
+									"customEvents": [
+									],
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": 4095,
+									"id": {
+										"moduleId": "LNSPR",
+										"subModuleId": "OPRTN",
+										"taskId": "T_LNSPRKEGMFGIE_785",
+										"taskVersion": "1.0.0",
+										"viewContainerId": "VC_NMEKLYPCZL_469785"
+									},
+									"isCustomized": false,
+									"layoutType": "Group",
+									"name": "OperationLoansGeneralParametersForm",
+									"options": 0,
+									"order": 1,
+									"parentId": "VC_TPJGHFAFBF_762626",
+									"parentLayoutType": "Group",
+									"responsiveLayouts": null,
+									"responsivity": false,
+									"style": null,
+									"view": {
+										"$ref": "../../../../LNSPR/OPRTN/forms/T_LNSPRKEGMFGIE_785/design.json#/viewContainers/0/view"
+									}
+								}
+							]
+						},
+						{
+							"breadcrumbs": "Automatic",
+							"collapsedStr": "F",
+							"colSpan": 1,
+							"columnsNum": 1,
+							"componentStyle": null,
+							"customEvents": [
+							],
+							"customizationLayer": 0,
+							"customizationLayerDescription": "ECU",
+							"enabled": 4095,
+							"id": {
+								"moduleId": "LNSPR",
+								"subModuleId": "OPRTN",
+								"taskId": "T_LNSPRTZAAOTEC_626",
+								"taskVersion": "1.0.0",
+								"viewContainerId": "VC_GIMALDPDEW_251626"
+							},
+							"isCustomized": false,
+							"layoutType": "Group",
+							"name": "ViewContainerBase",
+							"options": 0,
+							"order": 4,
+							"parentId": "VC_HXNXIGVETR_494626",
+							"parentLayoutType": "TabbedLayout",
+							"responsiveLayouts": null,
+							"responsivity": false,
+							"style": null,
+							"titleLabel": {
+								"defaultValue": {
+									"$ref": "../../../../LNSPR/assets/languages/LNSPR.json#/LNSPR/LBL/LBL_LNSPR_AMORTIZII_74160"
+								},
+								"labelId": "LBL_LNSPR_AMORTIZII_74160",
+								"moduleId": "LNSPR"
+							},
+							"viewContainers": [
+								{
+									"breadcrumbs": "Automatic",
+									"collapsedStr": "F",
+									"colSpan": 1,
+									"columnsNum": 1,
+									"componentStyle": null,
+									"customEvents": [
+									],
+									"customizationLayer": 0,
+									"customizationLayerDescription": "ECU",
+									"enabled": 4095,
+									"id": {
+										"moduleId": "LNSPR",
+										"subModuleId": "OPRTN",
+										"taskId": "T_LNSPRGNPCEXYE_633",
+										"taskVersion": "1.0.0",
+										"viewContainerId": "VC_BECTIFDMHE_188633"
+									},
+									"isCustomized": false,
+									"layoutType": "Group",
+									"name": "OperationPaymentDayUpdateForm",
+									"options": 0,
+									"order": 1,
+									"parentId": "VC_GIMALDPDEW_251626",
+									"parentLayoutType": "Group",
+									"responsiveLayouts": null,
+									"responsivity": false,
+									"style": null,
+									"view": {
+										"$ref": "../../../../LNSPR/OPRTN/forms/T_LNSPRGNPCEXYE_633/design.json#/viewContainers/0/view"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,66 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_COMPANILL_950",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesList"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77575"
+		},
+		{
+			"attributeId": "AT99_INSTITII950",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANILL_950",
+			"format": "",
+			"name": "@i_institucion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		}
+	],
+	"name": "BLI_CompanyDelete",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4927_bli_companydelete",
+	"patternName": "BLI_CompanyDelete",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_descuento_institucion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,20 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "VC_REAJUSTEKP_207872",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

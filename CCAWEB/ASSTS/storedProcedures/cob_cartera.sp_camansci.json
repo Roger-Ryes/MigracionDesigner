@@ -1,0 +1,201 @@
+{
+	"filename": "C:\\Users\\HP\\Documents\\SP-JSON\\SP\\sp_camansci.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_camansci",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_opbanco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cod_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_cta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_instruccion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_band_sci"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "e1daf866-274d-49a9-86ec-18ecce05d0d9",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select ltrim(rtrim(pa_char))\r\n\t  from"
+			},
+			{
+				"_idQuery": "1958367e-30bb-4795-bda2-5016e1ebd227",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}"
+				],
+				"editMode": false,
+				"queryText": "select ac_cod_banco,\r\n\t       ac_tip_cta,\r\n\t       ac_cuenta,\r\n\t       ac_instruccion,\r\n\t       ac_concepto\r\n\t  from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			}
+		]
+	}
+}

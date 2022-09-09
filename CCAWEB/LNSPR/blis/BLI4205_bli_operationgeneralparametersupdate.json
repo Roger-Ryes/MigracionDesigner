@@ -1,0 +1,228 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "AmortizationFormEntity"
+		},
+		{
+			"entityId": "EN_GENERALRE_262",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "GeneralParametersQuery"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT72_ACCEPTAD262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_aceptar_anticipos",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT47_NUMOPENA802",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT34_ACCOUNNY262",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_cuenta",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT46_PAYFULEE262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_cuota_completa",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT47_METHODNM262",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_forma_pago",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT49_PERIODIY262",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_periodo_reajuste",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT25_READJUTB262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_reajustable",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT58_ALLOWSNR262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_renovacion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT23_KINDPAEY262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_tipo_aplicacion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT58_INTEREMP262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_tipo_cobro",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT78_TYPEPATT262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_tipo_reduccion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7061"
+		},
+		{
+			"attributeId": "AT86_CASHPASS262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_pago_caja",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT71_CALCULTA262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_calcula_devolucion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT20_RESTRUCR262",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_reestructuracion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT12_BENEFIIT262",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_beneficio_tinteres",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT44_BENEFIRE262",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_GENERALRE_262",
+			"format": "",
+			"name": "@i_base_tasa_desc",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_OperationGeneralParametersUpdate",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4205_bli_operationgeneralparametersupdate",
+	"patternName": "BLI_OperationGeneralParametersUpdate",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_modificar_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

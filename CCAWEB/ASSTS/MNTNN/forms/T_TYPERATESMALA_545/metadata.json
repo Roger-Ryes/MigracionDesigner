@@ -1,0 +1,17 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_1IRAKPKDY_241",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_VALUERATE_478",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		}
+	],
+	"queries": [
+	]
+}

@@ -1,0 +1,489 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_LISTCEEE_FJ77_411",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+			],
+			"executionType": 1,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_LISTCEEE_FJ77",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_LISTPROSS_173",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_LISTPROSS_173/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/TRNSC/Queries/Q_LISTCEEE_FJ77/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "dividend",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT80_DIVIDEDD173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTC777J7953_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items1",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT55_DINAMY1A173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTC77EJJ650_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items3",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT91_DINAMYEL173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTC77J7J997_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "saleDate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT41_SALEDATT173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTC7F7EE499_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items4",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT63_DINAMYAL173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTC7JJEE250_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items2",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT71_DINAMYAN173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCE7EEE362_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items8",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT39_DINAMYBB173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 12,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCE7EF7394_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items11",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT66_DINAMYC1173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 15,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCE7EJE546_15",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "state",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT71_STATEUKP173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 21,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEE77J373_21",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items15",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT49_DINAMY1C173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 19,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEE7JE875_19",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "quotaDay",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT27_QUOTADAY173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEEEF7313_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items12",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT72_DINAMYAN173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 16,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEEF7E114_16",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items14",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT24_DINAMYNB173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 18,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEF777875_18",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items7",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT20_DINAMYN7173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 11,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEF7JE511_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items6",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT46_DINAMYBB173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEFE7E853_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items9",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT88_DINAMYEC173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 13,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCEJEEJ596_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items10",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT51_DINAMY10173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 14,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCF777E313_14",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items13",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT47_DINAMY3B173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 17,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCF7EEE525_17",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "balance",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT40_BALANCEE173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCFE7F7164_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "porroga",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT72_PORROGAA173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 22,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCFEJEE883_22",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items5",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT12_DINAMYAN173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCFEJFJ136_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "quota",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_LISTPROSS_173.json#/attributes/AT39_QUOTAKOP173"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 20,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_LISTCFFJEE873_20",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC"
+			}
+		}
+	]
+}

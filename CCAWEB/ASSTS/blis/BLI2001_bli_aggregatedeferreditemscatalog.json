@@ -1,0 +1,97 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "operation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77696"
+		}
+	],
+	"name": "BLI_AggregateDeferredItemsCatalog",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2001_bli_aggregatedeferreditemscatalog",
+	"patternName": "BLI_AggregateDeferredItemsCatalog",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "6b5eb5fa-61bb-450f-9cce-760f6044e70a",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "select "
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "6b5eb5fa-61bb-450f-9cce-760f6044e70a",
+			"columns": [
+				{
+					"attributeId": "AT62_ITEMTTCH510",
+					"entityId": "EN_AGGREGAIE_510",
+					"format": "",
+					"name": "Codigo",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_DESCRITP510",
+					"entityId": "EN_AGGREGAIE_510",
+					"format": "",
+					"name": "Descripcion",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_AGGREGAIE_510",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AggregateDeferredItemsEntity"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_eliminar_seg_desemp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

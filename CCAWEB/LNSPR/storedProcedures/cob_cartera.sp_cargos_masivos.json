@@ -1,0 +1,156 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_cargos_masivos",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_base_con"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_base_cal"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_comentario"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_lote"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_fin_lote"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_archivo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_lote"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "176a8f27-347c-44fe-8806-b7e2aef140a1",
+				"columns": [
+					"1",
+					"2",
+					"3"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

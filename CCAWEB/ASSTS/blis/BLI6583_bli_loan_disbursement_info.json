@@ -1,0 +1,366 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7032"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco_real",
+			"type": "CUSTOM",
+			"value": "bancoReal"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco_ficticio",
+			"type": "CUSTOM",
+			"value": "bancoFicticio"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_pasar_tmp",
+			"type": "CONSTANT",
+			"value": "N"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_desde_cre",
+			"type": "CUSTOM",
+			"value": "desdeCre"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_renovaciones",
+			"type": "CUSTOM",
+			"value": "renovaciones"
+		}
+	],
+	"name": "BLI_LOAN_DISBURSEMENT_INFO",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6583_bli_loan_disbursement_info",
+	"patternName": "BLI_LOAN_DISBURSEMENT_INFO",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "edf68555-7d0c-4c4a-b0ff-58edc8822868",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "b371c330-9c5f-415b-8afd-cc77aa3b3d7e",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "c916d571-70aa-4c8f-ace4-1dfbf4f776a4",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 3,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "edf68555-7d0c-4c4a-b0ff-58edc8822868",
+			"columns": [
+				{
+					"attributeId": "AT76_SUMTOTLL728",
+					"entityId": "EN_LIQUIDATT_728",
+					"format": "",
+					"name": "10",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		},
+		{
+			"_idQuery": "b371c330-9c5f-415b-8afd-cc77aa3b3d7e",
+			"columns": [
+				{
+					"attributeId": "AT85_ITEMBYHT439",
+					"entityId": "EN_DETAILANC_439",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT24_DESCRIOT439",
+					"entityId": "EN_DETAILANC_439",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_VALUELCR439",
+					"entityId": "EN_DETAILANC_439",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		},
+		{
+			"_idQuery": "c916d571-70aa-4c8f-ace4-1dfbf4f776a4",
+			"columns": [
+				{
+					"attributeId": "AT57_INDEXKGR835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT56_DISBURNT835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_CURRENID835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_CURRENNE835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_AMOUNTEH835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_TYPEQUNA835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_QUOTEGAO835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT50_AMOUNTOP835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_QUOTETYE835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "9",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_QUOTEOPP835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "10",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_AMOUNTMM835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "11",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_ACCOUNTT835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "12",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT51_BENEFICC835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "13",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_OFFICEID835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "14",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_OFFICEAM835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "15",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_SEQUENTT835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "16",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_PRODUCER835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "17",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_PRENOTFI835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "18",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_OBSERVAN835",
+					"entityId": "EN_DETAILPNN_835",
+					"format": "",
+					"name": "19",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 3,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_DETAILANC_439",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DetailAmountsToCancel"
+		},
+		{
+			"entityId": "EN_DETAILPNN_835",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DetailPaymentForm"
+		},
+		{
+			"entityId": "EN_LIQUIDATT_728",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LiquidateResult"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_desembolso",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

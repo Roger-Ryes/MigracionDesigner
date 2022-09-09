@@ -1,0 +1,17 @@
+{
+	"menuEtiqueta": "MNU_ASSETS_QUERYSGENERALINFORMATION",
+	"moduleId": "ASSTS",
+	"patternId": "SEARCH5661_advancedsearchloans",
+	"patternName": "AdvancedSearchLoans",
+	"patternType": "Search",
+	"selectedDestination": "designerF",
+	"selectedForm": "T_GENERALINAOIT_347",
+	"selectedMode": 2,
+	"selectedNavigationModule": "ASSTS",
+	"selectedNavigationSubmodule": "QERYS",
+	"selectors": {
+		"customerId": "COBISADV",
+		"itemId": "AdvancedSearchLoans",
+		"productId": "ASSTS"
+	}
+}

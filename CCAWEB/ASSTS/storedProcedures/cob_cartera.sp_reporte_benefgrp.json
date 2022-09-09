@@ -1,0 +1,119 @@
+{
+	"filename": "C:\\Users\\amartinez\\Desktop\\sp_reporte_benefgrp.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_benefgrp",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_filial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nroprestamo"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "66a7a0f0-3972-46fe-913c-8b97bb673b9d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select cg.gr_nombre from"
+			},
+			{
+				"_idQuery": "fc4c1987-6900-426a-8efc-3c25b456f6ec",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select cid.id_dato\r\n\t\t   from"
+			},
+			{
+				"_idQuery": "05ba3f05-2e9c-4dff-87fd-ba529cbdbd29",
+				"columns": [
+					"descOpeGrp",
+					"estado",
+					"ciudad",
+					"fechaImpresion",
+					"descGrupo",
+					"reca",
+					"descFilial"
+				],
+				"editMode": true,
+				"queryText": "select @w_desc_ope_grp as \u0027descOpeGrp\u0027,\r\n\t\t\t   @w_desc_estado as \u0027estado\u0027,\r\n\t\t\t   @w_desc_ciudad as \u0027ciudad\u0027,\r\n\t\t       @w_desc_fecha as \u0027fechaImpresion\u0027,\r\n\t\t       @w_desc_grupo as \u0027descGrupo\u0027,\r\n\t\t       @w_desc_reca as \u0027reca\u0027,\r\n\t\t       @w_desc_filial as \u0027descFilial\u0027"
+			},
+			{
+				"_idQuery": "30fab7f9-a820-45fb-9195-694733d9e5aa",
+				"columns": [
+					"opeGrpCte",
+					"nombreCte",
+					"tipoTramite"
+				],
+				"editMode": true,
+				"queryText": "select co.op_operacion as \u0027opeGrpCte\u0027,\r\n\t\tCONCAT(ce.p_p_apellido,\u0027 \u0027,ce.p_s_apellido,\u0027 \u0027,ce.en_nombre,\u0027 \u0027,ce.p_s_nombre) as \u0027nombreCte\u0027,\r\n\t\tct.tr_tipo as \u0027tipoTramite\u0027\r\n\t\tfrom"
+			},
+			{
+				"_idQuery": "d0566705-1a4c-4f97-b21a-4f3b4b3a0af7",
+				"columns": [
+					"opeGrpBenef",
+					"nombreBenef",
+					"porcentajeBenef"
+				],
+				"editMode": true,
+				"queryText": "select cbs.bs_nro_operacion as \u0027opeGrpBenef\u0027,\r\n\t\tCONCAT(cbs.bs_apellido_paterno,\u0027 \u0027,cbs.bs_apellido_materno,\u0027 \u0027,cbs.bs_nombres) as \u0027nombreBenef\u0027,\r\n\t\tcbs.bs_porcentaje as \u0027porcentajeBenef\u0027\r\n\t\tfrom"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_ciudad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_estado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_fecha"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_filial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_grupo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_ope_grp"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_reca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

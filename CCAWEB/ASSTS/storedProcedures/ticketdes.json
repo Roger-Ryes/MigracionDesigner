@@ -1,0 +1,301 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\ticketdes.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"owner": "dbo",
+		"name": "sp_ticket_desembolso",
+		"parameters": [
+			{
+				"name": "@s_ssn",
+				"dataType": "int",
+				"direction": "in"
+			},
+			{
+				"name": "@s_sesn",
+				"dataType": "int",
+				"direction": "in"
+			},
+			{
+				"name": "@s_srv",
+				"dataType": "varchar",
+				"direction": "in"
+			},
+			{
+				"name": "@s_lsrv",
+				"dataType": "varchar",
+				"direction": "in"
+			},
+			{
+				"name": "@s_user",
+				"dataType": "login",
+				"direction": "in"
+			},
+			{
+				"name": "@s_date",
+				"dataType": "datetime",
+				"direction": "in"
+			},
+			{
+				"name": "@s_ofi",
+				"dataType": "int",
+				"direction": "in"
+			},
+			{
+				"name": "@s_rol",
+				"dataType": "tinyint",
+				"direction": "in"
+			},
+			{
+				"name": "@s_org",
+				"dataType": "char",
+				"direction": "in"
+			},
+			{
+				"name": "@s_term",
+				"dataType": "varchar",
+				"direction": "in"
+			},
+			{
+				"name": "@t_trn",
+				"dataType": "int",
+				"direction": "in"
+			},
+			{
+				"name": "@i_banco",
+				"dataType": "varchar",
+				"direction": "in"
+			}
+		],
+		"variables": [
+			{
+				"name": "@w_return",
+				"dataType": "int"
+			},
+			{
+				"name": "@w_sp_name",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_fec_proceso",
+				"dataType": "datetime"
+			},
+			{
+				"name": "@w_error",
+				"dataType": "int"
+			},
+			{
+				"name": "@w_fecha",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_oficina",
+				"dataType": "smallint"
+			},
+			{
+				"name": "@w_cajero",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_modulo",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_nom_oficial",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_ente",
+				"dataType": "int"
+			},
+			{
+				"name": "@w_nom_ente",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_op_banco",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_recibo",
+				"dataType": "int"
+			},
+			{
+				"name": "@w_toperacion",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_fdesembolso",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_facreditar",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_moneda",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_monto",
+				"dataType": "money"
+			},
+			{
+				"name": "@w_fecha_fin",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_fecha_ven",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_monto_cred",
+				"dataType": "money"
+			},
+			{
+				"name": "@w_op_anterior",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_operacion",
+				"dataType": "int"
+			},
+			{
+				"name": "@w_ope_renovada",
+				"dataType": "money"
+			},
+			{
+				"name": "@w_monto_liq",
+				"dataType": "money"
+			},
+			{
+				"name": "@w_seguro_basico",
+				"dataType": "money"
+			},
+			{
+				"name": "@w_seguro_voluntario",
+				"dataType": "money"
+			},
+			{
+				"name": "@w_monto_entregar",
+				"dataType": "money"
+			},
+			{
+				"name": "@w_certificado",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_dir_sucursal",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_referencia",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_fec_impresion",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_referencia_2",
+				"dataType": "varchar"
+			},
+			{
+				"name": "@w_numero",
+				"dataType": "int"
+			},
+			{
+				"name": "@w_oficina_r",
+				"dataType": "smallint"
+			}
+		],
+		"queries": [
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select of_direccion\r\n                            from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select fu_nombre\r\n                            from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select p_p_apellido + ' ' + p_s_apellido + ' ' + en_nombre + ' ' + p_s_nombre\r\n                            from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select cp_descripcion\r\n                            from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select max(dm_secuencial) from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select mo_descripcion\r\n                            from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select convert(varchar,di_fecha_ven,103)\r\n                            from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select max(dm_secuencial)\r\n                         from"
+			},
+			{
+				"columns": [
+					"{0}"
+				],
+				"queryText": "select max(tr_secuencial)\r\n                  from"
+			},
+			{
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}",
+					"{22}",
+					"{23}",
+					"{24}",
+					"{25}",
+					"{26}",
+					"{27}"
+				],
+				"queryText": "select @w_fecha,\r\n       @w_oficina,\r\n       @w_cajero,\r\n       @w_modulo,\r\n       @w_nom_oficial,\r\n       @w_ente,\r\n       @w_nom_ente,\r\n       @w_op_banco,\r\n       @w_recibo,\r\n       @w_toperacion,\r\n       @w_fdesembolso,\r\n       @w_facreditar,\r\n       @w_moneda,\r\n       @w_monto,\r\n       @w_fecha_fin,\r\n       @w_fecha_ven,\r\n       @w_monto_cred,\r\n       isnull(@w_monto_liq,0),\r\n       isnull(@w_seguro_basico,0),\r\n       isnull(@w_seguro_voluntario,0),\r\n       @w_monto_entregar,\r\n       @w_certificado,\r\n       @w_dir_sucursal,\r\n       @w_referencia,\r\n       @w_toperacion,\r\n       @w_nom_ente,\r\n       @w_fec_impresion,\r\n       @w_referencia_2"
+			}
+		]
+	}
+}

@@ -1,0 +1,84 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_table_amortiza_web",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_opcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_historico"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "bc177048-56e5-40ef-807f-d62c6bf85f67",
+				"columns": [
+					"1",
+					"2"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "3c444663-4f2e-4099-8df1-6e43ab95bccf",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"21",
+					"22"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "55887d97-6ba0-4853-b5a5-0f4aca38ac71",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

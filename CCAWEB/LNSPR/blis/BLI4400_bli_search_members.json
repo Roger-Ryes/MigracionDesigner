@@ -1,0 +1,186 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21326"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_numero",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "cliente"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "moneda"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "CUSTOM",
+			"value": "tOperacion"
+		}
+	],
+	"name": "BLI_Search_Members",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4400_bli_search_members",
+	"patternName": "BLI_Search_Members",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "8f567195-a5de-458a-9124-18287bb5465c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 13,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "3458c3ea-c3c8-4b1d-a662-c07f38c6da78",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 14,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "3458c3ea-c3c8-4b1d-a662-c07f38c6da78",
+			"columns": [
+				{
+					"attributeId": "AT21_CODMEMEE620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_NAMEMEBB620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT24_CODMONYE620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT32_DESMONEE620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_APPROVED620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_USEDYNUD620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_AVAILALE620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_QUOTEWFC620",
+					"entityId": "EN_SUMMARYBB_620",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_SUMMARYBB_620",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "SummaryMembers"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_linea",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

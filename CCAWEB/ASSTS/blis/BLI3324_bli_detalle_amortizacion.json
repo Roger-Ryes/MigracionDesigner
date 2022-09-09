@@ -1,0 +1,255 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7015"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "L"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial_ing",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "CUSTOM",
+			"value": "tipoOperacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CUSTOM",
+			"value": "codMoneda"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_dividendo",
+			"type": "CUSTOM",
+			"value": "dividendo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_filial",
+			"type": "CUSTOM",
+			"value": "filial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_oficina",
+			"type": "CUSTOM",
+			"value": "oficina"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tramite",
+			"type": "CUSTOM",
+			"value": "tramite"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_sec_detpago",
+			"type": "CUSTOM",
+			"value": "secPago"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_Detalle_Amortizacion",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3324_bli_detalle_amortizacion",
+	"patternName": "BLI_Detalle_Amortizacion",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "d701bf0b-2a3a-4791-bb85-b67b4ffe3f54",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 4,
+			"queryName": "select op_tipo_cobro,\n          op_aceptar_anticipos,\n          op_tipo_reduccion,\n          op_tipo_aplicacion,\n          op_cuota_completa,\n          op_fecha_fin,\n          op_pago_caja,\n          op_calcula_devolucion\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "d701bf0b-2a3a-4791-bb85-b67b4ffe3f54",
+			"columns": [
+				{
+					"attributeId": "AT61_ITEMQDYX340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_STATUSEE340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT98_PERIODSM340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_QUOTEYPC340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{3}",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT92_GRACERVL340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{4}",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_PAIDVFCY340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{5}",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_ACCUMUAE340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{6}",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT56_SEQUENLI340",
+					"entityId": "EN_AMORTIZIQ_340",
+					"format": "",
+					"name": "{7}",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_AMORTIZIQ_340",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AmortizationQuoteDetail"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

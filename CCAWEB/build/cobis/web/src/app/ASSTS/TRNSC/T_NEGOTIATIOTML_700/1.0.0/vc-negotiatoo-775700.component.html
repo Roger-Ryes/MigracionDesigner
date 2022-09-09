@@ -1,0 +1,28 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-negotiatiotml-700 " [formGroup]="vc.viewState.T_NEGOTIATIOTML_700"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_NEGOTIATOO_775700.enabled, 'VC_NEGOTIATOO_775700')" [properties]="vc.viewState.VC_NEGOTIATOO_775700" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_NEGOTIADTM_913225.enabled, 'G_NEGOTIADTM_913225', 'VC_NEGOTIATOO_775700', 'Negotiation',vc.viewState.T_NEGOTIATIOTML_700)" *ngIf="isVisible('G_NEGOTIADTM_913225',true)" [properties]="vc.viewState.G_NEGOTIADTM_913225" [mode]="vc.mode" formGroupName="Negotiation"> 
+       <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_TEXTINPUTBOXHOE_149225.enabled, 'VA_TEXTINPUTBOXHOE_149225', 'G_NEGOTIADTM_913225', 'Negotiation.paymentType',vc.viewState.T_NEGOTIATIOTML_700)" *ngIf="isVisible('VA_TEXTINPUTBOXHOE_149225')" [properties]="vc.viewState.VA_TEXTINPUTBOXHOE_149225" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_TEXTINPUTBOXHOE_149225" formControlName="paymentType"></cobis-radiobuttonlist> 
+       <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_TEXTINPUTBOXNOR_530225.enabled, 'VA_TEXTINPUTBOXNOR_530225', 'G_NEGOTIADTM_913225', 'Negotiation.interestType',vc.viewState.T_NEGOTIATIOTML_700)" *ngIf="isVisible('VA_TEXTINPUTBOXNOR_530225')" [properties]="vc.viewState.VA_TEXTINPUTBOXNOR_530225" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_TEXTINPUTBOXNOR_530225" formControlName="interestType"></cobis-radiobuttonlist> 
+       <cobis-checkbox [attr.disabled]="isDisabled( vc.viewState.VA_CHECKBOXMVFTHFB_720225.enabled, 'VA_CHECKBOXMVFTHFB_720225', 'G_NEGOTIADTM_913225', 'Negotiation.fullFee',vc.viewState.T_NEGOTIATIOTML_700)" *ngIf="isVisible('VA_CHECKBOXMVFTHFB_720225')" [properties]="vc.viewState.VA_CHECKBOXMVFTHFB_720225" [mode]="vc.mode" formControlName="fullFee"></cobis-checkbox>
+       <cobis-checkbox [attr.disabled]="isDisabled( vc.viewState.VA_TEXTINPUTBOXAPF_912225.enabled, 'VA_TEXTINPUTBOXAPF_912225', 'G_NEGOTIADTM_913225', 'Negotiation.additionalPayments',vc.viewState.T_NEGOTIATIOTML_700)" *ngIf="isVisible('VA_TEXTINPUTBOXAPF_912225')" [properties]="vc.viewState.VA_TEXTINPUTBOXAPF_912225" [mode]="vc.mode" formControlName="additionalPayments" (onChange)="change($event,'VA_TEXTINPUTBOXAPF_912225')"></cobis-checkbox> 
+       <cobis-spacer *ngIf="isVisible('Spacer2984')" [properties]="vc.viewState.Spacer2984"></cobis-spacer>
+       <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_5608AAOSYWATGEZ_226225.enabled, 'VA_5608AAOSYWATGEZ_226225', 'G_NEGOTIADTM_913225', 'Negotiation.reductionType',vc.viewState.T_NEGOTIATIOTML_700)" *ngIf="isVisible('VA_5608AAOSYWATGEZ_226225')" [properties]="vc.viewState.VA_5608AAOSYWATGEZ_226225" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_5608AAOSYWATGEZ_226225" formControlName="reductionType"></cobis-radiobuttonlist> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TNEGOTIA_2A4.enabled,'CM_TNEGOTIA_2A4')" *ngIf="isVisible('CM_TNEGOTIA_2A4')" [properties]="vc.viewState.CM_TNEGOTIA_2A4" [mode]="vc.mode" (onClick)="executeCommand('CM_TNEGOTIA_2A4',vc.viewState.CM_TNEGOTIA_2A4.name,vc.viewState.CM_TNEGOTIA_2A4.causesValidation,vc.viewState.CM_TNEGOTIA_2A4.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TNEGOTIA_6T_.enabled,'CM_TNEGOTIA_6T_')" *ngIf="isVisible('CM_TNEGOTIA_6T_')" [properties]="vc.viewState.CM_TNEGOTIA_6T_" [mode]="vc.mode" (onClick)="executeCommand('CM_TNEGOTIA_6T_',vc.viewState.CM_TNEGOTIA_6T_.name,vc.viewState.CM_TNEGOTIA_6T_.causesValidation,vc.viewState.CM_TNEGOTIA_6T_.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

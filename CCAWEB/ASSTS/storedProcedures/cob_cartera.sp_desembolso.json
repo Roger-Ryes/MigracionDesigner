@@ -1,0 +1,386 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_desembolso",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco_real"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco_ficticio"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_originador"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_desembolso"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_oficina_chg"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_beneficiario"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_ds"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_monto_ds_dec"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_moneda_ds"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_cotiz_ds"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tcotiz_ds"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda_op"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_cotiz_op"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tcotiz_op"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_pasar_tmp"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_consulta"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_capitalizacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion_ach"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_nom_producto"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cod_banco_ach"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desde_cre"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cheque"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_prenotificacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_carga"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_liq"
+			},
+			{
+				"dataType": "char",
+				"direction": "out",
+				"name": "@o_respuesta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ente_benef"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_idlote"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_renovaciones"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_origen"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_crea_ext"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cruce_restrictivo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_destino_economico"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_carta_autorizacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_calcular_gmf"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_grupal"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_grupo_id"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_desembolso"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_regenera_rubro"
+			},
+			{
+				"dataType": "money",
+				"direction": "out",
+				"name": "@o_anticipado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_msg_msv"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "edf68555-7d0c-4c4a-b0ff-58edc8822868",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"21",
+					"22"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "b371c330-9c5f-415b-8afd-cc77aa3b3d7e",
+				"columns": [
+					"1",
+					"2",
+					"3"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "c916d571-70aa-4c8f-ace4-1dfbf4f776a4",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

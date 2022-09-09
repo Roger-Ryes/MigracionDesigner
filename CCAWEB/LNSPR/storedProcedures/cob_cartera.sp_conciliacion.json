@@ -1,0 +1,342 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_conciliacion",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_fpago"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_registro"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_codigo_canal"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_num_suministro"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_registros"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_terminal"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_deuda"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_comision"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_otros"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_total"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_num_tran_gkn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_concil"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_blancos"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_factura"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_codigo_empresa"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_codigo_servicio"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_archivo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_conciliacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_ultimo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_conciliacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "out",
+				"name": "@o_valido"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_comentario"
+			},
+			{
+				"dataType": "char",
+				"direction": "out",
+				"name": "@o_valido_cab"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_comentario_cab"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "984789d0-b075-435e-a753-715d4b975ed7",
+				"columns": [
+					"TipoRegistro",
+					"Valido",
+					"Comentario"
+				],
+				"editMode": false,
+				"queryText": "select\r\n   \u0027TipoRegistro\u0027 = co_tipo_registro,\r\n   \u0027Valido\u0027       = co_valido,\r\n   \u0027Comentario\u0027   = co_comentario\r\n   from"
+			},
+			{
+				"_idQuery": "58f7c6fe-6ad3-4062-924b-e9dacaca898d",
+				"columns": [
+					"TipoRegistro",
+					"Operacion",
+					"Factura",
+					"Valido",
+					"Comentario",
+					"Secuencial"
+				],
+				"editMode": false,
+				"queryText": "select\r\n   \u0027TipoRegistro\u0027 = cd_tipo_registro,\r\n   \u0027Operacion\u0027    = cd_banco,\r\n   \u0027Factura\u0027      = cd_factura,\r\n   \u0027Valido\u0027       = cd_valido,\r\n   \u0027Comentario\u0027   = cd_comentario,\r\n   \u0027Secuencial\u0027   = cd_secuencial\r\n   from"
+			},
+			{
+				"_idQuery": "2d8e936f-8c6d-4a55-8257-f9c5cc0a6bb0",
+				"columns": [
+					"IdConciliacion"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "2532db46-4805-455d-9e2d-cf3383f5a1eb",
+				"columns": [
+					"TipoRegistro",
+					"CodigoCanal",
+					"FechaProceso",
+					"Registros",
+					"TotalDeuda",
+					"TotalComision",
+					"TotalAdicionales",
+					"TotalMontos",
+					"TipoConciliacion",
+					"Blancos",
+					"Valido",
+					"Comentario"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "52ab6679-f77d-407b-81dd-632befbb8e20",
+				"columns": [
+					"TipoRegistro",
+					"Suministro",
+					"FechaPago",
+					"Terminal",
+					"MontoDeuda",
+					"MontoComision",
+					"MontoAdicionales",
+					"Total",
+					"NumeroTranGKN",
+					"Operacion",
+					"Factura",
+					"CodigoEmpresa",
+					"CodigoServicio",
+					"Valido",
+					"Comentario",
+					"Secuencial"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "0ed2fae9-3001-43dd-9ee6-30b29fcebf31",
+				"columns": [
+					"Conciliacion",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_comision_apl"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_comision_cab"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_error"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_deuda_apl"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_deuda_cab"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_otros_apl"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_otros_cab"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_registros_cab"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_registros"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_apl"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_cab"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_transaccion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_valido"
+			}
+		]
+	}
+}

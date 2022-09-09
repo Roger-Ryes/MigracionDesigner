@@ -1,0 +1,101 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_crea_reestructura",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesA"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesB"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesC"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacionesD"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_saldo_reest"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_debug"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_reest"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+		],
+		"type": "SYBASE"
+	}
+}

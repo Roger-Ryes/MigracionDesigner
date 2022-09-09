@@ -1,0 +1,97 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_PRODUCTII_203",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ProductLineDistribution"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21026"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "N"
+		},
+		{
+			"attributeId": "AT28_SEQUENTT203",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_PRODUCTII_203",
+			"format": "",
+			"name": "@i_numero",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_Search_Line_Nature",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2812_bli_search_line_nature",
+	"patternName": "BLI_Search_Line_Nature",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "8bdb3745-ceb6-4063-81a8-29b4b37065fd",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 2,
+			"queryName": "SELECT mo_descripcion FROM"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "8bdb3745-ceb6-4063-81a8-29b4b37065fd",
+			"columns": [
+				{
+					"attributeId": "AT77_NATURERU203",
+					"entityId": "EN_PRODUCTII_203",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PRODUCTII_203",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ProductLineDistribution"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_linea",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

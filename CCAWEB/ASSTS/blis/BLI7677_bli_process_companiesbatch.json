@@ -1,0 +1,126 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_COMPANIDS_402",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesBatch"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77588"
+		},
+		{
+			"attributeId": "AT34_DESCRITT402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_descripcion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT71_COMPANYY402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_institucion",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT27_SEQUENLI402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@i_lote",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "P"
+		}
+	],
+	"name": "BLI_Process_CompaniesBatch",
+	"outputEntity": [
+		{
+			"entityId": "EN_COMPANIDS_402",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesBatch"
+		}
+	],
+	"outputParameters": [
+		{
+			"attributeId": "AT48_STATUSHT402",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_estado",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT60_STATUSNE402",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "EN_COMPANIDS_402",
+			"format": "",
+			"name": "@o_estado_name",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"patternId": "BLI7677_bli_process_companiesbatch",
+	"patternName": "BLI_Process_CompaniesBatch",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_COMPANILF_154",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "CompaniesDiscountsFileList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_descuento_institucion_lote",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

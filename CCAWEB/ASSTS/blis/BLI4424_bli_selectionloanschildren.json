@@ -1,0 +1,228 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7015"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "loanBankID"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		}
+	],
+	"name": "BLI_SelectionLoansChildren",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4424_bli_selectionloanschildren",
+	"patternName": "BLI_SelectionLoansChildren",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "7fd22524-4cc2-4a1d-896d-dc4b6c6c45c4",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 26,
+			"queryName": "SELECT\n   \u0027Lin.Cr\u00e9dito    \u0027  = substring(a.op_toperacion,1,30),\n   \u0027Moneda\u0027            = a.op_moneda,\n   \u0027No.Operaci\u00f3n\u0027     = a.op_banco,\n   \u0027Monto Operaci\u00f3n\u0027  = convert(float, a.op_monto),\n   \u0027Cliente\u0027           = substring(a.op_nombre,1,30),\n   \u0027Desembolso\u0027        = convert(varchar(16),a.op_fecha_ini, 101),\n   \u0027Vencimiento\u0027       = convert(varchar(10),a.op_fecha_fin, 101),\n   \u0027Reg/Oficial\u0027       = a.op_oficial,\n   \u0027Oficina\u0027           = a.op_oficina,\n   \u0027Cup.Cr\u00e9dito\u0027      = a.op_lin_credito,\n   \u0027Op.Migrada\u0027        = substring(a.op_migrada,1,20),\n   \u0027Op.Anterior\u0027       = substring(a.op_anterior,1,20),\n   \u0027Estado\u0027            = substring(b.es_descripcion,1,20),\n   \u0027Tr\u00e1mite\u0027          = convert(varchar(13),a.op_tramite),\n   \u0027Cod.Cli\u0027           = a.op_cliente,\n   \u0027Secuencial\u0027        = a.op_operacion,\n   \u0027Reaj.Especial\u0027     = a.op_reajuste_especial,\n   \u0027Ref.Redescont\u0027     = a.op_nro_red,\n   \u0027Clase Oper.\u0027       = a.op_tipo,\n   \u0027Grupal\u0027            = \u0027\u0027,\n   \u0027Categoria\u0027         = \u0027\u0027\nFROM"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "7fd22524-4cc2-4a1d-896d-dc4b6c6c45c4",
+			"columns": [
+				{
+					"attributeId": "AT93_DESOPEAO908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Lin.Cr\u00e9dito",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT81_CODCURER908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Moneda",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT22_LOANBANN908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "No.Operaci\u00f3n",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_AMOUNTFE908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Monto Operaci\u00f3n",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_CLIENTEA908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Cliente",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT14_DISBURET908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "dd/MM/yyyy",
+					"name": "Desembolso",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_EXPIRAON908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "dd/MM/yyyy",
+					"name": "Vencimiento",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT64_OFFICERR908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Reg/Oficial",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT37_OFFICEDI908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Oficina",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT31_PREVIOOU908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Op.Anterior",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_DESSTATU908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Estado",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT50_NUMPRORR908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Tr\u00e1mite",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_CLIENTDD908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Cod.Cli",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT64_LOANIDUH908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Secuencial",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_ADJUSTEE908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Reaj.Especial",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_REDESCTO908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Ref.Redescont",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_OPERATDI908",
+					"entityId": "EN_LOANCHINR_908",
+					"format": "",
+					"name": "Clase Oper.",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANCHINR_908",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanChildren"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_SUMMUSYU_GO80",
+		"controlName": "SummaryStatusQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_SUMMUSYU_GO80.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "SummaryStatus",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_HQ80_NZX99",
+		"controlName": "QV_HQ80_NZX99",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "SummaryStatus",
+		"eventsType": "queryViewEventType"
+	}
+]

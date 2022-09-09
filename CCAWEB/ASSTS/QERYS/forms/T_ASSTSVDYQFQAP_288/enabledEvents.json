@@ -1,0 +1,18 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANNRCH_EQ75",
+		"controlName": "LoanChildrenQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_LOANNRCH_EQ75.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoanChildren",
+		"eventsType": "queryEventType"
+	}
+]

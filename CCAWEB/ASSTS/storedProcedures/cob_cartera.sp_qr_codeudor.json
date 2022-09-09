@@ -1,0 +1,134 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_qr_codeudor.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_codeudor",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_numero"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_accion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "b0d93ef8-007b-45d3-bf9b-97300e5e9fe0",
+				"columns": [
+					"Rol",
+					"Nombre",
+					"Cliente"
+				],
+				"editMode": true,
+				"queryText": "select \"Rol\" = \"D\", \"Nombre\" = @w_op_nombre, \"Cliente\" = @w_op_cliente"
+			},
+			{
+				"_idQuery": "edafd3ca-de60-43cf-9e70-ec541e755b72",
+				"columns": [
+					"Rol",
+					"Nombre",
+					"Cedula/RUC",
+					"Codigo",
+					"Calificacion",
+					"Tipo Vinculacion",
+					"Descripcion"
+				],
+				"editMode": true,
+				"queryText": "select \"Rol\" = cl_rol,\n             \"Nombre\" = rtrim(p_p_apellido) + \" \" +\n                        rtrim(p_s_apellido) + \" \" +\n                        substring(rtrim(en_nombre), 1, 30),\n             \"Cedula/RUC\" = substring(cl_ced_ruc, 1, 12),\n             \"Codigo\" = cl_cliente,\n             \"Calificacion\" = en_calificacion,\n             \"Tipo Vinculacion\" = en_tipo_vinculacion,\n             \"Descripcion\" = valor\n      from"
+			},
+			{
+				"_idQuery": "8edb15b7-c7d4-4cf4-8c7b-0f259a8b8de4",
+				"columns": [
+					"Rol",
+					"Nombre",
+					"Cedula/RUC",
+					"Codigo"
+				],
+				"editMode": true,
+				"queryText": "select \"Rol\" = de_rol,\n             \"Nombre\" = rtrim(p_p_apellido) + \" \" +\n                        rtrim(p_s_apellido) + \" \" + rtrim(en_nombre),\n             \"Cedula/RUC\" = de_ced_ruc,\n             \"Codigo\" = de_cliente\n      from"
+			},
+			{
+				"_idQuery": "43405094-4f4a-4ac3-9c99-fc9114828ebe",
+				"columns": [
+					"Codigo",
+					"Nombre",
+					"Telefono",
+					"Direccion"
+				],
+				"editMode": true,
+				"queryText": "select \"Codigo\" = cl_cliente, \"Nombre\" = rtrim(p_p_apellido) + \" \" + rtrim(p_s_apellido) + \" \"\n                                                 + rtrim(en_nombre), \"Telefono\" = te_valor, \"Direccion\" = di_descripcion\n      from"
+			},
+			{
+				"_idQuery": "887c5f3b-a8f5-492e-a4c1-ebf4c6f1fd41",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_det_producto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_op_cliente"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_op_nombre"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			}
+		]
+	}
+}

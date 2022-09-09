@@ -1,0 +1,165 @@
+{
+	"filename": "C:\\Users\\jgomez.COBISCORP\\Downloads\\SPS\\sp_pagos_noaplicados.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_pagos_noaplicados",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial_ing"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_en_linea"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+		],
+		"variables": [
+			{
+				"dataType": "char",
+				"name": "@w_ab_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_base_calculo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_causacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_concepto_int"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cotizacion_hoy"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dias_anio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_pago"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_gar_admisible"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_nacional"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficina"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_op_tipo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_periodicidad"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_int"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial_pag"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			}
+		]
+	}
+}

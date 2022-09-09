@@ -1,0 +1,188 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_valor",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipoh"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_find_pit"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_puntos"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_num_dec"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tasa_pit"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_clase"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo_default"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor_default"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo_maximo"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor_maximo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_signo_minimo"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor_minimo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_referencia"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_sector"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_opcion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_rubro"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_rowcount"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "c872b8c8-db91-420a-ab8d-4cb081f13106",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "be61faa9-4845-4f37-a3f6-b18b883ebb7c",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "b29cc53e-68a9-473b-8338-16893baa8ae1",
+				"columns": [
+					"Identificador",
+					"Descripcion",
+					"Clase",
+					"Tasa PIT"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

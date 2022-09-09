@@ -1,0 +1,516 @@
+{
+	"Entities": {
+		"EN_11DQLOHQU_562": {
+			"name": "Entity11"
+		},
+		"EN_16QOLIKHU_146": {
+			"name": "Entity16"
+		},
+		"EN_AMORTIZAI_LNSPR": {
+			"name": "AmortizationTitleEntity"
+		},
+		"EN_AMORTIZON_LNSPR": {
+			"name": "AmortizationFormEntity"
+		},
+		"EN_AMORTIZRM_749": {
+			"name": "AmortizationManualRequest"
+		},
+		"EN_AMORTIZTT_LNSPR": {
+			"name": "AmortizationEntity"
+		},
+		"EN_AMORTSIUT_108": {
+			"name": "AmortSimulation"
+		},
+		"EN_APAGOCIPF_458": {
+			"name": "FormaPago"
+		},
+		"EN_CATALOGDC_502": {
+			"name": "CatalogEntity"
+		},
+		"EN_CATALOGIS_LNSPR": {
+			"name": "Catalog3Items"
+		},
+		"EN_CONCEPTOO_542": {
+			"name": "Concepto"
+		},
+		"EN_CONCEPTTE_520": {
+			"name": "ConceptItems"
+		},
+		"EN_CONCILIIN_177": {
+			"name": "ConciliationsList"
+		},
+		"EN_CREATEOAA_LNSPR": {
+			"name": "CreateOperationThree"
+		},
+		"EN_CREATEOAE_LNSPR": {
+			"name": "CreateOperationFour"
+		},
+		"EN_CREATEOEO_LNSPR": {
+			"name": "CreateOperationTwo"
+		},
+		"EN_CREATEOHE_LNSPR": {
+			"name": "CreateOperationEigth"
+		},
+		"EN_CREATEONE_LNSPR": {
+			"name": "CreateOperationSeven"
+		},
+		"EN_CREATEOPN_LNSPR": {
+			"name": "CreateOperationOne"
+		},
+		"EN_CREATEORR_LNSPR": {
+			"name": "CreateOperationSix"
+		},
+		"EN_CREATEOTV_LNSPR": {
+			"name": "CreateOperationFive"
+		},
+		"EN_CREDITHAE_597": {
+			"name": "CreditHeader"
+		},
+		"EN_CUSTOMERR_876": {
+			"name": "CustomerEntity"
+		},
+		"EN_DEBTORLIS_380": {
+			"name": "DebtorList"
+		},
+		"EN_DEBTORRTO_LNSPR": {
+			"name": "DebtorReportedEntity"
+		},
+		"EN_DEBTORVWG_LNSPR": {
+			"name": "DebtorEntity"
+		},
+		"EN_ERRORMASI_217": {
+			"name": "ErrorMassivePayments"
+		},
+		"EN_GENERALAT_LNSPR": {
+			"name": "GeneralOperationParameters"
+		},
+		"EN_GENERALIN_300": {
+			"name": "GeneralInformation"
+		},
+		"EN_GENERALRE_262": {
+			"name": "GeneralParametersQuery"
+		},
+		"EN_GENERICSZ_LNSPR": {
+			"name": "GenericEntity"
+		},
+		"EN_GROUPMENS_931": {
+			"name": "GroupMembersLineList"
+		},
+		"EN_GROUPOPAR_LNSPR": {
+			"name": "GroupOperationEntity"
+		},
+		"EN_GUARANTIA_165": {
+			"name": "GuaranteesLineApplied"
+		},
+		"EN_INGOTRCSA_LNSPR": {
+			"name": "OtherCharges"
+		},
+		"EN_ITEMDNXXM_LNSPR": {
+			"name": "ItemEntity"
+		},
+		"EN_ITEMVALSE_995": {
+			"name": "ItemValues"
+		},
+		"EN_LINEDISTU_478": {
+			"name": "LineDistribution"
+		},
+		"EN_LINEDISUS_663": {
+			"name": "LineDistributionMembers"
+		},
+		"EN_LINEGUAAE_244": {
+			"name": "LineGuaranteesAssociatedList"
+		},
+		"EN_LINEGUARS_326": {
+			"name": "LineGuaranteesList"
+		},
+		"EN_LOANLINCT_267": {
+			"name": "LoanLinesCreation"
+		},
+		"EN_LOANLISTT_467": {
+			"name": "LoanList"
+		},
+		"EN_LOANSALAD_395": {
+			"name": "LoanSaleDetailList"
+		},
+		"EN_LOANSALDH_189": {
+			"name": "LoanSaleList"
+		},
+		"EN_LOANSALRE_860": {
+			"name": "LoanSaleFilter"
+		},
+		"EN_LOANSEATF_633": {
+			"name": "LoanSearchFilter"
+		},
+		"EN_LOANSLIDE_580": {
+			"name": "LoansLinesHeader"
+		},
+		"EN_LOANSLIES_LNSPR": {
+			"name": "LoansLines"
+		},
+		"EN_LOANSLIGN_522": {
+			"name": "LoansLineGuarantee"
+		},
+		"EN_LOANSLIST_205": {
+			"name": "LoansLinesList"
+		},
+		"EN_LOANSLITT_661": {
+			"name": "LoansLinesList"
+		},
+		"EN_LOCATIONN_235": {
+			"name": "Location"
+		},
+		"EN_MASSIVECC_834": {
+			"name": "MassiveCommissions"
+		},
+		"EN_MASSIVEKM_279": {
+			"name": "MassiveCommissionsMistakes"
+		},
+                "EN_MASSIVEYM_999": {
+			"name": "MassivePayments"
+		},
+		"EN_MEMBERDEL_536": {
+			"name": "MemberDetail"
+		},
+		"EN_MEMBERSLV_216": {
+			"name": "Members"
+		},
+		"EN_MODALREEA_674": {
+			"name": "ModalReferentialEntity"
+		},
+		"EN_MODALTASS_500": {
+			"name": "ModalTasaEntity"
+		},
+		"EN_OFFICALSO_243": {
+			"name": "OfficialOfficeTransferList"
+		},
+		"EN_OFFICIAEF_453": {
+			"name": "OfficialOfficeTransferFilter"
+		},
+		"EN_OFFICIALL_431": {
+			"name": "Official"
+		},
+		"EN_OPERATIAR_LNSPR": {
+			"name": "OperationGeneralParametersEntity"
+		},
+		"EN_OPERATIEL_780": {
+			"name": "OperationTypeLineList"
+		},
+		"EN_OPERATINN_LNSPR": {
+			"name": "OperationEntity"
+		},
+		"EN_OPERATIRD_LNSPR": {
+			"name": "OperationCRUDFormEntity"
+		},
+		"EN_OPERATITT_499": {
+			"name": "OperationItemsList"
+		},
+		"EN_PAYMENTCI_361": {
+			"name": "PaymentConciliationDetailList"
+		},
+		"EN_PAYMENTDM_324": {
+			"name": "PaymentMethodsList"
+		},
+		"EN_PAYMENTEO_200": {
+			"name": "PaymentMethod"
+		},
+		"EN_PAYMENTIC_709": {
+			"name": "PaymentConciliationHeader"
+		},
+		"EN_PAYMENTLI_612": {
+			"name": "PaymentAutomaticList"
+		},
+		"EN_PAYMENTOI_386": {
+			"name": "PaymentConciliation"
+		},
+		"EN_PAYMENTOM_408": {
+			"name": "PaymentAutomatic"
+		},
+		"EN_PAYMENTZY_LNSPR": {
+			"name": "Payment"
+		},
+		"EN_PRODUCTGG_589": {
+			"name": "ProductoFormaPago"
+		},
+		"EN_PRODUCTIE_675": {
+			"name": "ProductLineDistributionList"
+		},
+		"EN_PRODUCTII_203": {
+			"name": "ProductLineDistribution"
+		},
+		"EN_PRODUCTNN_604": {
+			"name": "ProductLineList"
+		},
+		"EN_READJUSNN_654": {
+			"name": "ReadjustmenMList"
+		},
+		"EN_READJUSTC_965": {
+			"name": "ReadjustConcat"
+		},
+		"EN_READJUSTE_859": {
+			"name": "ReadjustmentMEntity"
+		},
+		"EN_REFERENTL_754": {
+			"name": "ReferentialItems"
+		},
+		"EN_REPORTALL_977": {
+			"name": "EntityReportAll"
+		},
+		"EN_RUBROMIHK_919": {
+			"name": "Rubro"
+		},
+		"EN_SEARCHGNT_461": {
+			"name": "SearchGuaranteesLine"
+		},
+		"EN_STATESAEO_310": {
+			"name": "StatesAssetsLoan"
+		},
+		"EN_STATUSLII_845": {
+			"name": "StatusList"
+		},
+		"EN_SUBSECTIA_632": {
+			"name": "SubsectorActivity"
+		},
+		"EN_SUMMARYBB_620": {
+			"name": "SummaryMembers"
+		},
+		"EN_SUMMARYTU_369": {
+			"name": "SummaryStatus"
+		},
+		"EN_SYNDICASL_725": {
+			"name": "SyndicatedList"
+		},
+		"EN_VALIDATOE_493": {
+			"name": "ValidationProcedure"
+		},
+		"EN_VALIDATON_825": {
+			"name": "ValidationGroup"
+		}
+	},
+	"OPRTN": {
+		"CompositeForms": {
+			"T_LNSPRMBVLAOGA_193": {
+				"name": "LoansCreateForm"
+			},
+			"T_LNSPRTZAAOTEC_626": {
+				"name": "LoansSimulationForm"
+			},
+			"T_LNSPRVJAKOEIC_908": {
+				"name": "LoansUpdateForm"
+			},
+			"T_LNSPRYTTPAWOT_832": {
+				"name": "PassivePortfolioCreation"
+			}
+		},
+		"Forms": {
+			"T_LNSPRACJAQDUP_527": {
+				"name": "PaymentAutomaticCreateForm"
+			},
+			"T_LNSPRASFFUCSU_551": {
+				"name": "CurrentStatusLineForm"
+			},
+			"T_LNSPRBYPIFLBG_956": {
+				"name": "PassivePortfolioCreation"
+			},
+			"T_LNSPRDNBKFOTI_411": {
+				"name": "StatusChangeMassiveForm"
+			},
+			"T_LNSPRDTSDFSKQ_539": {
+				"name": "OperationForm"
+			},
+			"T_LNSPREHKSWWGN_923": {
+				"name": "MembersLineForm"
+			},
+			"T_LNSPRFYCKEVVP_737": {
+				"name": "LoansLines"
+			},
+			"T_LNSPRGNPCEXYE_633": {
+				"name": "OperationPaymentDayUpdateForm"
+			},
+			"T_LNSPRHWGYLNWJ_330": {
+				"name": "OperationItems"
+			},
+			"T_LNSPRHZIKGUNT_664": {
+				"name": "AccountsOperation"
+			},
+			"T_LNSPRIIYONZUA_572": {
+				"name": "LoanSaleForm"
+			},
+			"T_LNSPRJXWYQVOK_830": {
+				"name": "ModalOperationItems"
+			},
+			"T_LNSPRKEGMFGIE_785": {
+				"name": "OperationGeneralParametersForm"
+			},
+			"T_LNSPRKWSPLJPI_575": {
+				"name": "ProjectOtherCharges"
+			},
+			"T_LNSPRMFFWJGJE_921": {
+				"name": "LoanSearchForm"
+			},
+			"T_LNSPRNBKRHAIB_194": {
+				"name": "LoansDistributionMembers"
+			},
+			"T_LNSPRNRRVDNTA_721": {
+				"name": "GeneralInformationLine"
+			},
+			"T_LNSPRQGEMJIOM_705": {
+				"name": "LoansLineGuaranteesForm"
+			},
+			"T_LNSPRRLRKZDAH_793": {
+				"name": "LoanLinesCreate"
+			},
+			"T_LNSPRSBSNRATX_181": {
+				"name": "ProductLineDistributionForm"
+			},
+			"T_LNSPRSCSIDSOD_858": {
+				"name": "SyndicatedListForm"
+			},
+			"T_LNSPRSHDBNXGH_268": {
+				"name": "LoansOperationUpdate"
+			},
+			"T_LNSPRSZYOCYQK_511": {
+				"name": "LoanSaleDetailForm"
+			},
+			"T_LNSPRUJMIKLPE_451": {
+				"name": "AdvancedSearchLoansForm"
+			},
+			"T_LNSPRUPDQTUXI_446": {
+				"name": "ModalReferentialForm"
+			},
+			"T_LNSPRWENJKGKJ_579": {
+				"name": "LoanDebtorListForm"
+			},
+                        "T_LNSPRWQVPGSSG_618": {
+				"name": "BatchMassivePaymentsForm"
+			},
+			"T_LNSPRXLZJGUMH_556": {
+				"name": "LoanLineCreation"
+			},
+			"T_LNSPRXNWEODPH_423": {
+				"name": "OfficialOfficeTransferForm"
+			},
+			"T_LNSPRZYRPKNSX_507": {
+				"name": "PaymentsForm"
+			}
+		},
+		"Queries": {
+			"Q_AMORTITI_LNSPR": {
+				"name": "AmortizationEntityQuery"
+			},
+			"Q_APAGOOOO_YV30": {
+				"name": "FormaPagoQuery"
+			},
+			"Q_CATALGSE_LNSPR": {
+				"name": "Catalog3ItemsQuery"
+			},
+			"Q_CONCIIIS_FQ49": {
+				"name": "ConciliationsListQuery"
+			},
+			"Q_CONCPPTM_GI69": {
+				"name": "ConceptItemsQuery"
+			},
+			"Q_DEBTORZN_LNSPR": {
+				"name": "DebtorEntityQuery"
+			},
+			"Q_DEBTSOLR_XT44": {
+				"name": "DebtorListQuery"
+			},
+			"Q_GROUEIRS_WN63": {
+				"name": "GroupMembersLineListQuery"
+			},
+			"Q_LINEIERT_DW35": {
+				"name": "LineDistributionMembersQuery"
+			},
+			"Q_LINELAAN_WU84": {
+				"name": "LineGuaranteesAssociatedListQuery"
+			},
+			"Q_LINERLAR_KA20": {
+				"name": "LineGuaranteesListQuery"
+			},
+			"Q_LOANAELE_GZ51": {
+				"name": "LoanSaleListQuery"
+			},
+			"Q_LOANELLL_AR48": {
+				"name": "LoanSaleDetailListQuery"
+			},
+			"Q_LOANSILT_NX50": {
+				"name": "LoanListQuery"
+			},
+			"Q_LOANSISS_EV86": {
+				"name": "LoansLinesListQuery"
+			},
+			"Q_MASSSCEE_GY13": {
+				"name": "MassiveCommissionsMistakesQuery"
+			},
+			"Q_MASSSEOO_AX15": {
+				"name": "MassiveCommissionsQuery"
+			},
+			"Q_MEMBEESE_CY90": {
+				"name": "MembersQuery"
+			},
+                 	"Q_MASSTENM_SJ71": {
+				"name": "MassivePaymentsQuery"
+			},
+			"Q_MEMBIAAA_BE92": {
+				"name": "MemberDetailQuery"
+			},
+			"Q_MODAALAS_TP83": {
+				"name": "ModalTasaEntityQuery"
+			},
+			"Q_OFFILILC_KJ11": {
+				"name": "OfficialQuery"
+			},
+			"Q_OFFILLLL_SV56": {
+				"name": "OfficalOfficeTransferListQuery"
+			},
+			"Q_OPEREEOA_SH40": {
+				"name": "OperationTypeLineListQuery"
+			},
+			"Q_OPERLSST_KU21": {
+				"name": "OperationItemsListQuery"
+			},
+			"Q_PAYMANAM_TY74": {
+				"name": "PaymentAutomaticListQuery"
+			},
+			"Q_PAYMRENL_JE45": {
+				"name": "PaymentConciliationHeaderQuery"
+			},
+			"Q_PAYMSSIL_RR14": {
+				"name": "PaymentMethodsListQuery"
+			},
+			"Q_PAYMTTCL_IB70": {
+				"name": "PaymentConciliationDetailListQuery"
+			},
+			"Q_PRODLUDT_UJ17": {
+				"name": "ProductLineDistributionListQuery"
+			},
+			"Q_PRODTSNI_WK98": {
+				"name": "ProductLineListQuery"
+			},
+			"Q_READJUSM_7240": {
+				"name": "ReadjustmenMListQuery"
+			},
+			"Q_REFEEAML_BR93": {
+				"name": "ReferentialItemsQuery"
+			},
+			"Q_STATSTSS_LA52": {
+				"name": "StatusListQuery"
+			},
+			"Q_STATSTTL_MS41": {
+				"name": "StatusListQueryMassive"
+			},
+			"Q_SUMMESYE_DM68": {
+				"name": "SummaryMembersQuery"
+			},
+			"Q_SUMMUSYU_GO80": {
+				"name": "SummaryStatusQuery"
+			},
+			"Q_SYNDATCT_WX29": {
+				"name": "SyndicatedListQuery"
+			},
+			"Q_SYNDCEAL_LH97": {
+				"name": "SyndicatedListDefinitiveQuery"
+			}
+		}
+	}
+}

@@ -1,0 +1,269 @@
+{
+	"filename": "D:\\Instaladores\\Designer\\FromSpToJsonConverter\\sp\\repcarciere.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_rep_caratula_cierre",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_corr"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn_corr"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "bit",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nemonico"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "9dbfeae2-4e65-4a22-8f2f-8d15b6af3f1b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select pa_tinyint\r\n      from"
+			},
+			{
+				"_idQuery": "abbaa111-9cba-4dd3-b990-5e3153e3b6e3",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      @w_op_banco  ,    @w_tipo_oper  ,   @w_nivel     ,    @w_fecha_ini   ,  @w_periodo  ,\r\n      @w_plazo    ,     @w_monto_bruto,   @w_monto_cred,    @w_monto_dep,     @w_porc_finan ,\r\n      @w_es_refinan,    @w_id_grupo  ,    @w_nom_grupo    , @w_nom_filial ,   @w_nom_oficial,\r\n      @w_nom_oficina,   @w_lug_desem ,    @w_simb_moneda"
+			},
+			{
+				"_idQuery": "dc283b1c-0178-4bea-b2d7-b6be3b86e834",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @w_op_banco"
+			},
+			{
+				"_idQuery": "58e47c87-0d2d-40ac-a249-91f301165736",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}"
+				],
+				"editMode": false,
+				"queryText": "select op_banco_padre, op_operacion, op_cliente,\r\n          op_nombre, op_monto, op_porcentaje, op_rol,\r\n          so_monto_seg_ba, so_monto_seg_vo,so_monto_total,\r\n          op_smb_moneda\r\n   from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_es_refinan"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_id_grupo"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_id_moneda"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_id_oficial"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_id_oficina"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_id_tipo_op"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_id_tramite"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_lug_desem"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_aho"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_bruto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_cred"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_dep"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_nivel"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_filial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_grupo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_oficial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_oficina"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_op_banco"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_periodo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_porc_finan"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_simb_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_oper"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tplazo"
+			}
+		]
+	}
+}

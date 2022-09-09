@@ -1,0 +1,18 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_COMPANIHA_370",
+			"isContextEntity": null,
+			"moduleId": "ASSTS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_COMPATAT_EY63",
+			"related": false,
+			"subModuleId": "TRNSC"
+		}
+	]
+}

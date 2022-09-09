@@ -1,0 +1,242 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTSEAD_QV44",
+		"controlName": "ListaEstadosQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/CMMNS/queries/Q_LISTSEAD_QV44.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListaEstados",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANDPQM_3009",
+		"controlName": "LoanQuery_3009",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/CMMNS/queries/Q_LOANDPQM_3009.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_3009_96085",
+		"controlName": "QV_3009_96085",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "Loan",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "group",
+		"controlId": "VA_8665NTBOQUTYEHZ_620508",
+		"controlName": "group",
+		"controlType": "CheckBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "avanceSearch",
+		"controlId": "VA_AVANCESEARCHMXA_533508",
+		"controlName": "avanceSearch",
+		"controlType": "CheckBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "numIdentification",
+		"controlId": "VA_CODCLIENTCIXLEY_866508",
+		"controlName": "numIdentification",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEventGrid",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "codCurrency",
+		"controlId": "VA_CODCURRENCYKYKA_122508",
+		"controlName": "codCurrency",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "disbursementDate",
+		"controlId": "VA_DISBURSEMENTDTD_602508",
+		"controlName": "disbursementDate",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "migratedOper",
+		"controlId": "VA_MIGRATEDOPERFRB_417508",
+		"controlName": "migratedOper",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "numProcedures",
+		"controlId": "VA_NUMPROCEDURESSS_195508",
+		"controlName": "numProcedures",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "office",
+		"controlId": "VA_OFFICEVEGBCEQOG_104508",
+		"controlName": "office",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "operation",
+		"controlId": "VA_OPERATIONZDFLWM_772508",
+		"controlName": "operation",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "status",
+		"controlId": "VA_STATUSRUGGOTSMF_965508",
+		"controlName": "status",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "type",
+		"controlId": "VA_TYPEDCJJSHZRQGI_148508",
+		"controlName": "type",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONBCZSHFM_208508",
+		"controlName": "VA_VABUTTONBCZSHFM_208508",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanSearchFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSEARHC_144959",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

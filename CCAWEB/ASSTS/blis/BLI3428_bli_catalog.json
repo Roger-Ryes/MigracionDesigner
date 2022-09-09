@@ -1,0 +1,116 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_USEDCATLA_577",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "UsedCatalog"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "1564"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CONSTANT",
+			"value": "0"
+		},
+		{
+			"attributeId": "AT77_NAMECAAA577",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_USEDCATLA_577",
+			"format": "",
+			"name": "@i_tabla",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_Catalog",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3428_bli_catalog",
+	"patternName": "BLI_Catalog",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "ee73cb3d-2ff2-42b4-9dae-3911b398d8f3",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select \u0027CODIGO\u0027,\r\n             upper(rtrim(@w_titulo))\u0027        \u0027,\r\n             \u0027ESTADO\u0027"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ee73cb3d-2ff2-42b4-9dae-3911b398d8f3",
+			"columns": [
+				{
+					"attributeId": "AT64_CODERBGK318",
+					"entityId": "EN_CATALOGVN_318",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT83_VALUEXKG318",
+					"entityId": "EN_CATALOGVN_318",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CATALOGVN_318",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "Catalog"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.sp_catalogo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

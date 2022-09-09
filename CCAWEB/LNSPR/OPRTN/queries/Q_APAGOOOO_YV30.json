@@ -1,0 +1,187 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_APAGOOOO_YV30_814",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_APAGOOOO_YV30",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_APAGOCIPF_458",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_APAGOCIPF_458/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_APAGOOOO_YV30/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "currency",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_APAGOCIPF_458.json#/attributes/AT13_CURRENYC458"
+			},
+			"attributeQuery": "currency",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_APAGO0OVO3488_01",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "retencion",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_APAGOCIPF_458.json#/attributes/AT37_RETENCON458"
+			},
+			"attributeQuery": "retencion",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": "6",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_APAGO30OVY786_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "categoria",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_APAGOCIPF_458.json#/attributes/AT21_CATEGORI458"
+			},
+			"attributeQuery": "categoria",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": "5",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_APAGOO3O3O535_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "pCobis",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_APAGOCIPF_458.json#/attributes/AT17_PCOBISUV458"
+			},
+			"attributeQuery": "pCobis",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": "4",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_APAGOOVOV3524_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "producto",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_APAGOCIPF_458.json#/attributes/AT30_PRODUCTO458"
+			},
+			"attributeQuery": "producto",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_APAGOV3Y3Y859_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "descripcion",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_APAGOCIPF_458.json#/attributes/AT89_DESCRIPP458"
+			},
+			"attributeQuery": "descripcion",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": "3",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_APAGOYVV0O277_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

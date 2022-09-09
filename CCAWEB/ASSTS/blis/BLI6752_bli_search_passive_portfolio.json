@@ -1,0 +1,172 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "P"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "714500"
+		}
+	],
+	"name": "BLI_Search_Passive_Portfolio",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6752_bli_search_passive_portfolio",
+	"patternName": "BLI_Search_Passive_Portfolio",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "a36606c7-0b3a-48fb-b86d-0e61feabfb00",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 19,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "a36606c7-0b3a-48fb-b86d-0e61feabfb00",
+			"columns": [
+				{
+					"attributeId": "AT96_CREDITYE669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_FINANCNL669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT10_CONTRANR669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_DEBTTYEE669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_AUTHDATT669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT89_AUTHNUMR669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_FACILIRR669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT62_SUBFINNC669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "10",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT13_FINANCMI669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "12",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_TERMTYEP669",
+					"entityId": "EN_DATAPASFI_669",
+					"format": "",
+					"name": "13",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_DATAPASFI_669",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DataPassivePortfolio"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

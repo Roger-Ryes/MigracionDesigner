@@ -1,0 +1,17 @@
+{
+	"menuEtiqueta": "MNU_ASSETS_UPDATE_LOAN",
+	"moduleId": "LNSPR",
+	"patternId": "SEARCH3898_advancedsearchloans",
+	"patternName": "AdvancedSearchLoans",
+	"patternType": "Search",
+	"selectedDestination": "designerF",
+	"selectedForm": "T_LNSPRMFFWJGJE_921",
+	"selectedMode": 2,
+	"selectedNavigationModule": "LNSPR",
+	"selectedNavigationSubmodule": "OPRTN",
+	"selectors": {
+		"customerId": "COBISADV",
+		"itemId": "AdvancedSearchLoans",
+		"productId": "LNSPR"
+	}
+}

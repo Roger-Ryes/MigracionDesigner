@@ -1,0 +1,124 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7125"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CUSTOM",
+			"value": "tipo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_sector",
+			"type": "CUSTOM",
+			"value": "sector"
+		}
+	],
+	"name": "BLI_ItemValues",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI1157_bli_itemvalues",
+	"patternName": "BLI_ItemValues",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "be61faa9-4845-4f37-a3f6-b18b883ebb7c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "be61faa9-4845-4f37-a3f6-b18b883ebb7c",
+			"columns": [
+				{
+					"attributeId": "AT14_REFERENE995",
+					"entityId": "EN_ITEMVALSE_995",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_REFEREVE995",
+					"entityId": "EN_ITEMVALSE_995",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT68_DEFAULNG995",
+					"entityId": "EN_ITEMVALSE_995",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_DEFAULLE995",
+					"entityId": "EN_ITEMVALSE_995",
+					"format": "",
+					"name": "15",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_ITEMVALSE_995",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ItemValues"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_valor",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

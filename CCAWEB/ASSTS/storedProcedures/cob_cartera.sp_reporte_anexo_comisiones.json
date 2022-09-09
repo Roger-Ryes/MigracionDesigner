@@ -1,0 +1,161 @@
+{
+	"filename": "D:\\Instaladores\\Designer\\FromSpToJsonConverter\\sp\\rptanxcom.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_anexo_comisiones",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_corr"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn_corr"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "bit",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nemonico"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nombre_rpt"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "0dd08049-2e8f-41ae-8fa8-ffab127a33fa",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      @i_nombre_rpt  ,  @w_gas_cob_sem ,  @w_gas_cob_cat ,  @w_gas_apert ,\r\n      @w_pag_tardio  ,  @w_num_reca ,     @w_tdividendo"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_gas_apert"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_gas_cob_cat"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_gas_cob_sem"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_msg"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_num_reca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_pag_tardio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tdividendo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_oper"
+			}
+		]
+	}
+}

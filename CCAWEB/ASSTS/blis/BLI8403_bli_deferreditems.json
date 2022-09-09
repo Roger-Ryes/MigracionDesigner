@@ -1,0 +1,156 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77692"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_opcion",
+			"type": "CONSTANT",
+			"value": "A"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_spid",
+			"type": "CUSTOM",
+			"value": "spid"
+		}
+	],
+	"name": "BLI_DeferredItems",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8403_bli_deferreditems",
+	"patternName": "BLI_DeferredItems",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "faf74ee6-e456-4cef-bbc2-fca80c3ed0ae",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "dbe4a63f-6cf9-451e-99df-ac96b7bfef64",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "dbe4a63f-6cf9-451e-99df-ac96b7bfef64",
+			"columns": [
+				{
+					"attributeId": "AT85_DIVIDEDD770",
+					"entityId": "EN_DEFERRESI_770",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT22_ITEMS1EE770",
+					"entityId": "EN_DEFERRESI_770",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_ITEMS2OO770",
+					"entityId": "EN_DEFERRESI_770",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_ITEMS3JM770",
+					"entityId": "EN_DEFERRESI_770",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT58_ITEMS4ZI770",
+					"entityId": "EN_DEFERRESI_770",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_ITEMS5DY770",
+					"entityId": "EN_DEFERRESI_770",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_ITEMS6RP770",
+					"entityId": "EN_DEFERRESI_770",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_DEFERRESI_770",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DeferredItemsList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_rubros_diferidos_web",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

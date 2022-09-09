@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANPIPY_QP44",
+		"controlName": "LoanPolicyQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_LOANPIPY_QP44.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoanPolicy",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_CB44_DOX52",
+		"controlName": "QV_CB44_DOX52",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoanPolicy",
+		"eventsType": "queryViewEventType"
+	}
+]

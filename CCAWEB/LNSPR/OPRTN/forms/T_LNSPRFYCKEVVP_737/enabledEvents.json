@@ -1,0 +1,226 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LOANSISS_EV86",
+		"controlName": "LoansLinesListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_LOANSISS_EV86.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LoansLinesList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_OS86_OQI18",
+		"controlName": "QV_OS86_OQI18",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLinesList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "clienteDesc",
+		"controlId": "VA_CLIENTEDESCMPQT_151383",
+		"controlName": "clienteDesc",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "criterios",
+		"controlId": "VA_CRITERIOSIKUYOI_982383",
+		"controlName": "criterios",
+		"controlType": "CheckBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "dateIni",
+		"controlId": "VA_DATEINIHDUJJRBN_500383",
+		"controlName": "dateIni",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "dateVto",
+		"controlId": "VA_DATEVTOIOLFWTXY_452383",
+		"controlName": "dateVto",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "estado",
+		"controlId": "VA_ESTADOZXSPUMQFP_238383",
+		"controlName": "estado",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "moneda",
+		"controlId": "VA_MONEDAXWNJSQNUF_555383",
+		"controlName": "moneda",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "naturaleza",
+		"controlId": "VA_NATURALEZAEFWDR_861383",
+		"controlName": "naturaleza",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "numLinea",
+		"controlId": "VA_NUMLINEACKAOJVB_120383",
+		"controlName": "numLinea",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "numPrestamo",
+		"controlId": "VA_NUMPRESTAMORRMP_430383",
+		"controlName": "numPrestamo",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "numTramite",
+		"controlId": "VA_NUMTRAMITEUFKMW_361383",
+		"controlName": "numTramite",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "oficina",
+		"controlId": "VA_OFICINANRBOTWYT_467383",
+		"controlName": "oficina",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VAVABUTTONZS600_426383",
+		"controlName": "VA_VAVABUTTONZS600_426383",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "LoansLines",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSLINSS_962737",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

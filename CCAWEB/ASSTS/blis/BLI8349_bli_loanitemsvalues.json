@@ -1,0 +1,124 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CUSTOM",
+			"value": "tipo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_sector",
+			"type": "CUSTOM",
+			"value": "sector"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7125"
+		}
+	],
+	"name": "BLI_LoanItemsValues",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8349_bli_loanitemsvalues",
+	"patternName": "BLI_LoanItemsValues",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "c8a85fe4-95e4-44d7-a1cd-5c06feb4eb45",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 4,
+			"queryName": "select @w_tipo,\n      @w_descripcion,\n      @w_clase,\n      @w_referencia,\n      @v_descripcion,\n      @v_valor_default,\n      @w_signo_default,\n      @w_valor_default,\n      @w_signo_minimo,\n      @w_valor_minimo,\n      @w_signo_maximo,\n      @w_valor_maximo,\n      @i_sector,\n      @w_des_sector,\n      @i_tipo_cartera,\n      @w_des_tcartera,\n      @i_subsegmento,\n      @w_des_subsegmento"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "c8a85fe4-95e4-44d7-a1cd-5c06feb4eb45",
+			"columns": [
+				{
+					"attributeId": "AT87_REFEREEN980",
+					"entityId": "EN_LOANITEAS_980",
+					"format": "",
+					"name": "{3}",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_REFEREUN980",
+					"entityId": "EN_LOANITEAS_980",
+					"format": "",
+					"name": "{5}",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_DEFAULTS980",
+					"entityId": "EN_LOANITEAS_980",
+					"format": "",
+					"name": "{6}",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT24_DEFAULVA980",
+					"entityId": "EN_LOANITEAS_980",
+					"format": "",
+					"name": "{14}",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANITEAS_980",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanItemsValues"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_valor",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

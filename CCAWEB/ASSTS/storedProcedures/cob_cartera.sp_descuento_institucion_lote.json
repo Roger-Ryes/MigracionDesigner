@@ -1,0 +1,358 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_descuento_institucion_lote",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "double",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_institucion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_creacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_archivo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_path"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_lote"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial_dld"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacion_ca"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_vencimiento"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_doc"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_val_doc"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje_cobro"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_val_cuota"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_val_adeudado"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_val_adeudado_total"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_estado_reg"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_empresa_reg"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_aceptado"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_procesado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cliente_comentario"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_empresa_comentario"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_mode"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "int",
+				"direction": "int",
+				"name": "@i_file_up"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_estado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_estado_name"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "out",
+				"name": "@o_fecha_creacion"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "out",
+				"name": "@o_fecha_mov"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_archivo"
+			},
+			{
+				"dataType": "int",
+				"direction": "out",
+				"name": "@o_file_up"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_file_msg"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "28109bee-1e02-4564-ae64-9c6a48c6a046",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"21",
+					"22"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "db8aff0b-7a7b-4f62-80b5-b86470b3e330",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "1baf5b76-ce0d-436c-9a4d-7324217a6e98",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "7115b94d-169f-417b-b85c-1a25feb00bfc",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

@@ -1,0 +1,146 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TLNSPRAC_4P9",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_PAYMANAM_TY74",
+		"controlName": "PaymentAutomaticListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_PAYMANAM_TY74.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "PaymentAutomaticList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_WX74_OJZ40",
+		"controlName": "QV_WX74_OJZ40",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 7
+			}
+		],
+		"entityName": "PaymentAutomaticList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "account",
+		"controlId": "VA_ACCOUNTEPABOHPV_776232",
+		"controlName": "account",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentAutomatic",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "clientName",
+		"controlId": "VA_CLIENTNIXWOQDSD_193232",
+		"controlName": "clientName",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentAutomatic",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "institutionName",
+		"controlId": "VA_INSTITUTIONNKHZ_389232",
+		"controlName": "institutionName",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentAutomatic",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONNVDIOQB_352232",
+		"controlName": "VA_VABUTTONNVDIOQB_352232",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "PaymentAutomatic",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONXOCQZHP_695232",
+		"controlName": "VA_VABUTTONXOCQZHP_695232",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "PaymentAutomatic",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_REPAYMENTT_461527",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

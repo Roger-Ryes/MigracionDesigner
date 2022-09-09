@@ -1,0 +1,259 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7992"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "E"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "client"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "bank"
+		}
+	],
+	"name": "BLI_AmortizationTable",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3052_bli_amortizationtable",
+	"patternName": "BLI_AmortizationTable",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "2f03dd1b-a1b0-41b0-b132-f36a73d0afcb",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "select \"clientName\" = @w_nom_cliente\r\n\t\t\t , \"totalAmount\" = @w_monto_total\r\n\t\t\t , \"totalAmountText\" = \u0027\u0027\r\n\t\t\t , \"regionalAddress\" = @w_dom_regional\r\n\t\t\t , \"monthlyInterestRate\" = @w_imo_mensual\r\n\t\t\t , \"monthlyInterestRateText\" = \u0027\u0027\r\n\t\t\t , \"officeState\" = @w_sucursal_provincia\r\n\t\t\t , \"beginDateDay\" = day(@w_fecha_ini_credito)\r\n\t\t\t , \"beginDateMonth\" = month(@w_fecha_ini_credito)\r\n\t\t\t , \"beginDateYear\" = year(@w_fecha_ini_credito)\r\n\t\t\t , \"clientAddress\" = @w_dom_cliente\r\n\t\t\t , \"reca\" = @w_pie_pagina\r\n\t\t\t , \"creditNum\" = @i_banco\r\n\t\t\t , \"clientNum\" = @w_numero_cliente\r\n\t\t\t , \"operationType\" = @w_desc_operacion\r\n\t\t\t , \"cashRecieved\" = @w_monto_credito - @w_gastos_originacion\r\n\t\t\t , \"originationExpense\" = @w_gastos_originacion\r\n\t\t\t , \"creditAmount\" = @w_monto_credito\r\n\t\t\t , \"rate\" = @w_tasa_ordinaria\r\n\t\t\t , \"actualDate\" = convert(varchar,getdate(),103)\r\n\t\t\t , \"frequency\" = @w_plazo_credito\r\n\t\t\t , \"period\" = @w_frecuencia_credito\r\n\t\t\t , \"address\" = @w_cliente_calle + \u0027 \u0027 + @w_cliente_num_ext\r\n\t\t\t , \"colony\" = @w_cliente_parroquia\r\n\t\t\t , \"delegation\" = @w_cliente_ciudad\r\n\t\t\t , \"city\" = @w_cliente_ciudad\r\n\t\t\t , \"state\" = @w_cliente_provincia\r\n\t\t\t , \"subsidiary\" = @w_filial"
+		},
+		{
+			"_idQuery": "862df85c-7c63-453f-80f9-50013946926b",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "select NumeroDividendo = di_dividendo\r\n\t\t\t , FechaInicio = convert(char(10),a.di_fecha_ini,103)\r\n\t\t\t , FechaVencimiento = convert(char(10),a.di_fecha_ven,103)\r\n\t\t\t , Ahorro = \u0027N/A\u0027\r\n\t\t\t , Cuota = sum(b.am_cuota)\r\n\t\t\t , Capital = sum(case when b.am_concepto = \u0027CAP\u0027 then b.am_cuota else 0 end)\r\n\t\t\t , Interes = sum(case when b.am_concepto in (\u0027INT\u0027, \u0027IMO\u0027) then b.am_cuota else 0 end)\r\n\t\t\t , Iva = sum(case when b.am_concepto in (\u0027IVA\u0027, \u0027IVA-M\u0027, \u0027IVA-C\u0027, \u0027IVA-CM\u0027,\r\n\t\t\t\t\u0027IVA-SASIST\u0027, \u0027IVAF\u0027, \u0027IVAF-C\u0027, \u0027IVAF-CM\u0027, \u0027IVAF-M\u0027, \u0027IVAF-SASIS\u0027, \u0027IVA-GTOSUP\u0027)  then b.am_cuota else 0 end)\r\n\t\t\t , Seguros = sum(case when b.am_concepto in (\u0027SEG\u0027,\u0027SEG2\u0027,\u0027SEGACC\u0027,\u0027SEGUROIVZ\u0027,\r\n\t\t\t\t\u0027SEGUROVD\u0027,\u0027SEGURODESM\u0027,\u0027SASIST\u0027,\u0027SEGSALDO\u0027,\u0027SEGUROCV\u0027) then b.am_cuota else 0 end)\r\n\t\t\t , GastoSupervision = sum(case when b.am_concepto = \u0027GTOSUP\u0027 then b.am_cuota else 0 end)\r\n\t\t\t , Saldo = cap_liquida\r\n\tfrom"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "2f03dd1b-a1b0-41b0-b132-f36a73d0afcb",
+			"columns": [
+				{
+					"attributeId": "AT75_CLIENTRR416",
+					"entityId": "EN_AMORTIZTO_416",
+					"format": "",
+					"name": "clientAddress",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT42_CITYRDCA416",
+					"entityId": "EN_AMORTIZTO_416",
+					"format": "",
+					"name": "city",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT72_STATENEV416",
+					"entityId": "EN_AMORTIZTO_416",
+					"format": "",
+					"name": "state",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_ACTUALAD416",
+					"entityId": "EN_AMORTIZTO_416",
+					"format": "dd/MM/yyyy",
+					"name": "actualDate",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_RATEPPSG416",
+					"entityId": "EN_AMORTIZTO_416",
+					"format": "",
+					"name": "rate",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_FREQUEYY416",
+					"entityId": "EN_AMORTIZTO_416",
+					"format": "",
+					"name": "frequency",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT68_PERIODRU416",
+					"entityId": "EN_AMORTIZTO_416",
+					"format": "",
+					"name": "period",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		},
+		{
+			"_idQuery": "862df85c-7c63-453f-80f9-50013946926b",
+			"columns": [
+				{
+					"attributeId": "AT57_DIVIDENM956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "NumeroDividendo",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_EXPIRADI956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "FechaVencimiento",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_BALANCEE956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "SaldoCap",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_CAPITALL956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "Capital",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT85_FECIRWJZ956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "Feci",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT36_INTERETT956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "Interes",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_INSURAEE956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "Seguros",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_OTHERSCY956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "Otros",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_QUOTEEFB956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "Cuota",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_STATEVRO956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "Estado",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_QUOTADYY956",
+					"entityId": "EN_AMORTIZTI_956",
+					"format": "",
+					"name": "DiasCuota",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 2,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_AMORTIZTI_956",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AmortizationTable"
+		},
+		{
+			"entityId": "EN_AMORTIZTO_416",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AmortizationTableFilter"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_reporte_datos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

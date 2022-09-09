@@ -1,0 +1,72 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TDOCUMEN_TN1",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_PRINTICM_3105",
+		"controlName": "PrintingDocumentsQuery_3105",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_PRINTICM_3105.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_3105_20065",
+		"controlName": "QV_3105_20065",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "gridInitColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "gridInitEditColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "PrintingDocuments",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_DOCUMENTPP_352678",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

@@ -1,0 +1,86 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7142"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		}
+	],
+	"name": "BLI_TypeTransactionQuery",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6156_bli_typetransactionquery",
+	"patternName": "BLI_TypeTransactionQuery",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "4ab7619b-e87e-43e2-96a0-8083b883e003",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 8,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "4ab7619b-e87e-43e2-96a0-8083b883e003",
+			"columns": [
+				{
+					"attributeId": "AT84_CODIGOGK816",
+					"entityId": "EN_TYPETRAOI_816",
+					"format": "",
+					"name": "CODIGO",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_DESCRICI816",
+					"entityId": "EN_TYPETRAOI_816",
+					"format": "",
+					"name": "DESCRIPCION",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_TYPETRAOI_816",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "TypeTransactionQuery"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_consulta_trn",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

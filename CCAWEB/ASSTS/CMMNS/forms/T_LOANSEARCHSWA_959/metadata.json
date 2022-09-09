@@ -1,0 +1,28 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_LOANKYMRI_882",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_LOANSEACI_824",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_LISTSEAD_QV44",
+			"related": false,
+			"subModuleId": "CMMNS"
+		},
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_LOANDPQM_3009",
+			"related": false,
+			"subModuleId": "CMMNS"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21946"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "E"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_linea",
+			"type": "CUSTOM",
+			"value": "linea"
+		}
+	],
+	"name": "BLI_Search_GroupMembers_Line",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5174_bli_search_groupmembers_line",
+	"patternName": "BLI_Search_GroupMembers_Line",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "0c838dcb-017e-4617-bd82-eddbe44d091c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "select\r\n    \u0027Codigo Miembro\u0027 =  lg_cliente,\r\n    \u0027Nombre Miembro\u0027 =  CASE"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "0c838dcb-017e-4617-bd82-eddbe44d091c",
+			"columns": [
+				{
+					"attributeId": "AT59_CODEGYRY931",
+					"entityId": "EN_GROUPMENS_931",
+					"format": "",
+					"name": "Codigo Miembro",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_NAMECLET931",
+					"entityId": "EN_GROUPMENS_931",
+					"format": "",
+					"name": "Nombre Miembro",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_GROUPMENS_931",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "GroupMembersLineList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_lin_grupo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

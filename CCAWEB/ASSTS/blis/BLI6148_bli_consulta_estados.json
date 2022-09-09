@@ -1,0 +1,102 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7131"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CUSTOM",
+			"value": "operacion"
+		}
+	],
+	"name": "BLI_Consulta_Estados",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6148_bli_consulta_estados",
+	"patternName": "BLI_Consulta_Estados",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "07acbc26-bda4-4f84-8ba9-86a0c6bee1a6",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "07acbc26-bda4-4f84-8ba9-86a0c6bee1a6",
+			"columns": [
+				{
+					"attributeId": "AT25_CODIGOJF959",
+					"entityId": "EN_LISTAESDS_959",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT18_DESCRIIC959",
+					"entityId": "EN_LISTAESDS_959",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT46_PROCESAA959",
+					"entityId": "EN_LISTAESDS_959",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT62_ACEPTAPO959",
+					"entityId": "EN_LISTAESDS_959",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LISTAESDS_959",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "ListaEstados"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_estados",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

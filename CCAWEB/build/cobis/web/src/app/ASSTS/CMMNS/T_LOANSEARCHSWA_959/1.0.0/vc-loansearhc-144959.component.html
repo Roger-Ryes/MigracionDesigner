@@ -1,0 +1,130 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-loansearchswa-959 " [formGroup]="vc.viewState.T_LOANSEARCHSWA_959"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_LOANSEARHC_144959.enabled, 'VC_LOANSEARHC_144959')" [properties]="vc.viewState.VC_LOANSEARHC_144959" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSEARRH_169508.enabled, 'G_LOANSEARRH_169508', 'VC_LOANSEARHC_144959')" *ngIf="isVisible('G_LOANSEARRH_169508')" [properties]="vc.viewState.G_LOANSEARRH_169508" [mode]="vc.mode"> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSEAHRH_621508.enabled, 'G_LOANSEAHRH_621508', 'G_LOANSEARRH_169508', 'LoanSearchFilter',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('G_LOANSEAHRH_621508',true)" [properties]="vc.viewState.G_LOANSEAHRH_621508" [mode]="vc.mode" formGroupName="LoanSearchFilter"> 
+        <cobis-textinputbutton [attr.disabled]="isDisabled( vc.viewState.VA_CODCLIENTCIXLEY_866508.enabled, 'VA_CODCLIENTCIXLEY_866508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.numIdentification',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_CODCLIENTCIXLEY_866508')" [properties]="vc.viewState.VA_CODCLIENTCIXLEY_866508" [mode]="vc.mode" formControlName="numIdentification" (onClick)="textInputButtonEvent('VA_CODCLIENTCIXLEY_866508')" (onChange)="change($event,'VA_CODCLIENTCIXLEY_866508')" (onCustomInputRestriction)="customValidation($event,'VA_CODCLIENTCIXLEY_866508')"></cobis-textinputbutton> 
+        <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_OPERATIONZDFLWM_772508.enabled, 'VA_OPERATIONZDFLWM_772508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.operation',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_OPERATIONZDFLWM_772508')" [properties]="vc.viewState.VA_OPERATIONZDFLWM_772508" [mode]="vc.mode" formControlName="operation" (onChange)="change($event,'VA_OPERATIONZDFLWM_772508')"></cobis-textinputbox>
+        <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_NUMPROCEDURESSS_195508.enabled, 'VA_NUMPROCEDURESSS_195508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.numProcedures',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_NUMPROCEDURESSS_195508')" [properties]="vc.viewState.VA_NUMPROCEDURESSS_195508" [mode]="vc.mode" formControlName="numProcedures" (onChange)="change($event,'VA_NUMPROCEDURESSS_195508')" (onCustomInputRestriction)="customValidation($event,'VA_NUMPROCEDURESSS_195508')"></cobis-textinputbox>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_OFFICEVEGBCEQOG_104508.enabled, 'VA_OFFICEVEGBCEQOG_104508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.office',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_OFFICEVEGBCEQOG_104508')" [properties]="vc.viewState.VA_OFFICEVEGBCEQOG_104508" [mode]="vc.mode" formControlName="office" [dataSource]="vc.catalogs.VA_OFFICEVEGBCEQOG_104508" (onChange)="change($event,'VA_OFFICEVEGBCEQOG_104508')"> 
+        </cobis-dropdownlist> 
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_CODCURRENCYKYKA_122508.enabled, 'VA_CODCURRENCYKYKA_122508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.codCurrency',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_CODCURRENCYKYKA_122508')" [properties]="vc.viewState.VA_CODCURRENCYKYKA_122508" [mode]="vc.mode" formControlName="codCurrency" [dataSource]="vc.catalogs.VA_CODCURRENCYKYKA_122508" (onChange)="change($event,'VA_CODCURRENCYKYKA_122508')"> 
+        </cobis-dropdownlist> 
+        <cobis-datefield [attr.disabled]="isDisabled( vc.viewState.VA_DISBURSEMENTDTD_602508.enabled, 'VA_DISBURSEMENTDTD_602508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.disbursementDate',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_DISBURSEMENTDTD_602508')" [properties]="vc.viewState.VA_DISBURSEMENTDTD_602508" [mode]="vc.mode" formControlName="disbursementDate" (onChange)="change($event,'VA_DISBURSEMENTDTD_602508')"></cobis-datefield>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_STATUSRUGGOTSMF_965508.enabled, 'VA_STATUSRUGGOTSMF_965508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.status',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_STATUSRUGGOTSMF_965508')" [properties]="vc.viewState.VA_STATUSRUGGOTSMF_965508" [mode]="vc.mode" formControlName="status" [dataSource]="vc.queries.Q_LISTSEAD_QV44" (onChange)="change($event,'VA_STATUSRUGGOTSMF_965508')"> 
+        </cobis-dropdownlist> 
+        <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_MIGRATEDOPERFRB_417508.enabled, 'VA_MIGRATEDOPERFRB_417508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.migratedOper',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_MIGRATEDOPERFRB_417508')" [properties]="vc.viewState.VA_MIGRATEDOPERFRB_417508" [mode]="vc.mode" formControlName="migratedOper" (onChange)="change($event,'VA_MIGRATEDOPERFRB_417508')" (onCustomInputRestriction)="customValidation($event,'VA_MIGRATEDOPERFRB_417508')"></cobis-textinputbox>
+        <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_TYPEDCJJSHZRQGI_148508.enabled, 'VA_TYPEDCJJSHZRQGI_148508', 'G_LOANSEAHRH_621508', 'LoanSearchFilter.type',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_TYPEDCJJSHZRQGI_148508')" [properties]="vc.viewState.VA_TYPEDCJJSHZRQGI_148508" [mode]="vc.mode" formControlName="type" [dataSource]="vc.catalogs.VA_TYPEDCJJSHZRQGI_148508" (onChange)="change($event,'VA_TYPEDCJJSHZRQGI_148508')"> 
+        </cobis-dropdownlist> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSEAHRH_717508.enabled, 'G_LOANSEAHRH_717508', 'G_LOANSEARRH_169508', 'LoanSearchFilter',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('G_LOANSEAHRH_717508',true)" [properties]="vc.viewState.G_LOANSEAHRH_717508" [mode]="vc.mode" formGroupName="LoanSearchFilter"> 
+        <cobis-checkbox [attr.disabled]="isDisabled( vc.viewState.VA_AVANCESEARCHMXA_533508.enabled, 'VA_AVANCESEARCHMXA_533508', 'G_LOANSEAHRH_717508', 'LoanSearchFilter.avanceSearch',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_AVANCESEARCHMXA_533508')" [properties]="vc.viewState.VA_AVANCESEARCHMXA_533508" [mode]="vc.mode" formControlName="avanceSearch" (onChange)="change($event,'VA_AVANCESEARCHMXA_533508')"></cobis-checkbox>
+        <cobis-checkbox [attr.disabled]="isDisabled( vc.viewState.VA_8665NTBOQUTYEHZ_620508.enabled, 'VA_8665NTBOQUTYEHZ_620508', 'G_LOANSEAHRH_717508', 'LoanSearchFilter.group',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('VA_8665NTBOQUTYEHZ_620508')" [properties]="vc.viewState.VA_8665NTBOQUTYEHZ_620508" [mode]="vc.mode" formControlName="group" (onChange)="change($event,'VA_8665NTBOQUTYEHZ_620508')"></cobis-checkbox> 
+        <cobis-spacer *ngIf="isVisible('Spacer1639')" [properties]="vc.viewState.Spacer1639"></cobis-spacer> 
+        <cobis-spacer *ngIf="isVisible('Spacer1249')" [properties]="vc.viewState.Spacer1249"></cobis-spacer> 
+        <cobis-spacer *ngIf="isVisible('Spacer1732')" [properties]="vc.viewState.Spacer1732"></cobis-spacer>
+        <cobis-button [disabled]="isDisabled(vc.viewState.VA_VABUTTONBCZSHFM_208508.enabled,'VA_VABUTTONBCZSHFM_208508', 'G_LOANSEAHRH_717508')" *ngIf="isVisible('VA_VABUTTONBCZSHFM_208508')" [properties]="vc.viewState.VA_VABUTTONBCZSHFM_208508" [mode]="vc.mode" (onClick)="executeQueryControl('Q_LOANDPQM_3009')"></cobis-button> 
+       </cobis-groupbox> 
+       <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_LOANSEAHHH_461508.enabled, 'G_LOANSEAHHH_461508', 'G_LOANSEARRH_169508', 'Loan',vc.viewState.T_LOANSEARCHSWA_959)" *ngIf="isVisible('G_LOANSEAHHH_461508',true)" [properties]="vc.viewState.G_LOANSEAHHH_461508" [mode]="vc.mode" formGroupName="Loan"> 
+        <cobis-grid #QV_3009_96085_Grid [properties]="vc.viewState.QV_3009_96085" [mode]="vc.mode" [formGroupGrid]="vc.model.LoanRowData.formGroup" [dataSource]="vc.model.Loan" [model]="vc.model" (gridInitDetailTemplate)="gridInitDetailTemplate($event)" (showGridRowDetailIcon)="showGridRowDetailIcon($event)" (gridInitColumnTemplate)="gridInitColumnTemplate($event)" (gridInitEditColumnTemplate)="gridInitEditColumnTemplate($event)" (onSaveRow)="gridSaveRow($event)" (onRowSelecting)="gridRowSelecting($event)"> 
+         <!--Start Column desOperationType --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXDAN_761508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ dataItem[column.field] }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXDAN_761508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+         </ng-template> 
+         <!--Start Column loanBankID --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXFXZ_333508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ dataItem[column.field] }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXFXZ_333508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+         </ng-template> 
+         <!--Start Column clientID --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXEUM_243508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXEUM_243508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+         </ng-template> 
+         <!--Start Column clientName --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXBPY_504508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ dataItem[column.field] }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXBPY_504508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+         </ng-template> 
+         <!--Start Column amount --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXWLO_792508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXWLO_792508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+         </ng-template> 
+         <!--Start Column status --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXLLX_842508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ dataItem[column.field] }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXLLX_842508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+         </ng-template> 
+         <!--Start Column expirationDate --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_DATEFIELDDDLJHB_303508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ designer.intlService.formatDate( dataItem[column.field], columnItem.properties.format) }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_DATEFIELDDDLJHB_303508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-datefield [attr.disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-datefield> 
+         </ng-template> 
+         <!--Start Column codCurrency --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXVFT_322508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ columnItem.data$ | async | gridColumn: dataItem[column.field]: columnItem }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXVFT_322508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-dropdownlist [attr.disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [frmControl]="formGroup.get(column.field)" [properties]="columnItem.properties" [dataSource]="vc.catalogs.VA_TEXTINPUTBOXVFT_322508"> 
+          </cobis-dropdownlist> 
+         </ng-template> 
+         <!--Start Column disbursementDate --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_DATEFIELDLYQLTD_622508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ designer.intlService.formatDate( dataItem[column.field], columnItem.properties.format) }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_DATEFIELDLYQLTD_622508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-datefield [attr.disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-datefield> 
+         </ng-template> 
+         <!--Start Column numProcedure --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXXJI_412508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ dataItem[column.field] }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXXJI_412508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+         </ng-template> 
+         <!--Start Column group --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXBHQ_121508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ designer.intlService.formatNumber( dataItem[column.field], columnItem.properties.format) }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXBHQ_121508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-numericinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-numericinputbox> 
+         </ng-template> 
+         <!--Start Column categoryGroup --> 
+         <ng-template registerTemplate [id]="'tplCell_VA_TEXTINPUTBOXGYK_201508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-columnItem="columnItem">
+           {{ dataItem[column.field] }} 
+         </ng-template> 
+         <ng-template registerTemplate [id]="'tplEdit_VA_TEXTINPUTBOXGYK_201508'" let-dataItem let-rowIndex="rowIndex" let-column="column" let-formGroup="formGroup" let-columnItem="columnItem" let-isNew="isNew"> 
+          <cobis-textinputbox [disabled]="isDisabledGridColumn(column, formGroup, columnItem)" [model]="formGroup.get(column.field).value" [properties]="columnItem.properties" [frmControl]="formGroup.get(column.field)"></cobis-textinputbox> 
+         </ng-template> 
+        </cobis-grid> 
+       </cobis-groupbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

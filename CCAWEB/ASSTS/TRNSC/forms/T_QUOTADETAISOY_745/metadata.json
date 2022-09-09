@@ -1,0 +1,32 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_LOANKYMRI_882",
+			"isContextEntity": true,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_PAYMENTZY_669",
+			"isContextEntity": true,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_PREPAYMAA_382",
+			"isContextEntity": true,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_QUOTEDETP_862",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_QUOTEDPM_4705",
+			"related": false,
+			"subModuleId": "TRNSC"
+		}
+	]
+}

@@ -1,0 +1,154 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_2540_50573_362",
+		"controlName": "QV_2540_50573",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "QuoteDetails",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_DEFETRFT_LJ32",
+		"controlName": "DeferredRefundListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_DEFETRFT_LJ32.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "DeferredRefundList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTOOGA_DP31",
+		"controlName": "ListaFormaPagoQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_LISTOOGA_DP31.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListaFormaPago",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_QG32_ZBS32",
+		"controlName": "QV_QG32_ZBS32",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "DeferredRefundList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "currencyType",
+		"controlId": "VA_CURRENCYSPEYFQA_285141",
+		"controlName": "currency",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "operationCurrencyType",
+		"controlId": "VA_OPERATIONCURYEE_868141",
+		"controlName": "operationCurrencyType",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "reference",
+		"controlId": "VA_REFERENCECGUXXB_239141",
+		"controlName": "reference",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEventGrid",
+				"executionType": 1
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "paymentType",
+		"controlId": "VA_TEXTINPUTBOXCFY_310141",
+		"controlName": "paymentsTypes",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "customer",
+		"controlId": "VA_TEXTINPUTBOXHQX_290141",
+		"controlName": "customer",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEventGrid",
+				"executionType": 1
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "bank",
+		"controlId": "VA_TEXTINPUTBOXSJQ_831141",
+		"controlName": "bank",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 1
+			}
+		],
+		"entityName": "Payment",
+		"eventsType": "visualAttributeEventType"
+	}
+]

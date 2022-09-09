@@ -1,0 +1,89 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_AMORTIZAI_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZTT_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_CREATEOEO_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_CREATEOPN_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_CUSTOMERR_876",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_DEBTORVWG_LNSPR",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_GENERALRE_262",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_GENERICSZ_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR"
+		},
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_OPERATIRD_LNSPR",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_SYNDICASL_725",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_DEBTORZN_LNSPR",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_SYNDATCT_WX29",
+			"related": false,
+			"subModuleId": "OPRTN"
+		}
+	]
+}

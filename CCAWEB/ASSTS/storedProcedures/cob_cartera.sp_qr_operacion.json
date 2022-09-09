@@ -1,0 +1,1374 @@
+{
+	"filename": "D:\\TFS\\Principal\\tec-cca-backend\\spsql\\qroper.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_operacion",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_historico"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "1763e18f-4bb3-493e-9ea3-b89e4e12b1e5",
+				"columns": [
+					"RUBRO",
+					"TOTAL DIFERIDO",
+					"PENDIENTE DIFERIDO"
+				],
+				"editMode": false,
+				"queryText": "select \u0027RUBRO  \u0027            = dif_concepto,\r\n          \u0027TOTAL DIFERIDO\u0027     = isnull(dif_valor_total,0),\r\n          \u0027PENDIENTE DIFERIDO\u0027 = isnull(dif_valor_total,0) - isnull(dif_valor_pagado,0)\r\n     from"
+			},
+			{
+				"_idQuery": "d296e689-354d-4a5d-81bf-0938b847b612",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select valor\r\n                              from"
+			},
+			{
+				"_idQuery": "72176d18-0e6d-43ac-9c2f-1596c61d2c7b",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select valor\r\n                             from"
+			},
+			{
+				"_idQuery": "8734d76d-f004-4ece-9b77-ee6ed7713a66",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select codigo\r\n                                            from"
+			},
+			{
+				"_idQuery": "8f93be50-fe38-4109-873b-3bfffa9b4dc4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select of_nombre\r\n                             from"
+			},
+			{
+				"_idQuery": "0df28a30-3948-43f2-bc73-4090c63425fa",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select valor\r\n                             from"
+			},
+			{
+				"_idQuery": "4d427105-2a7c-4aae-b135-bbe5815a0f70",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select codigo\r\n                                            from"
+			},
+			{
+				"_idQuery": "8426696a-3a3f-481f-b52d-e8388efc051a",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select ab_nombre\r\n                         from"
+			},
+			{
+				"_idQuery": "7fb8471f-a47e-414a-8e9c-1cddeed3e04f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select ab_cliente\r\n                         from"
+			},
+			{
+				"_idQuery": "92646efc-c301-429d-ae38-60351f2b928e",
+				"columns": [
+					"{0}",
+					"{1}",
+					"te_telefono"
+				],
+				"editMode": false,
+				"queryText": "select  te_direccion,te_tipo_telefono,te_telefono = case"
+			},
+			{
+				"_idQuery": "cbd42247-ff58-4c1a-a987-2069672583bf",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select codigo from"
+			},
+			{
+				"_idQuery": "a627656d-9d76-4ef7-ba95-5d6ea3334704",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select codigo from"
+			},
+			{
+				"_idQuery": "33d40382-c738-405a-a4bb-68166a10d0b8",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select codigo from"
+			},
+			{
+				"_idQuery": "751fc08d-7014-4fd3-9d1d-c757e86d241f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @w_dias_venc_completo"
+			},
+			{
+				"_idQuery": "1b00f4cd-6b07-4e72-af7a-1276a04b11c6",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}",
+					"{22}",
+					"{23}",
+					"{24}",
+					"{25}",
+					"{26}",
+					"{27}",
+					"{28}",
+					"{29}",
+					"{30}",
+					"{31}",
+					"{32}",
+					"{33}",
+					"{34}",
+					"{35}",
+					"{36}",
+					"{37}",
+					"{38}",
+					"{39}",
+					"{40}",
+					"{41}",
+					"{42}",
+					"{43}",
+					"{44}",
+					"{45}",
+					"{46}",
+					"{47}",
+					"{48}",
+					"{49}",
+					"{50}",
+					"{51}",
+					"{52}",
+					"{53}",
+					"{54}",
+					"{55}",
+					"{56}",
+					"{57}",
+					"{58}",
+					"{59}",
+					"{60}",
+					"{61}",
+					"{62}",
+					"{63}",
+					"{64}",
+					"{65}",
+					"{66}",
+					"{67}",
+					"{68}",
+					"{69}",
+					"{70}",
+					"{71}",
+					"{72}",
+					"{73}",
+					"{74}",
+					"{75}",
+					"{76}",
+					"{77}",
+					"{78}",
+					"{79}",
+					"{80}",
+					"{81}",
+					"{82}",
+					"{83}",
+					"{84}",
+					"{85}",
+					"{86}",
+					"{87}",
+					"{88}",
+					"{89}",
+					"{90}",
+					"{91}",
+					"{92}",
+					"{93}",
+					"{94}",
+					"{95}",
+					"{96}",
+					"{97}",
+					"{98}",
+					"{99}",
+					"{100}",
+					"{101}",
+					"{102}",
+					"{103}",
+					"{104}",
+					"{105}",
+					"{106}",
+					"{107}",
+					"{108}",
+					"{109}",
+					"{110}",
+					"{111}",
+					"{112}",
+					"{113}",
+					"{114}",
+					"{115}",
+					"{116}",
+					"{117}",
+					"{118}",
+					"{119}",
+					"{120}",
+					"{121}",
+					"{122}",
+					"{123}",
+					"{124}",
+					"{125}",
+					"{126}",
+					"{127}",
+					"{128}",
+					"{129}",
+					"{130}",
+					"{131}",
+					"{132}",
+					"{133}",
+					"{134}",
+					"{135}",
+					"{136}",
+					"{137}",
+					"{138}",
+					"{139}",
+					"{140}",
+					"{141}",
+					"{142}",
+					"{143}",
+					"{144}",
+					"{145}",
+					"{146}",
+					"{147}",
+					"{148}",
+					"{149}",
+					"{150}",
+					"{151}",
+					"{152}",
+					"{153}",
+					"{154}",
+					"{155}",
+					"{156}",
+					"{157}",
+					"{158}",
+					"{159}",
+					"{160}",
+					"{161}",
+					"{162}",
+					"{163}",
+					"{164}",
+					"{165}",
+					"{166}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n@w_operacionca,\r\n@w_banco,\r\n@w_tramite,\r\n@w_lin_credito,\r\n@w_estado,\r\n@w_cliente,\r\n@w_toperacion,\r\n@w_desc_toperacion,\r\n@w_moneda,\r\n@w_desc_entidad,\r\n@w_oficina,\r\n@w_oficial,\r\nconvert(varchar(10),@w_fecha_ini,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_fin,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_prox_pag,@i_formato_fecha),\r\nconvert(float, @w_monto),\r\n@w_tplazo,\r\n@w_desc_tplazo,\r\n@w_plazo,\r\n@w_tdividendo,\r\n@w_desc_tdividendo,\r\n@w_periodo_cap,\r\n@w_periodo_int,\r\n@w_periodos_gracia,\r\n@w_periodos_gracia_int,\r\n@w_dist_gracia,\r\n@w_destino,\r\n@w_desc_destino,\r\n@w_ciudad,\r\n@w_desc_ciudad,\r\n@w_nem_producto,\r\n@w_desc_producto,\r\n@w_cuenta,\r\n@w_reajuste_periodo,\r\nconvert(varchar(10),@w_reajuste_fecha,@i_formato_fecha),\r\n@w_reajuste_num,\r\n@w_renovacion,\r\n@w_num_renovacion,\r\n@w_precancelacion,\r\n@w_tipo,\r\n@w_porcentaje_fin,\r\n@w_tasa_fin,\r\n@w_cuota_completa,\r\n@w_anticipado_int,\r\n@w_reajuste_intereses,\r\n@w_reduccion,\r\n@w_cuota_anticipada,\r\n@w_dias_anio,\r\n@w_tipo_amortizacion,\r\n@w_cuota_fija,\r\nconvert(float, @w_cuota),\r\nconvert(float, @w_cuota_capital),\r\n@w_dias_gracia,\r\n@w_dia_pago,\r\n@w_desc_ofi,\r\n@w_inicio,\r\n@w_fin,\r\n@w_nombre,\r\n@w_tasa,\r\n@w_referencial,\r\n@w_desc_referencial,\r\n@w_opcion_cap,\r\n0,\r\n@w_reajuste_especial,\r\n@w_banca,\r\n@w_des_sector,\r\n@w_anterior,\r\n@w_migrada,\r\n@w_refer,\r\n@w_desembolso,\r\nconvert(varchar(10),@w_fecha_liq,@i_formato_fecha),\r\n@w_cuota_adic,\r\n@w_meses_hip,\r\nconvert(float, @w_monto_aprobado),\r\n@w_tipo_aplicacion,\r\n@w_gracia_int,\r\n@w_mes_gracia,\r\n@w_num_dec,\r\n@w_fecha_fija,\r\n@w_reajuste,\r\n@w_evitar_feriados,\r\nconvert(varchar(10),@w_fecha_ult_proceso,@i_formato_fecha),\r\nconvert(float, @w_saldo_operacion),\r\n@w_dias_clausula,\r\n@w_clausula_aplicada,\r\n@w_periodo_crecimiento,\r\n@w_tasa_crecimiento,\r\n@w_desc_direccion,\r\n@w_desc_tipo,\r\n@w_clase_cartera,\r\n@w_desc_clase_cartera,\r\n@w_des_programa,\r\n@w_desc_origen_fondos,\r\n@w_desc_calificacion,\r\n@w_numero_reest,\r\nconvert(float, @w_saldo_operacion_finan),\r\nconvert(varchar(10),@w_fecha_ult_rees,@i_formato_fecha),\r\n@w_dias_venc_completo,\r\n@w_fondos_propios ,\r\n@w_prd_cobis ,\r\n@w_ref_exterior,\r\n@w_sujeta_nego,\r\n@w_ref_red,\r\nconvert(float, @w_sal_pro_pon),\r\n@w_tipo_empresa   ,\r\n@w_desc_t_empresa,\r\n@w_validacion   ,\r\n@w_desc_tmnio_empresa,\r\nconvert(varchar(10),@w_fecha_pri_cuota,@i_formato_fecha),\r\n@w_des_naturaleza,\r\n@w_base_calculo,\r\n@w_recalcular,\r\n@w_dia_habil,\r\n@w_usa_tasa_eq ,\r\n@w_grupo_fact,\r\n@w_dias_cap_ven,\r\n@w_bvirtual,\r\n@w_extracto,\r\n@w_reestructuracion,\r\n@w_subtipo,\r\nconvert(varchar(10),@w_fecha_embarque,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_dex,@i_formato_fecha),\r\n@w_num_deuda_ext,\r\n@w_nace_vencida,\r\n@w_num_comex,\r\n@w_calcula_devolucion,\r\n@w_des_edad,\r\n@w_estado_cobranza,\r\n@w_op_pasiva_externa,\r\nconvert(money,@w_op_margen_redescuento),\r\nconvert(char(10),@w_fecha_migracion, @i_formato_fecha),\r\n@w_nom_abogado,\r\n@w_total_diferido,\r\n@w_pendiente_diferido,\r\n@w_capitalizado,\r\n@w_telefonos,\r\n@w_direccion1,\r\n@w_vlr_rec_ini,\r\n@w_vlr_x_amort,\r\n@w_op_padre,\r\n@w_op_hija,\r\n@w_tramite_max,\r\n@w_des_alianza,\r\n@w_llave_finagro,\r\n@w_finagro,\r\n@w_gar_finagro,\r\n@w_sector"
+			},
+			{
+				"_idQuery": "e108d5ba-7e1d-44cc-98dd-5651a7b57ef6",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n@w_mercado_objetivo,\r\n@w_des_mercado_objetivo,\r\n@w_tipo_productor,\r\n@w_des_tipo_productor,\r\n@w_desc_moneda,\r\n@w_nom_oficial,\r\n@w_mercado,\r\n@w_des_mercado,\r\n@w_cod_actividad,\r\n@w_des_actprod,\r\n@w_num_desemb,\r\n@w_desc_situacion,\r\n@w_total_desc_causal,\r\nconvert(varchar(10),@w_fecha_castigo,@i_formato_fecha),\r\n@w_calif_orig,\r\n@w_desc_calif_orig,\r\n@w_calif_segui,\r\n@w_desc_calif_segui,\r\n@w_toperacion,\r\n@w_desc_toperacion,\r\n@w_campana,\r\n@w_camp_det"
+			},
+			{
+				"_idQuery": "aaaaef4c-eaa4-406b-b9a9-c722efb6ff07",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n@w_vx_valor_vencido,\r\n@w_vx_monto,\r\n@w_vx_monto_max,\r\n@w_vx_valor_vencido_rec,\r\n@w_vx_monto_rec"
+			},
+			{
+				"_idQuery": "d8a9df6a-f6d6-4727-b721-26204abc9233",
+				"columns": [
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}",
+					"{22}",
+					"{23}",
+					"{24}",
+					"{25}"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "a36606c7-0b3a-48fb-b86d-0e61feabfb00",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_ab_cliente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_abogado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_anterior"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_anticipado_int"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_apl_cartera"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_banca"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_base_calculo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_bvirtual"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_calcula_devolucion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_calif_orig"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_calif_segui"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_calificacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_camp_det"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_campana"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_capitalizado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_categoria_linea"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_causal"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ciudad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clase_cartera"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_clausula_aplicada"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cobranza"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cod_actividad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ct_desde"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ct_hasta"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cuenta"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_adic"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_anticipada"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota_capital"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_completa"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_fija"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_actprod"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_alianza"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_edad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_entidad_presta"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_mercado_objetivo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_mercado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_naturaleza"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_programa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_sector"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_subtipo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_des_tipo_productor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_calif_orig"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_calif_segui"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_calificacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_causal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_ciudad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_clase_cartera"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_destino"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_direccion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_entidad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_origen_fondos"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_producto"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_reajuste"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_referencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_situacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_t_empresa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_tdividendo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_tipo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_tmnio_empresa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_tplazo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_tvencimiento"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_desembolso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_destino"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_dia_habil"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_dia_pago"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dias_anio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_cap_ven"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_clausula"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_dias_gracia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dias_venc_completo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_venc"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_direccion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_direccion1"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_dist_gracia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_div_vencido"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_divisor"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_edad"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_castigado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_estado_cobranza"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_evitar_feriados"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_extracto"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_castigo"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_dex"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_embarque"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_fecha_fija"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_fin"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini_sobr"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini_venc"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_liq"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_migracion"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_mora_desde"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_pri_cuota"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_prox_pag"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_calif"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_rees"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fin"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_finagro"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_fondos_propios"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_gar_finagro"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_gracia_int"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_grupo_fact"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_inicio"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_iva"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_lin_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_llave_finagro"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_marca_reest"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mercado_objetivo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mercado"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_mes_gracia"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_meses_hip"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_migrada"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_aprobado"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_base"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_honabo"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_iva"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_nace_vencida"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_naturaleza"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nem_producto"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_abogado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_oficial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_num_comex"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_num_desemb"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_num_deuda_ext"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_renovacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_numero_reest"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficina"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_op_divcap_original"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_op_estado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_op_hija"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_op_margen_redescuento"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_op_padre"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_op_pasiva_externa"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_opcion_cap"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_origen_fondos"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_parametro_cta_pte"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_pendiente_diferido"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_cap"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_crecimiento"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_int"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_periodos_gracia_int"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_periodos_gracia"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porc_juridico"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porc_prejuridico"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje_fin"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_prd_cobis"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_precancelacion"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_programa"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajustable"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajuste_especial"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_reajuste_fecha"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajuste_intereses"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_reajuste_num"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_reajuste_periodo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reajuste"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_recalcular"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_recono"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reduccion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reestructuracion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ref_exterior"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ref_red"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_refer"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_referencial"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_regimen"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_renovacion"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_renovaciones"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_sal_pro_pon"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_cap"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_operacion_finan"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_operacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_sec_rpa_pag"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_sec_rpa_rec"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sector"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_situacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_subtipo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_sujeta_nego"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tabla"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_crecimiento"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_fin"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tdividendo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_telefono1_ab"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_telefono2_ab"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_telefonos"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tiene_reco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_amortizacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_aplicacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_calif_seg"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_empresa"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_linea"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_productor"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_total_desc_causal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_total_desc_situacion"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_diferido"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_total_honabo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tplazo"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tr_subtipo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite_max"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_usa_tasa_eq"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_validacion"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valint"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_valor"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vlr_rec_ini"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vlr_x_amort"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vx_monto_max"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vx_monto_rec"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vx_monto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vx_valor_vencido_rec"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_vx_valor_vencido"
+			}
+		]
+	}
+}

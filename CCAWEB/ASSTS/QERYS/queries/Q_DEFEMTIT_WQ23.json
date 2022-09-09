@@ -1,0 +1,398 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_DEFEMTIT_WQ23_872",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 3,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_DEFEMTIT_WQ23",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_DEFERRESI_770",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_DEFERRESI_770/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/QERYS/Queries/Q_DEFEMTIT_WQ23/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "items15",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT93_ITEMS155770"
+			},
+			"attributeQuery": "items15",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 16,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEM2QTW2141_16",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items4",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT58_ITEMS4ZI770"
+			},
+			"attributeQuery": "items4",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEM2TTT2246_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items5",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT48_ITEMS5DY770"
+			},
+			"attributeQuery": "items5",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEM2W2T2335_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items3",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT19_ITEMS3JM770"
+			},
+			"attributeQuery": "items3",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEM2WTQQ227_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items8",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT34_ITEMS8YY770"
+			},
+			"attributeQuery": "items8",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 9,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEM333IW921_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items2",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT74_ITEMS2OO770"
+			},
+			"attributeQuery": "items2",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMII3W3942_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items13",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT73_ITEMS133770"
+			},
+			"attributeQuery": "items13",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 14,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMIQI2T927_14",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items14",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT14_ITEMS144770"
+			},
+			"attributeQuery": "items14",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 15,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMQ3Q2I804_15",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dividend",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT85_DIVIDEDD770"
+			},
+			"attributeQuery": "dividend",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"label": {
+				"defaultValue": {
+					"$ref": "../../../ASSTS/assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DIVIDENDD_33129"
+				},
+				"labelId": "LBL_ASSTS_DIVIDENDD_33129",
+				"moduleId": "ASSTS"
+			},
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMT2W2W117_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items11",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT36_ITEMS111770"
+			},
+			"attributeQuery": "items11",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 12,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMT2WIT663_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items10",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT63_ITEMS100770"
+			},
+			"attributeQuery": "items10",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 11,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMT3IWW450_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items7",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT38_ITEMS7OM770"
+			},
+			"attributeQuery": "items7",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 8,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMTIII2729_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items12",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT72_ITEMS122770"
+			},
+			"attributeQuery": "items12",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 13,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMTQTQT910_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items9",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT99_ITEMS9EP770"
+			},
+			"attributeQuery": "items9",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 10,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMTTTTT889_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items6",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT29_ITEMS6RP770"
+			},
+			"attributeQuery": "items6",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 7,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMTWT2T822_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "items1",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_DEFERRESI_770.json#/attributes/AT22_ITEMS1EE770"
+			},
+			"attributeQuery": "items1",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_DEFEMTWW3W962_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "QERYS"
+			}
+		}
+	]
+}

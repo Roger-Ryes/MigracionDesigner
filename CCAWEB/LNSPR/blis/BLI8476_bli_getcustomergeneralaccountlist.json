@@ -1,0 +1,116 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cliente",
+			"type": "CUSTOM",
+			"value": "value1"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_producto",
+			"type": "CUSTOM",
+			"value": "producto"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7003"
+		}
+	],
+	"name": "BLI_GetCustomerGeneralAccountList",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8476_bli_getcustomergeneralaccountlist",
+	"patternName": "BLI_GetCustomerGeneralAccountList",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "3b58b7ad-966c-4af3-91f9-bf507b250405",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select ah_cuenta, ltrim(rtrim(ah_cta_banco)), ltrim(rtrim(ah_nombre))\n            from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "3b58b7ad-966c-4af3-91f9-bf507b250405",
+			"columns": [
+				{
+					"attributeId": "AT13_CODEHYBM376",
+					"entityId": "EN_CATALOGIS_LNSPR",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT46_VALUE1YF376",
+					"entityId": "EN_CATALOGIS_LNSPR",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT51_VALUE2LK376",
+					"entityId": "EN_CATALOGIS_LNSPR",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_CATALOGIS_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "Catalog3Items"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_cuenta_cobis",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

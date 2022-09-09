@@ -1,0 +1,173 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7037"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial_ing",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_en_linea",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_pago_ext",
+			"type": "CONSTANT",
+			"value": "N"
+		}
+	],
+	"name": "BLI_Detail_No_Applied_Payment",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2543_bli_detail_no_applied_payment",
+	"patternName": "BLI_Detail_No_Applied_Payment",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "986b9aa7-0077-46fe-90ef-06a4d621e1cd",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "select\r\n      \u0027TIPO\u0027       = abd_tipo,\r\n      \u0027CONCEPTO\u0027   = abd_concepto,\r\n      \u0027CUENTA\u0027     = abd_cuenta,\r\n      \u0027MONEDA \u0027    = abd_moneda,\r\n      \u0027MONTO MPG\u0027  = convert(float, abd_monto_mpg),\r\n      \u0027MONTO MOP\u0027  = convert(float, abd_monto_mop)\r\n      from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "986b9aa7-0077-46fe-90ef-06a4d621e1cd",
+			"columns": [
+				{
+					"attributeId": "AT19_TIPOYEPX741",
+					"entityId": "EN_DETAILNEO_741",
+					"format": "",
+					"name": "TIPO",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT31_CONCEPTO741",
+					"entityId": "EN_DETAILNEO_741",
+					"format": "",
+					"name": "CONCEPTO",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_CUENTACZ741",
+					"entityId": "EN_DETAILNEO_741",
+					"format": "",
+					"name": "CUENTA",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_MONEDAKA741",
+					"entityId": "EN_DETAILNEO_741",
+					"format": "",
+					"name": "MONEDA",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT32_MONTOMGG741",
+					"entityId": "EN_DETAILNEO_741",
+					"format": "",
+					"name": "MONTO MPG",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_MONTOMOP741",
+					"entityId": "EN_DETAILNEO_741",
+					"format": "",
+					"name": "MONTO MOP",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_DETAILNEO_741",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DetailNoAppliedPayment"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_eliminar_pagos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

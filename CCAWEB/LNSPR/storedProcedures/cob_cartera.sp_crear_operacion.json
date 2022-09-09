@@ -1,0 +1,586 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_crear_operacion.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_crear_operacion",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_anterior"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_migrada"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nombre"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_sector"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_comentario"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ini"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_aprobado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_destino"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_lin_credito"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ciudad"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_forma_pago"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_no_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_dia_pago"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_clase_cartera"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_origen_fondos"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_empresa"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_validacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_fondos_propios"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ref_exterior"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_sujeta_nego"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ref_red"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_convierte_tasa"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tasa_equivalente"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fec_embarque"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fec_dex"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_num_deuda_ext"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_num_comex"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_batch_dd"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite_hijo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_reestructuracion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_cambio"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_numero_reest"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_oper_pas_ext"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_en_linea"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banca"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_salida"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_grupal"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_promocion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_acepta_ren"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_no_acepta"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_emprendimiento"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_plazo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tplazo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tdividendo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_periodo_cap"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_periodo_int"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_fecha_fija"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ref_grupal"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_es_grupal"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_fondeador"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cliente_1"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cliente_2"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cliente_3"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cliente_4"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cliente_5"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_monto_1"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_monto_2"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_monto_3"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_monto_4"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_monto_5"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_monto_6"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_grupo"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ven_pc"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa_grupal"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ciudad_destino"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_es_interciclo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_simulacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desde_front_cca"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_codeudor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "0a760b4e-ec1c-4a84-89c2-9c7da7a0da2b",
+				"columns": [
+					"1"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "7e6833da-e77a-496a-8857-4d13fb57e957",
+				"columns": [
+					"1"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "8444c5ac-4c21-405c-aee4-d1ffcf6b3e18",
+				"columns": [
+					"1"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "a660f720-cf12-4da1-8d8d-ad322495ff53",
+				"columns": [
+					"1"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "87cdf81e-f43d-472a-a0ce-1ef1345109e6",
+				"columns": [
+					"1"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "f21f8da4-da48-4bb1-8fe0-aa1e780819f6",
+				"columns": [
+					"1"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "42aaf7fb-b8f6-4d36-9f9c-95350e62bcea",
+				"columns": [
+					"1"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cadena"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_contador"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_contr"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_hoy"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_direccion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_proceso"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_hijas"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_pa_char"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_pos"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_rowcount"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sector_cli"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sector_ger"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_valor"
+			}
+		]
+	}
+}

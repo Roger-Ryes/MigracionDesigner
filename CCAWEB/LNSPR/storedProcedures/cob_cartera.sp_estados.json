@@ -1,0 +1,109 @@
+{
+	"filename": "C:\\Users\\jquitora\\Documents\\SP\\sp_estados.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_estados",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_cca"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado_ini"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cond1"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_parametro"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_con"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_sector"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "e09aef32-93a8-489c-91a8-79865ef7dee0",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select es_descripcion from"
+			},
+			{
+				"_idQuery": "5d7f11f8-17aa-4063-8de9-5288c554a189",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select es_descripcion from"
+			},
+			{
+				"_idQuery": "87ee850e-a321-41e7-9166-991dcc2d899c",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select es_codigo,es_descripcion from"
+			},
+			{
+				"_idQuery": "207deafb-9320-4d8a-a66d-81a1cfbed063",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select es_descripcion from"
+			},
+			{
+				"_idQuery": "cd4189b6-5865-42f3-8e3e-a0883a85911a",
+				"columns": [
+					"Estados Posibles"
+				],
+				"editMode": false,
+				"queryText": "select   \"Estados Posibles\"=B.es_descripcion\n   from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

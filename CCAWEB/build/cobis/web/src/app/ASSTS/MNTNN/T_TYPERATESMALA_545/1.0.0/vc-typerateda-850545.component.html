@@ -1,0 +1,25 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-typeratesmala-545 " [formGroup]="vc.viewState.T_TYPERATESMALA_545"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_TYPERATEDA_850545.enabled, 'VC_TYPERATEDA_850545')" [properties]="vc.viewState.VC_TYPERATEDA_850545" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_TYPERATMMM_527908.enabled, 'G_TYPERATMMM_527908', 'VC_TYPERATEDA_850545', 'TypeRates',vc.viewState.T_TYPERATESMALA_545)" *ngIf="isVisible('G_TYPERATMMM_527908',true)" [properties]="vc.viewState.G_TYPERATMMM_527908" [mode]="vc.mode" formGroupName="TypeRates"> 
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_TEXTINPUTBOXAKX_265908.enabled, 'VA_TEXTINPUTBOXAKX_265908', 'G_TYPERATMMM_527908', 'TypeRates.identifier',vc.viewState.T_TYPERATESMALA_545)" *ngIf="isVisible('VA_TEXTINPUTBOXAKX_265908')" [properties]="vc.viewState.VA_TEXTINPUTBOXAKX_265908" [mode]="vc.mode" formControlName="identifier"></cobis-textinputbox>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_TEXTINPUTBOXMYR_708908.enabled, 'VA_TEXTINPUTBOXMYR_708908', 'G_TYPERATMMM_527908', 'TypeRates.description',vc.viewState.T_TYPERATESMALA_545)" *ngIf="isVisible('VA_TEXTINPUTBOXMYR_708908')" [properties]="vc.viewState.VA_TEXTINPUTBOXMYR_708908" [mode]="vc.mode" formControlName="description"></cobis-textinputbox>
+       <cobis-radiobuttonlist [attr.disabled]="isDisabled( vc.viewState.VA_CLASEXTBDAGEJGY_237908.enabled, 'VA_CLASEXTBDAGEJGY_237908', 'G_TYPERATMMM_527908', 'TypeRates.clase',vc.viewState.T_TYPERATESMALA_545)" *ngIf="isVisible('VA_CLASEXTBDAGEJGY_237908')" [properties]="vc.viewState.VA_CLASEXTBDAGEJGY_237908" [mode]="vc.mode" [dataSource]="vc.catalogs.VA_CLASEXTBDAGEJGY_237908" formControlName="clase"></cobis-radiobuttonlist> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TTYPERAT_R0N.enabled,'CM_TTYPERAT_R0N')" *ngIf="isVisible('CM_TTYPERAT_R0N')" [properties]="vc.viewState.CM_TTYPERAT_R0N" [mode]="vc.mode" (onClick)="executeCommand('CM_TTYPERAT_R0N',vc.viewState.CM_TTYPERAT_R0N.name,vc.viewState.CM_TTYPERAT_R0N.causesValidation,vc.viewState.CM_TTYPERAT_R0N.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TTYPERAT_MET.enabled,'CM_TTYPERAT_MET')" *ngIf="isVisible('CM_TTYPERAT_MET')" [properties]="vc.viewState.CM_TTYPERAT_MET" [mode]="vc.mode" (onClick)="executeCommand('CM_TTYPERAT_MET',vc.viewState.CM_TTYPERAT_MET.name,vc.viewState.CM_TTYPERAT_MET.causesValidation,vc.viewState.CM_TTYPERAT_MET.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

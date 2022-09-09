@@ -1,0 +1,78 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "H"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7131"
+		}
+	],
+	"name": "BLI_LoanStatus",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4202_bli_loanstatus",
+	"patternName": "BLI_LoanStatus",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "cd4189b6-5865-42f3-8e3e-a0883a85911a",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "select   \"Estados Posibles\"=B.es_descripcion\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "cd4189b6-5865-42f3-8e3e-a0883a85911a",
+			"columns": [
+				{
+					"attributeId": "AT64_DESCSTUA310",
+					"entityId": "EN_STATESAEO_310",
+					"format": "",
+					"name": "Estados Posibles",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_STATESAEO_310",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "StatesAssetsLoan"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_estados",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

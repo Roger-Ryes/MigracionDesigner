@@ -1,0 +1,141 @@
+{
+	"filename": "D:\\Programas\\Covert sp\\prodlinea.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_productos_linea",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_naturaleza"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "45b904dd-b7f7-45c5-bc32-cae839be99fc",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n\t\t\tcodigo,\r\n\t\t\tvalor\r\n\t\tfrom"
+			},
+			{
+				"_idQuery": "0b327b46-cbc8-4561-974f-2f6bb5538214",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n\t\t\tpl_producto,\r\n\t\t\tpl_descripcion\r\n\t\t\tFROM"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_msg"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tabla_nombre"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tabla"
+			}
+		]
+	}
+}

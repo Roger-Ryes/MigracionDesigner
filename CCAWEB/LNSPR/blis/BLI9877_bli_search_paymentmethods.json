@@ -1,0 +1,97 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CUSTOM",
+			"value": "tipo"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7076"
+		}
+	],
+	"name": "BLI_Search_PaymentMethods",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9877_bli_search_paymentmethods",
+	"patternName": "BLI_Search_PaymentMethods",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "e3973f91-97e3-4018-b521-31cf4bab378b",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 3,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "e3973f91-97e3-4018-b521-31cf4bab378b",
+			"columns": [
+				{
+					"attributeId": "AT95_DESCRIIO324",
+					"entityId": "EN_PAYMENTDM_324",
+					"format": "",
+					"name": "descripcion",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_PRODUCTT324",
+					"entityId": "EN_PAYMENTDM_324",
+					"format": "",
+					"name": "producto",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PAYMENTDM_324",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "PaymentMethodsList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_producto",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

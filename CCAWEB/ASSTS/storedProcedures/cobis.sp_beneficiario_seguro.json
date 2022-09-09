@@ -1,0 +1,366 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\benefisegur.sp",
+	"procedure": {
+		"database": "cobis",
+		"name": "sp_beneficiario_seguro",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "bit",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_nro_operacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_id"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ced_ruc"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nombres"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_apellido_p"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_apellido_m"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_parentesco"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_secuencia"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ente"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_nac"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_telefono"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_direccion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_provincia"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_ciudad"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_parroquia"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_siguiente"
+			},
+			{
+				"dataType": "cuenta",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_siguiente1"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_debugger"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_codpostal"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_apertura"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ambos_seguros"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_localidad"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_origen"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "out",
+				"name": "@o_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "1f599d47-0125-4ae6-af62-3d4b3e87b8cd",
+				"columns": [
+					"OPERACION",
+					"PRODUCTO",
+					"SECUENCIA",
+					"TIPO ID.",
+					"ID.",
+					"NOMBRE",
+					"PORCENTAJE",
+					"PARENTESCO",
+					"ENTE",
+					"FECHA NAC.",
+					"TELEFONO",
+					"DIRECCION",
+					"CNOMBRE",
+					"CAPELLIDOP",
+					"CAPELLIDOS",
+					"CPARENTESCO",
+					"CDIRECCION",
+					"CCODPOSTAL",
+					"CPROVINCIA",
+					"CCIUDAD",
+					"CPARROQUIA",
+					"AMBOS SEGUROS",
+					"TRAMITE"
+				],
+				"editMode": false,
+				"queryText": "select\r\n         \u0027OPERACION\u0027   = bs_nro_operacion,\r\n         \u0027PRODUCTO\u0027    = bs_producto,\r\n         \u0027SECUENCIA\u0027   = bs_secuencia,\r\n         \u0027TIPO ID.\u0027    = bs_tipo_id,\r\n         \u0027ID.\u0027         = bs_ced_ruc,\r\n         \u0027NOMBRE\u0027      = bs_nombres + \u0027 \u0027 + bs_apellido_paterno +  \u0027 \u0027 + bs_apellido_materno,\r\n         \u0027PORCENTAJE\u0027  = bs_porcentaje,\r\n         \u0027PARENTESCO\u0027  = bs_parentesco + \u0027 - \u0027 + valor,\r\n         \u0027ENTE\u0027        = ISNULL(bs_ente,0),\r\n         \u0027FECHA NAC.\u0027  = convert(varchar(10),bs_fecha_nac,@i_formato_fecha),\r\n         \u0027TELEFONO\u0027    = bs_telefono,\r\n         \u0027DIRECCION\u0027   = bs_direccion + \u0027 \u0027 + pq_descripcion + \u0027 \u0027 + ci_descripcion + \u0027 \u0027 + pv_descripcion + \u0027 CP \u0027 + isnull(bs_codpostal, \u0027-\u0027),\r\n         \u0027CNOMBRE\u0027      = bs_nombres,\r\n         \u0027CAPELLIDOP\u0027   = bs_apellido_paterno,\r\n         \u0027CAPELLIDOS\u0027   = bs_apellido_materno,\r\n         \u0027CPARENTESCO\u0027  = bs_parentesco,\r\n         \u0027CDIRECCION\u0027   = bs_direccion,\r\n         \u0027CCODPOSTAL\u0027   = bs_codpostal,\r\n         \u0027CPROVINCIA\u0027   = bs_provincia,\r\n         \u0027CCIUDAD\u0027      = bs_ciudad,\r\n         \u0027CPARROQUIA\u0027   = bs_parroquia,\r\n         \u0027AMBOS SEGUROS\u0027= bs_ambos_seguros,\r\n\t\t \u0027TRAMITE\u0027      = bs_tramite\r\n      from"
+			},
+			{
+				"_idQuery": "1f599d47-0125-4ae6-af62-3d4b3e87b8cd",
+				"columns": [
+					"OPERACION",
+					"PRODUCTO",
+					"SECUENCIA",
+					"TIPO ID.",
+					"ID.",
+					"NOMBRE",
+					"PORCENTAJE",
+					"PARENTESCO",
+					"ENTE",
+					"FECHA NAC.",
+					"TELEFONO",
+					"DIRECCION",
+					"CNOMBRE",
+					"CAPELLIDOP",
+					"CAPELLIDOS",
+					"CPARENTESCO",
+					"CDIRECCION",
+					"CCODPOSTAL",
+					"CPROVINCIA",
+					"CCIUDAD",
+					"CPARROQUIA",
+					"AMBOS SEGUROS",
+					"TRAMITE"
+				],
+				"editMode": false,
+				"queryText": "select\r\n         \u0027OPERACION\u0027   = bs_nro_operacion,\r\n         \u0027PRODUCTO\u0027    = bs_producto,\r\n         \u0027SECUENCIA\u0027   = bs_secuencia,\r\n         \u0027TIPO ID.\u0027    = bs_tipo_id,\r\n         \u0027ID.\u0027         = bs_ced_ruc,\r\n         \u0027NOMBRE\u0027      = bs_nombres + \u0027 \u0027 + bs_apellido_paterno +  \u0027 \u0027 + bs_apellido_materno,\r\n         \u0027PORCENTAJE\u0027  = bs_porcentaje,\r\n         \u0027PARENTESCO\u0027  = bs_parentesco + \u0027 - \u0027 + valor,\r\n         \u0027ENTE\u0027        = ISNULL(bs_ente,0),\r\n         \u0027FECHA NAC.\u0027  = convert(varchar(10),bs_fecha_nac,@i_formato_fecha),\r\n         \u0027TELEFONO\u0027    = bs_telefono,\r\n         \u0027DIRECCION\u0027   = bs_direccion + \u0027 \u0027 + pq_descripcion + \u0027 \u0027 + ci_descripcion + \u0027 \u0027 + pv_descripcion + \u0027 CP \u0027 + isnull(bs_codpostal, \u0027-\u0027),\r\n         \u0027CNOMBRE\u0027      = bs_nombres,\r\n         \u0027CAPELLIDOP\u0027   = bs_apellido_paterno,\r\n         \u0027CAPELLIDOS\u0027   = bs_apellido_materno,\r\n         \u0027CPARENTESCO\u0027  = bs_parentesco,\r\n         \u0027CDIRECCION\u0027   = bs_direccion,\r\n         \u0027CCODPOSTAL\u0027   = bs_codpostal,\r\n         \u0027CPROVINCIA\u0027   = bs_provincia,\r\n         \u0027CCIUDAD\u0027      = bs_ciudad,\r\n         \u0027CPARROQUIA\u0027   = bs_parroquia,\r\n         \u0027AMBOS SEGUROS\u0027= bs_ambos_seguros,\r\n\t\t \u0027TRAMITE\u0027      = bs_tramite\r\n      from"
+			},
+			{
+				"_idQuery": "ca3f8e91-a2ed-499c-bd3f-5f48e3fba07b",
+				"columns": [
+					"OPERACION",
+					"PRODUCTO",
+					"SECUENCIA",
+					"TIPO ID.",
+					"ID.",
+					"NOMBRE",
+					"PORCENTAJE",
+					"PARENTESCO",
+					"ENTE",
+					"FECHA NAC.",
+					"TELEFONO",
+					"DIRECCION",
+					"CNOMBRE",
+					"CAPELLIDOP",
+					"CAPELLIDOS",
+					"CPARENTESCO",
+					"CDIRECCION",
+					"CODPOSTAL",
+					"CPROVINCIA",
+					"CCIUDAD",
+					"CPARROQUIA",
+					"AMBOS SEGUROS"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "smallint",
+				"name": "@w_ciudad"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_extra"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_aux"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_proceso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_msg"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_parroquia"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_provincia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_tabla_cod"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_total"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_unir"
+			}
+		]
+	}
+}

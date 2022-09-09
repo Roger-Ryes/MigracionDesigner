@@ -1,0 +1,105 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo",
+			"type": "CONSTANT",
+			"value": "A"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7062"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_oficina",
+			"type": "CUSTOM",
+			"value": "oficina"
+		}
+	],
+	"name": "BLI_OfficialCatalog",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI1343_bli_officialcatalog",
+	"patternName": "BLI_OfficialCatalog",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "cea31247-e2e5-4e97-9ca1-a7582cba5e50",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "select \u0027OFICIAL\u0027 = oc_oficial, \u0027NOMBRE\u0027 = fu_nombre, \u0027NIVEL\u0027 = valor\n      from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "cea31247-e2e5-4e97-9ca1-a7582cba5e50",
+			"columns": [
+				{
+					"attributeId": "AT54_OFFICICL431",
+					"entityId": "EN_OFFICIALL_431",
+					"format": "",
+					"name": "OFICIAL",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_OFFICIMM431",
+					"entityId": "EN_OFFICIALL_431",
+					"format": "",
+					"name": "NOMBRE",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_LEVELELG431",
+					"entityId": "EN_OFFICIALL_431",
+					"format": "",
+					"name": "NIVEL",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_OFFICIALL_431",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "Official"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_oficiales",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

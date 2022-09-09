@@ -1,0 +1,577 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_AMORAZTI_NF61_972",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+			],
+			"executionType": 1,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_AMORAZTI_NF61",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_AMORTIZOT_602",
+	"mainEntityModule": "ASSTS",
+	"mainEntityName": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/Entities/EN_AMORTIZOT_602/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../ASSTS/relations/componentKeys.json#/TRNSC/Queries/Q_AMORAZTI_NF61/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "dynamicField12",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT80_DYNAMIED602"
+			},
+			"attributeQuery": "dynamicField12",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 21,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORA16FT1503_15",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField10",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT90_DYNAMIDI602"
+			},
+			"attributeQuery": "dynamicField10",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 18,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORA1TF1N267_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField1",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT68_DYNAMIIL602"
+			},
+			"attributeQuery": "dynamicField1",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 4,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORA1ZZT1400_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField6",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT74_DYNAMIEF602"
+			},
+			"attributeQuery": "dynamicField6",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 16,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORA6NIZF461_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField5",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT14_DYNAMIL5602"
+			},
+			"attributeQuery": "dynamicField5",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_AMORA6TZTZ272_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField8",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT62_DYNAMIID602"
+			},
+			"attributeQuery": "dynamicField8",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 23,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORA6ZTIT756_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField18",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT96_DYNAMI1L602"
+			},
+			"attributeQuery": "dynamicField18",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 11,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAFF1NI512_21",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField7",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT46_DYNAMIDI602"
+			},
+			"attributeQuery": "dynamicField7",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 15,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAFIZTN389_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField9",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT32_DYNAMIC9602"
+			},
+			"attributeQuery": "dynamicField9",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 17,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAFNT1T558_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField11",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT27_DYNAMII1602"
+			},
+			"attributeQuery": "dynamicField11",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 14,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAFZ11N381_14",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField16",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT46_DYNAMIFD602"
+			},
+			"attributeQuery": "dynamicField16",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 20,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAFZZZI737_19",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField14",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT81_DYNAMILC602"
+			},
+			"attributeQuery": "dynamicField14",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 7,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAIFNT6933_17",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField13",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT87_DYNAMI13602"
+			},
+			"attributeQuery": "dynamicField13",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 22,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAITN66259_16",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField15",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT39_DYNAMIEI602"
+			},
+			"attributeQuery": "dynamicField15",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 8,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAITN6I559_18",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField19",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT55_DYNAMI9E602"
+			},
+			"attributeQuery": "dynamicField19",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 24,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAIZ1Z6882_22",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dividend",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT88_DIVIDEDD602"
+			},
+			"attributeQuery": "dividend",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_AMORAN6TIF520_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField17",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT58_DYNAMI77602"
+			},
+			"attributeQuery": "dynamicField17",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 9,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORANNZZN291_20",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField3",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT73_DYNAMIFL602"
+			},
+			"attributeQuery": "dynamicField3",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 10,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORANT6ZF621_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "expirationDate",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT69_EXPIRAIT602"
+			},
+			"attributeQuery": "expirationDate",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_AMORANZ6II598_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField20",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT45_DYNAMI0F602"
+			},
+			"attributeQuery": "dynamicField20",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 12,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORANZFN1570_23",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fee",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT14_FEEIEJEU602"
+			},
+			"attributeQuery": "fee",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 13,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_AMORATIZ6Z301_24",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField2",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT98_DYNAMIEL602"
+			},
+			"attributeQuery": "dynamicField2",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 19,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORATTIF6721_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "balanceCapital",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT48_BALANCCL602"
+			},
+			"attributeQuery": "balanceCapital",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_AMORATTZ6Z903_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "dynamicField4",
+			"attribute": {
+				"$ref": "../../../ASSTS/entities/EN_AMORTIZOT_602.json#/attributes/AT65_DYNAMIDF602"
+			},
+			"attributeQuery": "dynamicField4",
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"name": "QueryMember",
+			"operator": null,
+			"order": 5,
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_AMORAZI1FT152_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "ASSTS",
+				"subModuleId": "TRNSC"
+			}
+		}
+	]
+}

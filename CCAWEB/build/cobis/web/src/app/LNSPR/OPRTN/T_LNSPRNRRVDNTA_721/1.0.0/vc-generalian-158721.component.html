@@ -1,0 +1,64 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-lnspr cb-t-lnsprnrrvdnta-721 cb-form--consolidated-view" [formGroup]="vc.viewState.T_LNSPRNRRVDNTA_721"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__start" *ngIf="loadFromAPI"> 
+    <cobis-header [behavior]="myBehavior" [data]="myData" [headerId]="jsonHeader!.headerId" [modelHeader]="vc.model" [headerInfoProduct]="jsonHeader!.headerInfoProduct" [showInfo]="jsonHeader!.showInfo" [headerActions]="headerActionsBase" (eventCustomAction)="executeActionCustom($event, jsonHeader!.headerId)" (eventNavAction)="executeActionNavigate($event, actionsHeaderFunctions)" (eventSearch)="executeSearch(jsonHeader!.searchPage)" [loadFromAPI]="loadFromAPI" [collapsed]="vc.viewState[this.jsonHeader!.headerId].collapsed" [visibleExpandOption]="vc.viewState[this.jsonHeader!.headerId].visibleExpandOption" [visibleSearchOption]="vc.viewState[this.jsonHeader!.headerId].showButtons.search" [visibleActionsOption]="vc.viewState[this.jsonHeader!.headerId].visibleActionsOption" [headerInfoLabels]="vc.viewState[vc.idCobisHeader!].labels" [isConsolidatedView]="true"> 
+    </cobis-header> 
+   </div> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_GENERALIAN_158721.enabled, 'VC_GENERALIAN_158721')" [properties]="vc.viewState.VC_GENERALIAN_158721" [mode]="vc.mode"> 
+      <cobis-tabbedlayout-container [disabled]="isDisabled( vc.viewState.G_GENERALTII_344243.enabled, 'G_GENERALTII_344243', 'VC_GENERALIAN_158721')" *ngIf="isVisible('G_GENERALTII_344243')" [mode]="vc.mode" [properties]="vc.viewState.G_GENERALTII_344243" (onChangeGroup)="changeGroup($event, 'G_GENERALTII_344243')"> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_GENERALIEI_329243_tab.enabled, 'G_GENERALIEI_329243_tab', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALIEI_329243_tab')" [properties]="vc.viewState.G_GENERALIEI_329243_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_GENERALIEI_329243.enabled, 'G_GENERALIEI_329243', 'G_GENERALIEI_329243_tab')" *ngIf="isVisible('G_GENERALIEI_329243')" [properties]="vc.viewState.G_GENERALIEI_329243" [mode]="vc.mode"> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_GENERALAAO_224243.enabled, 'G_GENERALAAO_224243', 'G_GENERALIEI_329243')" *ngIf="isVisible('G_GENERALAAO_224243')" [properties]="vc.viewState.G_GENERALAAO_224243" [mode]="vc.mode"> 
+          <div> 
+           <ng-template registerView id="G_GENERALAAO_224243"></ng-template> 
+          </div> 
+         </cobis-groupbox> 
+         <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_GENERALLII_531243.enabled, 'G_GENERALLII_531243', 'G_GENERALIEI_329243')" *ngIf="isVisible('G_GENERALLII_531243')" [properties]="vc.viewState.G_GENERALLII_531243" [mode]="vc.mode"> 
+          <div> 
+           <ng-template registerView id="G_GENERALLII_531243"></ng-template> 
+          </div> 
+         </cobis-groupbox> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_GENERALOIA_538243_tab.enabled, 'G_GENERALOIA_538243_tab', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALOIA_538243_tab')" [properties]="vc.viewState.G_GENERALOIA_538243_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_GENERALOIA_538243.enabled, 'G_GENERALOIA_538243', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALOIA_538243')" [properties]="vc.viewState.G_GENERALOIA_538243" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_GENERALOIA_538243"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_GENERALEIN_751243_tab.enabled, 'G_GENERALEIN_751243_tab', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALEIN_751243_tab')" [properties]="vc.viewState.G_GENERALEIN_751243_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_GENERALEIN_751243.enabled, 'G_GENERALEIN_751243', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALEIN_751243')" [properties]="vc.viewState.G_GENERALEIN_751243" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_GENERALEIN_751243"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_GENERALTIN_333243_tab.enabled, 'G_GENERALTIN_333243_tab', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALTIN_333243_tab')" [properties]="vc.viewState.G_GENERALTIN_333243_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_GENERALTIN_333243.enabled, 'G_GENERALTIN_333243', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALTIN_333243')" [properties]="vc.viewState.G_GENERALTIN_333243" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_GENERALTIN_333243"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+       <cobis-tabbedlayout-tab [disabled]="isDisabled( vc.viewState.G_GENERALNLN_510243_tab.enabled, 'G_GENERALNLN_510243_tab', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALNLN_510243_tab')" [properties]="vc.viewState.G_GENERALNLN_510243_tab" [mode]="vc.mode"> 
+        <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_GENERALNLN_510243.enabled, 'G_GENERALNLN_510243', 'G_GENERALTII_344243')" *ngIf="isVisible('G_GENERALNLN_510243')" [properties]="vc.viewState.G_GENERALNLN_510243" [mode]="vc.mode"> 
+         <div> 
+          <ng-template registerView id="G_GENERALNLN_510243"></ng-template> 
+         </div> 
+        </cobis-groupbox> 
+       </cobis-tabbedlayout-tab> 
+      </cobis-tabbedlayout-container> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

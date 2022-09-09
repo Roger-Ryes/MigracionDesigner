@@ -1,0 +1,23 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-asstsegppjjua-289 " [formGroup]="vc.viewState.T_ASSTSEGPPJJUA_289"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_RESTRUCTRR_543289.enabled, 'VC_RESTRUCTRR_543289')" [properties]="vc.viewState.VC_RESTRUCTRR_543289" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_RESTRUCUOI_653362.enabled, 'G_RESTRUCUOI_653362', 'VC_RESTRUCTRR_543289')" *ngIf="isVisible('G_RESTRUCUOI_653362')" [properties]="vc.viewState.G_RESTRUCUOI_653362" [mode]="vc.mode"> 
+       <cobis-textlabel *ngIf="isVisible('VA_VASIMPLELABELLL_205362')" [properties]="vc.viewState.VA_VASIMPLELABELLL_205362"></cobis-textlabel> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TASSTSEG_JJT.enabled,'CM_TASSTSEG_JJT')" *ngIf="isVisible('CM_TASSTSEG_JJT')" [properties]="vc.viewState.CM_TASSTSEG_JJT" [mode]="vc.mode" (onClick)="executeCommand('CM_TASSTSEG_JJT',vc.viewState.CM_TASSTSEG_JJT.name,vc.viewState.CM_TASSTSEG_JJT.causesValidation,vc.viewState.CM_TASSTSEG_JJT.close)"></cobis-button> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TASSTSEG_J5_.enabled,'CM_TASSTSEG_J5_')" *ngIf="isVisible('CM_TASSTSEG_J5_')" [properties]="vc.viewState.CM_TASSTSEG_J5_" [mode]="vc.mode" (onClick)="executeCommand('CM_TASSTSEG_J5_',vc.viewState.CM_TASSTSEG_J5_.name,vc.viewState.CM_TASSTSEG_J5_.causesValidation,vc.viewState.CM_TASSTSEG_J5_.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

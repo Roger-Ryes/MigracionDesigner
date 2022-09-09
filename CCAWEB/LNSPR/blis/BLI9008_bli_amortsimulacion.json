@@ -1,0 +1,241 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OperationEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "74663"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_toperacion",
+			"type": "CONSTANT",
+			"value": "xxxx"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_moneda",
+			"type": "CONSTANT",
+			"value": "0"
+		},
+		{
+			"attributeId": "",
+			"bddType": "money",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_monto",
+			"type": "CONSTANT",
+			"value": "0"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_borra_tmp",
+			"type": "CONSTANT",
+			"value": "N"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_opcion",
+			"type": "CONSTANT",
+			"value": "Q"
+		},
+		{
+			"attributeId": "AT98_OPERATNO313",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_OPERATINN_LNSPR",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_tasa",
+			"type": "CONSTANT",
+			"value": "0.00"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_banco",
+			"type": "CONSTANT",
+			"value": "XXX"
+		}
+	],
+	"name": "BLI_AmortSimulacion",
+	"outputEntity": [
+	],
+	"outputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "float",
+			"dataType": "DOUBLE",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_tasa",
+			"type": "CUSTOM",
+			"value": "tasa"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "out",
+			"entityId": "",
+			"format": "",
+			"name": "@o_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		}
+	],
+	"patternId": "BLI9008_bli_amortsimulacion",
+	"patternName": "BLI_AmortSimulacion",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "7c9d396a-2468-4477-b296-e6c8bd080bc8",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "7c9d396a-2468-4477-b296-e6c8bd080bc8",
+			"columns": [
+				{
+					"attributeId": "AT64_DIVIDEND108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_DATEHAPP108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_BALANCEE108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_CAPITALL108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_INTERETS108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_IVAYAFWH108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT57_OTHERSVX108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT32_TOTALGBW108",
+					"entityId": "EN_AMORTSIUT_108",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_AMORTSIUT_108",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "AmortSimulation"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_simulacion_prestamo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

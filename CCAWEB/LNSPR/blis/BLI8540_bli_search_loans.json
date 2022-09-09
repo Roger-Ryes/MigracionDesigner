@@ -1,0 +1,256 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_oficina",
+			"type": "CUSTOM",
+			"value": "oficina"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_oficial",
+			"type": "CUSTOM",
+			"value": "oficial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_siguiente",
+			"type": "CUSTOM",
+			"value": "siguiente"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7130"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_web",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_grupal",
+			"type": "CUSTOM",
+			"value": "grupal"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_categoria",
+			"type": "CUSTOM",
+			"value": "categoria"
+		}
+	],
+	"name": "BLI_Search_Loans",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8540_bli_search_loans",
+	"patternName": "BLI_Search_Loans",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "1c722065-9115-46c7-bac9-45c986a712c8",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "1c722065-9115-46c7-bac9-45c986a712c8",
+			"columns": [
+				{
+					"attributeId": "AT99_LOANTYEE243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Lin.Credito",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_CURRENCO243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Moneda",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_BANKIDTF243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "No.Operacion",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_AMOUNTJZ243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Monto Operacion",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_CLIENTAE243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Cliente",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT46_DISBURTA243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "dd/MM/yyyy",
+					"name": "Desembolso",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT40_EXPIRAAO243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "dd/MM/yyyy",
+					"name": "Vencimiento",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT90_OFFICILA243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Reg/Oficial",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_OFFICEEE243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Oficina",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_LOANSSTT243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Estado",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_PROCESMU243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Tramite",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_CLIENTOO243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Cod.Cli",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_SEQUENAL243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Secuencial",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_CATEGORR243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Categoria",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_LOANSTUA243",
+					"entityId": "EN_OFFICALSO_243",
+					"format": "",
+					"name": "Cod.Estado",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_OFFICALSO_243",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "OfficialOfficeTransferList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_buscar_operaciones",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

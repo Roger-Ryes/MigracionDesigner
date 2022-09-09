@@ -1,0 +1,178 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_eliminar_seg_desemp",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_cotizacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tcotizacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_msg"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "5e915468-a930-4875-a5ca-5b605c739c05",
+				"columns": [
+					"Monto"
+				],
+				"editMode": false,
+				"queryText": "select \u0027Monto\u0027 = @w_devolucion"
+			},
+			{
+				"_idQuery": "6b5eb5fa-61bb-450f-9cce-760f6044e70a",
+				"columns": [
+					"Codigo",
+					"Descripcion"
+				],
+				"editMode": false,
+				"queryText": "select "
+			}
+		],
+		"variables": [
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_commit"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dev_dif"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_devolucion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_nacional"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_msg"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficina"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial_ing"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_amortizacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			}
+		]
+	}
+}

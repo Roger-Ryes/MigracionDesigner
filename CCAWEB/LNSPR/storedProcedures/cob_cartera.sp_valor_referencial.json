@@ -1,0 +1,314 @@
+{
+	"filename": "C:\\Users\\ajacquin\\Documents\\Sp_Valores_Tasas_Referenciales\\sp_valor_referencial.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_valor_referencial",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipoh"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_vig"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ult"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tasa_valor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_cartera"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_subsegmento"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_valor_efectiva"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_tasa"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_tasa"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_tasa_efe"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "e90a1699-8a0f-4ed7-b13c-0c79bf586010",
+				"columns": [
+					"Tipo Valor",
+					"Descripcion",
+					"Fecha Vigencia",
+					"Valor",
+					"Tasa Efectiva",
+					"Secuencial",
+					"Tipo Cartera",
+					"{7}"
+				],
+				"editMode": true,
+				"queryText": "select \"Tipo Valor\"    = vr_tipo,\n          \"Descripcion\"   = substring(y.valor,1,26),\n          \"Fecha Vigencia\"= convert(varchar(10),vr_fecha_vig,@i_formato_fecha),\n          \"Valor\"         = vr_valor,\n\t  \"Tasa Efectiva\" = vr_valor_efectiva,\n          \"Secuencial\"    = vr_secuencial,\n          \"Tipo Cartera\"  = vr_tipo_cartera,\n          \"Nombre Cartera\""
+			},
+			{
+				"_idQuery": "94b07985-1f36-4e18-8cac-8a7b398d7007",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select substring( z.valor, 1, 30)\n                               from"
+			},
+			{
+				"_idQuery": "19ef2894-4c3d-4a06-a03f-894f3f154cdc",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select substring( z.valor, 1, 30)\n                               from"
+			},
+			{
+				"_idQuery": "7c48123b-c0be-47a5-8aa5-372dfc6064c1",
+				"columns": [
+					"Tipo Valor",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select \"Tipo Valor\"  = vr_tipo,\n             \"Descripcion\""
+			},
+			{
+				"_idQuery": "f7a74bb5-f582-4360-ba73-2eead37643c1",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select valor\n                                from"
+			},
+			{
+				"_idQuery": "22484dbf-9777-453b-8a67-8a36ab43b8ca",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select max(vr_secuencial)\n                                from"
+			},
+			{
+				"_idQuery": "35ca3acb-9bdb-4584-9f07-c2780a2f5c0b",
+				"columns": [
+					"Tipo Valor",
+					"{1}"
+				],
+				"editMode": true,
+				"queryText": "select \"Tipo Valor\"     = vr_tipo,\n             \"Descripcion\""
+			},
+			{
+				"_idQuery": "56a2eab0-3fbb-4343-9feb-8d6033833aab",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select valor\n                                   from"
+			},
+			{
+				"_idQuery": "6e1c78bd-cda5-4c31-afed-743f1bc4c147",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select max(vr_secuencial)\n                               from"
+			},
+			{
+				"_idQuery": "324d9b4a-b067-45fd-beea-aeedef3c2030",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select max(vr_secuencial)\n                                from"
+			},
+			{
+				"_idQuery": "fe14292c-9ac3-4973-b84d-6b0e4fff6948",
+				"columns": [
+					"Tipo Valor",
+					"Descripcion",
+					"Tipo Tasa",
+					"Valor",
+					"Sec.",
+					"Fecha Vigencia",
+					"Valor",
+					"Tasa Efectiva",
+					"Secuencial",
+					"Tipo Cartera",
+					"Nombre Cartera",
+					"Subsegmento",
+					"Nombre Subsegmento"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "b7fda068-e7e4-498d-852d-d64462f4ffaf",
+				"columns": [
+					"Tipo Valor",
+					"Fecha Vigencia",
+					"Valor",
+					"Tasa Efectiva",
+					"Secuencial",
+					"Tipo Cartera",
+					"Subsegmento",
+					"{8}"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "05e71341-0fbd-431c-b124-b06976adb2da",
+				"columns": [
+					"Subsegmento",
+					"Nombre Subsegmento"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "5dcb2517-f32c-4325-a89d-cd51fabf2739",
+				"columns": [
+					"Tipo Valor",
+					"Descripcion",
+					"Valor",
+					"Secuencial"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_clave1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave2"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave3"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave4"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clave5"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_tasa_xsubs"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_tasa_xtcca"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_subsegmento"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_cca"
+			}
+		]
+	}
+}

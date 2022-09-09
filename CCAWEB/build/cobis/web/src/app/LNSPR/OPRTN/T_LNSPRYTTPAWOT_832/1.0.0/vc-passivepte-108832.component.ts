@@ -1,0 +1,421 @@
+//Designer Generator v8.0.0 - SPR 2022-16 12/08/2022
+
+
+import { Component, OnInit, TemplateRef, AfterViewInit, ChangeDetectorRef, Renderer2, AfterContentChecked } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { CobisDesignerService, CobisModelPageInfoEvents, ICobisLoadCatalogInfo, ICobisCatalogCobisInfo, ICobisQueryInfo, ICobisListValuesInfo, CobisModelCatalog, CobisDesignerComponent, CobisDesignerBreadcrumbService} from 'cobis-designer';
+import { TranslateService } from '@ngx-translate/core';
+import { ActivatedRoute } from "@angular/router";
+import { Model } from './model/vc-passivepte-108832.model';
+import { ViewState } from './model/vc-passivepte-108832-view-state';
+import { VcPassivepte108832Custom } from './vc-passivepte-108832.custom';
+import { LNSPRService} from 'src/app/LNSPR/service-modules/LNSPR.service';
+@Component({
+selector: 'cobis-vc-passivepte-108832',
+templateUrl: './vc-passivepte-108832.component.html'
+})
+export class VcPassivepte108832Component extends CobisDesignerComponent implements OnInit, AfterViewInit, AfterContentChecked {
+constructor(
+public designer: CobisDesignerService,
+public breadcrumbService: CobisDesignerBreadcrumbService,
+public formBuilder: FormBuilder,
+public translate: TranslateService,
+renderer: Renderer2,
+public activatedRoute: ActivatedRoute,
+public changeDetector: ChangeDetectorRef,
+private lnspr: LNSPRService) {
+super(new VcPassivepte108832Custom(designer.cobisCommons,lnspr), designer,breadcrumbService, formBuilder, translate, renderer, activatedRoute);
+}
+ngOnInit(): void {
+this.inicializar();
+super.ngOnInit();
+}
+ngAfterViewInit() {
+super.ngAfterViewInit();
+const column_VA_ROLEKRZYEYCGEMZ_493899 = this.metaData.viewState["QV_MV07_KFL31"].columns.find((col: any) => col.field == 'role');
+if (column_VA_ROLEKRZYEYCGEMZ_493899 != undefined) {
+const tplCell_VA_ROLEKRZYEYCGEMZ_493899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_ROLEKRZYEYCGEMZ_493899');
+column_VA_ROLEKRZYEYCGEMZ_493899.properties.cellTemplate = tplCell_VA_ROLEKRZYEYCGEMZ_493899?.templateRef;
+const tplEdit_VA_ROLEKRZYEYCGEMZ_493899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_ROLEKRZYEYCGEMZ_493899');
+column_VA_ROLEKRZYEYCGEMZ_493899.properties.editTemplate = tplEdit_VA_ROLEKRZYEYCGEMZ_493899?.templateRef;
+}
+const column_VA_FULLNAMEASFGYGC_205899 = this.metaData.viewState["QV_MV07_KFL31"].columns.find((col: any) => col.field == 'fullName');
+if (column_VA_FULLNAMEASFGYGC_205899 != undefined) {
+const tplCell_VA_FULLNAMEASFGYGC_205899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_FULLNAMEASFGYGC_205899');
+column_VA_FULLNAMEASFGYGC_205899.properties.cellTemplate = tplCell_VA_FULLNAMEASFGYGC_205899?.templateRef;
+const tplEdit_VA_FULLNAMEASFGYGC_205899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_FULLNAMEASFGYGC_205899');
+column_VA_FULLNAMEASFGYGC_205899.properties.editTemplate = tplEdit_VA_FULLNAMEASFGYGC_205899?.templateRef;
+}
+const column_VA_IDNUMBEREAURXON_346899 = this.metaData.viewState["QV_MV07_KFL31"].columns.find((col: any) => col.field == 'idNumber');
+if (column_VA_IDNUMBEREAURXON_346899 != undefined) {
+const tplCell_VA_IDNUMBEREAURXON_346899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_IDNUMBEREAURXON_346899');
+column_VA_IDNUMBEREAURXON_346899.properties.cellTemplate = tplCell_VA_IDNUMBEREAURXON_346899?.templateRef;
+const tplEdit_VA_IDNUMBEREAURXON_346899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_IDNUMBEREAURXON_346899');
+column_VA_IDNUMBEREAURXON_346899.properties.editTemplate = tplEdit_VA_IDNUMBEREAURXON_346899?.templateRef;
+}
+const column_VA_CODEYUQMXPUKHJW_271899 = this.metaData.viewState["QV_MV07_KFL31"].columns.find((col: any) => col.field == 'code');
+if (column_VA_CODEYUQMXPUKHJW_271899 != undefined) {
+const tplCell_VA_CODEYUQMXPUKHJW_271899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_CODEYUQMXPUKHJW_271899');
+column_VA_CODEYUQMXPUKHJW_271899.properties.cellTemplate = tplCell_VA_CODEYUQMXPUKHJW_271899?.templateRef;
+const tplEdit_VA_CODEYUQMXPUKHJW_271899 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_CODEYUQMXPUKHJW_271899');
+column_VA_CODEYUQMXPUKHJW_271899.properties.editTemplate = tplEdit_VA_CODEYUQMXPUKHJW_271899?.templateRef;
+}
+const column_VA_ITEMWXVWWWSCMKV_983587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'item');
+if (column_VA_ITEMWXVWWWSCMKV_983587 != undefined) {
+const tplCell_VA_ITEMWXVWWWSCMKV_983587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_ITEMWXVWWWSCMKV_983587');
+column_VA_ITEMWXVWWWSCMKV_983587.properties.cellTemplate = tplCell_VA_ITEMWXVWWWSCMKV_983587?.templateRef;
+const tplEdit_VA_ITEMWXVWWWSCMKV_983587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_ITEMWXVWWWSCMKV_983587');
+column_VA_ITEMWXVWWWSCMKV_983587.properties.editTemplate = tplEdit_VA_ITEMWXVWWWSCMKV_983587?.templateRef;
+}
+const column_VA_DESCRIPTIONRKNO_269587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'description');
+if (column_VA_DESCRIPTIONRKNO_269587 != undefined) {
+const tplCell_VA_DESCRIPTIONRKNO_269587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DESCRIPTIONRKNO_269587');
+column_VA_DESCRIPTIONRKNO_269587.properties.cellTemplate = tplCell_VA_DESCRIPTIONRKNO_269587?.templateRef;
+const tplEdit_VA_DESCRIPTIONRKNO_269587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DESCRIPTIONRKNO_269587');
+column_VA_DESCRIPTIONRKNO_269587.properties.editTemplate = tplEdit_VA_DESCRIPTIONRKNO_269587?.templateRef;
+}
+const column_VA_TYPEITEMJIPMXHQ_437587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'typeItem');
+if (column_VA_TYPEITEMJIPMXHQ_437587 != undefined) {
+const tplCell_VA_TYPEITEMJIPMXHQ_437587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_TYPEITEMJIPMXHQ_437587');
+column_VA_TYPEITEMJIPMXHQ_437587.properties.cellTemplate = tplCell_VA_TYPEITEMJIPMXHQ_437587?.templateRef;
+const tplEdit_VA_TYPEITEMJIPMXHQ_437587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_TYPEITEMJIPMXHQ_437587');
+column_VA_TYPEITEMJIPMXHQ_437587.properties.editTemplate = tplEdit_VA_TYPEITEMJIPMXHQ_437587?.templateRef;
+}
+const column_VA_PAYMENTMETHODDD_439587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'paymentMethod');
+if (column_VA_PAYMENTMETHODDD_439587 != undefined) {
+const tplCell_VA_PAYMENTMETHODDD_439587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_PAYMENTMETHODDD_439587');
+column_VA_PAYMENTMETHODDD_439587.properties.cellTemplate = tplCell_VA_PAYMENTMETHODDD_439587?.templateRef;
+const tplEdit_VA_PAYMENTMETHODDD_439587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_PAYMENTMETHODDD_439587');
+column_VA_PAYMENTMETHODDD_439587.properties.editTemplate = tplEdit_VA_PAYMENTMETHODDD_439587?.templateRef;
+}
+const column_VA_SIGNOPVGZZIPUAD_330587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'signo');
+if (column_VA_SIGNOPVGZZIPUAD_330587 != undefined) {
+const tplCell_VA_SIGNOPVGZZIPUAD_330587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_SIGNOPVGZZIPUAD_330587');
+column_VA_SIGNOPVGZZIPUAD_330587.properties.cellTemplate = tplCell_VA_SIGNOPVGZZIPUAD_330587?.templateRef;
+const tplEdit_VA_SIGNOPVGZZIPUAD_330587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_SIGNOPVGZZIPUAD_330587');
+column_VA_SIGNOPVGZZIPUAD_330587.properties.editTemplate = tplEdit_VA_SIGNOPVGZZIPUAD_330587?.templateRef;
+}
+const column_VA_PRIORITYKZVVIRF_388587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'priority');
+if (column_VA_PRIORITYKZVVIRF_388587 != undefined) {
+const tplCell_VA_PRIORITYKZVVIRF_388587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_PRIORITYKZVVIRF_388587');
+column_VA_PRIORITYKZVVIRF_388587.properties.cellTemplate = tplCell_VA_PRIORITYKZVVIRF_388587?.templateRef;
+const tplEdit_VA_PRIORITYKZVVIRF_388587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_PRIORITYKZVVIRF_388587');
+column_VA_PRIORITYKZVVIRF_388587.properties.editTemplate = tplEdit_VA_PRIORITYKZVVIRF_388587?.templateRef;
+}
+const column_VA_FACTORFVQAPPLTX_853587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'factor');
+if (column_VA_FACTORFVQAPPLTX_853587 != undefined) {
+const tplCell_VA_FACTORFVQAPPLTX_853587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_FACTORFVQAPPLTX_853587');
+column_VA_FACTORFVQAPPLTX_853587.properties.cellTemplate = tplCell_VA_FACTORFVQAPPLTX_853587?.templateRef;
+const tplEdit_VA_FACTORFVQAPPLTX_853587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_FACTORFVQAPPLTX_853587');
+column_VA_FACTORFVQAPPLTX_853587.properties.editTemplate = tplEdit_VA_FACTORFVQAPPLTX_853587?.templateRef;
+}
+const column_VA_REFERENCEGBROYB_738587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'reference');
+if (column_VA_REFERENCEGBROYB_738587 != undefined) {
+const tplCell_VA_REFERENCEGBROYB_738587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_REFERENCEGBROYB_738587');
+column_VA_REFERENCEGBROYB_738587.properties.cellTemplate = tplCell_VA_REFERENCEGBROYB_738587?.templateRef;
+const tplEdit_VA_REFERENCEGBROYB_738587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_REFERENCEGBROYB_738587');
+column_VA_REFERENCEGBROYB_738587.properties.editTemplate = tplEdit_VA_REFERENCEGBROYB_738587?.templateRef;
+}
+const column_VA_SIGNREADJUSTNEN_335587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'signReadjustment');
+if (column_VA_SIGNREADJUSTNEN_335587 != undefined) {
+const tplCell_VA_SIGNREADJUSTNEN_335587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_SIGNREADJUSTNEN_335587');
+column_VA_SIGNREADJUSTNEN_335587.properties.cellTemplate = tplCell_VA_SIGNREADJUSTNEN_335587?.templateRef;
+const tplEdit_VA_SIGNREADJUSTNEN_335587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_SIGNREADJUSTNEN_335587');
+column_VA_SIGNREADJUSTNEN_335587.properties.editTemplate = tplEdit_VA_SIGNREADJUSTNEN_335587?.templateRef;
+}
+const column_VA_REFERENCEREANET_690587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'referenceReadjustment');
+if (column_VA_REFERENCEREANET_690587 != undefined) {
+const tplCell_VA_REFERENCEREANET_690587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_REFERENCEREANET_690587');
+column_VA_REFERENCEREANET_690587.properties.cellTemplate = tplCell_VA_REFERENCEREANET_690587?.templateRef;
+const tplEdit_VA_REFERENCEREANET_690587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_REFERENCEREANET_690587');
+column_VA_REFERENCEREANET_690587.properties.editTemplate = tplEdit_VA_REFERENCEREANET_690587?.templateRef;
+}
+const column_VA_FACTORREADJUTET_483587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'factorReadjustment');
+if (column_VA_FACTORREADJUTET_483587 != undefined) {
+const tplCell_VA_FACTORREADJUTET_483587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_FACTORREADJUTET_483587');
+column_VA_FACTORREADJUTET_483587.properties.cellTemplate = tplCell_VA_FACTORREADJUTET_483587?.templateRef;
+const tplEdit_VA_FACTORREADJUTET_483587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_FACTORREADJUTET_483587');
+column_VA_FACTORREADJUTET_483587.properties.editTemplate = tplEdit_VA_FACTORREADJUTET_483587?.templateRef;
+}
+const column_VA_CALCULATIONBASA_240587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'calculationBase');
+if (column_VA_CALCULATIONBASA_240587 != undefined) {
+const tplCell_VA_CALCULATIONBASA_240587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_CALCULATIONBASA_240587');
+column_VA_CALCULATIONBASA_240587.properties.cellTemplate = tplCell_VA_CALCULATIONBASA_240587?.templateRef;
+const tplEdit_VA_CALCULATIONBASA_240587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_CALCULATIONBASA_240587');
+column_VA_CALCULATIONBASA_240587.properties.editTemplate = tplEdit_VA_CALCULATIONBASA_240587?.templateRef;
+}
+const column_VA_AMOUNTJGMPZXMXY_754587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'amount');
+if (column_VA_AMOUNTJGMPZXMXY_754587 != undefined) {
+const tplCell_VA_AMOUNTJGMPZXMXY_754587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_AMOUNTJGMPZXMXY_754587');
+column_VA_AMOUNTJGMPZXMXY_754587.properties.cellTemplate = tplCell_VA_AMOUNTJGMPZXMXY_754587?.templateRef;
+const tplEdit_VA_AMOUNTJGMPZXMXY_754587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_AMOUNTJGMPZXMXY_754587');
+column_VA_AMOUNTJGMPZXMXY_754587.properties.editTemplate = tplEdit_VA_AMOUNTJGMPZXMXY_754587?.templateRef;
+}
+const column_VA_PERCENTAGEJLTCZ_260587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'percentage');
+if (column_VA_PERCENTAGEJLTCZ_260587 != undefined) {
+const tplCell_VA_PERCENTAGEJLTCZ_260587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_PERCENTAGEJLTCZ_260587');
+column_VA_PERCENTAGEJLTCZ_260587.properties.cellTemplate = tplCell_VA_PERCENTAGEJLTCZ_260587?.templateRef;
+const tplEdit_VA_PERCENTAGEJLTCZ_260587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_PERCENTAGEJLTCZ_260587');
+column_VA_PERCENTAGEJLTCZ_260587.properties.editTemplate = tplEdit_VA_PERCENTAGEJLTCZ_260587?.templateRef;
+}
+const column_VA_FINANCEDWVNAAPN_415587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'financed');
+if (column_VA_FINANCEDWVNAAPN_415587 != undefined) {
+const tplCell_VA_FINANCEDWVNAAPN_415587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_FINANCEDWVNAAPN_415587');
+column_VA_FINANCEDWVNAAPN_415587.properties.cellTemplate = tplCell_VA_FINANCEDWVNAAPN_415587?.templateRef;
+const tplEdit_VA_FINANCEDWVNAAPN_415587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_FINANCEDWVNAAPN_415587');
+column_VA_FINANCEDWVNAAPN_415587.properties.editTemplate = tplEdit_VA_FINANCEDWVNAAPN_415587?.templateRef;
+}
+const column_VA_MINRATEJNRPYQJS_276587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'minRate');
+if (column_VA_MINRATEJNRPYQJS_276587 != undefined) {
+const tplCell_VA_MINRATEJNRPYQJS_276587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_MINRATEJNRPYQJS_276587');
+column_VA_MINRATEJNRPYQJS_276587.properties.cellTemplate = tplCell_VA_MINRATEJNRPYQJS_276587?.templateRef;
+const tplEdit_VA_MINRATEJNRPYQJS_276587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_MINRATEJNRPYQJS_276587');
+column_VA_MINRATEJNRPYQJS_276587.properties.editTemplate = tplEdit_VA_MINRATEJNRPYQJS_276587?.templateRef;
+}
+const column_VA_MAXRATENSHCMIGD_796587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'maxRate');
+if (column_VA_MAXRATENSHCMIGD_796587 != undefined) {
+const tplCell_VA_MAXRATENSHCMIGD_796587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_MAXRATENSHCMIGD_796587');
+column_VA_MAXRATENSHCMIGD_796587.properties.cellTemplate = tplCell_VA_MAXRATENSHCMIGD_796587?.templateRef;
+const tplEdit_VA_MAXRATENSHCMIGD_796587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_MAXRATENSHCMIGD_796587');
+column_VA_MAXRATENSHCMIGD_796587.properties.editTemplate = tplEdit_VA_MAXRATENSHCMIGD_796587?.templateRef;
+}
+const column_VA_TEXTINPUTBOXNAY_879587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'associate');
+if (column_VA_TEXTINPUTBOXNAY_879587 != undefined) {
+const tplCell_VA_TEXTINPUTBOXNAY_879587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_TEXTINPUTBOXNAY_879587');
+column_VA_TEXTINPUTBOXNAY_879587.properties.cellTemplate = tplCell_VA_TEXTINPUTBOXNAY_879587?.templateRef;
+const tplEdit_VA_TEXTINPUTBOXNAY_879587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_TEXTINPUTBOXNAY_879587');
+column_VA_TEXTINPUTBOXNAY_879587.properties.editTemplate = tplEdit_VA_TEXTINPUTBOXNAY_879587?.templateRef;
+}
+const column_VA_TEXTINPUTBOXXQV_567587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'associateValue');
+if (column_VA_TEXTINPUTBOXXQV_567587 != undefined) {
+const tplCell_VA_TEXTINPUTBOXXQV_567587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_TEXTINPUTBOXXQV_567587');
+column_VA_TEXTINPUTBOXXQV_567587.properties.cellTemplate = tplCell_VA_TEXTINPUTBOXXQV_567587?.templateRef;
+const tplEdit_VA_TEXTINPUTBOXXQV_567587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_TEXTINPUTBOXXQV_567587');
+column_VA_TEXTINPUTBOXXQV_567587.properties.editTemplate = tplEdit_VA_TEXTINPUTBOXXQV_567587?.templateRef;
+}
+const column_VA_TEXTINPUTBOXKKV_743587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'insurance');
+if (column_VA_TEXTINPUTBOXKKV_743587 != undefined) {
+const tplCell_VA_TEXTINPUTBOXKKV_743587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_TEXTINPUTBOXKKV_743587');
+column_VA_TEXTINPUTBOXKKV_743587.properties.cellTemplate = tplCell_VA_TEXTINPUTBOXKKV_743587?.templateRef;
+const tplEdit_VA_TEXTINPUTBOXKKV_743587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_TEXTINPUTBOXKKV_743587');
+column_VA_TEXTINPUTBOXKKV_743587.properties.editTemplate = tplEdit_VA_TEXTINPUTBOXKKV_743587?.templateRef;
+}
+const column_VA_TEXTINPUTBOXVLP_884587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'insuranceType');
+if (column_VA_TEXTINPUTBOXVLP_884587 != undefined) {
+const tplCell_VA_TEXTINPUTBOXVLP_884587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_TEXTINPUTBOXVLP_884587');
+column_VA_TEXTINPUTBOXVLP_884587.properties.cellTemplate = tplCell_VA_TEXTINPUTBOXVLP_884587?.templateRef;
+const tplEdit_VA_TEXTINPUTBOXVLP_884587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_TEXTINPUTBOXVLP_884587');
+column_VA_TEXTINPUTBOXVLP_884587.properties.editTemplate = tplEdit_VA_TEXTINPUTBOXVLP_884587?.templateRef;
+}
+const column_VA_TEXTINPUTBOXAEM_387587 = this.metaData.viewState["QV_MC21_OVS27"].columns.find((col: any) => col.field == 'rank');
+if (column_VA_TEXTINPUTBOXAEM_387587 != undefined) {
+const tplCell_VA_TEXTINPUTBOXAEM_387587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_TEXTINPUTBOXAEM_387587');
+column_VA_TEXTINPUTBOXAEM_387587.properties.cellTemplate = tplCell_VA_TEXTINPUTBOXAEM_387587?.templateRef;
+const tplEdit_VA_TEXTINPUTBOXAEM_387587 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_TEXTINPUTBOXAEM_387587');
+column_VA_TEXTINPUTBOXAEM_387587.properties.editTemplate = tplEdit_VA_TEXTINPUTBOXAEM_387587?.templateRef;
+}
+const column_VA_DIVIDENDJQEBXYL_179198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dividend');
+if (column_VA_DIVIDENDJQEBXYL_179198 != undefined) {
+const tplCell_VA_DIVIDENDJQEBXYL_179198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DIVIDENDJQEBXYL_179198');
+column_VA_DIVIDENDJQEBXYL_179198.properties.cellTemplate = tplCell_VA_DIVIDENDJQEBXYL_179198?.templateRef;
+const tplEdit_VA_DIVIDENDJQEBXYL_179198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DIVIDENDJQEBXYL_179198');
+column_VA_DIVIDENDJQEBXYL_179198.properties.editTemplate = tplEdit_VA_DIVIDENDJQEBXYL_179198?.templateRef;
+}
+const column_VA_EXPIRATIONDATTE_941198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'expirationDate');
+if (column_VA_EXPIRATIONDATTE_941198 != undefined) {
+const tplCell_VA_EXPIRATIONDATTE_941198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_EXPIRATIONDATTE_941198');
+column_VA_EXPIRATIONDATTE_941198.properties.cellTemplate = tplCell_VA_EXPIRATIONDATTE_941198?.templateRef;
+const tplEdit_VA_EXPIRATIONDATTE_941198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_EXPIRATIONDATTE_941198');
+column_VA_EXPIRATIONDATTE_941198.properties.editTemplate = tplEdit_VA_EXPIRATIONDATTE_941198?.templateRef;
+}
+const column_VA_BALANCECAPITLLL_258198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'balanceCapital');
+if (column_VA_BALANCECAPITLLL_258198 != undefined) {
+const tplCell_VA_BALANCECAPITLLL_258198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_BALANCECAPITLLL_258198');
+column_VA_BALANCECAPITLLL_258198.properties.cellTemplate = tplCell_VA_BALANCECAPITLLL_258198?.templateRef;
+const tplEdit_VA_BALANCECAPITLLL_258198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_BALANCECAPITLLL_258198');
+column_VA_BALANCECAPITLLL_258198.properties.editTemplate = tplEdit_VA_BALANCECAPITLLL_258198?.templateRef;
+}
+const column_VA_DYNAMICFIELD111_201198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField1');
+if (column_VA_DYNAMICFIELD111_201198 != undefined) {
+const tplCell_VA_DYNAMICFIELD111_201198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD111_201198');
+column_VA_DYNAMICFIELD111_201198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD111_201198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD111_201198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD111_201198');
+column_VA_DYNAMICFIELD111_201198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD111_201198?.templateRef;
+}
+const column_VA_DYNAMICFIELD222_976198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField2');
+if (column_VA_DYNAMICFIELD222_976198 != undefined) {
+const tplCell_VA_DYNAMICFIELD222_976198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD222_976198');
+column_VA_DYNAMICFIELD222_976198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD222_976198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD222_976198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD222_976198');
+column_VA_DYNAMICFIELD222_976198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD222_976198?.templateRef;
+}
+const column_VA_DYNAMICFIELD333_680198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField3');
+if (column_VA_DYNAMICFIELD333_680198 != undefined) {
+const tplCell_VA_DYNAMICFIELD333_680198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD333_680198');
+column_VA_DYNAMICFIELD333_680198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD333_680198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD333_680198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD333_680198');
+column_VA_DYNAMICFIELD333_680198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD333_680198?.templateRef;
+}
+const column_VA_DYNAMICFIELD444_619198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField4');
+if (column_VA_DYNAMICFIELD444_619198 != undefined) {
+const tplCell_VA_DYNAMICFIELD444_619198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD444_619198');
+column_VA_DYNAMICFIELD444_619198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD444_619198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD444_619198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD444_619198');
+column_VA_DYNAMICFIELD444_619198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD444_619198?.templateRef;
+}
+const column_VA_DYNAMICFIELD555_803198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField5');
+if (column_VA_DYNAMICFIELD555_803198 != undefined) {
+const tplCell_VA_DYNAMICFIELD555_803198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD555_803198');
+column_VA_DYNAMICFIELD555_803198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD555_803198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD555_803198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD555_803198');
+column_VA_DYNAMICFIELD555_803198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD555_803198?.templateRef;
+}
+const column_VA_DYNAMICFIELD666_861198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField6');
+if (column_VA_DYNAMICFIELD666_861198 != undefined) {
+const tplCell_VA_DYNAMICFIELD666_861198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD666_861198');
+column_VA_DYNAMICFIELD666_861198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD666_861198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD666_861198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD666_861198');
+column_VA_DYNAMICFIELD666_861198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD666_861198?.templateRef;
+}
+const column_VA_DYNAMICFIELD777_256198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField7');
+if (column_VA_DYNAMICFIELD777_256198 != undefined) {
+const tplCell_VA_DYNAMICFIELD777_256198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD777_256198');
+column_VA_DYNAMICFIELD777_256198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD777_256198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD777_256198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD777_256198');
+column_VA_DYNAMICFIELD777_256198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD777_256198?.templateRef;
+}
+const column_VA_DYNAMICFIELD888_910198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField8');
+if (column_VA_DYNAMICFIELD888_910198 != undefined) {
+const tplCell_VA_DYNAMICFIELD888_910198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD888_910198');
+column_VA_DYNAMICFIELD888_910198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD888_910198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD888_910198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD888_910198');
+column_VA_DYNAMICFIELD888_910198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD888_910198?.templateRef;
+}
+const column_VA_DYNAMICFIELD999_904198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField9');
+if (column_VA_DYNAMICFIELD999_904198 != undefined) {
+const tplCell_VA_DYNAMICFIELD999_904198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD999_904198');
+column_VA_DYNAMICFIELD999_904198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD999_904198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD999_904198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD999_904198');
+column_VA_DYNAMICFIELD999_904198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD999_904198?.templateRef;
+}
+const column_VA_DYNAMICFIELD011_387198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField10');
+if (column_VA_DYNAMICFIELD011_387198 != undefined) {
+const tplCell_VA_DYNAMICFIELD011_387198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD011_387198');
+column_VA_DYNAMICFIELD011_387198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD011_387198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD011_387198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD011_387198');
+column_VA_DYNAMICFIELD011_387198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD011_387198?.templateRef;
+}
+const column_VA_DYNAMICFIELD111_909198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField11');
+if (column_VA_DYNAMICFIELD111_909198 != undefined) {
+const tplCell_VA_DYNAMICFIELD111_909198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD111_909198');
+column_VA_DYNAMICFIELD111_909198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD111_909198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD111_909198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD111_909198');
+column_VA_DYNAMICFIELD111_909198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD111_909198?.templateRef;
+}
+const column_VA_DYNAMICFIELD121_508198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField12');
+if (column_VA_DYNAMICFIELD121_508198 != undefined) {
+const tplCell_VA_DYNAMICFIELD121_508198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD121_508198');
+column_VA_DYNAMICFIELD121_508198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD121_508198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD121_508198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD121_508198');
+column_VA_DYNAMICFIELD121_508198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD121_508198?.templateRef;
+}
+const column_VA_DYNAMICFIELD311_753198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField13');
+if (column_VA_DYNAMICFIELD311_753198 != undefined) {
+const tplCell_VA_DYNAMICFIELD311_753198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD311_753198');
+column_VA_DYNAMICFIELD311_753198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD311_753198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD311_753198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD311_753198');
+column_VA_DYNAMICFIELD311_753198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD311_753198?.templateRef;
+}
+const column_VA_DYNAMICFIELD411_866198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField14');
+if (column_VA_DYNAMICFIELD411_866198 != undefined) {
+const tplCell_VA_DYNAMICFIELD411_866198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD411_866198');
+column_VA_DYNAMICFIELD411_866198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD411_866198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD411_866198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD411_866198');
+column_VA_DYNAMICFIELD411_866198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD411_866198?.templateRef;
+}
+const column_VA_DYNAMICFIELD551_120198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField15');
+if (column_VA_DYNAMICFIELD551_120198 != undefined) {
+const tplCell_VA_DYNAMICFIELD551_120198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD551_120198');
+column_VA_DYNAMICFIELD551_120198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD551_120198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD551_120198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD551_120198');
+column_VA_DYNAMICFIELD551_120198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD551_120198?.templateRef;
+}
+const column_VA_DYNAMICFIELD111_346198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField16');
+if (column_VA_DYNAMICFIELD111_346198 != undefined) {
+const tplCell_VA_DYNAMICFIELD111_346198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD111_346198');
+column_VA_DYNAMICFIELD111_346198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD111_346198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD111_346198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD111_346198');
+column_VA_DYNAMICFIELD111_346198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD111_346198?.templateRef;
+}
+const column_VA_DYNAMICFIELD777_257198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField17');
+if (column_VA_DYNAMICFIELD777_257198 != undefined) {
+const tplCell_VA_DYNAMICFIELD777_257198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD777_257198');
+column_VA_DYNAMICFIELD777_257198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD777_257198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD777_257198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD777_257198');
+column_VA_DYNAMICFIELD777_257198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD777_257198?.templateRef;
+}
+const column_VA_DYNAMICFIELD181_740198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField18');
+if (column_VA_DYNAMICFIELD181_740198 != undefined) {
+const tplCell_VA_DYNAMICFIELD181_740198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD181_740198');
+column_VA_DYNAMICFIELD181_740198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD181_740198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD181_740198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD181_740198');
+column_VA_DYNAMICFIELD181_740198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD181_740198?.templateRef;
+}
+const column_VA_DYNAMICFIELD911_217198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField19');
+if (column_VA_DYNAMICFIELD911_217198 != undefined) {
+const tplCell_VA_DYNAMICFIELD911_217198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD911_217198');
+column_VA_DYNAMICFIELD911_217198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD911_217198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD911_217198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD911_217198');
+column_VA_DYNAMICFIELD911_217198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD911_217198?.templateRef;
+}
+const column_VA_DYNAMICFIELD000_944198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'dynamicField20');
+if (column_VA_DYNAMICFIELD000_944198 != undefined) {
+const tplCell_VA_DYNAMICFIELD000_944198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_DYNAMICFIELD000_944198');
+column_VA_DYNAMICFIELD000_944198.properties.cellTemplate = tplCell_VA_DYNAMICFIELD000_944198?.templateRef;
+const tplEdit_VA_DYNAMICFIELD000_944198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_DYNAMICFIELD000_944198');
+column_VA_DYNAMICFIELD000_944198.properties.editTemplate = tplEdit_VA_DYNAMICFIELD000_944198?.templateRef;
+}
+const column_VA_FEEOLAUUHKGPDCB_657198 = this.metaData.viewState["QV_ECPR_JAA30"].columns.find((col: any) => col.field == 'fee');
+if (column_VA_FEEOLAUUHKGPDCB_657198 != undefined) {
+const tplCell_VA_FEEOLAUUHKGPDCB_657198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplCell_VA_FEEOLAUUHKGPDCB_657198');
+column_VA_FEEOLAUUHKGPDCB_657198.properties.cellTemplate = tplCell_VA_FEEOLAUUHKGPDCB_657198?.templateRef;
+const tplEdit_VA_FEEOLAUUHKGPDCB_657198 = this.registerTemplateDirectives.find((tpl: any) => tpl.id == 'tplEdit_VA_FEEOLAUUHKGPDCB_657198');
+column_VA_FEEOLAUUHKGPDCB_657198.properties.editTemplate = tplEdit_VA_FEEOLAUUHKGPDCB_657198?.templateRef;
+}
+this.changeDetector.detectChanges();
+}
+ngAfterContentChecked() {
+this.changeDetector.detectChanges()
+}
+inicializar() {
+this.suscripQueryParams = this.activatedRoute.queryParams.subscribe((params) => {
+let viewState = new ViewState(this.designer.cobisCommons, this.formBuilder, this.getMode(params));
+this.initRefViewState(this.refViewState, viewState);
+let formGroupArray = {
+OperationCRUDFormEntity: viewState.T_LNSPRYTTPAWOT_832.controls.OperationCRUDFormEntity as FormGroup ,
+DebtorEntity: viewState.T_LNSPRYTTPAWOT_832.controls.DebtorEntity as FormGroup ,
+OperationEntity: viewState.T_LNSPRYTTPAWOT_832.controls.OperationEntity as FormGroup ,
+OperationItemsList: viewState.T_LNSPRYTTPAWOT_832.controls.OperationItemsList as FormGroup ,
+GeneralParametersQuery: viewState.T_LNSPRYTTPAWOT_832.controls.GeneralParametersQuery as FormGroup ,
+AmortizationFormEntity: viewState.T_LNSPRYTTPAWOT_832.controls.AmortizationFormEntity as FormGroup ,
+AmortizationEntity: viewState.T_LNSPRYTTPAWOT_832.controls.AmortizationEntity as FormGroup
+};
+this.metaData = { moduleId: 'LNSPR', subModuleId: 'OPRTN', taskId: 'T_LNSPRYTTPAWOT_832', taskVersion: '1.0.0', vcId: 'VC_PASSIVEPTE_108832', serverEvents: true, pageInfoEvents: new CobisModelPageInfoEvents(true, true), urlRestService: this.designer.cobisCommons.environment.values.dsgUrlRestService + '/LNSPR/OPRTN/T_LNSPRYTTPAWOT_832', model: new Model(formGroupArray), viewState: viewState, loadCatalogsInfo: new Map<string, ICobisLoadCatalogInfo>([ ['VA_OFFICIALFUSJDJB_630899', { filter:"", cobisRequestServerConfig: {'filterType':'none'}, cache: 0 }], ['VA_UBICATIONEIZYDH_113899', { filter:"", cobisRequestServerConfig: {'filterType':'none'}, cache: 0 }], ['VA_TYPEAMORTIZATTN_681198', { filter:"", cobisRequestServerConfig: null, cache: 0 }], ]), catalogsCobisInfo: new Map<string, ICobisCatalogCobisInfo>([ ['VA_TYPEOPERATIONNN_137899', { catalogName: 'ca_toperacion_pas', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_MONEYSNJCKOMHID_471899', { catalogName: 'cl_moneda', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_OFFICEFTYXFMUWA_267899', { catalogName: 'cl_oficina', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_PLAZODESCRIPCNC_494899', { catalogName: 'ca_tdividendo', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_CREDITORTYPEQDV_936899', { catalogName: 'ca_tipo_acreedor', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_DEBTTYPELMRNXVE_296899', { catalogName: 'ca_tipo_deuda', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_REPOSITIONJNYRG_258899', { catalogName: 'te_tipo_reposicion', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_SUBFINANCINGPJK_364899', { catalogName: 'ca_causa_fin', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_FINANMARKETQOEM_575899', { catalogName: 'ca_obj_fin', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_TEXTINPUTBOXKKV_743587', { catalogName: 'cu_des_aseguradora', filter: "", cobisRequestServerConfig: null, cache: 0 , controlGridInfo: { queryViewId: "QV_MC21_OVS27", columnId: "insurance" } }], ['VA_TEXTINPUTBOXVLP_884587', { catalogName: 'cu_tipo_seguro', filter: "", cobisRequestServerConfig: null, cache: 0 , controlGridInfo: { queryViewId: "QV_MC21_OVS27", columnId: "insuranceType" } }], ['VA_9193TCVDUUBRZAN_137309', { catalogName: 'ca_base_tasa_desc', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_TERMTYPEOWIDGEH_595198', { catalogName: 'ca_tdividendo', filter: "", cobisRequestServerConfig: null, cache: 0 }], ['VA_TYPEFEEARBRJCKA_414198', { catalogName: 'ca_tdividendo', filter: "", cobisRequestServerConfig: null, cache: 0 }], ]), queriesInfo: new Map<string, ICobisQueryInfo>([ ['QV_MV07_KFL31', { queryId: 'Q_DEBTORZN_LNSPR', entityName: 'DebtorEntity', filter: "", cobisRequestServerConfig: null, cache: 0, queryMemberParameters:[ ]}], ['QV_MC21_OVS27', { queryId: 'Q_OPERLSST_KU21', entityName: 'OperationItemsList', filter: "", cobisRequestServerConfig: { pageSize :10 }, cache: 0, queryMemberParameters:[ {aliasQueryMember:'banco' } ]}], ['VA_PAYMENTMETHODDD_220309', { queryId: 'Q_APAGOOOO_YV30', entityName: '', filter:"", cobisRequestServerConfig: {'filterType':'none'}, cache: 0 }], ['QV_ECPR_JAA30', { queryId: 'Q_AMORTITI_LNSPR', entityName: 'AmortizationEntity', filter: "", cobisRequestServerConfig: { pageSize :13 }, cache: 0, queryMemberParameters:[ ]}], ]), listsValues: new Map<string, ICobisListValuesInfo>([ [ 'VA_FINANCEDWVNAAPN_415587',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_SIBZYIGKU_69312') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOWLDIIOP_91697') )] , controlGridInfo: { queryViewId: "QV_MC21_OVS27", columnId: "financed" } }], [ 'VA_ALLOWSRENEWALLL_150309',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_SIBZYIGKU_69312') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOWLDIIOP_91697') )] }], [ 'VA_READJUSTABLELXP_279309',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_SIBZYIGKU_69312') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOWLDIIOP_91697') )] }], [ 'VA_RESTRUCTURINGGG_731309',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_SIBZYIGKU_69312') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOWLDIIOP_91697') )] }], [ 'VA_ACCEPTADDITIYNN_323309',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_SIBZYIGKU_69312') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOWLDIIOP_91697') )] }], [ 'VA_INTERESTPAYMNNE_508309',{ data : [ new CobisModelCatalog ( 'A' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_PAGAINTLD_26849') ), new CobisModelCatalog ( 'P' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_PAGAINTOE_93286') )] }], [ 'VA_PAYFULLFEEVHEVU_441309',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_SIBZYIGKU_69312') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOWLDIIOP_91697') )] }], [ 'VA_KINDPAYMENTDUCW_586309',{ data : [ new CobisModelCatalog ( 'D' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_PAGOSPORC_41308') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_PAGOSPORU_93417') )] }], [ 'VA_CASHPAYMENTSUUG_169309',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_SIBZYIGKU_69312') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOWLDIIOP_91697') )] }], [ 'VA_TYPEPAYMENTNPPY_513309',{ data : [ new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_PAGONORAA_14475') ), new CobisModelCatalog ( 'C' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_PAGOEXTRC_38468') ), new CobisModelCatalog ( 'T' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_PAGOEXTDR_53649') )] }], [ 'VA_PAYMENTDAYEFRJN_549198',{ data : [ new CobisModelCatalog ( '1' , '1' ), new CobisModelCatalog ( '2' , '2' ), new CobisModelCatalog ( '3' , '3' ), new CobisModelCatalog ( '4' , '4' ), new CobisModelCatalog ( '5' , '5' ), new CobisModelCatalog ( '6' , '6' ), new CobisModelCatalog ( '7' , '7' ), new CobisModelCatalog ( '8' , '8' ), new CobisModelCatalog ( '9' , '9' ), new CobisModelCatalog ( '10' , '10' ), new CobisModelCatalog ( '11' , '11' ), new CobisModelCatalog ( '12' , '12' ), new CobisModelCatalog ( '13' , '13' ), new CobisModelCatalog ( '14' , '14' ), new CobisModelCatalog ( '15' , '15' ), new CobisModelCatalog ( '16' , '16' ), new CobisModelCatalog ( '17' , '17' ), new CobisModelCatalog ( '18' , '18' ), new CobisModelCatalog ( '19' , '19' ), new CobisModelCatalog ( '20' , '20' ), new CobisModelCatalog ( '21' , '21' ), new CobisModelCatalog ( '22' , '22' ), new CobisModelCatalog ( '23' , '23' ), new CobisModelCatalog ( '24' , '24' ), new CobisModelCatalog ( '25' , '25' ), new CobisModelCatalog ( '26' , '26' ), new CobisModelCatalog ( '27' , '27' ), new CobisModelCatalog ( '28' , '28' ), new CobisModelCatalog ( '29' , '29' ), new CobisModelCatalog ( '30' , '30' ), new CobisModelCatalog ( '31' , '31' )] }], [ 'VA_MONTHGRACEFIJFA_429198',{ data : [ new CobisModelCatalog ( '0' , '0' ), new CobisModelCatalog ( '1' , '1' ), new CobisModelCatalog ( '2' , '2' ), new CobisModelCatalog ( '3' , '3' ), new CobisModelCatalog ( '4' , '4' ), new CobisModelCatalog ( '5' , '5' ), new CobisModelCatalog ( '6' , '6' ), new CobisModelCatalog ( '7' , '7' ), new CobisModelCatalog ( '8' , '8' ), new CobisModelCatalog ( '9' , '9' ), new CobisModelCatalog ( '10' , '10' ), new CobisModelCatalog ( '11' , '11' ), new CobisModelCatalog ( '12' , '12' )] }], [ 'VA_BASEINTERESTAAC_534198',{ data : [ new CobisModelCatalog ( 'E' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_COMERCIAA_32939') ), new CobisModelCatalog ( 'R' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_REALFZFVS_38401') )] }], [ 'VA_TYPEAMORTIZATTN_681198',{ data : [ new CobisModelCatalog ( 'ALEMANA' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_ALEMANAEM_98576') ), new CobisModelCatalog ( 'FRANCESA' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_FRANCESAA_95030') ), new CobisModelCatalog ( 'MANUAL' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_MANUALKIA_87586') ), new CobisModelCatalog ( 'AGREGADA' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_AGREGADAA_98521') )] }], [ 'VA_AVOIDHOLIDAYSSS_789198',{ data : [ new CobisModelCatalog ( 'A' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_DAHBILAEN_76009') ), new CobisModelCatalog ( 'P' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_DAHBILPRO_36728') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_NOEVITAOI_93253') )] }], [ 'VA_TYPEGRACEBHAAVJ_350198',{ data : [ new CobisModelCatalog ( 'S' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_ENCUOTART_85995') ), new CobisModelCatalog ( 'N' , this.designer.cobisCommons.translate('LNSPR.LBL_LNSPR_ENPRIMETR_79834') )] }], ]) , label: 'LNSPR.LBL_LNSPR_CREACINVP_46417' }; this.breadcrumbService.getRoutes(this.metaData);
+this.init(this.metaData, params);
+});
+super.inicializar();
+};
+beforeOpenGridDialogQV_MC21_OVS27(event: any) {
+this.beforeOpenGridDialog(event, {
+hasBeforeOpenDialogEvent: false,
+hasAfterCloseDialogEvent: false,
+moduleId: "LNSPR",
+subModuleId: "OPRTN",
+taskId: "T_LNSPRJXWYQVOK_830",
+taskVersion: "1.0.0",
+viewContainerId: "VC_MODALOPERI_484830",
+title: 'LNSPR.LBL_LNSPR_RUBROFBVM_52414'
+,size: 'md'
+});
+};
+}

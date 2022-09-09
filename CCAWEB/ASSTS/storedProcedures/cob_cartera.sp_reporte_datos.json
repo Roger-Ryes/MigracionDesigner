@@ -1,0 +1,705 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\repdatos.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_datos",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_cod_reporte"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nemonico"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "2f03dd1b-a1b0-41b0-b132-f36a73d0afcb",
+				"columns": [
+					"clientAddress",
+					"city",
+					"state",
+					"actualDate",
+					"rate",
+					"frequency",
+					"period"
+				],
+				"editMode": false,
+				"queryText": "select \"clientName\" = @w_nom_cliente\r\n\t\t\t , \"totalAmount\" = @w_monto_total\r\n\t\t\t , \"totalAmountText\" = \u0027\u0027\r\n\t\t\t , \"regionalAddress\" = @w_dom_regional\r\n\t\t\t , \"monthlyInterestRate\" = @w_imo_mensual\r\n\t\t\t , \"monthlyInterestRateText\" = \u0027\u0027\r\n\t\t\t , \"officeState\" = @w_sucursal_provincia\r\n\t\t\t , \"beginDateDay\" = day(@w_fecha_ini_credito)\r\n\t\t\t , \"beginDateMonth\" = month(@w_fecha_ini_credito)\r\n\t\t\t , \"beginDateYear\" = year(@w_fecha_ini_credito)\r\n\t\t\t , \"clientAddress\" = @w_dom_cliente\r\n\t\t\t , \"reca\" = @w_pie_pagina\r\n\t\t\t , \"creditNum\" = @i_banco\r\n\t\t\t , \"clientNum\" = @w_numero_cliente\r\n\t\t\t , \"operationType\" = @w_desc_operacion\r\n\t\t\t , \"cashRecieved\" = @w_monto_credito - @w_gastos_originacion\r\n\t\t\t , \"originationExpense\" = @w_gastos_originacion\r\n\t\t\t , \"creditAmount\" = @w_monto_credito\r\n\t\t\t , \"rate\" = @w_tasa_ordinaria\r\n\t\t\t , \"actualDate\" = convert(varchar,getdate(),103)\r\n\t\t\t , \"frequency\" = @w_plazo_credito\r\n\t\t\t , \"period\" = @w_frecuencia_credito\r\n\t\t\t , \"address\" = @w_cliente_calle + \u0027 \u0027 + @w_cliente_num_ext\r\n\t\t\t , \"colony\" = @w_cliente_parroquia\r\n\t\t\t , \"delegation\" = @w_cliente_ciudad\r\n\t\t\t , \"city\" = @w_cliente_ciudad\r\n\t\t\t , \"state\" = @w_cliente_provincia\r\n\t\t\t , \"subsidiary\" = @w_filial"
+			},
+			{
+				"_idQuery": "862df85c-7c63-453f-80f9-50013946926b",
+				"columns": [
+					"NumeroDividendo",
+					"FechaVencimiento",
+					"SaldoCap",
+					"Capital",
+					"Feci",
+					"Interes",
+					"Seguros",
+					"Otros",
+					"Cuota",
+					"Estado",
+					"DiasCuota"
+				],
+				"editMode": false,
+				"queryText": "select NumeroDividendo = di_dividendo\r\n\t\t\t , FechaInicio = convert(char(10),a.di_fecha_ini,103)\r\n\t\t\t , FechaVencimiento = convert(char(10),a.di_fecha_ven,103)\r\n\t\t\t , Ahorro = \u0027N/A\u0027\r\n\t\t\t , Cuota = sum(b.am_cuota)\r\n\t\t\t , Capital = sum(case when b.am_concepto = \u0027CAP\u0027 then b.am_cuota else 0 end)\r\n\t\t\t , Interes = sum(case when b.am_concepto in (\u0027INT\u0027, \u0027IMO\u0027) then b.am_cuota else 0 end)\r\n\t\t\t , Iva = sum(case when b.am_concepto in (\u0027IVA\u0027, \u0027IVA-M\u0027, \u0027IVA-C\u0027, \u0027IVA-CM\u0027,\r\n\t\t\t\t\u0027IVA-SASIST\u0027, \u0027IVAF\u0027, \u0027IVAF-C\u0027, \u0027IVAF-CM\u0027, \u0027IVAF-M\u0027, \u0027IVAF-SASIS\u0027, \u0027IVA-GTOSUP\u0027)  then b.am_cuota else 0 end)\r\n\t\t\t , Seguros = sum(case when b.am_concepto in (\u0027SEG\u0027,\u0027SEG2\u0027,\u0027SEGACC\u0027,\u0027SEGUROIVZ\u0027,\r\n\t\t\t\t\u0027SEGUROVD\u0027,\u0027SEGURODESM\u0027,\u0027SASIST\u0027,\u0027SEGSALDO\u0027,\u0027SEGUROCV\u0027) then b.am_cuota else 0 end)\r\n\t\t\t , GastoSupervision = sum(case when b.am_concepto = \u0027GTOSUP\u0027 then b.am_cuota else 0 end)\r\n\t\t\t , Saldo = cap_liquida\r\n\tfrom"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_c_anexo"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_cat"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_clarificationsPhone"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_apellido_materno"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_apellido_materno"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_apellido_paterno"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_apellido_paterno"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_calle"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_ciudad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_codpostal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_curp"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_curp"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_nombre"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_nombre"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_num_ext"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_parroquia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_provincia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_rfc"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_rfc"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_telefono"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cliente_telefono"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cod_clte_bco"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cod_direc"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_comision_iva"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_comision"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_correoOficina"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_desc_operacion"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasCanAnt"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasConsCancelacion"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasFactBienes"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasMinCancelacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_diasMinCancelacionL"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasNotCamb"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_diasNotCambL"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasQuejas"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasRechCamb"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasRespQuejas"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasRespQuejasInt"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasRevQuejas"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_diasSolInformacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_diasSolInformacionL"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dom_aclaraciones"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dom_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dom_regional"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_domicilio_origen"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_domicilio_origen"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_domicilio"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ecivil"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_email"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_emlCondusef"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_entregaEfectivo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_equivalencia_min"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_estado_cuenta"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha_nac"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha_nac"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha_pago"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_filial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_firma"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_fondo_proteccion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fondo_proteccionL"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fono_banco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fono1Condusef"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fono2Condusef"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_forma_migratoria"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_forma_migratoria"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_frecuencia_credito"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_gastos_originacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_genero"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_genero"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_imo_mensual"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_imo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_inactivida_cta"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_intRedBienes"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_monto_credito"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_monto_total"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_mov_esperados"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_mov_esperados"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_nacionalidad_cod"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_nacionalidad_cod"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nacionalidad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nacionalidad"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_conyuge"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_solidario1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_solidario1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_solidario2"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_solidario2"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_NotQuejas"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_num_oficina"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_numDiasFall"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_numDiasInt"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_numDiasMor"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_numero_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_numero_extranjero"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_numero_extranjero"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_numero_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_numero_referencia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_obligado_1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_obligado_2"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ocupacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_ocupacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficina_credito"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficina_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_oficina_descrip_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_oficina_descrip_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_oficina_dir_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_oficina_dir_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_pagina_internet"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_per_administracion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_per_cobranza"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_per_invest"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_pie_pagina"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_plazo_credito"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazoDomicilio"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_profesion_cod"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_profesion_cod"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_provincia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_referencia_walmart"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_regional_cod"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_regional_cod"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_regional_descrip"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_regional_descrip"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_regional_dir"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_regional_dir"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_rfc_origen"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_rfc_origen"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_saldo_promedio"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_saldo_promedio"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_sexo_cod"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_sexo_cod"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sucursal_provincia"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_tasa_moratoria"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_tasa_ordinaria"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_operacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_plazo_credito"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_producto"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_trabaja_en"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_trabaja_en"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_urlBanco"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_urlCondusef"
+			}
+		]
+	}
+}

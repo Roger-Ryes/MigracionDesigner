@@ -1,0 +1,164 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77544"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_forma_pago",
+			"type": "CUSTOM",
+			"value": "paymentMethod"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "bankId"
+		}
+	],
+	"name": "BLI_PaymentAutomaticSearch",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8871_bli_paymentautomaticsearch",
+	"patternName": "BLI_PaymentAutomaticSearch",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "d5cb0e68-179e-466c-8e31-9fc218946e85",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "d5cb0e68-179e-466c-8e31-9fc218946e85",
+			"columns": [
+				{
+					"attributeId": "AT76_PAYMENOM612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_PAYMENET612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT68_ACCOUNTT612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_INSTITNT612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_INSTITIN612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT49_CLIENTXI612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_CLIENTNA612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_CLIENTEE612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_PERCENAA612",
+					"entityId": "EN_PAYMENTLI_612",
+					"format": "",
+					"name": "9",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PAYMENTLI_612",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "PaymentAutomaticList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_pago_automatico",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

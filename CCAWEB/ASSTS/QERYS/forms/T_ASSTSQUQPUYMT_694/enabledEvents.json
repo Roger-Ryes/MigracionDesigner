@@ -1,0 +1,92 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_ACTIERNI_WO73",
+		"controlName": "ActiveTransactionQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_ACTIERNI_WO73.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ActiveTransaction",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_CAUSAONT_HU91",
+		"controlName": "CausationQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_CAUSAONT_HU91.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "Causation",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_REVESETA_RO55",
+		"controlName": "ReversedTransactionQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_REVESETA_RO55.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ReversedTransaction",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_HK73_UEC23",
+		"controlName": "QV_HK73_UEC23",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "ActiveTransaction",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_IY91_WMD36",
+		"controlName": "QV_IY91_WMD36",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "Causation",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_OB55_ZQG31",
+		"controlName": "QV_OB55_ZQG31",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "ReversedTransaction",
+		"eventsType": "queryViewEventType"
+	}
+]

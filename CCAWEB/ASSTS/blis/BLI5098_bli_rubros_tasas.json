@@ -1,0 +1,351 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7020"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "R"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_Rubros_Tasas",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5098_bli_rubros_tasas",
+	"patternName": "BLI_Rubros_Tasas",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "0dfcf58e-7a39-42a7-be44-953fbc2f51bc",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 23,
+			"queryName": "select \u0027Rubro\u0027                     = ro_concepto,\n          \u0027Descripcion\u0027               = substring(co_descripcion,1,30),\n          \u0027Tipo Rubro\u0027                = ro_tipo_rubro,\n          \u0027F. de Pago\u0027                = ro_fpago ,\n          \u0027Valor\u0027                     = isnull((SELECT sum(am_cuota) FROM ca_amortizacion WHERE am_operacion = @w_operacionca AND am_concepto = co.co_concepto),0),\n          \u0027Prioridad\u0027                 = ro_prioridad,\n          \u0027Paga Mora\u0027                 = ro_paga_mora,\n          \u0027Causa\u0027                     = ro_provisiona,\n          \u0027Referencia\u0027                = ro_referencial,\n          \u0027Signo\u0027                     = ro_signo ,\n          \u0027Valor/Puntos\u0027              = round(ro_factor,2),\n          \u0027Tipo/Puntos\u0027               = ro_tipo_puntos,\n          \u0027Valor/Tasa Total\u0027          = ro_porcentaje,\n          \u0027Tasa Negociada\u0027            = ro_porcentaje_aux,\n          \u0027Tasa Ef.Anual\u0027             = ro_porcentaje_efa,\n          \u0027Signo reaj.\u0027               = ro_signo_reajuste ,\n          \u0027Valor/Puntos de Reaj.\u0027     = ro_factor_reajuste,\n          \u0027Referencia de Reaj.\u0027       = substring(ro_referencial_reajuste,1,10),\n          \u0027Gracia\u0027                    = ro_gracia,\n          \u0027Base de calculo\u0027           = ro_base_calculo,\n          \u0027Por./Cobrar/TIMBRE\u0027        = ro_porcentaje_cobrar,\n          \u0027Tipo Garantia\u0027             = ro_tipo_garantia,\n          \u0027Nro. Garantia\u0027             = ro_nro_garantia,\n          \u0027%Cobertura Gar.\u0027           = ro_porcentaje_cobertura,\n          \u0027Valor Garantia\u0027            = ro_valor_garantia,\n          \u0027Tipo Dividendo\u0027            = ro_tperiodo,\n          \u0027No. Periodos Int.\u0027         = ro_periodo,\n          \u0027Tabla Otras Tasas\u0027         = ro_tabla\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "0dfcf58e-7a39-42a7-be44-953fbc2f51bc",
+			"columns": [
+				{
+					"attributeId": "AT52_CONCEPTT197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Rubro",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_DESCRIPT197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Descripcion",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT19_ITEMTYPE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tipo Rubro",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT18_PAYMENTH197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "F. de Pago",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_VALUEIST197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Valor",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_PRIORITT197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Prioridad",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT36_LATEPAYN197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Paga Mora",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_CAUSEJWV197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Causa",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT67_REFERENE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Referencia",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_SIGNVYDC197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Signo",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_POINTSAU197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Valor/Puntos",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_POINTSYY197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tipo/Puntos",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_VALUETEL197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Valor/Tasa Total",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_NEGOTITR197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tasa Negociada",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_ANNUALFE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tasa Ef.Anual",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT31_REAJUSNN197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Signo reaj.",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_REAJUSPT197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Valor/Puntos de Reaj.",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT50_REAJUSNN197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Referencia de Reaj.",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_GAINLJFX197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Gracia",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_BASECAOT197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Base de calculo",
+					"position": 20,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT24_CHARGENR197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Por./Cobrar/TIMBRE",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_WARRANET197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tipo Garantia",
+					"position": 22,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT66_WARRANUY197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Nro. Garantia",
+					"position": 23,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_COVERAEN197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "%Cobertura Gar.",
+					"position": 24,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_WARRANYE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Valor Garantia",
+					"position": 25,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_DIVIDEYY197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tipo Dividendo",
+					"position": 26,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT11_INTEREPS197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "No. Periodos Int.",
+					"position": 27,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT16_TABLEOTE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tabla Otras Tasas",
+					"position": 28,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_FINANCDE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Financiado",
+					"position": 29,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_MAXRATEE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tasa Max",
+					"position": 30,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT88_MINRATEE197",
+					"entityId": "EN_OPERATIOE_197",
+					"format": "",
+					"name": "Tasa Min",
+					"position": 31,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_OPERATIOE_197",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanEntry"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,0 +1,48 @@
+[
+	{
+		"attributeName": "projectionDays",
+		"controlId": "VA_DIASPROYECCIONO_148517",
+		"controlName": "projectionDays",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 3
+			}
+		],
+		"entityName": "ProjectionQuota",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "projectionDate",
+		"controlId": "VA_FECHAPROYECCOIN_790517",
+		"controlName": "fechaProyeccion",
+		"controlType": "DateField",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 3
+			},
+			{
+				"eventName": "customValidate",
+				"executionType": 1
+			}
+		],
+		"entityName": "ProjectionQuota",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_PROJECTITO_707621",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

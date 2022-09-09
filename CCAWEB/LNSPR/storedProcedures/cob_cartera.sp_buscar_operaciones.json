@@ -1,0 +1,179 @@
+{
+	"filename": "E:\\Web\\FuentesJS\\spsql\\busopera.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_buscar_operaciones",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ini"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_lin_credito"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_migrada"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_reajuste"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_reaj"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_siguiente"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_condicion_est"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_web"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_grupal"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_categoria"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "1c722065-9115-46c7-bac9-45c986a712c8",
+				"columns": [
+					"Lin.Credito",
+					"Moneda",
+					"No.Operacion",
+					"Monto Operacion",
+					"Cliente",
+					"Desembolso",
+					"Vencimiento",
+					"Reg/Oficial",
+					"Oficina",
+					"Cup.Cr\u00e9dito",
+					"Op.Migrada",
+					"Op.Anterior",
+					"Estado",
+					"Tramite",
+					"Cod.Cli",
+					"Secuencial",
+					"Reaj.Especial",
+					"Ref.Redescont",
+					"Clase Oper",
+					"Grupal",
+					"Categoria",
+					"Desc.Moneda",
+					"Cod.Estado"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_anulado"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_opcion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

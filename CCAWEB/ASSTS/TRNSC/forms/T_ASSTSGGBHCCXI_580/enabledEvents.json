@@ -1,0 +1,264 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_NO93_ONZ78_630",
+		"controlName": "QV_NO93_ONZ78",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "CompaniesDiscountsFileList",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSGG_ATT",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSGG_SS5",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSGG_SSC",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TASSTSGG_TSR",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_COMPLSIN_RZ93",
+		"controlName": "CompaniesDiscountsFileListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_COMPLSIN_RZ93.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "CompaniesDiscountsFileList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_COMPTOTD_SH98",
+		"controlName": "CompaniesDiscountsListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_COMPTOTD_SH98.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "CompaniesDiscountsList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_CK98_MLY42",
+		"controlName": "QV_CK98_MLY42",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "CompaniesDiscountsList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_NO93_ONZ78",
+		"controlName": "QV_NO93_ONZ78",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "gridInitColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "gridInitEditColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "CompaniesDiscountsFileList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "approved",
+		"controlId": "VA_COMBOBOXDBBXSFA_201960",
+		"controlName": "approved",
+		"controlType": "CheckBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "CompaniesDiscountsFileList",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "companyName",
+		"controlId": "VA_COMPANYNAMEXGBS_726960",
+		"controlName": "companyName",
+		"controlType": "TextLink",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "CompaniesBatch",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "company",
+		"controlId": "VA_COMPANYQZIUFHFL_215960",
+		"controlName": "company",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "CompaniesBatch",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "fileName",
+		"controlId": "VA_FILENAMEZIQSOOZ_192960",
+		"controlName": "fileName",
+		"controlType": "FileUpload",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "CompaniesBatch",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "sequential",
+		"controlId": "VA_SEQUENTIALBATHC_999960",
+		"controlName": "sequential",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "CompaniesBatch",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONFPXLAAR_334960",
+		"controlName": "VA_VABUTTONFPXLAAR_334960",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONNDPYCNC_590960",
+		"controlName": "VA_VABUTTONNDPYCNC_590960",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_COMPANIECR_302580",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

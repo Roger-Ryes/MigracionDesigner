@@ -1,0 +1,54 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_OPERATIEL_780",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_PRODUCTIE_675",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_PRODUCTII_203",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_PRODUCTNN_604",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_LINEIERT_DW35",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_OPEREEOA_SH40",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_PRODLUDT_UJ17",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_PRODTSNI_WK98",
+			"related": false,
+			"subModuleId": "OPRTN"
+		}
+	]
+}

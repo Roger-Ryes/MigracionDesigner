@@ -1,0 +1,290 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TREFINAN_4A_",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "CM_TREFINAN_9NC",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTOOGA_DP31",
+		"controlName": "ListaFormaPagoQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_LISTOOGA_DP31.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListaFormaPago",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_REFINAAA_3375",
+		"controlName": "RenewableOperationsQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_REFINAAA_3375.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_3375_11342",
+		"controlName": "QV_3375_11342",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "gridInitColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "gridInitEditColumnTemplate",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowDeleting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 7
+			}
+		],
+		"entityName": "RefinanceLoans",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "graceDividend",
+		"controlId": "VA_5032SUOKWXIJNUR_934515",
+		"controlName": "graceDividend",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "account",
+		"controlId": "VA_ACCOUNTYATVYIRL_740515",
+		"controlName": "account",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "addicionalPayMethod",
+		"controlId": "VA_ADDICIONALPAYOH_649515",
+		"controlName": "addicionalPayMethod",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "additionalValue",
+		"controlId": "VA_ADDITIONALVAUUU_896515",
+		"controlName": "additionalValue",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "basicInsurance",
+		"controlId": "VA_BASICINSURANCEC_861515",
+		"controlName": "basicInsurance",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "capitalizeBalance",
+		"controlId": "VA_CAPITALIZEBANNE_580515",
+		"controlName": "capitalizeBalance",
+		"controlType": "RadioButtonList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "clientName",
+		"controlId": "VA_CLIENTNAMEBGXWU_198515",
+		"controlName": "clientName",
+		"controlType": "TextInputButton",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "openEvent",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "newLoanCurrency",
+		"controlId": "VA_NEWLOANCURRENNN_364515",
+		"controlName": "newLoanCurrency",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "payMethodCurrency",
+		"controlId": "VA_PAYMETHODCURCYE_344515",
+		"controlName": "payMethodCurrency",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "preventionProgram",
+		"controlId": "VA_PREVENTIONPRRAM_747515",
+		"controlName": "preventionProgram",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 7
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 7
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "termGraceInt",
+		"controlId": "VA_TERMGRACEINTJNV_305515",
+		"controlName": "termGraceInt",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "typeGrace",
+		"controlId": "VA_TYPEGRACECCQFCY_562515",
+		"controlName": "typeGrace",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "RefinanceLoanFilter",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_REFINANCSL_902781",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 3
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			},
+			{
+				"eventName": "onCloseModal",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

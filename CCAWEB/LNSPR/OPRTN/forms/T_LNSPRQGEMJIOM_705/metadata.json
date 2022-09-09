@@ -1,0 +1,48 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_LINEGUAAE_244",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_LINEGUARS_326",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANLINCT_267",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANSLIGN_522",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_VALIDATOE_493",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_LINELAAN_WU84",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_LINERLAR_KA20",
+			"related": false,
+			"subModuleId": "OPRTN"
+		}
+	]
+}

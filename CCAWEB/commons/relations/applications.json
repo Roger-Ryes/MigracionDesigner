@@ -1,0 +1,1145 @@
+{
+	"APP_APPCARTEARA_499": {
+		"externalModules": {
+		},
+		"forms": {
+			"ASSTS": [
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "AmortizationQuoteDetailForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_AMORTIZATIDTE_881",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "AssociateLoanItemsForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSABPPZROU_506",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoanItemsForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSDXZMZWIL_957",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ModalLoanItemsForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSFPNDGGEH_445",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "OneRankForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSGICMCPEO_473",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "AggregateDeferredItemsForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSHRTAYJID_195",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ChangePayDayForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSLFJQNQTJ_171",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "Fund",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSUFGAMLTW_237",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "TwoRangesForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSWJQZCYYQ_887",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "RateRangeForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_ASSTSXWJMINKN_821",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "DocumentPrinting",
+					"subModuleId": "MNTNN",
+					"taskId": "T_DOCUMENTPRIII_678",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "ExtendsQuotaForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_EXTENDSQUOATT_575",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ExtendsQuotaFormMain",
+					"subModuleId": "MNTNN",
+					"taskId": "T_EXTENDSQUONTA_926",
+					"type": "Composite form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "PaymentMaintenanceModal",
+					"subModuleId": "MNTNN",
+					"taskId": "T_PAYMENTMAIDLT_828",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "PaymentMaintenance",
+					"subModuleId": "MNTNN",
+					"taskId": "T_PAYMENTMAIETA_586",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "OtherCharges",
+					"subModuleId": "MNTNN",
+					"taskId": "T_PROJECTINGSTR_344",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "ProjectionQuotaForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_PROJECTIONATU_621",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ProjectionQuotaFormMain",
+					"subModuleId": "MNTNN",
+					"taskId": "T_PROJECTIONNQI_244",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "ProjectionOtherChargesForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_PROJECTIONTOG_425",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "RatesModal",
+					"subModuleId": "MNTNN",
+					"taskId": "T_RATESMODALKUB_953",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ReadjustmentLoanCabForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_REAJUSTECAMMB_801",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ReadjustmentDetalilsLoanForm",
+					"subModuleId": "MNTNN",
+					"taskId": "T_REAJUSTEDEFTF_264",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "REAJUSTE",
+					"subModuleId": "MNTNN",
+					"taskId": "T_REAJUSTESRCSN_872",
+					"type": "Composite form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ProjectOtherCharges",
+					"subModuleId": "MNTNN",
+					"taskId": "T_TESTWKHELVLBD_756",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "TypeRatesModal",
+					"subModuleId": "MNTNN",
+					"taskId": "T_TYPERATESMALA_545",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ValueRates",
+					"subModuleId": "MNTNN",
+					"taskId": "T_VALUERATESFBO_932",
+					"type": "Simple form"
+				}
+			]
+		},
+		"generate": {
+			"categoryName": "Cobiscorp",
+			"customEventImpl": "Custom",
+			"customEventImplPath": "{projectPath}\\build",
+			"displayName": "AppCartera",
+			"generateFunctionalTest": false,
+			"generateUnitTest": false,
+			"mode": "Development",
+			"type": "HTML5"
+		},
+		"id": "APP_APPCARTEARA_499",
+		"mainPortletTaskId": "T_VALUERATESFBO_932",
+		"modules": [
+			"ASSTS"
+		],
+		"name": "maintenance"
+	},
+	"APP_COMMONSBFEE_735": {
+		"externalModules": {
+		},
+		"forms": {
+			"ASSTS": [
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "AmortizationForm",
+					"subModuleId": "CMMNS",
+					"taskId": "T_AMORTIZATIOON_261",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "AdvancedSearchLoansForm",
+					"subModuleId": "CMMNS",
+					"taskId": "T_ASSTSEUKYTEJC_220",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "AmortizationModal",
+					"subModuleId": "CMMNS",
+					"taskId": "T_ASSTSRQJVFXXE_548",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "LoanHeaderInfoForm",
+					"subModuleId": "CMMNS",
+					"taskId": "T_LOANHEADERNFI_316",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoanSearchForm",
+					"subModuleId": "CMMNS",
+					"taskId": "T_LOANSEARCHSWA_959",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoanStatusChangeMain",
+					"subModuleId": "CMMNS",
+					"taskId": "T_LOANSTATUSGNI_120",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "LoanStatusChangeForm",
+					"subModuleId": "CMMNS",
+					"taskId": "T_LOANSTATUSNGH_840",
+					"type": "Simple form"
+				}
+			]
+		},
+		"generate": {
+			"categoryName": "Cobiscorp",
+			"customEventImpl": "Custom",
+			"customEventImplPath": "{projectPath}\\build",
+			"displayName": "commons",
+			"generateFunctionalTest": false,
+			"generateUnitTest": false,
+			"mode": "Development",
+			"type": "HTML5"
+		},
+		"id": "APP_COMMONSBFEE_735",
+		"mainPortletTaskId": "T_LOANSEARCHSWA_959",
+		"modules": [
+			"ASSTS"
+		],
+		"name": "commons"
+	},
+	"APP_OPERATIONNN_185": {
+		"externalModules": {
+		},
+		"forms": {
+			"LNSPR": [
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "PaymentAutomaticCreateForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRACJAQDUP_527",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "CurrentStatusLineForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRASFFUCSU_551",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "PassivePortfolioCreation",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRBYPIFLBG_956",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "StatusChangeMassiveForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRDNBKFOTI_411",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "OperationForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRDTSDFSKQ_539",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "MembersLineForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPREHKSWWGN_923",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoansLines",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRFYCKEVVP_737",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "OperationPaymentDayUpdateForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRGNPCEXYE_633",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "OperationItems",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRHWGYLNWJ_330",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "AccountsOperation",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRHZIKGUNT_664",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "LoanSaleForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRIIYONZUA_572",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "ModalOperationItems",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRJXWYQVOK_830",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "OperationGeneralParametersForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRKEGMFGIE_785",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "ProjectOtherCharges",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRKWSPLJPI_575",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoansCreateForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRMBVLAOGA_193",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoanSearchForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRMFFWJGJE_921",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "LoansDistributionMembers",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRNBKRHAIB_194",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "GeneralInformationLine",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRNRRVDNTA_721",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoansLineGuaranteesForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRQGEMJIOM_705",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoanLinesCreate",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRRLRKZDAH_793",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "ProductLineDistributionForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRSBSNRATX_181",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "SyndicatedListForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRSCSIDSOD_858",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoansOperationUpdate",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRSHDBNXGH_268",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "LoanSaleDetailForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRSZYOCYQK_511",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoansSimulationForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRTZAAOTEC_626",
+					"type": "Composite form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "AdvancedSearchLoansForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRUJMIKLPE_451",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "ModalReferentialForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRUPDQTUXI_446",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "LoansUpdateForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRVJAKOEIC_908",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"name": "LoanDebtorListForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRWENJKGKJ_579",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "BatchMassivePaymentsForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRWQVPGSSG_618",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"name": "LoanLineCreation",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRXLZJGUMH_556",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"name": "OfficialOfficeTransferForm",
+					"subModuleId": "OPRTN",
+					"taskId": "T_LNSPRXNWEODPH_423",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "PassivePortfolioCreation",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRYTTPAWOT_832",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "LNSPR",
+					"moduleName": "LOANSOPERATION",
+					"name": "PaymentsForm",
+					"subModuleId": "OPRTN",
+					"subModuleName": "OPERATION",
+					"taskId": "T_LNSPRZYRPKNSX_507",
+					"type": "Simple form"
+				}
+			]
+		},
+		"generate": {
+			"categoryName": "Cobiscorp",
+			"customEventImpl": "Custom",
+			"customEventImplPath": "{projectPath}\\build",
+			"displayName": "operation",
+			"mode": "Development",
+			"type": "HTML5"
+		},
+		"id": "APP_OPERATIONNN_185",
+		"mainPortletTaskId": "T_LNSPRMFFWJGJE_921",
+		"modules": [
+			"LNSPR"
+		],
+		"name": "operation"
+	},
+	"APP_QUERIESGRYH_963": {
+		"externalModules": {
+		},
+		"forms": {
+			"ASSTS": [
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoanGuarantesSuretyForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSABVOMTUL_791",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "GeneralInformationMain",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSBIBQRXFV_119",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "DetailTransactionQueryForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSECRXYFPY_431",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoansIntercycle",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSEYKPQBME_621",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "DeferredItemsDetailForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSFLSVSFLG_975",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "TransactionQueryForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSKIAARTLC_272",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "DeferredItemsForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSKMGDPSCM_203",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoanPolicyForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSMABINVRB_160",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "PassivePortfolio",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSNXKZRVUH_117",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoansHistoricForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSOGDWIAAO_949",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoansSeguro",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSQMEVBPIH_868",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoanTransactionsForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSQUQPUYMT_694",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "LoanSyndicatedListForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSUHBKGFUE_991",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoansChildren",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSVDYQFQAP_288",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "LoanTransactionDetailForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSXYNOAKAL_995",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoansBeneficiario",
+					"subModuleId": "QERYS",
+					"taskId": "T_ASSTSZHWXXEQV_571",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "GeneralInformationForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_GENERALINAOIT_347",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "GeneralInfoLeftChartForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_GENERALINFFHA_866",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryItemsLoanForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_ITEMSLOANSUXI_712",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoanDebtorForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_LOANDEBTORUIG_168",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryLoanWarrantyForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_LOANWARRANTYT_123",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "PaymentDetailForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_PAYMENTDETMFP_722",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "PaymentQueryForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_PAYMENTUTOUGP_714",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QueryRatesForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_RATESPTSITVKK_186",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "RefinancedLoansForm",
+					"subModuleId": "QERYS",
+					"taskId": "T_REFINANCEDALA_857",
+					"type": "Simple form"
+				}
+			]
+		},
+		"generate": {
+			"categoryName": "Cobiscorp",
+			"customEventImpl": "Custom",
+			"customEventImplPath": "{projectPath}\\build",
+			"displayName": "queries",
+			"generateFunctionalTest": false,
+			"generateUnitTest": false,
+			"mode": "Development",
+			"type": "HTML5"
+		},
+		"id": "APP_QUERIESGRYH_963",
+		"mainPortletTaskId": "T_ASSTSDVYDGJCT_107",
+		"modules": [
+			"ASSTS"
+		],
+		"name": "queries"
+	},
+	"APP_TRANSACTNOI_782": {
+		"externalModules": {
+		},
+		"forms": {
+			"ASSTS": [
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ApplyClause",
+					"subModuleId": "TRNSC",
+					"taskId": "T_APPLYCLAUSEEE_533",
+					"type": "Composite form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoansRestructuring",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSAMRZIFMF_594",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "SimulateForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSAXELGOQQ_915",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "RestructuringDetail",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSCNYHAQPM_525",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoanPartialDisbursement",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSEFYTNIXU_871",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "RestructuringConfirmation",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSEGPPJJUA_289",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "CompaniesDiscountsCreateForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSGGBHCCXI_580",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "PaymentsFormGroup",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSIOIYHVWE_604",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "NoAppliedPaymentsForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSJRUQRHCH_579",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ProjectionReadjustmentForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSPENVMXNQ_619",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "CompaniesSearchForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSROZTLMPE_144",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "DetailNoAppliedPaymentsForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSSJVXBFJD_286",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "CompaniesBatchForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSSMJDYNLF_161",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "SimulateMain",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSSZCLDZTQ_839",
+					"type": "Composite form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "CompanyCreateForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_ASSTSVIKJRAKP_845",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "BankAccountsListForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_BANKACCOUNTIS_944",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "BankAccountsModal",
+					"subModuleId": "TRNSC",
+					"taskId": "T_BANKACCOUNTOA_777",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "CondonationDetailForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_CONDONATIOSNN_532",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "DisbursementForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_DISBURSEMENNN_810",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "LeftoverPaymentsModal",
+					"subModuleId": "TRNSC",
+					"taskId": "T_LEFTOVERPALDD_459",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "LoanDisbursementMain",
+					"subModuleId": "TRNSC",
+					"taskId": "T_LOANDISBURSAA_275",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "NegotiationPaymentsModal",
+					"subModuleId": "TRNSC",
+					"taskId": "T_NEGOTIATIOTML_700",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "PaymentModeForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_PAYMENTMODEEE_368",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "PaymentsMain",
+					"subModuleId": "TRNSC",
+					"taskId": "T_PAYMENTSMANII_157",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "PaymentsForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_PAYMENTSTENLV_850",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "PrioritiesPaymentsModal",
+					"subModuleId": "TRNSC",
+					"taskId": "T_PRIORITIESENY_489",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "QuotaDetailPaymentsModal",
+					"subModuleId": "TRNSC",
+					"taskId": "T_QUOTADETAISOY_745",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "RefinanceLoansFilter",
+					"subModuleId": "TRNSC",
+					"taskId": "T_REFINANCELISS_781",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "ASSTS",
+					"name": "ValueDateMain",
+					"subModuleId": "TRNSC",
+					"taskId": "T_VALUEDATEMINN_689",
+					"type": "Composite form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "ASSTS",
+					"name": "ValueDateForm",
+					"subModuleId": "TRNSC",
+					"taskId": "T_VALUEDATEUVDU_861",
+					"type": "Simple form"
+				}
+			]
+		},
+		"generate": {
+			"categoryName": "Cobiscorp",
+			"customEventImpl": "Custom",
+			"customEventImplPath": "{projectPath}\\build",
+			"displayName": "transactions",
+			"generateFunctionalTest": false,
+			"generateUnitTest": false,
+			"mode": "Development",
+			"type": "HTML5"
+		},
+		"id": "APP_TRANSACTNOI_782",
+		"mainPortletTaskId": "T_APPLYCLAUSEEE_533",
+		"modules": [
+			"ASSTS"
+		],
+		"name": "transactions"
+	}
+}

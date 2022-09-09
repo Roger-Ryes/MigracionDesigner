@@ -1,0 +1,199 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7020"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "J"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_poliza",
+			"type": "CUSTOM",
+			"value": "pagPoliza"
+		}
+	],
+	"name": "BLI_Policy",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3164_bli_policy",
+	"patternName": "BLI_Policy",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "de91ceb0-1d5d-4d81-bb65-01b973a9496a",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 31,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "de91ceb0-1d5d-4d81-bb65-01b973a9496a",
+			"columns": [
+				{
+					"attributeId": "AT96_INSURANN750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "ASEGURADORA",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_POLICYXA750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "POLIZA",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_CODEEXNE750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "GARANTIA",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_FVALIDTY750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "dd/MM/yyyy",
+					"name": "FECHA VIGENCIA",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_FVALIDNN750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "dd/MM/yyyy",
+					"name": "FECHA VENCIMIENTO",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_AMOUNTOL750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "MONTO",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_AMOUNTNR750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "MONTO ENDOSO",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT24_DATEENNO750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "dd/MM/yyyy",
+					"name": "FECHA ENDOSO",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT73_FENDOREE750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "dd/MM/yyyy",
+					"name": "FECHA FIN ENDOSO",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_COVERAEG750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "COBERTURA",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_DESCRIPN750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "DESCRIPCION",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_STATEPCY750",
+					"entityId": "EN_LOANPOLYI_750",
+					"format": "",
+					"name": "ESTADO",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANPOLYI_750",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanPolicy"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

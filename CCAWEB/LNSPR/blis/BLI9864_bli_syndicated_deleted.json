@@ -1,0 +1,66 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_SYNDICASL_725",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "SyndicatedList"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT22_CODPARCA725",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_SYNDICASL_725",
+			"format": "",
+			"name": "@i_banco_participante",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77651"
+		}
+	],
+	"name": "BLI_Syndicated_Deleted",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9864_bli_syndicated_deleted",
+	"patternName": "BLI_Syndicated_Deleted",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_sindicado_tmp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

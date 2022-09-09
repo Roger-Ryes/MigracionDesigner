@@ -1,0 +1,130 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7144"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo_pago",
+			"type": "CUSTOM",
+			"value": "tipoPago"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_tipo_pago_can",
+			"type": "CUSTOM",
+			"value": "tipoPagoCan"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cancela",
+			"type": "CUSTOM",
+			"value": "cancela"
+		}
+	],
+	"name": "BLI_Consulta_Prioridad",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6347_bli_consulta_prioridad",
+	"patternName": "BLI_Consulta_Prioridad",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "ed866772-a42c-4798-87c0-380534f65928",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 3,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ed866772-a42c-4798-87c0-380534f65928",
+			"columns": [
+				{
+					"attributeId": "AT77_ITEMFUQE152",
+					"entityId": "EN_PRIORITII_152",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT30_PRIORITT152",
+					"entityId": "EN_PRIORITII_152",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PRIORITII_152",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "Priorities"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_pagos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

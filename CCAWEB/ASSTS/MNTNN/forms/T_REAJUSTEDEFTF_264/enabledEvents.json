@@ -1,0 +1,114 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_REAJUSTE_2618",
+		"controlName": "ReadjustmentDetalilsLoanQuery_2618",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_REAJUSTE_2618.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_2618_23821",
+		"controlName": "QV_2618_23821",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 7
+			}
+		],
+		"entityName": "ReadjustmentDetalilsLoan",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "porcentaje",
+		"controlId": "VA_TEXTINPUTBOXAAA_377141",
+		"controlName": "porcentaje",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "ReadjustmentDetalilsLoan",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "referencial",
+		"controlId": "VA_TEXTINPUTBOXFYD_123141",
+		"controlName": "referencial",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			},
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "ReadjustmentDetalilsLoan",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "signo",
+		"controlId": "VA_TEXTINPUTBOXIEY_291141",
+		"controlName": "signo",
+		"controlType": "ComboBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "ReadjustmentDetalilsLoan",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "factor",
+		"controlId": "VA_TEXTINPUTBOXYTY_525141",
+		"controlName": "factor",
+		"controlType": "TextInputBox",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "ReadjustmentDetalilsLoan",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_REAJUSTEMF_502264",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 3
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

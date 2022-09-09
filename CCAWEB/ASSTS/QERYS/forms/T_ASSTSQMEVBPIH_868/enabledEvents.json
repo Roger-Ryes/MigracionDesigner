@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_SEGUSSRS_HF84",
+		"controlName": "SegurosQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_SEGUSSRS_HF84.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "Seguros",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_DF84_XNN39",
+		"controlName": "QV_DF84_XNN39",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "Seguros",
+		"eventsType": "queryViewEventType"
+	}
+]

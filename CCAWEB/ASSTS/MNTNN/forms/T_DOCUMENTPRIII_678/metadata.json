@@ -1,0 +1,142 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_ACCOUNTCC_880",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_ACCOUNTLI_514",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZAE_932",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZAG_129",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZTO_416",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZTO_619",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_ANEXDATDO_786",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_BENEFICIE_901",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_CARTALITS_857",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_COMMISSEN_406",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_CONSENTIC_355",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_CREDITOCB_250",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_FINANCIOA_113",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_GENERALAT_504",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANCHINR_908",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANINSTC_482",
+			"isContextEntity": true,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_LOANKYMRI_882",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_PRINTINDC_109",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		},
+		{
+			"entityId": "EN_RECEIPTNN_147",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_SAVINGDSS_425",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_SEGUROSQK_316",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_USERCONTX_432",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_PRINTICM_3105",
+			"related": false,
+			"subModuleId": "MNTNN"
+		}
+	]
+}

@@ -1,0 +1,148 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7020"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "N"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		}
+	],
+	"name": "BLI_Operaciones_Renovadas",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8592_bli_operaciones_renovadas",
+	"patternName": "BLI_Operaciones_Renovadas",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "47428907-70cd-42d0-be00-e9f29956d85f",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 24,
+			"queryName": "select\n      \u0027Tramite\u0027            = or_tramite,\n      \u0027Operacion Renovada\u0027 = or_num_operacion,\n      \u0027Monto Original\u0027     = or_monto_original,\n      \u0027Saldo Renovado\u0027     = or_saldo_original,\n      \u0027Tipo Credito\u0027       = or_toperacion,\n      \u0027Funcionario\u0027        = or_login\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "47428907-70cd-42d0-be00-e9f29956d85f",
+			"columns": [
+				{
+					"attributeId": "AT25_TRANSANC582",
+					"entityId": "EN_REFINANLC_582",
+					"format": "",
+					"name": "Tramite",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_TYPERTKJ582",
+					"entityId": "EN_REFINANLC_582",
+					"format": "",
+					"name": "Tipo",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT67_LOANWAUS582",
+					"entityId": "EN_REFINANLC_582",
+					"format": "",
+					"name": "Operacion",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_INITIAAA582",
+					"entityId": "EN_REFINANLC_582",
+					"format": "",
+					"name": "Monto Original",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT94_TOTALTCA582",
+					"entityId": "EN_REFINANLC_582",
+					"format": "",
+					"name": "Saldo Renovado",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_LINEUGLL582",
+					"entityId": "EN_REFINANLC_582",
+					"format": "",
+					"name": "Tipo Credito",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT85_OFFICIDL582",
+					"entityId": "EN_REFINANLC_582",
+					"format": "",
+					"name": "Funcionario",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_REFINANLC_582",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "RefinanceLoans"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

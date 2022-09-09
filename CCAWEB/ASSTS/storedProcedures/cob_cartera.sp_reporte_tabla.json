@@ -1,0 +1,462 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\reptabla.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_reporte_tabla",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nemonico"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "ca6d2a08-0a82-4dad-bd0a-8489f032b7a7",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @w_sucursal"
+			},
+			{
+				"_idQuery": "05aefab9-70b4-481f-851b-9d9a6c197b3e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select of_nombre from"
+			},
+			{
+				"_idQuery": "0a19e56c-ab45-4132-825f-c9c98d76f837",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select gr_nombre\r\n                              from"
+			},
+			{
+				"_idQuery": "74ecbeba-21d9-439f-9e71-4f09b2b1697d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(am_cuota) from"
+			},
+			{
+				"_idQuery": "2bcbaed2-97b4-4faf-8735-b9f816409393",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(ro_porcentaje, 0) from"
+			},
+			{
+				"_idQuery": "286a46c9-9d29-4028-8f00-8cb3fe0615db",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select td_descripcion from"
+			},
+			{
+				"_idQuery": "722e5217-725c-4f04-b17b-492cfec22404",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select fu_nombre from"
+			},
+			{
+				"_idQuery": "bc7beec2-71a9-460e-a6bb-34fe12afae33",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}"
+				],
+				"editMode": false,
+				"queryText": "select @w_sucursal,\r\n           @w_grupo,\r\n           @w_ciclo,\r\n           @w_nombre_grupo,\r\n           @w_nro_cuenta,\r\n           @w_nro_credito,\r\n           @w_monto,\r\n           @w_monto_pagar,\r\n           @w_plazo_frecuencia,\r\n           @w_frecuencia,\r\n           @w_tasa_int,\r\n           @w_fecha_ini,\r\n           @w_periodicidad_pago,\r\n           @w_promotor,\r\n           @w_simbolo,\r\n           @w_reca,\r\n           @w_tipo_operacion"
+			},
+			{
+				"_idQuery": "4bfc01b4-06f2-43ba-a6c2-a9b06beb0e6c",
+				"columns": [
+					"No",
+					"Fecha Limite",
+					"{2}"
+				],
+				"editMode": false,
+				"queryText": "select \u0027No\u0027                 = di_dividendo,\r\n       \u0027Fecha Limite\u0027       = di_fecha_ven,\r\n       \u0027Saldo Inicial\u0027"
+			},
+			{
+				"_idQuery": "498fc126-1db4-4987-b161-e7029f3603cc",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select case"
+			},
+			{
+				"_idQuery": "40350aa3-a052-4407-8dd4-583f9582bce1",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(am_cuota) from"
+			},
+			{
+				"_idQuery": "b4a2cf11-6773-408b-a987-974bb744c745",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(am_cuota) from"
+			},
+			{
+				"_idQuery": "36762c0d-1f2f-4439-a304-09bf226c97d0",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(am_cuota) from"
+			},
+			{
+				"_idQuery": "5a06a792-73e8-43b9-8d4a-e49d7b86be79",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(am_cuota) from"
+			},
+			{
+				"_idQuery": "93167e43-55b7-4a2f-b2c2-aa450e25a416",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select isnull(sum(am_cuota),0) from"
+			},
+			{
+				"_idQuery": "b40dd786-3455-4673-b9bd-46821a13220d",
+				"columns": [
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name",
+					"No Column Name"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "eae9463a-a9eb-44c9-89e8-619e6a4defa4",
+				"columns": [
+					"No",
+					"Fecha Limite",
+					"Saldo Inicial",
+					"Pago Interes",
+					"IVA Intereses",
+					"Pago Principal",
+					"Pago Otros Rubros",
+					"Pago Total",
+					"Saldo Insoluto"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_ciclo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_commit"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cotizacion_hoy"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_desemb"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ing"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_inicial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_frecuencia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_grupo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_nacional"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_desembolso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_monto_pagar_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_pagar"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_seguro"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_cap"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_nemonico_ivaint"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre_grupo"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_credito"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_nro_cuenta"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_op_forma_pago"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_periodicidad_pago"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_plazo_frecuencia"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo_op"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_plazo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_promotor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_reca"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_rol_act"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_rowcount"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_simbolo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sucursal"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tasa_anual_fija"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_operacion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_orden"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_seguro"
+			}
+		]
+	}
+}

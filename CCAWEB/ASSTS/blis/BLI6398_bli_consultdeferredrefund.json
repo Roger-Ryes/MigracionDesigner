@@ -1,0 +1,153 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77693"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		}
+	],
+	"name": "BLI_ConsultDeferredRefund",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI6398_bli_consultdeferredrefund",
+	"patternName": "BLI_ConsultDeferredRefund",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "9320080f-68c4-4333-a4e2-e39f84a64b08",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "1d10272e-1120-4fd4-8758-0ffa3b567d67",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "ed866772-a42c-4798-87c0-380534f65928",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 3,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "d1275d2d-1a6c-43ff-a8b1-42aebb1ff12f",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 4,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "792f3018-ff33-40f3-b6fc-ae80f1835771",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "e0c45dce-1c9e-4250-a0fd-d6e61a2f6263",
+			"isMapReturn": false,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 6,
+			"queryName": "SELECT"
+		},
+		{
+			"_idQuery": "ae2dafc8-83a4-4105-a360-12ff2b6e30e4",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 7,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ae2dafc8-83a4-4105-a360-12ff2b6e30e4",
+			"columns": [
+				{
+					"attributeId": "AT55_ITEMASKY694",
+					"entityId": "EN_LOANDEFFR_694",
+					"format": "",
+					"name": "DESCRIPCION",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT14_VALUEMZT694",
+					"entityId": "EN_LOANDEFFR_694",
+					"format": "",
+					"name": "DEVOLVER",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_INGRESSS694",
+					"entityId": "EN_LOANDEFFR_694",
+					"format": "",
+					"name": "INGRESOS",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 7,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANDEFFR_694",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "DeferredRefundList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_qr_pagos",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

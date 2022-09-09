@@ -1,0 +1,71 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_AMORTIZAI_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZON_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZTT_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_GENERALRE_262",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_GENERICSZ_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR"
+		},
+		{
+			"entityId": "EN_ITEMVALSE_995",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_OPERATINN_LNSPR",
+			"isContextEntity": true,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_OPERATITT_499",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_CONCPPTM_GI69",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_RATEGLSL_WM41",
+			"related": false,
+			"subModuleId": "QERYS"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_REFEEAML_BR93",
+			"related": false,
+			"subModuleId": "OPRTN"
+		}
+	]
+}

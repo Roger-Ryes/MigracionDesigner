@@ -1,0 +1,249 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_LOANLINCT_267",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoanLinesCreation"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "21026"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "V"
+		},
+		{
+			"attributeId": "AT91_SECUENIC267",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_LOANLINCT_267",
+			"format": "",
+			"name": "@i_numero",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_SearchLoanLine",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2864_bli_searchloanline",
+	"patternName": "BLI_SearchLoanLine",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "b4e290b3-4046-4418-9f9a-e42a16f0adf8",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 15,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "b4e290b3-4046-4418-9f9a-e42a16f0adf8",
+			"columns": [
+				{
+					"attributeId": "AT48_NATURAEZ267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Naturaleza",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT48_TRAMITUU267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Nro Tramite",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT91_SECUENIC267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Secuencial",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_CODIGOEE267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Codigo Linea",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT37_ESTADOYV267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Estado",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_OFFICEJO267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Oficina",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_UBICATIO267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Ciudad",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_OFFICIAL267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Oficial",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT65_CLIENTPF267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Cliente",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT66_CUSTOMEN267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Nombre Cliente",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_MONEDAOX267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Moneda",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT69_AMOUNTBC267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Monto",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_USEDBCMQ267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Utilizado",
+					"position": 13,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_AVAILABB267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Disponible",
+					"position": 14,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_ROTARYRK267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Rotativa",
+					"position": 15,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT27_SECTOROX267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Sector",
+					"position": 16,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT12_STARTDAT267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Fecha Inicio",
+					"position": 17,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT45_DUEDATEE267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Fecha Vencimiento",
+					"position": 18,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT33_DAYSNURR267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Nro Dias",
+					"position": 19,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT23_OBSERVSS267",
+					"entityId": "EN_LOANLINCT_267",
+					"format": "",
+					"name": "Observaciones",
+					"position": 21,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANLINCT_267",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "LoanLinesCreation"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_credito.sp_linea",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

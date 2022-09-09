@@ -1,0 +1,30 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CEQV_201QV_AV40_EIS41_373",
+		"controlName": "QV_AV40_EIS41",
+		"controlType": "Hyperlink",
+		"customEvents": [
+			{
+				"eventName": "gridCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "QuoteDetails",
+		"eventsType": "queryViewCommandEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_AV40_EIS41",
+		"controlName": "QV_AV40_EIS41",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "QuoteDetails",
+		"eventsType": "queryViewEventType"
+	}
+]

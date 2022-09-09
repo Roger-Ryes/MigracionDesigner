@@ -1,0 +1,46 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_SYNDCEAL_LH97",
+		"controlName": "SyndicatedListDefinitiveQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_SYNDCEAL_LH97.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "SyndicatedList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "official",
+		"controlId": "VA_OFFICIALWGEPOTD_393518",
+		"controlName": "official",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "loadCatalog",
+				"executionType": 3
+			}
+		],
+		"entityName": "OperationEntity",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_LOANSOPETN_404268",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

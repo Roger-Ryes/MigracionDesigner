@@ -1,0 +1,113 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7128"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_opcion",
+			"type": "CONSTANT",
+			"value": "1"
+		}
+	],
+	"name": "BLI_ConsultModalTasa",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI2261_bli_consultmodaltasa",
+	"patternName": "BLI_ConsultModalTasa",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "b29cc53e-68a9-473b-8338-16893baa8ae1",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 3,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "b29cc53e-68a9-473b-8338-16893baa8ae1",
+			"columns": [
+				{
+					"attributeId": "AT44_IDENTIIF500",
+					"entityId": "EN_MODALTASS_500",
+					"format": "",
+					"name": "Identificador",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_DESCRINN500",
+					"entityId": "EN_MODALTASS_500",
+					"format": "",
+					"name": "Descripcion",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT80_CLASENYN500",
+					"entityId": "EN_MODALTASS_500",
+					"format": "",
+					"name": "Clase",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_TASAPITT500",
+					"entityId": "EN_MODALTASS_500",
+					"format": "",
+					"name": "Tasa PIT",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_MODALTASS_500",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "ModalTasaEntity"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_valor",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

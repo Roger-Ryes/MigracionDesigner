@@ -1,0 +1,153 @@
+{
+	"filename": "I:\\SPR-2019-12\\CAR-S252094-TEC Cambio en UF de Datos Generales para Grupales\\SPS\\cob_cartera.sp_actualiza_grupal.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_actualiza_grupal",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_desde_cca"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "f24b513e-97bd-4cde-8e39-e76a92301e1c",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @w_creditos"
+			},
+			{
+				"_idQuery": "3a9da9d1-835d-435c-b225-b5e3f511764d",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select count(1)\n                              from"
+			},
+			{
+				"_idQuery": "ad25e35a-9a8f-4e03-8f6c-1e04cfbbf9ca",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(isnull(op_monto,0))\n                           from"
+			},
+			{
+				"_idQuery": "fbfda15e-af69-4bd0-9ac5-3a0f0a8198c6",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(isnull(op_cuota,0))\n                           from"
+			},
+			{
+				"_idQuery": "37add534-fe58-4fd6-861b-3119c34e2ddc",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select sum(isnull(op_monto_aprobado,0))\n                                  from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_creditos"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_div"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dividendo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_estado_grupal"
+			},
+			{
+				"dataType": "date",
+				"name": "@w_fecha_ven"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_op_cuota"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_op_fecha_fin"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_op_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_op_fecha_liq"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_op_fecha_ult_proceso"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_op_monto_aprobado"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_op_monto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_op_oficina"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sector"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_subsegmento"
+			}
+		]
+	}
+}

@@ -1,0 +1,175 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77668"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "tinyint",
+			"dataType": "TINYINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CONSTANT",
+			"value": "1"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_id_rango",
+			"type": "CUSTOM",
+			"value": "idRango"
+		},
+		{
+			"attributeId": "",
+			"bddType": "datetime",
+			"dataType": "DATETIME",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_fecha",
+			"type": "CUSTOM",
+			"value": "fecha"
+		}
+	],
+	"name": "BLI_Search_TwoRanges",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9461_bli_search_tworanges",
+	"patternName": "BLI_Search_TwoRanges",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "ed84555c-2068-446b-bba6-badd5247786c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 2,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "ed84555c-2068-446b-bba6-badd5247786c",
+			"columns": [
+				{
+					"attributeId": "AT69_IDRANGEE738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "1",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_SEQUENAI738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "2",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_MINVAL1E738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "3",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_MAXVALUE738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "4",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_MINVAL22738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "5",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT43_MAXVAL2E738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "6",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_RATEYYUB738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "7",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT60_VARIABLE738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "8",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_DATEIHKJ738",
+					"entityId": "EN_TWORANGIL_738",
+					"format": "",
+					"name": "9",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_TWORANGIL_738",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "TwoRangesList"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_tabla_rango",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

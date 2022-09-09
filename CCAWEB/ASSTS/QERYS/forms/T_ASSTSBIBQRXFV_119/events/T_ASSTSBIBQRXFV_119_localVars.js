@@ -1,0 +1,1 @@
+/* variables locales de T_ASSTSBIBQRXFV_119*/var tab = cobis.container.tabs.getCurrentTab();

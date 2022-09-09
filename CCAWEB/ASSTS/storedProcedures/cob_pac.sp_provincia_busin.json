@@ -1,0 +1,494 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\sp_provincia_busin.sp",
+	"procedure": {
+		"database": "cob_pac",
+		"name": "sp_provincia_busin",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "bit",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_provincia"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_region_nat"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_region_ope"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_pais"
+			},
+			{
+				"dataType": "estado",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_central_transmit"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_provinc_alf"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_departamento"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_rowcount"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "out",
+				"name": "@o_filas"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "25c1e608-a5cc-4e11-acbd-8e580a0b34a9",
+				"columns": [
+					"CODIGO",
+					"PROVINCIA",
+					"COD. REG. OP.",
+					"{3}"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                 \u0027CODIGO\u0027             = pv_provincia,\r\n                 \u0027PROVINCIA\u0027          = substring(pv_descripcion,1,20),\r\n                 \u0027COD. REG. OP.\u0027      = pv_region_ope,\r\n                 \u0027REGION OPERERATIVA\u0027"
+			},
+			{
+				"_idQuery": "48cf3e6f-d36b-49cf-86a0-f1a10deeafba",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select substring(c.valor,1,20)\r\n                                           from"
+			},
+			{
+				"_idQuery": "a8eefbb4-930c-4614-a9cd-7aad12e3d500",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select substring(c.valor,1,20)\r\n                                           from"
+			},
+			{
+				"_idQuery": "bee88465-a3d0-4219-a0d3-26092e7afe6e",
+				"columns": [
+					"CODIGO",
+					"PROVINCIA",
+					"COD. REG. OP.",
+					"{3}"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                 \u0027CODIGO\u0027             = pv_provincia,\r\n                 \u0027PROVINCIA\u0027          = substring(pv_descripcion,1,20),\r\n                 \u0027COD. REG. OP.\u0027      = pv_region_ope,\r\n                 \u0027REGION OPERERATIVA\u0027"
+			},
+			{
+				"_idQuery": "8667bc6a-353f-4579-8fef-e92e9febfcda",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select substring(c.valor,1,20)\r\n                                           from"
+			},
+			{
+				"_idQuery": "192ea6b6-2075-408d-bfd4-23af459535c4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select substring(c.valor,1,20)\r\n                                           from"
+			},
+			{
+				"_idQuery": "971f7c38-cb39-49f4-a8ce-948087b0bb09",
+				"columns": [
+					"CODIGO",
+					"PROVINCIA",
+					"COD. REG. OP.",
+					"REGION OPERATIVA",
+					"COD. REG. NAT.",
+					"REGION NATURAL",
+					"COD. PAIS",
+					"PAIS",
+					"COD. DEPARTAMENTO",
+					"DEPARTAMENTO"
+				],
+				"editMode": true,
+				"queryText": "select\r\n               \u0027CODIGO\u0027           = pv_provincia,\r\n               \u0027PROVINCIA\u0027        = pv_descripcion,\r\n               \u0027COD. REG. OP.\u0027    = pv_region_ope,\r\n               \u0027REGION OPERATIVA\u0027 = isnull((select valor\r\n                                       from cobis..cl_tabla t, cobis..cl_catalogo c\r\n                                       where t.codigo = c.tabla\r\n                                       and   t.tabla = \u0027cl_region_ope\u0027\r\n                                       and   c.codigo = p.pv_region_ope\r\n                                       ) ,\u0027\u0027),\r\n               \u0027COD. REG. NAT.\u0027   = pv_region_nat,\r\n               \u0027REGION NATURAL\u0027   = isnull((select valor\r\n                                         from cobis..cl_tabla t, cobis..cl_catalogo c\r\n                                         where t.codigo = c.tabla\r\n                                         and   t.tabla = \u0027cl_region_nat\u0027\r\n                                         and   c.codigo = p.pv_region_nat\r\n                                         ) ,\u0027\u0027),\r\n               \u0027COD. PAIS\u0027         = pv_pais,\r\n               \u0027PAIS\u0027              = pa_descripcion,\r\n               \u0027COD. DEPARTAMENTO\u0027 = pv_depart_pais,\r\n               \u0027DEPARTAMENTO\u0027      = dp_descripcion\r\n               from"
+			},
+			{
+				"_idQuery": "c8c7ce5f-337f-4336-983a-057b92aa4e91",
+				"columns": [
+					"CODIGO",
+					"PROVINCIA",
+					"COD. REG. OP.",
+					"REGION OPERATIVA",
+					"COD. REG. NAT.",
+					"REGION NATURAL",
+					"COD. PAIS",
+					"PAIS",
+					"COD. DEPARTAMENTO",
+					"DEPARTAMENTO"
+				],
+				"editMode": true,
+				"queryText": "select\r\n               \u0027CODIGO\u0027           = pv_provincia,\r\n               \u0027PROVINCIA\u0027        = pv_descripcion,\r\n               \u0027COD. REG. OP.\u0027    = pv_region_ope,\r\n               \u0027REGION OPERATIVA\u0027 = isnull((select valor\r\n                                       from cobis..cl_tabla t, cobis..cl_catalogo c\r\n                                       where t.codigo = c.tabla\r\n                                       and   t.tabla = \u0027cl_region_ope\u0027\r\n                                       and   c.codigo = p.pv_region_ope\r\n                                       ) ,\u0027\u0027),\r\n               \u0027COD. REG. NAT.\u0027   = pv_region_nat,\r\n               \u0027REGION NATURAL\u0027   = isnull((select valor\r\n                                         from cobis..cl_tabla t, cobis..cl_catalogo c\r\n                                         where t.codigo = c.tabla\r\n                                         and   t.tabla = \u0027cl_region_nat\u0027\r\n                                         and   c.codigo = p.pv_region_nat\r\n                                         ) ,\u0027\u0027),\r\n               \u0027COD. PAIS\u0027         = pv_pais,\r\n               \u0027PAIS\u0027              = pa_descripcion,\r\n               \u0027COD. DEPARTAMENTO\u0027 = pv_depart_pais,\r\n               \u0027DEPARTAMENTO\u0027      = dp_descripcion\r\n               from"
+			},
+			{
+				"_idQuery": "418b091a-769c-49d2-8e3f-8ebffc79dd34",
+				"columns": [
+					"COD.",
+					"PROVINCIA",
+					"COD.PAIS",
+					"PAIS",
+					"COD.DEPARTAMENTO",
+					"DEPARTAMENTO"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                  \u0027COD.\u0027             = pv_provincia,\r\n                  \u0027PROVINCIA\u0027        = pv_descripcion,\r\n                  \u0027COD.PAIS\u0027         = pa_pais,\r\n                  \u0027PAIS \u0027            = pa_descripcion,\r\n                  \u0027COD.DEPARTAMENTO\u0027 = dp_departamento,\r\n                  \u0027DEPARTAMENTO \u0027    = dp_descripcion\r\n                  from"
+			},
+			{
+				"_idQuery": "8bd80edb-89d2-4247-8787-b8fcda07d5e3",
+				"columns": [
+					"COD.",
+					"PROVINCIA",
+					"COD.PAIS",
+					"PAIS",
+					"COD.DEPARTAMENTO",
+					"DEPARTAMENTO"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                  \u0027COD.\u0027             = pv_provincia,\r\n                  \u0027PROVINCIA\u0027        = pv_descripcion,\r\n                  \u0027COD.PAIS\u0027         = pa_pais,\r\n                  \u0027PAIS \u0027            = pa_descripcion,\r\n                  \u0027COD.DEPARTAMENTO\u0027 = dp_departamento,\r\n                  \u0027DEPARTAMENTO \u0027    = dp_descripcion\r\n                  from"
+			},
+			{
+				"_idQuery": "3ebfba1d-a374-47da-a24e-6284f6cbcf3e",
+				"columns": [
+					"COD.",
+					"PROVINCIA",
+					"COD.PAIS",
+					"PAIS"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                 \u0027COD.\u0027             = pv_provincia,\r\n                 \u0027PROVINCIA\u0027        = pv_descripcion,\r\n                 \u0027COD.PAIS\u0027         = pa_pais,\r\n                 \u0027PAIS \u0027            = pa_descripcion\r\n                from"
+			},
+			{
+				"_idQuery": "59496674-2f98-4e58-90cd-5e6e647de551",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select pv_descripcion\r\n            from"
+			},
+			{
+				"_idQuery": "d8b6f246-2413-453c-b37f-a243b1ddee98",
+				"columns": [
+					"COD.",
+					"PROVINCIA",
+					"COD.PAIS",
+					"PAIS",
+					"COD.DEPARTAMENTO",
+					"DEPARTAMENTO"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                     \u0027COD.\u0027             = pv_provincia,\r\n                     \u0027PROVINCIA\u0027        = pv_descripcion,\r\n                     \u0027COD.PAIS\u0027         = pa_pais,\r\n                     \u0027PAIS \u0027            = pa_descripcion,\r\n                     \u0027COD.DEPARTAMENTO\u0027 = dp_departamento,\r\n                     \u0027DEPARTAMENTO \u0027    = dp_descripcion\r\n                     from"
+			},
+			{
+				"_idQuery": "1d0bd953-deb0-4658-867e-8b91997f647f",
+				"columns": [
+					"COD.",
+					"PROVINCIA",
+					"COD.PAIS",
+					"PAIS",
+					"COD.DEPARTAMENTO",
+					"DEPARTAMENTO"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                     \u0027COD.\u0027             = pv_provincia,\r\n                     \u0027PROVINCIA\u0027        = pv_descripcion,\r\n                     \u0027COD.PAIS\u0027         = pa_pais,\r\n                     \u0027PAIS \u0027            = pa_descripcion,\r\n                     \u0027COD.DEPARTAMENTO\u0027 = dp_departamento,\r\n                     \u0027DEPARTAMENTO \u0027    = dp_descripcion\r\n                     from"
+			},
+			{
+				"_idQuery": "5cc88348-90a5-4c96-a835-c0bb98d78c68",
+				"columns": [
+					"{0}"
+				],
+				"editMode": true,
+				"queryText": "select pv_descripcion\r\n         from"
+			},
+			{
+				"_idQuery": "386463c4-a55d-435e-8c61-51d1f9cea215",
+				"columns": [
+					"COD.",
+					"PROVINCIA",
+					"COD.DEPARTAMENTO",
+					"DEPARTAMENTO",
+					"COD.PAIS",
+					"PAIS"
+				],
+				"editMode": true,
+				"queryText": "select\r\n                   \u0027COD.\u0027             = pv_provincia,\r\n                   \u0027PROVINCIA\u0027        = pv_descripcion,\r\n                   \u0027COD.DEPARTAMENTO\u0027 = dp_departamento,\r\n                   \u0027DEPARTAMENTO \u0027    = dp_descripcion,\r\n                   \u0027COD.PAIS\u0027         = pa_pais,\r\n                   \u0027PAIS \u0027            = pa_descripcion\r\n                   from"
+			},
+			{
+				"_idQuery": "3da92915-c30a-4d72-8f73-384e310b1288",
+				"columns": [
+					"CODIGO",
+					"DETALLE"
+				],
+				"editMode": true,
+				"queryText": "select \u0027CODIGO\u0027  = pv_provincia,\r\n                      \u0027DETALLE\u0027 = pv_descripcion\r\n               from"
+			},
+			{
+				"_idQuery": "ca03b674-0253-4e02-80f0-5f4cf9bed126",
+				"columns": [
+					"CODIGO",
+					"DETALLE"
+				],
+				"editMode": true,
+				"queryText": "select \u0027CODIGO\u0027  = pv_provincia,\r\n                      \u0027DETALLE\u0027 = pv_descripcion\r\n               from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@o_provincia"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@v_departamento"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@v_descripcion"
+			},
+			{
+				"dataType": "estado",
+				"name": "@v_estado"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@v_pais"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@v_region_nat"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@v_region_ope"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cambio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ciudad"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_clave"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cmdtransrv"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_codigo_c"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_codigo"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_contador"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_departamento"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion"
+			},
+			{
+				"dataType": "estado",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nt_nombre"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_num_nodos"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_numerror"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_pais"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_region_nat"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_region_ope"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_server_logico"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_transaccion"
+			}
+		]
+	}
+}

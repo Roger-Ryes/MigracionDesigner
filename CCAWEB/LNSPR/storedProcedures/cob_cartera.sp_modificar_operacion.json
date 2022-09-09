@@ -1,0 +1,626 @@
+{
+	"filename": "D:\\CARTERA\\CREACI\ufffdN DE OPERACIONES\\SP\\sp_modificar_operacion.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_modificar_operacion",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_abono_inicial"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_accion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_aceptar_anticipos"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_act_rubro"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_actividad_destino"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_alicuota"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_alicuota_aho"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_anterior"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_apl_opcion_compra"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_base_calculo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_bien_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_calc_seg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_calcular_tabla"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_ciudad"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_clase_bloqueo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_comentario"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_compania"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cta_ahorro"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cta_certificado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_cuota"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_cuota_completa"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_desde"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_destino"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_dia_fijo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dias_anio"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dias_gracia"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_dist_gracia"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_distribuir_seg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_doble_alicuota"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_evitar_feriados"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_fin"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_liq"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_reajuste"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ult_proceso"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_fijo_desde"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_fijo_hasta"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_financiar_seg"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_forma_pago"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fpago_ext"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_gracia_aleatoria"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_gracia_cap"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_gracia_int"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_lin_credito"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_mes_gracia"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_migrada"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_aprobado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nombre"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_num_renovacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficial"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_oficina"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacionca"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_periodo_cap"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_periodo_int"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_periodo_reajuste"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_plazo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_plazo_precancelar"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_plazo_seg"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porc_abono"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_precancelacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_reajustable"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_reajuste_especial"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_renovacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_sector"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_seg_cesantia"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_simulacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_simulador_web"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_subsegmento_cca"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_subsegmento_sbs"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tabla_nueva"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tdividendo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_amortizacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_aplicacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_bien"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_bloqueo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_cca"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_cobro"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_garantia"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_reduccion"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tir"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion_bce"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tplazo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_upd_clientes"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor_bien"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_fecha_fija"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_pago_caja"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_calcula_devolucion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_regenera_rubro"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_reestructuracion"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_pri_cuot"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuota_ballom"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_beneficio_tinteres"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_base_tasa_desc"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_div_dist_gracia"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "00ba86e0-4228-4e68-a104-b9d88dd2c57e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select opt_tramite from"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "catalogo",
+				"name": "@w_actividad_dest"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_concepto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_venc"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_subtipo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_rubro"
+			}
+		]
+	}
+}

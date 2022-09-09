@@ -1,0 +1,144 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LINEIERT_DW35",
+		"controlName": "LineDistributionMembersQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_LINEIERT_DW35.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "LineDistributionMembers",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_OPEREEOA_SH40",
+		"controlName": "OperationTypeLineListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_OPEREEOA_SH40.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "OperationTypeLineList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_PRODLUDT_UJ17",
+		"controlName": "ProductLineDistributionListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_PRODLUDT_UJ17.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ProductLineDistributionList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "Q_PRODTSNI_WK98",
+		"controlName": "ProductLineListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../LNSPR/OPRTN/queries/Q_PRODTSNI_WK98.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ProductLineList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_QF17_TGN52",
+		"controlName": "QV_QF17_TGN52",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "ProductLineDistributionList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "product",
+		"controlId": "VA_PRODUCTWKWZPDFA_211676",
+		"controlName": "product",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "ProductLineDistribution",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONDMJEJKM_762676",
+		"controlName": "VA_VABUTTONDMJEJKM_762676",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 1
+			}
+		],
+		"entityName": "ProductLineDistribution",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONUYPWWXE_933676",
+		"controlName": "VA_VABUTTONUYPWWXE_933676",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "ProductLineDistribution",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_PRODUCTLIN_542181",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 7
+			},
+			{
+				"eventName": "render",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

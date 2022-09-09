@@ -1,0 +1,371 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\sp_imp_documento.sp",
+	"procedure": {
+		"database": "cob_credito",
+		"name": "sp_imp_documento",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_documento"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_toperacion"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_producto"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_moneda"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_descripcion"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@i_template"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_mnemonico"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_valor"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "catalogo",
+				"direction": "in",
+				"name": "@i_dato"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_subopcion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_medio"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_idProducto"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "68b064fb-010d-412d-b25c-3f7d070dcf13",
+				"columns": [
+					"/** Stored Procedure **/",
+					"s_ssn",
+					"s_user",
+					"s_sesn",
+					"s_term",
+					"s_date",
+					"s_srv",
+					"s_lsrv",
+					"s_rol",
+					"s_ofi",
+					"s_org_err",
+					"s_error",
+					"s_sev",
+					"s_msg",
+					"s_org",
+					"t_trn",
+					"t_file",
+					"t_from",
+					"i_operacion",
+					"i_modo",
+					"i_documento",
+					"i_toperacion",
+					"i_producto",
+					"i_moneda",
+					"i_descripcion",
+					"i_template",
+					"i_mnemonico",
+					"i_tipo",
+					"i_dato"
+				],
+				"editMode": false,
+				"queryText": "select \u0027/** Stored Procedure **/ \u0027 = @w_sp_name,\r\n\t\ts_ssn\t\t\t  = @s_ssn,\r\n\t \ts_user\t\t\t  = @s_user,\r\n\t\ts_sesn\t\t\t  = @s_sesn,\r\n\t\ts_term\t\t\t  = @s_term,\r\n\t\ts_date\t\t\t  = @s_date,\r\n\t\ts_srv\t\t\t  = @s_srv,\r\n\t\ts_lsrv\t\t\t  = @s_lsrv,\r\n\t\ts_rol\t\t\t  = @s_rol,\r\n\t\ts_ofi\t\t\t  = @s_ofi,\r\n\t\ts_org_err\t\t  = @s_org_err,\r\n\t\ts_error\t\t\t  = @s_error,\r\n\t\ts_sev\t\t\t  = @s_sev,\r\n\t\ts_msg\t\t\t  = @s_msg,\r\n\t\ts_org\t\t\t  = @s_org,\r\n\t\tt_trn\t\t\t  = @t_trn,\r\n\t\tt_file\t\t\t  = @t_file,\r\n\t\tt_from\t\t\t  = @t_from,\r\n\t\ti_operacion\t\t  = @i_operacion,\r\n\t\ti_modo\t\t\t  = @i_modo,\r\n\t\ti_documento\t\t  = @i_documento,\r\n\t\ti_toperacion\t\t  = @i_toperacion,\r\n\t\ti_producto\t\t  = @i_producto,\r\n\t\ti_moneda\t\t  = @i_moneda,\r\n\t\ti_descripcion\t\t  = @i_descripcion,\r\n\t\ti_template      \t  = @i_template,\r\n\t\ti_mnemonico \t\t  = @i_mnemonico,\r\n\t\ti_tipo\t\t\t  = @i_tipo,\r\n        i_dato            = @i_dato"
+			},
+			{
+				"_idQuery": "5a194ee9-7ddc-4b45-8928-a9ac9e42aa59",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @i_documento"
+			},
+			{
+				"_idQuery": "a1f5d7ca-f0f2-4203-baed-5fc586da9fb8",
+				"columns": [
+					"Documento",
+					"Operacion",
+					"Producto",
+					"Moneda",
+					"Descripcion",
+					"Template",
+					"Mnemonico",
+					"TIPO",
+					"MEDIO APROBACION",
+					"CONDICION"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n\t        \u0027Documento\u0027 = id_documento,\r\n\t\t\t\u0027Operacion\u0027 = id_toperacion+\u0027 (\u0027+b.valor+\u0027)\u0027,\r\n\t\t\t\u0027Producto\u0027 = id_producto,\r\n\t\t\t\u0027Moneda\u0027 = convert(char(2),id_moneda)+\u0027 (\u0027+mo_descripcion+\u0027)\u0027,\r\n\t\t\t\u0027Descripcion\u0027 = id_descripcion,\r\n\t\t\t\u0027Template\u0027 = id_template,\r\n\t\t\t\u0027Mnemonico\u0027= id_mnemonico,\r\n\t\t\t\u0027TIPO\u0027     = \u0027\u0027,\r\n\t\t\t\u0027MEDIO APROBACION\u0027 = \u0027S\u0027,\r\n\t\t\t\u0027CONDICION\u0027 = \u00271\u0027\r\n\t    FROM"
+			},
+			{
+				"_idQuery": "ea3827e5-441f-456d-a764-3c0a12e0ca2f",
+				"columns": [
+					"DOCUMENTO",
+					"MNEMONICO",
+					"DESCRIPCION",
+					"TEMPLATE",
+					"DATO",
+					"MEDIO",
+					"PRODUCTO"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n\t\t\t\u0027DOCUMENTO\u0027   = id_documento,\r\n\t\t\t\u0027MNEMONICO\u0027   = id_mnemonico,\r\n\t\t\t\u0027DESCRIPCION\u0027 = id_descripcion,\r\n\t\t\t\u0027TEMPLATE\u0027    = id_template,\r\n\t\t\t\u0027DATO\u0027 \t\t  = \u00271\u0027,\r\n\t\t\t\u0027MEDIO\u0027 \t  = \u0027S\u0027,\r\n\t\t\t\u0027PRODUCTO\u0027 \t  = id_producto\r\n\t   FROM"
+			},
+			{
+				"_idQuery": "6375a7f4-a673-4dfd-a02d-e54b7bf16b39",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n              @w_documento,\r\n              @w_toperacion,\r\n\t      @w_desc_toperacion,\r\n              @w_producto,\r\n              @w_moneda,\r\n              @w_desc_moneda,\r\n              @w_descripcion,\r\n              @w_template,\r\n              @w_mnemonico,\r\n\t      @w_tipo,\r\n              @w_dato,\r\n              @w_medio"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "int",
+				"name": "@o_documento"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_cont"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_dato"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_moneda"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_desc_toperacion"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_descripcion"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_documento"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_estado_proc_neg"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_expromision"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_linea_credito"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_medio"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_mnemonico"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_producto"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_template"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tr_producto"
+			}
+		]
+	}
+}

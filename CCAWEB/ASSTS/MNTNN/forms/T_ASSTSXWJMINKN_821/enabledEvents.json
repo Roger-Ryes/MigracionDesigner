@@ -1,0 +1,62 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_RATEGLSL_WM41",
+		"controlName": "RateRangeListQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/QERYS/queries/Q_RATEGLSL_WM41.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "RateRangeList",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_MD41_JYZ75",
+		"controlName": "QV_MD41_JYZ75",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "beforeEnterInLineRow",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowInserting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 7
+			}
+		],
+		"entityName": "RateRangeList",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "rank",
+		"controlId": "VA_TEXTINPUTBOXEGT_745502",
+		"controlName": "rank",
+		"controlType": "DropDownList",
+		"customEvents": [
+			{
+				"eventName": "change",
+				"executionType": 1
+			}
+		],
+		"entityName": "RateRangeList",
+		"eventsType": "visualAttributeEventType"
+	}
+]

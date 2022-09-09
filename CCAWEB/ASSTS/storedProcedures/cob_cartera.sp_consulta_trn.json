@@ -1,0 +1,277 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_consulta_trn",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_valor"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_secuencial"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_grupal"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_dividendo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_desde"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_hasta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_tran"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_operacionca"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_historico"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@i_fecha_ref"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "99a76a10-a037-4946-a1c6-5c0e2887c2b5",
+				"columns": [
+					"op_toperacion",
+					"valor",
+					"op_moneda",
+					"mo_descripcion",
+					"op_cliente",
+					"op_nombre",
+					"w_estado_desc",
+					"op_fecha_ult_proceso"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "468237a7-016c-4b05-afaf-f02da6d0e5f4",
+				"columns": [
+					"Transaccion",
+					"Secuencial",
+					"Operacion",
+					"Fecha Trn",
+					"Fecha Ref",
+					"Estado",
+					"Usuario"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "2ff63037-17dc-405b-96b3-baafc837ff98",
+				"columns": [
+					"Transaccion",
+					"Secuencial",
+					"Operacion",
+					"Fecha Trn",
+					"Fecha Ref",
+					"Estado",
+					"Usuario",
+					"Observacion"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "73a78620-7766-4143-9601-4c3767ec76ed",
+				"columns": [
+					"Fecha Trn",
+					"Fecha Ref",
+					"Dividendo",
+					"Concepto",
+					"Moneda",
+					"Monto",
+					"Monto MN",
+					"Estado"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "6e881d7b-0556-456b-bfa8-70b37371e4ce",
+				"columns": [
+					"Dividendo",
+					"Rubro",
+					"Estado",
+					"Moneda",
+					"Monto",
+					"Monto MN",
+					"Codvalor",
+					"Afectacion",
+					"Cuenta",
+					"Beneficiario"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "befa8dad-1126-42e6-b88a-b1fb50fdbde2",
+				"columns": [
+					"Operacion",
+					"Secuencial",
+					"Transaccion",
+					"Fecha Trn",
+					"Fecha Ref",
+					"Estado",
+					"Usuario",
+					"Sec_ope"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "122315f5-7a9f-4c9c-a7c3-a09ad4d092dc",
+				"columns": [
+					"Operacion",
+					"Secuencial",
+					"Transaccion",
+					"Fecha Trn",
+					"Fecha Ref",
+					"Estado",
+					"Cliente",
+					"Usuario",
+					"Sec_ope   "
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "4ab7619b-e87e-43e2-96a0-8083b883e003",
+				"columns": [
+					"CODIGO",
+					"DESCRIPCION"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "1535a94e-032b-4627-920a-dfc1108fb971",
+				"columns": [
+					"Dividendo",
+					"Rubro",
+					"Estado",
+					"Moneda",
+					"Monto",
+					"Monto MN",
+					"Codvalor",
+					"Afectacion",
+					"Cuenta",
+					"Beneficiario",
+					"Cotizacion"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "2fe25062-71da-484b-bacf-05200f0f7d04",
+				"columns": [
+					"Fecha Trn",
+					"Fecha Ref",
+					"Dividendo",
+					"Concepto",
+					"Moneda",
+					"Monto",
+					"Monto MN",
+					"Estado",
+					"Cotizacion"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "65337bab-08e6-47ab-9031-44b2749b0b16",
+				"columns": [
+					"Transaccion",
+					"Secuencial",
+					"Operacion",
+					"Fecha Trn",
+					"Fecha Ref",
+					"Estado",
+					"Usuario",
+					"Observacion"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "ca888807-e264-4988-aa11-14e741bf33da",
+				"columns": [
+					"Rubro",
+					"Saldo",
+					"Devenga",
+					"Acumulado"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

@@ -1,0 +1,18 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_LISTSEAD_QV44",
+		"controlName": "ListaEstadosQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/CMMNS/queries/Q_LISTSEAD_QV44.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "ListaEstados",
+		"eventsType": "queryEventType"
+	}
+]

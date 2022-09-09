@@ -1,0 +1,227 @@
+{
+	"filename": "C:\\Users\\HP\\Documents\\SP-JSON\\SP\\sp_qr_operacion_tmp.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_qr_operacion_tmp",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_codigo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_simulador_web"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipo_producto"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "8ae6e866-d21c-4c05-93fd-6688d8947ae7",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @w_factor_plazo_op"
+			},
+			{
+				"_idQuery": "1415b349-048d-4c7c-8842-9d757d5e57a5",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select @w_tasa_efectiva"
+			},
+			{
+				"_idQuery": "e758fa1b-7d9f-44d1-8c57-9a160c7b3f94",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}",
+					"{22}",
+					"{23}",
+					"{24}",
+					"{25}",
+					"{26}",
+					"{27}",
+					"{28}",
+					"{29}",
+					"{30}",
+					"{31}",
+					"{32}",
+					"{33}",
+					"{34}",
+					"{35}",
+					"{36}",
+					"{37}",
+					"{38}",
+					"{39}",
+					"{40}",
+					"{41}",
+					"{42}",
+					"{43}",
+					"{44}",
+					"{45}",
+					"{46}",
+					"{47}",
+					"{48}",
+					"{49}",
+					"{50}",
+					"{51}",
+					"{52}",
+					"{53}",
+					"{54}",
+					"{55}",
+					"{56}",
+					"{57}",
+					"{58}",
+					"{59}",
+					"{60}",
+					"{61}",
+					"{62}",
+					"{63}",
+					"{64}",
+					"{65}",
+					"{66}",
+					"{67}",
+					"{68}",
+					"{69}",
+					"{70}",
+					"{71}",
+					"{72}",
+					"{73}",
+					"{74}",
+					"{75}",
+					"{76}",
+					"{77}",
+					"{78}",
+					"{79}",
+					"{80}",
+					"{81}",
+					"{82}",
+					"{83}",
+					"{84}",
+					"{85}",
+					"{86}",
+					"{87}",
+					"{88}",
+					"{89}",
+					"{90}",
+					"{91}",
+					"{92}",
+					"{93}",
+					"{94}",
+					"{95}",
+					"{96}",
+					"{97}",
+					"{98}",
+					"{99}",
+					"{100}",
+					"{101}",
+					"{102}",
+					"{103}",
+					"{104}",
+					"{105}",
+					"{106}",
+					"{107}",
+					"{108}",
+					"{109}",
+					"{110}",
+					"{111}",
+					"{112}",
+					"{113}",
+					"{114}",
+					"{115}",
+					"{116}",
+					"{117}",
+					"{118}",
+					"{119}",
+					"{120}",
+					"{121}",
+					"{122}",
+					"{123}",
+					"{124}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n@w_operacionca,\r\n@w_banco,\r\n@w_tramite,\r\n@w_lin_credito,\r\n@w_estado,\r\n@w_cliente,\r\n@w_toperacion,\r\n@w_desc_toperacion,\r\n@w_moneda,\r\n@w_desc_moneda,\r\n@w_oficina,\r\n@w_oficial,\r\nconvert(varchar(10),@w_fecha_ini,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_fin,@i_formato_fecha),\r\nconvert(varchar(10),@w_fecha_prox_pag,@i_formato_fecha),\r\n@w_monto,\r\n@w_tplazo,\r\n@w_desc_tplazo,\r\n@w_plazo,\r\n@w_tdividendo,\r\n@w_desc_tdividendo,\r\n@w_periodo_cap,\r\n@w_periodo_int,\r\n@w_periodos_gracia,\r\n@w_periodos_gracia_int,\r\n@w_dist_gracia  ,\r\n@w_destino,\r\n@w_desc_destino,\r\n@w_ciudad,\r\n@w_desc_ciudad,\r\n@w_nem_producto,\r\n@w_desc_producto,\r\n@w_cuenta,\r\n@w_reajuste_periodo,\r\nconvert(varchar(10),@w_reajuste_fecha,@i_formato_fecha),\r\n@w_reajuste_num,\r\n@w_renovacion,\r\n@w_num_renovacion,\r\n@w_precancelacion,\r\n@w_tipo,\r\n@w_porcentaje_fin,\r\n@w_tasa_fin,\r\n@w_cuota_completa,\r\n@w_anticipado_int,\r\n@w_reajuste_intereses,\r\n@w_reduccion,\r\n@w_cuota_anticipada,\r\n@w_dias_anio,\r\n@w_tipo_amortizacion,\r\n@w_cuota_fija,\r\n@w_cuota,\r\n@w_cuota_capital,\r\n@w_dias_gracia,\r\n@w_dia_pago,\r\n@w_desc_ofi,\r\n@w_inicio,\r\n@w_fin,\r\n@w_nombre,\r\n@w_tasa,\r\n@w_referencial,\r\n@w_desc_referencial,\r\n@w_nom_oficial,\r\n0,\r\n@w_reajuste_especial,\r\n@w_sector,\r\n@w_des_sector,\r\n@w_anterior,\r\n@w_migrada,\r\n@w_refer,\r\n@w_desembolso,\r\nconvert(varchar(10),@w_fecha_liq,@i_formato_fecha),\r\n@w_cuota_adic,\r\n@w_meses_hip,\r\n@w_monto_aprobado,\r\n@w_tipo_aplicacion,\r\n@w_gracia_int,\r\n@w_mes_gracia,\r\n@w_num_dec,\r\n@w_fecha_fija,\r\n@w_reajustable,\r\n@w_evitar_feriados,\r\nconvert(varchar(10),@w_fecha_ini,@i_formato_fecha),\r\n@w_monto,\r\n@w_pcobis,\r\n@w_opt_desde,\r\n@w_opt_hasta,\r\n@w_alicuota,\r\n@w_cta_certificado,\r\n@w_cta_ahorro,\r\n@w_tipo_bloqueo,\r\n@w_clase_bloqueo,\r\n@w_doble_alicuota,\r\n@w_alicuota_aho,\r\n@w_gracia_aleatoria,\r\n@w_seg_trianualizado,\r\n@w_financiar_seg,\r\n@w_plazo_seg,\r\nconvert(varchar(10),@w_fpago_ext,@i_formato_fecha),\r\n@w_base_calculo,\r\n@w_tipo_renta,\r\n@w_plazo_precancelar,\r\n@w_distribuir_seg,\r\n@w_calc_seg,\r\n@w_subsegmento_cca,\r\n@w_toperacion_bce,\r\n@w_div_anioend"
+			},
+			{
+				"_idQuery": "c1922c2b-1453-4bbf-b0b8-ad483c9df6e2",
+				"columns": [
+					"C01",
+					"C02",
+					"C03",
+					"C04",
+					"C05",
+					"C07",
+					"C06",
+					"C19",
+					"C20"
+				],
+				"editMode": false,
+				"queryText": "Select\r\n      \u0027C01\u0027  = CAST(CONVERT(varchar, CAST(round(@w_monto_aprobado,2) AS money), 1) AS varchar),\r\n      \u0027C02\u0027  = CAST(CONVERT(varchar, CAST(round(@w_cuota_estimada,2) AS money), 1) AS varchar),\r\n\t  \u0027C03\u0027  = CAST(CONVERT(varchar, CAST(round(@w_suma_interes,2) AS money), 1) AS varchar),\r\n      \u0027C04\u0027  = CAST(CONVERT(varchar, CAST(round(@w_total_gastos,2) AS money), 1) AS varchar),\r\n      \u0027C05\u0027  = CAST(CONVERT(varchar, CAST(round(@w_tasa_nominal,2) AS money), 1) AS varchar),\r\n      \u0027C07\u0027  = CAST(CONVERT(varchar, CAST(round(@w_tir,2) AS money), 1) AS varchar),\r\n      \u0027C06\u0027= CAST(CONVERT(varchar, CAST(round(@w_tasa_efectiva,2) AS money), 1) AS varchar),\r\n      \u0027C19\u0027  = \u0027No se incluyen, depende de C\u00eda. contratada por el cliente\u0027,\r\n      \u0027C20\u0027  = \u0027No se incluyen, var\u00eda seg\u00fan valor del veh\u00edculo\u0027"
+			},
+			{
+				"_idQuery": "81186daa-accf-4f98-b5b0-2c58f39dfc06",
+				"columns": [
+					"C01",
+					"C02",
+					"C03",
+					"C04",
+					"C05",
+					"C07",
+					"C06"
+				],
+				"editMode": false,
+				"queryText": "Select\r\n      \u0027C01\u0027  = CAST(CONVERT(varchar, CAST(round(@w_monto_aprobado,2) AS money), 1) AS varchar),\r\n      \u0027C02\u0027  = CAST(CONVERT(varchar, CAST(round(@w_cuota_estimada,2) AS money), 1) AS varchar),\r\n\t  \u0027C03\u0027  = CAST(CONVERT(varchar, CAST(round(@w_suma_interes,2) AS money), 1) AS varchar),\r\n      \u0027C04\u0027  = CAST(CONVERT(varchar, CAST(round(@w_total_gastos,2) AS money), 1) AS varchar),\r\n      \u0027C05\u0027  = CAST(CONVERT(varchar, CAST(round(@w_tasa_nominal,2) AS money), 1) AS varchar),\r\n      \u0027C07\u0027  = CAST(CONVERT(varchar, CAST(round(@w_tir,2) AS money), 1) AS varchar),\r\n      \u0027C06\u0027  = CAST(CONVERT(varchar, CAST(round(@w_tasa_efectiva,2) AS money), 1) AS varchar)"
+			}
+		],
+		"variables": [
+		]
+	}
+}

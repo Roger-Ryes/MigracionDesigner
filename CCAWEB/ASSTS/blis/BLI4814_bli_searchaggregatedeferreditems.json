@@ -1,0 +1,108 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_AGGREGAIE_510",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AggregateDeferredItemsEntity"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT50_OPERATNN510",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AGGREGAIE_510",
+			"format": "",
+			"name": "@i_banco",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT62_ITEMTTCH510",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_AGGREGAIE_510",
+			"format": "",
+			"name": "@i_concepto",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77694"
+		}
+	],
+	"name": "BLI_SearchAggregateDeferredItems",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI4814_bli_searchaggregatedeferreditems",
+	"patternName": "BLI_SearchAggregateDeferredItems",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "5e915468-a930-4875-a5ca-5b605c739c05",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": true,
+			"numberQuery": 1,
+			"queryName": "select \u0027Monto\u0027 = @w_devolucion"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "5e915468-a930-4875-a5ca-5b605c739c05",
+			"columns": [
+				{
+					"attributeId": "AT98_AMOUNTFZ510",
+					"entityId": "EN_AGGREGAIE_510",
+					"format": "",
+					"name": "Monto",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": true
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_AGGREGAIE_510",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "AggregateDeferredItemsEntity"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_eliminar_seg_desemp",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

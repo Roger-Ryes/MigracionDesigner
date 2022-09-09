@@ -1,0 +1,28 @@
+<!-- Designer Generator v8.0.0 - SPR 2022-16 12/08/2022 -->
+
+ 
+ 
+  <form class="cb-form cb-module-assts cb-t-asstslfjqnqtj-171 " [formGroup]="vc.viewState.T_ASSTSLFJQNQTJ_171"> 
+   <cobis-breadcrumbs *ngIf="!isModal() && !isDetailGrid() && !isDesignerInclude()" [items]="breadcrumbs$ | async"> 
+   </cobis-breadcrumbs> 
+   <div class="cb-form__content"> 
+    <div class="container"> 
+     <cobis-groupbox [disabled]="isDisabled( vc.viewState.VC_CHANGEPAYY_935171.enabled, 'VC_CHANGEPAYY_935171')" [properties]="vc.viewState.VC_CHANGEPAYY_935171" [mode]="vc.mode"> 
+      <cobis-groupbox [disabled]="isDisabled( vc.viewState.G_CHANGEPYAA_175429.enabled, 'G_CHANGEPYAA_175429', 'VC_CHANGEPAYY_935171', 'ChangePayDayEntity',vc.viewState.T_ASSTSLFJQNQTJ_171)" *ngIf="isVisible('G_CHANGEPYAA_175429',true)" [properties]="vc.viewState.G_CHANGEPYAA_175429" [mode]="vc.mode" formGroupName="ChangePayDayEntity"> 
+       <cobis-numericinputbox [attr.disabled]="isDisabled( vc.viewState.VA_CURRENTPAYDAYYY_672429.enabled, 'VA_CURRENTPAYDAYYY_672429', 'G_CHANGEPYAA_175429', 'ChangePayDayEntity.currentPayDay',vc.viewState.T_ASSTSLFJQNQTJ_171)" *ngIf="isVisible('VA_CURRENTPAYDAYYY_672429')" [properties]="vc.viewState.VA_CURRENTPAYDAYYY_672429" [mode]="vc.mode" formControlName="currentPayDay"></cobis-numericinputbox>
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_2009HDDBTRLSCDO_776429.enabled, 'VA_2009HDDBTRLSCDO_776429', 'G_CHANGEPYAA_175429', 'ChangePayDayEntity.newPayDay',vc.viewState.T_ASSTSLFJQNQTJ_171)" *ngIf="isVisible('VA_2009HDDBTRLSCDO_776429')" [properties]="vc.viewState.VA_2009HDDBTRLSCDO_776429" [mode]="vc.mode" formControlName="newPayDay" [dataSource]="vc.catalogs.VA_2009HDDBTRLSCDO_776429"> 
+       </cobis-dropdownlist> 
+       <cobis-dropdownlist [attr.disabled]="isDisabled( vc.viewState.VA_2836UZLPSXFHEDX_271429.enabled, 'VA_2836UZLPSXFHEDX_271429', 'G_CHANGEPYAA_175429', 'ChangePayDayEntity.keepQuota',vc.viewState.T_ASSTSLFJQNQTJ_171)" *ngIf="isVisible('VA_2836UZLPSXFHEDX_271429')" [properties]="vc.viewState.VA_2836UZLPSXFHEDX_271429" [mode]="vc.mode" formControlName="keepQuota" [dataSource]="vc.catalogs.VA_2836UZLPSXFHEDX_271429"> 
+       </cobis-dropdownlist> 
+       <cobis-spacer *ngIf="isVisible('Spacer2584')" [properties]="vc.viewState.Spacer2584"></cobis-spacer>
+       <cobis-textinputbox [attr.disabled]="isDisabled( vc.viewState.VA_8829RWJFYGLMLTZ_206429.enabled, 'VA_8829RWJFYGLMLTZ_206429', 'G_CHANGEPYAA_175429', 'ChangePayDayEntity.reason',vc.viewState.T_ASSTSLFJQNQTJ_171)" *ngIf="isVisible('VA_8829RWJFYGLMLTZ_206429')" [properties]="vc.viewState.VA_8829RWJFYGLMLTZ_206429" [mode]="vc.mode" formControlName="reason"></cobis-textinputbox> 
+      </cobis-groupbox> 
+     </cobis-groupbox> 
+    </div> 
+   </div> 
+   <div class="cb-form__controlbar" *ngIf="!vc.childVc || !vc.autoSyncNavigation"> 
+    <cobis-button [disabled]="isDisabled(vc.viewState.CM_TASSTSLF_TT1.enabled,'CM_TASSTSLF_TT1')" *ngIf="isVisible('CM_TASSTSLF_TT1')" [properties]="vc.viewState.CM_TASSTSLF_TT1" [mode]="vc.mode" (onClick)="executeCommand('CM_TASSTSLF_TT1',vc.viewState.CM_TASSTSLF_TT1.name,vc.viewState.CM_TASSTSLF_TT1.causesValidation,vc.viewState.CM_TASSTSLF_TT1.close)"></cobis-button> 
+   </div> 
+  </form> 
+  <cobis-modal *ngIf="! isModal()"></cobis-modal>
+ 

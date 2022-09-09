@@ -1,0 +1,321 @@
+{
+	"filename": "D:\\StoredProcedure\\sql\\ticketdes.sp",
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_ticket_desembolso",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "29d5e71e-8176-404c-a59a-3f64b7905e6f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select of_direccion\r\n                            from"
+			},
+			{
+				"_idQuery": "9da6c8cf-f7c2-4c68-81cd-8002932abf24",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select fu_nombre\r\n                            from"
+			},
+			{
+				"_idQuery": "0bce1b9c-2798-4ee7-ab59-98e2d1837186",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select p_p_apellido + \u0027 \u0027 + p_s_apellido + \u0027 \u0027 + en_nombre + \u0027 \u0027 + p_s_nombre\r\n                            from"
+			},
+			{
+				"_idQuery": "8bc6f06b-25d7-4080-9955-e48f3163ccc4",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select cp_descripcion\r\n                            from"
+			},
+			{
+				"_idQuery": "69af0455-6ceb-4b7b-b951-56ea59962221",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(dm_secuencial) from"
+			},
+			{
+				"_idQuery": "6ed040a3-976a-4f19-a71b-330ee0487703",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select mo_descripcion\r\n                            from"
+			},
+			{
+				"_idQuery": "205a550f-f16f-4909-ab0a-439259604d94",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select convert(varchar,di_fecha_ven,103)\r\n                            from"
+			},
+			{
+				"_idQuery": "53bd0f9d-0056-4a3e-891a-381e2bb5b60e",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(dm_secuencial)\r\n                         from"
+			},
+			{
+				"_idQuery": "9a96735a-4fba-4176-99f9-92adb40c541f",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select max(tr_secuencial)\r\n                  from"
+			},
+			{
+				"_idQuery": "2fa4c4fd-8a18-47d0-a3cd-ec5682438ada",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}",
+					"{10}",
+					"{11}",
+					"{12}",
+					"{13}",
+					"{14}",
+					"{15}",
+					"{16}",
+					"{17}",
+					"{18}",
+					"{19}",
+					"{20}",
+					"{21}",
+					"{22}",
+					"{23}",
+					"{24}",
+					"{25}",
+					"{26}",
+					"{27}"
+				],
+				"editMode": false,
+				"queryText": "select @w_fecha,\r\n       @w_oficina,\r\n       @w_cajero,\r\n       @w_modulo,\r\n       @w_nom_oficial,\r\n       @w_ente,\r\n       @w_nom_ente,\r\n       @w_op_banco,\r\n       @w_recibo,\r\n       @w_toperacion,\r\n       @w_fdesembolso,\r\n       @w_facreditar,\r\n       @w_moneda,\r\n       @w_monto,\r\n       @w_fecha_fin,\r\n       @w_fecha_ven,\r\n       @w_monto_cred,\r\n       isnull(@w_monto_liq,0),\r\n       isnull(@w_seguro_basico,0),\r\n       isnull(@w_seguro_voluntario,0),\r\n       @w_monto_entregar,\r\n       @w_certificado,\r\n       @w_dir_sucursal,\r\n       @w_referencia,\r\n       @w_toperacion,\r\n       @w_nom_ente,\r\n       @w_fec_impresion,\r\n       @w_referencia_2"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_cajero"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_certificado"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dir_sucursal"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ente"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_facreditar"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fdesembolso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fec_impresion"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fec_proceso"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha_fin"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha_ven"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_modulo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_cred"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_entregar"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_liq"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_ente"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nom_oficial"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_numero"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficina_r"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficina"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_op_anterior"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_op_banco"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_ope_renovada"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_recibo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_referencia_2"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_referencia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_seguro_basico"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_seguro_voluntario"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_toperacion"
+			}
+		]
+	}
+}

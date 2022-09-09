@@ -1,0 +1,103 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_tabla_rubro",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_id_rango"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_nro_rangos"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nombre"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_concepto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_titulo1"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_titulo2"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipodato1"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tipodato2"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_result2"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_tdator2"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "6fe5ca64-6ab6-4515-922d-aa6b93cf6041",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10"
+				],
+				"editMode": true,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

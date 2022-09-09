@@ -1,0 +1,30 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_OFFICALSO_243",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		},
+		{
+			"entityId": "EN_OFFICIAEF_453",
+			"isContextEntity": null,
+			"moduleId": "LNSPR",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_OFFILILC_KJ11",
+			"related": false,
+			"subModuleId": "OPRTN"
+		},
+		{
+			"moduleId": "LNSPR",
+			"queryId": "Q_OFFILLLL_SV56",
+			"related": false,
+			"subModuleId": "OPRTN"
+		}
+	]
+}

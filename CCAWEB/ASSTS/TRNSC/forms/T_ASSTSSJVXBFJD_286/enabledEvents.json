@@ -1,0 +1,32 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_DETAYILY_DP76",
+		"controlName": "DetailNoAppliedPaymentQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_DETAYILY_DP76.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "DetailNoAppliedPayment",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_RO76_OKE25",
+		"controlName": "QV_RO76_OKE25",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "DetailNoAppliedPayment",
+		"eventsType": "queryViewEventType"
+	}
+]

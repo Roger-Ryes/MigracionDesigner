@@ -1,0 +1,64 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_NOAPYYTA_XK68",
+		"controlName": "NoAppliedPaymentQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/TRNSC/queries/Q_NOAPYYTA_XK68.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "NoAppliedPayment",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_PJ68_WJJ41",
+		"controlName": "QV_PJ68_WJJ41",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			}
+		],
+		"entityName": "NoAppliedPayment",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VA_GRIDROWCOMMMNDD_641728",
+		"controlName": "VA_GRIDROWCOMMMNDD_641728",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "gridRowCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "NoAppliedPayment",
+		"eventsType": "visualAttributeEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_NOAPPLIESA_877579",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

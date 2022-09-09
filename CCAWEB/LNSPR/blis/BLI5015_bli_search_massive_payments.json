@@ -1,0 +1,172 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "Q"
+		},
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7308"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_lote",
+			"type": "CUSTOM",
+			"value": "lote"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial",
+			"type": "CUSTOM",
+			"value": "pagSec"
+		}
+	],
+	"name": "BLI_Search_Massive_Payments",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5015_bli_search_massive_payments",
+	"patternName": "BLI_Search_Massive_Payments",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "dc383883-6476-48aa-838e-15879cb544af",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "dc383883-6476-48aa-838e-15879cb544af",
+			"columns": [
+				{
+					"attributeId": "AT90_DATEPATY999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "FechaPago",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT93_NUMBREBA999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "Operacion",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT53_CUSTOMEN999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "Cliente",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT44_CURRENTE999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "Moneda",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_PAYMENTT999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "FormaPago",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT18_VALUEPAY999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "ValorPagar",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT26_NUMBERCO999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "Cuenta",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT82_DESCRIPN999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "EstadoCommision",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT79_ERRORLYM999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "Descripcion",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_SEQUENTT999",
+					"entityId": "EN_MASSIVEYM_999",
+					"format": "",
+					"name": "Secuencial",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_MASSIVEYM_999",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "MassivePayments"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_pago_masivo",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

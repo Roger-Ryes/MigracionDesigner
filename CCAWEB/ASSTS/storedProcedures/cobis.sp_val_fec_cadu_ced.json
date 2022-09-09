@@ -1,0 +1,158 @@
+{
+	"filename": "C:\\Users\\jquitora\\Documents\\SP\\sp_val_fec_cadu_ced.sp",
+	"procedure": {
+		"database": "cobis",
+		"name": "sp_val_fec_cadu_ced",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_ente"
+			}
+		],
+		"queries": [
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_cedularuc"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ente"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_caducidad"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_proceso"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_msg"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_pasaporte"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_prueba"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			}
+		]
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_2ZNYDYMCX_592",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_AMORTIZSO_630",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		},
+		{
+			"entityId": "EN_LOANKYMRI_882",
+			"isContextEntity": true,
+			"moduleId": "ASSTS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_AMORTIAN_8237",
+			"related": false,
+			"subModuleId": "TRNSC"
+		}
+	]
+}

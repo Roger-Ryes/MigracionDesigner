@@ -1,0 +1,62 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_REAJUSBC_5831",
+		"controlName": "ReadjustmentLoanCabQuery_5831",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../ASSTS/MNTNN/queries/Q_REAJUSBC_5831.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "",
+		"eventsType": "queryEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "QV_5831_17646",
+		"controlName": "QV_5831_17646",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowDeleting",
+				"executionType": 7
+			},
+			{
+				"eventName": "rowSelecting",
+				"executionType": 1
+			},
+			{
+				"eventName": "rowUpdating",
+				"executionType": 7
+			},
+			{
+				"eventName": "hasDetail",
+				"executionType": 1
+			},
+			{
+				"eventName": "conditionalRowDetail",
+				"executionType": 1
+			}
+		],
+		"entityName": "ReadjustmentLoanCab",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_REAJUSTEMF_738801",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 1
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

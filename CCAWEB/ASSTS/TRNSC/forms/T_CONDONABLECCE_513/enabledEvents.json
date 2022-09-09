@@ -1,0 +1,30 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "QV_2096_93069",
+		"controlName": "QV_2096_93069",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "rowSelecting",
+				"executionType": 3
+			}
+		],
+		"entityName": "CondonableConcepts",
+		"eventsType": "queryViewEventType"
+	},
+	{
+		"attributeName": "",
+		"controlId": "VC_CONDONABPP_384513",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "initData",
+				"executionType": 3
+			}
+		],
+		"entityName": "",
+		"eventsType": "viewContainerEventType"
+	}
+]

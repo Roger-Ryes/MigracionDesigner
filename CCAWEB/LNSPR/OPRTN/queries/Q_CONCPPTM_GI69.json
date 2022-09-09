@@ -1,0 +1,515 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_CONCPPTM_GI69_678",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_CONCPPTM_GI69",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_CONCEPTTE_520",
+	"mainEntityModule": "LNSPR",
+	"mainEntityName": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/Entities/EN_CONCEPTTE_520/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../LNSPR/relations/componentKeys.json#/OPRTN/Queries/Q_CONCPPTM_GI69/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "priority",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT39_PRIORIYY520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCP66IPP978_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "pit",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT55_PITXZBGM520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "10",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCP6GGP9176_11",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "applyRate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT43_APPLYRAA520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "16",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCP96IT6500_17",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "payArrears",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT71_PAYARRRR520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "3",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCP99M9G360_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "maxRate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT51_MAXRATEE520"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONCP9TITI748_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "referenceValue",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT98_REFEREUC520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "8",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPG6MG6866_09",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "insuranceType",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT16_INSURACN520"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONCPG9IT9519_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "category",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT74_CATEGORY520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "15",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPG9P6M699_16",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "readjustmentValue",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT81_READJUTE520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "9",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPG9T99823_10",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "codeItem",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT35_CODEITME520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPGI69G923_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "forBank",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT71_FORBANKK520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "12",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPGTIG6168_13",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "paymentMethod",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT57_PAYMENDD520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "4",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPIPIPT625_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "insurance",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT22_INSURAEC520"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONCPIPTIT311_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "defaults",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT21_DEFAULTT520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "7",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPITGI9478_08",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "rank",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT71_RANKQZXP520"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONCPMGPII394_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "cause",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT92_CAUSEXDO520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "6",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPMITIP585_07",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "condition",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT73_CONDITIN520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "11",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPMPII6940_12",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "associatedItem",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT78_ASSOCIEM520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "13",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPPGIGP309_14",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "item",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT32_ITEMNZVV520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPT96IM775_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "typeItem",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT31_TYPEITMM520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "5",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPTGPTI679_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "minRate",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT13_MINRATEE520"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONCPTMPPP270_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "financed",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT73_FINANCED520"
+			},
+			"customizationLayer": null,
+			"customizationLayerDescription": null,
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2000",
+			"orderBy": 0,
+			"orderByDirection": "A",
+			"queryMemberId": "QM_CONCPTP9MM754_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "limit",
+			"attribute": {
+				"$ref": "../../../LNSPR/entities/EN_CONCEPTTE_520.json#/attributes/AT62_LIMITZML520"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "14",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CONCPTTTI9600_15",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "LNSPR",
+				"subModuleId": "OPRTN"
+			}
+		}
+	]
+}

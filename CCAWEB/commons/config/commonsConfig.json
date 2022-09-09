@@ -1,0 +1,26 @@
+{
+    "dataSources": [
+        "SYBCTS",
+        "SYBCIS",
+        "SYBDSRC"
+    ],
+    "generationSettings": {
+        "customEventImpl": "Custom",
+        "customEventImplPath": "{projectPath}\\build",
+        "frameworkName": "ANGULAR",
+        "jarVersion": "1.0.0",
+        "versionJarMicroServerFeParent": "8.0.0-SNAPSHOT"
+    },
+    "publishParams": {
+        "localConfig": {
+            "dir": "C:\\CobisHome\\COBIS_HOME_WEB_MAP"
+        },
+        "publishMode": {
+            "allFiles": false,
+            "javaFiles": false,
+            "webFiles": true,
+            "withCustom": false
+        },
+        "publishType": "local"
+    }
+}

@@ -1,0 +1,115 @@
+{
+	"_transient": null,
+	"attributes": {
+		"AT14_ACUMULET227": {
+			"attributeId": "AT14_ACUMULET227",
+			"columnName": null,
+			"dataType": "Currency",
+			"entityPk": {
+				"entityId": "EN_DEFERRESA_227",
+				"version": "1.0.0"
+			},
+			"label": {
+				"defaultValue": {
+					"$ref": "../assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_ACUMULAOO_17499"
+				},
+				"labelId": "LBL_ASSTS_ACUMULAOO_17499",
+				"moduleId": "ASSTS"
+			},
+			"labelId": "LBL_ASSTS_ACUMULAOO_17499",
+			"length": 0,
+			"name": "acumulated",
+			"order": 4,
+			"requiredStr": "F",
+			"sorter": "",
+			"value": false
+		},
+		"AT15_ITEMJVKW227": {
+			"attributeId": "AT15_ITEMJVKW227",
+			"columnName": null,
+			"dataType": "String",
+			"entityPk": {
+				"entityId": "EN_DEFERRESA_227",
+				"version": "1.0.0"
+			},
+			"label": {
+				"defaultValue": {
+					"$ref": "../assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_RUBROIVKT_62353"
+				},
+				"labelId": "LBL_ASSTS_RUBROIVKT_62353",
+				"moduleId": "ASSTS"
+			},
+			"labelId": "LBL_ASSTS_RUBROIVKT_62353",
+			"length": 0,
+			"name": "item",
+			"order": 1,
+			"requiredStr": "F",
+			"sorter": "",
+			"value": false
+		},
+		"AT35_EARNQQYK227": {
+			"attributeId": "AT35_EARNQQYK227",
+			"columnName": null,
+			"dataType": "Currency",
+			"entityPk": {
+				"entityId": "EN_DEFERRESA_227",
+				"version": "1.0.0"
+			},
+			"label": {
+				"defaultValue": {
+					"$ref": "../assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_DEVENGAIK_41942"
+				},
+				"labelId": "LBL_ASSTS_DEVENGAIK_41942",
+				"moduleId": "ASSTS"
+			},
+			"labelId": "LBL_ASSTS_DEVENGAIK_41942",
+			"length": 0,
+			"name": "earn",
+			"order": 3,
+			"requiredStr": "F",
+			"sorter": "",
+			"value": false
+		},
+		"AT78_BALANCEE227": {
+			"attributeId": "AT78_BALANCEE227",
+			"columnName": null,
+			"dataType": "Currency",
+			"entityPk": {
+				"entityId": "EN_DEFERRESA_227",
+				"version": "1.0.0"
+			},
+			"label": {
+				"defaultValue": {
+					"$ref": "../assets/languages/ASSTS.json#/ASSTS/LBL/LBL_ASSTS_SALDOCPEI_91372"
+				},
+				"labelId": "LBL_ASSTS_SALDOCPEI_91372",
+				"moduleId": "ASSTS"
+			},
+			"labelId": "LBL_ASSTS_SALDOCPEI_91372",
+			"length": 0,
+			"name": "balance",
+			"order": 2,
+			"requiredStr": "F",
+			"sorter": "",
+			"value": false
+		}
+	},
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"databaseName": null,
+	"dbmsName": null,
+	"description": null,
+	"id": {
+		"entityId": "EN_DEFERRESA_227",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"moduleId": "ASSTS",
+	"name": {
+		"$ref": "../../ASSTS/relations/componentKeys.json#/Entities/EN_DEFERRESA_227/name"
+	},
+	"related": false,
+	"tableName": null,
+	"transient": null
+}

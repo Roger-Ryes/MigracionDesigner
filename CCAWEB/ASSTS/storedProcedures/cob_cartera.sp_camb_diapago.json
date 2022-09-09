@@ -1,0 +1,579 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_camb_diapago",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_banco"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@i_dia_pago_new"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_motivo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_externo"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_mantener_cuota"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_en_linea"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "ef44ef91-cf0d-4c46-9de2-6cef66ff975b",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": false,
+				"queryText": "select @w_operacion, @w_nombclie1, @w_dia_pago_act, @w_mant_cuota"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "money",
+				"name": "@w_acumulado_cuota"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_acumulado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_afec_ultcuota"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_agencia"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_ajuste_cap"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_am_acumulado"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_am_concepto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_am_gracia"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_am_pagado"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_anio_dividendo_vig"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_banco"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_base_cal_int_cap"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_base_calculo_seg"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_base_calculo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cadena"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_calificacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_camb_diapago"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cedula1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cedula2"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_clie2"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_cliente"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_commit"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_cont"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota_ant"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_cuota_ballom"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota_pactada_ant"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota_pactada"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_cuota"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_di_dividendo"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_di_estado"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_di_fecha_ini"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_di_fecha_ven"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dia_pago_act"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dia_pago_new"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dia_venvig"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_diafijo_ant"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_diafijo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_anio"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_diferencia"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_faltan"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias_op"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_dias"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dividendo_aplicar"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_dividendo_vig"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_en_linea"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_cancelado"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_vencido"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_est_vigente"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_estado_deuda"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_dividendo_max_ant"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_dividendo_max"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_fin_ant"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_fin_obligacion"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_max_dividendo"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_oper"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_ult_proceso_op"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fecha_ult_proceso"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fechaini_dividendo_max"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_fpago"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_gracia_cap"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_gracia_int"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_gracia"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_long_max_ope"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_mant_cuota"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_mas_cap_pagado"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_mas_otros_pagado"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_max_dividendo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_mes_dividendo_vig"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_modo_dist_gracia"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_modo"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda_nacional"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_moneda"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_motivo"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nomb_ofic"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombclie1"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombclie2"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombclie3"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_nro"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nueva_fecha_aux"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_nueva_fecha"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_num_cuotas_pendientes"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_num_dec_op"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_num_dec"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_num_dividendos"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_oficial"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_oficina_op"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_op_ant"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_opcion_i"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_opcion"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_operacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_operacionca"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_cap"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_periodo_int"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_pos"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_procesa"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_proyectado_vig"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_reestructuracion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_rubro_int"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_rubro_segdesg"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_cap_despues"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_cap"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo_int"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_saldo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_tasa"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_teac"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_amortizacion"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_reduccion"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_toperacion"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tplazo"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tr_secuencial"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tran"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_calc"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_rubro"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor"
+			}
+		]
+	}
+}

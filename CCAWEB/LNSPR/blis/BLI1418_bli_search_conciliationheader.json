@@ -1,0 +1,188 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_conciliacion",
+			"type": "CUSTOM",
+			"value": "conciliation"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_modo",
+			"type": "CONSTANT",
+			"value": "0"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "77655"
+		}
+	],
+	"name": "BLI_Search_ConciliationHeader",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI1418_bli_search_conciliationheader",
+	"patternName": "BLI_Search_ConciliationHeader",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "2532db46-4805-455d-9e2d-cf3383f5a1eb",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 4,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "2532db46-4805-455d-9e2d-cf3383f5a1eb",
+			"columns": [
+				{
+					"attributeId": "AT68_REGISTET709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "TipoRegistro",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT54_CHANNEDC709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "CodigoCanal",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT10_PROCESAA709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "FechaProceso",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_ROWSNURE709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "Registros",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT74_TOTALCEE709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "TotalDeuda",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT47_TOTALCVC709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "TotalComision",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT76_TOTALCEE709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "TotalAdicionales",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT38_TOTALCTR709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "TotalMontos",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_CONCILEO709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "TipoConciliacion",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT99_BLANKSEW709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "Blancos",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT63_VALIDCZS709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "Valido",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT77_COMMENRY709",
+					"entityId": "EN_PAYMENTIC_709",
+					"format": "",
+					"name": "Comentario",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PAYMENTIC_709",
+			"module": {
+				"moduleId": "LNSPR",
+				"moduleName": "LOANSOPERATION"
+			},
+			"name": "PaymentConciliationHeader"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_conciliacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

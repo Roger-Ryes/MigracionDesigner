@@ -1,0 +1,77 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_NOAPPLITN_882",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "NoAppliedPayment"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "AT46_SECUENAA882",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_NOAPPLITN_882",
+			"format": "",
+			"name": "@i_secuencial_ing",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_en_linea",
+			"type": "CONSTANT",
+			"value": "S"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7153"
+		}
+	],
+	"name": "BLI_ApplyNoAppliedPayment",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9071_bli_applynoappliedpayment",
+	"patternName": "BLI_ApplyNoAppliedPayment",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_pagos_noaplicados",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

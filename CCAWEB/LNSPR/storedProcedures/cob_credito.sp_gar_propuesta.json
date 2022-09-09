@@ -1,0 +1,791 @@
+{
+	"filename": "C:\\SPS\\sp_gar_propuesta.sp",
+	"procedure": {
+		"database": "cob_credito",
+		"name": "sp_gar_propuesta",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "login",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_sesn"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org_err"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_error"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@s_sev"
+			},
+			{
+				"dataType": "descripcion",
+				"direction": "in",
+				"name": "@s_msg"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_rty"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_tramite"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_garantia"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_clasificacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_exceso"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_monto_exceso"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_deudor"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_clase"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_estado_credito"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcentaje_resp"
+			},
+			{
+				"dataType": "money",
+				"direction": "in",
+				"name": "@i_valor_resp_garantia"
+			},
+			{
+				"dataType": "cuenta",
+				"direction": "in",
+				"name": "@i_numero_operacion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_finagro"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_tipo_garantia"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_previa"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_colat_adic"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_crea_ext"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_num_banco"
+			},
+			{
+				"dataType": "float",
+				"direction": "out",
+				"name": "@o_retorno"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "dce8ccfc-66d6-4213-b853-f2365f488fb3",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select tc_tipo, @w_spid\r\nfrom"
+			},
+			{
+				"_idQuery": "745d0687-57bf-4fb1-bfb8-16a56dba6369",
+				"columns": [
+					"{0}",
+					"{1}"
+				],
+				"editMode": false,
+				"queryText": "select tc_tipo ,@w_spid\r\nfrom"
+			},
+			{
+				"_idQuery": "c3c778b6-8d8d-4542-b0a8-2fd73df0e0ce",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "SELECT li_tramite\r\n   FROM"
+			},
+			{
+				"_idQuery": "da24a60c-57e9-485a-ac2b-506959eed1f6",
+				"columns": [
+					"TRAMITE",
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027TRAMITE\u0027 = gp_tramite,\r\n                \u0027GARANTIA\u0027 = cu_custodia,\r\n                \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027 = tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,103),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "a55f67f9-1ce9-4ffd-b559-59a85371c20e",
+				"columns": [
+					"TRAMITE",
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO"
+				],
+				"editMode": false,
+				"queryText": "select distinct \u0027TRAMITE\u0027 = gp_tramite,\r\n                \u0027GARANTIA\u0027 = cu_custodia,\r\n                \u0027TIPO\u0027 = cu_tipo,\r\n                \u0027DES\u0027 = tc_descripcion,\r\n                \u0027ESTADO\u0027 = cu_estado,\r\n                \u0027INGRESO\u0027 = convert(char(10),cu_fecha_ingreso,103),\r\n                \u0027MONEDA\u0027 = cu_moneda,\r\n                \u0027VALOR INICIAL\u0027 = cu_valor_inicial,\r\n                \u0027VALOR ACTUAL\u0027 = cu_valor_actual,\r\n                \u0027VALOR MN\u0027 = cu_valor_actual * isnull(cotizacion,1),\r\n                \u0027CODIGO\u0027 = substring(cu_codigo_externo,1,20)\r\n         from"
+			},
+			{
+				"_idQuery": "1f4978ff-e062-4ede-babc-2973de2ed51f",
+				"columns": [
+					"Tramite",
+					"Garantia",
+					"Clasificacion",
+					"Cubre Exceso",
+					"Monto Exceso",
+					"Caracter",
+					"Estado",
+					"Avaluador",
+					"Propietario",
+					"Porcentaje",
+					"Valor respaldo"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n      \u0027Tramite\u0027         = gp_tramite,\r\n      \u0027Garantia\u0027        = gp_garantia,\r\n      \u0027Clasificacion\u0027   = gp_clasificacion,\r\n      \u0027Cubre Exceso\u0027    = gp_exceso,\r\n      \u0027Monto Exceso\u0027    = gp_monto_exceso,\r\n      \u0027Caracter\u0027        = gp_abierta,\r\n      \u0027Estado\u0027          = gp_est_garantia,\r\n      \u0027Avaluador\u0027       = \u0027 \u0027,\r\n      \u0027Propietario\u0027     = substring(convert(char(10), cg_ente) + cg_nombre, 1, 64),\r\n      \u0027Porcentaje\u0027      = gp_porcentaje,\r\n      \u0027Valor respaldo\u0027  = gp_valor_resp_garantia\r\n      from"
+			},
+			{
+				"_idQuery": "dceec754-d2ea-4fa2-a65d-47c147cf427c",
+				"columns": [
+					"Estado",
+					"Est. Credito",
+					"Numero",
+					"Tipo",
+					"Descripcion",
+					"Clase",
+					"Cliente",
+					"Valor Actual",
+					"Moneda",
+					"MonedaValue",
+					"Valor inicial",
+					"mrc",
+					"mrcValue",
+					"LastInspeccion",
+					"account",
+					"accountType",
+					"depreciaPercent",
+					"location",
+					"identification",
+					"policy"
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027Estado\u0027          = c.cu_estado,\r\n      \u0027Est. Credito\u0027    = NULL,\r\n\t \u0027Numero\u0027          = c.cu_codigo_externo,\r\n\t \u0027Tipo\u0027            = tc_tipo,\r\n\t \u0027Descripcion\u0027     = tc_descripcion,\r\n      \u0027Clase\u0027           = c.cu_abierta_cerrada,\r\n      \u0027Cliente\u0027         = substring(convert(varchar(10),a.en_ente) +  \u0027 \u0027 + a.en_nomlar, 1, 64),\r\n      \u0027Valor Actual\u0027    = NULL,\r\n\t \u0027Moneda\u0027          = convert(varchar(2),c.cu_moneda),\r\n\t \u0027MonedaValue\u0027     = 0.00,\r\n      \u0027Valor inicial\u0027   = NULL,\r\n\t \u0027mrc\u0027             = 0.00,\r\n\t \u0027mrcValue\u0027        = 0.00,\r\n\t \u0027LastInspeccion\u0027  =convert(varchar(10),c.cu_fecha_insp,103),\r\n\t \u0027account\u0027         =cu_plazo_fijo,\r\n      \u0027accountType\u0027     =\u0027\u0027,\r\n      \u0027depreciaPercent\u0027 =tc_porcentaje,\r\n      \u0027location\u0027        =\u0027\u0027,\r\n      \u0027identification\u0027  =substring(convert(char(10), cg_ente) + cg_nombre, 1, 64),\r\n      \u0027policy\u0027          =CASE"
+			},
+			{
+				"_idQuery": "3a26c475-dee1-4bcb-9ddc-e7ef5f19b1fe",
+				"columns": [
+					"{0}"
+				],
+				"editMode": false,
+				"queryText": "select cu_fecha_modificacion from"
+			},
+			{
+				"_idQuery": "31142d52-209c-4a0c-a861-d5f8483fe3e9",
+				"columns": [
+					"Estado",
+					"Est. Credito",
+					"Caracter",
+					"Numero",
+					"Descripcion",
+					"Cliente",
+					"Moneda",
+					"Valor inicial",
+					"Valor Actual",
+					"% Cobertura",
+					"Valor Respaldo",
+					"Fecha Avaluo",
+					"Avaluador",
+					" "
+				],
+				"editMode": false,
+				"queryText": "select\r\n      \u0027Estado\u0027         = c.cu_estado,\r\n      \u0027Est. Credito\u0027   = NULL,\r\n      \u0027Caracter\u0027       = c.cu_abierta_cerrada,\r\n      \u0027Numero\u0027         = c.cu_codigo_externo,\r\n      \u0027Descripcion\u0027    = substring(c.cu_descripcion, 1, 64),\r\n      \u0027Cliente\u0027        = substring(convert(varchar(10),a.en_ente) +  \u0027 \u0027 + a.en_nomlar, 1, 64),\r\n      \u0027Moneda\u0027         = c.cu_moneda,\r\n      \u0027Valor inicial\u0027  = NULL,\r\n      \u0027Valor Actual\u0027   = NULL,\r\n      \u0027% Cobertura\u0027    = gp_porcentaje,\r\n      \u0027Valor Respaldo\u0027 = gp_valor_resp_garantia,\r\n      \u0027Fecha Avaluo\u0027   = convert(varchar(10),c.cu_fecha_insp,103),\r\n      \u0027Avaluador\u0027      = \u0027 \u0027,\r\n      \u0027 \u0027              = \u0027\u0027\r\n      from"
+			},
+			{
+				"_idQuery": "ab4da0e1-5354-4ef5-a8bd-72aab18ff490",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}",
+					"{5}",
+					"{6}",
+					"{7}",
+					"{8}",
+					"{9}"
+				],
+				"editMode": false,
+				"queryText": "select\r\n              @w_tramite,\r\n              @w_garantia,\r\n              @w_clasificacion,\r\n              @w_exceso,\r\n              @w_monto_exceso,\r\n              @w_clase,\r\n              @w_deudor,\r\n              @w_estado,\r\n              @w_porcentaje,\r\n              @w_valor_resp"
+			},
+			{
+				"_idQuery": "5ddc655b-0c42-4925-93d5-e49973ab3e28",
+				"columns": [
+					"TRAMITE",
+					"GARANTIA",
+					"TIPO",
+					"DES",
+					"ESTADO",
+					"INGRESO",
+					"MONEDA",
+					"VALOR INICIAL",
+					"VALOR ACTUAL",
+					"VALOR MN",
+					"CODIGO",
+					"CLASE",
+					"PORC CO"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "float",
+				"name": "@o_valor_inf"
+			},
+			{
+				"dataType": "float",
+				"name": "@o_valor_sup"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_actividad"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_bandera"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ciudad_neg"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_clase_custodia"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_clase"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_clasificacion"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_cobertura"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_cod_colateral"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cod_gar_fag"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_cod_gar_fng_banca"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_cod_gar_fng"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_cod_gar_usaid"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_colateral"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_comparte_ant"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_comparte_nue"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_control"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_cotizacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_depto_neg"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_destino_tram"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_deudor_cus"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_deudor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_dir_neg"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_error"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_es_colateral"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_estado_obl"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_estado"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_exceso"
+			},
+			{
+				"dataType": "tinyint",
+				"name": "@w_existe"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_factor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_fag"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_fcontador"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_cotizacion"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_imax"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_mod"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_fecha_proceso"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_ffecha"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_fsuma"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_ftramite"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_fvalor"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_garanti"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_garantia"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_garesp"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_gargpe"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_inspector"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_mensaje"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_moneda_op"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_exceso"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_exeq"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_micro"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_op"
+			},
+			{
+				"dataType": "decimal",
+				"name": "@w_monto_SMV_tmp"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto_SMV"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_monto_tmp"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_monto"
+			},
+			{
+				"dataType": "descripcion",
+				"name": "@w_msg"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_n"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_no"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_nombre"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_param_fusaid"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_param_musaid"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_parametro_fng"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_parametro1"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_parametro2"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porc_desde"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porc_hasta"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje_resp"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_porcentaje"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_propiet"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_return"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_s"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_si"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_SMV"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_spid"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_cust"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_gar_ant"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_gar_padre"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_gar"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_tipo_garantia"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_personal"
+			},
+			{
+				"dataType": "catalogo",
+				"name": "@w_tipo_productor"
+			},
+			{
+				"dataType": "char",
+				"name": "@w_tipo_tr"
+			},
+			{
+				"dataType": "datetime",
+				"name": "@w_today"
+			},
+			{
+				"dataType": "cuenta",
+				"name": "@w_tr_toperacion"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_tramite"
+			},
+			{
+				"dataType": "int",
+				"name": "@w_usaid"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_val_actual"
+			},
+			{
+				"dataType": "smallint",
+				"name": "@w_valida_ok"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_actual"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_cobertura"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_cotiz"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_desembolsado"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_disponible"
+			},
+			{
+				"dataType": "float",
+				"name": "@w_valor_monto_tmp"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_monto"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_reservado"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_resp_garantia"
+			},
+			{
+				"dataType": "money",
+				"name": "@w_valor_resp"
+			},
+			{
+				"dataType": "varchar",
+				"name": "@w_valor"
+			}
+		]
+	}
+}

@@ -1,0 +1,189 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7020"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "D"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_secuencial_ing",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_sec_detpago",
+			"type": "CUSTOM",
+			"value": "secPago"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_Detalle_Abono",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9147_bli_detalle_abono",
+	"patternName": "BLI_Detalle_Abono",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "d701bf0b-2a3a-4791-bb85-b67b4ffe3f54",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 4,
+			"queryName": "select op_tipo_cobro,\n          op_aceptar_anticipos,\n          op_tipo_reduccion,\n          op_tipo_aplicacion,\n          op_cuota_completa,\n          op_fecha_fin,\n          op_pago_caja,\n          op_calcula_devolucion\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "d701bf0b-2a3a-4791-bb85-b67b4ffe3f54",
+			"columns": [
+				{
+					"attributeId": "AT99_FEEGCNAA348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{0}",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT47_DESCRIOO348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{1}",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT84_STATUSIO348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{2}",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT62_ACCOUNTT348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{3}",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT86_MONEYDIP348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{4}",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT28_AMOUNTHG348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{5}",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT31_AMOUNTNN348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{6}",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_SEQUENLA348",
+					"entityId": "EN_PAYMENTTI_348",
+					"format": "",
+					"name": "{7}",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_PAYMENTTI_348",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "PaymentDetail"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

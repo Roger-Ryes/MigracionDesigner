@@ -1,0 +1,210 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "smallint",
+			"dataType": "SMALLINT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "7020"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_banco",
+			"type": "CUSTOM",
+			"value": "banco"
+		},
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "T"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_formato_fecha",
+			"type": "CONSTANT",
+			"value": "103"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_siguiente",
+			"type": "CUSTOM",
+			"value": "secuencial"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_historico",
+			"type": "CUSTOM",
+			"value": "historico"
+		}
+	],
+	"name": "BLI_Tasas",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI9831_bli_tasas",
+	"patternName": "BLI_Tasas",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "71055f95-5c5a-4fba-9803-e45134c7d859",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "select \u0027Secuencial\u0027             = ts_secuencial,\n          \u0027Fecha Mod.\u0027             = convert(varchar(12),ts_fecha,@i_formato_fecha),\n          \u0027No.Cuota\u0027               = ts_dividendo,\n          \u0027Rubro\u0027                  = ts_concepto,\n          \u0027Valor Aplicar\u0027          = ts_referencial,\n          \u0027Signo Aplicar\u0027          = ts_signo,\n          \u0027Spread Aplicar\u0027         = convert(varchar(25), ts_factor),\n          \u0027Tasa Actual\u0027            = ts_porcentaje,\n          \u0027Tasa Efectiva Anual\u0027    = ts_porcentaje_efa,\n          \u0027Tasa Referencial\u0027       = ts_tasa_ref,\n          \u0027Fecha Tasa Referencial\u0027 = convert(varchar(12),ts_fecha_referencial,@i_formato_fecha),\n          \u0027Valor Tasa Referencial\u0027 = ts_valor_referencial\n   from"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "71055f95-5c5a-4fba-9803-e45134c7d859",
+			"columns": [
+				{
+					"attributeId": "AT72_SEQUENAT507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Secuencial",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT95_UPDATEDO507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "dd/MM/yyyy",
+					"name": "Fecha Mod.",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT85_QUOTAKSY507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "No.Cuota",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT81_ITEMZSAC507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Rubro",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT41_VALUETPY507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Valor Aplicar",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT17_SIGNTOAY507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Signo Aplicar",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_SPREADPY507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Spread Aplicar",
+					"position": 7,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT39_CURRENTR507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Tasa Actual",
+					"position": 8,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT59_ANUALEFA507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Tasa Efectiva Anual",
+					"position": 9,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT15_REFERERA507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Tasa Referencial",
+					"position": 10,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT97_DATERERE507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Fecha Tasa Referencial",
+					"position": 11,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT29_VALUERAC507",
+					"entityId": "EN_LOANRATES_507",
+					"format": "",
+					"name": "Valor Tasa Referencial",
+					"position": 12,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_LOANRATES_507",
+			"module": {
+				"moduleId": "ASSTS",
+				"moduleName": "ASSETS"
+			},
+			"name": "LoanRates"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cob_cartera.sp_datos_operacion",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

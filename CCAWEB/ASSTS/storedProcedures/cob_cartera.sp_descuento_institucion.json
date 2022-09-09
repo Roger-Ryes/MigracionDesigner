@@ -1,0 +1,235 @@
+{
+	"procedure": {
+		"database": "cob_cartera",
+		"name": "sp_descuento_institucion",
+		"parameters": [
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@t_debug"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_from"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_institucion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_ruc"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_cliente"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nombre"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_direccion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_telefono"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_contacto"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_area_cobro"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_porcent_servi_cobro"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_forma_pago_servicio"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_frecuencia_desc"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_forma_pago"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_estado"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_archivo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_clasificacion"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_plazo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_categoria"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_antiguedad"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_convenio"
+			},
+			{
+				"dataType": "float",
+				"direction": "in",
+				"name": "@i_tasa_aplicar"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "out",
+				"name": "@o_institucion"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "tinyint",
+				"direction": "in",
+				"name": "@i_modo"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_formato_fecha"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_gerencia"
+			},
+			{
+				"dataType": "bit",
+				"direction": "in",
+				"name": "@t_show_version"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "9c8a4427-85df-44e1-8f56-3d107eb4a026",
+				"columns": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"21",
+					"22"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"type": "SYBASE"
+	}
+}

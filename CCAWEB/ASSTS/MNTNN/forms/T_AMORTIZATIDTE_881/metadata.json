@@ -1,0 +1,17 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_AMORTIZIQ_340",
+			"isContextEntity": null,
+			"moduleId": "ASSTS"
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "ASSTS",
+			"queryId": "Q_AMORTITT_8477",
+			"related": false,
+			"subModuleId": "MNTNN"
+		}
+	]
+}
