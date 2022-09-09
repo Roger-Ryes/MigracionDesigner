@@ -1,5 +1,6 @@
 //designer-hint: 2307: Cannot find module '@angular/core' or its corresponding type declarations.
 import { Injectable } from "@angular/core";
+import { IntlService } from "@progress/kendo-angular-intl";
   
 //designer-hint: 2307: Cannot find module 'cobis-commons' or its corresponding type declarations.
 import { CobisCommonsService } from "cobis-commons";
@@ -9,13 +10,13 @@ import { CobisDesignerModuleBase } from 'cobis-designer';
 @Injectable({providedIn: 'root'})
 //designer-hint: 1219: Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option in your 'tsconfig' or 'jsconfig' to remove this warning.
 export class ASSTSService extends CobisDesignerModuleBase {
-  constructor(public cobis: CobisCommonsService) {
+  constructor(public cobis: CobisCommonsService, public intl: IntlService) {
     super(cobis);
   }
 
   /*global designerEvents, console */
 public timer = 3500;
-public container = this.cobis.container.tabs;
+public container:any = this.cobis.container.tabs;
 public tab = this.cobis.container.tabs.getCurrentTab();
 //var ASSETS = {
 

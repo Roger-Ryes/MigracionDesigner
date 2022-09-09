@@ -54,7 +54,7 @@
       "@progress/kendo-licensing": "^1.2.2",
       "@progress/kendo-theme-bootstrap": "^5.4.1",
       "bootstrap": "^5.1.3",
-      "cobis-commons": "^0.1.5",
+      "cobis-commons": "^0.1.7",
       "cobis-designer": "0.2.9-snapshot",
       "cobis-designer-controls": "^0.1.17",
       "cobis-theme-default": "^0.1.9",

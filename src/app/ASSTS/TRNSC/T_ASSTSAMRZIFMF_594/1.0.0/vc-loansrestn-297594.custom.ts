@@ -154,7 +154,7 @@ export class VcLoansrestn297594Custom extends CobisDesignerCustomEvent {
   task_change_VA_TEXTINPUTBOXLJF_575701 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     changedEventArgs.commons.execServer = false;
-
+    changedEventArgs.rowData
     if (changedEventArgs.newValue == 'N') { // Saldo Capital
       changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance;
       changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
@@ -190,8 +190,8 @@ export class VcLoansrestn297594Custom extends CobisDesignerCustomEvent {
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.ASSTS.tab.text != undefined) {
-      nameAux = this.ASSTS.tab.text;
+    if (this.ASSTS.tab.name != undefined) {
+      nameAux = this.ASSTS.tab.name;
     } else {
       nameAux = this.cobis.translate("ASSTS.LBL_ASSTS_REESTRURC_23393");
     }
