@@ -102,7 +102,7 @@ export class VcPaymentsfw851850Custom extends CobisDesignerCustomEvent {
   ) => {
     if (!changeCallbackEventArgs.success) {
       entities.Payment.quotation = 0.00;
-      // TODO
+      // TODO - ALE
       entities.Payment.typeQuotationTe = "";
     } else {
       changeCallbackEventArgs.commons.api.viewState.label("VA_AMOUNTPREPAYTME_876141", this.cobis.translate("ASSTS.LBL_ASSTS_SALDOPRCN_87630") + " " + "(" +
@@ -144,11 +144,11 @@ export class VcPaymentsfw851850Custom extends CobisDesignerCustomEvent {
       if (changedEventArgs.commons.api.viewState.getDataItem("VA_TEXTINPUTBOXCFY_310141").pCobis == 4) { // ['Nota de DEbito a Cuenta de Aho']
         changedEventArgs.commons.api.viewState.show('VA_TEXTINPUTBOXHQX_290141');
         changedEventArgs.commons.api.viewState.isReadOnly('VA_REFERENCECGUXXB_239141');
-        // TODO
-        $("#VA_REFERENCECGUXXB_239141").attr("readonly", true);
+        // TODO - REFACTOR
+        // $("#VA_REFERENCECGUXXB_239141").attr("readonly", true);
       } else {
         changedEventArgs.commons.api.viewState.hide('VA_TEXTINPUTBOXHQX_290141');
-        $("#VA_REFERENCECGUXXB_239141").attr("readonly", false);
+        // $("#VA_REFERENCECGUXXB_239141").attr("readonly", false);
       }
 
       if (changedEventArgs.commons.api.viewState.getDataItem("VA_TEXTINPUTBOXCFY_310141").atx == 'S') {

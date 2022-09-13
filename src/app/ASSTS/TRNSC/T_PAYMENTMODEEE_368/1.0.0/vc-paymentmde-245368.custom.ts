@@ -130,10 +130,10 @@ export class VcPaymentmde245368Custom extends CobisDesignerCustomEvent {
     }
 
     if (changedEventArgs.commons.api.viewState.getDataItem("Spacer2675").pCobis == 4) { // ['Nota de DEbito a Cuenta de Aho']
-      // TODO
-      $("#VA_2481BBVZTGCBDCR_830216").attr("readonly", true);
+      // TODO - REFACTORIZAR
+      // $("#VA_2481BBVZTGCBDCR_830216").attr("readonly", true);
     } else {
-      $("#VA_2481BBVZTGCBDCR_830216").attr("readonly", false);
+      // $("#VA_2481BBVZTGCBDCR_830216").attr("readonly", false);
     }
     entities.PaymentForm.accountNumber = null;
     changedEventArgs.commons.execServer = false;

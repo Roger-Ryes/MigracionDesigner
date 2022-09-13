@@ -215,7 +215,7 @@ export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
         callFromGrid: false
       };
       nav.customDialogParameters = {
-        // TODO
+        // TODO - ALE
         operation: operacion
 
       };

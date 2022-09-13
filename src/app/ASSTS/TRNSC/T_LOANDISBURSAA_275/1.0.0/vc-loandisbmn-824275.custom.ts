@@ -122,7 +122,7 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
 
     entities.DisbursementResult.sumTotal = totalDesembolso;
     entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal!-entities.DisbursementResult.sumTotal!;
-    // TODO
+    // TODO - ALE
     diferencia = entities.DisbursementResult.difference;
   };
 
@@ -239,9 +239,9 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
   ) => {
 
 
-    if (entities.LiquidateResult.sumTotal?.toFixed(2) > entities.DisbursementResult.sumTotal?.toFixed(2)) {
+    if (entities.LiquidateResult.sumTotal?.toFixed(2) ! > entities.DisbursementResult.sumTotal?.toFixed(2) !) {
       executeCommandEventArgs.commons.execServer = false;
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(this.cobis.translate('ASSTS.MSG_ASSTS_ERRORELDR_83907'), false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(this.cobis.translate('ASSTS.MSG_ASSTS_ERRORELDR_83907'), false, null, this.ASSTS.timer);
     } else {
       executeCommandEventArgs.commons.execServer = true;
     }
@@ -267,6 +267,7 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
     let api: any = initDataEventArgs.commons.api;
     let parameters: any = api.navigation.getCustomDialogParameters();
     entities.Loan = parameters.parameters.loan;
+    // TODO - CONVERSION
     entities.LoanAdditionalInformation.currencyOp = entities.Loan.codCurrency;
 
     initDataEventArgs.commons.api.viewState.hide('VC_VBHENKGGPP_117275');

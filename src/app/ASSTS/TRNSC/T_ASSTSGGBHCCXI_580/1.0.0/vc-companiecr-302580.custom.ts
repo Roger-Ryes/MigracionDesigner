@@ -166,8 +166,9 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
       entities.CompaniesBatch.fileError = null
       entities.CompaniesBatch.description = null
       entities.CompaniesBatch.executeOnline = null
-      // TODO
-      entities.CompaniesBatch.path = null
+      // TODO - ALE
+      // entities.CompaniesBatch.path = null
+      entities.CompaniesBatch.filePath = null
     } else if (opt == 3) { //Change Lote
       entities.CompaniesBatch.fileError = null
     } else {
@@ -372,7 +373,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
   ) => {
 
     executeCommandEventArgs.commons.execServer = false;
-    // TODO
+    // TODO - Consultar ALE
     if (entities.CompaniesBatch.company > 0) {
       //open modal
       let nav: any = executeCommandEventArgs.commons.api.navigation;

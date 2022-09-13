@@ -170,11 +170,12 @@ export class VcPassivepif144956Custom extends CobisDesignerCustomEvent {
       viewState.show('VC_UBTCDKFYUM_204785'); //Parametros generales
       viewState.show('VC_VDXJPHMPYC_153633'); //Amortización
 
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CREACIOTT_10843", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CREACIOTT_10843", false, null, this.LNSPR.timer);
 
       viewState.enable('CM_TLNSPRYT_R8O'); //Button Transmitir
 
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_MC21_OVS27'); //Rubros//Grid
+      // TODO - ALE
       executeCommandCallbackEventArgs.commons.api.vc.queries.VA_ITEMWXVWWWSCMKV_983587_values = undefined;
       viewState.refreshData('VA_ITEMWXVWWWSCMKV_983587'); //Rubros//Columna Rubros
       viewState.refreshData('Q_APAGOOOO_YV30'); //Parametros Generales//FormaPagoQuery
@@ -447,6 +448,7 @@ export class VcPassivepif144956Custom extends CobisDesignerCustomEvent {
       }
     }
 
+    // TODO - ALE
     if (onCloseModalEventArgs.closedViewContainerId == 'VC_MODALOPERI_484830' && resultArgs) {
       if (onCloseModalEventArgs.dialogCloseType !== onCloseModalEventArgs.commons.constants.dialogCloseType.NonInteractive) {
         if (resultArgs.mode === onCloseModalEventArgs.commons.constants.mode.Insert) {
@@ -530,7 +532,7 @@ export class VcPassivepif144956Custom extends CobisDesignerCustomEvent {
       //nav.openModalWindow(id, args.modelRow);
     } else {
       textInputButtonEventArgs.cancel = true;
-      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, timer);
+      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, this.LNSPR.timer);
     }
   };
 

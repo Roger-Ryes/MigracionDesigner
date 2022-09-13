@@ -284,7 +284,7 @@ export class VcStatuschvi933411Custom extends CobisDesignerCustomEvent {
           break;
       }
     } else {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_SELECCISS_53496', false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_SELECCISS_53496', false, null, this.LNSPR.timer);
       executeCommandEventArgs.commons.execServer = false;
     }
 
@@ -310,7 +310,7 @@ export class VcStatuschvi933411Custom extends CobisDesignerCustomEvent {
       }
 
       if (contError == 0) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, this.LNSPR.timer);
       }
     } else {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('VA_VABUTTONUSCBRTC_509293');
@@ -374,6 +374,7 @@ export class VcStatuschvi933411Custom extends CobisDesignerCustomEvent {
     executeCommandEventArgs.commons.api.viewState.disable('VA_DESCSTATUSKOPMT_184293');
     entities.LoanSearchFilter.seleccionarTodo = false;
     executeCommandEventArgs.commons.api.grid.removeAllRows('LoanList');
+    // TODO - ALE
     executeCommandEventArgs.commons.api.vc.removeFile('VA_ARCHIVOEWNXRMQG_617293');
     entities.LoanSearchFilter.avanceSearch = false;
     entities.StatesAssetsLoan.descStatus = null;
@@ -485,7 +486,7 @@ export class VcStatuschvi933411Custom extends CobisDesignerCustomEvent {
       executeQueryEventArgs.commons.execServer = true;
 
     } else {
-      executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBEINGTA_48173', false, null, timer);
+      executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBEINGTA_48173', false, null, this.LNSPR.timer);
       executeQueryEventArgs.commons.execServer = false;
     }
   };

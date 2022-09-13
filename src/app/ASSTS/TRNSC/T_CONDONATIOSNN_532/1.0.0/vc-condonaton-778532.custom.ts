@@ -140,7 +140,7 @@ export class VcCondonaton778532Custom extends CobisDesignerCustomEvent {
       changeEventArgs.commons.api.grid.updateRowData(changeEventArgs.rowData, 'pastDueAmount', changeEventArgs.rowData.pastDueAmount);
       changeEventArgs.commons.api.grid.updateRowData(changeEventArgs.rowData, 'dueAmount', changeEventArgs.rowData.dueAmount);
       changeEventArgs.commons.api.grid.updateRowData(changeEventArgs.rowData, 'totalValue', changeEventArgs.rowData.totalValue);
-    // TODO
+    // TODO - REFACTORIZAR
       // $("#VA_TEXTINPUTBOXABB_665764").data("kendoNumericTextBox").focus()
       // $("#VA_TEXTINPUTBOXTSF_920764").data("kendoNumericTextBox").focus()
       // $("#VA_TEXTINPUTBOXBSX_772764").data("kendoNumericTextBox").focus()

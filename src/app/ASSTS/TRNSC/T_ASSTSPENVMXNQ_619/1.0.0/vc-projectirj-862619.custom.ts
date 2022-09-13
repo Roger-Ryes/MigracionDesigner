@@ -199,7 +199,8 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
     let reportItem: any = "";
     let reportName: any = "SimulationReadjustement";
     // TODO
-    // let infoDate: any = kendo.toString(kendo.parseDate(entities.SearchProjectionReadjustement.dateReadjustment), JSON.parse(sessionStorage.dateFormat)); //Nombre del archivo
+    // let infoDate: any = kendo.toString(entities.SearchProjectionReadjustement.dateReadjustment,JSON.parse(sessionStorage.dateFormat));//Nombre del archivo
+    let infoDate: any = entities.SearchProjectionReadjustement.dateReadjustment; //Nombre del archivo
 
     let args: any = [
       ['report.module', 'cartera'],
@@ -268,14 +269,22 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
     renderEventArgs.commons.execServer = false;
     //FORMAT HEADER
     // TODO
-    // entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    // entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    // entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    // entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.startDate = kendo.toString(entities.Loan.startDate, JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.endDate = kendo.toString(entities.Loan.endDate, JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.feeEndDate = kendo.toString(entities.Loan.feeEndDate, JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.lastProcessDate = kendo.toString(entities.Loan.lastProcessDate, JSON.parse(sessionStorage.dateFormat));
     // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
     // entities.Loan.amount = kendo.toString(entities.Loan.amount, "n");
     // entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
     // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    entities.Loan.startDate = entities.Loan.startDate;
+    entities.Loan.endDate = entities.Loan.endDate;
+    entities.Loan.feeEndDate = entities.Loan.feeEndDate;
+    entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
+    entities.Loan.balanceDue = entities.Loan.balanceDue;
+    entities.Loan.amount = entities.Loan.amount;
+    entities.Loan.amountApproved = entities.Loan.amountApproved;
+    entities.Loan.nextPayment = entities.Loan.nextPayment;
 
     for (let i: any = 1; i < 16; i++) {
       renderEventArgs.commons.api.grid.hideColumn("QV_EB77_IIB88", "items" + i);

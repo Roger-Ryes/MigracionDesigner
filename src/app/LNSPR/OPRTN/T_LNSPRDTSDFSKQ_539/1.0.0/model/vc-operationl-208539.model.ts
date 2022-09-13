@@ -6,6 +6,7 @@ import { AmortizationEntity } from "../../../../entities/AmortizationEntity";
 import { CreateOperationTwo } from "../../../../entities/CreateOperationTwo";
 import { CreateOperationOne } from "../../../../entities/CreateOperationOne";
 import { CustomerEntity } from "../../../../entities/CustomerEntity";
+import { DebtorReportedEntity } from "../../../../entities/DebtorReportedEntity";
 import { DebtorEntity } from "../../../../entities/DebtorEntity";
 import { GeneralParametersQuery } from "../../../../entities/GeneralParametersQuery";
 import { GenericEntity } from "../../../../entities/GenericEntity";
@@ -19,6 +20,7 @@ private _amortizationEntity!: any;
 private _createOperationTwo!: any;
 private _createOperationOne!: any;
 private _customerEntity!: any;
+private _debtorReportedEntity!: any;
 public DebtorEntity!: any;
 private _debtorEntityRowData!: DebtorEntity;
 private _generalParametersQuery!: any;
@@ -34,6 +36,7 @@ this._amortizationEntity = new AmortizationEntity();
 this._createOperationTwo = new CreateOperationTwo();
 this._createOperationOne = new CreateOperationOne();
 this._customerEntity = new CustomerEntity();
+this._debtorReportedEntity = new DebtorReportedEntity();
 this.DebtorEntity = [];
 this._debtorEntityRowData = new DebtorEntity(formGroupArray["DebtorEntity"]);
 this._generalParametersQuery = new GeneralParametersQuery();
@@ -78,6 +81,12 @@ this._customerEntity = valores;
 }
 public get CustomerEntity(): any {
 return this._customerEntity;
+}
+public set DebtorReportedEntity(valores: any) {
+this._debtorReportedEntity = valores;
+}
+public get DebtorReportedEntity(): any {
+return this._debtorReportedEntity;
 }
 public set DebtorEntityRowData(entity: any) {
 this._debtorEntityRowData = entity;

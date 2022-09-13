@@ -123,7 +123,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     entities.RefinanceLoanFilter.typeGrace = "S";
     entities.RefinanceLoanFilter.typeFee = "M";
 
-// TODO
+// TODO - ALE
     entities.RefinanceLoanFilter.basicInsurance = "false";
 
   };
