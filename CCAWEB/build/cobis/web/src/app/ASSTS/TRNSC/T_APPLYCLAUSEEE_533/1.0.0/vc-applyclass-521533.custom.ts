@@ -57,9 +57,9 @@ import {
 } from 'cobis-designer';
 
 
-/* variables locales de T_AMORTIZATIOON_261*/
-
 /* variables locales de T_LOANHEADERNFI_316*/
+
+/* variables locales de T_AMORTIZATIOON_261*/
 
 /* variables locales de T_APPLYCLAUSEEE_533*/
 
@@ -90,10 +90,10 @@ export class VcApplyclass521533Custom extends CobisDesignerCustomEvent {
   //**********************************************************   
 
 
-  //"TaskId": "T_AMORTIZATIOON_261"
-
   /*"TaskId": "T_LOANHEADERNFI_316",*/
   //Your code here
+
+  //"TaskId": "T_AMORTIZATIOON_261"
 
   //"TaskId": "T_APPLYCLAUSEEE_533"
 

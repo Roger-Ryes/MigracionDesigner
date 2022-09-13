@@ -58,6 +58,7 @@ import {
 
 /* variables locales de T_ASSTSCNYHAQPM_525*/
 let openConfirmation: any = true;
+let params: any = null;
 
 export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
 

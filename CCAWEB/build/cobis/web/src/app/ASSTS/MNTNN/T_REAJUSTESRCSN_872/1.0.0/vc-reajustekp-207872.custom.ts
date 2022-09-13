@@ -57,9 +57,9 @@ import {
 } from 'cobis-designer';
 
 
-/* variables locales de T_REAJUSTECAMMB_801*/
-
 /* variables locales de T_LOANHEADERNFI_316*/
+
+/* variables locales de T_REAJUSTECAMMB_801*/
 
 /* variables locales de T_REAJUSTESRCSN_872*/
 
@@ -90,10 +90,10 @@ export class VcReajustekp207872Custom extends CobisDesignerCustomEvent {
   //**********************************************************   
 
 
-  /*"TaskId": "T_REAJUSTECAMMB_801",*/
+  /*"TaskId": "T_LOANHEADERNFI_316",*/
   //Your code here
 
-  /*"TaskId": "T_LOANHEADERNFI_316",*/
+  /*"TaskId": "T_REAJUSTECAMMB_801",*/
   //Your code here
 
   /*"TaskId": "T_REAJUSTESRCSN_872",*/

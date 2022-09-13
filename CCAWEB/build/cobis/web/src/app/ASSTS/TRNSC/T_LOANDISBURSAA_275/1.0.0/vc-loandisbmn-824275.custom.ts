@@ -57,10 +57,10 @@ import {
 } from 'cobis-designer';
 
 
+/* variables locales de T_LOANHEADERNFI_316*/
+
 /* variables locales de T_DISBURSEMENNN_810*/
 
-
-/* variables locales de T_LOANHEADERNFI_316*/
 
 /* variables locales de T_LOANDISBURSAA_275*/
 
@@ -91,10 +91,10 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
   //**********************************************************   
 
 
-  //"TaskId": "T_DISBURSEMENNN_810"
-
   /*"TaskId": "T_LOANHEADERNFI_316",*/
   //Your code here
+
+  //"TaskId": "T_DISBURSEMENNN_810"
 
   //"TaskId": "T_LOANDISBURSAA_275"
 
@@ -238,9 +238,9 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
   ) => {
 
 
-    if (entities.LiquidateResult.sumTotal?.toFixed(2) > entities.DisbursementResult.sumTotal?.toFixed(2)) {
+    if (entities.LiquidateResult.sumTotal?.toFixed(2) ! > entities.DisbursementResult.sumTotal?.toFixed(2) !) {
       executeCommandEventArgs.commons.execServer = false;
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(this.cobis.translate('ASSTS.MSG_ASSTS_ERRORELDR_83907'), false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation(this.cobis.translate('ASSTS.MSG_ASSTS_ERRORELDR_83907'), false, null, this.ASSTS.timer);
     } else {
       executeCommandEventArgs.commons.execServer = true;
     }

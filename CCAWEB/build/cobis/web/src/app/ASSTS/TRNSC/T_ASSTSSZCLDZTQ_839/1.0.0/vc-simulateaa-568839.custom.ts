@@ -57,9 +57,9 @@ import {
 } from 'cobis-designer';
 
 
-/* variables locales de T_ASSTSAXELGOQQ_915*/
-
 /* variables locales de T_LOANHEADERNFI_316*/
+
+/* variables locales de T_ASSTSAXELGOQQ_915*/
 
 /* variables locales de T_ASSTSSZCLDZTQ_839*/
 
@@ -90,11 +90,11 @@ export class VcSimulateaa568839Custom extends CobisDesignerCustomEvent {
   //**********************************************************   
 
 
-  //"TaskId": "T_ASSTSAXELGOQQ_915"
-
-
   /*"TaskId": "T_LOANHEADERNFI_316",*/
   //Your code here
+
+  //"TaskId": "T_ASSTSAXELGOQQ_915"
+
 
   //"TaskId": "T_ASSTSSZCLDZTQ_839"
 
