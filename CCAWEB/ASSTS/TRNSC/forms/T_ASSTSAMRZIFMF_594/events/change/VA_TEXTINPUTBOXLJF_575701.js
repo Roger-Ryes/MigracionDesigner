@@ -5,36 +5,26 @@ task.change.VA_TEXTINPUTBOXLJF_575701 = function (entities, changedEventArgs) {
 
     changedEventArgs.commons.execServer = false;
     //Recuperación de fila en edición
-    currentRowData = changedEventArgs.rowData;
+    var currentRowData = changedEventArgs.rowData;
     
     if (changedEventArgs.newValue == 'N') { // Saldo Capital
-        changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance;
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
-        changedEventArgs.rowData.toPay = changedEventArgs.rowData.interestBalance+ changedEventArgs.rowData.otherItems;
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', changedEventArgs.rowData.toPay);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', changedEventArgs.rowData.toPay);
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.capitalBalance);
 
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', (changedEventArgs.rowData.interestBalance+ changedEventArgs.rowData.otherItems));
     } else if (changedEventArgs.newValue == 'S') { //Saldo Cap + interes
-        changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance;
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', (changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance));
 
         changedEventArgs.rowData.toPay = changedEventArgs.rowData.otherItems;
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', changedEventArgs.rowData.toPay);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', changedEventArgs.rowData.toPay);
-
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', (changedEventArgs.rowData.otherItems));
     } else if (changedEventArgs.newValue == 'T') { //saldo cap+interes+otros
-        changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems;
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', (changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems));
+
         changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', 0.00);
+
     } else {
         changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', 0.00);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', 0.00);
+
         changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', 0.00);
     }
 
 };

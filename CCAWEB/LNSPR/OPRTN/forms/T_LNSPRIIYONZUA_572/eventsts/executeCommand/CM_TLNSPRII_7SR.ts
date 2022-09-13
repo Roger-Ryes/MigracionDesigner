@@ -8,8 +8,8 @@ task_executeCommand_CM_TLNSPRII_7SR = (
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-        nameAux = this.cobis.container.tabs.getCurrentTab().text;
+    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+        nameAux = this.cobis.container.tabs.getCurrentTab().name;
     } else {
             nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_VENTACAET_55114");    
     }

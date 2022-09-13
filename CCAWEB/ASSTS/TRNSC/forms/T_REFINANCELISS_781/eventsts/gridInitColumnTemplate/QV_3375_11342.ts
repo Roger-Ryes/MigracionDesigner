@@ -1,8 +1,5 @@
-//designer-hint: 2304: Cannot find name 'task_gridInitColumnTemplate_QV_3375_11342'.
 task_gridInitColumnTemplate_QV_3375_11342 = (
     idColumn: any,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridInitColumnTemplateEventArgs'.
-    //designer-hint: 6133: 'gridInitColumnTemplateEventArgs' is declared but its value is never read.
     gridInitColumnTemplateEventArgs: CobisModelGridInitColumnTemplateEventArgs
 ) => {
     //if(idColumn === 'NombreColumna'){

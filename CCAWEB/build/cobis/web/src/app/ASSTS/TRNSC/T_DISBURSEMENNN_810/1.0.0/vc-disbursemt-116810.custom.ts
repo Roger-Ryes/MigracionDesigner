@@ -87,6 +87,8 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
   //"TaskId": "T_DISBURSEMENNN_810"
 
   //DetailPaymentFormQuery Entity: 
+  //designer-hint: 2304: Cannot find name 'task_executeQuery_Q_DETAILAP_5973'.
+  //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
   task_executeQuery_Q_DETAILAP_5973 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
     executeQueryEventArgs.commons.serverParameters.DisbursementResult = true;
     executeQueryEventArgs.commons.serverParameters.Loan = true;
@@ -97,8 +99,12 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to Q_DETAILAP_5973
+  //designer-hint: 2304: Cannot find name 'task_executeQueryCallback_Q_DETAILAP_5973'.
   task_executeQueryCallback_Q_DETAILAP_5973 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryCallbackEventArgs'.
+    //designer-hint: 6133: 'executeQueryCallbackEventArgs' is declared but its value is never read.
     executeQueryCallbackEventArgs: CobisModelExecuteQueryCallbackEventArgs
   ) => {
     let totalDesembolso: any = 0;
@@ -109,13 +115,16 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
     }
 
     entities.DisbursementResult.sumTotal = totalDesembolso;
-    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal - entities.DisbursementResult.sumTotal;
+    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal!-entities.DisbursementResult.sumTotal!;
+    //designer-hint: 2304: Cannot find name 'diferencia'.
     diferencia = entities.DisbursementResult.difference;
   };
 
 
 
   //DetailAmountsToCancelQuery Entity: 
+  //designer-hint: 2304: Cannot find name 'task_executeQuery_Q_DETAILTM_1603'.
+  //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
   task_executeQuery_Q_DETAILTM_1603 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
     executeQueryEventArgs.commons.execServer = false;
     //executeQueryEventArgs.commons.serverParameters. = true;
@@ -123,8 +132,11 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
   //gridCommand (Button) QueryView: QV_5973_48889
   //Evento GridCommand: Sirve para personalizar la acción que realizan los botones de Grilla.
+  //designer-hint: 2304: Cannot find name 'task_gridCommand_CEQV_201QV_5973_48889_606'.
   task_gridCommand_CEQV_201QV_5973_48889_606 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelGridCommandExecuteEventArgs'.
     gridExecuteCommandEventArgs: CobisModelGridCommandExecuteEventArgs
   ) => {
     gridExecuteCommandEventArgs.commons.execServer = false;
@@ -133,7 +145,8 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
 
     if (entities.LoanAdditionalInformation.dateToDisburse === undefined) {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071', false, null, timer);
+      //designer-hint: 2304: Cannot find name 'timer'.
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071', false, null, this.ASSTS.timer);
       return;
     }
 
@@ -141,7 +154,7 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
 
     let nav: any = gridExecuteCommandEventArgs.commons.api.navigation;
-    if (entities.LiquidateResult.sumTotal > entities.DisbursementResult.sumTotal) {
+    if (entities.LiquidateResult.sumTotal! > entities.DisbursementResult.sumTotal!) {
       nav.label = this.cobis.translate('ASSTS.LBL_ASSTS_APAGOKXFB_84081'); //Forma de Pago
       nav.address = {
         moduleId: 'ASSTS',
@@ -169,12 +182,16 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
       };
       nav.openModalWindow("CEQV_201QV_5973_48889_606", gridExecuteCommandEventArgs);
     } else {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, timer);
+      //designer-hint: 2304: Cannot find name 'timer'.
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, this.ASSTS.timer);
     }
   };
 
   //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
   //ViewContainer: DisbursementForm
+  //designer-hint: 2304: Cannot find name 'task_initData_VC_DISBURSEMT_116810'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
   task_initData_VC_DISBURSEMT_116810 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
     entities.Loan = initDataEventArgs.commons.api.navigation.getCustomDialogParameters().loan;
     entities.LoanAdditionalInformation.currencyOp = initDataEventArgs.commons.api.navigation.getCustomDialogParameters().loan.codCurrency;
@@ -186,8 +203,11 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
   };
 
   //Start signature to Callback event to VC_DISBURSEMT_116810
+  //designer-hint: 2304: Cannot find name 'task_initDataCallback_VC_DISBURSEMT_116810'.
   task_initDataCallback_VC_DISBURSEMT_116810 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelInitDataCallbackEventArgs'.
     initDataCallbackEventArgs: CobisModelInitDataCallbackEventArgs
   ) => {
     let processDate = this.cobis.container.info.getProcessDate();
@@ -197,7 +217,10 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
     // January - 0, February - 1, etc.
     entities.LoanAdditionalInformation.dateToDisburse = new Date(parts[2], parts[0] - 1, parts[1]);
 
-    entities.LoanAdditionalInformation.dateToDisburse = kendo.toString(kendo.parseDate(entities.LoanAdditionalInformation.dateToDisburse), JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // TODO
+    // entities.LoanAdditionalInformation.dateToDisburse = kendo.toString(entities.LoanAdditionalInformation.dateToDisburse, JSON.parse(sessionStorage.dateFormat));
+    entities.LoanAdditionalInformation.dateToDisburse = entities.LoanAdditionalInformation.dateToDisburse;
 
     if (initDataCallbackEventArgs.success) {
       let totalDesembolso: any = 0;
@@ -208,7 +231,8 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
       }
 
       entities.DisbursementResult.sumTotal = totalDesembolso;
-      entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal - entities.DisbursementResult.sumTotal;
+      entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal!-entities.DisbursementResult.sumTotal!;
+      //designer-hint: 2304: Cannot find name 'diferencia'.
       diferencia = entities.DisbursementResult.difference;
     }
   };
@@ -218,6 +242,10 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
   //Evento onCloseModalEvent : Evento que actua como listener cuando se cierra ventanas modales.
   //ViewContainer: DisbursementForm
+  //designer-hint: 2304: Cannot find name 'task_onCloseModalEvent'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelOnCloseModalEventArgs'.
+  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_onCloseModalEvent = (entities: Model, onCloseModalEventArgs: CobisModelOnCloseModalEventArgs) => {
 
     onCloseModalEventArgs.commons.execServer = false;
@@ -229,8 +257,12 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
   //gridRowDeleting QueryView: QV_5973_48889
   //Se ejecuta antes de que los datos eliminados en una grilla sean comprometidos.
+  //designer-hint: 2304: Cannot find name 'task_gridRowDeleting_QV_5973_48889'.
   task_gridRowDeleting_QV_5973_48889 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
+    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelGridRowActionEventArgs'.
     gridRowDeletingEventArgs: CobisModelGridRowActionEventArgs
   ) => {
     if (gridRowDeletingEventArgs.commons.api.parentVc && gridRowDeletingEventArgs.commons.api.parentVc?.id == 'VC_LOANPARTIR_265871') {
@@ -252,20 +284,29 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
   };
 
   //Start signature to callBack event to QV_5973_48889
+  //designer-hint: 2304: Cannot find name 'task_gridRowDeletingCallback_QV_5973_48889'.
   task_gridRowDeletingCallback_QV_5973_48889 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelGridRowActionCallbackEventArgs'.
     gridRowDeletingEventArgs: CobisModelGridRowActionCallbackEventArgs
   ) => {
 
     if (gridRowDeletingEventArgs.success && gridRowDeletingEventArgs.commons.api.parentVc && gridRowDeletingEventArgs.commons.api.parentVc?.id == 'VC_LOANPARTIR_265871') {
+      //designer-hint: 2304: Cannot find name 'diferencia'.
+      // TODO - ALE 
       diferencia = entities.DisbursementResult.difference;
     }
   };
 
   //gridRowSelecting QueryView: QV_5973_48889
   //Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.
+  //designer-hint: 2304: Cannot find name 'task_gridRowSelecting_QV_5973_48889'.
   task_gridRowSelecting_QV_5973_48889 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
+    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelGridRowSelectingEventArgs'.
     gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
   ) => {
     gridRowSelectingEventArgs.commons.execServer = false;

@@ -23,7 +23,7 @@ task_executeCommand_CM_TASSTSCN_T8S = (
             callFromGrid: false
         };
         nav.customDialogParameters = {
-            operation: operacion
+            operation: params.operation
 
         };
 

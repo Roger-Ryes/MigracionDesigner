@@ -29,5 +29,5 @@
         };
 
 
-        nav.openModalWindow("CEQV_201QV_AV40_EIS41_373", gridExecuteCommandEventArgs.modelRow);
+        nav.openModalWindow("CEQV_201QV_AV40_EIS41_373", gridExecuteCommandEventArgs.nameEntityGrid);
     };

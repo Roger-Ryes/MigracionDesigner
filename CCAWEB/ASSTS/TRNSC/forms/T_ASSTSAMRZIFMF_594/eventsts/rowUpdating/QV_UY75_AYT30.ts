@@ -17,7 +17,7 @@ task_gridRowUpdating_QV_UY75_AYT30 = (
             break;
         } else if (entities.RestructuringList.data()[i].finalOp && !entities.RestructuringList[i].reest) {
             //designer-hint: 2304: Cannot find name 'timer'.
-            gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_SELECCIEP_11167', false, null, timer);
+            gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_SELECCIEP_11167', false, null, this.ASSTS.timer);
             server = true;
                 break;
             }
@@ -28,7 +28,7 @@ task_gridRowUpdating_QV_UY75_AYT30 = (
     if (!entities.RestructuringList.data()[i].finalOp && entities.RestructuringList.data()[i].reest && !entities.RestructuringList[i].capitalize) {
         //server = true;
                 //designer-hint: 2304: Cannot find name 'timer'.
-                gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJATIID_57994', false, null, timer);
+                gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJATIID_57994', false, null, this.ASSTS.timer);
         break;
     }
 
@@ -46,7 +46,7 @@ task_gridRowUpdating_QV_UY75_AYT30 = (
     if (onlyOne > 1) {
         server = false;
         //designer-hint: 2304: Cannot find name 'timer'.
-        gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJASOPL_42627', false, null, timer);
+        gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJASOPL_42627', false, null, this.ASSTS.timer);
     }
 
     //SI NO HAY OP.FINAL NO SE CALCULA EL TOTAL

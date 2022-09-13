@@ -1,6 +1,10 @@
 //Start signature to Callback event to Q_DETAILAP_5973
+//designer-hint: 2304: Cannot find name 'task_executeQueryCallback_Q_DETAILAP_5973'.
 task_executeQueryCallback_Q_DETAILAP_5973 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryCallbackEventArgs'.
+    //designer-hint: 6133: 'executeQueryCallbackEventArgs' is declared but its value is never read.
     executeQueryCallbackEventArgs: CobisModelExecuteQueryCallbackEventArgs
 ) => {
     let totalDesembolso: any = 0;
@@ -11,6 +15,7 @@ task_executeQueryCallback_Q_DETAILAP_5973 = (
     }
 
     entities.DisbursementResult.sumTotal = totalDesembolso;
-    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal - entities.DisbursementResult.sumTotal;
+    entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal! - entities.DisbursementResult.sumTotal!;
+    //designer-hint: 2304: Cannot find name 'diferencia'.
     diferencia =  entities.DisbursementResult.difference;
 };

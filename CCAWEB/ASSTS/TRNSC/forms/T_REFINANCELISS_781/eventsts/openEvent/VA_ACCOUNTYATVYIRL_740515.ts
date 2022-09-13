@@ -1,5 +1,3 @@
-//designer-hint: 2304: Cannot find name 'task_textInputButtonEvent_VA_ACCOUNTYATVYIRL_740515'.
-//designer-hint: 2304: Cannot find name 'CobisModelOnInputButtonEventArgs'.
 task_textInputButtonEvent_VA_ACCOUNTYATVYIRL_740515 = (textInputButtonEventArgs: CobisModelOnInputButtonEventArgs) => {
       textInputButtonEventArgs.commons.execServer = false;
       /*if (textInputButtonEventArgs.model.RefinanceLoanFilter.clientName != null && textInputButtonEventArgs.model.RefinanceLoanFilter.currencyType != null){
@@ -57,7 +55,6 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
         };
     } else {
         textInputButtonEventArgs.cancel = true;
-        //designer-hint: 2304: Cannot find name 'timer'.
         textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DEDESELCA_14854", false, null, timer);
       }
     };

@@ -88,6 +88,10 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
   //Entity: SearchProjectionReadjustement
   //SearchProjectionReadjustement.dateReadjustment (DateField) View: ProjectionReadjustmentForm
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
+  //designer-hint: 2304: Cannot find name 'task_change_VA_DATEREADJUSTNEM_341798'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
+  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_change_VA_DATEREADJUSTNEM_341798 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
     changedEventArgs.commons.api.grid.removeAllRows("ListProjectionReadjustement");
@@ -97,6 +101,10 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
   //Entity: SearchProjectionReadjustement
   //SearchProjectionReadjustement.percentage (TextInputBox) View: ProjectionReadjustmentForm
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
+  //designer-hint: 2304: Cannot find name 'task_change_VA_PERCENTAGEKQGYS_540798'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
+  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_change_VA_PERCENTAGEKQGYS_540798 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
     changedEventArgs.commons.api.grid.removeAllRows("ListProjectionReadjustement");
@@ -105,10 +113,13 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
 
   // () View: View of ProjectionReadjustmentForm
   //Evento changeGroup : Evento change para pestañas, collapsible y accordion.
+  //designer-hint: 2304: Cannot find name 'task_changeGroup_G_PROJECTENT_572798'.
+  //designer-hint: 2304: Cannot find name 'Model'.
   task_changeGroup_G_PROJECTENT_572798 = (entities: Model, changedGroupEventArgs: any) => {
     changedGroupEventArgs.commons.execServer = false;
 
     let nav: any = changedGroupEventArgs.commons.api.navigation;
+    //designer-hint: 6133: 'params' is declared but its value is never read.
     let params: any = nav.getCustomDialogParameters();
 
     if ((changedGroupEventArgs.commons.item.id === 'G_PROJECTNTR_773798') && (changedGroupEventArgs.commons.item.isOpen === true)) {
@@ -169,8 +180,12 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
   };
 
   // (Button) 
+  //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_TASSTSPE_16S'.
   task_executeCommand_CM_TASSTSPE_16S = (
+    //designer-hint: 2304: Cannot find name 'Model'.
+    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
 
@@ -178,27 +193,38 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
   }
 
   //Start signature to Callback event to CM_TASSTSPE_16S
+  //designer-hint: 2304: Cannot find name 'task_executeCommandCallback_CM_TASSTSPE_16S'.
   task_executeCommandCallback_CM_TASSTSPE_16S = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandCallbackEventArgs'.
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      Amortization.showTableAmortization("QV_EB77_IIB88", entities, executeCommandCallbackEventArgs);
+      //designer-hint: 2304: Cannot find name 'Amortization'.
+      this.ASSTS.Amortization.showTableAmortization("QV_EB77_IIB88", entities, executeCommandCallbackEventArgs);
       executeCommandCallbackEventArgs.commons.api.viewState.show('CM_TASSTSPE_87R');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, timer);
+      //designer-hint: 2304: Cannot find name 'timer'.
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_TRANSACEC_23845', false, null, this.ASSTS.timer);
     }
   };
 
 
   // (Button) 
+  //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_TASSTSPE_87R'.
   task_executeCommand_CM_TASSTSPE_87R = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
     let reportTitle: any = this.cobis.translate('ASSTS.LBL_ASSTS_IMPRESINN_23469');
     let reportItem: any = "";
     let reportName: any = "SimulationReadjustement";
-    let infoDate: any = kendo.toString(kendo.parseDate(entities.SearchProjectionReadjustement.dateReadjustment), JSON.parse(sessionStorage.dateFormat)); //Nombre del archivo
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // TODO
+    // let infoDate: any = kendo.toString(entities.SearchProjectionReadjustement.dateReadjustment,JSON.parse(sessionStorage.dateFormat));//Nombre del archivo
+    let infoDate: any = entities.SearchProjectionReadjustement.dateReadjustment; //Nombre del archivo
 
     let args: any = [
       ['report.module', 'cartera'],
@@ -212,20 +238,27 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
       ['monto', entities.Loan.balanceDue]
     ];
 
-    Utils.generarReporte(reportItem, args, reportTitle);
+    //designer-hint: 2304: Cannot find name 'Utils'.
+    this.ASSTS.Utils.generarReporte(reportItem, args, reportTitle);
 
     executeCommandEventArgs.commons.execServer = false;
   };
 
   //ListProjectionReadjustementQuery Entity: ListProjectionReadjustement
+  //designer-hint: 2304: Cannot find name 'task_executeQuery_Q_LISTCEEE_FJ77'.
+  //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
   task_executeQuery_Q_LISTCEEE_FJ77 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
     executeQueryEventArgs.commons.execServer = false;
   };
 
   //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
   //ViewContainer: ProjectionReadjustmentForm
+  //designer-hint: 2304: Cannot find name 'task_initData_VC_PROJECTIRJ_862619'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
   task_initData_VC_PROJECTIRJ_862619 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
     let nav: any = initDataEventArgs.commons.api.navigation;
+    //designer-hint: 6133: 'params' is declared but its value is never read.
     let params: any = nav.getCustomDialogParameters();
 
     entities.SearchProjectionReadjustement.percentage = 0;
@@ -253,8 +286,13 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
   };
 
   //Start signature to Callback event to VC_PROJECTIRJ_862619
+  //designer-hint: 2304: Cannot find name 'task_initDataCallback_VC_PROJECTIRJ_862619'.
   task_initDataCallback_VC_PROJECTIRJ_862619 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
+    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelInitDataCallbackEventArgs'.
+    //designer-hint: 6133: 'initDataCallbackEventArgs' is declared but its value is never read.
     initDataCallbackEventArgs: CobisModelInitDataCallbackEventArgs
   ) => {
     //here your code
@@ -263,17 +301,37 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
 
   //Evento render : Se ejecuta antes de renderizar un control, permite realizar personalizaciones visuales
   //ViewContainer: ProjectionReadjustmentForm
+  //designer-hint: 2304: Cannot find name 'task_render'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelRenderEventArgs'.
   task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
     renderEventArgs.commons.execServer = false;
     //FORMAT HEADER
-    entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
-    entities.Loan.amount = kendo.toString(entities.Loan.amount, "n");
-    entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
-    entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    // TODO
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.startDate = kendo.toString(entities.Loan.startDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.endDate = kendo.toString(entities.Loan.endDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.feeEndDate = kendo.toString(entities.Loan.feeEndDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.lastProcessDate = kendo.toString(entities.Loan.lastProcessDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.amount = kendo.toString(entities.Loan.amount, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    entities.Loan.startDate = entities.Loan.startDate;
+    entities.Loan.endDate = entities.Loan.endDate;
+    entities.Loan.feeEndDate = entities.Loan.feeEndDate;
+    entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
+    entities.Loan.balanceDue = entities.Loan.balanceDue;
+    entities.Loan.amount = entities.Loan.amount;
+    entities.Loan.amountApproved = entities.Loan.amountApproved;
+    entities.Loan.nextPayment = entities.Loan.nextPayment;
 
     for (let i: any = 1; i < 16; i++) {
       renderEventArgs.commons.api.grid.hideColumn("QV_EB77_IIB88", "items" + i);
@@ -286,8 +344,12 @@ export class VcProjectirj862619Custom extends CobisDesignerCustomEvent {
 
   //gridRowSelecting QueryView: QV_EB77_IIB88
   //Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.
+  //designer-hint: 2304: Cannot find name 'task_gridRowSelecting_QV_EB77_IIB88'.
   task_gridRowSelecting_QV_EB77_IIB88 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
+    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelGridRowSelectingEventArgs'.
     gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
   ) => {
 

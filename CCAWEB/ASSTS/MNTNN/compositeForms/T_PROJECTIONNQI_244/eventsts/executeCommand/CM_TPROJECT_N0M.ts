@@ -6,7 +6,7 @@
         
         if (entities.Loan.status == 'NO VIGENTE' || entities.Loan.status == 'CANCELADO' || entities.Loan.status == 'CREDITO' || entities.Loan.status == 'COMEX') {
             executeCommandEventArgs.commons.execServer = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ESTADONPO_17159', false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ESTADONPO_17159', false, null, this.ASSTS.timer);
     } else {
 executeCommandEventArgs.commons.execServer = true;
 

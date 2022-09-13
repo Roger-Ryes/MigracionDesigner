@@ -1,8 +1,5 @@
 //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
     //ViewContainer: PaymentsMain
-    //designer-hint: 2304: Cannot find name 'task_initData_VC_PAYMENTSAN_916157'.
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
     task_initData_VC_PAYMENTSAN_916157 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
         let commons: any = initDataEventArgs.commons;
         let api: any=initDataEventArgs.commons.api;

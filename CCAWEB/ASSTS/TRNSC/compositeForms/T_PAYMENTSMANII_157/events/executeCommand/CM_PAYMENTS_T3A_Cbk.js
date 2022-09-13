@@ -35,7 +35,7 @@ task.executeCommandCallback.CM_PAYMENTS_T3A = function(entities, executeCommandC
     if (entities.Loan.tipo == 'G' && ioperacionGrupal == 'F') {
         ioperacionGrupal = null;
         if (entities.PaymentGroup.fechaVen > entities.PaymentGroup.fechaUltProc){
-           /* executeCommandCallbackEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_DESEAAPNN_11437")
+            /*executeCommandCallbackEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_DESEAAPNN_11437")
                 .then(function (response) {
                     if (response.buttonIndex == 0){
                        ioperacionGrupal = 'F';
@@ -43,7 +43,7 @@ task.executeCommandCallback.CM_PAYMENTS_T3A = function(entities, executeCommandC
 					if (response.buttonIndex == 1){
 						executeCommandCallbackEventArgs.commons.api.vc.executeCommand('CM_PAYMENTS_T3A', 'PaymentsMain', undefined, true, false, 'VC_PAYMENTSAN_916157', false);
 					}
-                });   */         
+                });    */        
         } else {
             executeCommandCallbackEventArgs.commons.api.vc.executeCommand('CM_PAYMENTS_T3A', 'PaymentsMain', undefined, true, false, 'VC_PAYMENTSAN_916157', false);
         }

@@ -88,10 +88,7 @@ export class VcTransacton836272Custom extends CobisDesignerCustomEvent {
 
 
   //ListTransactionQueryQuery Entity: ListTransactionQuery
-  //designer-hint: 2304: Cannot find name 'task_executeQuery_Q_LISTCACN_AT28'.
-  //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
   task_executeQuery_Q_LISTCACN_AT28 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
-    //designer-hint: 6133: 'executeServer' is declared but its value is never read.
     let executeServer: any = true;
     let transacQueryFilter: any = executeQueryEventArgs.commons.api.vc.model.FilterTransactionQuery;
     let listTransactionQuery: any = executeQueryEventArgs.commons.api.vc.model.ListTransactionQuery;
@@ -129,8 +126,6 @@ export class VcTransacton836272Custom extends CobisDesignerCustomEvent {
 
 
   //TypeTransactionQueryQuery Entity: TypeTransactionQuery
-  //designer-hint: 2304: Cannot find name 'task_executeQuery_Q_TYPESIAO_HG77'.
-  //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
   task_executeQuery_Q_TYPESIAO_HG77 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
     executeQueryEventArgs.commons.execServer = true;
     //executeQueryEventArgs.commons.serverParameters.TypeTransactionQuery = true;
@@ -138,13 +133,8 @@ export class VcTransacton836272Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to Q_TYPESIAO_HG77
-  //designer-hint: 2304: Cannot find name 'task_executeQueryCallback_Q_TYPESIAO_HG77'.
   task_executeQueryCallback_Q_TYPESIAO_HG77 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryCallbackEventArgs'.
-    //designer-hint: 6133: 'executeQueryCallbackEventArgs' is declared but its value is never read.
     executeQueryCallbackEventArgs: CobisModelExecuteQueryCallbackEventArgs
   ) => {
     //here your code
@@ -155,10 +145,6 @@ export class VcTransacton836272Custom extends CobisDesignerCustomEvent {
 
   //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
   //ViewContainer: TransactionQueryForm
-  //designer-hint: 2304: Cannot find name 'task_initData_VC_TRANSACTON_836272'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
-  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_initData_VC_TRANSACTON_836272 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
 
     initDataEventArgs.commons.execServer = false;
@@ -169,11 +155,8 @@ export class VcTransacton836272Custom extends CobisDesignerCustomEvent {
 
   //gridRowSelecting QueryView: 
   //Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.
-  //designer-hint: 2304: Cannot find name 'task_gridRowSelecting_QV_LM28_ZKS23'.
   task_gridRowSelecting_QV_LM28_ZKS23 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridRowSelectingEventArgs'.
     gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
   ) => {
     //Open Modal

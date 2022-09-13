@@ -57,7 +57,7 @@ import {
 } from 'cobis-designer';
 
 /* variables locales de T_ASSTSBIBQRXFV_119*/
-let tab: any = this.cobis.container.tabs.getCurrentTab();
+// let tab: any = this.cobis.container.tabs.getCurrentTab();
 
 export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
@@ -89,6 +89,8 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
   // () View: View of GeneralInformationMain
   //Evento changeGroup : Evento change para pestañas, collapsible y accordion.
+  //designer-hint: 2304: Cannot find name 'task_changeGroup_G_GENERALNTN_956193'.
+  //designer-hint: 2304: Cannot find name 'Model'.
   task_changeGroup_G_GENERALNTN_956193 = (entities: Model, changedGroupEventArgs: any) => {
     changedGroupEventArgs.commons.execServer = false;
 
@@ -522,8 +524,12 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
   };
 
   // (Button) 
+  //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_TASSTSBI_BA1'.
   task_executeCommand_CM_TASSTSBI_BA1 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
+    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
     let apiHeader: any = executeCommandEventArgs.commons.api.cobisPatterns.header;
@@ -534,14 +540,17 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to CM_TASSTSBI_BA1
+  //designer-hint: 2304: Cannot find name 'task_executeCommandCallback_CM_TASSTSBI_BA1'.
   task_executeCommandCallback_CM_TASSTSBI_BA1 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandCallbackEventArgs'.
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     executeCommandCallbackEventArgs.commons.api.viewState.selectLayout("G_GENERALNTN_956193", "G_GENERALIIO_430193");
 
 
-    if (!executeCommandCallbackEventArgs.commons.api.vc.dialogParameters.controlId || executeCommandCallbackEventArgs.commons.api.vc.dialogParameters.controlId == 'G_GENERALMMI_992193') {
+    if (!executeCommandCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().controlId || executeCommandCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().controlId == 'G_GENERALMMI_992193') {
       let nav: any = executeCommandCallbackEventArgs.commons.api.navigation;
       //Pantalla: Resumen general del estado del préstamo
 
@@ -581,28 +590,48 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
 
     //FORMAT DATE
-    entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
-    entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
-    entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    // TODO
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.startDate = kendo.toString(entities.Loan.startDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.endDate = kendo.toString(entities.Loan.endDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.feeEndDate = kendo.toString(entities.Loan.feeEndDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.lastProcessDate = kendo.toString(entities.Loan.lastProcessDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    //  entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    entities.Loan.startDate = entities.Loan.startDate;
+    entities.Loan.endDate = entities.Loan.endDate;
+    entities.Loan.feeEndDate = entities.Loan.feeEndDate;
+    entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
+    entities.Loan.balanceDue = entities.Loan.balanceDue;
+    entities.Loan.amountApproved = entities.Loan.amountApproved;
+    entities.Loan.nextPayment = entities.Loan.nextPayment;
   };
 
 
   //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
   //ViewContainer: GeneralInformationMain
+  //designer-hint: 2304: Cannot find name 'task_initData_VC_GENERALIAO_289119'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
   task_initData_VC_GENERALIAO_289119 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
+    //designer-hint: 6133: 'nav' is declared but its value is never read.
     let nav: any = initDataEventArgs.commons.api.navigation;
     let api: any = initDataEventArgs.commons.api;
     let apiHeader: any = initDataEventArgs.commons.api.cobisPatterns.header;
     let parameters: any = null;
+    //designer-hint: 6133: 'xsell' is declared but its value is never read.
     let xsell: any = 'N';
 
-    if (tab.parameters) {
+    if (this.ASSTS.tab.parameters) {
       apiHeader.visibleSearchOption(false);
-      parameters = tab.parameters;
+      parameters = this.ASSTS.tab.parameters;
 
       entities.Loan.adjustment = parameters.adjustment;
       entities.Loan.amount = parameters.amount;
@@ -665,14 +694,17 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to VC_GENERALIAO_289119
+  //designer-hint: 2304: Cannot find name 'task_initDataCallback_VC_GENERALIAO_289119'.
   task_initDataCallback_VC_GENERALIAO_289119 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelInitDataCallbackEventArgs'.
     initDataCallbackEventArgs: CobisModelInitDataCallbackEventArgs
   ) => {
     let nav: any = initDataCallbackEventArgs.commons.api.navigation;
 
-    if (tab.parameters) {
-      entities.Loan.desOperationType = tab.parameters.desOperationType;
+    if (this.ASSTS.tab.parameters) {
+      entities.Loan.desOperationType = this.ASSTS.tab.parameters.desOperationType;
     } else {
       entities.Loan.desOperationType = nav.getCustomDialogParameters().parameters.loan.desOperationType;
     }
@@ -721,6 +753,10 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
   //Evento onCloseModalEvent : Evento que actua como listener cuando se cierra ventanas modales.
   //ViewContainer: GeneralInformationMain
+  //designer-hint: 2304: Cannot find name 'task_onCloseModalEvent'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelOnCloseModalEventArgs'.
+  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_onCloseModalEvent = (entities: Model, onCloseModalEventArgs: CobisModelOnCloseModalEventArgs) => {
     let apiHeader: any = onCloseModalEventArgs.commons.api.cobisPatterns.header;
     apiHeader.refreshActions();
@@ -729,14 +765,17 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
   };
 
   //Start signature to Callback event to VC_GENERALIAO_289119
+  //designer-hint: 2304: Cannot find name 'task_onCloseModalEventCallback'.
   task_onCloseModalEventCallback = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelOnCloseModalCallbackEventArgs'.
     onCloseModalCallbackEventArgs: CobisModelOnCloseModalCallbackEventArgs
   ) => {
     onCloseModalCallbackEventArgs.commons.api.viewState.selectLayout("G_GENERALNTN_956193", "G_GENERALIIO_430193");
 
 
-    if (!onCloseModalCallbackEventArgs.commons.api.vc.dialogParameters.controlId || onCloseModalCallbackEventArgs.commons.api.vc.dialogParameters.controlId == 'G_GENERALMMI_992193') {
+    if (!onCloseModalCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().controlId || onCloseModalCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().controlId == 'G_GENERALMMI_992193') {
       let nav: any = onCloseModalCallbackEventArgs.commons.api.navigation;
       //Pantalla: Resumen general del estado del préstamo
 
@@ -776,13 +815,29 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
 
     //FORMAT DATE
-    entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
-    entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
-    entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    // TODO
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.startDate = kendo.toString(entities.Loan.startDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.endDate = kendo.toString(entities.Loan.endDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.feeEndDate = kendo.toString(entities.Loan.feeEndDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.lastProcessDate = kendo.toString(entities.Loan.lastProcessDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    entities.Loan.startDate = entities.Loan.startDate;
+    entities.Loan.endDate = entities.Loan.endDate;
+    entities.Loan.feeEndDate = entities.Loan.feeEndDate;
+    entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
+    entities.Loan.balanceDue = entities.Loan.balanceDue;
+    entities.Loan.amountApproved = entities.Loan.amountApproved;
+    entities.Loan.nextPayment = entities.Loan.nextPayment;
+
   };
 
 
@@ -790,15 +845,33 @@ export class VcGeneraliao289119Custom extends CobisDesignerCustomEvent {
 
   //Evento render : Se ejecuta antes de renderizar un control, permite realizar personalizaciones visuales
   //ViewContainer: GeneralInformationMain
+  //designer-hint: 2304: Cannot find name 'task_render'.
+  //designer-hint: 2304: Cannot find name 'Model'.
+  //designer-hint: 2304: Cannot find name 'CobisModelRenderEventArgs'.
   task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
     //FORMAT DATE
-    entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
-    entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
-    entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    // TODO
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.startDate = kendo.toString(entities.Loan.startDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.endDate = kendo.toString(entities.Loan.endDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.feeEndDate = kendo.toString(entities.Loan.feeEndDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.lastProcessDate = kendo.toString(entities.Loan.lastProcessDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    entities.Loan.startDate = entities.Loan.startDate;
+    entities.Loan.endDate = entities.Loan.endDate;
+    entities.Loan.feeEndDate = entities.Loan.feeEndDate;
+    entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
+    entities.Loan.balanceDue = entities.Loan.balanceDue;
+    entities.Loan.amountApproved = entities.Loan.amountApproved;
+    entities.Loan.nextPayment = entities.Loan.nextPayment;
 
     renderEventArgs.commons.execServer = false;
 

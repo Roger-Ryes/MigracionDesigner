@@ -168,50 +168,30 @@ export class VcLoansrestn297594Custom extends CobisDesignerCustomEvent {
   //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
   //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_change_VA_TEXTINPUTBOXLJF_575701 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
-
     changedEventArgs.commons.execServer = false;
+
     //Recuperación de fila en edición
-    //designer-hint: 2304: Cannot find name 'currentRowData'.
-    currentRowData = changedEventArgs.rowData;
+    let currentRowData: any = changedEventArgs.rowData;
 
     if (changedEventArgs.newValue == 'N') { // Saldo Capital
-      changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance;
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
-      changedEventArgs.rowData.toPay = changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems;
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', changedEventArgs.rowData.toPay);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', changedEventArgs.rowData.toPay);
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.capitalBalance);
 
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', (changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems));
     } else if (changedEventArgs.newValue == 'S') { //Saldo Cap + interes
-      changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance;
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', (changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance));
 
       changedEventArgs.rowData.toPay = changedEventArgs.rowData.otherItems;
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', changedEventArgs.rowData.toPay);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', changedEventArgs.rowData.toPay);
-
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', (changedEventArgs.rowData.otherItems));
     } else if (changedEventArgs.newValue == 'T') { //saldo cap+interes+otros
-      changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems;
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', 0.00);
-    } else {
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', 0.00);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', 0.00);
-      //designer-hint: 2304: Cannot find name 'currentRowData'.
-      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
-      //        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', 0.00);
-    }
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', (changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems));
 
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
+
+    } else {
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', 0.00);
+
+      changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
+    }
   };
 
 
@@ -235,7 +215,7 @@ export class VcLoansrestn297594Custom extends CobisDesignerCustomEvent {
       nameAux = this.cobis.translate("ASSTS.LBL_ASSTS_REESTRURC_23393");
     }
 
-    this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+    this.ASSTS.container.changeCurrentTab(idAux, urlAux, nameAux, true);
   };
 
 
@@ -505,7 +485,7 @@ export class VcLoansrestn297594Custom extends CobisDesignerCustomEvent {
         break;
       } else if (entities.RestructuringList.data()[i].finalOp && !entities.RestructuringList[i].reest) {
         //designer-hint: 2304: Cannot find name 'timer'.
-        gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_SELECCIEP_11167', false, null, timer);
+        gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_SELECCIEP_11167', false, null, this.ASSTS.timer);
         server = true;
         break;
       }
@@ -516,7 +496,7 @@ export class VcLoansrestn297594Custom extends CobisDesignerCustomEvent {
       if (!entities.RestructuringList.data()[i].finalOp && entities.RestructuringList.data()[i].reest && !entities.RestructuringList[i].capitalize) {
         //server = true;
         //designer-hint: 2304: Cannot find name 'timer'.
-        gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJATIID_57994', false, null, timer);
+        gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJATIID_57994', false, null, this.ASSTS.timer);
         break;
       }
 
@@ -534,7 +514,7 @@ export class VcLoansrestn297594Custom extends CobisDesignerCustomEvent {
     if (onlyOne > 1) {
       server = false;
       //designer-hint: 2304: Cannot find name 'timer'.
-      gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJASOPL_42627', false, null, timer);
+      gridRowUpdatingEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELIJASOPL_42627', false, null, this.ASSTS.timer);
     }
 
     //SI NO HAY OP.FINAL NO SE CALCULA EL TOTAL

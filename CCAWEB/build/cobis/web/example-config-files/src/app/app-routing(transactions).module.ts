@@ -26,6 +26,7 @@ import { VcLeftoverpm168459Component } from './ASSTS/TRNSC/T_LEFTOVERPALDD_459/1
 import { VcLoandisbmn824275Component } from './ASSTS/TRNSC/T_LOANDISBURSAA_275/1.0.0/vc-loandisbmn-824275.component';
 import { VcNegotiatoo775700Component } from './ASSTS/TRNSC/T_NEGOTIATIOTML_700/1.0.0/vc-negotiatoo-775700.component';
 import { VcPaymentmde245368Component } from './ASSTS/TRNSC/T_PAYMENTMODEEE_368/1.0.0/vc-paymentmde-245368.component';
+import { VcPaymentsan916157Component } from './ASSTS/TRNSC/T_PAYMENTSMANII_157/1.0.0/vc-paymentsan-916157.component';
 import { VcPaymentsfw851850Component } from './ASSTS/TRNSC/T_PAYMENTSTENLV_850/1.0.0/vc-paymentsfw-851850.component';
 import { VcPrioritiom989489Component } from './ASSTS/TRNSC/T_PRIORITIESENY_489/1.0.0/vc-prioritiom-989489.component';
 import { VcQuotadetaa445745Component } from './ASSTS/TRNSC/T_QUOTADETAISOY_745/1.0.0/vc-quotadetaa-445745.component';
@@ -158,6 +159,11 @@ const routes: Routes = [
     path: 'assts/trnsc/t_paymentmodeee_368/1.0.0/vc_paymentmde_245368',
     component: VcPaymentmde245368Component,
     loadChildren: () => import('./ASSTS/TRNSC/T_PAYMENTMODEEE_368/1.0.0/vc-paymentmde-245368.module').then(m=>m.VcPaymentmde245368Module)
+  },
+  {
+    path: 'assts/trnsc/t_paymentsmanii_157/1.0.0/vc_paymentsan_916157',
+    component: VcPaymentsan916157Component,
+    loadChildren: () => import('./ASSTS/TRNSC/T_PAYMENTSMANII_157/1.0.0/vc-paymentsan-916157.module').then(m=>m.VcPaymentsan916157Module)
   },
   {
     path: 'assts/trnsc/t_paymentstenlv_850/1.0.0/vc_paymentsfw_851850',

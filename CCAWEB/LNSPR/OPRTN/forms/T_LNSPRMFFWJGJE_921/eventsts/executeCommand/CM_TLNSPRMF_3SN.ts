@@ -9,8 +9,8 @@ task_executeCommand_CM_TLNSPRMF_3SN = (
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-        nameAux = this.cobis.container.tabs.getCurrentTab().text;
+    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+        nameAux = this.cobis.container.tabs.getCurrentTab().name;
     } else {
         if (entities.LoanSearchFilter.mode == 'C') {
             nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_CAMBIOTAS_63595");

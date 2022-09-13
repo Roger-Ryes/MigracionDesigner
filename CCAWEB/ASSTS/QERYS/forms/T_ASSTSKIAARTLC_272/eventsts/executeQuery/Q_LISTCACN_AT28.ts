@@ -1,9 +1,6 @@
 
 //ListTransactionQueryQuery Entity: ListTransactionQuery
-//designer-hint: 2304: Cannot find name 'task_executeQuery_Q_LISTCACN_AT28'.
-//designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
 task_executeQuery_Q_LISTCACN_AT28 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
-       //designer-hint: 6133: 'executeServer' is declared but its value is never read.
        let executeServer: any = true;
        let transacQueryFilter: any= executeQueryEventArgs.commons.api.vc.model.FilterTransactionQuery;
        let listTransactionQuery: any = executeQueryEventArgs.commons.api.vc.model.ListTransactionQuery;

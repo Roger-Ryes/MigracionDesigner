@@ -617,8 +617,8 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-      nameAux = this.cobis.container.tabs.getCurrentTab().text;
+    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+      nameAux = this.cobis.container.tabs.getCurrentTab().name;
     } else {
       if (entities.LoanSearchFilter.mode == 'C') {
         nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_CAMBIOTAS_63595");
@@ -858,8 +858,8 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       case 1: //accept
         executeCommandEventArgs.commons.execServer = true;
 
-        if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-          nameAux = this.cobis.container.tabs.getCurrentTab().text;
+        if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+          nameAux = this.cobis.container.tabs.getCurrentTab().name;
         } else {
           nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAOS_76833");
         }

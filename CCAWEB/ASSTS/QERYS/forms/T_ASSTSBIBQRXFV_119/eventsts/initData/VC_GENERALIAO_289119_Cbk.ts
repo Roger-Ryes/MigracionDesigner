@@ -1,12 +1,15 @@
 //Start signature to Callback event to VC_GENERALIAO_289119
+//designer-hint: 2304: Cannot find name 'task_initDataCallback_VC_GENERALIAO_289119'.
 task_initDataCallback_VC_GENERALIAO_289119 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelInitDataCallbackEventArgs'.
     initDataCallbackEventArgs: CobisModelInitDataCallbackEventArgs
 ) => {
     let nav: any = initDataCallbackEventArgs.commons.api.navigation;
 
-    if(tab.parameters){
-       entities.Loan.desOperationType = tab.parameters.desOperationType;
+    if(this.ASSTS.tab.parameters){
+       entities.Loan.desOperationType = this.ASSTS.tab.parameters.desOperationType;
     }else{
     entities.Loan.desOperationType = nav.getCustomDialogParameters().parameters.loan.desOperationType;
     }

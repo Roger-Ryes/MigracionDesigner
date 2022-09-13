@@ -1,5 +1,7 @@
 // () View: View of LoansHistoricForm
 //Evento changeGroup : Evento change para pestañas, collapsible y accordion.
+//designer-hint: 2304: Cannot find name 'task_changeGroup_G_LOANSHIRII_607863'.
+//designer-hint: 2304: Cannot find name 'Model'.
 task_changeGroup_G_LOANSHIRII_607863 = (entities: Model, changedGroupEventArgs: any) => {
     changedGroupEventArgs.commons.execServer = false;
 

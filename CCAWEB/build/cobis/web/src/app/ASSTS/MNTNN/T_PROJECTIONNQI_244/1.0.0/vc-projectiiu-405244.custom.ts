@@ -139,7 +139,7 @@ export class VcProjectiiu405244Custom extends CobisDesignerCustomEvent {
 
     if (entities.Loan.status == 'NO VIGENTE' || entities.Loan.status == 'CANCELADO' || entities.Loan.status == 'CREDITO' || entities.Loan.status == 'COMEX') {
       executeCommandEventArgs.commons.execServer = false;
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ESTADONPO_17159', false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ESTADONPO_17159', false, null, this.ASSTS.timer);
     } else {
       executeCommandEventArgs.commons.execServer = true;
 
@@ -184,14 +184,23 @@ export class VcProjectiiu405244Custom extends CobisDesignerCustomEvent {
     api.vc.viewState.VA_TIPOUWNWJMGVYCI_648517.disabled = false;
 
     //FORMAT DATE
-    entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
-    entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
-    entities.Loan.amount = kendo.toString(entities.Loan.amount, "n");
-    entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    // TODO
+    // entities.Loan.startDate = kendo.toString(entities.Loan.startDate, JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.endDate = kendo.toString(entities.Loan.endDate, JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.feeEndDate = kendo.toString(entities.Loan.feeEndDate, JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.lastProcessDate = kendo.toString(entities.Loan.lastProcessDate, JSON.parse(sessionStorage.dateFormat));
+    // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
+    // entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
+    // entities.Loan.amount = kendo.toString(entities.Loan.amount, "n");
+    // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    entities.Loan.startDate = entities.Loan.startDate;
+    entities.Loan.endDate = entities.Loan.endDate;
+    entities.Loan.feeEndDate = entities.Loan.feeEndDate;
+    entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
+    entities.Loan.balanceDue = entities.Loan.balanceDue;
+    entities.Loan.amountApproved = entities.Loan.amountApproved;
+    entities.Loan.amount = entities.Loan.amount;
+    entities.Loan.nextPayment = entities.Loan.nextPayment;
   };
 
 

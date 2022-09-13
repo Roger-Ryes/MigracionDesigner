@@ -86,9 +86,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //  Eventos de VISUAL ATTRIBUTES
   //**********************************************************   
 
-  //designer-hint: 2693: 'any' only refers to a type, but is being used as a value here.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 7028: Unused label.
   cleanElements: any = (entities: Model) => {
     entities.RefinanceLoanFilter.totalRefinance = 0;
     entities.RefinanceLoanFilter.totalToRenew = entities.RefinanceLoanFilter.totalRefinance;
@@ -133,12 +130,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
 
-  //designer-hint: 2304: Cannot find name 'task_gridRowCommand_VA_CHECKBOXKZZRISM_582515'.
   task_gridRowCommand_VA_CHECKBOXKZZRISM_582515 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridRowCommandExecuteEventArgs'.
     gridRowCommandEventArgs: CobisModelGridRowCommandExecuteEventArgs
   ) => {
 
@@ -155,9 +148,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.graceDividend (TextInputBox) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_5032SUOKWXIJNUR_934515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
   task_change_VA_5032SUOKWXIJNUR_934515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
 
@@ -167,13 +157,11 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
     if (entities.RefinanceLoanFilter.typeGrace == 'S' && totalTerm > entities.RefinanceLoanFilter.newLoanTerm) {
 
-      //designer-hint: 2304: Cannot find name 'timer'.
       changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELNUMDEDS_61097', false, null, timer);
 
       entities.RefinanceLoanFilter.graceDividend = 0;
 
     } else if (entities.RefinanceLoanFilter.typeGrace == 'S' && entities.RefinanceLoanFilter.graceDividend < 0) {
-      //designer-hint: 2304: Cannot find name 'timer'.
       changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELNUMDEER_90307', false, null, timer);
 
       entities.RefinanceLoanFilter.graceDividend = 0;
@@ -183,10 +171,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.addicionalPayMethod (DropDownList) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_ADDICIONALPAYOH_649515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
-  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_change_VA_ADDICIONALPAYOH_649515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     changedEventArgs.commons.execServer = false;
@@ -202,9 +186,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.additionalValue (TextInputBox) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_ADDITIONALVAUUU_896515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
   task_change_VA_ADDITIONALVAUUU_896515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     if (changedEventArgs.newValue != null) {
       changedEventArgs.commons.execServer = true;
@@ -242,13 +223,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to VA_ADDITIONALVAUUU_896515
-  //designer-hint: 2304: Cannot find name 'task_changeCallback_VA_ADDITIONALVAUUU_896515'.
   task_changeCallback_VA_ADDITIONALVAUUU_896515 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelChangeCallbackEventArgs'.
-    //designer-hint: 6133: 'changeCallbackEventArgs' is declared but its value is never read.
     changeCallbackEventArgs: CobisModelChangeCallbackEventArgs
   ) => {
     //here your code
@@ -260,10 +236,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.capitalizeBalance (RadioButtonList) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_CAPITALIZEBANNE_580515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
-  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_change_VA_CAPITALIZEBANNE_580515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     changedEventArgs.commons.execServer = true;
@@ -273,13 +245,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to VA_CAPITALIZEBANNE_580515
-  //designer-hint: 2304: Cannot find name 'task_changeCallback_VA_CAPITALIZEBANNE_580515'.
   task_changeCallback_VA_CAPITALIZEBANNE_580515 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelChangeCallbackEventArgs'.
-    //designer-hint: 6133: 'changeCallbackEventArgs' is declared but its value is never read.
     changeCallbackEventArgs: CobisModelChangeCallbackEventArgs
   ) => {
     //here your code
@@ -289,9 +256,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.clientName (TextInputButton) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_CLIENTNAMEBGXWU_198515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
   task_change_VA_CLIENTNAMEBGXWU_198515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     changedEventArgs.commons.execServer = false;
@@ -305,10 +269,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.newLoanCurrency (DropDownList) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_NEWLOANCURRENNN_364515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
-  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_change_VA_NEWLOANCURRENNN_364515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     changedEventArgs.commons.execServer = true;
@@ -318,12 +278,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to VA_NEWLOANCURRENNN_364515
-  //designer-hint: 2304: Cannot find name 'task_changeCallback_VA_NEWLOANCURRENNN_364515'.
   task_changeCallback_VA_NEWLOANCURRENNN_364515 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelChangeCallbackEventArgs'.
     changeCallbackEventArgs: CobisModelChangeCallbackEventArgs
   ) => {
     if (changeCallbackEventArgs.success) {
@@ -336,10 +292,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.payMethodCurrency (DropDownList) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_PAYMETHODCURCYE_344515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
-  //designer-hint: 6133: 'entities' is declared but its value is never read.
   task_change_VA_PAYMETHODCURCYE_344515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     changedEventArgs.commons.execServer = true;
@@ -350,13 +302,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to VA_PAYMETHODCURCYE_344515
-  //designer-hint: 2304: Cannot find name 'task_changeCallback_VA_PAYMETHODCURCYE_344515'.
   task_changeCallback_VA_PAYMETHODCURCYE_344515 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelChangeCallbackEventArgs'.
-    //designer-hint: 6133: 'changeCallbackEventArgs' is declared but its value is never read.
     changeCallbackEventArgs: CobisModelChangeCallbackEventArgs
   ) => {
     //here your code
@@ -366,9 +313,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.preventionProgram (ComboBox) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_PREVENTIONPRRAM_747515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
   task_change_VA_PREVENTIONPRRAM_747515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     if (String(entities.RefinanceLoanFilter.totalRefinance).indexOf(",") != -1) {
@@ -386,7 +330,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
       let operType: any = entities.RefinanceLoanFilter.operationType;
       if (this.cobis.utils.isUndefined(operType) || operType == null || operType == '') {
         changedEventArgs.commons.execServer = false;
-        //designer-hint: 2304: Cannot find name 'timer'.
         changedEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.LBL_ASSTS_DEBESELTA_29044', false, null, timer);
         entities.RefinanceLoanFilter.preventionProgram = "NAP";
         changedEventArgs.commons.api.viewState.focus("VA_OPERATIONTYPEEE_619515");
@@ -397,12 +340,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   };
 
   //Start signature to Callback event to VA_PREVENTIONPRRAM_747515
-  //designer-hint: 2304: Cannot find name 'task_changeCallback_VA_PREVENTIONPRRAM_747515'.
   task_changeCallback_VA_PREVENTIONPRRAM_747515 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelChangeCallbackEventArgs'.
-    //designer-hint: 6133: 'changeCallbackEventArgs' is declared but its value is never read.
     changeCallbackEventArgs: CobisModelChangeCallbackEventArgs
   ) => {
     //here your code
@@ -429,9 +368,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.termGraceInt (TextInputBox) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_TERMGRACEINTJNV_305515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
   task_change_VA_TERMGRACEINTJNV_305515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     changedEventArgs.commons.execServer = false;
@@ -447,9 +383,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.typeGrace (DropDownList) View: RefinanceLoansFilter
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-  //designer-hint: 2304: Cannot find name 'task_change_VA_TYPEGRACECCQFCY_562515'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
   task_change_VA_TYPEGRACECCQFCY_562515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     let viewState: any = changedEventArgs.commons.api.viewState;
     changedEventArgs.commons.execServer = false;
@@ -463,12 +396,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   };
 
   // (Button) 
-  //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_TREFINAN_4A_'.
   task_executeCommand_CM_TREFINAN_4A_ = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
     executeCommandEventArgs.commons.execServer = false;
@@ -487,11 +416,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   // (Button) 
-  //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_TREFINAN_9NC'.
   task_executeCommand_CM_TREFINAN_9NC = async (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
     executeCommandEventArgs.commons.execServer = false;
@@ -536,7 +462,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
     if (!hasError) {
-      //designer-hint: 2304: Cannot find name 'firstValueFrom'.
       let response: any = await firstValueFrom(
         executeCommandEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_ESTSEGUAL_93590")
       );
@@ -554,7 +479,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
     if (hasError) {
-      //designer-hint: 2304: Cannot find name 'timer'.
       executeCommandEventArgs.commons.messageHandler.showMessagesInformation(msgResourceID, false, null, timer);
     } else {
       executeCommandEventArgs.commons.execServer = true;
@@ -562,11 +486,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   };
 
   //Start signature to Callback event to CM_TREFINAN_9NC
-  //designer-hint: 2304: Cannot find name 'task_executeCommandCallback_CM_TREFINAN_9NC'.
   task_executeCommandCallback_CM_TREFINAN_9NC = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandCallbackEventArgs'.
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     let viewState: any = executeCommandCallbackEventArgs.commons.api.viewState;
@@ -587,8 +508,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //ListaFormaPagoQuery Entity: ListaFormaPago
-  //designer-hint: 2304: Cannot find name 'task_executeQuery_Q_LISTOOGA_DP31'.
-  //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
   task_executeQuery_Q_LISTOOGA_DP31 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
     executeQueryEventArgs.parameters.moneda = executeQueryEventArgs.commons.api.viewState.getDataItem("VA_PAYMETHODCURCYE_344515").code;
     executeQueryEventArgs.parameters.tipo = 1;
@@ -598,13 +517,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to Q_LISTOOGA_DP31
-  //designer-hint: 2304: Cannot find name 'task_executeQueryCallback_Q_LISTOOGA_DP31'.
   task_executeQueryCallback_Q_LISTOOGA_DP31 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryCallbackEventArgs'.
-    //designer-hint: 6133: 'executeQueryCallbackEventArgs' is declared but its value is never read.
     executeQueryCallbackEventArgs: CobisModelExecuteQueryCallbackEventArgs
   ) => {
     //here your code
@@ -612,8 +526,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //RenewableOperationsQuery Entity: 
-  //designer-hint: 2304: Cannot find name 'task_executeQuery_Q_REFINAAA_3375'.
-  //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryEventArgs'.
   task_executeQuery_Q_REFINAAA_3375 = (executeQueryEventArgs: CobisModelExecuteQueryEventArgs) => {
     executeQueryEventArgs.parameters.client = executeQueryEventArgs.commons.api.vc.model.RefinanceLoanFilter.clientID;
     executeQueryEventArgs.commons.execServer = true;
@@ -622,24 +534,16 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
   //Start signature to Callback event to Q_REFINAAA_3375
-  //designer-hint: 2304: Cannot find name 'task_executeQueryCallback_Q_REFINAAA_3375'.
   task_executeQueryCallback_Q_REFINAAA_3375 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteQueryCallbackEventArgs'.
-    //designer-hint: 6133: 'executeQueryCallbackEventArgs' is declared but its value is never read.
     executeQueryCallbackEventArgs: CobisModelExecuteQueryCallbackEventArgs
   ) => {
     //here your code
   };
 
 
-  //designer-hint: 2304: Cannot find name 'task_gridInitColumnTemplate_QV_3375_11342'.
   task_gridInitColumnTemplate_QV_3375_11342 = (
     idColumn: any,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridInitColumnTemplateEventArgs'.
-    //designer-hint: 6133: 'gridInitColumnTemplateEventArgs' is declared but its value is never read.
     gridInitColumnTemplateEventArgs: CobisModelGridInitColumnTemplateEventArgs
   ) => {
     //if(idColumn === 'NombreColumna'){
@@ -662,12 +566,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
 
 
-  //designer-hint: 2304: Cannot find name 'task_gridInitEditColumnTemplate_QV_3375_11342'.
   task_gridInitEditColumnTemplate_QV_3375_11342 = (
-    //designer-hint: 6133: 'idColumn' is declared but its value is never read.
     idColumn: any,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridInitColumnTemplateEventArgs'.
-    //designer-hint: 6133: 'gridInitColumnTemplateEventArgs' is declared but its value is never read.
     gridInitColumnTemplateEventArgs: CobisModelGridInitColumnTemplateEventArgs
   ) => {
     //if(idColumn === 'NombreColumna'){
@@ -685,9 +585,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
   //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
   //ViewContainer: RefinanceLoansFilter
-  //designer-hint: 2304: Cannot find name 'task_initData_VC_REFINANCSL_902781'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
   task_initData_VC_REFINANCSL_902781 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
     let viewState: any = initDataEventArgs.commons.api.viewState;
     viewState.hide("G_REFINANERL_686515");
@@ -704,8 +601,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.basicInsurance (RadioButtonList) View: RefinanceLoansFilter
   //Evento LoadCatalogData: Sobreescribe la forma de cargar datos en un catálogo.
-  //designer-hint: 2304: Cannot find name 'task_loadCatalog_VA_BASICINSURANCEC_861515'.
-  //designer-hint: 2304: Cannot find name 'CobisModelLoadCatalogEventArgs'.
   task_loadCatalog_VA_BASICINSURANCEC_861515 = (loadCatalogDataEventArgs: CobisModelLoadCatalogEventArgs) => {
     loadCatalogDataEventArgs.commons.execServer = false;
 
@@ -729,8 +624,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.preventionProgram (ComboBox) View: RefinanceLoansFilter
   //Evento LoadCatalogData: Sobreescribe la forma de cargar datos en un catálogo.
-  //designer-hint: 2304: Cannot find name 'task_loadCatalog_VA_PREVENTIONPRRAM_747515'.
-  //designer-hint: 2304: Cannot find name 'CobisModelLoadCatalogEventArgs'.
   task_loadCatalog_VA_PREVENTIONPRRAM_747515 = (loadCatalogDataEventArgs: CobisModelLoadCatalogEventArgs) => {
 
     loadCatalogDataEventArgs.commons.execServer = true;
@@ -739,13 +632,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   };
 
   //Start signature to Callback event to VA_PREVENTIONPRRAM_747515
-  //designer-hint: 2304: Cannot find name 'task_loadCatalogCallback_VA_PREVENTIONPRRAM_747515'.
   task_loadCatalogCallback_VA_PREVENTIONPRRAM_747515 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelLoadCatalogCallbackEventArgs'.
-    //designer-hint: 6133: 'loadCatalogCallbackEventArgs' is declared but its value is never read.
     loadCatalogCallbackEventArgs: CobisModelLoadCatalogCallbackEventArgs
   ) => {
     //here your code
@@ -753,9 +641,6 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
 
   //Evento onCloseModalEvent : Evento que actua como listener cuando se cierra ventanas modales.
   //ViewContainer: RefinanceLoansFilter
-  //designer-hint: 2304: Cannot find name 'task_onCloseModalEvent'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelOnCloseModalEventArgs'.
   task_onCloseModalEvent = (entities: Model, onCloseModalEventArgs: CobisModelOnCloseModalEventArgs) => {
     onCloseModalEventArgs.commons.execServer = false;
     if (onCloseModalEventArgs.result.code != null) {
@@ -763,21 +648,16 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     }
   };
 
-  //designer-hint: 2304: ANTIPATTERN: It is not possible to call a Designer event from another event.
   task.closeModalEvent.findCustomer = (args: any) => {
-    //designer-hint: 6133: 'resp' is declared but its value is never read.
     let resp: any = args.commons.api.vc.dialogParameters;
     let customerCode: any = args.commons.api.vc.dialogParameters.CodeReceive;
     let CustomerName: any = args.commons.api.vc.dialogParameters.name;
-    //designer-hint: 6133: 'identification' is declared but its value is never read.
     let identification: any = args.commons.api.vc.dialogParameters.documentId;
 
     args.model.RefinanceLoanFilter.clientName = customerCode + "-" + CustomerName;
     args.model.RefinanceLoanFilter.clientID = customerCode;
   };
 
-  //designer-hint: 2304: Cannot find name 'task_textInputButtonEvent_VA_ACCOUNTYATVYIRL_740515'.
-  //designer-hint: 2304: Cannot find name 'CobisModelOnInputButtonEventArgs'.
   task_textInputButtonEvent_VA_ACCOUNTYATVYIRL_740515 = (textInputButtonEventArgs: CobisModelOnInputButtonEventArgs) => {
     textInputButtonEventArgs.commons.execServer = false;
     /*if (textInputButtonEventArgs.model.RefinanceLoanFilter.clientName != null && textInputButtonEventArgs.model.RefinanceLoanFilter.currencyType != null){
@@ -835,7 +715,6 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
       };
     } else {
       textInputButtonEventArgs.cancel = true;
-      //designer-hint: 2304: Cannot find name 'timer'.
       textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_DEDESELCA_14854", false, null, timer);
     }
   };
@@ -843,8 +722,6 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
   //Entity: RefinanceLoanFilter
   //RefinanceLoanFilter.clientName (TextInputButton) View: RefinanceLoansFilter
 
-  //designer-hint: 2304: Cannot find name 'task_textInputButtonEvent_VA_CLIENTNAMEBGXWU_198515'.
-  //designer-hint: 2304: Cannot find name 'CobisModelOnInputButtonEventArgs'.
   task_textInputButtonEvent_VA_CLIENTNAMEBGXWU_198515 = (textInputButtonEventArgs: CobisModelOnInputButtonEventArgs) => {
     textInputButtonEventArgs.commons.execServer = false;
     let nav: any = textInputButtonEventArgs.commons.api.navigation;
@@ -867,9 +744,6 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
 
   //Evento render : Se ejecuta antes de renderizar un control, permite realizar personalizaciones visuales
   //ViewContainer: RefinanceLoansFilter
-  //designer-hint: 2304: Cannot find name 'task_render'.
-  //designer-hint: 2304: Cannot find name 'Model'.
-  //designer-hint: 2304: Cannot find name 'CobisModelRenderEventArgs'.
   task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
 
     renderEventArgs.commons.execServer = false;
@@ -880,11 +754,8 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
 
   //gridRowDeleting QueryView: QV_3375_11342
   //Se ejecuta antes de que los datos eliminados en una grilla sean comprometidos.
-  //designer-hint: 2304: Cannot find name 'task_gridRowDeleting_QV_3375_11342'.
   task_gridRowDeleting_QV_3375_11342 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridRowActionEventArgs'.
     gridRowDeletingEventArgs: CobisModelGridRowActionEventArgs
   ) => {
     gridRowDeletingEventArgs.commons.execServer = false;
@@ -897,11 +768,8 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
 
   //gridRowSelecting QueryView: QV_3375_11342
   //Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.
-  //designer-hint: 2304: Cannot find name 'task_gridRowSelecting_QV_3375_11342'.
   task_gridRowSelecting_QV_3375_11342 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridRowSelectingEventArgs'.
     gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
   ) => {
     gridRowSelectingEventArgs.commons.execServer = false;
@@ -913,11 +781,8 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
 
   //gridRowUpdating QueryView: QV_3375_11342
   //Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.
-  //designer-hint: 2304: Cannot find name 'task_gridRowUpdating_QV_3375_11342'.
   task_gridRowUpdating_QV_3375_11342 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridRowActionEventArgs'.
     gridRowUpdatingEventArgs: CobisModelGridRowActionEventArgs
   ) => {
     let op: any = false;
@@ -941,13 +806,8 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
 
 
   //Start signature to Callback event to QV_3375_11342
-  //designer-hint: 2304: Cannot find name 'task_gridRowUpdatingCallback_QV_3375_11342'.
   task_gridRowUpdatingCallback_QV_3375_11342 = (
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 6133: 'entities' is declared but its value is never read.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelGridRowActionCallbackEventArgs'.
-    //designer-hint: 6133: 'gridRowUpdatingCallbackEventArgs' is declared but its value is never read.
     gridRowUpdatingCallbackEventArgs: CobisModelGridRowActionCallbackEventArgs
   ) => {
     //here your code

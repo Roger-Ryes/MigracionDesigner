@@ -18,5 +18,5 @@ task_executeCommand_CM_TASSTSAM_7AT = (
         nameAux = this.cobis.translate("ASSTS.LBL_ASSTS_REESTRURC_23393");
     }
 
-    this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+    this.ASSTS.container.changeCurrentTab(idAux, urlAux, nameAux, true);
 };

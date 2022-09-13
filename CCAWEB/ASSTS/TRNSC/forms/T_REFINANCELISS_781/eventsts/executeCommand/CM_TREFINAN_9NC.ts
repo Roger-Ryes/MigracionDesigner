@@ -1,9 +1,6 @@
 // (Button) 
-    //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_TREFINAN_9NC'.
     task_executeCommand_CM_TREFINAN_9NC = async (
-        //designer-hint: 2304: Cannot find name 'Model'.
         entities: Model,
-        //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
         executeCommandEventArgs: CobisModelExecuteCommandEventArgs
     ) => {
         executeCommandEventArgs.commons.execServer = false;
@@ -48,7 +45,6 @@
 
 
         if (!hasError) {
-            //designer-hint: 2304: Cannot find name 'firstValueFrom'.
             let response: any = await firstValueFrom(
                 executeCommandEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_ESTSEGUAL_93590")
             );
@@ -66,7 +62,6 @@
 
 
         if (hasError) {           
-        //designer-hint: 2304: Cannot find name 'timer'.
         executeCommandEventArgs.commons.messageHandler.showMessagesInformation(msgResourceID, false, null, timer);
         }else{
            executeCommandEventArgs.commons.execServer = true;

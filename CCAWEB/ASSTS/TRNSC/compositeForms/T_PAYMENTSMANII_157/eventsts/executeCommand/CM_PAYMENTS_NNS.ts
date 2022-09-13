@@ -1,9 +1,6 @@
 // (Button) 
-    //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_PAYMENTS_NNS'.
     task_executeCommand_CM_PAYMENTS_NNS = (
-        //designer-hint: 2304: Cannot find name 'Model'.
         entities: Model,
-        //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
         executeCommandEventArgs: CobisModelExecuteCommandEventArgs
     ) => {
         executeCommandEventArgs.commons.execServer = false;
@@ -26,7 +23,6 @@
             size: 'md',
             callFromGrid: false
         };
-        //designer-hint: 2304: Cannot find name 'angular'.
         let priorities2: any = angular.copy(entities.Priorities);
         nav.customDialogParameters = {
             bankNum: entities.Loan.loanBankID,

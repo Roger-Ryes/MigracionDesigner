@@ -1,8 +1,6 @@
 //Entity: RefinanceLoanFilter
     //RefinanceLoanFilter.clientName (TextInputButton) View: RefinanceLoansFilter
     
-    //designer-hint: 2304: Cannot find name 'task_textInputButtonEvent_VA_CLIENTNAMEBGXWU_198515'.
-    //designer-hint: 2304: Cannot find name 'CobisModelOnInputButtonEventArgs'.
     task_textInputButtonEvent_VA_CLIENTNAMEBGXWU_198515 = (textInputButtonEventArgs: CobisModelOnInputButtonEventArgs) => {
                                textInputButtonEventArgs.commons.execServer = false;
                                let nav: any = textInputButtonEventArgs.commons.api.navigation;

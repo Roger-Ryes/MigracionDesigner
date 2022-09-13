@@ -1,8 +1,5 @@
 //Evento render : Se ejecuta antes de renderizar un control, permite realizar personalizaciones visuales
     //ViewContainer: PaymentsMain
-    //designer-hint: 2304: Cannot find name 'task_render'.
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 2304: Cannot find name 'CobisModelRenderEventArgs'.
     task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
         let listDeferredRefund: any = entities.DeferredRefundList;
         renderEventArgs.commons.execServer = false;

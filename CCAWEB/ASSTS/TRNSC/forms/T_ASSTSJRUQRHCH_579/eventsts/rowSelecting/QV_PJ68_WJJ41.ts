@@ -32,7 +32,7 @@ task_gridRowSelecting_QV_PJ68_WJJ41 = (
         
     };
 
-    nav.openModalWindow('QV_RO76_OKE25', gridRowSelectingEventArgs.modelRow);
+    nav.openModalWindow('QV_RO76_OKE25', gridRowSelectingEventArgs.nameEntityGrid);
 
     gridRowSelectingEventArgs.commons.execServer = false;
 };

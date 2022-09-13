@@ -1,11 +1,8 @@
 
 //gridRowSelecting QueryView: 
 //Se ejecuta antes de que los datos modificados en una grilla sean comprometidos.
-//designer-hint: 2304: Cannot find name 'task_gridRowSelecting_QV_LM28_ZKS23'.
 task_gridRowSelecting_QV_LM28_ZKS23 = (
- //designer-hint: 2304: Cannot find name 'Model'.
  entities: Model,
- //designer-hint: 2304: Cannot find name 'CobisModelGridRowSelectingEventArgs'.
  gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
 ) => {
  //Open Modal

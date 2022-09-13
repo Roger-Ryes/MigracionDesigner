@@ -1,9 +1,6 @@
 //Start signature to Callback event to CM_TREFINAN_9NC
-//designer-hint: 2304: Cannot find name 'task_executeCommandCallback_CM_TREFINAN_9NC'.
 task_executeCommandCallback_CM_TREFINAN_9NC = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandCallbackEventArgs'.
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
 ) => {
     let viewState: any = executeCommandCallbackEventArgs.commons.api.viewState;

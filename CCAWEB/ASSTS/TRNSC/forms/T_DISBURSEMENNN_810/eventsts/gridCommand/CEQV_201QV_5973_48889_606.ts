@@ -1,7 +1,10 @@
 //gridCommand (Button) QueryView: QV_5973_48889
     //Evento GridCommand: Sirve para personalizar la acción que realizan los botones de Grilla.
+    //designer-hint: 2304: Cannot find name 'task_gridCommand_CEQV_201QV_5973_48889_606'.
     task_gridCommand_CEQV_201QV_5973_48889_606 = (
+       //designer-hint: 2304: Cannot find name 'Model'.
        entities: Model,
+       //designer-hint: 2304: Cannot find name 'CobisModelGridCommandExecuteEventArgs'.
        gridExecuteCommandEventArgs: CobisModelGridCommandExecuteEventArgs
     ) => {
        gridExecuteCommandEventArgs.commons.execServer = false;
@@ -10,7 +13,8 @@
 
 
        if (entities.LoanAdditionalInformation.dateToDisburse === undefined){
-           gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071',false,null,timer);
+           //designer-hint: 2304: Cannot find name 'timer'.
+           gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_INGRESEHA_96071',false,null,this.ASSTS.timer);
            return;
        }
 
@@ -18,7 +22,7 @@
 
 
        let nav: any = gridExecuteCommandEventArgs.commons.api.navigation;
-       if(entities.LiquidateResult.sumTotal > entities.DisbursementResult.sumTotal){      
+       if(entities.LiquidateResult.sumTotal! > entities.DisbursementResult.sumTotal!){      
           nav.label = this.cobis.translate('ASSTS.LBL_ASSTS_APAGOKXFB_84081'); //Forma de Pago
           nav.address = {
              moduleId: 'ASSTS',
@@ -46,6 +50,7 @@
           }; 
           nav.openModalWindow("CEQV_201QV_5973_48889_606", gridExecuteCommandEventArgs);      
        }else{         
-          gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, timer);
+          //designer-hint: 2304: Cannot find name 'timer'.
+          gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('ASSTS.MSG_ASSTS_ELDESEMST_32467', false, null, this.ASSTS.timer);
        }
     };

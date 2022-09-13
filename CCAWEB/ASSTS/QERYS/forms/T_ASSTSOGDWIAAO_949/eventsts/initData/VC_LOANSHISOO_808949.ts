@@ -1,8 +1,13 @@
 //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
 //ViewContainer: LoansHistoricForm
+//designer-hint: 2304: Cannot find name 'task_initData_VC_LOANSHISOO_808949'.
+//designer-hint: 2304: Cannot find name 'Model'.
+//designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
 task_initData_VC_LOANSHISOO_808949 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
     initDataEventArgs.commons.execServer = true;
+    //designer-hint: 6133: 'nav' is declared but its value is never read.
     let nav: any = initDataEventArgs.commons.api.navigation;
+    //designer-hint: 6133: 'api' is declared but its value is never read.
     let api: any = initDataEventArgs.commons.api;
     let parameters: any = this.getParams();
     let apiHeader: any = initDataEventArgs.commons.api.cobisPatterns.header;

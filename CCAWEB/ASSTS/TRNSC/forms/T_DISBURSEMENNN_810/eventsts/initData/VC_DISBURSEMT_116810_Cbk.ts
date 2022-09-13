@@ -1,6 +1,9 @@
 //Start signature to Callback event to VC_DISBURSEMT_116810
+//designer-hint: 2304: Cannot find name 'task_initDataCallback_VC_DISBURSEMT_116810'.
 task_initDataCallback_VC_DISBURSEMT_116810 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelInitDataCallbackEventArgs'.
     initDataCallbackEventArgs: CobisModelInitDataCallbackEventArgs
 ) => {
     let processDate = this.cobis.container.info.getProcessDate();
@@ -10,7 +13,10 @@ task_initDataCallback_VC_DISBURSEMT_116810 = (
     // January - 0, February - 1, etc.
     entities.LoanAdditionalInformation.dateToDisburse = new Date(parts[2], parts[0] - 1, parts[1]);
 
-    entities.LoanAdditionalInformation.dateToDisburse = kendo.toString(kendo.parseDate(entities.LoanAdditionalInformation.dateToDisburse), JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // TODO
+    // entities.LoanAdditionalInformation.dateToDisburse = kendo.toString(entities.LoanAdditionalInformation.dateToDisburse, JSON.parse(sessionStorage.dateFormat));
+    entities.LoanAdditionalInformation.dateToDisburse = entities.LoanAdditionalInformation.dateToDisburse;
 
     if (initDataCallbackEventArgs.success) {
         let totalDesembolso: any = 0;
@@ -21,7 +27,8 @@ task_initDataCallback_VC_DISBURSEMT_116810 = (
         }
 
         entities.DisbursementResult.sumTotal = totalDesembolso;
-        entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal - entities.DisbursementResult.sumTotal;
+        entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal! - entities.DisbursementResult.sumTotal!;
+        //designer-hint: 2304: Cannot find name 'diferencia'.
         diferencia =  entities.DisbursementResult.difference;
     }
 };

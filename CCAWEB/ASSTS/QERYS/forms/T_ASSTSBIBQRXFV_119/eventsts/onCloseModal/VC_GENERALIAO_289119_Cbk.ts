@@ -1,12 +1,15 @@
 //Start signature to Callback event to VC_GENERALIAO_289119
+//designer-hint: 2304: Cannot find name 'task_onCloseModalEventCallback'.
 task_onCloseModalEventCallback = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelOnCloseModalCallbackEventArgs'.
     onCloseModalCallbackEventArgs: CobisModelOnCloseModalCallbackEventArgs
 ) => {
     onCloseModalCallbackEventArgs.commons.api.viewState.selectLayout("G_GENERALNTN_956193", "G_GENERALIIO_430193");
-    
 
-    if (!onCloseModalCallbackEventArgs.commons.api.vc.dialogParameters.controlId || onCloseModalCallbackEventArgs.commons.api.vc.dialogParameters.controlId == 'G_GENERALMMI_992193') {
+
+    if (!onCloseModalCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().controlId || onCloseModalCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().controlId == 'G_GENERALMMI_992193') {
         let nav: any = onCloseModalCallbackEventArgs.commons.api.navigation;
         //Pantalla: Resumen general del estado del préstamo
 
@@ -46,11 +49,27 @@ task_onCloseModalEventCallback = (
 
 
     //FORMAT DATE
-    entities.Loan.startDate = kendo.toString(kendo.parseDate(entities.Loan.startDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.endDate = kendo.toString(kendo.parseDate(entities.Loan.endDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.feeEndDate = kendo.toString(kendo.parseDate(entities.Loan.feeEndDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
-    entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
-      entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
-    entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    // TODO
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.startDate = kendo.toString(entities.Loan.startDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.endDate = kendo.toString(entities.Loan.endDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.feeEndDate = kendo.toString(entities.Loan.feeEndDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.lastProcessDate = kendo.toString(entities.Loan.lastProcessDate, JSON.parse(sessionStorage.dateFormat));
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.balanceDue = kendo.toString(entities.Loan.balanceDue, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.amountApproved = kendo.toString(entities.Loan.amountApproved, "n");
+    //designer-hint: 2304: Cannot find name 'kendo'.
+    // entities.Loan.nextPayment = kendo.toString(entities.Loan.nextPayment, "n");
+    entities.Loan.startDate = entities.Loan.startDate;
+    entities.Loan.endDate = entities.Loan.endDate;
+    entities.Loan.feeEndDate = entities.Loan.feeEndDate;
+    entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
+    entities.Loan.balanceDue = entities.Loan.balanceDue;
+    entities.Loan.amountApproved = entities.Loan.amountApproved;
+    entities.Loan.nextPayment = entities.Loan.nextPayment;
+
 };

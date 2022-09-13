@@ -1,4 +1,5 @@
 //"TaskId": "T_ASSTSOGDWIAAO_949"
+//designer-hint: 2304: Cannot find name 'getParams'.
 getParams = () => {
     let url: any = "", urlParams: any = {};
 

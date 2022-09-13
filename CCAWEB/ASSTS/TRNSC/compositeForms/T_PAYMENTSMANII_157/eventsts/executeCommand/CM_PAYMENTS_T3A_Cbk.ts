@@ -1,16 +1,11 @@
 //Start signature to Callback event to CM_PAYMENTS_T3A
-//designer-hint: 2304: Cannot find name 'task_executeCommandCallback_CM_PAYMENTS_T3A'.
 task_executeCommandCallback_CM_PAYMENTS_T3A = (
-    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
-    //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandCallbackEventArgs'.
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
 ) => {
     //here your code
-    //designer-hint: 6133: 'messages' is declared but its value is never read.
     let messages: any = '';
 
-    //designer-hint: 6133: 'unappliedValue' is declared but its value is never read.
     let unappliedValue: any = '';
 
     if (executeCommandCallbackEventArgs.success) {
@@ -44,7 +39,7 @@ task_executeCommandCallback_CM_PAYMENTS_T3A = (
     if (entities.Loan.tipo == 'G' && this.ioperacionGrupal == 'F') {
         this.ioperacionGrupal = null;
         if (entities.PaymentGroup.fechaVen > entities.PaymentGroup.fechaUltProc){
-           /* executeCommandCallbackEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_DESEAAPNN_11437")
+            /*executeCommandCallbackEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_DESEAAPNN_11437")
                 .then(function (response) {
                     if (response.buttonIndex == 0){
                        ioperacionGrupal = 'F';
@@ -52,7 +47,7 @@ task_executeCommandCallback_CM_PAYMENTS_T3A = (
 if (response.buttonIndex == 1){
 executeCommandCallbackEventArgs.commons.api.vc.executeCommand('CM_PAYMENTS_T3A', 'PaymentsMain', undefined, true, false, 'VC_PAYMENTSAN_916157', false);
 }
-                });   */         
+                });    */        
         } else {
             executeCommandCallbackEventArgs.commons.api.vc.executeCommand('CM_PAYMENTS_T3A', 'PaymentsMain', undefined, true, false, 'VC_PAYMENTSAN_916157', false);
         }

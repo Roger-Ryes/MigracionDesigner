@@ -1,9 +1,6 @@
 // (Button) 
-    //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_PAYMENTS_T7N'.
     task_executeCommand_CM_PAYMENTS_T7N = (
-        //designer-hint: 2304: Cannot find name 'Model'.
         entities: Model,
-        //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
         executeCommandEventArgs: CobisModelExecuteCommandEventArgs
     ) => {
         executeCommandEventArgs.commons.execServer = false;

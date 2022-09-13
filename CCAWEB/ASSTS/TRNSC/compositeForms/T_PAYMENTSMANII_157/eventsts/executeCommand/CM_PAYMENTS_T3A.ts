@@ -1,13 +1,9 @@
 // (Button)
-    //designer-hint: 2304: Cannot find name 'task_executeCommand_CM_PAYMENTS_T3A'.
     task_executeCommand_CM_PAYMENTS_T3A = async (
-        //designer-hint: 2304: Cannot find name 'Model'.
         entities: Model,
-        //designer-hint: 2304: Cannot find name 'CobisModelExecuteCommandEventArgs'.
         executeCommandEventArgs: CobisModelExecuteCommandEventArgs
     ) => {
         let api: any=executeCommandEventArgs.commons.api;
-        //designer-hint: 6133: 'parameters' is declared but its value is never read.
         let parameters: any=api.navigation.getCustomDialogParameters();
         let hasError: any = false;
         let msgResourceID: any = "";
@@ -165,7 +161,6 @@
         if (entities.Payment.value < entities.Payment.amountPrepayment) {
              executeCommandEventArgs.commons.execServer = true;
         }else if (entities.Payment.value > entities.Payment.amountPrepayment) {
-            //designer-hint: 2304: Cannot find name 'firstValueFrom'.
             let response: any = await firstValueFrom(
                 executeCommandEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_MONTOESEC_40993")
             );

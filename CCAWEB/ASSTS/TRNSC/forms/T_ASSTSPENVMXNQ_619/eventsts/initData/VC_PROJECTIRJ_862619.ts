@@ -1,7 +1,11 @@
 //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
 //ViewContainer: ProjectionReadjustmentForm
+//designer-hint: 2304: Cannot find name 'task_initData_VC_PROJECTIRJ_862619'.
+//designer-hint: 2304: Cannot find name 'Model'.
+//designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
 task_initData_VC_PROJECTIRJ_862619 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
     let nav: any = initDataEventArgs.commons.api.navigation;
+    //designer-hint: 6133: 'params' is declared but its value is never read.
     let params: any = nav.getCustomDialogParameters();
 
     entities.SearchProjectionReadjustement.percentage = 0;

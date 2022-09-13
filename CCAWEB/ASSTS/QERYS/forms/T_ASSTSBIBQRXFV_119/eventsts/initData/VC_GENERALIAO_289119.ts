@@ -1,15 +1,20 @@
 //Evento initData : Inicialización de datos del formulario, después de este evento se realiza el seguimiento de cambios en los datos
 //ViewContainer: GeneralInformationMain
+//designer-hint: 2304: Cannot find name 'task_initData_VC_GENERALIAO_289119'.
+//designer-hint: 2304: Cannot find name 'Model'.
+//designer-hint: 2304: Cannot find name 'CobisModelInitDataEventArgs'.
 task_initData_VC_GENERALIAO_289119 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
+    //designer-hint: 6133: 'nav' is declared but its value is never read.
     let nav: any = initDataEventArgs.commons.api.navigation;
     let api: any=initDataEventArgs.commons.api;
     let apiHeader: any = initDataEventArgs.commons.api.cobisPatterns.header;
     let parameters: any = null;
+    //designer-hint: 6133: 'xsell' is declared but its value is never read.
     let xsell: any = 'N';
 
-    if(tab.parameters){
+    if(this.ASSTS.tab.parameters){
         apiHeader.visibleSearchOption(false);
-        parameters = tab.parameters;
+        parameters = this.ASSTS.tab.parameters;
         
         entities.Loan.adjustment       = parameters.adjustment;
         entities.Loan.amount           = parameters.amount;

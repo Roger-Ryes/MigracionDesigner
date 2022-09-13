@@ -1,5 +1,8 @@
 //Evento onCloseModalEvent : Evento que actua como listener cuando se cierra ventanas modales.
     //ViewContainer: SimulateMain
+    //designer-hint: 2304: Cannot find name 'task_onCloseModalEvent'.
+    //designer-hint: 2304: Cannot find name 'Model'.
+    //designer-hint: 2304: Cannot find name 'CobisModelOnCloseModalEventArgs'.
     task_onCloseModalEvent = (entities: Model, onCloseModalEventArgs: CobisModelOnCloseModalEventArgs) => {
         onCloseModalEventArgs.commons.execServer = false;
 

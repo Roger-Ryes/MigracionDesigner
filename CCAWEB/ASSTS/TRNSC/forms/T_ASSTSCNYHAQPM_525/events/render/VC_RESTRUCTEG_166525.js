@@ -4,7 +4,7 @@ task.render = function (entities, renderEventArgs) {
 
     renderEventArgs.commons.execServer = false;
     var nav = renderEventArgs.commons.api.navigation;
-    var params = nav.getCustomDialogParameters();
+    params = nav.getCustomDialogParameters();
     $("button.close").hide();
     //RUBROS
     nav.address = {

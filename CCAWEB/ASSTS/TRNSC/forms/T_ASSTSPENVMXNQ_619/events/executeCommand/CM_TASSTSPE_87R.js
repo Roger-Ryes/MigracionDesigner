@@ -5,7 +5,7 @@ task.executeCommand.CM_TASSTSPE_87R = function(entities, executeCommandEventArgs
         var reportItem = "";
         var reportName = "SimulationReadjustement";//Nombre del archivo
         
-        var infoDate = kendo.toString(kendo.parseDate(entities.SearchProjectionReadjustement.dateReadjustment),JSON.parse(sessionStorage.dateFormat));
+        var infoDate = kendo.toString(entities.SearchProjectionReadjustement.dateReadjustment,JSON.parse(sessionStorage.dateFormat));
             
         var args = [
             ['report.module','cartera'],

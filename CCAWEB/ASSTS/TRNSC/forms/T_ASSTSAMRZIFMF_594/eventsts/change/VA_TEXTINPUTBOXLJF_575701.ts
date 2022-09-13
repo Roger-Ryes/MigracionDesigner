@@ -6,48 +6,28 @@
 //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
 //designer-hint: 6133: 'entities' is declared but its value is never read.
 task_change_VA_TEXTINPUTBOXLJF_575701 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
-
     changedEventArgs.commons.execServer = false;
-    //Recuperación de fila en edición
-    //designer-hint: 2304: Cannot find name 'currentRowData'.
-    currentRowData = changedEventArgs.rowData;
-    
-    if (changedEventArgs.newValue == 'N') { // Saldo Capital
-        changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance;
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
-        changedEventArgs.rowData.toPay = changedEventArgs.rowData.interestBalance+ changedEventArgs.rowData.otherItems;
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', changedEventArgs.rowData.toPay);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', changedEventArgs.rowData.toPay);
 
+    //Recuperación de fila en edición
+    let currentRowData: any = changedEventArgs.rowData;
+
+    if (changedEventArgs.newValue == 'N') { // Saldo Capital
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.capitalBalance);
+
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', (changedEventArgs.rowData.interestBalance+ changedEventArgs.rowData.otherItems));
     } else if (changedEventArgs.newValue == 'S') { //Saldo Cap + interes
-        changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance;
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', (changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance));
 
         changedEventArgs.rowData.toPay = changedEventArgs.rowData.otherItems;
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', changedEventArgs.rowData.toPay);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', changedEventArgs.rowData.toPay);
-
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', (changedEventArgs.rowData.otherItems));
     } else if (changedEventArgs.newValue == 'T') { //saldo cap+interes+otros
-        changedEventArgs.rowData.totalCap = changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems;
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', changedEventArgs.rowData.totalCap);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', changedEventArgs.rowData.totalCap);
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', 0.00);
-    } else {
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', 0.00);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('totalCap', 0.00);
-        //designer-hint: 2304: Cannot find name 'currentRowData'.
-        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
-//        changedEventArgs.commons.api.vc.grids.QV_UY75_AYT30.selectedRow.set('toPay', 0.00);
-    }
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', (changedEventArgs.rowData.capitalBalance + changedEventArgs.rowData.interestBalance + changedEventArgs.rowData.otherItems));
 
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
+
+    } else {
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'totalCap', 0.00);
+
+        changedEventArgs.commons.api.grid.updateRowData(currentRowData, 'toPay', 0.00);
+    }
 };

@@ -1,9 +1,12 @@
 // () View: View of ProjectionReadjustmentForm
 //Evento changeGroup : Evento change para pestañas, collapsible y accordion.
+//designer-hint: 2304: Cannot find name 'task_changeGroup_G_PROJECTENT_572798'.
+//designer-hint: 2304: Cannot find name 'Model'.
 task_changeGroup_G_PROJECTENT_572798 = (entities: Model, changedGroupEventArgs: any) => {
     changedGroupEventArgs.commons.execServer = false;
 
     let nav: any = changedGroupEventArgs.commons.api.navigation;
+    //designer-hint: 6133: 'params' is declared but its value is never read.
     let params: any = nav.getCustomDialogParameters();
 
     if ((changedGroupEventArgs.commons.item.id === 'G_PROJECTNTR_773798') && (changedGroupEventArgs.commons.item.isOpen === true)) {

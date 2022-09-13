@@ -26,5 +26,5 @@
                 payment : entities.Payment
             };
 
-            nav.openModalWindow("CEQV_201QV_2540_50573_362", gridExecuteCommandEventArgs.modelRow);
+            nav.openModalWindow("CEQV_201QV_2540_50573_362", gridExecuteCommandEventArgs.nameEntityGrid);
     };

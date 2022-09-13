@@ -1,9 +1,6 @@
 //Entity: RefinanceLoanFilter
     //RefinanceLoanFilter.additionalValue (TextInputBox) View: RefinanceLoansFilter
     //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
-    //designer-hint: 2304: Cannot find name 'task_change_VA_ADDITIONALVAUUU_896515'.
-    //designer-hint: 2304: Cannot find name 'Model'.
-    //designer-hint: 2304: Cannot find name 'CobisModelChangeEventArgs'.
     task_change_VA_ADDITIONALVAUUU_896515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
       if(changedEventArgs.newValue != null  ){
         changedEventArgs.commons.execServer = true;

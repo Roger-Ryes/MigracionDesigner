@@ -1,6 +1,9 @@
 //Start signature to Callback event to VC_LOANSHISOO_808949
+//designer-hint: 2304: Cannot find name 'task_initDataCallback_VC_LOANSHISOO_808949'.
 task_initDataCallback_VC_LOANSHISOO_808949 = (
+    //designer-hint: 2304: Cannot find name 'Model'.
     entities: Model,
+    //designer-hint: 2304: Cannot find name 'CobisModelInitDataCallbackEventArgs'.
     initDataCallbackEventArgs: CobisModelInitDataCallbackEventArgs
 ) => {
     //Pantalla: Resumen general del estado del préstamo

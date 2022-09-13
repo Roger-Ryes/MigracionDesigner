@@ -3,7 +3,7 @@
 task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
     renderEventArgs.commons.execServer = false;
     let nav: any = renderEventArgs.commons.api.navigation;
-    let params: any = nav.getCustomDialogParameters();
+    params = nav.getCustomDialogParameters();
     $("button.close").hide();
     //RUBROS
     nav.address = {
