@@ -266,7 +266,7 @@ export class VcLoanslinss962737Custom extends CobisDesignerCustomEvent {
     if (entities.LoansLines.clientCode) {
       executeCommandEventArgs.commons.api.grid.refresh('QV_ZTPR_WQQ92');
     } else {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_CLIENTEQI_78561', false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_CLIENTEQI_78561', false, null, this.LNSPR.timer);
     }
     executeCommandEventArgs.commons.execServer = false;
   };
@@ -328,7 +328,7 @@ export class VcLoanslinss962737Custom extends CobisDesignerCustomEvent {
     initDataEventArgs.commons.execServer = false;
     entities.LoansLines.naturaleza = "A";
     entities.LoansLines.criterios = false;
-    menu = LNSPR.getQueryStrings().menu;
+    menu = this.LNSPR.getQueryStrings().menu;
 
   };
 

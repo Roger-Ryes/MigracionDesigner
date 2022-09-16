@@ -119,7 +119,7 @@ export class VcOperatioee354330Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
       let parentVc: any = executeCommandCallbackEventArgs.commons.api.parentVc;
 
       if (!parentVc || (parentVc && parentVc.id == 'VC_LOANSEARCH_100921')) {
@@ -278,6 +278,7 @@ export class VcOperatioee354330Custom extends CobisDesignerCustomEvent {
 
     //validacion pantalla actualizacion
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = executeQueryEventArgs.commons.api.vc.model.GeneralInformation.codState
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -413,10 +414,11 @@ export class VcOperatioee354330Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -457,9 +459,10 @@ export class VcOperatioee354330Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowInsertingCallbackEventArgs.success) {
-      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, timer);
+      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, this.LNSPR.timer);
     }
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE 
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -516,10 +519,11 @@ export class VcOperatioee354330Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowUpdatingCallbackEventArgs.success) {
-      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, timer);
+      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {

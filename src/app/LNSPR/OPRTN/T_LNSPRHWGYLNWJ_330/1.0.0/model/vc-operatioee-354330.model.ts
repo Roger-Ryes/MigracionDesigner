@@ -3,6 +3,7 @@ import { CobisModelCatalog, CobisDesignerUtil } from "cobis-designer";
 import { AmortizationTitleEntity } from "../../../../entities/AmortizationTitleEntity";
 import { AmortizationFormEntity } from "../../../../entities/AmortizationFormEntity";
 import { AmortizationEntity } from "../../../../entities/AmortizationEntity";
+import { GeneralInformation } from "../../../../entities/GeneralInformation";
 import { GeneralParametersQuery } from "../../../../entities/GeneralParametersQuery";
 import { GenericEntity } from "../../../../entities/GenericEntity";
 import { OperationEntity } from "../../../../entities/OperationEntity";
@@ -11,6 +12,7 @@ export class Model {
 private _amortizationTitleEntity!: any;
 private _amortizationFormEntity!: any;
 private _amortizationEntity!: any;
+private _generalInformation!: any;
 private _generalParametersQuery!: any;
 private _genericEntity!: any;
 private _operationEntity!: any;
@@ -20,6 +22,7 @@ constructor(private formGroupArray: any) {
 this._amortizationTitleEntity = new AmortizationTitleEntity();
 this._amortizationFormEntity = new AmortizationFormEntity();
 this._amortizationEntity = new AmortizationEntity();
+this._generalInformation = new GeneralInformation();
 this._generalParametersQuery = new GeneralParametersQuery();
 this._genericEntity = new GenericEntity();
 this._operationEntity = new OperationEntity();
@@ -43,6 +46,12 @@ this._amortizationEntity = valores;
 }
 public get AmortizationEntity(): any {
 return this._amortizationEntity;
+}
+public set GeneralInformation(valores: any) {
+this._generalInformation = valores;
+}
+public get GeneralInformation(): any {
+return this._generalInformation;
 }
 public set GeneralParametersQuery(valores: any) {
 this._generalParametersQuery = valores;

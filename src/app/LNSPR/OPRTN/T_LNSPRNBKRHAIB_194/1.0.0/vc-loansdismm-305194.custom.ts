@@ -140,7 +140,7 @@ export class VcLoansdismm305194Custom extends CobisDesignerCustomEvent {
       entities.Members.control = 'N';
 
       executeCommandCallbackEventArgs.commons.api.parentVc!.viewState.G_LOANLINRER_722461.visible = true;
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, this.LNSPR.timer);
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_NW92_QCN40');
 
     }
@@ -244,7 +244,7 @@ export class VcLoansdismm305194Custom extends CobisDesignerCustomEvent {
     gridRowDeletingCallbackEventArgs: CobisModelGridRowActionCallbackEventArgs
   ) => {
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, this.LNSPR.timer);
       gridRowDeletingCallbackEventArgs.commons.api.grid.refresh('QV_NW92_QCN40');
     }
 
@@ -261,7 +261,7 @@ export class VcLoansdismm305194Custom extends CobisDesignerCustomEvent {
     gridRowSelectingEventArgs.commons.execServer = false;
     if (gridRowSelectingEventArgs.commons.api.vc.mode == gridRowSelectingEventArgs.commons.constants.mode.Update) {
       entities.Members.editionMode = gridRowSelectingEventArgs.commons.constants.mode.Update;
-      gridRowSelectingEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_EDICINHAI_74003', false, null, timer);
+      gridRowSelectingEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_EDICINHAI_74003', false, null, this.LNSPR.timer);
       entities.Members.member = gridRowSelectingEventArgs.rowData.codeMember;
       entities.Members.amount = gridRowSelectingEventArgs.rowData.amount;
       entities.Members.control = gridRowSelectingEventArgs.rowData.controlAmount;

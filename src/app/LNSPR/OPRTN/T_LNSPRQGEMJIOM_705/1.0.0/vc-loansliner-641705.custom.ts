@@ -151,7 +151,7 @@ export class VcLoansliner641705Custom extends CobisDesignerCustomEvent {
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, this.LNSPR.timer);
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_ZZ84_YVC22');
 
     }
@@ -350,7 +350,7 @@ export class VcLoansliner641705Custom extends CobisDesignerCustomEvent {
     gridRowDeletingCallbackEventArgs: CobisModelGridRowActionCallbackEventArgs
   ) => {
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, this.LNSPR.timer);
     }
   };
 

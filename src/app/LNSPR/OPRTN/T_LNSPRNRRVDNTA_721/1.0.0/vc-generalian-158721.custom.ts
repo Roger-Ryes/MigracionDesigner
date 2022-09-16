@@ -299,9 +299,13 @@ export class VcGeneralian158721Custom extends CobisDesignerCustomEvent {
     } else {
       apiHeader.visibleSearchOption(false);
     }
-    entities.LoansLinesHeader.monto = kendo.toString(Number(entities.LoansLinesHeader.monto), "n");
-    entities.LoansLinesHeader.montoDisponible = kendo.toString(Number(entities.LoansLinesHeader.montoDisponible), "n");
-    entities.LoansLinesHeader.montoUtilizado = kendo.toString(Number(entities.LoansLinesHeader.montoUtilizado), "n");
+    // TODO - REFACTORIZAR
+    // entities.LoansLinesHeader.monto = kendo.toString(Number(entities.LoansLinesHeader.monto), "n");
+    // entities.LoansLinesHeader.montoDisponible = kendo.toString(Number(entities.LoansLinesHeader.montoDisponible), "n");
+    // entities.LoansLinesHeader.montoUtilizado = kendo.toString(Number(entities.LoansLinesHeader.montoUtilizado), "n");
+    entities.LoansLinesHeader.monto = entities.LoansLinesHeader.monto;
+    entities.LoansLinesHeader.montoDisponible = entities.LoansLinesHeader.montoDisponible;
+    entities.LoansLinesHeader.montoUtilizado = entities.LoansLinesHeader.montoUtilizado;
     entities.LoansLinesHeader.naturalezaOp = entities.LoansLinesHeader.naturalezaOp == 'A' ? 'ACTIVA' : 'PASIVA';
   };
 

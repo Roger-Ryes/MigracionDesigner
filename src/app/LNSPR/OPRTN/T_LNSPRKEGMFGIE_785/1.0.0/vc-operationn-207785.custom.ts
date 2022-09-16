@@ -184,7 +184,7 @@ export class VcOperationn207785Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
     }
   };
 
@@ -323,7 +323,8 @@ export class VcOperationn207785Custom extends CobisDesignerCustomEvent {
       }
     } else {
       viewState.hide('VA_VABUTTONOHXRHAO_106309'); //button establecer
-      entities.GeneralParametersQuery.account = null;
+      // TODO - ALE
+      // entities.GeneralParametersQuery.account = null;
     }
   };
 

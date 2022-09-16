@@ -135,7 +135,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     changedEventArgs.commons.api.vc.viewState.VA_TYPEOPERATIONNN_501423.visible = changedEventArgs.newValue;
 
 
-    if (LNSPR.getQueryStrings().type === 'C') {
+    if (this.LNSPR.getQueryStrings().type === 'C') {
       changedEventArgs.commons.api.vc.viewState.VA_NEXTREADJDATEEE_737423.visible = changedEventArgs.newValue;
       changedEventArgs.commons.api.vc.viewState.VA_TYPEOPERATIONNN_501423.visible = changedEventArgs.newValue;
 
@@ -143,7 +143,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       changedEventArgs.commons.api.vc.viewState.VA_SPACER2878UBAZR_925423.visible = changedEventArgs.newValue;
     }
 
-    if (LNSPR.getQueryStrings().type === 'P' || LNSPR.getQueryStrings().type === 'I') {
+    if (this.LNSPR.getQueryStrings().type === 'P' || this.LNSPR.getQueryStrings().type === 'I') {
       if (changedEventArgs.newValue) {
         changedEventArgs.commons.api.vc.viewState.VA_SPACER2707FOADE_749423.visible = false;
       } else {
@@ -152,7 +152,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
 
     }
 
-    if (LNSPR.getQueryStrings().type === 'U') {
+    if (this.LNSPR.getQueryStrings().type === 'U') {
       if (changedEventArgs.newValue) {
         changedEventArgs.commons.api.vc.viewState.VA_SPACER2707FOADE_749423.visible = false;
       } else {
@@ -430,7 +430,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     }
 
     if (contar == 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, this.LNSPR.timer);
       executeCommandEventArgs.commons.execServer = false;
       return;
     }
@@ -459,7 +459,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, this.LNSPR.timer);
       //executeCommandCallbackEventArgs.commons.api.viewState.disable('CM_LOANSEAR_PN2');
       executeCommandCallbackEventArgs.commons.api.grid.removeAllRows('ReadjustmenMList');
 
@@ -597,9 +597,9 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       executeCommandCallbackEventArgs.commons.api.viewState.hide("CM_TLNSPRMF_22S");
 
       /* if (entities.MassivePayments.length > 0) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEO_37894",false,null,timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEO_37894",false,null,this.LNSPR.timer);
         } else {*/
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSACEC_84918", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSACEC_84918", false, null, this.LNSPR.timer);
       // }
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_BZ71_NGV26');
     }
@@ -617,8 +617,8 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-      nameAux = this.cobis.container.tabs.getCurrentTab().text;
+    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+      nameAux = this.cobis.container.tabs.getCurrentTab().name;
     } else {
       if (entities.LoanSearchFilter.mode == 'C') {
         nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_CAMBIOTAS_63595");
@@ -628,7 +628,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
 
     }
 
-    this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+    this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
 
     /*entities.LoanSearchFilter.archivo = null;
    // entities.ErrorMassivePayments = null;
@@ -750,10 +750,10 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     }
 
     if (contador > 0) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEN_20984", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEN_20984", false, null, this.LNSPR.timer);
 
     } else {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, this.LNSPR.timer);
 
     }
   };
@@ -793,10 +793,10 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       }*/
 
       if (entities.ErrorMassivePayments.length >= 2) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEO_37894", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEO_37894", false, null, this.LNSPR.timer);
 
       } else {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSMION_38404", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSMION_38404", false, null, this.LNSPR.timer);
       }
     }
 
@@ -824,6 +824,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     executeCommandEventArgs.commons.api.viewState.hide('G_LOANSEARCR_617423');
     executeCommandEventArgs.commons.api.viewState.enable('VA__174423');
     executeCommandEventArgs.commons.api.viewState.hide('CM_TLNSPRMF_9NN');
+    // TODO - ALE FUNCION NO EXISTE
     executeCommandEventArgs.commons.api.vc.removeFile('VA_ARCHIVOJFAGWZSQ_219423');
     executeCommandEventArgs.commons.api.grid.hideToolBarButton('QV_EF50_UVK53', 'CEQV_201QV_EF50_UVK53_197');
     executeCommandEventArgs.commons.api.viewState.enable('VA_NUMIDENTIFICTII_228423');
@@ -858,13 +859,13 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       case 1: //accept
         executeCommandEventArgs.commons.execServer = true;
 
-        if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-          nameAux = this.cobis.container.tabs.getCurrentTab().text;
+        if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+          nameAux = this.cobis.container.tabs.getCurrentTab().name;
         } else {
           nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAOS_76833");
         }
 
-        this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+        this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
         return true;
         break;
     }
@@ -877,7 +878,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     entities: Model,
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
-    let origen: any = LNSPR.getQueryStrings().type;
+    let origen: any = this.LNSPR.getQueryStrings().type;
     let fileUpload: any = executeCommandEventArgs.commons.api.viewState.fileUpload('VA_ARCHIVOJFAGWZSQ_219423');
 
     //modificación de parámetros en caso de necesitarlo
@@ -997,7 +998,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
 
     if (executeCommandCallbackEventArgs.success) {
 
-      if (LNSPR.getQueryStrings().type == 'I') {
+      if (this.LNSPR.getQueryStrings().type == 'I') {
         executeCommandCallbackEventArgs.commons.api.viewState.show('G_LOANSEARCR_617423');
         executeCommandCallbackEventArgs.commons.api.viewState.hide('G_LOANSEAHHC_140423');
         executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_LOANSEAR_PN2');
@@ -1005,7 +1006,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
         executeCommandCallbackEventArgs.commons.api.viewState.show('CM_TLNSPRMF_9NN');
         executeCommandCallbackEventArgs.commons.api.viewState.show('CM_TLNSPRMF_NMS');
 
-      } else if (LNSPR.getQueryStrings().type == 'P') {
+      } else if (this.LNSPR.getQueryStrings().type == 'P') {
         executeCommandCallbackEventArgs.commons.api.viewState.show('G_LOANSEAHHC_356423');
         executeCommandCallbackEventArgs.commons.api.viewState.enable('G_LOANSEAHHC_356423');
         executeCommandCallbackEventArgs.commons.api.viewState.hide('G_LOANSEAHHC_140423');
@@ -1021,7 +1022,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
         executeCommandCallbackEventArgs.commons.api.viewState.disable('VA_NUMIDENTIFICTII_228423');
         executeCommandCallbackEventArgs.commons.api.viewState.disable('VA__174423');
 
-      } else if (LNSPR.getQueryStrings().type == 'C') {
+      } else if (this.LNSPR.getQueryStrings().type == 'C') {
         executeCommandCallbackEventArgs.commons.api.viewState.disable('VA_READJUSTDATEHXG_933423');
         executeCommandCallbackEventArgs.commons.api.viewState.disable('VA_REFERENCIALHVKA_159423');
         executeCommandCallbackEventArgs.commons.api.viewState.disable('VA_SIGNKLSEFBDNEKD_114423');
@@ -1035,7 +1036,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       }
 
     } else {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_VERIFIQRL_10425', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_VERIFIQRL_10425', false, null, this.LNSPR.timer);
 
     }
   };
@@ -1070,11 +1071,13 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     listaErrores = [];
     executeCommandEventArgs.commons.api.vc.model.MassiveCommissionsMistakes = null;
     entities.MassiveCommissionsMistakes = null;
+    // TODO - ALE 
     executeCommandEventArgs.model.MassiveCommissionsMistakes = null
     executeCommandEventArgs.commons.execServer = false;
 
     executeCommandEventArgs.commons.api.vc.model.ErrorMassivePayments = null;
     entities.ErrorMassivePayments = null;
+    // TODO - ALE 
     executeCommandEventArgs.model.ErrorMassivePayments = null;
     executeCommandEventArgs.commons.api.grid.refresh('QV_PY15_EUR25');
 
@@ -1125,11 +1128,11 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       executeQueryEventArgs.parameters.selectedOperationsArray = listaSeleccionados;
       executeQueryEventArgs.commons.serverParameters.ErrorMassivePayments = true;
       executeQueryEventArgs.parameters.ErrorMassivePayments = model.ErrorMassivePayments;
-      if (LNSPR.getQueryStrings().type == 'U') {
+      if (this.LNSPR.getQueryStrings().type == 'U') {
         executeQueryEventArgs.parameters.categoryGroup = "2";
       }
 
-      if (LNSPR.getQueryStrings().type === 'P') {
+      if (this.LNSPR.getQueryStrings().type === 'P') {
         executeQueryEventArgs.commons.api.viewState.disable('VA__174423');
       }
 
@@ -1145,7 +1148,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
         ],
         executeQueryEventArgs);
     } else {
-      executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBEINGTA_48173', false, null, timer);
+      executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBEINGTA_48173', false, null, this.LNSPR.timer);
       model.ErrorMassivePayments = null;
       model.MassiveCommissionsMistakes = null;
 
@@ -1163,13 +1166,13 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     executeQueryCallbackEventArgs: CobisModelExecuteQueryCallbackEventArgs
   ) => {
     if (entities.LoanList.length > 0) {
-      if (LNSPR.getQueryStrings().type === 'I') {
+      if (this.LNSPR.getQueryStrings().type === 'I') {
         executeQueryCallbackEventArgs.commons.api.grid.showToolBarButton('QV_EF50_UVK53', 'CEQV_201QV_EF50_UVK53_197');
-      } else if (LNSPR.getQueryStrings().type === 'P') {
+      } else if (this.LNSPR.getQueryStrings().type === 'P') {
         executeQueryCallbackEventArgs.commons.api.grid.showToolBarButton('QV_EF50_UVK53', 'CEQV_201QV_EF50_UVK53_388');
         executeQueryCallbackEventArgs.commons.api.viewState.disable('VA_ARCHIVOJFAGWZSQ_219423');
 
-      } else if (LNSPR.getQueryStrings().type === 'C') {
+      } else if (this.LNSPR.getQueryStrings().type === 'C') {
         executeQueryCallbackEventArgs.commons.api.grid.showToolBarButton('QV_EF50_UVK53', 'CEQV_201QV_EF50_UVK53_351');
       }
     }
@@ -1191,7 +1194,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     //Paginación
     executeQueryEventArgs.parameters.pagSec = 0;
 
-    executeQueryEventArgs.commons.api.grid.setAppendRecordsParams('QV_BZ71_NGV26', 'sequentialPM', executeQueryEventArgs);
+    executeQueryEventArgs.commons.api.grid.setAppendRecordsParams('QV_BZ71_NGV26', ['sequentialPM'], executeQueryEventArgs);
     if (executeQueryEventArgs.config?.appendRecords) {
       let ultimaFila: any = executeQueryEventArgs.commons.api.grid.lastRow('QV_BZ71_NGV26');
       executeQueryEventArgs.parameters.pagSec = ultimaFila.sequentialPM;
@@ -1227,8 +1230,8 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       executeQueryEventArgs.parameters.type = executeQueryEventArgs.commons.api.vc.model.LoanSearchFilter.type;
       executeQueryEventArgs.parameters.categoryGroup = '10';
 
-      executeQueryEventArgs.commons.api.parentVc = {};
-      executeQueryEventArgs.commons.api.parentVc!.customDialogParameters = {};
+      executeQueryEventArgs.commons.api.parentVc = undefined;
+      executeQueryEventArgs.commons.api.navigation.customDialogParameters = {};
       executeQueryEventArgs.commons.api.navigation.getCustomDialogParameters().LoanSearchFilter = executeQueryEventArgs.commons.api.vc.model.LoanSearchFilter;
       executeQueryEventArgs.commons.api.navigation.getCustomDialogParameters().ReadjustmentMEntity = executeQueryEventArgs.commons.api.vc.model.ReadjustmentMEntity;
 
@@ -1241,7 +1244,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       executeQueryEventArgs.commons.execServer = true;
 
     } else {
-      executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBEINGTA_48173', false, null, timer);
+      executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBEINGTA_48173', false, null, this.LNSPR.timer);
       executeQueryEventArgs.commons.execServer = false;
     }
   };
@@ -1333,7 +1336,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
 
       nav.openModalWindow(gridExecuteCommandEventArgs.commons.controlId, null);
     } else {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, this.LNSPR.timer);
     }
 
     gridExecuteCommandEventArgs.commons.execServer = false;
@@ -1355,7 +1358,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     }
 
     if (auxCont > 0) {} else {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, this.LNSPR.timer);
     }
 
     gridExecuteCommandEventArgs.commons.execServer = false;
@@ -1397,7 +1400,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
 
       nav.openModalWindow(gridExecuteCommandEventArgs.commons.controlId, null);
     } else {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_DEBESELRS_93935', false, null, this.LNSPR.timer);
     }
 
     gridExecuteCommandEventArgs.commons.execServer = false;
@@ -1476,7 +1479,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     initDataEventArgs.commons.api.vc.viewState.VA_NEXTREADJDATEEE_737423.visible = false;
     initDataEventArgs.commons.api.vc.viewState.VA_TYPEOPERATIONNN_501423.visible = false;
 
-    entities.LoanSearchFilter.mode = LNSPR.getQueryStrings().type;
+    entities.LoanSearchFilter.mode = this.LNSPR.getQueryStrings().type;
     initDataEventArgs.commons.api.viewState.hide('G_LOANSEARCR_617423');
     initDataEventArgs.commons.api.viewState.hide("G_LOANSEAHHC_356423");
     initDataEventArgs.commons.api.viewState.hide('QV_PY15_EUR25');
@@ -1510,7 +1513,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
 
         initDataEventArgs.commons.api.vc.viewState.VA_ARCHIVOJFAGWZSQ_219423.visible = false;
     } else */
-    if (LNSPR.getQueryStrings().type === 'I') {
+    if (this.LNSPR.getQueryStrings().type === 'I') {
 
       initDataEventArgs.commons.api.vc.viewState.VA_CONDITIONLQYMCH_855423.visible = false;
 
@@ -1537,7 +1540,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       initDataEventArgs.commons.api.viewState.hide('CM_TLNSPRMF_3SN');
 
       initDataEventArgs.commons.api.vc.viewState.VA_ARCHIVOJFAGWZSQ_219423.visible = true;
-    } else if (LNSPR.getQueryStrings().type === 'P') {
+    } else if (this.LNSPR.getQueryStrings().type === 'P') {
 
       initDataEventArgs.commons.api.vc.viewState.VA_CONDITIONLQYMCH_855423.visible = false;
       //Spacer ubicado después de la opción 'Reajustables'.
@@ -1562,7 +1565,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
       initDataEventArgs.commons.api.viewState.enable('CM_TLNSPRMF_3SN');
 
       initDataEventArgs.commons.api.vc.viewState.VA_ARCHIVOJFAGWZSQ_219423.visible = true;
-    } else if (LNSPR.getQueryStrings().type === 'C') { // Formulario - Cambio Tasa Masiva
+    } else if (this.LNSPR.getQueryStrings().type === 'C') { // Formulario - Cambio Tasa Masiva
       entities.ReadjustmentMEntity.factor = 0.00;
       entities.ReadjustmentMEntity.percentage = 0.00;
 
@@ -1668,7 +1671,8 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
         let api: any = onCloseModalEventArgs.commons.api,
           selectedRow: any = api.vc.grids.QV_PG40_VCD65.selectedRow;
 
-        document.getElementById('VA_REFERENCIALFBOE_516423').readOnly = true;
+        // TODO - REFACTORIZAR
+        // document.getElementById('VA_REFERENCIALFBOE_516423').readOnly = true;
         selectedRow.set('referencial', onCloseModalEventArgs.result.referencial);
         selectedRow.set('percentage', undefined);
       }
@@ -1848,7 +1852,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
   ) => {
     gridRowSelectingEventArgs.commons.execServer = false;
-    if (LNSPR.getQueryStrings().type == 'U') {
+    if (this.LNSPR.getQueryStrings().type == 'U') {
       //Navigation between forms
       let nav: any = gridRowSelectingEventArgs.commons.api.navigation;
 

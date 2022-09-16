@@ -99,7 +99,7 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
    * @returns {boolean}
    */
   // TODO - ALE
-  isEmpty = (item: any, withZero: any) => {
+  isEmpty = (item: any, withZero ? : any) => {
     let MY_EMPTY: any = EMPTY.slice();
 
     if (withZero) {
@@ -122,8 +122,11 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
     let debtor: any;
 
     if (!this.isEmpty(entities.OperationCRUDFormEntity.fullName) &&
-      this.isEmpty(entities.OperationCRUDFormEntity.idNumber) &&
-      $.inArray(funcionality, ['SCO', 'TA']) !== NOT_FOUND) {
+      this.isEmpty(entities.OperationCRUDFormEntity.idNumber)
+      // &&
+      // TODO - REFACTORIZAR
+      // $.inArray(funcionality, ['SCO', 'TA']) !== NOT_FOUND
+    ) {
       grid.removeAllRows(entity);
 
       debtor = {
@@ -156,7 +159,7 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
       let alreadyRegisterDebtor: any = false;
       let emptyDebtor: any;
 
-      entities[entity].data().forEach((_debtor: any) => {
+      entities.DebtorEntity.forEach((_debtor: any) => {
         if (_debtor.role === debtor.role && role === 'D') {
           mainDebtor = true;
           eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_YAFUERENE_35185', false, null, this.LNSPR.timer);
@@ -164,7 +167,7 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
       });
 
       if (!mainDebtor) {
-        entities[entity].data().forEach((_debtor: any) => {
+        entities.DebtorEntity.forEach((_debtor: any) => {
           if (_debtor.code === debtor.code) {
             alreadyRegisterDebtor = true;
             eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELCONSUDA_15519', false, null, this.LNSPR.timer);
@@ -177,7 +180,7 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
       if (!mainDebtor && !alreadyRegisterDebtor && !emptyDebtor) {
         grid.addRow(entity, debtor, true);
         if (debtor.role === 'D') {
-          entities.OperationEntity.mainDebtor = entities.OperationCRUDFormEntity.code;
+          entities.OperationEntity.mainDebtor = Number(entities.OperationCRUDFormEntity.code);
 
 
         }
@@ -876,7 +879,7 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
     loadCatalogCallbackEventArgs: CobisModelLoadCatalogCallbackEventArgs
   ) => {
     // TODO - REFACTOR
-    let combobox: any = $("#VA_OFFICIALHKVNOOZ_385221").data("kendo-ext-drop-down-list");
+    let combobox: any /*= $("#VA_OFFICIALHKVNOOZ_385221").data("kendo-ext-drop-down-list");*/
 
     for (let i: any = 0; combobox.dataSource.data().length > i; i++) {
       if (JSON.parse(sessionStorage.UserName) == combobox.dataSource.data()[i].value.split("-")[1].trim()) {

@@ -10,8 +10,10 @@ export class LNSPRService extends CobisDesignerModuleBase {
   }
 
   /*global designerEvents, console */
-public getQueryStrings={};
+// public getQueryStrings={};
 public timer = 3500;
+public container: any = this.cobis.container.tabs;
+public tab = this.cobis.container.tabs.getCurrentTab();
 public getQueryStrings = () => {
     let queryDict: any = {};
     location.search.substr(1).split("&").forEach((item: any) => {
@@ -37,7 +39,7 @@ Utils= {
         return (parValue === null || parValue === undefined);
     },
     IsNullOrEmpty: (parValue: any) => {
-        return (Utils.IsNull(parValue) || parValue === '');
+        return (this.Utils.IsNull(parValue) || parValue === '');
     },
     generarReporteModal: (reporte: any, argumentos: any, title: any) => {
         let Crue: any = '?myValue=' + Math.random() + '&';
@@ -45,21 +47,21 @@ Utils= {
         formaMapeo.target = 'popup_window_' + reporte;
         formaMapeo.method = "POST"; // or "post" if appropriate
 
-        if (Utils.IsNullOrEmpty(reporte))
+        if (this.Utils.IsNullOrEmpty(reporte))
             formaMapeo.action = "${contextPath}/cobis/web/reporting/actions/reportingService" + Crue;
         else
             formaMapeo.action = "${contextPath}/cobis/web/reports/" + reporte + Crue;
 
         let param: any = "";
         for (let i: any = 0; i < argumentos.length; i++) {
-            param = param + argumentos[i][0] + '=' + Utils.Char_convert(argumentos[i][1]) + '&'
+            param = param + argumentos[i][0] + '=' + this.Utils.Char_convert(argumentos[i][1]) + '&'
         }
         param = param.substr(0, param.length - 1);
         let url: any = formaMapeo.action + param;
-        if (Utils.IsNullOrEmpty(title)) {
+        if (this.Utils.IsNullOrEmpty(title)) {
             title = 'Reporte';
         }
-        LNSPR.service.cobis.container.tabs.openNewTab('ctsConsole', url, title, true);
+        this.cobis.container.tabs.openNewTab('ctsConsole', url, title, true);
     }
 }
 //}

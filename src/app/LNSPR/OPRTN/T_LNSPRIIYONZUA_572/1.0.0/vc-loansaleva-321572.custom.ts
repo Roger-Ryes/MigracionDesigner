@@ -141,9 +141,9 @@ export class VcLoansaleva321572Custom extends CobisDesignerCustomEvent {
       }
 
       if (error) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEO_37894", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEO_37894", false, null, this.LNSPR.timer);
       } else {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSMION_38404", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSMION_38404", false, null, this.LNSPR.timer);
       }
     }
   };
@@ -159,13 +159,13 @@ export class VcLoansaleva321572Custom extends CobisDesignerCustomEvent {
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.cobis.container.tabs.getCurrentTab().text != undefined) {
-      nameAux = this.cobis.container.tabs.getCurrentTab().text;
+    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
+      nameAux = this.cobis.container.tabs.getCurrentTab().name;
     } else {
       nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_VENTACAET_55114");
     }
-
-    this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+    // TODO
+    this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
   };
 
 
@@ -309,7 +309,7 @@ export class VcLoansaleva321572Custom extends CobisDesignerCustomEvent {
     gridRowCommandCallbackEventArgs: CobisModelGridRowCommandCallbackEventArgs
   ) => {
     if (gridRowCommandCallbackEventArgs.success) {
-      gridRowCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSACEC_84918", false, null, timer);
+      gridRowCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSACEC_84918", false, null, this.LNSPR.timer);
       if (!uploadedFile) {
         gridRowCommandCallbackEventArgs.commons.api.grid.refresh('QV_PT51_RHB11');
       } else {
@@ -390,7 +390,7 @@ export class VcLoansaleva321572Custom extends CobisDesignerCustomEvent {
   ) => {
 
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.LBL_LNSPR_ELIMINATR_48672", false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.LBL_LNSPR_ELIMINATR_48672", false, null, this.LNSPR.timer);
     }
   };
 

@@ -113,11 +113,11 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
         percentage = entities.OperationItemsList.factor + changedEventArgs.newValue;
         break;
       case "-":
-        percentage = entities.OperationItemsList.factor - changedEventArgs.newValue;
+        percentage = entities.OperationItemsList.factor!-changedEventArgs.newValue;
         break;
       case "*":
         if (changedEventArgs.newValue) {
-          percentage = entities.OperationItemsList.factor * changedEventArgs.newValue;
+          percentage = entities.OperationItemsList.factor! * changedEventArgs.newValue;
         } else {
           percentage = entities.OperationItemsList.factor;
         }
@@ -125,7 +125,7 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
         break;
       case "/":
         if (changedEventArgs.newValue) {
-          percentage = entities.OperationItemsList.factor / changedEventArgs.newValue;
+          percentage = entities.OperationItemsList.factor!/ changedEventArgs.newValue;
         } else {
           percentage = entities.OperationItemsList.factor;
         }
@@ -159,7 +159,7 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
         percentage = changedEventArgs.newValue + entities.OperationItemsList.associateValue;
         break;
       case "-":
-        percentage = changedEventArgs.newValue - entities.OperationItemsList.associateValue;
+        percentage = changedEventArgs.newValue - entities.OperationItemsList.associateValue!;
         break;
       case "*":
         if (entities.OperationItemsList.associateValue) {
@@ -394,14 +394,14 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
     let percentage: any;
     switch (changedEventArgs.newValue) {
       case "+":
-        percentage = entities.OperationItemsList.factor + entities.OperationItemsList.associateValue;
+        percentage = entities.OperationItemsList.factor!+entities.OperationItemsList.associateValue!;
         break;
       case "-":
-        percentage = entities.OperationItemsList.factor - entities.OperationItemsList.associateValue;
+        percentage = entities.OperationItemsList.factor!-entities.OperationItemsList.associateValue!;
         break;
       case "*":
         if (entities.OperationItemsList.associateValue) {
-          percentage = entities.OperationItemsList.factor * entities.OperationItemsList.associateValue;
+          percentage = entities.OperationItemsList.factor! * entities.OperationItemsList.associateValue;
         } else {
           entities.OperationItemsList.percentage = entities.OperationItemsList.factor;
         }
@@ -409,14 +409,14 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
         break;
       case "/":
         if (entities.OperationItemsList.associateValue) {
-          percentage = entities.OperationItemsList.factor / entities.OperationItemsList.associateValue;
+          percentage = entities.OperationItemsList.factor!/ entities.OperationItemsList.associateValue;
         } else {
           percentage = entities.OperationItemsList.factor;
         }
 
         break;
       default:
-        percentage = entities.OperationItemsList.factor + entities.OperationItemsList.associateValue;
+        percentage = entities.OperationItemsList.factor!+entities.OperationItemsList.associateValue!;
     }
 
 
@@ -561,6 +561,7 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
 
     //asignacion variable actualizacion prestamos != no vigente
     if (parentVc && parentVc.parentVc && parentVc.parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = parentVc.model.GeneralInformation.codState;
       if (state != stateOp) {
         executeQueryEventArgs.parameters.opActiva = 'S';
@@ -635,6 +636,7 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
     entities.GeneralParametersQuery = api.parentVc.model.GeneralParametersQuery;
 
     if (api.parentVc && api.parentVc.parentVc && api.parentVc.parentVc.id == 'VC_LOANPARTIR_265871') {
+      // TODO - ALE
       valor = valorAprobado - valorOperacion;
     }
 
@@ -652,6 +654,7 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
     if (api.vc.mode == initDataEventArgs.commons.constants.mode.Update) {
       prioridad = entities.OperationItemsList.priority;
       if (api.parentVc && api.parentVc.parentVc && api.parentVc.parentVc.id == 'VC_LOANPARTIR_265871') {
+        // TODO - ALE
         valor = valorAprobado - valorOperacion;
       }
 

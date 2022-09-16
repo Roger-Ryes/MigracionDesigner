@@ -94,7 +94,7 @@ export class VcProjectorc636575Custom extends CobisDesignerCustomEvent {
   task_change_VA_VALUENGWHVWDDNU_188696 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     let value: any = entities.OtherCharges.value;
     if (value.length > 20) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELVALOREM_94145', fasle, null, timer);
+      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELVALOREM_94145', false, null, this.LNSPR.timer);
     }
     changedEventArgs.commons.execServer = false;
   };
@@ -146,9 +146,9 @@ export class VcProjectorc636575Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       if (entities.MassiveCommissionsMistakes != null && entities.MassiveCommissionsMistakes.length > 1) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEN_20984", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEN_20984", false, null, this.LNSPR.timer);
       } else {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, this.LNSPR.timer);
       }
       executeCommandCallbackEventArgs.commons.api.navigation.closeModal({
         objLoans: entities.LoanList,
