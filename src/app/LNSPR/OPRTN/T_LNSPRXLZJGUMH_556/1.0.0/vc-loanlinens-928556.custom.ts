@@ -133,7 +133,7 @@ export class VcLoanlinens928556Custom extends CobisDesignerCustomEvent {
       changedEventArgs.commons.execServer = true;
     } else {
       if (!entities.LoanLinesCreation.startDate) {
-        changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_FECHAINEQ_39778', false, null, timer);
+        changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_FECHAINEQ_39778', false, null, this.LNSPR.timer);
       }
       changedEventArgs.commons.execServer = false;
       calcular = true;
@@ -183,7 +183,7 @@ export class VcLoanlinens928556Custom extends CobisDesignerCustomEvent {
       changedEventArgs.commons.execServer = true;
     } else {
       if (!entities.LoanLinesCreation.startDate) {
-        changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_FECHAINEQ_39778', false, null, timer);
+        changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_FECHAINEQ_39778', false, null, this.LNSPR.timer);
       }
       changedEventArgs.commons.execServer = false;
       calcular = true;
@@ -223,7 +223,7 @@ export class VcLoanlinens928556Custom extends CobisDesignerCustomEvent {
       executeCommandCallbackEventArgs.commons.api.parentVc!.viewState.G_LOANLINACR_870461.visible = true;
       executeCommandCallbackEventArgs.commons.api.parentVc!.viewState.G_LOANLINTRE_952461.visible = true;
       executeCommandCallbackEventArgs.commons.api.parentVc!.model.LoanLinesCreation = entities.LoanLinesCreation;
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, this.LNSPR.timer);
 
       if (entities.ValidationGroup.result == 'S') {
         executeCommandCallbackEventArgs.commons.api.parentVc!.viewState.G_LOANLINACR_870461.visible = true;

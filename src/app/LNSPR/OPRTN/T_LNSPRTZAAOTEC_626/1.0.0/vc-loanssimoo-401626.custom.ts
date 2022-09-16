@@ -80,8 +80,6 @@ let changeAmortization: any = false;
 let stateCalculate: any = 'V';
 let diferenciaCapitalCuota: any = 0;
 let updateFila: any = true; // V - Validate, A - Allows, C - Cancel
-let flagUpdateFee: any = false;
-let flagUpdateTerm: any = false;
 
 /* variables locales de T_LNSPRTZAAOTEC_626*/
 let funcionality: any;
@@ -132,7 +130,8 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
    * @param bool withZero Considera a cero (0) como valor vacío.
    * @returns {boolean}
    */
-  isEmpty = (item: any, withZero: any) => {
+  // TODO - ALE
+  isEmpty = (item: any, withZero ? : any) => {
     let MY_EMPTY: any = EMPTY.slice();
 
     if (withZero) {
@@ -155,8 +154,11 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     let debtor: any;
 
     if (!this.isEmpty(entities.OperationCRUDFormEntity.fullName) &&
-      this.isEmpty(entities.OperationCRUDFormEntity.idNumber) &&
-      $.inArray(funcionality, ['SCO', 'TA']) !== NOT_FOUND) {
+      this.isEmpty(entities.OperationCRUDFormEntity.idNumber)
+      // &&
+      // TODO - REFACTORIZAR
+      // $.inArray(funcionality, ['SCO', 'TA']) !== NOT_FOUND
+    ) {
       grid.removeAllRows(entity);
 
       debtor = {
@@ -189,18 +191,18 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       let alreadyRegisterDebtor: any = false;
       let emptyDebtor: any;
 
-      entities[entity].data().forEach((_debtor: any) => {
+      entities.DebtorEntity.forEach((_debtor: any) => {
         if (_debtor.role === debtor.role && role === 'D') {
           mainDebtor = true;
-          eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_YAFUERENE_35185', false, null, timer);
+          eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_YAFUERENE_35185', false, null, this.LNSPR.timer);
         }
       });
 
       if (!mainDebtor) {
-        entities[entity].data().forEach((_debtor: any) => {
+        entities.DebtorEntity.forEach((_debtor: any) => {
           if (_debtor.code === debtor.code) {
             alreadyRegisterDebtor = true;
-            eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELCONSUDA_15519', false, null, timer);
+            eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELCONSUDA_15519', false, null, this.LNSPR.timer);
           }
         });
       }
@@ -210,7 +212,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       if (!mainDebtor && !alreadyRegisterDebtor && !emptyDebtor) {
         grid.addRow(entity, debtor, true);
         if (debtor.role === 'D') {
-          entities.OperationEntity.mainDebtor = entities.OperationCRUDFormEntity.code;
+          entities.OperationEntity.mainDebtor = Number(entities.OperationCRUDFormEntity.code);
 
 
         }
@@ -382,399 +384,6 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
   //"TaskId": "T_LNSPRKEGMFGIE_785"
 
 
-  //"TaskId": "T_LNSPRGNPCEXYE_633"
-  /**
-   * Suprimir las columnas adicionales en la tabla Amortización
-   *
-   * @param entities Contiene todas las entidades del formulario.
-   * @param eventArgs Propiedades y métodos del evento que se está manipulando.
-   * @param gridId id del Grid de amortización a Editar.
-   */
-  suprColAmortization = (entities: Model, eventArgs: any, gridId: any) => {
-    let grid: any = eventArgs.commons.api.grid;
-
-    if (entities.AmortizationTitleEntity.dynamicField1 == null) {
-      grid.hideColumn(gridId, 'dynamicField1');
-      grid.disabledColumn(gridId, 'dynamicField1');
-    } else {
-      grid.title(gridId, 'dynamicField1', entities.AmortizationTitleEntity.dynamicField1);
-      grid.showColumn(gridId, 'dynamicField1');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField2 == null) {
-      grid.hideColumn(gridId, 'dynamicField2');
-      grid.disabledColumn(gridId, 'dynamicField2');
-    } else {
-      grid.title(gridId, 'dynamicField2', entities.AmortizationTitleEntity.dynamicField2);
-      grid.showColumn(gridId, 'dynamicField2');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField3 == null) {
-      grid.hideColumn(gridId, 'dynamicField3');
-      grid.disabledColumn(gridId, 'dynamicField3');
-    } else {
-      grid.title(gridId, 'dynamicField3', entities.AmortizationTitleEntity.dynamicField3);
-      grid.showColumn(gridId, 'dynamicField3');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField4 == null) {
-      grid.hideColumn(gridId, 'dynamicField4');
-      grid.disabledColumn(gridId, 'dynamicField4');
-    } else {
-      grid.title(gridId, 'dynamicField4', entities.AmortizationTitleEntity.dynamicField4);
-      grid.showColumn(gridId, 'dynamicField4');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField5 == null) {
-      grid.hideColumn(gridId, 'dynamicField5');
-      grid.disabledColumn(gridId, 'dynamicField5');
-    } else {
-      grid.title(gridId, 'dynamicField5', entities.AmortizationTitleEntity.dynamicField5);
-      grid.showColumn(gridId, 'dynamicField5');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField6 == null) {
-      grid.hideColumn(gridId, 'dynamicField6');
-      grid.disabledColumn(gridId, 'dynamicField6');
-    } else {
-      grid.title(gridId, 'dynamicField6', entities.AmortizationTitleEntity.dynamicField6);
-      grid.showColumn(gridId, 'dynamicField6');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField7 == null) {
-      grid.hideColumn(gridId, 'dynamicField7');
-      grid.disabledColumn(gridId, 'dynamicField7');
-    } else {
-      grid.title(gridId, 'dynamicField7', entities.AmortizationTitleEntity.dynamicField7);
-      grid.showColumn(gridId, 'dynamicField7');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField8 == null) {
-      grid.hideColumn(gridId, 'dynamicField8');
-      grid.disabledColumn(gridId, 'dynamicField8');
-    } else {
-      grid.title(gridId, 'dynamicField8', entities.AmortizationTitleEntity.dynamicField8);
-      grid.showColumn(gridId, 'dynamicField8');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField9 == null) {
-      grid.hideColumn(gridId, 'dynamicField9');
-      grid.disabledColumn(gridId, 'dynamicField9');
-    } else {
-      grid.title(gridId, 'dynamicField9', entities.AmortizationTitleEntity.dynamicField9);
-      grid.showColumn(gridId, 'dynamicField9');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField10 == null) {
-      grid.hideColumn(gridId, 'dynamicField10');
-      grid.disabledColumn(gridId, 'dynamicField10');
-    } else {
-      grid.title(gridId, 'dynamicField10', entities.AmortizationTitleEntity.dynamicField10);
-      grid.showColumn(gridId, 'dynamicField10');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField11 == null) {
-      grid.hideColumn(gridId, 'dynamicField11');
-      grid.disabledColumn(gridId, 'dynamicField11');
-    } else {
-      grid.title(gridId, 'dynamicField11', entities.AmortizationTitleEntity.dynamicField11);
-      grid.showColumn(gridId, 'dynamicField11');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField12 == null) {
-      grid.hideColumn(gridId, 'dynamicField12');
-      grid.disabledColumn(gridId, 'dynamicField12');
-    } else {
-      grid.title(gridId, 'dynamicField12', entities.AmortizationTitleEntity.dynamicField12);
-      grid.showColumn(gridId, 'dynamicField12');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField13 == null) {
-      grid.hideColumn(gridId, 'dynamicField13');
-      grid.disabledColumn(gridId, 'dynamicField13');
-    } else {
-      grid.title(gridId, 'dynamicField13', entities.AmortizationTitleEntity.dynamicField13);
-      grid.showColumn(gridId, 'dynamicField13');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField14 == null) {
-      grid.hideColumn(gridId, 'dynamicField14');
-      grid.disabledColumn(gridId, 'dynamicField14');
-    } else {
-      grid.title(gridId, 'dynamicField14', entities.AmortizationTitleEntity.dynamicField14);
-      grid.showColumn(gridId, 'dynamicField14');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField15 == null) {
-      grid.hideColumn(gridId, 'dynamicField15');
-      grid.disabledColumn(gridId, 'dynamicField15');
-    } else {
-      grid.title(gridId, 'dynamicField15', entities.AmortizationTitleEntity.dynamicField15);
-      grid.showColumn(gridId, 'dynamicField15');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField16 == null) {
-      grid.hideColumn(gridId, 'dynamicField16');
-      grid.disabledColumn(gridId, 'dynamicField16');
-    } else {
-      grid.title(gridId, 'dynamicField16', entities.AmortizationTitleEntity.dynamicField16);
-      grid.showColumn(gridId, 'dynamicField16');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField17 == null) {
-      grid.hideColumn(gridId, 'dynamicField17');
-      grid.disabledColumn(gridId, 'dynamicField17');
-    } else {
-      grid.title(gridId, 'dynamicField17', entities.AmortizationTitleEntity.dynamicField17);
-      grid.showColumn(gridId, 'dynamicField17');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField18 == null) {
-      grid.hideColumn(gridId, 'dynamicField18');
-      grid.disabledColumn(gridId, 'dynamicField18');
-    } else {
-      grid.title(gridId, 'dynamicField18', entities.AmortizationTitleEntity.dynamicField18);
-      grid.showColumn(gridId, 'dynamicField18');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField19 == null) {
-      grid.hideColumn(gridId, 'dynamicField19');
-      grid.disabledColumn(gridId, 'dynamicField19');
-    } else {
-      grid.title(gridId, 'dynamicField19', entities.AmortizationTitleEntity.dynamicField19);
-      grid.showColumn(gridId, 'dynamicField19');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField20 == null) {
-      grid.hideColumn(gridId, 'dynamicField20');
-      grid.disabledColumn(gridId, 'dynamicField20');
-    } else {
-      grid.title(gridId, 'dynamicField20', entities.AmortizationTitleEntity.dynamicField20);
-      grid.showColumn(gridId, 'dynamicField20');
-    }
-  }
-
-  isEmpty: any = (item: any, withZero: any) => {
-    let MY_EMPTY = EMPTY.slice();
-
-    if (withZero) {
-      MY_EMPTY.push(0);
-      MY_EMPTY.push(0.00);
-    }
-    return MY_EMPTY.indexOf(item) !== NOT_FOUND;
-  };
-
-
-  addDebtorToGrid = (entities: Model, eventArgs: any) => {
-    let grid: any = eventArgs.commons.api.grid;
-    let viewState: any = eventArgs.commons.api.viewState;
-    let entity: any = 'DebtorEntity';
-    let debtor: any;
-
-    if (!this.isEmpty(entities.OperationCRUDFormEntity.fullName) &&
-      this.isEmpty(entities.OperationCRUDFormEntity.idNumber) &&
-      $.inArray(funcionality, ['SCO', 'TA']) !== NOT_FOUND) {
-      grid.removeAllRows(entity);
-
-      debtor = {
-        role: 'D',
-        fullName: entities.OperationCRUDFormEntity.fullName,
-        idNumber: 0,
-        code: 0,
-        score: null,
-        type: null,
-        description: null
-      };
-      grid.addRow(entity, debtor, true);
-      viewState.hide('G_OPERATINOS_396221');
-    } else {
-      let role: any = 'C';
-
-      if (entities.OperationCRUDFormEntity.role) {
-        role = 'D';
-      }
-      debtor = {
-        role: role,
-        fullName: entities.OperationCRUDFormEntity.fullName,
-        idNumber: entities.OperationCRUDFormEntity.idNumber,
-        code: entities.OperationCRUDFormEntity.code,
-        score: null,
-        type: null,
-        description: null
-      };
-      let mainDebtor: any = false;
-      let alreadyRegisterDebtor: any = false;
-      let emptyDebtor: any;
-
-      entities[entity].data().forEach((_debtor: any) => {
-        if (_debtor.role === debtor.role && role === 'D') {
-          mainDebtor = true;
-          //cobis.showMessageWindow.alertInfo(viewState.translate("LNSPR.MSG_LNSPR_YAFUERENE_35185"));
-          eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_YAFUERENE_35185', false, null, timer);
-        }
-      });
-
-      if (!mainDebtor) {
-        entities[entity].data().forEach((_debtor: any) => {
-          if (_debtor.code === debtor.code) {
-            alreadyRegisterDebtor = true;
-            //cobis.showMessageWindow.alertInfo(viewState.translate("LNSPR.MSG_LNSPR_ELCONSUDA_15519"));
-            eventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELCONSUDA_15519', false, null, timer);
-          }
-        });
-      }
-
-      emptyDebtor = [debtor.fullName, debtor.idNumber, debtor.code].some(this.isEmpty);
-
-      if (!mainDebtor && !alreadyRegisterDebtor && !emptyDebtor) {
-        grid.addRow(entity, debtor, true);
-        if (debtor.role === 'D') {
-          entities.OperationEntity.mainDebtor = entities.OperationCRUDFormEntity.code;
-
-        }
-        entities.OperationCRUDFormEntity.fullName = null;
-        entities.OperationCRUDFormEntity.idNumber = null;
-        entities.OperationCRUDFormEntity.code = null;
-        entities.OperationCRUDFormEntity.role = null;
-        entities.OperationCRUDFormEntity.officer = null;
-        entities.OperationCRUDFormEntity.company = null;
-      }
-    }
-  }
-
-  /**
-   * Suprimir las columnas adicionales en la tabla Amortización
-   *
-   * @param entities Contiene todas las entidades del formulario.
-   * @param eventArgs Propiedades y métodos del evento que se está manipulando.
-   * @param gridId id del Grid de amortización a Editar.
-   */
-  suprColAmortization = (entities: Model, eventArgs: any, gridId: any) => {
-    let grid: any = eventArgs.commons.api.grid;
-
-    if (entities.AmortizationTitleEntity.dynamicField1 == null) {
-      grid.hideColumn(gridId, 'dynamicField1');
-      grid.disabledColumn(gridId, 'dynamicField1');
-    } else {
-      grid.title(gridId, 'dynamicField1', entities.AmortizationTitleEntity.dynamicField1);
-      grid.showColumn(gridId, 'dynamicField1');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField2 == null) {
-      grid.hideColumn(gridId, 'dynamicField2');
-      grid.disabledColumn(gridId, 'dynamicField2');
-    } else {
-      grid.title(gridId, 'dynamicField2', entities.AmortizationTitleEntity.dynamicField2);
-      grid.showColumn(gridId, 'dynamicField2');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField3 == null) {
-      grid.hideColumn(gridId, 'dynamicField3');
-      grid.disabledColumn(gridId, 'dynamicField3');
-    } else {
-      grid.title(gridId, 'dynamicField3', entities.AmortizationTitleEntity.dynamicField3);
-      grid.showColumn(gridId, 'dynamicField3');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField4 == null) {
-      grid.hideColumn(gridId, 'dynamicField4');
-      grid.disabledColumn(gridId, 'dynamicField4');
-    } else {
-      grid.title(gridId, 'dynamicField4', entities.AmortizationTitleEntity.dynamicField4);
-      grid.showColumn(gridId, 'dynamicField4');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField5 == null) {
-      grid.hideColumn(gridId, 'dynamicField5');
-      grid.disabledColumn(gridId, 'dynamicField5');
-    } else {
-      grid.title(gridId, 'dynamicField5', entities.AmortizationTitleEntity.dynamicField5);
-      grid.showColumn(gridId, 'dynamicField5');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField6 == null) {
-      grid.hideColumn(gridId, 'dynamicField6');
-      grid.disabledColumn(gridId, 'dynamicField6');
-    } else {
-      grid.title(gridId, 'dynamicField6', entities.AmortizationTitleEntity.dynamicField6);
-      grid.showColumn(gridId, 'dynamicField6');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField7 == null) {
-      grid.hideColumn(gridId, 'dynamicField7');
-      grid.disabledColumn(gridId, 'dynamicField7');
-    } else {
-      grid.title(gridId, 'dynamicField7', entities.AmortizationTitleEntity.dynamicField7);
-      grid.showColumn(gridId, 'dynamicField7');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField8 == null) {
-      grid.hideColumn(gridId, 'dynamicField8');
-      grid.disabledColumn(gridId, 'dynamicField8');
-    } else {
-      grid.title(gridId, 'dynamicField8', entities.AmortizationTitleEntity.dynamicField8);
-      grid.showColumn(gridId, 'dynamicField8');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField9 == null) {
-      grid.hideColumn(gridId, 'dynamicField9');
-      grid.disabledColumn(gridId, 'dynamicField9');
-    } else {
-      grid.title(gridId, 'dynamicField9', entities.AmortizationTitleEntity.dynamicField9);
-      grid.showColumn(gridId, 'dynamicField9');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField10 == null) {
-      grid.hideColumn(gridId, 'dynamicField10');
-      grid.disabledColumn(gridId, 'dynamicField10');
-    } else {
-      grid.title(gridId, 'dynamicField10', entities.AmortizationTitleEntity.dynamicField10);
-      grid.showColumn(gridId, 'dynamicField10');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField11 == null) {
-      grid.hideColumn(gridId, 'dynamicField11');
-      grid.disabledColumn(gridId, 'dynamicField11');
-    } else {
-      grid.title(gridId, 'dynamicField11', entities.AmortizationTitleEntity.dynamicField11);
-      grid.showColumn(gridId, 'dynamicField11');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField12 == null) {
-      grid.hideColumn(gridId, 'dynamicField12');
-      grid.disabledColumn(gridId, 'dynamicField12');
-    } else {
-      grid.title(gridId, 'dynamicField12', entities.AmortizationTitleEntity.dynamicField12);
-      grid.showColumn(gridId, 'dynamicField12');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField13 == null) {
-      grid.hideColumn(gridId, 'dynamicField13');
-      grid.disabledColumn(gridId, 'dynamicField13');
-    } else {
-      grid.title(gridId, 'dynamicField13', entities.AmortizationTitleEntity.dynamicField13);
-      grid.showColumn(gridId, 'dynamicField13');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField14 == null) {
-      grid.hideColumn(gridId, 'dynamicField14');
-      grid.disabledColumn(gridId, 'dynamicField14');
-    } else {
-      grid.title(gridId, 'dynamicField14', entities.AmortizationTitleEntity.dynamicField14);
-      grid.showColumn(gridId, 'dynamicField14');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField15 == null) {
-      grid.hideColumn(gridId, 'dynamicField15');
-      grid.disabledColumn(gridId, 'dynamicField15');
-    } else {
-      grid.title(gridId, 'dynamicField15', entities.AmortizationTitleEntity.dynamicField15);
-      grid.showColumn(gridId, 'dynamicField15');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField16 == null) {
-      grid.hideColumn(gridId, 'dynamicField16');
-      grid.disabledColumn(gridId, 'dynamicField16');
-    } else {
-      grid.title(gridId, 'dynamicField16', entities.AmortizationTitleEntity.dynamicField16);
-      grid.showColumn(gridId, 'dynamicField16');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField17 == null) {
-      grid.hideColumn(gridId, 'dynamicField17');
-      grid.disabledColumn(gridId, 'dynamicField17');
-    } else {
-      grid.title(gridId, 'dynamicField17', entities.AmortizationTitleEntity.dynamicField17);
-      grid.showColumn(gridId, 'dynamicField17');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField18 == null) {
-      grid.hideColumn(gridId, 'dynamicField18');
-      grid.disabledColumn(gridId, 'dynamicField18');
-    } else {
-      grid.title(gridId, 'dynamicField18', entities.AmortizationTitleEntity.dynamicField18);
-      grid.showColumn(gridId, 'dynamicField18');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField19 == null) {
-      grid.hideColumn(gridId, 'dynamicField19');
-      grid.disabledColumn(gridId, 'dynamicField19');
-    } else {
-      grid.title(gridId, 'dynamicField19', entities.AmortizationTitleEntity.dynamicField19);
-      grid.showColumn(gridId, 'dynamicField19');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField20 == null) {
-      grid.hideColumn(gridId, 'dynamicField20');
-      grid.disabledColumn(gridId, 'dynamicField20');
-    } else {
-      grid.title(gridId, 'dynamicField20', entities.AmortizationTitleEntity.dynamicField20);
-      grid.showColumn(gridId, 'dynamicField20');
-    }
-  }
-
   //Entity: OperationEntity
   //OperationEntity.amountApproved (TextInputBox) View: OperationForm
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
@@ -783,7 +392,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     changedEventArgs.commons.execServer = false;
 
     if (entities.OperationEntity.amount) {
-      if ((entities.OperationEntity.amount <= entities.OperationEntity.amountApproved) && !fromAmount) {
+      if ((entities.OperationEntity.amount <= entities.OperationEntity.amountApproved!) && !fromAmount) {
         changedEventArgs.commons.api.errors.validateInput('VA_AMOUNTPCRKOKHWA_216221', false);
 
       } else {
@@ -803,7 +412,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
   task_change_VA_AMOUNTPCRKOKHWA_216221 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
-
+    // TODO - ALE
     if (monto) {
       if (firstAmount) {
         entities.OperationEntity.amountApproved = entities.OperationEntity.amount;
@@ -977,12 +586,12 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     if (stateCreateUpdate === 'P') {
       //Valida el campo monto debe ser mayor a cero
       if (!entities.OperationEntity.amount || entities.OperationEntity.amount <= 0) {
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELMONTOOE_93388", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELMONTOOE_93388", false, null, this.LNSPR.timer);
         execServer = false;
       }
       //Valida la lista el cliente ingresado.
       if (execServer && entities.OperationCRUDFormEntity.code) {
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_AADAALARD_86290", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_AADAALARD_86290", false, null, this.LNSPR.timer);
         execServer = false;
       }
       //Validaexistir por lo menos un cliente principal.
@@ -994,42 +603,42 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
           }
         }
         if (execServer && mainDebtor) {
-          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, timer);
+          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, this.LNSPR.timer);
           execServer = false;
         }
       }
       //Valida El número de la obligación es obligatorio
       if (execServer && entities.OperationEntity.classOperation === 'R' && !entities.OperationEntity.previousNumber) {
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELNMEROCB_51300", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELNMEROCB_51300", false, null, this.LNSPR.timer);
         execServer = false;
       }
       //Valida la alicuota 1 (Certificados) y sino debe ingresar la alicuota 2 (Ahorros)
       if (execServer && (entities.OperationEntity.doubleAliquot && entities.OperationEntity.doubleAliquot === 'S')) {
         if (!entities.OperationEntity.aliquota1) {
-          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEINGAT_13902", false, null, timer);
+          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEINGAT_13902", false, null, this.LNSPR.timer);
           execServer = false;
         } else if (!entities.OperationEntity.aliquota2) {
-          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEINGSR_39231", false, null, timer);
+          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEINGSR_39231", false, null, this.LNSPR.timer);
           execServer = false;
         }
       }
       //Valida la alicuota 1 (Certificados)
       if (execServer && (entities.OperationEntity.doubleAliquot && entities.OperationEntity.doubleAliquot === 'N')) {
         if (!entities.OperationEntity.aliquota1) {
-          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEINGAT_13902", false, null, timer);
+          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEINGAT_13902", false, null, this.LNSPR.timer);
           execServer = false;
         }
       }
       //Validaciones Sindicados
       if (execServer && entities.OperationEntity.syndicated && !entities.OperationEntity.typeSyndicated) {
 
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIPODESRE_41966", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIPODESRE_41966", false, null, this.LNSPR.timer);
         execServer = false;
 
       }
 
       if (execServer && (entities.SyndicatedList.length == 0 && entities.OperationEntity.syndicated && entities.OperationEntity.typeSyndicated)) {
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_PARTICIIA_96996", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_PARTICIIA_96996", false, null, this.LNSPR.timer);
         execServer = false;
       } else if (execServer && entities.SyndicatedList.length > 0) {
         for (let i: any = 0; i < entities.SyndicatedList.length; i++) {
@@ -1040,11 +649,11 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
         }
 
         if (porcentajeTotalGrid > 100) {
-          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOEXCEDER_58370", false, null, timer);
+          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOEXCEDER_58370", false, null, this.LNSPR.timer);
           execServer = false;
         }
         if (countAdministrator === 0 && entities.OperationEntity.typeSyndicated == 'A') {
-          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ROLADMIRR_22323", false, null, timer);
+          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ROLADMIRR_22323", false, null, this.LNSPR.timer);
           execServer = false;
         }
 
@@ -1056,8 +665,8 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
         let dateProccess: any = new Date(this.cobis.containerScope.preferences.processDate);
 
         entities.OperationEntity.creationDate?.setMilliseconds(0);
-        if (entities.OperationEntity.creationDate?.getTime() > dateProccess.getTime()) {
-          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAFECHALA_93688", false, null, timer);
+        if (entities.OperationEntity.creationDate?.getTime() ! > dateProccess.getTime()) {
+          executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAFECHALA_93688", false, null, this.LNSPR.timer);
           execServer = false;
         }
       }
@@ -1106,7 +715,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       entities.AmortizationFormEntity.typeAmortization = entities.AmortizationFormEntity.typeAmortization ? entities.AmortizationFormEntity.typeAmortization?.trim() : "";
       entities.AmortizationFormEntity.typeFee = entities.AmortizationFormEntity.typeFee ? entities.AmortizationFormEntity.typeFee?.trim() : "";
 
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CREACIOTT_10843", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CREACIOTT_10843", false, null, this.LNSPR.timer);
 
       //Datos en otros TABS
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_MC21_OVS27', {
@@ -1267,10 +876,10 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
         //nav.openModalWindow(id, args.modelRow);
       } else {
 
-        gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIPODESRE_41966", false, null, timer);
+        gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIPODESRE_41966", false, null, this.LNSPR.timer);
       }
     } else {
-      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_MONTOREIO_54149", false, null, timer);
+      gridExecuteCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_MONTOREIO_54149", false, null, this.LNSPR.timer);
     }
   };
 
@@ -1292,7 +901,8 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     entities: Model,
     loadCatalogCallbackEventArgs: CobisModelLoadCatalogCallbackEventArgs
   ) => {
-    let combobox: any = $("#VA_OFFICIALHKVNOOZ_385221").data("kendo-ext-drop-down-list");
+    // TODO - REFACTOR
+    let combobox: any /*= $("#VA_OFFICIALHKVNOOZ_385221").data("kendo-ext-drop-down-list");*/
 
     for (let i: any = 0; combobox.dataSource.data().length > i; i++) {
       if (JSON.parse(sessionStorage.UserName) == combobox.dataSource.data()[i].value.split("-")[1].trim()) {
@@ -1380,7 +990,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       };
     } else {
       textInputButtonEventArgs.cancel = true;
-      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, timer);
+      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, this.LNSPR.timer);
     }
   };
 
@@ -1463,7 +1073,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
       let parentVc: any = executeCommandCallbackEventArgs.commons.api.parentVc;
 
       if (!parentVc || (parentVc && parentVc.id == 'VC_LOANSEARCH_100921')) {
@@ -1622,6 +1232,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
 
     //validacion pantalla actualizacion
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = executeQueryEventArgs.commons.api.vc.model.GeneralInformation.codState
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1698,10 +1309,11 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1742,9 +1354,10 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowInsertingCallbackEventArgs.success) {
-      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, timer);
+      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, this.LNSPR.timer);
     }
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE 
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1801,10 +1414,11 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowUpdatingCallbackEventArgs.success) {
-      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, timer);
+      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1915,7 +1529,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
     }
   };
 
@@ -2004,6 +1618,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
           entities.AmortizationEntity[k].dividend = (+k + 1);
         }
         updateFila = false;
+        // TODO - REFACTORIZAR
         gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
@@ -2137,14 +1752,14 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     let numDividend: any = (entities.AmortizationFormEntity.graceDividend) ? entities.AmortizationFormEntity.graceDividend : 0;
     let totalTerm: any = grace + numDividend;
 
-    if (entities.AmortizationFormEntity.typeGrace == 'S' && totalTerm > entities.AmortizationFormEntity.term) {
+    if (entities.AmortizationFormEntity.typeGrace == 'S' && totalTerm > entities.AmortizationFormEntity.term!) {
 
-      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOS_71652', false, null, timer);
+      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOS_71652', false, null, this.LNSPR.timer);
 
       entities.AmortizationFormEntity.graceDividend = 0;
 
-    } else if (entities.AmortizationFormEntity.typeGrace == 'S' && entities.AmortizationFormEntity.graceDividend < 0) {
-      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOD_39674', false, null, timer);
+    } else if (entities.AmortizationFormEntity.typeGrace == 'S' && entities.AmortizationFormEntity.graceDividend! < 0) {
+      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOD_39674', false, null, this.LNSPR.timer);
 
       entities.AmortizationFormEntity.graceDividend = 0;
     }
@@ -2273,9 +1888,11 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
   task_change_VA_TYPEAMORTIZATTN_681198 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
-    $('.k-link.k-pager-nav.k-pager-first').click();
+    // TODO - REFACTORIZAR
+    // $('.k-link.k-pager-nav.k-pager-first').click();
     let viewState: any = changedEventArgs.commons.api.viewState;
     let grid: any = changedEventArgs.commons.api.grid;
+    // TODO - ALE
     if (tmpGridAmortization == null) {
       tmpGridAmortization = entities.AmortizationEntity;
     }
@@ -2457,9 +2074,9 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     entities: Model,
     customValidateEventArgs: CobisModelCustomValidateEventArgs
   ) => {
-    if (entities.AmortizationFormEntity.amount < entities.AmortizationFormEntity.fee) {
+    if (entities.AmortizationFormEntity.amount! < entities.AmortizationFormEntity.fee!) {
       entities.AmortizationFormEntity.fee = 0;
-      customValidateEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANOCP_46972", false, null, timer);
+      customValidateEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANOCP_46972", false, null, this.LNSPR.timer);
     }
     customValidateEventArgs.commons.execServer = false;
   };
@@ -2498,10 +2115,10 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       if (entities.AmortizationEntity.data()[entities.AmortizationEntity.length - 1].balanceCapital != 0) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELSALDORE_75001", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELSALDORE_75001", false, null, this.LNSPR.timer);
       } else {
         executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRYT_R8O');
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, this.LNSPR.timer);
       }
     }
 
@@ -2549,11 +2166,13 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       switch (resp.buttonIndex) {
         case 0:
           stateCalculate = 'C';
-          $('#VA_VAVABUTTONOH3FZ_246198').click();
+          // TODO - REFACTORIZAR
+          // $('#VA_VAVABUTTONOH3FZ_246198').click();
           return false;
         case 1:
           stateCalculate = 'A';
-          $('#VA_VAVABUTTONOH3FZ_246198').click();
+          // TODO - REFACTORIZAR
+          // $('#VA_VAVABUTTONOH3FZ_246198').click();
           return true;
       }
     } else if (stateCalculate == 'C') {
@@ -2561,13 +2180,14 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     } else if (stateCalculate == 'A') {
       stateCalculate = 'V';
       let succes: any = true;
-      if ($('.k-grid-cancel').length) {
-        succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIENECADI_92589", false, null, timer);
-      }
+      // TODO - REFACTORIZAR
+      // if ($('.k-grid-cancel').length) {
+      //     succes = false;
+      //     executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIENECADI_92589", false, null, this.LNSPR.timer);
+      // }
       if (succes && entities.AmortizationEntity.length == 1) {
         succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIDS_88978", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIDS_88978", false, null, this.LNSPR.timer);
       }
       let numDaysYear: any = 360;
       let startDate: any = entities.OperationEntity.creationDate;
@@ -2580,7 +2200,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       }
       if (succes && !changeAmortization) {
         succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOHAYCAMC_91338", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOHAYCAMC_91338", false, null, this.LNSPR.timer);
       }
 
       if (succes && changeAmortization) {
@@ -2607,6 +2227,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
         if ((entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital).toFixed(2) == 0.00) {
           entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital = 0.00;
         }
+        // TODO - REFACTORIZAR
         executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
@@ -2640,7 +2261,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       reportTitle: 'Simulaci\u00f3n'
     };
 
-    Utils.generarReporteModal('settlementTmp', parameters, argsTitle)
+    this.LNSPR.Utils.generarReporteModal('settlementTmp', parameters, argsTitle)
   };
 
   // (Button) - Calcular
@@ -2648,15 +2269,16 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     entities: Model,
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
-    $('.k-link.k-pager-nav.k-pager-first').click();
+    // TODO - REFACTORIZAR
+    // $('.k-link.k-pager-nav.k-pager-first').click();
 
-    if (entities.AmortizationFormEntity.ballonFee == 'S' && entities.AmortizationFormEntity.fee <= 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANO0S_13536", false, null, timer);
+    if (entities.AmortizationFormEntity.ballonFee == 'S' && entities.AmortizationFormEntity.fee! <= 0) {
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANO0S_13536", false, null, this.LNSPR.timer);
       flagUpdateTerm = false;
       executeCommandEventArgs.commons.execServer = false;
 
-    } else if (entities.AmortizationFormEntity.term < 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAPERIOON_28622", false, null, timer);
+    } else if (entities.AmortizationFormEntity.term! < 0) {
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAPERIOON_28622", false, null, this.LNSPR.timer);
       executeCommandEventArgs.commons.execServer = false;
 
     } else {
@@ -2689,7 +2311,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
 
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
       this.suprColAmortization(entities, executeCommandCallbackEventArgs, 'QV_ECPR_JAA30');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, this.LNSPR.timer);
     }
   };
 
@@ -2719,11 +2341,13 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
       ['monto', entities.AmortizationFormEntity.amount],
       ['cliente', name],
       ['moneda', executeCommandEventArgs.commons.api.viewState.getDataItem("VA_MONEYWCCBPJYWVL_470221").value],
-      ['fechaInicio', kendo.toString(kendo.parseDate(entities.OperationEntity.creationDate), JSON.parse(sessionStorage.dateFormat))],
+      // TODO
+      // ['fechaInicio',  kendo.toString(kendo.parseDate(entities.OperationEntity.creationDate), JSON.parse(sessionStorage.dateFormat))], 
+      ['fechaInicio', entities.OperationEntity.creationDate],
       ['tasa', entities.AmortizationFormEntity.interest]
     ];
 
-    Utils.generarReporteModal(itemReporte, args, reportTitle)
+    this.LNSPR.Utils.generarReporteModal(itemReporte, args, reportTitle)
   };
 
   // (Button) - Gracias
@@ -2781,12 +2405,14 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     let filasSeleccionadas: any = gridExecuteCommandEventArgs.commons.api.grid.getSelectedRows('QV_ECPR_JAA30');
     if (filasSeleccionadas.length == 0) {
       // Si no hay ninguna seleccionada se selecciona la primera
-      let grid: any = $("#QV_ECPR_JAA30").data("kendoGrid");
+      // TODO - REFACTORIZAR
+      let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
 
       let row: any = grid.tbody.find(">tr:not(.k-grouping-row)").eq(0);
       grid.select(row);
     }
-    let grid: any = $("#QV_ECPR_JAA30").data("kendoGrid");
+    // TODO - REFACTORIZAR
+    let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
     let sel: any = grid.select();
     let item: any = grid.dataItem(sel);
     let dataSource: any = grid.dataSource;
@@ -2887,6 +2513,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     for (let a: any = 0; a < entities.AmortizationEntity.length - 1; a++) {
       entities.AmortizationEntity[a].dividend = (+a + 1);
     }
+    // TODO - REFACTORIZAR
     gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
   };
 
@@ -2942,7 +2569,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
   ) => {
     //here your code
     if (executeCommandCallbackEventArgs.success) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
 
       /*var nav = executeCommandCallbackEventArgs.commons.api.navigation;
 
@@ -2970,7 +2597,7 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
         nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_SIMULACMO_93778");
       }
 
-      this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+      this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
     }
   };
 
@@ -2997,11 +2624,11 @@ export class VcLoanssimoo401626Custom extends CobisDesignerCustomEvent {
     initDataEventArgs.commons.api.viewState.hide('VA_SYNDICATEDMLJZC_821221');
 
 
-    funcionality = Utils.IsNullOrEmpty(LNSPR.getQueryStrings().funcionality) ? 'SCO' : LNSPR.getQueryStrings().funcionality;
+    funcionality = this.LNSPR.Utils.IsNullOrEmpty(this.LNSPR.getQueryStrings().funcionality) ? 'SCO' : this.LNSPR.getQueryStrings().funcionality;
 
     //entities.OperationEntity.processDate = new Date(2020,4,5);//desarrollo
-    entities.OperationEntity.processDate = new Date(this.cobis.containerScope.preferences.processDate);
-    entities.OperationEntity.sector = 1;
+    entities.OperationEntity.processDate = String(new Date(this.cobis.containerScope.preferences.processDate));
+    entities.OperationEntity.sector = String(1);
     entities.OperationEntity.functionality = funcionality;
     //entities.OperationEntity.amount = 0; //supr 0.0
     //entities.OperationEntity.amountApproved = 0; //supr 0.0

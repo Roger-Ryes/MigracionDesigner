@@ -153,7 +153,7 @@ export class VcOfficialnf999423Custom extends CobisDesignerCustomEvent {
     }
 
     if (!entity.destinationOffice || !entity.destinationOfficial || !entity.reason) {
-      // executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OFICINAQO_65724', false, null, timer);
+      // executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OFICINAQO_65724', false, null, this.LNSPR.timer);
       executeCommandEventArgs.commons.api.viewState.focus('VA_DESTINATIONOEEF_643800');
       executeCommandEventArgs.commons.api.viewState.focus('VA_DESTINATIONOIAI_845800');
       executeCommandEventArgs.commons.api.viewState.focus('VA_REASONDDWAKVIHS_847800');
@@ -173,7 +173,7 @@ export class VcOfficialnf999423Custom extends CobisDesignerCustomEvent {
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_JQ56_BYK87');
       executeCommandCallbackEventArgs.commons.api.viewState.disable('CM_TLNSPRXN_W2R');
     }
@@ -214,7 +214,7 @@ export class VcOfficialnf999423Custom extends CobisDesignerCustomEvent {
       executeQueryEventArgs.commons.execServer = false;
       executeQueryEventArgs.commons.api.viewState.focus('VA_ORIGINOFFICEUMK_654800');
       executeQueryEventArgs.commons.api.viewState.focus('VA_ORIGINOFFICILAA_229800');
-      // executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_INGRESEAI_45954', false, null, timer);
+      // executeQueryEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_INGRESEAI_45954', false, null, this.LNSPR.timer);
     } else {
       executeQueryEventArgs.parameters.oficina = entity.originOffice;
       executeQueryEventArgs.parameters.oficial = entity.originOfficial;

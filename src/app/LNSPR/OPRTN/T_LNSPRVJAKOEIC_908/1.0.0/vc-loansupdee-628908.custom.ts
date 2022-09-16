@@ -80,8 +80,7 @@ let changeAmortization: any = false;
 let stateCalculate: any = 'V';
 let diferenciaCapitalCuota: any = 0;
 let updateFila: any = true; // V - Validate, A - Allows, C - Cancel
-let flagUpdateFee: any = false;
-let flagUpdateTerm: any = false;
+
 
 /* variables locales de T_LNSPRVJAKOEIC_908*/
 let funcionality: any;
@@ -136,159 +135,6 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
 
 
   //"TaskId": "T_LNSPRGNPCEXYE_633"
-  /**
-   * Suprimir las columnas adicionales en la tabla Amortización
-   *
-   * @param entities Contiene todas las entidades del formulario.
-   * @param eventArgs Propiedades y métodos del evento que se está manipulando.
-   * @param gridId id del Grid de amortización a Editar.
-   */
-  suprColAmortization = (entities: Model, eventArgs: any, gridId: any) => {
-    let grid: any = eventArgs.commons.api.grid;
-
-    if (entities.AmortizationTitleEntity.dynamicField1 == null) {
-      grid.hideColumn(gridId, 'dynamicField1');
-      grid.disabledColumn(gridId, 'dynamicField1');
-    } else {
-      grid.title(gridId, 'dynamicField1', entities.AmortizationTitleEntity.dynamicField1);
-      grid.showColumn(gridId, 'dynamicField1');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField2 == null) {
-      grid.hideColumn(gridId, 'dynamicField2');
-      grid.disabledColumn(gridId, 'dynamicField2');
-    } else {
-      grid.title(gridId, 'dynamicField2', entities.AmortizationTitleEntity.dynamicField2);
-      grid.showColumn(gridId, 'dynamicField2');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField3 == null) {
-      grid.hideColumn(gridId, 'dynamicField3');
-      grid.disabledColumn(gridId, 'dynamicField3');
-    } else {
-      grid.title(gridId, 'dynamicField3', entities.AmortizationTitleEntity.dynamicField3);
-      grid.showColumn(gridId, 'dynamicField3');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField4 == null) {
-      grid.hideColumn(gridId, 'dynamicField4');
-      grid.disabledColumn(gridId, 'dynamicField4');
-    } else {
-      grid.title(gridId, 'dynamicField4', entities.AmortizationTitleEntity.dynamicField4);
-      grid.showColumn(gridId, 'dynamicField4');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField5 == null) {
-      grid.hideColumn(gridId, 'dynamicField5');
-      grid.disabledColumn(gridId, 'dynamicField5');
-    } else {
-      grid.title(gridId, 'dynamicField5', entities.AmortizationTitleEntity.dynamicField5);
-      grid.showColumn(gridId, 'dynamicField5');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField6 == null) {
-      grid.hideColumn(gridId, 'dynamicField6');
-      grid.disabledColumn(gridId, 'dynamicField6');
-    } else {
-      grid.title(gridId, 'dynamicField6', entities.AmortizationTitleEntity.dynamicField6);
-      grid.showColumn(gridId, 'dynamicField6');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField7 == null) {
-      grid.hideColumn(gridId, 'dynamicField7');
-      grid.disabledColumn(gridId, 'dynamicField7');
-    } else {
-      grid.title(gridId, 'dynamicField7', entities.AmortizationTitleEntity.dynamicField7);
-      grid.showColumn(gridId, 'dynamicField7');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField8 == null) {
-      grid.hideColumn(gridId, 'dynamicField8');
-      grid.disabledColumn(gridId, 'dynamicField8');
-    } else {
-      grid.title(gridId, 'dynamicField8', entities.AmortizationTitleEntity.dynamicField8);
-      grid.showColumn(gridId, 'dynamicField8');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField9 == null) {
-      grid.hideColumn(gridId, 'dynamicField9');
-      grid.disabledColumn(gridId, 'dynamicField9');
-    } else {
-      grid.title(gridId, 'dynamicField9', entities.AmortizationTitleEntity.dynamicField9);
-      grid.showColumn(gridId, 'dynamicField9');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField10 == null) {
-      grid.hideColumn(gridId, 'dynamicField10');
-      grid.disabledColumn(gridId, 'dynamicField10');
-    } else {
-      grid.title(gridId, 'dynamicField10', entities.AmortizationTitleEntity.dynamicField10);
-      grid.showColumn(gridId, 'dynamicField10');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField11 == null) {
-      grid.hideColumn(gridId, 'dynamicField11');
-      grid.disabledColumn(gridId, 'dynamicField11');
-    } else {
-      grid.title(gridId, 'dynamicField11', entities.AmortizationTitleEntity.dynamicField11);
-      grid.showColumn(gridId, 'dynamicField11');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField12 == null) {
-      grid.hideColumn(gridId, 'dynamicField12');
-      grid.disabledColumn(gridId, 'dynamicField12');
-    } else {
-      grid.title(gridId, 'dynamicField12', entities.AmortizationTitleEntity.dynamicField12);
-      grid.showColumn(gridId, 'dynamicField12');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField13 == null) {
-      grid.hideColumn(gridId, 'dynamicField13');
-      grid.disabledColumn(gridId, 'dynamicField13');
-    } else {
-      grid.title(gridId, 'dynamicField13', entities.AmortizationTitleEntity.dynamicField13);
-      grid.showColumn(gridId, 'dynamicField13');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField14 == null) {
-      grid.hideColumn(gridId, 'dynamicField14');
-      grid.disabledColumn(gridId, 'dynamicField14');
-    } else {
-      grid.title(gridId, 'dynamicField14', entities.AmortizationTitleEntity.dynamicField14);
-      grid.showColumn(gridId, 'dynamicField14');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField15 == null) {
-      grid.hideColumn(gridId, 'dynamicField15');
-      grid.disabledColumn(gridId, 'dynamicField15');
-    } else {
-      grid.title(gridId, 'dynamicField15', entities.AmortizationTitleEntity.dynamicField15);
-      grid.showColumn(gridId, 'dynamicField15');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField16 == null) {
-      grid.hideColumn(gridId, 'dynamicField16');
-      grid.disabledColumn(gridId, 'dynamicField16');
-    } else {
-      grid.title(gridId, 'dynamicField16', entities.AmortizationTitleEntity.dynamicField16);
-      grid.showColumn(gridId, 'dynamicField16');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField17 == null) {
-      grid.hideColumn(gridId, 'dynamicField17');
-      grid.disabledColumn(gridId, 'dynamicField17');
-    } else {
-      grid.title(gridId, 'dynamicField17', entities.AmortizationTitleEntity.dynamicField17);
-      grid.showColumn(gridId, 'dynamicField17');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField18 == null) {
-      grid.hideColumn(gridId, 'dynamicField18');
-      grid.disabledColumn(gridId, 'dynamicField18');
-    } else {
-      grid.title(gridId, 'dynamicField18', entities.AmortizationTitleEntity.dynamicField18);
-      grid.showColumn(gridId, 'dynamicField18');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField19 == null) {
-      grid.hideColumn(gridId, 'dynamicField19');
-      grid.disabledColumn(gridId, 'dynamicField19');
-    } else {
-      grid.title(gridId, 'dynamicField19', entities.AmortizationTitleEntity.dynamicField19);
-      grid.showColumn(gridId, 'dynamicField19');
-    }
-    if (entities.AmortizationTitleEntity.dynamicField20 == null) {
-      grid.hideColumn(gridId, 'dynamicField20');
-      grid.disabledColumn(gridId, 'dynamicField20');
-    } else {
-      grid.title(gridId, 'dynamicField20', entities.AmortizationTitleEntity.dynamicField20);
-      grid.showColumn(gridId, 'dynamicField20');
-    }
-  }
-
-  //"TaskId": "T_LNSPRVJAKOEIC_908"
   /**
    * Suprimir las columnas adicionales en la tabla Amortización
    *
@@ -510,7 +356,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
       let parentVc: any = executeCommandCallbackEventArgs.commons.api.parentVc;
 
       if (!parentVc || (parentVc && parentVc.id == 'VC_LOANSEARCH_100921')) {
@@ -669,6 +515,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
 
     //validacion pantalla actualizacion
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = executeQueryEventArgs.commons.api.vc.model.GeneralInformation.codState
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -745,10 +592,11 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -789,9 +637,10 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowInsertingCallbackEventArgs.success) {
-      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, timer);
+      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, this.LNSPR.timer);
     }
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE 
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -848,10 +697,11 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowUpdatingCallbackEventArgs.success) {
-      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, timer);
+      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -962,7 +812,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
     }
   };
 
@@ -1051,6 +901,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
           entities.AmortizationEntity[k].dividend = (+k + 1);
         }
         updateFila = false;
+        // TODO - REFACTORIZAR
         gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
@@ -1184,14 +1035,14 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
     let numDividend: any = (entities.AmortizationFormEntity.graceDividend) ? entities.AmortizationFormEntity.graceDividend : 0;
     let totalTerm: any = grace + numDividend;
 
-    if (entities.AmortizationFormEntity.typeGrace == 'S' && totalTerm > entities.AmortizationFormEntity.term) {
+    if (entities.AmortizationFormEntity.typeGrace == 'S' && totalTerm > entities.AmortizationFormEntity.term!) {
 
-      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOS_71652', false, null, timer);
+      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOS_71652', false, null, this.LNSPR.timer);
 
       entities.AmortizationFormEntity.graceDividend = 0;
 
-    } else if (entities.AmortizationFormEntity.typeGrace == 'S' && entities.AmortizationFormEntity.graceDividend < 0) {
-      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOD_39674', false, null, timer);
+    } else if (entities.AmortizationFormEntity.typeGrace == 'S' && entities.AmortizationFormEntity.graceDividend! < 0) {
+      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOD_39674', false, null, this.LNSPR.timer);
 
       entities.AmortizationFormEntity.graceDividend = 0;
     }
@@ -1320,9 +1171,11 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
   task_change_VA_TYPEAMORTIZATTN_681198 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
-    $('.k-link.k-pager-nav.k-pager-first').click();
+    // TODO - REFACTORIZAR
+    // $('.k-link.k-pager-nav.k-pager-first').click();
     let viewState: any = changedEventArgs.commons.api.viewState;
     let grid: any = changedEventArgs.commons.api.grid;
+    // TODO - ALE
     if (tmpGridAmortization == null) {
       tmpGridAmortization = entities.AmortizationEntity;
     }
@@ -1504,9 +1357,9 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
     entities: Model,
     customValidateEventArgs: CobisModelCustomValidateEventArgs
   ) => {
-    if (entities.AmortizationFormEntity.amount < entities.AmortizationFormEntity.fee) {
+    if (entities.AmortizationFormEntity.amount! < entities.AmortizationFormEntity.fee!) {
       entities.AmortizationFormEntity.fee = 0;
-      customValidateEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANOCP_46972", false, null, timer);
+      customValidateEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANOCP_46972", false, null, this.LNSPR.timer);
     }
     customValidateEventArgs.commons.execServer = false;
   };
@@ -1545,10 +1398,10 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       if (entities.AmortizationEntity.data()[entities.AmortizationEntity.length - 1].balanceCapital != 0) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELSALDORE_75001", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELSALDORE_75001", false, null, this.LNSPR.timer);
       } else {
         executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRYT_R8O');
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, this.LNSPR.timer);
       }
     }
 
@@ -1596,11 +1449,13 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
       switch (resp.buttonIndex) {
         case 0:
           stateCalculate = 'C';
-          $('#VA_VAVABUTTONOH3FZ_246198').click();
+          // TODO - REFACTORIZAR
+          // $('#VA_VAVABUTTONOH3FZ_246198').click();
           return false;
         case 1:
           stateCalculate = 'A';
-          $('#VA_VAVABUTTONOH3FZ_246198').click();
+          // TODO - REFACTORIZAR
+          // $('#VA_VAVABUTTONOH3FZ_246198').click();
           return true;
       }
     } else if (stateCalculate == 'C') {
@@ -1608,13 +1463,14 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
     } else if (stateCalculate == 'A') {
       stateCalculate = 'V';
       let succes: any = true;
-      if ($('.k-grid-cancel').length) {
-        succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIENECADI_92589", false, null, timer);
-      }
+      // TODO - REFACTORIZAR
+      // if ($('.k-grid-cancel').length) {
+      //     succes = false;
+      //     executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIENECADI_92589", false, null, this.LNSPR.timer);
+      // }
       if (succes && entities.AmortizationEntity.length == 1) {
         succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIDS_88978", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIDS_88978", false, null, this.LNSPR.timer);
       }
       let numDaysYear: any = 360;
       let startDate: any = entities.OperationEntity.creationDate;
@@ -1627,7 +1483,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
       }
       if (succes && !changeAmortization) {
         succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOHAYCAMC_91338", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOHAYCAMC_91338", false, null, this.LNSPR.timer);
       }
 
       if (succes && changeAmortization) {
@@ -1654,6 +1510,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
         if ((entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital).toFixed(2) == 0.00) {
           entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital = 0.00;
         }
+        // TODO - REFACTORIZAR
         executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
@@ -1687,7 +1544,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
       reportTitle: 'Simulaci\u00f3n'
     };
 
-    Utils.generarReporteModal('settlementTmp', parameters, argsTitle)
+    this.LNSPR.Utils.generarReporteModal('settlementTmp', parameters, argsTitle)
   };
 
   // (Button) - Calcular
@@ -1695,15 +1552,16 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
     entities: Model,
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
-    $('.k-link.k-pager-nav.k-pager-first').click();
+    // TODO - REFACTORIZAR
+    // $('.k-link.k-pager-nav.k-pager-first').click();
 
-    if (entities.AmortizationFormEntity.ballonFee == 'S' && entities.AmortizationFormEntity.fee <= 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANO0S_13536", false, null, timer);
+    if (entities.AmortizationFormEntity.ballonFee == 'S' && entities.AmortizationFormEntity.fee! <= 0) {
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANO0S_13536", false, null, this.LNSPR.timer);
       flagUpdateTerm = false;
       executeCommandEventArgs.commons.execServer = false;
 
-    } else if (entities.AmortizationFormEntity.term < 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAPERIOON_28622", false, null, timer);
+    } else if (entities.AmortizationFormEntity.term! < 0) {
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAPERIOON_28622", false, null, this.LNSPR.timer);
       executeCommandEventArgs.commons.execServer = false;
 
     } else {
@@ -1736,7 +1594,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
 
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
       this.suprColAmortization(entities, executeCommandCallbackEventArgs, 'QV_ECPR_JAA30');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, this.LNSPR.timer);
     }
   };
 
@@ -1766,11 +1624,13 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
       ['monto', entities.AmortizationFormEntity.amount],
       ['cliente', name],
       ['moneda', executeCommandEventArgs.commons.api.viewState.getDataItem("VA_MONEYWCCBPJYWVL_470221").value],
-      ['fechaInicio', kendo.toString(kendo.parseDate(entities.OperationEntity.creationDate), JSON.parse(sessionStorage.dateFormat))],
+      // TODO
+      // ['fechaInicio',  kendo.toString(kendo.parseDate(entities.OperationEntity.creationDate), JSON.parse(sessionStorage.dateFormat))], 
+      ['fechaInicio', entities.OperationEntity.creationDate],
       ['tasa', entities.AmortizationFormEntity.interest]
     ];
 
-    Utils.generarReporteModal(itemReporte, args, reportTitle)
+    this.LNSPR.Utils.generarReporteModal(itemReporte, args, reportTitle)
   };
 
   // (Button) - Gracias
@@ -1828,12 +1688,14 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
     let filasSeleccionadas: any = gridExecuteCommandEventArgs.commons.api.grid.getSelectedRows('QV_ECPR_JAA30');
     if (filasSeleccionadas.length == 0) {
       // Si no hay ninguna seleccionada se selecciona la primera
-      let grid: any = $("#QV_ECPR_JAA30").data("kendoGrid");
+      // TODO - REFACTORIZAR
+      let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
 
       let row: any = grid.tbody.find(">tr:not(.k-grouping-row)").eq(0);
       grid.select(row);
     }
-    let grid: any = $("#QV_ECPR_JAA30").data("kendoGrid");
+    // TODO - REFACTORIZAR
+    let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
     let sel: any = grid.select();
     let item: any = grid.dataItem(sel);
     let dataSource: any = grid.dataSource;
@@ -1934,6 +1796,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
     for (let a: any = 0; a < entities.AmortizationEntity.length - 1; a++) {
       entities.AmortizationEntity[a].dividend = (+a + 1);
     }
+    // TODO - REFACTORIZAR
     gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
   };
 
@@ -1990,7 +1853,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
     //here your code
     if (executeCommandCallbackEventArgs.success) {
       let viewState: any = executeCommandCallbackEventArgs.commons.api.viewState;
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACIAA_39249", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACIAA_39249", false, null, this.LNSPR.timer);
 
       viewState.disable('CM_TLOANSJY_N2B'); //Commando
       viewState.disable('CM_TLNSPRVJ_776'); //T_LNSPRMBVLAOGA_193 = Commando//Transmitir
@@ -2291,6 +2154,7 @@ export class VcLoansupdee628908Custom extends CobisDesignerCustomEvent {
       }
     } else {
       viewState.hide('VA_VABUTTONOHXRHAO_106309'); //button establecer
+      // RSR - ALE
       entities.GeneralParametersQuery.account = null;
     }
 

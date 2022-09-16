@@ -91,11 +91,11 @@ export class VcSyndicatdi660858Custom extends CobisDesignerCustomEvent {
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
   task_change_VA_AMOUNTPARTICTSP_895405 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
-    if (entities.OperationEntity.amount >= entities.OperationEntity.amountParticipants) {
-      entities.OperationEntity.percentageParticipants = (entities.OperationEntity.amountParticipants * 100) / entities.OperationEntity.amount
+    if (entities.OperationEntity.amount! >= entities.OperationEntity.amountParticipants!) {
+      entities.OperationEntity.percentageParticipants = (entities.OperationEntity.amountParticipants! * 100) / entities.OperationEntity.amount!
 
     } else {
-      changedEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELVALOREP_52967", false, null, timer);
+      changedEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELVALOREP_52967", false, null, this.LNSPR.timer);
     }
 
     changedEventArgs.commons.execServer = false;
@@ -148,11 +148,11 @@ export class VcSyndicatdi660858Custom extends CobisDesignerCustomEvent {
         }
       } else {
         executeCommandEventArgs.commons.execServer = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOEXCEDER_58370", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOEXCEDER_58370", false, null, this.LNSPR.timer);
       }
     } else {
       executeCommandEventArgs.commons.execServer = false;
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_PARTICIIA_96996", false, null, timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_PARTICIIA_96996", false, null, this.LNSPR.timer);
     }
   };
 
@@ -204,7 +204,8 @@ export class VcSyndicatdi660858Custom extends CobisDesignerCustomEvent {
     initDataCallbackEventArgs: CobisModelInitDataCallbackEventArgs
   ) => {
     let parameters: any = initDataCallbackEventArgs.commons.api.navigation.getCustomDialogParameters();
-    document.getElementById('VA_PARTICIPANTSTOP_981405').readOnly = true
+    // TODO - REFACTOR
+    // document.getElementById('VA_PARTICIPANTSTOP_981405').readOnly = true
 
 
     if (initDataCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().typeSindicated == 'G') {

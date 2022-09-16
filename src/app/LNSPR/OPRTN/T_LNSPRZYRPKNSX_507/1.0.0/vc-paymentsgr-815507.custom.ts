@@ -193,10 +193,10 @@ export class VcPaymentsgr815507Custom extends CobisDesignerCustomEvent {
 
     if (executeCommandCallbackEventArgs.success) {
       /* if (entities.MassivePayments.length >= 2) {
-               executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEN_20984", false, null, timer);
+               executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASEN_20984", false, null, this.LNSPR.timer);
 
        } else {*/
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSACEC_84918', false, null, this.LNSPR.timer);
 
       // }
 
@@ -234,12 +234,12 @@ export class VcPaymentsgr815507Custom extends CobisDesignerCustomEvent {
     if (executeCommandCallbackEventArgs.success) {
 
       if (entities.ErrorMassivePayments.length >= 2) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASOD_51346", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASOD_51346", false, null, this.LNSPR.timer);
         executeCommandCallbackEventArgs.commons.api.viewState.disable("CM_TLNSPRZY_K05");
         executeCommandCallbackEventArgs.commons.api.viewState.disable("CM_TLNSPRZY_1_0");
         executeCommandCallbackEventArgs.commons.api.viewState.enable("CM_TLNSPRZY_N35");
       } else {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSMION_38404', false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_TRANSMION_38404', false, null, this.LNSPR.timer);
         executeCommandCallbackEventArgs.commons.api.viewState.enable("CM_TLNSPRZY_1_0");
         executeCommandCallbackEventArgs.commons.api.viewState.disable("CM_TLNSPRZY_K05");
         executeCommandCallbackEventArgs.commons.api.viewState.enable("CM_TLNSPRZY_N35");
@@ -454,7 +454,8 @@ export class VcPaymentsgr815507Custom extends CobisDesignerCustomEvent {
   task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
 
     renderEventArgs.commons.execServer = false;
-    $('.close').hide()
+    // TODO - REFACTOR
+    // $('.close').hide()
   };
 
 

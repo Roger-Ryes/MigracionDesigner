@@ -166,7 +166,7 @@ export class VcProductlin542181Custom extends CobisDesignerCustomEvent {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('VA_OPTYPEPASINULZZ_450676');
       executeCommandCallbackEventArgs.commons.api.viewState.enable('VA_OPTYPEACPEUXTGS_100676');
       executeCommandCallbackEventArgs.commons.api.viewState.enable('VA_CURRENCYIMFFWXD_243676');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACIOA_60671', false, null, this.LNSPR.timer);
     }
   };
 
@@ -331,7 +331,7 @@ export class VcProductlin542181Custom extends CobisDesignerCustomEvent {
     gridRowDeletingCallbackEventArgs: CobisModelGridRowActionCallbackEventArgs
   ) => {
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, this.LNSPR.timer);
     }
   };
 
@@ -347,9 +347,11 @@ export class VcProductlin542181Custom extends CobisDesignerCustomEvent {
 
     if (gridRowSelectingEventArgs.commons.api.vc.mode == gridRowSelectingEventArgs.commons.constants.mode.Update) {
       entities.ProductLineDistribution.editionMode = gridRowSelectingEventArgs.commons.constants.mode.Update;
-      gridRowSelectingEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_EDICINHAI_74003', false, null, timer);
+      gridRowSelectingEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_EDICINHAI_74003', false, null, this.LNSPR.timer);
       entities.ProductLineDistribution.product = gridRowSelectingEventArgs.rowData.product;
-      entities.ProductLineDistribution.clientCode = gridRowSelectingEventArgs.rowData.clientCod;
+      // TODO - ALE
+      // entities.ProductLineDistribution.clientCode = gridRowSelectingEventArgs.rowData.clientCod;
+      entities.ProductLineDistribution.clientCod = gridRowSelectingEventArgs.rowData.clientCod;
 
       entities.ProductLineDistribution.currency = gridRowSelectingEventArgs.rowData.codCurrency;
       entities.ProductLineDistribution.amount = gridRowSelectingEventArgs.rowData.amount;

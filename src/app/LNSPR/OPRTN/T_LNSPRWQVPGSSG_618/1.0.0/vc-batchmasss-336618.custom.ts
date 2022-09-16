@@ -100,7 +100,7 @@ export class VcBatchmasss336618Custom extends CobisDesignerCustomEvent {
     entities.Payment = auxList;
     entities.LoanSearchFilter.sequential = numRep;
     if (count == 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_SEPROCEED_91441', false, [numRep], timer);
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_SEPROCEED_91441', false, [numRep], this.LNSPR.timer);
     }
   };
 
@@ -118,17 +118,18 @@ export class VcBatchmasss336618Custom extends CobisDesignerCustomEvent {
       }
 
       if (numRep > 0) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_BLOQUEPOR_62315', false, [count + 1], timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_BLOQUEPOR_62315', false, [count + 1], this.LNSPR.timer);
         count++;
+        // TODO - ALE - REFACTORIZAR
         executeCommandCallbackEventArgs.commons.api.vc.executeCommand('CM_TLNSPRWQ_853', 'MassivePayments', undefined, true, false, 'VC_BATCHMASSS_336618', false);
         return;
       }
 
       if (entities.ErrorMassivePayments.length >= 2) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASER_66108", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ALGUNASER_66108", false, null, this.LNSPR.timer);
 
       } else {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSMION_38404", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TRANSMION_38404", false, null, this.LNSPR.timer);
       }
 
     }
@@ -152,7 +153,7 @@ export class VcBatchmasss336618Custom extends CobisDesignerCustomEvent {
       nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAIV_19760");
     }
 
-    this.cobis.container.tabs.changeCurrentTab(idAux, urlAux, nameAux, true);
+    this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
   };
 
 

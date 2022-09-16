@@ -12,6 +12,7 @@ import { AmortizationEntity } from "../../../../entities/AmortizationEntity";
 import { OperationItemsList } from "../../../../entities/OperationItemsList";
 import { AmortizationManualRequest } from "../../../../entities/AmortizationManualRequest";
 import { CreateOperationOne } from "../../../../entities/CreateOperationOne";
+import { DebtorEntity } from "../../../../entities/DebtorEntity";
 import { ItemEntity } from "../../../../entities/ItemEntity";
 export class Model {
 private _amortizationFormEntity!: AmortizationFormEntity;
@@ -29,6 +30,7 @@ public OperationItemsList!: any;
 private _operationItemsListRowData!: OperationItemsList;
 private _amortizationManualRequest!: any;
 private _createOperationOne!: any;
+private _debtorEntity!: any;
 private _itemEntity!: any;
 constructor(private formGroupArray: any) {
 this._amortizationFormEntity = new AmortizationFormEntity(formGroupArray["AmortizationFormEntity"]);
@@ -46,6 +48,7 @@ this.OperationItemsList = [];
 this._operationItemsListRowData = new OperationItemsList(formGroupArray["OperationItemsList"]);
 this._amortizationManualRequest = new AmortizationManualRequest();
 this._createOperationOne = new CreateOperationOne();
+this._debtorEntity = new DebtorEntity();
 this._itemEntity = new ItemEntity();
 }
 public set AmortizationFormEntity(valores: any) {
@@ -119,6 +122,12 @@ this._createOperationOne = valores;
 }
 public get CreateOperationOne(): any {
 return this._createOperationOne;
+}
+public set DebtorEntity(valores: any) {
+this._debtorEntity = valores;
+}
+public get DebtorEntity(): any {
+return this._debtorEntity;
 }
 public set ItemEntity(valores: any) {
 this._itemEntity = valores;

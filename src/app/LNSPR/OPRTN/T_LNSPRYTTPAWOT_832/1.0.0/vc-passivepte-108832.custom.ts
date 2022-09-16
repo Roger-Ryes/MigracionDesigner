@@ -74,8 +74,6 @@ let changeAmortization: any = false;
 let stateCalculate: any = 'V';
 let diferenciaCapitalCuota: any = 0;
 let updateFila: any = true; // V - Validate, A - Allows, C - Cancel
-let flagUpdateFee: any = false;
-let flagUpdateTerm: any = false;
 
 /* variables locales de T_LNSPRYTTPAWOT_832*/
 let tmpGridAmortization: any = null;
@@ -361,11 +359,12 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       viewState.show('VC_UBTCDKFYUM_204785'); //Parametros generales
       viewState.show('VC_VDXJPHMPYC_153633'); //Amortización
 
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CREACIOTT_10843", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CREACIOTT_10843", false, null, this.LNSPR.timer);
 
       viewState.enable('CM_TLNSPRYT_R8O'); //Button Transmitir
 
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_MC21_OVS27'); //Rubros//Grid
+      // TODO - ALE
       executeCommandCallbackEventArgs.commons.api.vc.queries.VA_ITEMWXVWWWSCMKV_983587_values = undefined;
       viewState.refreshData('VA_ITEMWXVWWWSCMKV_983587'); //Rubros//Columna Rubros
       viewState.refreshData('Q_APAGOOOO_YV30'); //Parametros Generales//FormaPagoQuery
@@ -667,7 +666,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       //nav.openModalWindow(id, args.modelRow);
     } else {
       textInputButtonEventArgs.cancel = true;
-      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, timer);
+      textInputButtonEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIRI_69031", false, null, this.LNSPR.timer);
     }
   };
 
@@ -717,7 +716,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
       let parentVc: any = executeCommandCallbackEventArgs.commons.api.parentVc;
 
       if (!parentVc || (parentVc && parentVc.id == 'VC_LOANSEARCH_100921')) {
@@ -876,6 +875,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
 
     //validacion pantalla actualizacion
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = executeQueryEventArgs.commons.api.vc.model.GeneralInformation.codState
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -952,10 +952,11 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowDeletingCallbackEventArgs.success) {
-      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, timer);
+      gridRowDeletingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_ELIMINATR_48672', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -996,9 +997,10 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowInsertingCallbackEventArgs.success) {
-      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, timer);
+      gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, this.LNSPR.timer);
     }
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE 
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1055,10 +1057,11 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
 
 
     if (gridRowUpdatingCallbackEventArgs.success) {
-      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, timer);
+      gridRowUpdatingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_MODIFICEO_25691', false, null, this.LNSPR.timer);
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
+      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1169,7 +1172,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_OPERACICA_42329', false, null, this.LNSPR.timer);
     }
   };
 
@@ -1258,6 +1261,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
           entities.AmortizationEntity[k].dividend = (+k + 1);
         }
         updateFila = false;
+        // TODO - REFACTORIZAR
         gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
@@ -1391,14 +1395,14 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     let numDividend: any = (entities.AmortizationFormEntity.graceDividend) ? entities.AmortizationFormEntity.graceDividend : 0;
     let totalTerm: any = grace + numDividend;
 
-    if (entities.AmortizationFormEntity.typeGrace == 'S' && totalTerm > entities.AmortizationFormEntity.term) {
+    if (entities.AmortizationFormEntity.typeGrace == 'S' && totalTerm > entities.AmortizationFormEntity.term!) {
 
-      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOS_71652', false, null, timer);
+      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOS_71652', false, null, this.LNSPR.timer);
 
       entities.AmortizationFormEntity.graceDividend = 0;
 
-    } else if (entities.AmortizationFormEntity.typeGrace == 'S' && entities.AmortizationFormEntity.graceDividend < 0) {
-      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOD_39674', false, null, timer);
+    } else if (entities.AmortizationFormEntity.typeGrace == 'S' && entities.AmortizationFormEntity.graceDividend! < 0) {
+      changedEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_ELNUMDEOD_39674', false, null, this.LNSPR.timer);
 
       entities.AmortizationFormEntity.graceDividend = 0;
     }
@@ -1527,9 +1531,11 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
   task_change_VA_TYPEAMORTIZATTN_681198 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
-    $('.k-link.k-pager-nav.k-pager-first').click();
+    // TODO - REFACTORIZAR
+    // $('.k-link.k-pager-nav.k-pager-first').click();
     let viewState: any = changedEventArgs.commons.api.viewState;
     let grid: any = changedEventArgs.commons.api.grid;
+    // TODO - ALE
     if (tmpGridAmortization == null) {
       tmpGridAmortization = entities.AmortizationEntity;
     }
@@ -1711,9 +1717,9 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     entities: Model,
     customValidateEventArgs: CobisModelCustomValidateEventArgs
   ) => {
-    if (entities.AmortizationFormEntity.amount < entities.AmortizationFormEntity.fee) {
+    if (entities.AmortizationFormEntity.amount! < entities.AmortizationFormEntity.fee!) {
       entities.AmortizationFormEntity.fee = 0;
-      customValidateEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANOCP_46972", false, null, timer);
+      customValidateEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANOCP_46972", false, null, this.LNSPR.timer);
     }
     customValidateEventArgs.commons.execServer = false;
   };
@@ -1752,10 +1758,10 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
   ) => {
     if (executeCommandCallbackEventArgs.success) {
       if (entities.AmortizationEntity.data()[entities.AmortizationEntity.length - 1].balanceCapital != 0) {
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELSALDORE_75001", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_ELSALDORE_75001", false, null, this.LNSPR.timer);
       } else {
         executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRYT_R8O');
-        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, timer);
+        executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, this.LNSPR.timer);
       }
     }
 
@@ -1803,11 +1809,13 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       switch (resp.buttonIndex) {
         case 0:
           stateCalculate = 'C';
-          $('#VA_VAVABUTTONOH3FZ_246198').click();
+          // TODO - REFACTORIZAR
+          // $('#VA_VAVABUTTONOH3FZ_246198').click();
           return false;
         case 1:
           stateCalculate = 'A';
-          $('#VA_VAVABUTTONOH3FZ_246198').click();
+          // TODO - REFACTORIZAR
+          // $('#VA_VAVABUTTONOH3FZ_246198').click();
           return true;
       }
     } else if (stateCalculate == 'C') {
@@ -1815,13 +1823,14 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     } else if (stateCalculate == 'A') {
       stateCalculate = 'V';
       let succes: any = true;
-      if ($('.k-grid-cancel').length) {
-        succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIENECADI_92589", false, null, timer);
-      }
+      // TODO - REFACTORIZAR
+      // if ($('.k-grid-cancel').length) {
+      //     succes = false;
+      //     executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_TIENECADI_92589", false, null, this.LNSPR.timer);
+      // }
       if (succes && entities.AmortizationEntity.length == 1) {
         succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIDS_88978", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_DEBEEXIDS_88978", false, null, this.LNSPR.timer);
       }
       let numDaysYear: any = 360;
       let startDate: any = entities.OperationEntity.creationDate;
@@ -1834,7 +1843,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       }
       if (succes && !changeAmortization) {
         succes = false;
-        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOHAYCAMC_91338", false, null, timer);
+        executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_NOHAYCAMC_91338", false, null, this.LNSPR.timer);
       }
 
       if (succes && changeAmortization) {
@@ -1861,6 +1870,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
         if ((entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital).toFixed(2) == 0.00) {
           entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital = 0.00;
         }
+        // TODO - REFACTORIZAR
         executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
@@ -1894,7 +1904,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       reportTitle: 'Simulaci\u00f3n'
     };
 
-    Utils.generarReporteModal('settlementTmp', parameters, argsTitle)
+    this.LNSPR.Utils.generarReporteModal('settlementTmp', parameters, argsTitle)
   };
 
   // (Button) - Calcular
@@ -1902,15 +1912,16 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     entities: Model,
     executeCommandEventArgs: CobisModelExecuteCommandEventArgs
   ) => {
-    $('.k-link.k-pager-nav.k-pager-first').click();
+    // TODO - REFACTORIZAR
+    // $('.k-link.k-pager-nav.k-pager-first').click();
 
-    if (entities.AmortizationFormEntity.ballonFee == 'S' && entities.AmortizationFormEntity.fee <= 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANO0S_13536", false, null, timer);
+    if (entities.AmortizationFormEntity.ballonFee == 'S' && entities.AmortizationFormEntity.fee! <= 0) {
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_CUOTANO0S_13536", false, null, this.LNSPR.timer);
       flagUpdateTerm = false;
       executeCommandEventArgs.commons.execServer = false;
 
-    } else if (entities.AmortizationFormEntity.term < 0) {
-      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAPERIOON_28622", false, null, timer);
+    } else if (entities.AmortizationFormEntity.term! < 0) {
+      executeCommandEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_LAPERIOON_28622", false, null, this.LNSPR.timer);
       executeCommandEventArgs.commons.execServer = false;
 
     } else {
@@ -1943,7 +1954,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
 
       executeCommandCallbackEventArgs.commons.api.viewState.enable('CM_TLNSPRVJ_776');
       this.suprColAmortization(entities, executeCommandCallbackEventArgs, 'QV_ECPR_JAA30');
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACICA_42329", false, null, this.LNSPR.timer);
     }
   };
 
@@ -1973,11 +1984,13 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       ['monto', entities.AmortizationFormEntity.amount],
       ['cliente', name],
       ['moneda', executeCommandEventArgs.commons.api.viewState.getDataItem("VA_MONEYWCCBPJYWVL_470221").value],
-      ['fechaInicio', kendo.toString(kendo.parseDate(entities.OperationEntity.creationDate), JSON.parse(sessionStorage.dateFormat))],
+      // TODO
+      // ['fechaInicio',  kendo.toString(kendo.parseDate(entities.OperationEntity.creationDate), JSON.parse(sessionStorage.dateFormat))], 
+      ['fechaInicio', entities.OperationEntity.creationDate],
       ['tasa', entities.AmortizationFormEntity.interest]
     ];
 
-    Utils.generarReporteModal(itemReporte, args, reportTitle)
+    this.LNSPR.Utils.generarReporteModal(itemReporte, args, reportTitle)
   };
 
   // (Button) - Gracias
@@ -2035,12 +2048,14 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     let filasSeleccionadas: any = gridExecuteCommandEventArgs.commons.api.grid.getSelectedRows('QV_ECPR_JAA30');
     if (filasSeleccionadas.length == 0) {
       // Si no hay ninguna seleccionada se selecciona la primera
-      let grid: any = $("#QV_ECPR_JAA30").data("kendoGrid");
+      // TODO - REFACTORIZAR
+      let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
 
       let row: any = grid.tbody.find(">tr:not(.k-grouping-row)").eq(0);
       grid.select(row);
     }
-    let grid: any = $("#QV_ECPR_JAA30").data("kendoGrid");
+    // TODO - REFACTORIZAR
+    let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
     let sel: any = grid.select();
     let item: any = grid.dataItem(sel);
     let dataSource: any = grid.dataSource;
@@ -2141,6 +2156,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     for (let a: any = 0; a < entities.AmortizationEntity.length - 1; a++) {
       entities.AmortizationEntity[a].dividend = (+a + 1);
     }
+    // TODO - REFACTORIZAR
     gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
   };
 
@@ -2196,7 +2212,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
   ) => {
     //here your code
     if (executeCommandCallbackEventArgs.success) {
-      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACIAA_39249", false, null, timer);
+      executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("LNSPR.MSG_LNSPR_OPERACIAA_39249", false, null, this.LNSPR.timer);
       let viewState: any = executeCommandCallbackEventArgs.commons.api.viewState;
       //Información general
       viewState.disable('G_PASSIVERIF_136899'); //Group1372

@@ -6,12 +6,14 @@ import { AmortizationEntity } from "../../../../entities/AmortizationEntity";
 import { CreateOperationTwo } from "../../../../entities/CreateOperationTwo";
 import { CreateOperationOne } from "../../../../entities/CreateOperationOne";
 import { CustomerEntity } from "../../../../entities/CustomerEntity";
+import { DebtorReportedEntity } from "../../../../entities/DebtorReportedEntity";
 import { DebtorEntity } from "../../../../entities/DebtorEntity";
 import { GeneralParametersQuery } from "../../../../entities/GeneralParametersQuery";
 import { GenericEntity } from "../../../../entities/GenericEntity";
 import { OperationEntity } from "../../../../entities/OperationEntity";
 import { OperationCRUDFormEntity } from "../../../../entities/OperationCRUDFormEntity";
 import { SyndicatedList } from "../../../../entities/SyndicatedList";
+import { GeneralInformation } from "../../../../entities/GeneralInformation";
 import { OperationItemsList } from "../../../../entities/OperationItemsList";
 import { AmortizationManualRequest } from "../../../../entities/AmortizationManualRequest";
 import { ItemEntity } from "../../../../entities/ItemEntity";
@@ -23,6 +25,7 @@ private _amortizationEntityRowData!: AmortizationEntity;
 private _createOperationTwo!: any;
 private _createOperationOne!: any;
 private _customerEntity!: any;
+private _debtorReportedEntity!: any;
 public DebtorEntity!: any;
 private _debtorEntityRowData!: DebtorEntity;
 private _generalParametersQuery!: GeneralParametersQuery;
@@ -31,6 +34,7 @@ private _operationEntity!: OperationEntity;
 private _operationCRUDFormEntity!: OperationCRUDFormEntity;
 public SyndicatedList!: any;
 private _syndicatedListRowData!: SyndicatedList;
+private _generalInformation!: any;
 public OperationItemsList!: any;
 private _operationItemsListRowData!: OperationItemsList;
 private _amortizationManualRequest!: any;
@@ -43,6 +47,7 @@ this._amortizationEntityRowData = new AmortizationEntity(formGroupArray["Amortiz
 this._createOperationTwo = new CreateOperationTwo();
 this._createOperationOne = new CreateOperationOne();
 this._customerEntity = new CustomerEntity();
+this._debtorReportedEntity = new DebtorReportedEntity();
 this.DebtorEntity = [];
 this._debtorEntityRowData = new DebtorEntity(formGroupArray["DebtorEntity"]);
 this._generalParametersQuery = new GeneralParametersQuery(formGroupArray["GeneralParametersQuery"]);
@@ -51,6 +56,7 @@ this._operationEntity = new OperationEntity(formGroupArray["OperationEntity"]);
 this._operationCRUDFormEntity = new OperationCRUDFormEntity(formGroupArray["OperationCRUDFormEntity"]);
 this.SyndicatedList = [];
 this._syndicatedListRowData = new SyndicatedList(formGroupArray["SyndicatedList"]);
+this._generalInformation = new GeneralInformation();
 this.OperationItemsList = [];
 this._operationItemsListRowData = new OperationItemsList(formGroupArray["OperationItemsList"]);
 this._amortizationManualRequest = new AmortizationManualRequest();
@@ -92,6 +98,12 @@ this._customerEntity = valores;
 public get CustomerEntity(): any {
 return this._customerEntity;
 }
+public set DebtorReportedEntity(valores: any) {
+this._debtorReportedEntity = valores;
+}
+public get DebtorReportedEntity(): any {
+return this._debtorReportedEntity;
+}
 public set DebtorEntityRowData(entity: any) {
 this._debtorEntityRowData = entity;
 }
@@ -127,6 +139,12 @@ this._syndicatedListRowData = entity;
 }
 public get SyndicatedListRowData() {
 return this._syndicatedListRowData;
+}
+public set GeneralInformation(valores: any) {
+this._generalInformation = valores;
+}
+public get GeneralInformation(): any {
+return this._generalInformation;
 }
 public set OperationItemsListRowData(entity: any) {
 this._operationItemsListRowData = entity;
