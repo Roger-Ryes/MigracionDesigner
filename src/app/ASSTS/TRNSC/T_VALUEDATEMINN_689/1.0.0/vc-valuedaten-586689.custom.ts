@@ -132,8 +132,6 @@ export class VcValuedaten586689Custom extends CobisDesignerCustomEvent {
     gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
   ) => {
     gridRowSelectingEventArgs.commons.execServer = false;
-    // TODO
-    task.sequential = gridRowSelectingEventArgs.rowData.secuential;
     entities.ValueDateFilter.indexTrn = gridRowSelectingEventArgs.rowIndex;
   };
 
@@ -170,11 +168,11 @@ export class VcValuedaten586689Custom extends CobisDesignerCustomEvent {
         case 1: //ACCEPT
           //COMPARE VALUE DATE  WITH LAST PROCESS DATE
           if (this.queryDict.menu == this.ASSTS.Constants.MENU_VALUE_DATE) {
-            let dateParts: any = entities.Loan.lastProcessDate?.split("/");
+            let dateParts: any = String(entities.Loan.lastProcessDate).split("/");
             let d: any = dateParts[1] + '/' + dateParts[0] + '/' + dateParts[2];
             let dateLP: any = new Date(d);
             if (entities.ValueDateFilter.valueDate! > dateLP) {
-              return executeCommandEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_LAFECHADP_53060").then((respAux: any) => {
+              return executeCommandEventArgs.commons.messageHandler.showMessagesConfirm("ASSTS.MSG_ASSTS_LAFECHADP_53060").subscribe((respAux: any) => {
                 switch (respAux.buttonIndex) {
                   case 0:
                     executeCommandEventArgs.commons.execServer = false;
@@ -206,7 +204,9 @@ export class VcValuedaten586689Custom extends CobisDesignerCustomEvent {
     executeCommandCallbackEventArgs: CobisModelExecuteCommandCallbackEventArgs
   ) => {
     if (executeCommandCallbackEventArgs.success) {
-      entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
+      // TODO - REFACTORIZAR
+      //   entities.Loan.lastProcessDate = kendo.toString(kendo.parseDate(entities.Loan.lastProcessDate), JSON.parse(sessionStorage.dateFormat));
+      entities.Loan.lastProcessDate = entities.Loan.lastProcessDate;
       executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation("ASSTS.MSG_ASSTS_LATRANSLO_19347", false, null, this.ASSTS.timer);
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_1244_89323');
 
@@ -231,7 +231,7 @@ export class VcValuedaten586689Custom extends CobisDesignerCustomEvent {
       commons.api.viewState.hide('VA_LASTPROCESSDEET_724866');
       commons.api.viewState.hide('VA_3610ZOUUEMDZQED_313866');
     }
-    if (entities.Loan.statusID == "0") {
+    if (entities.Loan.statusID == 0) {
       api.viewState.disable("CM_VALUEDAT_NNN");
     }
     initDataEventArgs.commons.api.viewState.hide('VC_DNIIMAEAVR_174689');

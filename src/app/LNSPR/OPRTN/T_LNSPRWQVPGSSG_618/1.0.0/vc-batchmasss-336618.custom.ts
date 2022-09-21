@@ -120,8 +120,8 @@ export class VcBatchmasss336618Custom extends CobisDesignerCustomEvent {
       if (numRep > 0) {
         executeCommandCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.MSG_LNSPR_BLOQUEPOR_62315', false, [count + 1], this.LNSPR.timer);
         count++;
-        // TODO - ALE - REFACTORIZAR
-        executeCommandCallbackEventArgs.commons.api.vc.executeCommand('CM_TLNSPRWQ_853', 'MassivePayments', undefined, true, false, 'VC_BATCHMASSS_336618', false);
+        // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+        // executeCommandCallbackEventArgs.commons.api.vc.executeCommand('CM_TLNSPRWQ_853', 'MassivePayments', undefined, true, false, 'VC_BATCHMASSS_336618', false);
         return;
       }
 
@@ -145,13 +145,7 @@ export class VcBatchmasss336618Custom extends CobisDesignerCustomEvent {
 
     let idAux: any = this.cobis.container.tabs.getCurrentTab().id;
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
-    let nameAux: any = undefined;
-
-    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
-      nameAux = this.cobis.container.tabs.getCurrentTab().name;
-    } else {
-      nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAIV_19760");
-    }
+    let nameAux: any = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAIV_19760");
 
     this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
   };

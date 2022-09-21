@@ -119,7 +119,6 @@ export class VcValuedatee230861Custom extends CobisDesignerCustomEvent {
     gridRowSelectingEventArgs: CobisModelGridRowSelectingEventArgs
   ) => {
     gridRowSelectingEventArgs.commons.execServer = false;
-    task.sequential = gridRowSelectingEventArgs.rowData.secuential;
     entities.ValueDateFilter.indexTrn = gridRowSelectingEventArgs.rowIndex;
   };
 

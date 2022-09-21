@@ -99,11 +99,11 @@ export class CompaniesBatch  extends CobisDesignerEntity{
   	public get fileMsg(): string | null {
     	return this.getPropertyValue("fileMsg");    	
   	}
-	public set company (value: string | null) {
+	public set company (value: number | null) {
     	this.setPropertyValue(value, "company");    	
   	}
   	
-  	public get company(): string | null {
+  	public get company(): number | null {
     	return this.getPropertyValue("company");    	
   	}
 	public set fileError (value: number | null) {

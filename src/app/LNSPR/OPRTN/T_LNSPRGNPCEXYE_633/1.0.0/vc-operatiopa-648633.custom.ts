@@ -56,14 +56,18 @@ import {
   CobisDesignerCustomEvent
 } from 'cobis-designer';
 
+/* variables locales de T_LNSPRSHDBNXGH_268*/
+let fechaCreacion: any = null;
+
 /* variables locales de T_LNSPRGNPCEXYE_633*/
-let changeAmortization: any = false;
+let changeAmortization: any = false; //Vaildar solo se utilizn el initDate CallBack
 
 let stateCalculate: any = 'V';
 let diferenciaCapitalCuota: any = 0;
 let updateFila: any = true; // V - Validate, A - Allows, C - Cancel
 let flagUpdateFee: any = false;
 let flagUpdateTerm: any = false;
+let tmpGridAmortization: any = null;
 
 export class VcOperatiopa648633Custom extends CobisDesignerCustomEvent {
 
@@ -276,8 +280,8 @@ export class VcOperatiopa648633Custom extends CobisDesignerCustomEvent {
           entities.AmortizationEntity[k].dividend = (+k + 1);
         }
         updateFila = false;
-        // TODO - REFACTORIZAR
-        gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+        // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+        // gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
   };
@@ -550,7 +554,7 @@ export class VcOperatiopa648633Custom extends CobisDesignerCustomEvent {
     // $('.k-link.k-pager-nav.k-pager-first').click();
     let viewState: any = changedEventArgs.commons.api.viewState;
     let grid: any = changedEventArgs.commons.api.grid;
-    // TODO - ALE
+
     if (tmpGridAmortization == null) {
       tmpGridAmortization = entities.AmortizationEntity;
     }
@@ -892,8 +896,8 @@ export class VcOperatiopa648633Custom extends CobisDesignerCustomEvent {
         if ((entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital).toFixed(2) == 0.00) {
           entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital = 0.00;
         }
-        // TODO - REFACTORIZAR
-        executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+        // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+        // executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
   }
@@ -1077,7 +1081,7 @@ export class VcOperatiopa648633Custom extends CobisDesignerCustomEvent {
       grid.select(row);
     }
     // TODO - REFACTORIZAR
-    let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
+    let grid: any /*= $("#QV_ECPR_JAA30").data("kendoGrid");*/
     let sel: any = grid.select();
     let item: any = grid.dataItem(sel);
     let dataSource: any = grid.dataSource;
@@ -1145,7 +1149,7 @@ export class VcOperatiopa648633Custom extends CobisDesignerCustomEvent {
       entities.AmortizationFormEntity.operationType = initDataCallbackEventArgs.commons.api.navigation.getCustomDialogParameters().typeOperation;
 
       if (initDataCallbackEventArgs.commons.api.parentVc?.id == 'VC_LOANPARTIR_265871') {
-        // TODO - ALE
+
         entities.AmortizationFormEntity.valueDate = fechaCreacion;
       }
 
@@ -1560,8 +1564,8 @@ export class VcOperatiopa648633Custom extends CobisDesignerCustomEvent {
     for (let a: any = 0; a < entities.AmortizationEntity.length - 1; a++) {
       entities.AmortizationEntity[a].dividend = (+a + 1);
     }
-    // TODO - REFACTORIZAR
-    gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+    // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+    // gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
   };
 
   //gridRowInserting QueryView: QV_ECPR_JAA30

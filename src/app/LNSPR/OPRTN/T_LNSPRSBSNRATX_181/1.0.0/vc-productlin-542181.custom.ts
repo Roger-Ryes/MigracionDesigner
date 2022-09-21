@@ -349,9 +349,6 @@ export class VcProductlin542181Custom extends CobisDesignerCustomEvent {
       entities.ProductLineDistribution.editionMode = gridRowSelectingEventArgs.commons.constants.mode.Update;
       gridRowSelectingEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_EDICINHAI_74003', false, null, this.LNSPR.timer);
       entities.ProductLineDistribution.product = gridRowSelectingEventArgs.rowData.product;
-      // TODO - ALE
-      // entities.ProductLineDistribution.clientCode = gridRowSelectingEventArgs.rowData.clientCod;
-      entities.ProductLineDistribution.clientCod = gridRowSelectingEventArgs.rowData.clientCod;
 
       entities.ProductLineDistribution.currency = gridRowSelectingEventArgs.rowData.codCurrency;
       entities.ProductLineDistribution.amount = gridRowSelectingEventArgs.rowData.amount;

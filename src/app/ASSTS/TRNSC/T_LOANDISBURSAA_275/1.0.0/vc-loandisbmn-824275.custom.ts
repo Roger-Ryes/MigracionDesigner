@@ -58,11 +58,11 @@ import {
 
 
 /* variables locales de T_DISBURSEMENNN_810*/
-
+let diferencia: any = 0;
 
 /* variables locales de T_LOANHEADERNFI_316*/
 
-/* variables locales de T_LOANDISBURSAA_275*/
+
 
 
 export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
@@ -122,7 +122,6 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
 
     entities.DisbursementResult.sumTotal = totalDesembolso;
     entities.DisbursementResult.difference = entities.LiquidateResult.sumTotal!-entities.DisbursementResult.sumTotal!;
-    // TODO - ALE
     diferencia = entities.DisbursementResult.difference;
   };
 
@@ -267,8 +266,7 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
     let api: any = initDataEventArgs.commons.api;
     let parameters: any = api.navigation.getCustomDialogParameters();
     entities.Loan = parameters.parameters.loan;
-    // TODO - CONVERSION
-    entities.LoanAdditionalInformation.currencyOp = entities.Loan.codCurrency;
+    entities.LoanAdditionalInformation.currencyOp = String(entities.Loan.codCurrency);
 
     initDataEventArgs.commons.api.viewState.hide('VC_VBHENKGGPP_117275');
     initDataEventArgs.commons.serverParameters.LoanAdditionalInformation = true;
@@ -330,7 +328,9 @@ export class VcLoandisbmn824275Custom extends CobisDesignerCustomEvent {
     // January - 0, February - 1, etc.
     entities.LoanAdditionalInformation.dateToDisburse = new Date(parts[2], parts[0] - 1, parts[1]);
 
-    entities.LoanAdditionalInformation.dateToDisburse = kendo.toString(kendo.parseDate(entities.LoanAdditionalInformation.dateToDisburse), JSON.parse(sessionStorage.dateFormat));
+    // TODO - REFACTOR
+    // entities.LoanAdditionalInformation.dateToDisburse = kendo.toString(kendo.parseDate(entities.LoanAdditionalInformation.dateToDisburse), JSON.parse(sessionStorage.dateFormat));
+    entities.LoanAdditionalInformation.dateToDisburse = entities.LoanAdditionalInformation.dateToDisburse;
 
     renderEventArgs.commons.api.viewState.hide('VA_9687YKSEJAICISC_489405');
 

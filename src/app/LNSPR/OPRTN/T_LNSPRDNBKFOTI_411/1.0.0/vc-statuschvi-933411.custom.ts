@@ -374,8 +374,8 @@ export class VcStatuschvi933411Custom extends CobisDesignerCustomEvent {
     executeCommandEventArgs.commons.api.viewState.disable('VA_DESCSTATUSKOPMT_184293');
     entities.LoanSearchFilter.seleccionarTodo = false;
     executeCommandEventArgs.commons.api.grid.removeAllRows('LoanList');
-    // TODO - ALE
-    executeCommandEventArgs.commons.api.vc.removeFile('VA_ARCHIVOEWNXRMQG_617293');
+    // TODO - REFACTOR - OMAR NOS ENTREGA LA FUNCION
+    // executeCommandEventArgs.commons.api.vc.removeFile('VA_ARCHIVOEWNXRMQG_617293');
     entities.LoanSearchFilter.avanceSearch = false;
     entities.StatesAssetsLoan.descStatus = null;
 

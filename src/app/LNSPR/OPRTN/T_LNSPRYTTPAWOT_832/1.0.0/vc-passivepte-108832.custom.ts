@@ -64,23 +64,34 @@ import {
 let prioridad: any = 0;
 
 let valor: any = 0;
+let stateOp: any = 0;
+let state: any;
 
+/* variables locales de T_LNSPRSHDBNXGH_268*/
+
+let codOperacion: any = 0;
 
 /* variables locales de T_LNSPRKEGMFGIE_785*/
 
+/* variables locales de T_LNSPRSHDBNXGH_268*/
+let fechaCreacion: any = null;
+
 /* variables locales de T_LNSPRGNPCEXYE_633*/
-let changeAmortization: any = false;
+let changeAmortization: any = false; //Vaildar solo se utilizn el initDate CallBack
 
 let stateCalculate: any = 'V';
 let diferenciaCapitalCuota: any = 0;
 let updateFila: any = true; // V - Validate, A - Allows, C - Cancel
-
-/* variables locales de T_LNSPRYTTPAWOT_832*/
-let tmpGridAmortization: any = null;
-
-let flagUpdateDate: any = false;
 let flagUpdateFee: any = false;
 let flagUpdateTerm: any = false;
+let tmpGridAmortization: any = null;
+
+/* variables locales de T_LNSPRYTTPAWOT_832*/
+// let tmpGridAmortization: any = null;
+
+let flagUpdateDate: any = false;
+// let flagUpdateFee: any = false;
+// let flagUpdateTerm: any = false;
 let flagCreate: any = false;
 
 
@@ -364,8 +375,8 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       viewState.enable('CM_TLNSPRYT_R8O'); //Button Transmitir
 
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_MC21_OVS27'); //Rubros//Grid
-      // TODO - ALE
-      executeCommandCallbackEventArgs.commons.api.vc.queries.VA_ITEMWXVWWWSCMKV_983587_values = undefined;
+      // TODO - OJO, REVISAR AL FINALIZAR
+      //        executeCommandCallbackEventArgs.commons.api.vc.queries.VA_ITEMWXVWWWSCMKV_983587_values = undefined;
       viewState.refreshData('VA_ITEMWXVWWWSCMKV_983587'); //Rubros//Columna Rubros
       viewState.refreshData('Q_APAGOOOO_YV30'); //Parametros Generales//FormaPagoQuery
 
@@ -875,7 +886,6 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
 
     //validacion pantalla actualizacion
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE
       state = executeQueryEventArgs.commons.api.vc.model.GeneralInformation.codState
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -956,7 +966,6 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1000,7 +1009,6 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, this.LNSPR.timer);
     }
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE 
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1061,7 +1069,6 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1261,8 +1268,8 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
           entities.AmortizationEntity[k].dividend = (+k + 1);
         }
         updateFila = false;
-        // TODO - REFACTORIZAR
-        gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+        // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+        // gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
   };
@@ -1535,7 +1542,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     // $('.k-link.k-pager-nav.k-pager-first').click();
     let viewState: any = changedEventArgs.commons.api.viewState;
     let grid: any = changedEventArgs.commons.api.grid;
-    // TODO - ALE
+
     if (tmpGridAmortization == null) {
       tmpGridAmortization = entities.AmortizationEntity;
     }
@@ -1870,8 +1877,8 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
         if ((entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital).toFixed(2) == 0.00) {
           entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital = 0.00;
         }
-        // TODO - REFACTORIZAR
-        executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+        // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+        // executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
   }
@@ -2055,7 +2062,7 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
       grid.select(row);
     }
     // TODO - REFACTORIZAR
-    let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
+    let grid: any /*= $("#QV_ECPR_JAA30").data("kendoGrid");*/
     let sel: any = grid.select();
     let item: any = grid.dataItem(sel);
     let dataSource: any = grid.dataSource;
@@ -2156,8 +2163,8 @@ export class VcPassivepte108832Custom extends CobisDesignerCustomEvent {
     for (let a: any = 0; a < entities.AmortizationEntity.length - 1; a++) {
       entities.AmortizationEntity[a].dividend = (+a + 1);
     }
-    // TODO - REFACTORIZAR
-    gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+    // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+    // gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
   };
 
   //gridRowInserting QueryView: QV_ECPR_JAA30

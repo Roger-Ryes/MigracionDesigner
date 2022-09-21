@@ -156,7 +156,6 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
       entities.CompaniesBatch.fileError = null
       entities.CompaniesBatch.description = null
       entities.CompaniesBatch.executeOnline = null
-      entities.CompaniesBatch.path = null
     } else if (opt == 2) { //Comando Eliminar -- Change Company 
       entities.CompaniesBatch.sequential = null
       entities.CompaniesBatch.statusId = null
@@ -166,9 +165,6 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
       entities.CompaniesBatch.fileError = null
       entities.CompaniesBatch.description = null
       entities.CompaniesBatch.executeOnline = null
-      // TODO - ALE
-      // entities.CompaniesBatch.path = null
-      entities.CompaniesBatch.filePath = null
     } else if (opt == 3) { //Change Lote
       entities.CompaniesBatch.fileError = null
     } else {
@@ -182,7 +178,6 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
       entities.CompaniesBatch.fileError = null
       entities.CompaniesBatch.description = null
       entities.CompaniesBatch.executeOnline = null
-      entities.CompaniesBatch.path = null
     }
   }
 
@@ -193,7 +188,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
     changedEventArgs.commons.execServer = false;
     let api: any = changedEventArgs.commons.api;
     let tmpseq: any = changedEventArgs.rowData.sequential;
-    if (entities.CompaniesBatch.statusId < 2) {
+    if (entities.CompaniesBatch.statusId! < 2) {
       changedEventArgs.rowData.approved = !changedEventArgs.rowData.approved
       api.grid.updateRow(
         'CompaniesDiscountsFileList',
@@ -373,8 +368,7 @@ export class VcCompaniecr302580Custom extends CobisDesignerCustomEvent {
   ) => {
 
     executeCommandEventArgs.commons.execServer = false;
-    // TODO - Consultar ALE
-    if (entities.CompaniesBatch.company > 0) {
+    if (entities.CompaniesBatch.company! > 0) {
       //open modal
       let nav: any = executeCommandEventArgs.commons.api.navigation;
 

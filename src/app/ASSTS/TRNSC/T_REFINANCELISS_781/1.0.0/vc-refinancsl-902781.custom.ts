@@ -123,8 +123,8 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     entities.RefinanceLoanFilter.typeGrace = "S";
     entities.RefinanceLoanFilter.typeFee = "M";
 
-// TODO - ALE
-    entities.RefinanceLoanFilter.basicInsurance = "false";
+
+    entities.RefinanceLoanFilter.basicInsurance = false;
 
   };
 
@@ -316,7 +316,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
   task_change_VA_PREVENTIONPRRAM_747515 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
 
     if (String(entities.RefinanceLoanFilter.totalRefinance).indexOf(",") != -1) {
-      entities.RefinanceLoanFilter.totalRefinance = parseFloat((entities.RefinanceLoanFilter.totalRefinance!).replace(',', ''));
+      entities.RefinanceLoanFilter.totalRefinance = Number(String(entities.RefinanceLoanFilter.totalRefinance).replace(',', ''));
 
     }
 
@@ -350,11 +350,11 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     if (this.cobis.utils.isDefined(entities.RulerResult.returnResults)) {
       result = parseInt(entities.RulerResult.returnResults?.match(/(\d+)/g));
     }
-    let valueAmount: any = parseFloat(entities.RefinanceLoanFilter.totalRefinance);
+    let valueAmount: any = entities.RefinanceLoanFilter.totalRefinance;
     if (valueAmount > 150000) {
       entities.RefinanceLoanFilter.totalToRenew = valueAmount;
     } else {
-      let amoutCalculator: any = parseFloat(result) + parseFloat((entities.RefinanceLoanFilter.totalRefinance));
+      let amoutCalculator: any = parseFloat(result) + entities.RefinanceLoanFilter.totalRefinance!;
       if (amoutCalculator > 150000) {
         entities.RefinanceLoanFilter.totalToRenew = 150000;
       } else {
@@ -403,13 +403,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     executeCommandEventArgs.commons.execServer = false;
     let idAux: any = this.cobis.container.tabs.getCurrentTab().id;
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
-    let nameAux: any = undefined;
-
-    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
-      nameAux = this.cobis.container.tabs.getCurrentTab().name;
-    } else {
-      nameAux = this.cobis.translate("ASSTS.LBL_ASSTS_RENOVACMA_67253");
-    }
+    let nameAux: any = this.cobis.translate("ASSTS.LBL_ASSTS_RENOVACMA_67253");
 
     this.ASSTS.container.changeCurrentTab(idAux, urlAux, nameAux, true);
   };
@@ -499,11 +493,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
       //Se inhabilitan los botones
       viewState.enable('CM_TREFINAN_9NC', true)
       viewState.hide("G_REFINANERL_686515");
-
     }
-
-    if (executeCommandCallbackEventArgs.commons.api.parentVc)
-      executeCommandCallbackEventArgs.commons.api.parentVc?.uploadGeneralEntities(entities);
   };
 
 
@@ -648,7 +638,7 @@ export class VcRefinancsl902781Custom extends CobisDesignerCustomEvent {
     }
   };
 
-  task.closeModalEvent.findCustomer = (args: any) => {
+  task_closeModalEvent_findCustomer = (args: any) => {
     let resp: any = args.commons.api.vc.dialogParameters;
     let customerCode: any = args.commons.api.vc.dialogParameters.CodeReceive;
     let CustomerName: any = args.commons.api.vc.dialogParameters.name;
@@ -774,8 +764,7 @@ nav.queryParameters = { mode: textInputButtonEventArgs.commons.args.mode };
   ) => {
     gridRowSelectingEventArgs.commons.execServer = false;
     entities.RefinanceLoanFilter.operation = gridRowSelectingEventArgs.rowData.loan;
-    if (gridRowSelectingEventArgs.commons.api.parentVc)
-      gridRowSelectingEventArgs.commons.api.parentVc?.uploadGeneralEntities(entities);
+
 
   };
 

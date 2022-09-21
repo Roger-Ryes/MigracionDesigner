@@ -59,6 +59,8 @@ import {
 /* variables locales de T_ASSTSCNYHAQPM_525*/
 let openConfirmation: any = true;
 
+let params: any = null;
+
 export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
 
   task_changeWithError: any = {};
@@ -215,8 +217,7 @@ export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
         callFromGrid: false
       };
       nav.customDialogParameters = {
-        // TODO - ALE
-        operation: operacion
+        operation: params.operation
 
       };
 
@@ -266,8 +267,8 @@ export class VcRestructeg166525Custom extends CobisDesignerCustomEvent {
   task_render = (entities: Model, renderEventArgs: CobisModelRenderEventArgs) => {
     renderEventArgs.commons.execServer = false;
     let nav: any = renderEventArgs.commons.api.navigation;
-    let params: any = nav.getCustomDialogParameters();
-    // TODO - NO MOSTRAR EN MODAL x
+    params = nav.getCustomDialogParameters();
+    // TODO - REFACTORIZAR
     // $("button.close").hide();
     //RUBROS
     nav.address = {

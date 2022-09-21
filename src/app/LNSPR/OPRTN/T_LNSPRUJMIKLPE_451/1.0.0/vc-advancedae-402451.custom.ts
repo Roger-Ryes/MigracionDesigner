@@ -93,8 +93,7 @@ export class VcAdvancedae402451Custom extends CobisDesignerCustomEvent {
   task_initData_VC_ADVANCEDAE_402451 = (entities: Model, initDataEventArgs: CobisModelInitDataEventArgs) => {
     initDataEventArgs.commons.execServer = true;
     //initDataEventArgs.commons.serverParameters.entityName = true;
-    // TODO - CARLOS
-    initDataEventArgs.commons.api.parentVc!.args.customParameters.searchDynamicModel = initDataEventArgs.commons.api.vc.model;
+    initDataEventArgs.commons.api.navigation.customDialogParameters.searchDynamicModel = initDataEventArgs.commons.api.vc.model;
   };
 
 

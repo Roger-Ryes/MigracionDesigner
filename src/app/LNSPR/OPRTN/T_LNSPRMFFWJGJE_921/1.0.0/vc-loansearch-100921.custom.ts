@@ -617,16 +617,12 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
     let nameAux: any = undefined;
 
-    if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
-      nameAux = this.cobis.container.tabs.getCurrentTab().name;
+    if (entities.LoanSearchFilter.mode == 'C') {
+      nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_CAMBIOTAS_63595");
     } else {
-      if (entities.LoanSearchFilter.mode == 'C') {
-        nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_CAMBIOTAS_63595");
-      } else {
-        nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAOS_76833");
-      }
-
+      nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAOS_76833");
     }
+
 
     this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
 
@@ -824,8 +820,8 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
     executeCommandEventArgs.commons.api.viewState.hide('G_LOANSEARCR_617423');
     executeCommandEventArgs.commons.api.viewState.enable('VA__174423');
     executeCommandEventArgs.commons.api.viewState.hide('CM_TLNSPRMF_9NN');
-    // TODO - ALE FUNCION NO EXISTE
-    executeCommandEventArgs.commons.api.vc.removeFile('VA_ARCHIVOJFAGWZSQ_219423');
+    // TODO - REFACTORIZAR - FUNCION NO EXISTE
+    //    executeCommandEventArgs.commons.api.vc.removeFile('VA_ARCHIVOJFAGWZSQ_219423');
     executeCommandEventArgs.commons.api.grid.hideToolBarButton('QV_EF50_UVK53', 'CEQV_201QV_EF50_UVK53_197');
     executeCommandEventArgs.commons.api.viewState.enable('VA_NUMIDENTIFICTII_228423');
 
@@ -844,7 +840,7 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
   ) => {
     let idAux: any = this.cobis.container.tabs.getCurrentTab().id;
     let urlAux: any = this.cobis.container.tabs.getCurrentTab().url;
-    let nameAux: any = undefined;
+    let nameAux: any = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAOS_76833");
 
     // executeCommandEventArgs.commons.execServer = true;
     let response: any = await firstValueFrom(
@@ -858,12 +854,6 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
         break;
       case 1: //accept
         executeCommandEventArgs.commons.execServer = true;
-
-        if (this.cobis.container.tabs.getCurrentTab().name != undefined) {
-          nameAux = this.cobis.container.tabs.getCurrentTab().name;
-        } else {
-          nameAux = this.cobis.translate("LNSPR.LBL_LNSPR_PAGOSMAOS_76833");
-        }
 
         this.LNSPR.container.changeCurrentTab(idAux, urlAux, nameAux, true);
         return true;
@@ -1069,16 +1059,11 @@ export class VcLoansearch100921Custom extends CobisDesignerCustomEvent {
   ) => {
     executeCommandEventArgs.commons.api.viewState.show('CM_TLNSPRMF_3SN');
     listaErrores = [];
-    executeCommandEventArgs.commons.api.vc.model.MassiveCommissionsMistakes = null;
+
     entities.MassiveCommissionsMistakes = null;
-    // TODO - ALE 
-    executeCommandEventArgs.model.MassiveCommissionsMistakes = null
     executeCommandEventArgs.commons.execServer = false;
 
-    executeCommandEventArgs.commons.api.vc.model.ErrorMassivePayments = null;
     entities.ErrorMassivePayments = null;
-    // TODO - ALE 
-    executeCommandEventArgs.model.ErrorMassivePayments = null;
     executeCommandEventArgs.commons.api.grid.refresh('QV_PY15_EUR25');
 
   };

@@ -61,8 +61,13 @@ let stateCreateUpdate: any = 'P';
 
 let fromAmount: any = false; //Para Crear el Primero
 let firstAmount: any = true;
-
 let isGroup: any = false;
+
+//var activityFromModal = false;
+let EMPTY: any = ['', null, undefined];
+
+let NOT_FOUND: any = -1;
+let monto: any = true;
 
 export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
 
@@ -98,7 +103,6 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
    * @param bool withZero Considera a cero (0) como valor vacío.
    * @returns {boolean}
    */
-  // TODO - ALE
   isEmpty = (item: any, withZero ? : any) => {
     let MY_EMPTY: any = EMPTY.slice();
 
@@ -374,7 +378,7 @@ export class VcOperationl208539Custom extends CobisDesignerCustomEvent {
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
   task_change_VA_AMOUNTPCRKOKHWA_216221 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
-    // TODO - ALE
+
     if (monto) {
       if (firstAmount) {
         entities.OperationEntity.amountApproved = entities.OperationEntity.amount;

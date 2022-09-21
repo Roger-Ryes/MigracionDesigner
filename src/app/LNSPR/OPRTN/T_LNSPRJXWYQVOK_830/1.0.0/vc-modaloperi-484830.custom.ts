@@ -61,6 +61,15 @@ let prioridad: any;
 
 let valor: any;
 let cambio: any;
+let stateOp: any = 0;
+let state: any;
+
+/* variables locales de T_LNSPRSHDBNXGH_268*/
+
+let valorAprobado: any = 0;
+
+let valorOperacion: any = 0; //Vaildar solo se utilizn el initDate CallBack
+
 
 export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
 
@@ -561,7 +570,6 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
 
     //asignacion variable actualizacion prestamos != no vigente
     if (parentVc && parentVc.parentVc && parentVc.parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE
       state = parentVc.model.GeneralInformation.codState;
       if (state != stateOp) {
         executeQueryEventArgs.parameters.opActiva = 'S';
@@ -636,7 +644,6 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
     entities.GeneralParametersQuery = api.parentVc.model.GeneralParametersQuery;
 
     if (api.parentVc && api.parentVc.parentVc && api.parentVc.parentVc.id == 'VC_LOANPARTIR_265871') {
-      // TODO - ALE
       valor = valorAprobado - valorOperacion;
     }
 
@@ -654,7 +661,6 @@ export class VcModaloperi484830Custom extends CobisDesignerCustomEvent {
     if (api.vc.mode == initDataEventArgs.commons.constants.mode.Update) {
       prioridad = entities.OperationItemsList.priority;
       if (api.parentVc && api.parentVc.parentVc && api.parentVc.parentVc.id == 'VC_LOANPARTIR_265871') {
-        // TODO - ALE
         valor = valorAprobado - valorOperacion;
       }
 

@@ -109,11 +109,11 @@ export class VcRepaymentt461527Custom extends CobisDesignerCustomEvent {
     let total: any = 0;
     let commons: any = executeCommandEventArgs.commons;
     if (entities.PaymentAutomaticList.length > 0) {
-      entities.PaymentAutomaticList.forEach(({
-        // TODO - ALE
-        percentage
-      }) => {
-        total = total + percentage;
+      entities.PaymentAutomaticList.forEach((
+        // TODO - REVISAR SI FUNCIONA
+        item: any
+      ) => {
+        total = total + item.percentage;
       })
     }
 
@@ -165,10 +165,11 @@ export class VcRepaymentt461527Custom extends CobisDesignerCustomEvent {
 
     //executeCommandEventArgs.commons.serverParameters.PaymentAutomatic = true;
     if (entities.PaymentAutomaticList.length > 0) {
-      entities.PaymentAutomaticList.forEach(({
-        percentage
-      }) => {
-        total = total + percentage;
+      entities.PaymentAutomaticList.forEach((
+        // TODO - REVISAR
+        item: any
+      ) => {
+        total = total + item.percentage;
       })
     }
 
@@ -474,8 +475,8 @@ export class VcRepaymentt461527Custom extends CobisDesignerCustomEvent {
       entities.PaymentAutomatic.comments = null
       entities.PaymentAutomatic.percentage = 0.0
       entities.PaymentAutomatic.account = null
-      // TODO - ALE
-      gridRowDeletingCallbackEventArgs.commons.args.mode = executeCommandEventArgs.commons.constants.mode.Insert
+
+      gridRowDeletingCallbackEventArgs.commons.args.mode = gridRowDeletingCallbackEventArgs.commons.constants.mode.Insert
       gridRowDeletingCallbackEventArgs.commons.api.viewState.label("VA_VABUTTONNVDIOQB_352232", "LNSPR.LBL_LOANS_LIMPIARVF_75606"); //Cmd Limpiar
       gridRowDeletingCallbackEventArgs.commons.api.viewState.label("VA_VABUTTONXOCQZHP_695232", "LNSPR.LBL_LOANS_AADIRWOQO_72396"); //Cmd Añadir
     }

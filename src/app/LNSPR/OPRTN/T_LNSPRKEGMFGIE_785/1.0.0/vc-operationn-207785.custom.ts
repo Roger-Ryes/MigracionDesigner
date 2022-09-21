@@ -323,8 +323,6 @@ export class VcOperationn207785Custom extends CobisDesignerCustomEvent {
       }
     } else {
       viewState.hide('VA_VABUTTONOHXRHAO_106309'); //button establecer
-      // TODO - ALE
-      // entities.GeneralParametersQuery.account = null;
     }
   };
 

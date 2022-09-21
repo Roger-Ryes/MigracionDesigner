@@ -62,37 +62,51 @@ let stateCreateUpdate: any = 'P';
 
 let fromAmount: any = false; //Para Crear el Primero
 let firstAmount: any = true;
-
 let isGroup: any = false;
+
+//var activityFromModal = false;
+let EMPTY: any = ['', null, undefined];
+
+let NOT_FOUND: any = -1;
+let monto: any = true;
 
 /* variables locales de T_LNSPRHWGYLNWJ_330*/
 
 let prioridad: any = 0;
 
 let valor: any = 0;
+let stateOp: any = 0;
+let state: any;
 
+/* variables locales de T_LNSPRSHDBNXGH_268*/
+
+let codOperacion: any = 0;
 
 /* variables locales de T_LNSPRKEGMFGIE_785*/
 
+/* variables locales de T_LNSPRSHDBNXGH_268*/
+let fechaCreacion: any = null;
+
 /* variables locales de T_LNSPRGNPCEXYE_633*/
-let changeAmortization: any = false;
+let changeAmortization: any = false; //Vaildar solo se utilizn el initDate CallBack
 
 let stateCalculate: any = 'V';
 let diferenciaCapitalCuota: any = 0;
 let updateFila: any = true; // V - Validate, A - Allows, C - Cancel
-// let flagUpdateFee: any = false;
-// let flagUpdateTerm: any = false;
+let flagUpdateFee: any = false;
+let flagUpdateTerm: any = false;
+let tmpGridAmortization: any = null;
 
 /* variables locales de T_LNSPRMBVLAOGA_193*/
 let funcionality: any;
 
-let EMPTY: any = ['', null, undefined];
-let NOT_FOUND: any = -1;
-let flagUpdateFee: any = false;
-let flagUpdateTerm: any = false; //FormAmortization = AmortizationFormEntity.fee = 0;
-let tmpGridAmortization: any = null;
+// let EMPTY: any = ['', null, undefined];
+// let NOT_FOUND: any = -1;
+// let flagUpdateFee: any = false;
+// let flagUpdateTerm: any = false; //FormAmortization = AmortizationFormEntity.fee = 0;
+// let tmpGridAmortization: any = null;
 
-let monto: any = true; //FormAmortization = entities.AmortizationEntity; Tabla temporal
+// let monto: any = true; //FormAmortization = entities.AmortizationEntity; Tabla temporal
 
 
 
@@ -131,7 +145,6 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
    * @param bool withZero Considera a cero (0) como valor vacío.
    * @returns {boolean}
    */
-  // TODO - ALE
   isEmpty = (item: any, withZero ? : any) => {
     let MY_EMPTY: any = EMPTY.slice();
 
@@ -385,8 +398,6 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
   //"TaskId": "T_LNSPRKEGMFGIE_785"
 
 
-
-
   //Entity: OperationEntity
   //OperationEntity.amountApproved (TextInputBox) View: OperationForm
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
@@ -415,7 +426,7 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
   //Evento Change: Se ejecuta al cambiar el valor de un InputControl.
   task_change_VA_AMOUNTPCRKOKHWA_216221 = (entities: Model, changedEventArgs: CobisModelChangeEventArgs) => {
     changedEventArgs.commons.execServer = false;
-    // TODO - ALE
+
     if (monto) {
       if (firstAmount) {
         entities.OperationEntity.amountApproved = entities.OperationEntity.amount;
@@ -1235,7 +1246,6 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
 
     //validacion pantalla actualizacion
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE
       state = executeQueryEventArgs.commons.api.vc.model.GeneralInformation.codState
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1316,7 +1326,6 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1360,7 +1369,6 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
       gridRowInsertingCallbackEventArgs.commons.messageHandler.showMessagesInformation('LNSPR.LBL_LNSPR_INGRESARE_39730', false, null, this.LNSPR.timer);
     }
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE 
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1421,7 +1429,6 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
     }
 
     if (parentVc && parentVc.id == 'VC_FSEARCHRUU_598110') {
-      // TODO - ALE
       state = entities.GeneralInformation.codState;
       //asignacion variable actualizacion prestamos != no vigente
       if (state != stateOp) {
@@ -1621,8 +1628,8 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
           entities.AmortizationEntity[k].dividend = (+k + 1);
         }
         updateFila = false;
-        // TODO - REFACTORIZAR
-        gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+        // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+        // gridAfterLeaveInLineRowEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
   };
@@ -1895,7 +1902,7 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
     // $('.k-link.k-pager-nav.k-pager-first').click();
     let viewState: any = changedEventArgs.commons.api.viewState;
     let grid: any = changedEventArgs.commons.api.grid;
-    // TODO - ALE
+
     if (tmpGridAmortization == null) {
       tmpGridAmortization = entities.AmortizationEntity;
     }
@@ -2230,8 +2237,8 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
         if ((entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital).toFixed(2) == 0.00) {
           entities.AmortizationEntity._data[entities.AmortizationEntity.length - 1].balanceCapital = 0.00;
         }
-        // TODO - REFACTORIZAR
-        executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+        // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+        // executeCommandEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONNPM_2_987198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
       }
     }
   }
@@ -2415,7 +2422,7 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
       grid.select(row);
     }
     // TODO - REFACTORIZAR
-    let grid: any /* = $("#QV_ECPR_JAA30").data("kendoGrid");*/
+    let grid: any /*= $("#QV_ECPR_JAA30").data("kendoGrid");*/
     let sel: any = grid.select();
     let item: any = grid.dataItem(sel);
     let dataSource: any = grid.dataSource;
@@ -2516,8 +2523,8 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
     for (let a: any = 0; a < entities.AmortizationEntity.length - 1; a++) {
       entities.AmortizationEntity[a].dividend = (+a + 1);
     }
-    // TODO - REFACTORIZAR
-    gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
+    // TODO - REFACTORIZAR - MUY PENDIENTE - CREAR FUNCION
+    // gridRowDeletingEventArgs.commons.api.vc.executeCommand("VA_VAVABUTTONOH3FZ_246198", "VA_VAVABUTTONOH3FZ_246198", validator, false, false, '', false);
   };
 
   //gridRowInserting QueryView: QV_ECPR_JAA30
@@ -2571,8 +2578,6 @@ export class VcLoanscreaa299193Custom extends CobisDesignerCustomEvent {
   ) => {
     if (entities.OperationEntity.visibleInternalRateOfReturn && entities.OperationEntity.updatedInternalRateOfReturn) {
       executeCommandEventArgs.commons.execServer = false;
-      // TODO - REFACTORIZAR
-      executeCommandEventArgs.cancel = true;
       return;
     }
 

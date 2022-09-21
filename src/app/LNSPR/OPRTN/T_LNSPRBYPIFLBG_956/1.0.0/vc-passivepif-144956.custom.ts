@@ -175,8 +175,8 @@ export class VcPassivepif144956Custom extends CobisDesignerCustomEvent {
       viewState.enable('CM_TLNSPRYT_R8O'); //Button Transmitir
 
       executeCommandCallbackEventArgs.commons.api.grid.refresh('QV_MC21_OVS27'); //Rubros//Grid
-      // TODO - ALE
-      executeCommandCallbackEventArgs.commons.api.vc.queries.VA_ITEMWXVWWWSCMKV_983587_values = undefined;
+      // TODO - OJO, REVISAR AL FINALIZAR
+      //        executeCommandCallbackEventArgs.commons.api.vc.queries.VA_ITEMWXVWWWSCMKV_983587_values = undefined;
       viewState.refreshData('VA_ITEMWXVWWWSCMKV_983587'); //Rubros//Columna Rubros
       viewState.refreshData('Q_APAGOOOO_YV30'); //Parametros Generales//FormaPagoQuery
 
@@ -417,50 +417,6 @@ export class VcPassivepif144956Custom extends CobisDesignerCustomEvent {
     loadCatalogCallbackEventArgs: CobisModelLoadCatalogCallbackEventArgs
   ) => {
     //here your code
-  };
-
-
-  //Evento onCloseModalEvent : Evento que actua como listener cuando se cierra ventanas modales.
-  //ViewContainer: PassivePortfolioCreation
-  task_onCloseModalEvent = (entities: Model, onCloseModalEventArgs: CobisModelOnCloseModalEventArgs) => {
-
-    onCloseModalEventArgs.commons.execServer = false;
-
-    // busquda ente
-    if (onCloseModalEventArgs.closedViewContainerId == "findCustomer" &&
-      onCloseModalEventArgs.dialogCloseType == onCloseModalEventArgs.commons.constants.dialogCloseType.Interactive) {
-      if (onCloseModalEventArgs.result && onCloseModalEventArgs.result.selectedData) {
-        let data: any = onCloseModalEventArgs.result.selectedData;
-        entities.OperationCRUDFormEntity.code = data.code;
-        entities.OperationCRUDFormEntity.fullName = data.name;
-        entities.OperationCRUDFormEntity.idNumber = data.documentId;
-        onCloseModalEventArgs.commons.api.viewState.disable('VA_FULLNAMEHFSGXTT_914899');
-      }
-    }
-
-    if (onCloseModalEventArgs.closedViewContainerId == "VC_LOANSLINSS_962737" && onCloseModalEventArgs.dialogCloseType == 0) {
-      entities.OperationEntity.creditLine = onCloseModalEventArgs.result.result.lineaCredito;
-    }
-
-    if (onCloseModalEventArgs.closedViewContainerId == 'VC_ACCONTSOPT_347664' && onCloseModalEventArgs.dialogCloseType == 0) {
-      if (onCloseModalEventArgs.result && onCloseModalEventArgs.result.response) {
-        entities.GeneralOperationParameters.account = onCloseModalEventArgs.result.response.code;
-      }
-    }
-
-    // TODO - ALE
-    if (onCloseModalEventArgs.closedViewContainerId == 'VC_MODALOPERI_484830' && resultArgs) {
-      if (onCloseModalEventArgs.dialogCloseType !== onCloseModalEventArgs.commons.constants.dialogCloseType.NonInteractive) {
-        if (resultArgs.mode === onCloseModalEventArgs.commons.constants.mode.Insert) {
-          onCloseModalEventArgs.commons.api.grid.addRow('OperationItemsList', resultArgs.data.OperationItemsList, true);
-        } else if (resultArgs.mode === onCloseModalEventArgs.commons.constants.mode.Update) {
-          onCloseModalEventArgs.commons.api.grid.updateRow('OperationItemsList', resultArgs.index, resultArgs.data.OperationItemsList, true);
-        }
-      }
-    }
-
-
-
   };
 
 

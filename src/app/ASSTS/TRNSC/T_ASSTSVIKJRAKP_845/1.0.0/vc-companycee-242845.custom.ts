@@ -187,10 +187,9 @@ export class VcCompanycee242845Custom extends CobisDesignerCustomEvent {
     if (api.vc.mode == mode.Insert) {
       execServer = false;
       //initialize
-      // TODO - ALE
-      entities.Company.paymentFormService = (entities.Company.paymentFormService) ? entities.Company.Company : 'T';
-      entities.Company.paymentFrequency = (entities.Company.paymentFrequency) ? entities.Company.paymentFrequency : 'Q';
-      entities.Company.agreement = (entities.Company.agreement) ? entities.Company.agreement : 'N';
+      entities.Company.paymentFormService = 'T';
+      entities.Company.paymentFrequency = 'Q';
+      entities.Company.agreement = 'N';
       entities.Company.paymentPercentage = 0.0
       entities.Company.rateApply = 0.0
     } else if (api.vc.mode == mode.Update) {

@@ -102,8 +102,7 @@ export class VcPaymentsfw851850Custom extends CobisDesignerCustomEvent {
   ) => {
     if (!changeCallbackEventArgs.success) {
       entities.Payment.quotation = 0.00;
-      // TODO - ALE
-      entities.Payment.typeQuotationTe = "";
+      entities.Payment.typeQuotationTr = "";
     } else {
       changeCallbackEventArgs.commons.api.viewState.label("VA_AMOUNTPREPAYTME_876141", this.cobis.translate("ASSTS.LBL_ASSTS_SALDOPRCN_87630") + " " + "(" +
         changeCallbackEventArgs.commons.api.viewState.getDataItem("VA_CURRENCYSPEYFQA_285141").value + ")");

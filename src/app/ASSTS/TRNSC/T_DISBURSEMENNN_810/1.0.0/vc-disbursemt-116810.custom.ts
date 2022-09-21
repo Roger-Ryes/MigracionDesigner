@@ -57,7 +57,7 @@ import {
 } from 'cobis-designer';
 
 /* variables locales de T_DISBURSEMENNN_810*/
-
+let diferencia: any = 0;
 
 export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
 
@@ -260,7 +260,6 @@ export class VcDisbursemt116810Custom extends CobisDesignerCustomEvent {
   ) => {
 
     if (gridRowDeletingEventArgs.success && gridRowDeletingEventArgs.commons.api.parentVc && gridRowDeletingEventArgs.commons.api.parentVc?.id == 'VC_LOANPARTIR_265871') {
-      // TODO - ALE 
       diferencia = entities.DisbursementResult.difference;
     }
   };
