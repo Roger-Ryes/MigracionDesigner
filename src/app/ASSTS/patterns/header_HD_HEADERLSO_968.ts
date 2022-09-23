@@ -51,7 +51,6 @@ export const header_HD_HEADERLSO_968: CobisHeader = {
     "value": "Loan.officer"
   }],
   "name": "HeaderLoans",
-  "numberEntities": "one",
   "primaryText": {
     "firstAttributeName": "Loan.loanBankID",
     "secondAttributeName": "Loan.desOperationType"

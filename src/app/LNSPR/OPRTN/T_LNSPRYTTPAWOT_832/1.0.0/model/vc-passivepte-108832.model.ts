@@ -5,6 +5,7 @@ import { AmortizationFormEntity } from "../../../../entities/AmortizationFormEnt
 import { CreateOperationTwo } from "../../../../entities/CreateOperationTwo";
 import { CreateOperationOne } from "../../../../entities/CreateOperationOne";
 import { DebtorEntity } from "../../../../entities/DebtorEntity";
+import { GeneralOperationParameters } from "../../../../entities/GeneralOperationParameters";
 import { GenericEntity } from "../../../../entities/GenericEntity";
 import { OperationEntity } from "../../../../entities/OperationEntity";
 import { OperationCRUDFormEntity } from "../../../../entities/OperationCRUDFormEntity";
@@ -21,6 +22,7 @@ private _createOperationTwo!: any;
 private _createOperationOne!: any;
 public DebtorEntity!: any;
 private _debtorEntityRowData!: DebtorEntity;
+private _generalOperationParameters!: any;
 private _genericEntity!: any;
 private _operationEntity!: OperationEntity;
 private _operationCRUDFormEntity!: OperationCRUDFormEntity;
@@ -39,6 +41,7 @@ this._createOperationTwo = new CreateOperationTwo();
 this._createOperationOne = new CreateOperationOne();
 this.DebtorEntity = [];
 this._debtorEntityRowData = new DebtorEntity(formGroupArray["DebtorEntity"]);
+this._generalOperationParameters = new GeneralOperationParameters();
 this._genericEntity = new GenericEntity();
 this._operationEntity = new OperationEntity(formGroupArray["OperationEntity"]);
 this._operationCRUDFormEntity = new OperationCRUDFormEntity(formGroupArray["OperationCRUDFormEntity"]);
@@ -80,6 +83,12 @@ this._debtorEntityRowData = entity;
 }
 public get DebtorEntityRowData() {
 return this._debtorEntityRowData;
+}
+public set GeneralOperationParameters(valores: any) {
+this._generalOperationParameters = valores;
+}
+public get GeneralOperationParameters(): any {
+return this._generalOperationParameters;
 }
 public set GenericEntity(valores: any) {
 this._genericEntity = valores;

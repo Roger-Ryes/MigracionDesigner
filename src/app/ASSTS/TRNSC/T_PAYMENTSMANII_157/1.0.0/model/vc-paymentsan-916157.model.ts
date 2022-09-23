@@ -11,6 +11,9 @@ import { Payment } from "../../../../entities/Payment";
 import { Priorities } from "../../../../entities/Priorities";
 import { QuotationCurrency } from "../../../../entities/QuotationCurrency";
 import { QuoteDetails } from "../../../../entities/QuoteDetails";
+import { LoanPaymentGroup } from "../../../../entities/LoanPaymentGroup";
+import { PaymentGroup } from "../../../../entities/PaymentGroup";
+import { PaymentListGroupClient } from "../../../../entities/PaymentListGroupClient";
 export class Model {
 private _condonationDetail!: any;
 private _generalParameters!: any;
@@ -27,6 +30,10 @@ public QuotationCurrency!: any;
 private _quotationCurrencyRowData!: QuotationCurrency;
 public QuoteDetails!: any;
 private _quoteDetailsRowData!: QuoteDetails;
+private _loanPaymentGroup!: LoanPaymentGroup;
+private _paymentGroup!: PaymentGroup;
+public PaymentListGroupClient!: any;
+private _paymentListGroupClientRowData!: PaymentListGroupClient;
 constructor(private formGroupArray: any) {
 this._condonationDetail = new CondonationDetail();
 this._generalParameters = new GeneralParameters();
@@ -43,6 +50,10 @@ this.QuotationCurrency = [];
 this._quotationCurrencyRowData = new QuotationCurrency(formGroupArray["QuotationCurrency"]);
 this.QuoteDetails = [];
 this._quoteDetailsRowData = new QuoteDetails(formGroupArray["QuoteDetails"]);
+this._loanPaymentGroup = new LoanPaymentGroup(formGroupArray["LoanPaymentGroup"]);
+this._paymentGroup = new PaymentGroup(formGroupArray["PaymentGroup"]);
+this.PaymentListGroupClient = [];
+this._paymentListGroupClientRowData = new PaymentListGroupClient(formGroupArray["PaymentListGroupClient"]);
 }
 public set CondonationDetail(valores: any) {
 this._condonationDetail = valores;
@@ -109,5 +120,23 @@ this._quoteDetailsRowData = entity;
 }
 public get QuoteDetailsRowData() {
 return this._quoteDetailsRowData;
+}
+public set LoanPaymentGroup(valores: any) {
+this._loanPaymentGroup = CobisDesignerUtil.getEntityData(this._loanPaymentGroup, valores);
+}
+public get LoanPaymentGroup():LoanPaymentGroup{
+return this._loanPaymentGroup;
+}
+public set PaymentGroup(valores: any) {
+this._paymentGroup = CobisDesignerUtil.getEntityData(this._paymentGroup, valores);
+}
+public get PaymentGroup():PaymentGroup{
+return this._paymentGroup;
+}
+public set PaymentListGroupClientRowData(entity: any) {
+this._paymentListGroupClientRowData = entity;
+}
+public get PaymentListGroupClientRowData() {
+return this._paymentListGroupClientRowData;
 }
 }

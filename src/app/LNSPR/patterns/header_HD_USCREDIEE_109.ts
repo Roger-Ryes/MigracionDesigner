@@ -27,7 +27,6 @@ export const header_HD_USCREDIEE_109: CobisHeader = {
     "value": "LoansLinesHeader.oficina"
   }],
   "name": "USCreditHeader",
-  "numberEntities": "one",
   "primaryText": {
     "firstAttributeName": "LoansLinesHeader.cupo",
     "secondAttributeName": "LoansLinesHeader.naturalezaOp"
